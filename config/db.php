@@ -1,6 +1,7 @@
 <?php
-// Check if running on local XAMPP environment by checking the directory path
-$is_localhost = (strpos(strtolower(__DIR__), 'xampp') !== false);
+// Strict check for localhost
+$server_name = $_SERVER['SERVER_NAME'] ?? '';
+$is_localhost = ($server_name === 'localhost' || $server_name === '127.0.0.1');
 
 
 if ($is_localhost) {
