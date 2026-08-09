@@ -1,6 +1,7 @@
 <?php
-// Check if running on localhost
-$is_localhost = in_array($_SERVER['REMOTE_ADDR'] ?? '', ['127.0.0.1', '::1']) || ($_SERVER['SERVER_NAME'] ?? '') === 'localhost';
+// Check if running on localhost (using HTTP_HOST is safer for live servers behind proxies)
+$http_host = $_SERVER['HTTP_HOST'] ?? '';
+$is_localhost = (strpos($http_host, 'localhost') !== false || strpos($http_host, '127.0.0.1') !== false);
 
 if ($is_localhost) {
     // Local XAMPP database credentials
