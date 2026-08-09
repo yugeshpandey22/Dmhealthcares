@@ -2,7 +2,7 @@
 // Main Entry point for DmHealthcare Home Page
 ?>
 <!-- Include the Header (contains <head>, navigation) -->
-<?php include 'includes/header.php'; ?>
+
 
 <!-- Main Content Area -->
 <main>
