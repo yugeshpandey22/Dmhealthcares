@@ -1,0 +1,23 @@
+/* Faridabad Page Specific CSS */
+.transition-hover {
+    transition: all 0.3s ease;
+}
+.transition-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+}
+
+/* Accordion Styling */
+#faridabadFaq .accordion-button:not(.collapsed) {
+    background-color: rgba(10, 91, 255, 0.05);
+    color: #0A5BFF;
+    box-shadow: none;
+}
+#faridabadFaq .accordion-button:focus {
+    box-shadow: none;
+}
+
+/* Custom Text Primary Override for this page if needed */
+.text-primary {
+    color: #0A5BFF !important;
+}
