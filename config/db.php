@@ -1,7 +1,7 @@
 <?php
-// Strict check for localhost
-$server_name = $_SERVER['SERVER_NAME'] ?? '';
-$is_localhost = ($server_name === 'localhost' || $server_name === '127.0.0.1');
+// 100% foolproof check for this specific local Windows machine
+$is_localhost = file_exists('C:\xampp\htdocs\DmHealthcare');
+
 
 
 if ($is_localhost) {
