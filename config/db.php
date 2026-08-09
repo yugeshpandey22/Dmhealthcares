@@ -1,7 +1,7 @@
 <?php
-// Check if running on localhost (using HTTP_HOST is safer for live servers behind proxies)
-$http_host = $_SERVER['HTTP_HOST'] ?? '';
-$is_localhost = (strpos($http_host, 'localhost') !== false || strpos($http_host, '127.0.0.1') !== false);
+// Check if running on local XAMPP environment by checking the directory path
+$is_localhost = (strpos(strtolower(__DIR__), 'xampp') !== false);
+
 
 if ($is_localhost) {
     // Local XAMPP database credentials
