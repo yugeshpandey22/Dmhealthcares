@@ -76,13 +76,18 @@
 
             <hr class="mb-4 border-secondary">
             
-            <div class="row align-items-center">
-                <div class="col-md-7 col-lg-8">
-                    <p style="color: #b0b0b0;">
+            <div class="row align-items-center pb-3">
+                <div class="col-md-7 col-lg-6">
+                    <p class="mb-0" style="color: #b0b0b0;">
                         Copyright © <?php echo date("Y"); ?> All rights reserved by:
                         <a href="#" style="text-decoration: none;">
                             <strong style="color: var(--secondary-color);">DmHealthcare</strong>
                         </a>
+                    </p>
+                </div>
+                <div class="col-md-5 col-lg-6 text-md-end mt-3 mt-md-0">
+                    <p class="mb-0" style="color: #b0b0b0;">
+                        Designed by <a href="https://www.mineib.com/" target="_blank" style="color: var(--secondary-color); text-decoration: none; font-weight: bold;">Mineib</a>
                     </p>
                 </div>
             </div>
