@@ -5,7 +5,7 @@
                 <!-- Column 1: Logo & Info -->
                 <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
                     <a href="index.php" style="display: inline-block; margin-bottom: 1.5rem;">
-                        <img src="assets/images/logo.png" alt="DmHealthcare Logo" style="height: 60px; filter: brightness(0) invert(1); object-fit: contain;">
+                        <img src="assets/images/logo.png" alt="DmHealthcare Logo" style="height: 60px; object-fit: contain;">
                     </a>
                     <p style="color: #b0b0b0; font-size: 0.95rem; line-height: 1.6;">
                         Providing professional, compassionate, and reliable healthcare services directly at your home. Your health is our priority.
