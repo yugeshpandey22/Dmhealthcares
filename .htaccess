@@ -1,7 +1,5 @@
 <IfModule mod_rewrite.c>
 RewriteEngine On
-RewriteBase /DmHealthcare/
-
 
 # If the request is not a valid file
 RewriteCond %{REQUEST_FILENAME} !-f
