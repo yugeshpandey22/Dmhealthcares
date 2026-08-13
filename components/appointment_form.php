@@ -41,7 +41,7 @@
 
                     <!-- Small illustrative image -->
                     <div class="position-relative d-none d-lg-block mt-auto z-1">
-                        <img src="assets/images/downloaded_img_13.jpg" alt="Medical Support" class="img-fluid shadow-sm" style="border-radius: 16px; height: 180px; width: 100%; object-fit: cover; border: 2px solid rgba(255,255,255,0.2);">
+                        <img src="assets/images/downloaded_img_13.jpg" alt="Medical Support" class="img-fluid shadow-sm" style="border-radius: 16px; height: 180px; width: 100%; object-fit: cover; border: 2px solid rgba(255,255,255,0.2);" loading="lazy">
                     </div>
                 </div>
 

@@ -11,7 +11,7 @@
                     <img src="assets/images/downloaded_img_14.jpg"
                         class="img-fluid rounded-4 shadow-lg w-100"
                         alt="DM Health Care"
-                        style="object-fit: cover; height: 550px;">
+                        style="object-fit: cover; height: 550px;" loading="lazy">
 
                     <!-- Experience -->
                     <div class="position-absolute bg-white shadow-lg rounded-4 p-3"

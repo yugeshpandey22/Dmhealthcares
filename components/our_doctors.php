@@ -10,7 +10,7 @@
             <!-- Director / Main Contact -->
             <div class="col-md-6 col-lg-4">
                 <div class="card h-100 border-0 shadow-sm text-center rounded-4 overflow-hidden pt-4" style="transition: 0.3s;" onmouseover="this.classList.add('shadow')" onmouseout="this.classList.remove('shadow')">
-                    <img src="assets/images/downloaded_img_7.jpg" alt="Sachin Thakur" class="rounded-circle mx-auto mb-3" style="width: 150px; height: 150px; object-fit: cover; border: 5px solid rgba(0, 123, 255, 0.1);">
+                    <img src="assets/images/downloaded_img_7.jpg" alt="Sachin Thakur" class="rounded-circle mx-auto mb-3" style="width: 150px; height: 150px; object-fit: cover; border: 5px solid rgba(0, 123, 255, 0.1);" loading="lazy">
                     <div class="card-body">
                         <h4 class="fw-bold mb-1">Mr. Sachin Thakur</h4>
                         <p class="text-primary fw-semibold mb-3">Director, DMA Manpower Services</p>
@@ -26,7 +26,7 @@
             <!-- Doctor 2 -->
             <div class="col-md-6 col-lg-4">
                 <div class="card h-100 border-0 shadow-sm text-center rounded-4 overflow-hidden pt-4" style="transition: 0.3s;" onmouseover="this.classList.add('shadow')" onmouseout="this.classList.remove('shadow')">
-                    <img src="assets/images/downloaded_img_8.jpg" alt="Dr. Sharma" class="rounded-circle mx-auto mb-3" style="width: 150px; height: 150px; object-fit: cover; border: 5px solid rgba(0, 123, 255, 0.1);">
+                    <img src="assets/images/downloaded_img_8.jpg" alt="Dr. Sharma" class="rounded-circle mx-auto mb-3" style="width: 150px; height: 150px; object-fit: cover; border: 5px solid rgba(0, 123, 255, 0.1);" loading="lazy">
                     <div class="card-body">
                         <h4 class="fw-bold mb-1">Dr. Rajesh Sharma</h4>
                         <p class="text-primary fw-semibold mb-3">Chief Medical Officer</p>
@@ -42,7 +42,7 @@
             <!-- Doctor 3 -->
             <div class="col-md-6 col-lg-4">
                 <div class="card h-100 border-0 shadow-sm text-center rounded-4 overflow-hidden pt-4" style="transition: 0.3s;" onmouseover="this.classList.add('shadow')" onmouseout="this.classList.remove('shadow')">
-                    <img src="assets/images/downloaded_img_9.jpg" alt="Dr. Verma" class="rounded-circle mx-auto mb-3" style="width: 150px; height: 150px; object-fit: cover; border: 5px solid rgba(0, 123, 255, 0.1);">
+                    <img src="assets/images/downloaded_img_9.jpg" alt="Dr. Verma" class="rounded-circle mx-auto mb-3" style="width: 150px; height: 150px; object-fit: cover; border: 5px solid rgba(0, 123, 255, 0.1);" loading="lazy">
                     <div class="card-body">
                         <h4 class="fw-bold mb-1">Dr. Priya Verma</h4>
                         <p class="text-primary fw-semibold mb-3">Head Physiotherapist</p>

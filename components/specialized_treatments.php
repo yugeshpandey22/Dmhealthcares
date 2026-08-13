@@ -11,7 +11,7 @@
             <div class="col-md-6 col-lg-4">
                 <div class="card h-100 border-0 rounded-4 shadow-sm overflow-hidden treatment-card" style="width: 18rem; margin: 0 auto;">
                     <div class="position-relative overflow-hidden" style="height: 200px;">
-                        <img src="assets/images/downloaded_img_1.jpg" class="card-img-top treatment-img" alt="Orthopedic Care">
+                        <img src="assets/images/downloaded_img_1.jpg" class="card-img-top treatment-img" alt="Orthopedic Care" loading="lazy">
                         <div class="position-absolute bottom-0 start-0 w-100 p-3" style="background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);">
                             <div class="d-flex align-items-center gap-2 text-white">
                                 <i class="fa-solid fa-bone fs-4 text-warning"></i>
@@ -30,7 +30,7 @@
             <div class="col-md-6 col-lg-4">
                 <div class="card h-100 border-0 rounded-4 shadow-sm overflow-hidden treatment-card" style="width: 18rem; margin: 0 auto;">
                     <div class="position-relative overflow-hidden" style="height: 200px;">
-                        <img src="assets/images/downloaded_img_2.jpg" class="card-img-top treatment-img" alt="Neurological Care">
+                        <img src="assets/images/downloaded_img_2.jpg" class="card-img-top treatment-img" alt="Neurological Care" loading="lazy">
                         <div class="position-absolute bottom-0 start-0 w-100 p-3" style="background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);">
                             <div class="d-flex align-items-center gap-2 text-white">
                                 <i class="fa-solid fa-brain fs-4 text-warning"></i>
@@ -49,7 +49,7 @@
             <div class="col-md-6 col-lg-4">
                 <div class="card h-100 border-0 rounded-4 shadow-sm overflow-hidden treatment-card" style="width: 18rem; margin: 0 auto;">
                     <div class="position-relative overflow-hidden" style="height: 200px;">
-                        <img src="assets/images/downloaded_img_3.jpg" class="card-img-top treatment-img" alt="Cardiac Recovery">
+                        <img src="assets/images/downloaded_img_3.jpg" class="card-img-top treatment-img" alt="Cardiac Recovery" loading="lazy">
                         <div class="position-absolute bottom-0 start-0 w-100 p-3" style="background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);">
                             <div class="d-flex align-items-center gap-2 text-white">
                                 <i class="fa-solid fa-heart-pulse fs-4 text-warning"></i>
@@ -68,7 +68,7 @@
             <div class="col-md-6 col-lg-4">
                 <div class="card h-100 border-0 rounded-4 shadow-sm overflow-hidden treatment-card" style="width: 18rem; margin: 0 auto;">
                     <div class="position-relative overflow-hidden" style="height: 200px;">
-                        <img src="assets/images/downloaded_img_4.jpg" class="card-img-top treatment-img" alt="Pulmonary Care">
+                        <img src="assets/images/downloaded_img_4.jpg" class="card-img-top treatment-img" alt="Pulmonary Care" loading="lazy">
                         <div class="position-absolute bottom-0 start-0 w-100 p-3" style="background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);">
                             <div class="d-flex align-items-center gap-2 text-white">
                                 <i class="fa-solid fa-lungs fs-4 text-warning"></i>
@@ -87,7 +87,7 @@
             <div class="col-md-6 col-lg-4">
                 <div class="card h-100 border-0 rounded-4 shadow-sm overflow-hidden treatment-card" style="width: 18rem; margin: 0 auto;">
                     <div class="position-relative overflow-hidden" style="height: 200px;">
-                        <img src="assets/images/downloaded_img_5.jpg" class="card-img-top treatment-img" alt="Post-Surgical Care">
+                        <img src="assets/images/downloaded_img_5.jpg" class="card-img-top treatment-img" alt="Post-Surgical Care" loading="lazy">
                         <div class="position-absolute bottom-0 start-0 w-100 p-3" style="background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);">
                             <div class="d-flex align-items-center gap-2 text-white">
                                 <i class="fa-solid fa-bed-pulse fs-4 text-warning"></i>
@@ -106,7 +106,7 @@
             <div class="col-md-6 col-lg-4">
                 <div class="card h-100 border-0 rounded-4 shadow-sm overflow-hidden treatment-card" style="width: 18rem; margin: 0 auto;">
                     <div class="position-relative overflow-hidden" style="height: 200px;">
-                        <img src="assets/images/downloaded_img_6.jpg" class="card-img-top treatment-img" alt="Palliative Care">
+                        <img src="assets/images/downloaded_img_6.jpg" class="card-img-top treatment-img" alt="Palliative Care" loading="lazy">
                         <div class="position-absolute bottom-0 start-0 w-100 p-3" style="background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);">
                             <div class="d-flex align-items-center gap-2 text-white">
                                 <i class="fa-solid fa-hand-holding-heart fs-4 text-warning"></i>

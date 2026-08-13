@@ -10,7 +10,7 @@
             <!-- Blog 1 -->
             <div class="col-md-4">
                 <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden" style="transition: 0.3s;" onmouseover="this.classList.add('shadow')" onmouseout="this.classList.remove('shadow')">
-                    <img src="assets/images/downloaded_img_10.jpg" class="card-img-top" alt="Healthy Diet" style="height: 200px; object-fit: cover;">
+                    <img src="assets/images/downloaded_img_10.jpg" class="card-img-top" alt="Healthy Diet" style="height: 200px; object-fit: cover;" loading="lazy">
                     <div class="card-body p-4">
                         <small class="text-primary fw-bold text-uppercase">Nutrition</small>
                         <h5 class="fw-bold mt-2 mb-3">Top 10 Foods for Faster Post-Surgery Recovery</h5>
@@ -23,7 +23,7 @@
             <!-- Blog 2 -->
             <div class="col-md-4">
                 <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden" style="transition: 0.3s;" onmouseover="this.classList.add('shadow')" onmouseout="this.classList.remove('shadow')">
-                    <img src="assets/images/downloaded_img_11.jpg" class="card-img-top" alt="Elderly Care" style="height: 200px; object-fit: cover;">
+                    <img src="assets/images/downloaded_img_11.jpg" class="card-img-top" alt="Elderly Care" style="height: 200px; object-fit: cover;" loading="lazy">
                     <div class="card-body p-4">
                         <small class="text-primary fw-bold text-uppercase">Elderly Care</small>
                         <h5 class="fw-bold mt-2 mb-3">How to Fall-Proof Your Home for Seniors</h5>
@@ -36,7 +36,7 @@
             <!-- Blog 3 -->
             <div class="col-md-4">
                 <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden" style="transition: 0.3s;" onmouseover="this.classList.add('shadow')" onmouseout="this.classList.remove('shadow')">
-                    <img src="assets/images/downloaded_img_12.jpg" class="card-img-top" alt="Physiotherapy" style="height: 200px; object-fit: cover;">
+                    <img src="assets/images/downloaded_img_12.jpg" class="card-img-top" alt="Physiotherapy" style="height: 200px; object-fit: cover;" loading="lazy">
                     <div class="card-body p-4">
                         <small class="text-primary fw-bold text-uppercase">Wellness</small>
                         <h5 class="fw-bold mt-2 mb-3">The Importance of Regular Physiotherapy</h5>

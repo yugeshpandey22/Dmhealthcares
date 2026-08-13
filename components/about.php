@@ -5,7 +5,7 @@
             <!-- Left Side: Single Large Image -->
             <div class="col-lg-5 mb-5 mb-lg-0 position-relative">
                 <div class="image-wrapper shadow-lg rounded-4 overflow-hidden" style="border: 10px solid #f8f9fa;">
-                    <img src="assets/images/downloaded_img_14.jpg" alt="About DM Healthcare" class="img-fluid w-100" style="object-fit: cover; min-height: 400px;">
+                    <img src="assets/images/downloaded_img_14.jpg" alt="About DM Healthcare" class="img-fluid w-100" style="object-fit: cover; min-height: 400px;" loading="lazy">
                 </div>
                 <!-- Floating Badge -->
                 <div class="position-absolute bg-primary text-white p-4 shadow-lg rounded-3" style="bottom: -20px; right: -20px; max-width: 200px;">
