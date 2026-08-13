@@ -4,23 +4,23 @@
                 
                 <!-- Column 1: Logo & Info -->
                 <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-                    <a href="index.php" class="d-flex align-items-center" style="margin-bottom: 1.5rem; text-decoration: none;">
+                    <a href="index.php" class="d-flex align-items-center bg-white rounded-3 px-3 py-2" style="margin-bottom: 1.5rem; text-decoration: none; width: fit-content;">
                         <!-- Logo Icon -->
                         <img src="assets/images/logo.png" alt="DmHealthcare Logo Icon" style="height: 65px; width: auto; object-fit: contain;">
                         
                         <!-- Logo Typography -->
                         <div class="d-flex flex-column justify-content-center" style="line-height: 1.1; margin-left: -20px; position: relative; z-index: 1;">
                             <div style="font-size: 14px; font-weight: 900; letter-spacing: 1px; font-family: 'Arial', sans-serif;">
-                                <span style="color: #d80000;">D</span><span style="color: #ffffff;">M</span> 
-                                <span style="color: #f8f9fa; margin-left: 5px;">HEALTH</span> 
+                                <span style="color: #d80000;">D</span><span style="color: #333333;">M</span> 
+                                <span style="color: #444444; margin-left: 5px;">HEALTH</span> 
                                 <span style="color: #d80000; margin-left: 5px;">CARE</span>
                             </div>
                             <div class="d-flex align-items-center w-100" style="margin: 2px 0;">
                                 <div style="flex-grow: 1; height: 1px; background-color: #d80000;"></div>
                                 <i class="fa-solid fa-heart-pulse mx-1" style="color: #d80000; font-size: 8px;"></i>
-                                <div style="flex-grow: 1; height: 1px; background-color: #ffffff;"></div>
+                                <div style="flex-grow: 1; height: 1px; background-color: #333333;"></div>
                             </div>
-                            <div style="font-size: 6px; font-weight: 700; letter-spacing: 3px; color: #cccccc; text-align: center; text-transform: uppercase;">
+                            <div style="font-size: 6px; font-weight: 700; letter-spacing: 3px; color: #555555; text-align: center; text-transform: uppercase;">
                                 Your Health, Our Priority
                             </div>
                         </div>
