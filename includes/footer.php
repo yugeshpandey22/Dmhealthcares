@@ -6,7 +6,7 @@
                 <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
                     <a href="index.php" class="d-flex align-items-center bg-white rounded-3 px-3 py-2" style="margin-bottom: 1.5rem; text-decoration: none; width: fit-content;">
                         <!-- Logo Icon -->
-                        <img src="assets/images/logo.png" alt="DmHealthcare Logo Icon" style="height: 65px; width: auto; object-fit: contain;">
+                        <img src="assets/images/logo.png" alt="DmHealthcare Logo Icon" loading="lazy" style="height: 65px; width: auto; object-fit: contain;">
                         
                         <!-- Logo Typography -->
                         <div class="d-flex flex-column justify-content-center" style="line-height: 1.1; margin-left: -20px; position: relative; z-index: 1;">
