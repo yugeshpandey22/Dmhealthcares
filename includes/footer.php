@@ -29,10 +29,10 @@
                         Providing professional, compassionate, and reliable healthcare services directly at your home. Your health is our priority.
                     </p>
                     <div class="mt-4">
-                        <a href="#" class="text-white me-3 fs-5"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="#" class="text-white me-3 fs-5"><i class="fa-brands fa-twitter"></i></a>
-                        <a href="#" class="text-white me-3 fs-5"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="#" class="text-white me-3 fs-5"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#" class="text-white me-3 fs-5" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" class="text-white me-3 fs-5" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" class="text-white me-3 fs-5" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="text-white me-3 fs-5" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
                     </div>
                 </div>
 
