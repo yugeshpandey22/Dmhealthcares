@@ -1,16 +1,8 @@
 <style>
     .hero-banner-img {
         width: 100%;
-        height: auto;
-        aspect-ratio: 21/9;
-        object-fit: cover;
+        height: auto; /* Let it scale naturally to show the full image */
         display: block;
-        background-color: #f8f9fa; /* Placeholder color while loading */
-    }
-    @media (max-width: 768px) {
-        .hero-banner-img {
-            aspect-ratio: 16/9; /* Taller on mobile */
-        }
     }
 </style>
 <section id="home">
