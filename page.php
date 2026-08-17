@@ -147,6 +147,7 @@ $display_title = $page_data ? $page_data['title'] : ucwords(str_replace('-', ' '
     <?php endif; ?>
 
     <!-- Main Content -->
+<main style="overflow-x: hidden; width: 100%;">
     <?php if(isset($full_page_override) && $full_page_override): ?>
         <div class="content-section">
             <?= $custom_content ?>
@@ -279,6 +280,8 @@ $display_title = $page_data ? $page_data['title'] : ucwords(str_replace('-', ' '
         </div>
     </div>
     <?php endif; ?>
+
+</main>
 
     <!-- Footer -->
     <?php include 'includes/footer.php'; ?>
