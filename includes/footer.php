@@ -60,11 +60,11 @@
                     <h5 class="text-uppercase mb-4 fw-bold" style="color: var(--secondary-color);">Contact Us</h5>
                     <p class="mb-3 d-flex align-items-center">
                         <i class="fa-solid fa-phone me-3" style="color: var(--secondary-color);"></i>
-                        <span>+91-9891989686<br>+91-9319119644</span>
+                        <span>+91-9891989686</span>
                     </p>
                     <p class="mb-3 d-flex align-items-center">
                         <i class="fa-solid fa-envelope me-3" style="color: var(--secondary-color);"></i>
-                        hr.dmams@gmail.com
+                        care@dmhealthcare.com
                     </p>
                     <p class="mb-3 d-flex align-items-start">
                         <i class="fa-solid fa-location-dot me-3 mt-1" style="color: var(--secondary-color);"></i>

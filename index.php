@@ -5,7 +5,7 @@
 <?php include 'includes/header.php'; ?>
 
 <!-- Main Content Area -->
-<main>
+<main style="overflow-x: hidden; width: 100%;">
     <!-- 02 Include Hero Banner Section -->
     <?php include 'components/hero.php'; ?>
 

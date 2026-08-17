@@ -1,65 +1,57 @@
-<section class="about-section py-5" id="about" style="background-color: white;">
+<section class="about-section py-5" id="about" style="background-color: var(--bg-gray);">
     <div class="container py-5">
         <div class="row align-items-center">
             
-            <!-- Left Side: Single Large Image -->
-            <div class="col-lg-5 mb-5 mb-lg-0 position-relative">
-                <div class="image-wrapper shadow-lg rounded-4 overflow-hidden" style="border: 10px solid #f8f9fa;">
-                    <img src="assets/images/downloaded_img_14.jpg" alt="About DM Healthcare" class="img-fluid w-100" style="object-fit: cover; min-height: 400px;" loading="lazy">
-                </div>
-                <!-- Floating Badge -->
-                <div class="position-absolute bg-primary text-white p-4 shadow-lg rounded-3" style="bottom: -20px; right: -20px; max-width: 200px;">
-                    <h3 class="fw-bold mb-0">10+ Years</h3>
-                    <p class="mb-0 small">Of Excellence in Home Healthcare</p>
+            <!-- Left Side: Professional Image -->
+            <div class="col-lg-5 mb-5 mb-lg-0">
+                <div class="position-relative">
+                    <img src="https://images.unsplash.com/photo-1581594693702-fbdc51b2763b?auto=format&fit=crop&q=80&w=600" alt="Professional Healthcare Worker" class="img-fluid rounded-4 shadow" style="object-fit: cover; min-height: 450px; border: 8px solid white;">
+                    <!-- Floating Accent -->
+                    <div class="position-absolute bg-white p-3 shadow-sm rounded-3 d-flex align-items-center gap-3" style="bottom: 30px; right: -30px;">
+                        <div class="bg-primary bg-opacity-10 text-primary rounded-circle d-flex justify-content-center align-items-center" style="width: 50px; height: 50px;">
+                            <i class="fa-solid fa-house-medical fs-4"></i>
+                        </div>
+                        <div>
+                            <h6 class="mb-0 fw-bold">At-Home Care</h6>
+                            <small class="text-muted">Premium Quality</small>
+                        </div>
+                    </div>
                 </div>
             </div>
 
             <!-- Right Side: Content -->
             <div class="col-lg-6 offset-lg-1">
-                <div class="d-inline-block px-3 py-1 mb-3 rounded-pill bg-light text-primary fw-bold" style="font-size: 0.9rem; letter-spacing: 1px;">
-                    ABOUT US
-                </div>
-                <h2 class="fw-bolder mb-4" style="color: #1a237e; font-size: 2.5rem;">Dedicated to Your <br><span style="color: var(--primary-color);">Health & Recovery</span></h2>
+                <span class="text-uppercase fw-bold text-secondary mb-2 d-block" style="letter-spacing: 1.5px; font-size: 0.85rem;">About DM Healthcare</span>
+                <h2 class="fw-bolder mb-4" style="color: var(--primary-color); font-size: 2.5rem;">Care That <span style="color: var(--secondary-color);">Comes Home</span></h2>
                 
-                <p class="text-muted fs-5 mb-4">
-                    <strong>DM Healthcare</strong>, a specialized division of DMA Manpower Services, is committed to bringing hospital-quality medical care directly to your doorstep. We understand that healing happens best in the comfort of your own home.
+                <p class="fs-6 text-muted mb-3" style="line-height: 1.8;">
+                    <strong>DM Healthcare</strong> brings hospital-level medical expertise directly to your doorstep. We believe that recovery and health management are most effective when patients are in the comfort and safety of their own homes.
                 </p>
-                <p class="text-muted mb-4">
-                    Our team consists of highly certified nurses, experienced physiotherapists, and dedicated caregivers. We provide comprehensive solutions ranging from basic elder care to advanced ICU setups at home, ensuring peace of mind for you and your family.
+                <p class="fs-6 text-muted mb-4" style="line-height: 1.8;">
+                    Whether you need basic elder care, dedicated physiotherapy, or a complete at-home ICU setup, our specialized team is equipped to deliver compassionate, personalized care exactly when you need it.
                 </p>
 
-                <!-- Key Metrics -->
-                <div class="row g-4 mt-2">
-                    <div class="col-sm-6">
-                        <div class="d-flex align-items-center">
-                            <div class="icon-box bg-light text-primary rounded d-flex align-items-center justify-content-center me-3" style="width: 50px; height: 50px;">
-                                <i class="fa-solid fa-user-nurse fs-4"></i>
-                            </div>
-                            <div>
-                                <h5 class="fw-bold mb-0">Certified Staff</h5>
-                                <small class="text-muted">Highly Trained Professionals</small>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="d-flex align-items-center">
-                            <div class="icon-box bg-light text-primary rounded d-flex align-items-center justify-content-center me-3" style="width: 50px; height: 50px;">
-                                <i class="fa-solid fa-clock fs-4"></i>
-                            </div>
-                            <div>
-                                <h5 class="fw-bold mb-0">24/7 Service</h5>
-                                <small class="text-muted">Round the Clock Care</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <!-- 3 Trust Points -->
+                <ul class="list-unstyled mb-5">
+                    <li class="mb-3 d-flex align-items-center gap-3">
+                        <i class="fa-solid fa-check-circle fs-5" style="color: var(--secondary-color);"></i>
+                        <span class="fw-semibold text-dark">Certified Professionals</span>
+                    </li>
+                    <li class="mb-3 d-flex align-items-center gap-3">
+                        <i class="fa-solid fa-check-circle fs-5" style="color: var(--secondary-color);"></i>
+                        <span class="fw-semibold text-dark">Personalized Care Plans</span>
+                    </li>
+                    <li class="d-flex align-items-center gap-3">
+                        <i class="fa-solid fa-check-circle fs-5" style="color: var(--secondary-color);"></i>
+                        <span class="fw-semibold text-dark">24/7 Support</span>
+                    </li>
+                </ul>
 
-                <div class="mt-5">
-                    <a href="#services" class="btn btn-primary rounded-pill px-5 py-3 fw-bold shadow-sm">Explore Our Services</a>
-                </div>
+                <a href="#about-detailed" class="btn btn-outline-primary rounded-pill px-4 py-3 fw-bold d-inline-flex align-items-center">
+                    Learn About Us <i class="fa-solid fa-arrow-right ms-2"></i>
+                </a>
             </div>
 
         </div>
     </div>
 </section>
-

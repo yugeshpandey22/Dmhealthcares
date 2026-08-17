@@ -1,59 +1,73 @@
-<section class="achievements-section py-5" style="background: linear-gradient(135deg, #1a2b4c 0%, #0d1627 100%); color: white; position: relative;">
-    <div class="container py-4">
-        <div class="row text-center g-4">
+<section class="achievements-section py-4" style="background-color: white; border-bottom: 1px solid #eee; position: relative; z-index: 2; margin-top: -30px; border-radius: 20px 20px 0 0; box-shadow: 0 -10px 30px rgba(0,0,0,0.05);">
+    <div class="container">
+        <div class="row text-center align-items-center g-4 justify-content-center">
+            <!-- Stat 1 -->
             <div class="col-6 col-md-3">
-                <i class="fa-solid fa-face-smile fs-1 mb-3 text-warning"></i>
-                <h2 class="fw-bolder display-5 mb-0"><span class="counter" data-target="5000">0</span>+</h2>
-                <p class="fs-5 mb-0 opacity-75">Happy Patients</p>
+                <div class="p-3">
+                    <h2 class="fw-bolder display-6 mb-1" style="color: var(--primary-color);"><span class="counter" data-target="10">0</span>+</h2>
+                    <p class="fs-6 mb-0 fw-semibold text-secondary">Years Experience</p>
+                </div>
             </div>
+            <!-- Stat 2 -->
             <div class="col-6 col-md-3">
-                <i class="fa-solid fa-user-doctor fs-1 mb-3 text-warning"></i>
-                <h2 class="fw-bolder display-5 mb-0"><span class="counter" data-target="50">0</span>+</h2>
-                <p class="fs-5 mb-0 opacity-75">Expert Doctors</p>
+                <div class="p-3" style="border-left: 1px dashed #ddd;">
+                    <h2 class="fw-bolder display-6 mb-1" style="color: var(--primary-color);"><span class="counter" data-target="5000">0</span>+</h2>
+                    <p class="fs-6 mb-0 fw-semibold text-secondary">Patients Served</p>
+                </div>
             </div>
+            <!-- Stat 3 -->
             <div class="col-6 col-md-3">
-                <i class="fa-solid fa-hospital fs-1 mb-3 text-warning"></i>
-                <h2 class="fw-bolder display-5 mb-0"><span class="counter" data-target="10">0</span>+</h2>
-                <p class="fs-5 mb-0 opacity-75">Years Experience</p>
+                <div class="p-3" style="border-left: 1px dashed #ddd;">
+                    <h2 class="fw-bolder display-6 mb-1" style="color: var(--primary-color);"><span class="counter" data-target="15">0</span>+</h2>
+                    <p class="fs-6 mb-0 fw-semibold text-secondary">Healthcare Experts</p>
+                </div>
             </div>
+            <!-- Stat 4 -->
             <div class="col-6 col-md-3">
-                <i class="fa-solid fa-bed-pulse fs-1 mb-3 text-warning"></i>
-                <h2 class="fw-bolder display-5 mb-0"><span class="counter" data-target="150">0</span>+</h2>
-                <p class="fs-5 mb-0 opacity-75">ICU Setups</p>
+                <div class="p-3" style="border-left: 1px dashed #ddd;">
+                    <h2 class="fw-bolder display-6 mb-1" style="color: var(--primary-color);">24<span style="font-size: 0.7em;">x</span>7</h2>
+                    <p class="fs-6 mb-0 fw-semibold text-secondary">Care Support</p>
+                </div>
             </div>
         </div>
     </div>
 </section>
 
 <script>
-document.addEventListener("DOMContentLoaded", () => {
+// Use an IIFE or window load to ensure it runs even if DOMContentLoaded already fired (sometimes an issue in dynamic includes)
+window.addEventListener('load', function() {
     const counters = document.querySelectorAll('.counter');
-    const speed = 50;
+    const animationDuration = 2000; // 2 seconds
 
     const animateCounters = () => {
         counters.forEach(counter => {
-            const updateCount = () => {
-                const target = +counter.getAttribute('data-target');
-                const count = +counter.innerText;
+            const target = +counter.getAttribute('data-target');
+            const startTime = performance.now();
+            
+            const updateCount = (currentTime) => {
+                const elapsedTime = currentTime - startTime;
+                const progress = Math.min(elapsedTime / animationDuration, 1);
                 
-                // Calculate increment size
-                const increment = target / speed;
+                // easeOutQuart easing function
+                const easeOut = 1 - Math.pow(1 - progress, 4);
+                
+                const currentCount = Math.floor(easeOut * target);
+                counter.innerText = currentCount;
 
-                if (count < target) {
-                    counter.innerText = Math.ceil(count + increment);
-                    setTimeout(updateCount, 30);
+                if (progress < 1) {
+                    requestAnimationFrame(updateCount);
                 } else {
                     counter.innerText = target;
                 }
             };
-            updateCount();
+            requestAnimationFrame(updateCount);
         });
     };
 
     const observerOptions = {
         root: null,
         rootMargin: '0px',
-        threshold: 0.3
+        threshold: 0.1
     };
 
     const observer = new IntersectionObserver((entries, observer) => {
@@ -68,6 +82,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const achievementsSection = document.querySelector('.achievements-section');
     if (achievementsSection) {
         observer.observe(achievementsSection);
+    } else {
+        // Fallback if section is somehow not found by observer
+        animateCounters();
     }
 });
 </script>
