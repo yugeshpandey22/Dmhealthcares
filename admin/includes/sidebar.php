@@ -20,6 +20,11 @@
                     <i class="fa-solid fa-calendar-check"></i> Appointments
                 </a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link rounded-3 px-3 py-2 fw-semibold d-flex align-items-center gap-3 transition <?= basename($_SERVER['PHP_SELF']) == 'job_applications.php' ? 'active-link' : 'inactive-link' ?>" href="job_applications.php">
+                    <i class="fa-solid fa-briefcase"></i> Job Applications
+                </a>
+            </li>
             
             <!-- Dynamic Categories from Database -->
             <?php
