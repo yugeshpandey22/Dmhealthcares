@@ -1,8 +1,16 @@
 <style>
     .hero-banner-img {
         width: 100%;
-        height: auto; /* Let it scale naturally to show the full image */
+        height: auto;
+        aspect-ratio: 21/9;
+        object-fit: cover;
         display: block;
+        background-color: #f8f9fa; /* Placeholder color while loading */
+    }
+    @media (max-width: 768px) {
+        .hero-banner-img {
+            aspect-ratio: 16/9; /* Taller on mobile */
+        }
     }
 </style>
 <section id="home">
@@ -14,13 +22,13 @@
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="assets/images/banner1.jpg" class="d-block hero-banner-img" alt="Banner 1">
+          <img src="assets/images/banner1.jpg" class="d-block hero-banner-img" alt="Banner 1" fetchpriority="high">
         </div>
         <div class="carousel-item">
-          <img src="assets/images/banner2.jpg" class="d-block hero-banner-img" alt="Banner 2">
+          <img src="assets/images/banner2.jpg" class="d-block hero-banner-img" alt="Banner 2" loading="lazy" decoding="async">
         </div>
         <div class="carousel-item">
-          <img src="assets/images/banner3.jpg" class="d-block hero-banner-img" alt="Banner 3">
+          <img src="assets/images/banner3.jpg" class="d-block hero-banner-img" alt="Banner 3" loading="lazy" decoding="async">
         </div>
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
