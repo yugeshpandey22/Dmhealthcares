@@ -238,7 +238,7 @@ $display_title = $page_data ? $page_data['title'] : ucwords(str_replace('-', ' '
 
                 <!-- Main Image Area -->
                 <div class="col-lg-5 order-1 order-lg-2">
-                    <div class="position-sticky" style="top: 100px;">
+                    <div class="mb-4">
                         <img src="<?= htmlspecialchars($display_image) ?>" alt="Service Image" class="img-fluid rounded-4 shadow-lg w-100 border border-3 border-white" onerror="this.src='assets/images/home-dialysis.jpg'">
                         
                         <div class="contact-card mt-4 p-4 text-center">
@@ -252,6 +252,22 @@ $display_title = $page_data ? $page_data['title'] : ucwords(str_replace('-', ' '
                             </a>
                         </div>
                     </div>
+
+                    <!-- Image Gallery Moved to Right Column -->
+                    <?php if(!empty($gallery_images)): ?>
+                    <div class="mt-4 pt-3 border-top">
+                        <h5 class="fw-bold mb-4 text-dark"><i class="fa-solid fa-images text-primary me-2"></i> Image Gallery</h5>
+                        <div class="row g-3">
+                            <?php foreach($gallery_images as $img): ?>
+                                <div class="col-6">
+                                    <div class="overflow-hidden rounded-3 shadow-sm position-relative group">
+                                        <img src="<?= htmlspecialchars($img) ?>" class="gallery-img w-100" alt="Gallery Image" style="height: 150px; object-fit: cover; transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                                    </div>
+                                </div>
+                            <?php endforeach; ?>
+                        </div>
+                    </div>
+                    <?php endif; ?>
                 </div>
             </div>
             <?php endif; ?>
@@ -261,21 +277,7 @@ $display_title = $page_data ? $page_data['title'] : ucwords(str_replace('-', ' '
                 <?= $frontend_custom_sections ?>
             <?php endif; ?>
 
-            <!-- Image Gallery -->
-            <?php if(!empty($gallery_images)): ?>
-            <div class="mt-5 pt-5 border-top">
-                <h3 class="fw-bold text-center mb-5 text-dark">Image Gallery</h3>
-                <div class="row g-4">
-                    <?php foreach($gallery_images as $img): ?>
-                        <div class="col-md-4 col-sm-6">
-                            <div class="overflow-hidden rounded-4 shadow-sm position-relative group">
-                                <img src="<?= htmlspecialchars($img) ?>" class="gallery-img w-100" alt="Gallery Image" style="height: 250px; object-fit: cover; transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
-                            </div>
-                        </div>
-                    <?php endforeach; ?>
-                </div>
-            </div>
-            <?php endif; ?>
+
 
         </div>
     </div>
