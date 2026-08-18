@@ -179,7 +179,11 @@ $display_title = $page_data ? $page_data['title'] : ucwords(str_replace('-', ' '
     <?php else: ?>
     <div class="content-section">
         <div class="container">
-            <?php if(!isset($hide_default_welcome) || !$hide_default_welcome): ?>
+            <?php 
+                $has_backend_content = !empty($custom_content) || !empty($specs) || !empty($gallery_images);
+                $should_show_top_section = $has_backend_content || (!isset($hide_default_welcome) || !$hide_default_welcome);
+            ?>
+            <?php if($should_show_top_section): ?>
             <div class="row mb-5">
                 <!-- Content Area -->
                 <div class="col-lg-7 order-2 order-lg-1 pe-lg-5 mt-4 mt-lg-0">
@@ -189,7 +193,7 @@ $display_title = $page_data ? $page_data['title'] : ucwords(str_replace('-', ' '
                         <div class="rich-text-content mb-5 bg-white p-4 p-lg-5 rounded-4 shadow-sm border border-light">
                             <?= $custom_content // Already safe HTML from TinyMCE ?>
                         </div>
-                    <?php else: ?>
+                    <?php elseif(!isset($hide_default_welcome) || !$hide_default_welcome): ?>
                         <div class="bg-white p-4 p-lg-5 rounded-4 shadow-sm border border-light mb-5">
                             <h3 class="fw-bold mb-3 text-dark">Comprehensive Healthcare Services in <?= htmlspecialchars($display_title) ?></h3>
                             <p class="text-muted lead mb-4">
