@@ -41,7 +41,7 @@
                 <!-- Clean Logo -->
                 <a class="navbar-brand logo p-0 d-flex align-items-center" href="index.php" style="margin-top: -10px; margin-bottom: -10px; text-decoration: none;">
                     <!-- Logo Icon -->
-                    <img src="assets/images/logo.png" alt="DmHealthcare Logo Icon" style="height: 85px; width: auto; object-fit: contain;">
+                    <img src="assets/images/logo.png?v=<?= time() ?>" alt="DmHealthcare Logo Icon" style="height: 85px; width: auto; object-fit: contain;">
                     
                     <!-- Logo Typography -->
                     <div class="d-flex flex-column justify-content-center" style="line-height: 1.1; margin-left: -25px; position: relative; z-index: 1;">
