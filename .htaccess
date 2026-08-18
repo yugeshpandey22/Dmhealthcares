@@ -5,6 +5,10 @@ RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
 # If the request is not a valid directory
 RewriteCond %{REQUEST_FILENAME} !-d
+
+# Sitemap rewrite rule
+RewriteRule ^sitemap\.xml$ sitemap.php [L]
+
 # Rewrite to page.php?title=...
 RewriteRule ^(.*)$ page.php?title=$1 [L,QSA]
 </IfModule>
