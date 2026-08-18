@@ -199,12 +199,16 @@
                                 </li>
                             <?php else: ?>
                                 <li class="nav-item dropdown">
-                                    <?php if (strtolower($cat['name']) === 'blood checkup'): ?>
+                                    <?php 
+                                        $is_blood_checkup = (strtolower($cat['name']) === 'blood checkup' || strtolower($cat['name']) === 'blood donation');
+                                        $display_name = $is_blood_checkup ? 'Blood Checkup' : $cat['name'];
+                                    ?>
+                                    <?php if ($is_blood_checkup): ?>
                                         <a class="nav-link dropdown-toggle text-white fw-bold text-uppercase px-3 ms-2 shadow-sm" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: #e63946; border-radius: 5px; padding: 8px 15px !important; align-self: center; font-size: 14px;">
                                     <?php else: ?>
                                         <a class="nav-link dropdown-toggle text-dark text-uppercase px-3" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     <?php endif; ?>
-                                        <?= htmlspecialchars($cat['name']) ?>
+                                        <?= htmlspecialchars($display_name) ?>
                                         <?php if (isset($grouped_items[$cat['id']]) && count($grouped_items[$cat['id']]) > 0): ?>
                                             <i class="fa-solid fa-chevron-down ms-1" style="font-size: 0.8em;"></i>
                                         <?php endif; ?>
@@ -212,6 +216,7 @@
                                     <ul class="dropdown-menu border-0 shadow-sm rounded-3">
                                         <?php if (isset($grouped_items[$cat['id']]) && count($grouped_items[$cat['id']]) > 0): ?>
                                             <?php foreach ($grouped_items[$cat['id']] as $nav_item): ?>
+                                                <?php if ($nav_item['id'] == 53) continue; ?>
                                                 <li><a class="dropdown-item py-2" href="<?= htmlspecialchars($nav_item['link']) ?>"><?= htmlspecialchars($nav_item['title']) ?></a></li>
                                             <?php endforeach; ?>
                                         <?php else: ?>
