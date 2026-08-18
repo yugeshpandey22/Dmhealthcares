@@ -200,7 +200,7 @@
                             <?php else: ?>
                                 <li class="nav-item dropdown">
                                     <?php 
-                                        $is_blood_checkup = (strtolower($cat['name']) === 'blood checkup' || strtolower($cat['name']) === 'blood donation');
+                                        $is_blood_checkup = (stripos($cat['name'], 'blood') !== false);
                                         $display_name = $is_blood_checkup ? 'Blood Checkup' : $cat['name'];
                                     ?>
                                     <?php if ($is_blood_checkup): ?>
