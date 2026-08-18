@@ -36,6 +36,12 @@ $display_title = $page_data ? $page_data['title'] : ucwords(str_replace('-', ' '
 
 <style>
     body { font-family: 'Inter', sans-serif; background-color: #f8fafd; }
+    
+    /* Ensure user-pasted HTML tables don't break the layout */
+    .rich-text-content { overflow-x: auto; max-width: 100%; word-break: break-word; }
+    .rich-text-content table { width: 100% !important; min-width: auto !important; }
+    .rich-text-content img { max-width: 100%; height: auto; }
+
     .page-header {
         background: <?= $banner_image ? "url('".htmlspecialchars($banner_image)."')" : "linear-gradient(135deg, #0A5BFF 0%, #0036a8 100%)" ?>;
         background-size: cover;
@@ -245,6 +251,39 @@ $display_title = $page_data ? $page_data['title'] : ucwords(str_replace('-', ' '
                     <div class="mb-4">
                         <img src="<?= htmlspecialchars($display_image) ?>" alt="Service Image" class="img-fluid rounded-4 shadow-lg w-100 border border-3 border-white" onerror="this.src='assets/images/home-dialysis.jpg'">
                         
+                        <!-- Image Gallery Slider Moved ABOVE Contact Card -->
+                        <?php if(!empty($gallery_images)): ?>
+                        <div class="mt-4">
+                            <h5 class="fw-bold mb-3 text-dark"><i class="fa-solid fa-camera-retro text-primary me-2"></i> Service Gallery</h5>
+                            
+                            <div id="serviceGalleryCarousel" class="carousel slide shadow-lg rounded-4 overflow-hidden border border-2 border-white" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <?php foreach($gallery_images as $index => $img): ?>
+                                        <div class="carousel-item <?= $index === 0 ? 'active' : '' ?>">
+                                            <img src="<?= htmlspecialchars($img) ?>" class="d-block w-100" alt="Gallery Image <?= $index + 1 ?>" style="height: 280px; object-fit: cover;">
+                                        </div>
+                                    <?php endforeach; ?>
+                                </div>
+                                
+                                <?php if(count($gallery_images) > 1): ?>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#serviceGalleryCarousel" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon rounded-circle shadow" aria-hidden="true" style="background-color: rgba(0,0,0,0.6); background-size: 50%;"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#serviceGalleryCarousel" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon rounded-circle shadow" aria-hidden="true" style="background-color: rgba(0,0,0,0.6); background-size: 50%;"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                                <div class="carousel-indicators mb-2">
+                                    <?php foreach($gallery_images as $index => $img): ?>
+                                        <button type="button" data-bs-target="#serviceGalleryCarousel" data-bs-slide-to="<?= $index ?>" class="<?= $index === 0 ? 'active' : '' ?>" aria-current="<?= $index === 0 ? 'true' : 'false' ?>" aria-label="Slide <?= $index + 1 ?>" style="width: 8px; height: 8px; border-radius: 50%; background-color: #fff;"></button>
+                                    <?php endforeach; ?>
+                                </div>
+                                <?php endif; ?>
+                            </div>
+                        </div>
+                        <?php endif; ?>
+
                         <div class="contact-card mt-4 p-4 text-center">
                             <div class="bg-primary rounded-circle d-flex align-items-center justify-content-center mx-auto mb-3 shadow" style="width: 60px; height: 60px;">
                                 <i class="fa-solid fa-headset text-white fs-4"></i>
@@ -256,39 +295,6 @@ $display_title = $page_data ? $page_data['title'] : ucwords(str_replace('-', ' '
                             </a>
                         </div>
                     </div>
-
-                    <!-- Image Gallery Slider -->
-                    <?php if(!empty($gallery_images)): ?>
-                    <div class="mt-4 pt-4 border-top">
-                        <h5 class="fw-bold mb-4 text-dark"><i class="fa-solid fa-camera-retro text-primary me-2"></i> Service Gallery</h5>
-                        
-                        <div id="serviceGalleryCarousel" class="carousel slide shadow-lg rounded-4 overflow-hidden border border-2 border-white" data-bs-ride="carousel">
-                            <div class="carousel-inner">
-                                <?php foreach($gallery_images as $index => $img): ?>
-                                    <div class="carousel-item <?= $index === 0 ? 'active' : '' ?>">
-                                        <img src="<?= htmlspecialchars($img) ?>" class="d-block w-100" alt="Gallery Image <?= $index + 1 ?>" style="height: 280px; object-fit: cover;">
-                                    </div>
-                                <?php endforeach; ?>
-                            </div>
-                            
-                            <?php if(count($gallery_images) > 1): ?>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#serviceGalleryCarousel" data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon rounded-circle shadow" aria-hidden="true" style="background-color: rgba(0,0,0,0.6); background-size: 50%;"></span>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#serviceGalleryCarousel" data-bs-slide="next">
-                                <span class="carousel-control-next-icon rounded-circle shadow" aria-hidden="true" style="background-color: rgba(0,0,0,0.6); background-size: 50%;"></span>
-                                <span class="visually-hidden">Next</span>
-                            </button>
-                            <div class="carousel-indicators mb-2">
-                                <?php foreach($gallery_images as $index => $img): ?>
-                                    <button type="button" data-bs-target="#serviceGalleryCarousel" data-bs-slide-to="<?= $index ?>" class="<?= $index === 0 ? 'active' : '' ?>" aria-current="<?= $index === 0 ? 'true' : 'false' ?>" aria-label="Slide <?= $index + 1 ?>" style="width: 8px; height: 8px; border-radius: 50%; background-color: #fff;"></button>
-                                <?php endforeach; ?>
-                            </div>
-                            <?php endif; ?>
-                        </div>
-                    </div>
-                    <?php endif; ?>
                 </div>
             </div>
             <?php endif; ?>
