@@ -4,7 +4,8 @@
                 
                 <!-- Column 1: Logo & Info -->
                 <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-                    <a href="index.php" class="d-flex align-items-center bg-white rounded-3 px-3 py-2" style="margin-bottom: 1.5rem; text-decoration: none; width: fit-content;">
+                    <?php $home_link = (strpos($_SERVER['HTTP_HOST'] ?? '', 'localhost') !== false || strpos($_SERVER['HTTP_HOST'] ?? '', '127.0.0.1') !== false) ? '/DmHealthcare/' : '/'; ?>
+                    <a href="<?= $home_link ?>" class="d-flex align-items-center bg-white rounded-3 px-3 py-2" style="margin-bottom: 1.5rem; text-decoration: none; width: fit-content;">
                         <!-- Logo Icon -->
                         <img src="assets/images/logo.png" alt="DmHealthcare Logo Icon" loading="lazy" style="height: 65px; width: auto; object-fit: contain;">
                         

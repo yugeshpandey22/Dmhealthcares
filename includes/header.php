@@ -38,7 +38,8 @@
         <div class="bg-white py-1 px-4 shadow-sm" style="z-index: 10;">
             <div class="container-fluid d-flex justify-content-between align-items-center">
                 <!-- Clean Logo -->
-                <a class="navbar-brand logo p-0 d-flex align-items-center" href="index.php" style="margin-top: -10px; margin-bottom: -10px; text-decoration: none;">
+                <?php $home_link = (strpos($_SERVER['HTTP_HOST'] ?? '', 'localhost') !== false || strpos($_SERVER['HTTP_HOST'] ?? '', '127.0.0.1') !== false) ? '/DmHealthcare/' : '/'; ?>
+                <a class="navbar-brand logo p-0 d-flex align-items-center" href="<?= $home_link ?>" style="margin-top: -10px; margin-bottom: -10px; text-decoration: none;">
                     <!-- Logo Icon -->
                     <img src="assets/images/logo.png" alt="DmHealthcare Logo Icon" style="height: 85px; width: auto; object-fit: contain;">
                     
