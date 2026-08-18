@@ -199,7 +199,7 @@
                                 </li>
                             <?php else: ?>
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle text-dark text-uppercase px-3" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <a class="nav-link dropdown-toggle text-uppercase px-3 <?= (strtolower($cat['name']) === 'blood checkup') ? 'text-danger fw-bold' : 'text-dark' ?>" <?= (strtolower($cat['name']) === 'blood checkup') ? 'style="color: red !important;"' : '' ?> href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                         <?= htmlspecialchars($cat['name']) ?>
                                         <?php if (isset($grouped_items[$cat['id']]) && count($grouped_items[$cat['id']]) > 0): ?>
                                             <i class="fa-solid fa-chevron-down ms-1" style="font-size: 0.8em;"></i>
