@@ -19,7 +19,7 @@
     <!-- Bootstrap CSS for Carousel -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="<?= defined('BASE_URL') ? BASE_URL : '/' ?>assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <style>
         /* Make dropdowns open on hover for desktop */
         @media all and (min-width: 992px) {
@@ -39,9 +39,9 @@
         <div class="bg-white py-1 px-4 shadow-sm" style="z-index: 10;">
             <div class="container-fluid d-flex justify-content-between align-items-center">
                 <!-- Clean Logo -->
-                <a class="navbar-brand logo p-0 d-flex align-items-center" href="<?= defined('BASE_URL') ? BASE_URL : '/' ?>index.php" style="margin-top: -10px; margin-bottom: -10px; text-decoration: none;">
+                <a class="navbar-brand logo p-0 d-flex align-items-center" href="index.php" style="margin-top: -10px; margin-bottom: -10px; text-decoration: none;">
                     <!-- Logo Icon -->
-                    <img src="<?= defined('BASE_URL') ? BASE_URL : '/' ?>assets/images/logo.png" alt="DmHealthcare Logo Icon" style="height: 85px; width: auto; object-fit: contain;">
+                    <img src="assets/images/logo.png" alt="DmHealthcare Logo Icon" style="height: 85px; width: auto; object-fit: contain;">
                     
                     <!-- Logo Typography -->
                     <div class="d-flex flex-column justify-content-center" style="line-height: 1.1; margin-left: -25px; position: relative; z-index: 1;">
