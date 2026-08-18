@@ -32,3 +32,4 @@ try {
 } catch (PDOException $e) {
     die("Database Connection failed: " . $e->getMessage());
 }
+// Force push for GitHub Actions
