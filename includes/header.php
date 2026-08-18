@@ -200,7 +200,7 @@
                             <?php else: ?>
                                 <li class="nav-item dropdown">
                                     <?php if (strtolower($cat['name']) === 'blood checkup'): ?>
-                                        <a class="nav-link dropdown-toggle text-white fw-bold text-uppercase px-3 ms-2 shadow-sm d-flex align-items-center justify-content-center" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: #e63946; border-radius: 6px; padding-top: 8px; padding-bottom: 8px; line-height: 1;">
+                                        <a class="nav-link dropdown-toggle text-white fw-bold text-uppercase px-3 ms-2 shadow-sm" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: #e63946; border-radius: 5px; padding: 8px 15px !important; align-self: center; font-size: 14px;">
                                     <?php else: ?>
                                         <a class="nav-link dropdown-toggle text-dark text-uppercase px-3" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     <?php endif; ?>
