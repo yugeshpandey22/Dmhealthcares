@@ -10,12 +10,14 @@ if ($is_localhost) {
     $username = "root";
     $password = "";
     $dbname = "dm_healthcare"; // Updated local database name
+    define('BASE_URL', '/DmHealthcare/');
 } else {
     // Live database credentials
     $host = "localhost";
     $username = "dmhealth1_healthcare";
     $password = "Admin@123";
     $dbname = "dmhealth1_dm_healthcare";
+    define('BASE_URL', '/');
 }
 
 try {
