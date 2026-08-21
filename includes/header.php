@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="KMZGSRjIT760bemoBIWp27Ys4M_zrjIGPZrulcFcsLI" />
     <title><?= isset($seo_title) ? htmlspecialchars($seo_title) : 'DmHealthcare - Professional Home Care Services' ?></title>
     <?php if(isset($seo_desc)): ?>
     <meta name="description" content="<?= htmlspecialchars($seo_desc) ?>">
