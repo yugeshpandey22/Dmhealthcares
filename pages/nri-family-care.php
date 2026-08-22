@@ -6,7 +6,7 @@ $frontend_custom_sections = '
 
 <style>
 :root {
-    --primary-color: #0A5BFF;
+    --primary-color: #E5252A;
     --dark-bg: #1e293b;
     --light-bg: #f8fafc;
     --border-color: rgba(0,0,0,0.08);
@@ -25,13 +25,13 @@ $frontend_custom_sections = '
 }
 .service-card:hover {
     transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(10, 91, 255, 0.1);
+    box-shadow: 0 10px 20px rgba(229, 37, 42, 0.1);
     border-color: var(--primary-color);
 }
 .service-icon {
     width: 50px;
     height: 50px;
-    background: rgba(10, 91, 255, 0.1);
+    background: rgba(229, 37, 42, 0.1);
     color: var(--primary-color);
     border-radius: 50%;
     display: flex;

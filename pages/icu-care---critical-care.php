@@ -7,7 +7,7 @@ $frontend_custom_sections = '
 <style>
 /* HDU Inspired Theme */
 .hdu-hero {
-    background: linear-gradient(135deg, #0A5BFF 0%, #0036a8 100%);
+    background: linear-gradient(135deg, #1E293B 0%, #0F172A 100%);
     color: white;
     padding: 80px 0;
     position: relative;
@@ -22,8 +22,8 @@ $frontend_custom_sections = '
     clip-path: polygon(0 100%, 100% 100%, 100% 0);
 }
 .hdu-trust-badge {
-    background: rgba(255,255,255,0.1);
-    border: 1px solid rgba(255,255,255,0.2);
+    background: rgba(229, 37, 42, 0.15);
+    border: 1px solid rgba(229, 37, 42, 0.3);
     padding: 8px 20px;
     border-radius: 50px;
     display: inline-flex;
@@ -32,6 +32,7 @@ $frontend_custom_sections = '
     font-size: 14px;
     font-weight: 600;
     margin-bottom: 30px;
+    color: #FF8082;
 }
 .hdu-callback-card {
     background: white;
@@ -51,14 +52,14 @@ $frontend_custom_sections = '
 }
 .hdu-feature-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
-    border-color: #0A5BFF;
+    box-shadow: 0 15px 30px rgba(229, 37, 42, 0.12);
+    border-color: var(--primary-color);
 }
 .hdu-icon-box {
     width: 60px;
     height: 60px;
-    background: rgba(10, 91, 255, 0.1);
-    color: #0A5BFF;
+    background: rgba(229, 37, 42, 0.1);
+    color: var(--primary-color);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -81,7 +82,7 @@ $frontend_custom_sections = '
                     We provide ICU beds, ventilators, monitors, and trained medical staff for critical care in the comfort of your home.
                 </p>
                 <div class="d-flex gap-3">
-                    <a href="tel:+918000000000" class="btn btn-light btn-lg text-primary fw-bold px-4 rounded-pill">
+                    <a href="tel:+919891989686" class="btn btn-primary btn-lg fw-bold px-4 rounded-pill">
                         <i class="fa-solid fa-phone me-2"></i> Call Us Now
                     </a>
                 </div>
@@ -109,7 +110,7 @@ $frontend_custom_sections = '
                                 <option>ICU Nurse Only</option>
                             </select>
                         </div>
-                        <button type="button" class="btn btn-primary btn-lg w-100 fw-bold">Request Callback</button>
+                        <button type="submit" class="btn btn-primary btn-lg w-100 fw-bold">Request Callback</button>
                     </form>
                 </div>
             </div>
@@ -122,7 +123,7 @@ $frontend_custom_sections = '
     <div class="container py-5">
         <div class="text-center mb-5 pb-3">
             <h2 class="fw-bold text-dark mb-3 display-6">Transforming Homes into Fully Equipped ICU Units</h2>
-            <div class="mx-auto mt-3 mb-4" style="width: 60px; height: 4px; background-color: #0A5BFF; border-radius: 2px;"></div>
+            <div class="mx-auto mt-3 mb-4" style="width: 60px; height: 4px; background-color: var(--primary-color); border-radius: 2px;"></div>
             <p class="text-muted mx-auto" style="max-width: 800px;">
                 We bring hospital-grade precision and comprehensive medical care directly to your living room. Here is what our ICU setup includes:
             </p>

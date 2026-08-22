@@ -3,36 +3,37 @@
         <div class="card border-0 shadow-lg overflow-hidden" style="border-radius: 20px;">
             <div class="row g-0">
                 <!-- Left Content -->
-                <div class="col-lg-5 text-white p-5 d-flex flex-column justify-content-center" style="background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); position: relative;">
+                <div class="col-lg-5 text-white p-5 d-flex flex-column justify-content-center" style="background: linear-gradient(135deg, #1E293B 0%, #0F172A 100%); position: relative;">
                     <!-- Pattern overlay -->
                     <div class="position-absolute top-0 start-0 w-100 h-100 opacity-10" style="background-image: radial-gradient(#fff 1px, transparent 1px); background-size: 20px 20px;"></div>
                     
                     <div class="position-relative z-1">
+                        <span class="text-uppercase fw-bold mb-2 d-inline-block px-3 py-1 rounded-pill" style="background: rgba(229, 37, 42, 0.2); color: #FF8082; font-size: 0.75rem; letter-spacing: 1px;">24/7 Home Healthcare</span>
                         <h2 class="fw-bold mb-3 display-6">Need Professional Home Healthcare?</h2>
                         <p class="fs-5 mb-4 text-light" style="opacity: 0.9;">Our medical experts are just a call away. Get immediate assistance for your loved ones.</p>
                         
-                        <div class="d-flex align-items-center mb-4 p-3 rounded" style="background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.2);">
-                            <div class="bg-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 50px; height: 50px;">
-                                <i class="fa-solid fa-phone fs-4" style="color: #0f172a;"></i>
+                        <div class="d-flex align-items-center mb-4 p-3 rounded" style="background: rgba(255, 255, 255, 0.08); backdrop-filter: blur(10px); border-left: 4px solid var(--primary-color);">
+                            <div class="bg-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 50px; height: 50px; min-width: 50px;">
+                                <i class="fa-solid fa-phone fs-4" style="color: var(--primary-color);"></i>
                             </div>
                             <div>
-                                <small class="text-uppercase text-light d-block fw-semibold mb-1" style="font-size: 11px; letter-spacing: 1px;">24/7 Emergency Helpline</small>
+                                <small class="text-uppercase text-light d-block fw-semibold mb-1" style="font-size: 11px; letter-spacing: 1px;">Emergency Helpline</small>
                                 <span class="fs-4 fw-bold text-white">+91-9891989686</span>
                             </div>
                         </div>
 
                         <div class="d-flex flex-column gap-3 mt-4">
                             <div class="d-flex align-items-center gap-3">
-                                <i class="fa-solid fa-check-circle text-success fs-5"></i>
-                                <span>Verified & Trained Caretakers</span>
+                                <i class="fa-solid fa-check-circle fs-5" style="color: var(--primary-color);"></i>
+                                <span>Verified & Certified Caretakers</span>
                             </div>
                             <div class="d-flex align-items-center gap-3">
-                                <i class="fa-solid fa-check-circle text-success fs-5"></i>
+                                <i class="fa-solid fa-check-circle fs-5" style="color: var(--primary-color);"></i>
                                 <span>Affordable & Transparent Pricing</span>
                             </div>
                             <div class="d-flex align-items-center gap-3">
-                                <i class="fa-solid fa-check-circle text-success fs-5"></i>
-                                <span>Fast Support System</span>
+                                <i class="fa-solid fa-check-circle fs-5" style="color: var(--primary-color);"></i>
+                                <span>Immediate 30-Min Response Time</span>
                             </div>
                         </div>
                     </div>
@@ -40,7 +41,7 @@
 
                 <!-- Right Form Content -->
                 <div class="col-lg-7 bg-white p-5">
-                    <h3 class="fw-bold mb-2" style="color: #0f172a;">Send an Enquiry</h3>
+                    <h3 class="fw-bold mb-2" style="color: var(--secondary-color);">Send an Enquiry</h3>
                     <p class="text-muted mb-4 pb-2 border-bottom">We will get back to you within 30 minutes.</p>
                     
                     <form action="backend/submit_appointment.php" method="POST" class="enquiry-form">
@@ -78,7 +79,7 @@
                                 </div>
                             </div>
                             <div class="col-12 mt-4 pt-2">
-                                <button type="submit" class="btn btn-dark btn-lg w-100 fw-bold shadow d-flex align-items-center justify-content-center gap-2" style="border-radius: 12px; padding: 15px;">
+                                <button type="submit" class="btn btn-primary btn-lg w-100 fw-bold shadow d-flex align-items-center justify-content-center gap-2" style="border-radius: 12px; padding: 15px;">
                                     Submit Enquiry <i class="fa-solid fa-paper-plane"></i>
                                 </button>
                             </div>
@@ -99,25 +100,14 @@
     
     .enquiry-form .form-control:focus, 
     .enquiry-form .form-select:focus {
-        box-shadow: 0 0 0 4px rgba(15, 23, 42, 0.1) !important;
+        box-shadow: 0 0 0 4px rgba(229, 37, 42, 0.15) !important;
         background-color: #fff !important;
-        border: 1px solid #0f172a !important;
+        border: 1px solid var(--primary-color) !important;
     }
 
     .enquiry-form label {
         color: #64748b;
         font-weight: 500;
         font-size: 0.95rem;
-    }
-
-    .enquiry-form .btn-dark {
-        background-color: #0f172a;
-        transition: all 0.3s ease;
-    }
-
-    .enquiry-form .btn-dark:hover {
-        background-color: #1e293b;
-        transform: translateY(-2px);
-        box-shadow: 0 10px 20px rgba(15, 23, 42, 0.2) !important;
     }
 </style>

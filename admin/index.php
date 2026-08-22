@@ -46,7 +46,7 @@ $recent_appointments = $stmt->fetchAll();
         }
         .stat-card::before {
             content: ''; position: absolute; top: 0; left: 0; width: 4px; height: 100%;
-            background: #0A5BFF; border-radius: 20px 0 0 20px;
+            background: #E5252A; border-radius: 20px 0 0 20px;
         }
         .stat-card.warning::before { background: #ffc107; }
         .stat-card:hover { transform: translateY(-5px); box-shadow: 0 15px 35px rgba(0,0,0,0.08); }

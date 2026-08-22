@@ -44,14 +44,14 @@ $seo_keywords = $display_title . ', ' . $display_title . ' at home, DmHealthcare
     .rich-text-content img { max-width: 100%; height: auto; }
 
     .page-header {
-        background: <?= $banner_image ? "url('".htmlspecialchars($banner_image)."')" : "linear-gradient(135deg, #0A5BFF 0%, #0036a8 100%)" ?>;
+        background: <?= $banner_image ? "url('".htmlspecialchars($banner_image)."')" : "linear-gradient(135deg, #1E293B 0%, #0F172A 100%)" ?>;
         background-size: cover;
         background-position: center;
         color: white;
         min-height: <?= $banner_image ? '400px' : '300px' ?>;
         text-align: center;
         position: relative;
-        border-bottom: 5px solid #ff7b00;
+        border-bottom: 5px solid var(--primary-color);
     }
     @media (max-width: 768px) {
         .page-header {
@@ -77,7 +77,7 @@ $seo_keywords = $display_title . ', ' . $display_title . ' at home, DmHealthcare
     
     /* Gradient Text for Headings */
     .gradient-text {
-        background: linear-gradient(135deg, #0A5BFF, #ff7b00);
+        background: linear-gradient(135deg, #E5252A, #9E0C1F);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         font-weight: 800;
@@ -104,8 +104,8 @@ $seo_keywords = $display_title . ', ' . $display_title . ' at home, DmHealthcare
     .contact-card {
         background: white;
         border-radius: 20px;
-        box-shadow: 0 15px 35px rgba(10, 91, 255, 0.08);
-        border-top: 4px solid #0A5BFF;
+        box-shadow: 0 15px 35px rgba(229, 37, 42, 0.08);
+        border-top: 4px solid var(--primary-color);
         transition: transform 0.3s ease;
     }
     .contact-card:hover {
@@ -122,7 +122,7 @@ $seo_keywords = $display_title . ', ' . $display_title . ' at home, DmHealthcare
     }
     .gallery-img:hover {
         transform: scale(1.05) translateY(-5px);
-        box-shadow: 0 15px 30px rgba(10,91,255,0.2);
+        box-shadow: 0 15px 30px rgba(229, 37, 42, 0.2);
     }
 </style>
 

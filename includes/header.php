@@ -224,7 +224,7 @@ $page_keywords_seo = isset($seo_keywords) && !empty($seo_keywords)
                                             <div class="row g-4 p-2">
                                                 <!-- Our Services Column -->
                                                 <div class="col-md-4">
-                                                    <h6 class="fw-bold text-dark pb-2 mb-3" style="border-bottom: 2px solid #0d6efd; display: inline-block; font-size: 14px;">OUR SERVICES</h6>
+                                                    <h6 class="fw-bold text-dark pb-2 mb-3" style="border-bottom: 2px solid var(--primary-color); display: inline-block; font-size: 14px;">OUR SERVICES</h6>
                                                     <ul class="list-unstyled" style="font-size: 13px;">
                                                         <?php
                                                         $home_items = isset($grouped_items[$cat['id']]) ? $grouped_items[$cat['id']] : [];
@@ -248,7 +248,7 @@ $page_keywords_seo = isset($seo_keywords) && !empty($seo_keywords)
 
                                                 <!-- Our Caregivers Column -->
                                                 <div class="col-md-4">
-                                                    <h6 class="fw-bold text-dark pb-2 mb-3" style="border-bottom: 2px solid #0d6efd; display: inline-block; font-size: 14px;">OUR CAREGIVERS</h6>
+                                                    <h6 class="fw-bold text-dark pb-2 mb-3" style="border-bottom: 2px solid var(--primary-color); display: inline-block; font-size: 14px;">OUR CAREGIVERS</h6>
                                                     <ul class="list-unstyled" style="font-size: 13px;">
                                                         <?php
                                                         for ($i = $services_count; $i < count($home_items); $i++) {
@@ -300,7 +300,7 @@ $page_keywords_seo = isset($seo_keywords) && !empty($seo_keywords)
                                         $display_name = $is_blood_checkup ? 'Blood Checkup' : $cat['name'];
                                     ?>
                                     <?php if ($is_blood_checkup): ?>
-                                        <a class="nav-link dropdown-toggle text-white fw-bold text-uppercase px-3 ms-2 shadow-sm" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: #e63946; border-radius: 5px; padding: 8px 15px !important; align-self: center; font-size: 14px;">
+                                        <a class="nav-link dropdown-toggle text-white fw-bold text-uppercase px-3 ms-2 shadow-sm" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: var(--primary-color); border-radius: 5px; padding: 8px 15px !important; align-self: center; font-size: 14px;">
                                     <?php else: ?>
                                         <a class="nav-link dropdown-toggle text-dark text-uppercase px-3" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     <?php endif; ?>

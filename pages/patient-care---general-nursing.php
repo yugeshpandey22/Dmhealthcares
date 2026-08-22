@@ -10,8 +10,8 @@ $frontend_custom_sections = '
 .transition-hover:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important; }
 .nursing-feature-icon {
     width: 60px; height: 60px;
-    background: rgba(10, 91, 255, 0.1);
-    color: #0A5BFF;
+    background: rgba(229, 37, 42, 0.1);
+    color: var(--primary-color);
     border-radius: 50%;
     display: flex; align-items: center; justify-content: center;
     font-size: 1.5rem;

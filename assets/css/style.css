@@ -1,11 +1,20 @@
 :root {
-  --primary-color: #0F3D6E; /* Deep Medical Blue */
-  --secondary-color: #139F95; /* Teal / Healthcare Green */
-  --accent-color: #FFB800; /* Warning/Action Yellow */
-  --text-dark: #2C3E50;
-  --text-light: #F8F9FA;
+  --primary-color: #E5252A; /* Crimson Medical Red from Logo */
+  --primary-hover: #C8102E; /* Deep Crimson */
+  --primary-dark: #9E0C1F;
+  --primary-soft: rgba(229, 37, 42, 0.08);
+  --primary-soft-border: rgba(229, 37, 42, 0.2);
+  --secondary-color: #1E293B; /* Charcoal Slate Dark from Logo Hand & Text */
+  --secondary-hover: #0F172A;
+  --accent-color: #E5252A;
+  --accent-gold: #F59E0B; /* Star ratings & warm badges */
+  --text-dark: #1E293B;
+  --text-muted: #64748B;
+  --text-light: #F8FAFC;
   --bg-light: #FFFFFF;
-  --bg-gray: #F4F7F6;
+  --bg-gray: #F8FAFC;
+  --bg-subtle-red: #FFF5F5;
+  --border-color: #E2E8F0;
   --font-family: 'Inter', sans-serif;
   --transition: all 0.3s ease;
 }
@@ -34,29 +43,74 @@ ul {
   list-style: none;
 }
 
-
-
+/* ==========================================================================
+   Bootstrap Global Overrides for Brand Theme
+   ========================================================================== */
 .btn-primary {
-  background: var(--primary-color);
-  color: var(--text-light);
+  background-color: var(--primary-color) !important;
+  border-color: var(--primary-color) !important;
+  color: #ffffff !important;
+  padding: 0.65rem 1.6rem;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: var(--transition);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+  background-color: var(--primary-hover) !important;
+  border-color: var(--primary-hover) !important;
+  color: #ffffff !important;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(229, 37, 42, 0.35) !important;
+}
+
+.btn-outline-primary {
+  background: transparent;
+  color: var(--primary-color) !important;
+  border: 2px solid var(--primary-color) !important;
   padding: 0.6rem 1.5rem;
   border-radius: 50px;
   font-weight: 600;
   transition: var(--transition);
-  border: none;
-  cursor: pointer;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
 }
 
-.btn-primary:hover {
-  background: var(--secondary-color);
+.btn-outline-primary:hover, .btn-outline-primary:focus, .btn-outline-primary:active {
+  background-color: var(--primary-color) !important;
+  border-color: var(--primary-color) !important;
+  color: #ffffff !important;
   transform: translateY(-2px);
-  box-shadow: 0 4px 10px rgba(23, 162, 184, 0.4);
+  box-shadow: 0 6px 18px rgba(229, 37, 42, 0.25) !important;
+}
+
+.text-primary {
+  color: var(--primary-color) !important;
+}
+
+.bg-primary {
+  background-color: var(--primary-color) !important;
+}
+
+.border-primary {
+  border-color: var(--primary-color) !important;
+}
+
+.bg-primary.bg-opacity-10 {
+  background-color: rgba(229, 37, 42, 0.08) !important;
+  color: var(--primary-color) !important;
 }
 
 /* Hero Section */
 .hero-section {
-  background: linear-gradient(135deg, rgba(0,123,255,0.1) 0%, rgba(23,162,184,0.1) 100%);
+  background: linear-gradient(135deg, rgba(229, 37, 42, 0.04) 0%, rgba(30, 41, 59, 0.04) 100%);
   padding: 6rem 5%;
   display: flex;
   align-items: center;
@@ -72,13 +126,13 @@ ul {
   font-size: 3.5rem;
   font-weight: 800;
   margin-bottom: 1.5rem;
-  color: #1a2b4c;
+  color: var(--secondary-color);
 }
 
 .hero-content p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
-  color: #555;
+  color: var(--text-muted);
 }
 
 .hero-buttons {
@@ -99,7 +153,7 @@ ul {
 
 .btn-outline:hover {
   background: var(--primary-color);
-  color: var(--text-light);
+  color: #ffffff;
 }
 
 /* Services */
@@ -113,11 +167,11 @@ ul {
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 1rem;
-  color: #1a2b4c;
+  color: var(--secondary-color);
 }
 
 .section-subtitle {
-  color: #666;
+  color: var(--text-muted);
   margin-bottom: 3rem;
   font-size: 1.1rem;
 }
@@ -130,16 +184,16 @@ ul {
 
 .service-card {
   background: var(--bg-light);
-  border: 1px solid #eee;
+  border: 1px solid var(--border-color);
   border-radius: 15px;
   padding: 2rem;
   transition: var(--transition);
-  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.03);
 }
 
 .service-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 15px 30px rgba(0,123,255,0.15);
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(229, 37, 42, 0.12);
   border-color: var(--primary-color);
 }
 
@@ -149,14 +203,15 @@ ul {
   margin-bottom: 1.5rem;
 }
 
-.service-card h3 {
-  font-size: 1.5rem;
+.service-card h3, .service-card h4 {
+  font-size: 1.4rem;
   margin-bottom: 1rem;
-  color: #222;
+  color: var(--secondary-color);
+  font-weight: 700;
 }
 
 .service-card p {
-  color: #666;
+  color: var(--text-muted);
 }
 
 /* Why Choose Us */
@@ -194,13 +249,13 @@ ul {
 
 /* CTA Banner */
 .cta-section {
-  background: linear-gradient(135deg, rgba(10,10,10,0.85) 0%, rgba(28,28,28,0.85) 100%), url('../images/cta_banner_bg.png') center/cover no-repeat;
+  background: linear-gradient(135deg, rgba(30, 41, 59, 0.95) 0%, rgba(15, 23, 42, 0.95) 100%);
   color: var(--text-light);
   padding: 4rem 5%;
   text-align: center;
   margin: 4rem 5%;
   border-radius: 20px;
-  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.25);
 }
 
 .cta-section h2 {
@@ -210,15 +265,19 @@ ul {
 }
 
 .cta-section .btn-primary {
-  background: white;
-  color: var(--primary-color);
-  font-size: 1.2rem;
-  padding: 1rem 2.5rem;
+  background: var(--primary-color) !important;
+  color: white !important;
+  font-size: 1.1rem;
+  padding: 0.9rem 2.2rem;
+}
+
+.cta-section .btn-primary:hover {
+  background: var(--primary-hover) !important;
 }
 
 /* Footer */
 .main-footer {
-  background: #1a2b4c;
+  background: #111827;
   color: white;
   padding: 4rem 5% 2rem;
 }
@@ -230,10 +289,11 @@ ul {
   margin-bottom: 3rem;
 }
 
-.footer-col h4 {
+.footer-col h4, .footer-col h5 {
   font-size: 1.2rem;
   margin-bottom: 1.5rem;
-  color: var(--secondary-color);
+  color: #FFFFFF;
+  font-weight: 700;
 }
 
 .footer-col ul li {
@@ -241,19 +301,19 @@ ul {
 }
 
 .footer-col ul li a {
-  color: #ccc;
+  color: #9CA3AF;
   transition: var(--transition);
 }
 
 .footer-col ul li a:hover {
-  color: white;
+  color: var(--primary-color);
 }
 
 .footer-bottom {
   text-align: center;
   padding-top: 2rem;
   border-top: 1px solid rgba(255,255,255,0.1);
-  color: #ccc;
+  color: #9CA3AF;
 }
 
 /* Responsive */
@@ -266,7 +326,7 @@ ul {
     max-width: 100%;
   }
   .nav-links {
-    display: none; /* Mobile menu logic can be added later */
+    display: none;
   }
   .hero-buttons {
     justify-content: center;
@@ -309,7 +369,7 @@ ul {
 }
 
 .navbar-nav .nav-link {
-  color: #333 !important;
+  color: #1E293B !important;
   font-weight: 600;
   font-size: 13px;
   letter-spacing: 0.5px;
@@ -341,10 +401,10 @@ ul {
 /* Dropdown Menu Styling */
 .dropdown-menu {
   border: none;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  border-radius: 12px;
   padding: 10px 0;
-  margin-top: 15px; /* Creates a small gap */
+  margin-top: 10px;
   transition: all 0.3s ease;
 }
 
@@ -352,17 +412,17 @@ ul {
   font-size: 14px;
   font-weight: 500;
   padding: 8px 20px;
-  color: #444;
+  color: #334155;
   transition: all 0.2s ease;
 }
 
 .dropdown-item:hover {
-  background-color: rgba(0,123,255,0.05);
+  background-color: var(--bg-subtle-red);
   color: var(--primary-color);
-  padding-left: 25px; /* Slight indent on hover */
+  padding-left: 24px;
 }
 
-/* Show dropdown on hover (optional but feels premium) */
+/* Show dropdown on hover */
 @media (min-width: 1200px) {
   .dropdown:hover .dropdown-menu {
     display: block;
@@ -371,6 +431,6 @@ ul {
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(10px); }
+  from { opacity: 0; transform: translateY(8px); }
   to { opacity: 1; transform: translateY(0); }
 }

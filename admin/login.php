@@ -39,7 +39,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <style>
         body {
             font-family: 'Outfit', sans-serif;
-            background: linear-gradient(rgba(10, 91, 255, 0.6), rgba(0, 31, 96, 0.8)), url('../assets/images/downloaded_img_14.jpg') no-repeat center center/cover;
+            background: linear-gradient(rgba(15, 23, 42, 0.85), rgba(229, 37, 42, 0.75)), url('../assets/images/downloaded_img_14.jpg') no-repeat center center/cover;
             display: flex; align-items: center; justify-content: center; height: 100vh;
             margin: 0;
             position: relative;
@@ -66,16 +66,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             background: #f8fafd; transition: 0.3s;
         }
         .form-control:focus {
-            box-shadow: 0 0 0 4px rgba(10, 91, 255, 0.1); border-color: #0A5BFF; background: white;
+            box-shadow: 0 0 0 4px rgba(229, 37, 42, 0.15); border-color: #E5252A; background: white;
         }
         .btn-login {
-            background: linear-gradient(90deg, #0A5BFF, #0043c9);
+            background: linear-gradient(90deg, #E5252A, #B91C1C);
             border: none; border-radius: 12px; padding: 14px;
             font-weight: 600; letter-spacing: 0.5px;
             transition: 0.3s;
         }
         .btn-login:hover {
-            transform: translateY(-2px); box-shadow: 0 8px 20px rgba(10, 91, 255, 0.3);
+            transform: translateY(-2px); box-shadow: 0 8px 20px rgba(229, 37, 42, 0.35);
         }
     </style>
 </head>
@@ -86,8 +86,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <div class="col-md-5 col-lg-4">
             <div class="card login-card p-5">
                 <div class="text-center mb-4">
-                    <div class="bg-primary bg-opacity-10 rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
-                        <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#0A5BFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                    <div class="rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px; background: rgba(229, 37, 42, 0.1);">
+                        <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#E5252A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
                     </div>
                     <h3 class="fw-bold" style="color: #1a2b4c;">Admin Portal</h3>
                     <p class="text-muted small">Sign in to manage DM Healthcare</p>

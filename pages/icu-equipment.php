@@ -6,7 +6,7 @@ $frontend_custom_sections = '
 
 <style>
 :root {
-    --primary-blue: #0A5BFF;
+    --primary-blue: #E5252A;
     --dark-blue: #0f172a;
     --light-bg: #f8fafc;
     --border-color: rgba(0,0,0,0.05);
@@ -18,7 +18,7 @@ body {
 
 /* Hero Section */
 .icu-hero {
-    background: linear-gradient(rgba(15, 23, 42, 0.8), rgba(10, 91, 255, 0.8)), url("assets/images/icu-room-bg.jpg") center/cover no-repeat;
+    background: linear-gradient(rgba(15, 23, 42, 0.85), rgba(229, 37, 42, 0.85)), url("assets/images/icu-room-bg.jpg") center/cover no-repeat;
     color: white;
     padding: 100px 0;
     position: relative;

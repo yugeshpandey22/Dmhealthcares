@@ -6,7 +6,7 @@ $frontend_custom_sections = '
 
 <style>
 :root {
-    --primary-color: #0A5BFF;
+    --primary-color: #E5252A;
     --dark-bg: #1e293b;
     --light-bg: #f8fafc;
     --border-color: rgba(0,0,0,0.05);
@@ -18,7 +18,7 @@ body {
 
 /* Hero Section */
 .acc-hero {
-    background: linear-gradient(135deg, #ffffff 0%, #f0f4ff 100%);
+    background: linear-gradient(135deg, #ffffff 0%, #fff5f5 100%);
     border-bottom: 1px solid var(--border-color);
     padding: 80px 0;
     position: relative;
@@ -40,8 +40,8 @@ body {
 
 .acc-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 15px 30px rgba(0,0,0,0.08);
-    border-color: rgba(10, 91, 255, 0.2);
+    box-shadow: 0 15px 30px rgba(229, 37, 42, 0.1);
+    border-color: rgba(229, 37, 42, 0.2);
 }
 
 .acc-img-wrapper {

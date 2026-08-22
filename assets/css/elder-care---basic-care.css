@@ -1,12 +1,12 @@
 /* Elder Care - Basic Care Specific CSS */
 .elder-care-hero {
     background-color: #f8fafd;
-    background-image: radial-gradient(circle at 2px 2px, rgba(10, 91, 255, 0.05) 1px, transparent 0);
+    background-image: radial-gradient(circle at 2px 2px, rgba(229, 37, 42, 0.05) 1px, transparent 0);
     background-size: 24px 24px;
     color: #333;
     padding: 80px 0;
     border-radius: 0 0 50px 50px;
-    border-bottom: 2px solid rgba(10, 91, 255, 0.1);
+    border-bottom: 2px solid rgba(229, 37, 42, 0.1);
     margin-bottom: 40px;
 }
 
@@ -16,9 +16,9 @@
 }
 
 .service-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 20px 40px rgba(0,0,0,0.08);
-    border-color: rgba(10, 91, 255, 0.2);
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(229, 37, 42, 0.1);
+    border-color: rgba(229, 37, 42, 0.3);
 }
 
 .icon-box {
@@ -32,7 +32,7 @@
     margin-bottom: 20px;
 }
 
-.bg-soft-primary { background-color: rgba(10, 91, 255, 0.1); color: #0A5BFF; }
+.bg-soft-primary { background-color: rgba(229, 37, 42, 0.1); color: var(--primary-color); }
 .bg-soft-success { background-color: rgba(25, 135, 84, 0.1); color: #198754; }
 .bg-soft-warning { background-color: rgba(255, 193, 7, 0.1); color: #ffc107; }
 .bg-soft-info { background-color: rgba(13, 202, 240, 0.1); color: #0dcaf0; }
@@ -42,7 +42,7 @@
     transition: all 0.3s ease;
 }
 .pricing-card.popular {
-    border-color: #0A5BFF;
+    border-color: var(--primary-color);
     transform: scale(1.05);
     z-index: 2;
 }

@@ -2,14 +2,14 @@
     <div class="container py-lg-5">
         <div class="text-center mb-5">
             <span class="text-dark fw-bold mb-1 d-block fs-5">Your DM Healthcare</span>
-            <h2 class="fw-bolder mb-3" style="color: #139f95; font-size: 2.2rem;">Health Checkup Journey</h2>
+            <h2 class="fw-bolder mb-3" style="color: #E5252A; font-size: 2.2rem;">Health Checkup Journey</h2>
         </div>
 
         <div class="position-relative mt-5 pt-4">
             <!-- Wavy/Curved Dotted Line Background for Desktop -->
             <div class="d-none d-lg-block position-absolute w-100" style="top: 25px; left: 0; height: 50px; z-index: 0; pointer-events: none;">
                 <svg width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 1000 100">
-                    <path d="M 100,50 Q 250,-20 400,50 T 700,50 T 900,50" fill="none" stroke="#139f95" stroke-width="2" stroke-dasharray="8,8" opacity="0.4"/>
+                    <path d="M 100,50 Q 250,-20 400,50 T 700,50 T 900,50" fill="none" stroke="#E5252A" stroke-width="2" stroke-dasharray="8,8" opacity="0.4"/>
                 </svg>
             </div>
             

@@ -1,8 +1,9 @@
 <section class="specialized-section py-5" style="background-color: #f8fafd;" id="treatments">
     <div class="container py-5">
         <div class="text-center mb-5">
-            <h2 class="fw-bolder mb-3" style="color: #1a2b4c; font-size: 2.8rem;">Specialized <span style="color: var(--primary-color);">Treatments</span></h2>
-            <div style="width: 80px; height: 4px; background: var(--secondary-color); margin: 0 auto 20px auto; border-radius: 2px;"></div>
+            <span class="text-uppercase fw-bold mb-2 d-inline-block px-3 py-1 rounded-pill" style="background: rgba(229, 37, 42, 0.08); color: var(--primary-color); letter-spacing: 1.5px; font-size: 0.8rem;">Clinical Care</span>
+            <h2 class="fw-bolder mb-3" style="color: var(--secondary-color); font-size: 2.8rem;">Specialized <span style="color: var(--primary-color);">Treatments</span></h2>
+            <div style="width: 80px; height: 4px; background: var(--primary-color); margin: 0 auto 20px auto; border-radius: 2px;"></div>
             <p class="text-muted fs-5">Expert care plans designed for specific medical conditions.</p>
         </div>
 
@@ -12,9 +13,9 @@
                 <div class="card h-100 border-0 rounded-4 shadow-sm overflow-hidden treatment-card" style="width: 18rem; margin: 0 auto;">
                     <div class="position-relative overflow-hidden" style="height: 200px;">
                         <img src="assets/images/downloaded_img_1.jpg" class="card-img-top treatment-img" alt="Orthopedic Care" loading="lazy">
-                        <div class="position-absolute bottom-0 start-0 w-100 p-3" style="background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);">
+                        <div class="position-absolute bottom-0 start-0 w-100 p-3" style="background: linear-gradient(to top, rgba(0,0,0,0.85), transparent);">
                             <div class="d-flex align-items-center gap-2 text-white">
-                                <i class="fa-solid fa-bone fs-4 text-warning"></i>
+                                <i class="fa-solid fa-bone fs-4" style="color: #FF8082;"></i>
                                 <h5 class="mb-0 fw-bold">Orthopedic Rehab</h5>
                             </div>
                         </div>
@@ -31,9 +32,9 @@
                 <div class="card h-100 border-0 rounded-4 shadow-sm overflow-hidden treatment-card" style="width: 18rem; margin: 0 auto;">
                     <div class="position-relative overflow-hidden" style="height: 200px;">
                         <img src="assets/images/downloaded_img_2.jpg" class="card-img-top treatment-img" alt="Neurological Care" loading="lazy">
-                        <div class="position-absolute bottom-0 start-0 w-100 p-3" style="background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);">
+                        <div class="position-absolute bottom-0 start-0 w-100 p-3" style="background: linear-gradient(to top, rgba(0,0,0,0.85), transparent);">
                             <div class="d-flex align-items-center gap-2 text-white">
-                                <i class="fa-solid fa-brain fs-4 text-warning"></i>
+                                <i class="fa-solid fa-brain fs-4" style="color: #FF8082;"></i>
                                 <h5 class="mb-0 fw-bold">Neurological Care</h5>
                             </div>
                         </div>
@@ -50,9 +51,9 @@
                 <div class="card h-100 border-0 rounded-4 shadow-sm overflow-hidden treatment-card" style="width: 18rem; margin: 0 auto;">
                     <div class="position-relative overflow-hidden" style="height: 200px;">
                         <img src="assets/images/downloaded_img_3.jpg" class="card-img-top treatment-img" alt="Cardiac Recovery" loading="lazy">
-                        <div class="position-absolute bottom-0 start-0 w-100 p-3" style="background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);">
+                        <div class="position-absolute bottom-0 start-0 w-100 p-3" style="background: linear-gradient(to top, rgba(0,0,0,0.85), transparent);">
                             <div class="d-flex align-items-center gap-2 text-white">
-                                <i class="fa-solid fa-heart-pulse fs-4 text-warning"></i>
+                                <i class="fa-solid fa-heart-pulse fs-4" style="color: #FF8082;"></i>
                                 <h5 class="mb-0 fw-bold">Cardiac Recovery</h5>
                             </div>
                         </div>
@@ -69,9 +70,9 @@
                 <div class="card h-100 border-0 rounded-4 shadow-sm overflow-hidden treatment-card" style="width: 18rem; margin: 0 auto;">
                     <div class="position-relative overflow-hidden" style="height: 200px;">
                         <img src="assets/images/downloaded_img_4.jpg" class="card-img-top treatment-img" alt="Pulmonary Care" loading="lazy">
-                        <div class="position-absolute bottom-0 start-0 w-100 p-3" style="background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);">
+                        <div class="position-absolute bottom-0 start-0 w-100 p-3" style="background: linear-gradient(to top, rgba(0,0,0,0.85), transparent);">
                             <div class="d-flex align-items-center gap-2 text-white">
-                                <i class="fa-solid fa-lungs fs-4 text-warning"></i>
+                                <i class="fa-solid fa-lungs fs-4" style="color: #FF8082;"></i>
                                 <h5 class="mb-0 fw-bold">Pulmonary Care</h5>
                             </div>
                         </div>
@@ -88,9 +89,9 @@
                 <div class="card h-100 border-0 rounded-4 shadow-sm overflow-hidden treatment-card" style="width: 18rem; margin: 0 auto;">
                     <div class="position-relative overflow-hidden" style="height: 200px;">
                         <img src="assets/images/downloaded_img_5.jpg" class="card-img-top treatment-img" alt="Post-Surgical Care" loading="lazy">
-                        <div class="position-absolute bottom-0 start-0 w-100 p-3" style="background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);">
+                        <div class="position-absolute bottom-0 start-0 w-100 p-3" style="background: linear-gradient(to top, rgba(0,0,0,0.85), transparent);">
                             <div class="d-flex align-items-center gap-2 text-white">
-                                <i class="fa-solid fa-bed-pulse fs-4 text-warning"></i>
+                                <i class="fa-solid fa-bed-pulse fs-4" style="color: #FF8082;"></i>
                                 <h5 class="mb-0 fw-bold">Post-Surgical Care</h5>
                             </div>
                         </div>
@@ -107,9 +108,9 @@
                 <div class="card h-100 border-0 rounded-4 shadow-sm overflow-hidden treatment-card" style="width: 18rem; margin: 0 auto;">
                     <div class="position-relative overflow-hidden" style="height: 200px;">
                         <img src="assets/images/downloaded_img_6.jpg" class="card-img-top treatment-img" alt="Palliative Care" loading="lazy">
-                        <div class="position-absolute bottom-0 start-0 w-100 p-3" style="background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);">
+                        <div class="position-absolute bottom-0 start-0 w-100 p-3" style="background: linear-gradient(to top, rgba(0,0,0,0.85), transparent);">
                             <div class="d-flex align-items-center gap-2 text-white">
-                                <i class="fa-solid fa-hand-holding-heart fs-4 text-warning"></i>
+                                <i class="fa-solid fa-hand-holding-heart fs-4" style="color: #FF8082;"></i>
                                 <h5 class="mb-0 fw-bold">Palliative Care</h5>
                             </div>
                         </div>
@@ -130,8 +131,8 @@
         transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     }
     .treatment-card:hover {
-        transform: translateY(-10px);
-        box-shadow: 0 15px 30px rgba(0,0,0,0.1) !important;
+        transform: translateY(-8px);
+        box-shadow: 0 15px 30px rgba(229, 37, 42, 0.12) !important;
     }
     .treatment-img {
         width: 100%;
@@ -140,7 +141,6 @@
         transition: transform 0.6s ease;
     }
     .treatment-card:hover .treatment-img {
-        transform: scale(1.1);
+        transform: scale(1.08);
     }
 </style>
-

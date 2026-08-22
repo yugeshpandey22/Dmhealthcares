@@ -1,9 +1,9 @@
 <section class="doctors-section py-5 bg-light" id="doctors">
     <div class="container py-5">
         <div class="text-center mb-5">
-            <span class="text-uppercase fw-bold text-secondary mb-2 d-block" style="letter-spacing: 1.5px; font-size: 0.85rem;">Our Team</span>
-            <h2 class="section-title fw-bolder mb-3" style="color: var(--primary-color); font-size: 2.5rem;">Meet Our Experts</h2>
-            <div style="width: 60px; height: 4px; background: var(--secondary-color); margin: 0 auto 20px auto; border-radius: 2px;"></div>
+            <span class="text-uppercase fw-bold mb-2 d-inline-block px-3 py-1 rounded-pill" style="background: rgba(229, 37, 42, 0.08); color: var(--primary-color); letter-spacing: 1.5px; font-size: 0.8rem;">Our Team</span>
+            <h2 class="section-title fw-bolder mb-3" style="color: var(--secondary-color); font-size: 2.5rem;">Meet Our Healthcare Experts</h2>
+            <div style="width: 60px; height: 4px; background: var(--primary-color); margin: 0 auto 20px auto; border-radius: 2px;"></div>
             <p class="section-subtitle text-muted fs-6 mx-auto" style="max-width: 600px;">Highly qualified medical professionals and visionaries dedicated to your well-being.</p>
         </div>
 
@@ -21,11 +21,11 @@
                         <h4 class="fw-bold mb-1 text-dark">Mr. Sachin Thakur</h4>
                         <p class="text-primary fw-bold mb-3" style="font-size: 0.9rem;">Director</p>
                         <ul class="list-unstyled text-start small text-muted mb-4 px-2" style="line-height: 1.8;">
-                            <li><i class="fa-solid fa-certificate me-2 text-secondary"></i> Leadership & Vision</li>
-                            <li><i class="fa-solid fa-briefcase-medical me-2 text-secondary"></i> 15+ Years Industry Exp.</li>
-                            <li><i class="fa-solid fa-users me-2 text-secondary"></i> Healthcare Operations</li>
+                            <li><i class="fa-solid fa-certificate me-2 text-primary"></i> Leadership & Vision</li>
+                            <li><i class="fa-solid fa-briefcase-medical me-2 text-primary"></i> 15+ Years Industry Exp.</li>
+                            <li><i class="fa-solid fa-users me-2 text-primary"></i> Healthcare Operations</li>
                         </ul>
-                        <a href="#" class="btn btn-outline-primary rounded-pill w-100 fw-bold">View Profile</a>
+                        <a href="#appointment" class="btn btn-outline-primary rounded-pill w-100 fw-bold">Contact Director</a>
                     </div>
                 </div>
             </div>
@@ -43,11 +43,11 @@
                         <h4 class="fw-bold mb-1 text-dark">Dr. Rajesh Sharma</h4>
                         <p class="text-primary fw-bold mb-3" style="font-size: 0.9rem;">Chief Medical Officer</p>
                         <ul class="list-unstyled text-start small text-muted mb-4 px-2" style="line-height: 1.8;">
-                            <li><i class="fa-solid fa-user-md me-2 text-secondary"></i> MBBS, MD (Medicine)</li>
-                            <li><i class="fa-solid fa-briefcase-medical me-2 text-secondary"></i> 15+ Years Experience</li>
-                            <li><i class="fa-solid fa-heart-pulse me-2 text-secondary"></i> Critical Care Specialist</li>
+                            <li><i class="fa-solid fa-user-md me-2 text-primary"></i> MBBS, MD (Medicine)</li>
+                            <li><i class="fa-solid fa-briefcase-medical me-2 text-primary"></i> 15+ Years Experience</li>
+                            <li><i class="fa-solid fa-heart-pulse me-2 text-primary"></i> Critical Care Specialist</li>
                         </ul>
-                        <a href="#" class="btn btn-outline-primary rounded-pill w-100 fw-bold">View Profile</a>
+                        <a href="#appointment" class="btn btn-outline-primary rounded-pill w-100 fw-bold">Consult Doctor</a>
                     </div>
                 </div>
             </div>
@@ -65,11 +65,11 @@
                         <h4 class="fw-bold mb-1 text-dark">Dr. Priya Verma</h4>
                         <p class="text-primary fw-bold mb-3" style="font-size: 0.9rem;">Head Physiotherapist</p>
                         <ul class="list-unstyled text-start small text-muted mb-4 px-2" style="line-height: 1.8;">
-                            <li><i class="fa-solid fa-user-md me-2 text-secondary"></i> BPT, MPT (Ortho)</li>
-                            <li><i class="fa-solid fa-briefcase-medical me-2 text-secondary"></i> 10+ Years Experience</li>
-                            <li><i class="fa-solid fa-bone me-2 text-secondary"></i> Orthopedic Rehab</li>
+                            <li><i class="fa-solid fa-user-md me-2 text-primary"></i> BPT, MPT (Ortho)</li>
+                            <li><i class="fa-solid fa-briefcase-medical me-2 text-primary"></i> 10+ Years Experience</li>
+                            <li><i class="fa-solid fa-bone me-2 text-primary"></i> Orthopedic Rehab</li>
                         </ul>
-                        <a href="#" class="btn btn-outline-primary rounded-pill w-100 fw-bold">View Profile</a>
+                        <a href="#appointment" class="btn btn-outline-primary rounded-pill w-100 fw-bold">Book Rehab Session</a>
                     </div>
                 </div>
             </div>
@@ -84,14 +84,15 @@
     background: white;
 }
 .doctor-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(229, 37, 42, 0.12);
 }
 .doctor-card .btn-outline-primary {
     border-width: 2px;
 }
 .doctor-card:hover .btn-outline-primary {
     background-color: var(--primary-color);
+    border-color: var(--primary-color);
     color: white;
 }
 </style>

@@ -1,23 +1,24 @@
-<section class="appointment-section py-5" style="background-color: #f4f7fa;" id="appointment">
+<section class="appointment-section py-5" style="background-color: #f8fafc;" id="appointment">
     <div class="container py-4">
         <div class="card border-0 shadow-lg overflow-hidden" style="border-radius: 24px;">
             <div class="row g-0">
                 <!-- LEFT PANEL (40%) -->
-                <div class="col-lg-5 text-white position-relative d-flex flex-column" style="background: linear-gradient(135deg, #0A5BFF 0%, #0036a8 100%); padding: 3rem;">
+                <div class="col-lg-5 text-white position-relative d-flex flex-column" style="background: linear-gradient(135deg, #1E293B 0%, #0F172A 100%); padding: 3rem;">
                     
                     <!-- Background pattern (Subtle opacity) -->
                     <div class="position-absolute top-0 start-0 w-100 h-100 opacity-10" style="background-image: radial-gradient(circle at 2px 2px, white 1px, transparent 0); background-size: 24px 24px; pointer-events: none;"></div>
                     
                     <div class="position-relative z-1">
+                        <span class="text-uppercase fw-bold mb-2 d-inline-block px-3 py-1 rounded-pill" style="background: rgba(229, 37, 42, 0.2); color: #FF8082; font-size: 0.75rem; letter-spacing: 1px;">Quick Response</span>
                         <h2 class="fw-bolder mb-3" style="font-size: 2.2rem; letter-spacing: -0.5px;">Book Your Appointment</h2>
                         <p class="fs-6 mb-4 text-light" style="line-height: 1.6; opacity: 0.9;">Connect with our healthcare experts and receive a callback within 30 minutes.</p>
                         
-                        <div class="d-flex align-items-center mb-4 p-3 shadow-sm" style="background: rgba(255, 255, 255, 0.15); border-left: 4px solid #fff; border-radius: 16px; backdrop-filter: blur(10px);">
+                        <div class="d-flex align-items-center mb-4 p-3 shadow-sm" style="background: rgba(255, 255, 255, 0.08); border-left: 4px solid var(--primary-color); border-radius: 16px; backdrop-filter: blur(10px);">
                             <div class="bg-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 45px; height: 45px; min-width: 45px;">
-                                <i class="fa-solid fa-phone-volume fs-5" style="color: #0A5BFF;"></i>
+                                <i class="fa-solid fa-phone-volume fs-5" style="color: var(--primary-color);"></i>
                             </div>
                             <div>
-                                <small class="d-block fw-bold text-uppercase text-light mb-1" style="font-size: 10px; letter-spacing: 1px;">Emergency Contact</small>
+                                <small class="d-block fw-bold text-uppercase text-light mb-1" style="font-size: 10px; letter-spacing: 1px;">Emergency Helpline</small>
                                 <span class="fs-5 fw-bolder text-white">+91-9891989686</span>
                             </div>
                         </div>
@@ -25,29 +26,29 @@
                         <!-- Trust Badges -->
                         <div class="d-flex flex-column gap-3 mb-4">
                             <div class="d-flex align-items-center gap-3">
-                                <i class="fa-solid fa-circle-check text-white fs-5"></i>
+                                <i class="fa-solid fa-circle-check fs-5" style="color: var(--primary-color);"></i>
                                 <span class="fw-semibold">Certified Professionals</span>
                             </div>
                             <div class="d-flex align-items-center gap-3">
-                                <i class="fa-solid fa-circle-check text-white fs-5"></i>
-                                <span class="fw-semibold">24/7 Support</span>
+                                <i class="fa-solid fa-circle-check fs-5" style="color: var(--primary-color);"></i>
+                                <span class="fw-semibold">24/7 Dedicated Support</span>
                             </div>
                             <div class="d-flex align-items-center gap-3">
-                                <i class="fa-solid fa-circle-check text-white fs-5"></i>
-                                <span class="fw-semibold">Quick Response</span>
+                                <i class="fa-solid fa-circle-check fs-5" style="color: var(--primary-color);"></i>
+                                <span class="fw-semibold">Quick & Safe Home Visits</span>
                             </div>
                         </div>
                     </div>
 
                     <!-- Small illustrative image -->
                     <div class="position-relative d-none d-lg-block mt-auto z-1">
-                        <img src="assets/images/downloaded_img_13.jpg" alt="Medical Support" class="img-fluid shadow-sm" style="border-radius: 16px; height: 180px; width: 100%; object-fit: cover; border: 2px solid rgba(255,255,255,0.2);" loading="lazy">
+                        <img src="assets/images/downloaded_img_13.jpg" alt="Medical Support" class="img-fluid shadow-sm" style="border-radius: 16px; height: 180px; width: 100%; object-fit: cover; border: 2px solid rgba(255,255,255,0.15);" loading="lazy">
                     </div>
                 </div>
 
                 <!-- RIGHT PANEL (60%) -->
                 <div class="col-lg-7 bg-white" style="padding: 3.5rem;">
-                    <h3 class="fw-bolder mb-2" style="color: #1a2b4c;">Schedule Your Consultation</h3>
+                    <h3 class="fw-bolder mb-2" style="color: var(--secondary-color);">Schedule Your Consultation</h3>
                     <p class="text-muted mb-4 pb-2 border-bottom">Fill in your details and we'll contact you shortly.</p>
                     
                     <form action="backend/submit_appointment.php" method="POST" class="appointment-form-inner">
@@ -116,10 +117,10 @@
                             
                             <!-- Buttons -->
                             <div class="col-12 mt-4 pt-2 d-flex flex-column flex-sm-row gap-3">
-                                <button type="submit" class="btn btn-primary btn-lg fw-bold shadow-sm flex-grow-1 d-flex align-items-center justify-content-center gap-2 transition" style="border-radius: 12px; padding: 14px; background: #0A5BFF; border: none;">
+                                <button type="submit" class="btn btn-primary btn-lg fw-bold shadow-sm flex-grow-1 d-flex align-items-center justify-content-center gap-2 transition" style="border-radius: 12px; padding: 14px; background: var(--primary-color); border: none;">
                                     Submit <i class="fa-solid fa-arrow-right"></i>
                                 </button>
-                                <a href="tel:+919891989686" class="btn btn-outline-primary btn-lg fw-bold flex-grow-1 d-flex align-items-center justify-content-center gap-2 transition" style="border-radius: 12px; padding: 14px; border: 2px solid #0A5BFF; color: #0A5BFF;">
+                                <a href="tel:+919891989686" class="btn btn-outline-primary btn-lg fw-bold flex-grow-1 d-flex align-items-center justify-content-center gap-2 transition" style="border-radius: 12px; padding: 14px; border: 2px solid var(--primary-color); color: var(--primary-color);">
                                     Call Now <i class="fa-solid fa-phone"></i>
                                 </a>
                             </div>
@@ -141,8 +142,8 @@
     
     .appointment-form-inner .form-control:focus, 
     .appointment-form-inner .form-select:focus {
-        border-color: #0A5BFF !important;
-        box-shadow: 0 0 0 4px rgba(10, 91, 255, 0.15) !important;
+        border-color: var(--primary-color) !important;
+        box-shadow: 0 0 0 4px rgba(229, 37, 42, 0.15) !important;
         background-color: #fff !important;
     }
 
@@ -153,14 +154,13 @@
     }
 
     .appointment-form-inner .btn-primary:hover {
-        background: #0046d5 !important;
+        background: var(--primary-hover) !important;
         transform: translateY(-2px);
-        box-shadow: 0 10px 20px rgba(10, 91, 255, 0.25) !important;
+        box-shadow: 0 10px 20px rgba(229, 37, 42, 0.25) !important;
     }
     
     .appointment-form-inner .btn-outline-primary:hover {
-        background: rgba(10, 91, 255, 0.05) !important;
+        background: rgba(229, 37, 42, 0.05) !important;
         transform: translateY(-2px);
     }
 </style>
-

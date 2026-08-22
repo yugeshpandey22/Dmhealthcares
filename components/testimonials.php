@@ -1,9 +1,9 @@
 <section class="testimonials-section py-5 bg-white" id="testimonials">
     <div class="container py-5">
         <div class="text-center mb-5">
-            <span class="text-uppercase fw-bold text-secondary mb-2 d-block" style="letter-spacing: 1.5px; font-size: 0.85rem;">Testimonials</span>
-            <h2 class="section-title fw-bolder mb-3" style="color: var(--primary-color); font-size: 2.5rem;">What Our Patients Say</h2>
-            <div style="width: 60px; height: 4px; background: var(--secondary-color); margin: 0 auto 20px auto; border-radius: 2px;"></div>
+            <span class="text-uppercase fw-bold mb-2 d-inline-block px-3 py-1 rounded-pill" style="background: rgba(229, 37, 42, 0.08); color: var(--primary-color); letter-spacing: 1.5px; font-size: 0.8rem;">Patient Reviews</span>
+            <h2 class="section-title fw-bolder mb-3" style="color: var(--secondary-color); font-size: 2.5rem;">What Our Patients Say</h2>
+            <div style="width: 60px; height: 4px; background: var(--primary-color); margin: 0 auto 20px auto; border-radius: 2px;"></div>
             <p class="section-subtitle text-muted fs-6 mx-auto" style="max-width: 600px;">Real stories of care, compassion, and recovery from verified Google reviews.</p>
         </div>
 
@@ -12,7 +12,7 @@
             <div class="col-md-6 col-lg-4">
                 <div class="card h-100 border-0 shadow-sm rounded-4 p-4 review-card">
                     <div class="d-flex align-items-center mb-3">
-                        <div class="rounded-circle d-flex align-items-center justify-content-center fw-bold fs-5 me-3 text-white" style="width: 50px; height: 50px; background-color: #EA4335;">R</div>
+                        <div class="rounded-circle d-flex align-items-center justify-content-center fw-bold fs-5 me-3 text-white" style="width: 50px; height: 50px; background-color: var(--primary-color);">R</div>
                         <div>
                             <h6 class="fw-bold mb-0 text-dark">Ramesh Kumar</h6>
                             <div class="d-flex align-items-center gap-2 mt-1">
@@ -32,7 +32,7 @@
             <div class="col-md-6 col-lg-4">
                 <div class="card h-100 border-0 shadow-sm rounded-4 p-4 review-card">
                     <div class="d-flex align-items-center mb-3">
-                        <div class="rounded-circle d-flex align-items-center justify-content-center fw-bold fs-5 me-3 text-white" style="width: 50px; height: 50px; background-color: #34A853;">A</div>
+                        <div class="rounded-circle d-flex align-items-center justify-content-center fw-bold fs-5 me-3 text-white" style="width: 50px; height: 50px; background-color: #1E293B;">A</div>
                         <div>
                             <h6 class="fw-bold mb-0 text-dark">Anjali Singh</h6>
                             <div class="d-flex align-items-center gap-2 mt-1">
@@ -52,7 +52,7 @@
             <div class="col-md-6 col-lg-4">
                 <div class="card h-100 border-0 shadow-sm rounded-4 p-4 review-card">
                     <div class="d-flex align-items-center mb-3">
-                        <div class="rounded-circle d-flex align-items-center justify-content-center fw-bold fs-5 me-3 text-white" style="width: 50px; height: 50px; background-color: #FBBC05;">S</div>
+                        <div class="rounded-circle d-flex align-items-center justify-content-center fw-bold fs-5 me-3 text-white" style="width: 50px; height: 50px; background-color: #C8102E;">S</div>
                         <div>
                             <h6 class="fw-bold mb-0 text-dark">Sanjay Mishra</h6>
                             <div class="d-flex align-items-center gap-2 mt-1">
