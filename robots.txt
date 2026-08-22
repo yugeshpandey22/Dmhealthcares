@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /backend/
+Disallow: /config/
+Disallow: /sql/
+
+Sitemap: https://dmhealthcares.com/sitemap.xml

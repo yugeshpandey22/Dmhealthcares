@@ -1,3 +1,22 @@
+<?php
+$protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' || ($_SERVER['SERVER_PORT'] ?? '') == 443) ? "https://" : "http://";
+$host = $_SERVER['HTTP_HOST'] ?? 'dmhealthcares.com';
+$current_url = $protocol . $host . ($_SERVER['REQUEST_URI'] ?? '');
+$is_local = (strpos($host, 'localhost') !== false || strpos($host, '127.0.0.1') !== false);
+$base_domain_url = $protocol . $host . ($is_local ? '/DmHealthcare' : '');
+
+$page_title_seo = isset($seo_title) && !empty($seo_title) 
+    ? htmlspecialchars($seo_title) 
+    : 'DmHealthcare (DmHealthcares) - Best Home Healthcare, Nursing & Elder Care Services';
+
+$page_desc_seo = isset($seo_desc) && !empty($seo_desc) 
+    ? htmlspecialchars($seo_desc) 
+    : 'DmHealthcare (DmHealthcares) provides 24/7 compassionate & professional home healthcare services, nursing care, elder care, ICU setup at home, and medical equipment rental in Faridabad, Noida, and Delhi NCR.';
+
+$page_keywords_seo = isset($seo_keywords) && !empty($seo_keywords)
+    ? htmlspecialchars($seo_keywords)
+    : 'DmHealthcares, DmHealthcare, DM Health Care, DM Healthcare Faridabad, DM Healthcare Noida, DM Healthcare Delhi NCR, Home Healthcare Services, Nursing Care at Home, Elderly Care, Patient Attendant, ICU Setup at Home, Medical Equipment on Rent';
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,10 +24,86 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google-site-verification" content="KMZGSRjIT760bemoBIWp27Ys4M_zrjIGPZrulcFcsLI" />
-    <title><?= isset($seo_title) ? htmlspecialchars($seo_title) : 'DmHealthcare - Professional Home Care Services' ?></title>
-    <?php if(isset($seo_desc)): ?>
-    <meta name="description" content="<?= htmlspecialchars($seo_desc) ?>">
-    <?php endif; ?>
+    
+    <!-- Primary SEO Meta Tags -->
+    <title><?= $page_title_seo ?></title>
+    <meta name="title" content="<?= $page_title_seo ?>">
+    <meta name="description" content="<?= $page_desc_seo ?>">
+    <meta name="keywords" content="<?= $page_keywords_seo ?>">
+    <meta name="author" content="DmHealthcare">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <link rel="canonical" href="<?= htmlspecialchars($current_url) ?>">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="<?= $base_domain_url ?>/assets/images/logo.png">
+    <link rel="apple-touch-icon" href="<?= $base_domain_url ?>/assets/images/logo.png">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="DmHealthcare (DmHealthcares)">
+    <meta property="og:url" content="<?= htmlspecialchars($current_url) ?>">
+    <meta property="og:title" content="<?= $page_title_seo ?>">
+    <meta property="og:description" content="<?= $page_desc_seo ?>">
+    <meta property="og:image" content="<?= $base_domain_url ?>/assets/images/logo.png">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="<?= htmlspecialchars($current_url) ?>">
+    <meta name="twitter:title" content="<?= $page_title_seo ?>">
+    <meta name="twitter:description" content="<?= $page_desc_seo ?>">
+    <meta name="twitter:image" content="<?= $base_domain_url ?>/assets/images/logo.png">
+
+    <!-- Schema.org Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalBusiness",
+      "name": "DmHealthcare",
+      "alternateName": ["DmHealthcares", "DM Health Care", "DM Healthcare Services"],
+      "url": "<?= $base_domain_url ?>",
+      "logo": "<?= $base_domain_url ?>/assets/images/logo.png",
+      "image": "<?= $base_domain_url ?>/assets/images/logo.png",
+      "description": "DmHealthcare (DmHealthcares) provides 24/7 comprehensive home healthcare services, nursing, elder care, ICU setup at home, physiotherapy, and medical equipment rental in Faridabad, Noida, and Delhi NCR.",
+      "telephone": "+91-9891989686",
+      "email": "care@dmhealthcare.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "B-191, IInd Floor, Green Field Colony",
+        "addressLocality": "Faridabad",
+        "addressRegion": "Haryana",
+        "addressCountry": "IN"
+      },
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Faridabad"
+        },
+        {
+          "@type": "City",
+          "name": "Noida"
+        },
+        {
+          "@type": "City",
+          "name": "Delhi NCR"
+        }
+      ],
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ],
+        "opens": "00:00",
+        "closes": "23:59"
+      }
+    }
+    </script>
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

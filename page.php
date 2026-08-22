@@ -27,9 +27,10 @@ if (file_exists($physical_file)) {
     require $physical_file;
 }
 
-$seo_title = $page_data && $page_data['seo_title'] ? $page_data['seo_title'] : $page_title . ' - DmHealthcare';
-$seo_desc = $page_data ? $page_data['seo_description'] : 'Explore our professional healthcare services in ' . $page_title;
-$display_title = $page_data ? $page_data['title'] : ucwords(str_replace('-', ' ', $page_title));
+$display_title = $page_data && !empty($page_data['title']) ? $page_data['title'] : ucwords(str_replace(['-', '+', '%20'], ' ', $page_title));
+$seo_title = $page_data && !empty($page_data['seo_title']) ? $page_data['seo_title'] : $display_title . ' - DmHealthcare (DmHealthcares)';
+$seo_desc = $page_data && !empty($page_data['seo_description']) ? $page_data['seo_description'] : 'Explore professional ' . $display_title . ' services by DmHealthcare (DmHealthcares). Trusted home healthcare and medical support in Faridabad, Noida, and Delhi NCR.';
+$seo_keywords = $display_title . ', ' . $display_title . ' at home, DmHealthcares, DmHealthcare, DM Health Care, home healthcare, elder care, Faridabad, Noida, Delhi NCR';
 ?>
 <!-- Header -->
 <?php include 'includes/header.php'; ?>
