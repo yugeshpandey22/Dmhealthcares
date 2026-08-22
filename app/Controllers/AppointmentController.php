@@ -16,6 +16,14 @@ class AppointmentController {
         }
 
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
+            // Anti-bot honeypot check
+            if (!empty($_POST['b_comment_hp'])) {
+                // Silently pretend success to fool bots
+                $_SESSION['success_msg'] = "Your appointment has been successfully booked!";
+                header("Location: ../index.php");
+                exit();
+            }
+
             $full_name = htmlspecialchars($_POST['full_name'] ?? '');
             $phone_number = htmlspecialchars($_POST['phone_number'] ?? '');
             $email = filter_var($_POST['email'] ?? '', FILTER_SANITIZE_EMAIL);

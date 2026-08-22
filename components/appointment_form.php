@@ -52,6 +52,10 @@
                     <p class="text-muted mb-4 pb-2 border-bottom">Fill in your details and we'll contact you shortly.</p>
                     
                     <form action="backend/submit_appointment.php" method="POST" class="appointment-form-inner">
+                        <!-- Anti-spam Honeypot (Invisible to humans) -->
+                        <div style="display:none !important; visibility:hidden; opacity:0; height:0; width:0;">
+                            <input type="text" name="b_comment_hp" tabindex="-1" autocomplete="off">
+                        </div>
                         <div class="row g-3">
                             <!-- Full Name -->
                             <div class="col-md-6">
