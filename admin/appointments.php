@@ -48,6 +48,12 @@ if(isset($_POST['delete_appointment'])) {
     }
 }
 
+// Handle Bulk Clear/Delete All Cancelled/Spam
+if(isset($_POST['clear_cancelled'])) {
+    $stmt = $conn->query("DELETE FROM appointments WHERE status = 'Cancelled'");
+    $success = "All cancelled/spam appointments cleared.";
+}
+
 // Filter logic
 $status_filter = isset($_GET['filter']) ? trim($_GET['filter']) : 'all';
 $search_query = isset($_GET['q']) ? trim($_GET['q']) : '';
@@ -299,6 +305,19 @@ $cancelled_count = (int)$conn->query("SELECT COUNT(*) FROM appointments WHERE st
             color: #ffffff;
             border-color: #059669;
         }
+
+        .patient-note-preview {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 10px;
+            padding: 8px 12px;
+            font-size: 0.82rem;
+            color: #475569;
+            line-height: 1.5;
+            max-height: 70px;
+            overflow-y: auto;
+            word-break: break-word;
+        }
     </style>
 </head>
 <body>
@@ -433,8 +452,8 @@ $cancelled_count = (int)$conn->query("SELECT COUNT(*) FROM appointments WHERE st
                 <thead class="bg-light text-muted small text-uppercase fw-bold">
                     <tr>
                         <th class="ps-4" style="width: 250px;">Patient Details</th>
-                        <th style="width: 220px;">Requested Service</th>
-                        <th>Preferred Time & Date</th>
+                        <th style="width: 200px;">Requested Service</th>
+                        <th>Preferred Timing</th>
                         <th>Notes / Message</th>
                         <th>Status</th>
                         <th>Quick Contact</th>
@@ -494,10 +513,10 @@ $cancelled_count = (int)$conn->query("SELECT COUNT(*) FROM appointments WHERE st
                             </td>
 
                             <!-- Patient Message / Notes -->
-                            <td style="max-width: 220px;">
+                            <td style="max-width: 250px;">
                                 <?php if(!empty($appt['message'])): ?>
-                                    <div class="p-2 rounded-3 bg-light border text-dark small" style="white-space: pre-wrap; font-size: 0.82rem; max-height: 80px; overflow-y: auto;">
-                                        <?= htmlspecialchars($appt['message']) ?>
+                                    <div class="patient-note-preview">
+                                        <?= nl2br(htmlspecialchars($appt['message'])) ?>
                                     </div>
                                 <?php else: ?>
                                     <span class="text-muted small italic opacity-75">No notes attached</span>
