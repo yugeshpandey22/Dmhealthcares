@@ -81,8 +81,12 @@
                 <div class="col-md-7 col-lg-6">
                     <p class="mb-0" style="color: #b0b0b0;">
                         Copyright © <?php echo date("Y"); ?> All rights reserved by:
-                        <a href="#" style="text-decoration: none;">
+                        <a href="index.php" style="text-decoration: none;">
                             <strong style="color: var(--primary-color);">DmHealthcare</strong>
+                        </a>
+                        <span class="mx-2 text-secondary">|</span>
+                        <a href="admin/index.php" class="text-secondary text-decoration-none small hover-primary" style="transition: all 0.2s;">
+                            <i class="fa-solid fa-lock me-1"></i> Admin Portal
                         </a>
                     </p>
                 </div>
