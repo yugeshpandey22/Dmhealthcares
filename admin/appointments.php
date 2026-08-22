@@ -37,7 +37,7 @@ if(isset($_POST['update_status'])) {
     }
 }
 
-// Handle delete
+// Handle delete single appointment
 if(isset($_POST['delete_appointment'])) {
     $id = (int)$_POST['appointment_id'];
     $stmt = $conn->prepare("DELETE FROM appointments WHERE id = ?");
@@ -48,10 +48,10 @@ if(isset($_POST['delete_appointment'])) {
     }
 }
 
-// Handle Bulk Clear/Delete All Cancelled/Spam
-if(isset($_POST['clear_cancelled'])) {
-    $stmt = $conn->query("DELETE FROM appointments WHERE status = 'Cancelled'");
-    $success = "All cancelled/spam appointments cleared.";
+// Handle Clear All Cancelled / Spam
+if(isset($_POST['clear_all_records'])) {
+    $stmt = $conn->query("DELETE FROM appointments");
+    $success = "All appointment records cleared.";
 }
 
 // Filter logic
@@ -102,7 +102,7 @@ $cancelled_count = (int)$conn->query("SELECT COUNT(*) FROM appointments WHERE st
             --primary-hover: #C8102E;
             --dark-navy: #0f172a;
             --dark-slate: #1e293b;
-            --card-border: #edf2f7;
+            --card-border: #e2e8f0;
             --light-bg: #f8fafc;
         }
 
@@ -137,19 +137,17 @@ $cancelled_count = (int)$conn->query("SELECT COUNT(*) FROM appointments WHERE st
         .kpi-card {
             background: #ffffff;
             border-radius: 18px;
-            padding: 1.3rem 1.5rem;
+            padding: 1.2rem 1.4rem;
             border: 1px solid var(--card-border);
             box-shadow: 0 4px 15px rgba(0,0,0,0.02);
-            transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+            transition: all 0.25s ease;
             text-decoration: none;
             display: block;
             color: inherit;
-            position: relative;
-            overflow: hidden;
         }
 
         .kpi-card:hover {
-            transform: translateY(-4px);
+            transform: translateY(-3px);
             box-shadow: 0 10px 25px rgba(0,0,0,0.06);
             color: inherit;
         }
@@ -169,154 +167,159 @@ $cancelled_count = (int)$conn->query("SELECT COUNT(*) FROM appointments WHERE st
         }
 
         .kpi-icon-wrap {
-            width: 46px;
-            height: 46px;
-            border-radius: 14px;
+            width: 44px;
+            height: 44px;
+            border-radius: 12px;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 1.25rem;
+            font-size: 1.2rem;
         }
 
         .kpi-value {
-            font-size: 1.8rem;
+            font-size: 1.75rem;
             font-weight: 800;
             line-height: 1.1;
-            margin: 0.5rem 0 0.1rem;
+            margin: 0.4rem 0 0.1rem;
             letter-spacing: -0.5px;
         }
 
         .kpi-label {
-            font-size: 0.78rem;
+            font-size: 0.76rem;
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 0.8px;
             color: #64748b;
         }
 
-        /* Patient Avatar */
-        .patient-avatar {
-            width: 44px;
-            height: 44px;
-            border-radius: 12px;
+        /* Modern CRM Patient Lead Cards */
+        .patient-card {
+            background: #ffffff;
+            border: 1px solid var(--card-border);
+            border-radius: 20px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 18px rgba(0, 0, 0, 0.02);
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .patient-card:hover {
+            border-color: #cbd5e1;
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
+            transform: translateY(-3px);
+        }
+
+        .patient-card.border-pending {
+            border-top: 4px solid #f59e0b;
+        }
+
+        .patient-card.border-completed {
+            border-top: 4px solid #10b981;
+        }
+
+        .patient-card.border-cancelled {
+            border-top: 4px solid #ef4444;
+        }
+
+        .patient-initial-badge {
+            width: 46px;
+            height: 46px;
+            border-radius: 14px;
             background: rgba(229, 37, 42, 0.1);
             color: var(--primary-color);
             display: flex;
             align-items: center;
             justify-content: center;
-            font-weight: 700;
-            font-size: 1rem;
+            font-weight: 800;
+            font-size: 1.1rem;
             flex-shrink: 0;
         }
 
-        /* Main Data Card */
-        .data-card {
-            background: #ffffff;
-            border-radius: 20px;
-            border: 1px solid var(--card-border);
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
-            overflow: hidden;
-        }
-
-        .data-card-header {
-            padding: 1.2rem 1.6rem;
-            border-bottom: 1px solid var(--card-border);
-            background: #ffffff;
-        }
-
-        /* Table Design */
-        .table > :not(caption) > * > * {
-            padding: 1.15rem 1.25rem;
-            border-bottom-color: #f1f5f9;
-        }
-
-        .table tbody tr {
-            transition: all 0.2s ease;
-        }
-
-        .table tbody tr:hover {
-            background-color: #f8fafc;
-        }
-
-        .badge-pending { 
-            background: #fffbeb; 
-            color: #b45309; 
-            border: 1px solid #fde68a; 
-            padding: 6px 12px;
+        .badge-status-Pending {
+            background: #fffbeb;
+            color: #b45309;
+            border: 1px solid #fde68a;
+            padding: 5px 12px;
             border-radius: 50px;
-            font-weight: 600;
-        }
-        
-        .badge-completed { 
-            background: #f0fdf4; 
-            color: #15803d; 
-            border: 1px solid #bbf7d0; 
-            padding: 6px 12px;
-            border-radius: 50px;
-            font-weight: 600;
-        }
-        
-        .badge-cancelled { 
-            background: #fef2f2; 
-            color: #b91c1c; 
-            border: 1px solid #fecaca; 
-            padding: 6px 12px;
-            border-radius: 50px;
-            font-weight: 600;
+            font-weight: 700;
+            font-size: 0.82rem;
         }
 
-        /* Action Buttons */
-        .btn-action-call {
+        .badge-status-Completed {
+            background: #f0fdf4;
+            color: #15803d;
+            border: 1px solid #bbf7d0;
+            padding: 5px 12px;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 0.82rem;
+        }
+
+        .badge-status-Cancelled {
+            background: #fef2f2;
+            color: #b91c1c;
+            border: 1px solid #fecaca;
+            padding: 5px 12px;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 0.82rem;
+        }
+
+        .message-box-card {
+            background: #f8fafc;
+            border: 1px solid #edf2f7;
+            border-radius: 12px;
+            padding: 0.85rem 1rem;
+            font-size: 0.86rem;
+            color: #475569;
+            line-height: 1.5;
+            max-height: 100px;
+            overflow-y: auto;
+            word-break: break-word;
+        }
+
+        .btn-call-action {
             background: rgba(229, 37, 42, 0.08);
             color: var(--primary-color);
             border: 1px solid rgba(229, 37, 42, 0.2);
             border-radius: 10px;
-            padding: 6px 12px;
-            font-weight: 600;
-            font-size: 0.85rem;
+            padding: 7px 14px;
+            font-weight: 700;
+            font-size: 0.88rem;
             transition: all 0.2s;
             text-decoration: none;
             display: inline-flex;
             align-items: center;
-            gap: 5px;
-        }
-        .btn-action-call:hover {
-            background: var(--primary-color);
-            color: #ffffff;
-            border-color: var(--primary-color);
+            justify-content: center;
+            gap: 6px;
         }
 
-        .btn-action-wa {
+        .btn-call-action:hover {
+            background: var(--primary-color);
+            color: #ffffff;
+        }
+
+        .btn-wa-action {
             background: rgba(16, 185, 129, 0.08);
             color: #059669;
             border: 1px solid rgba(16, 185, 129, 0.2);
             border-radius: 10px;
-            padding: 6px 12px;
-            font-weight: 600;
-            font-size: 0.85rem;
+            padding: 7px 14px;
+            font-weight: 700;
+            font-size: 0.88rem;
             transition: all 0.2s;
             text-decoration: none;
             display: inline-flex;
             align-items: center;
-            gap: 5px;
-        }
-        .btn-action-wa:hover {
-            background: #059669;
-            color: #ffffff;
-            border-color: #059669;
+            justify-content: center;
+            gap: 6px;
         }
 
-        .patient-note-preview {
-            background: #f8fafc;
-            border: 1px solid #e2e8f0;
-            border-radius: 10px;
-            padding: 8px 12px;
-            font-size: 0.82rem;
-            color: #475569;
-            line-height: 1.5;
-            max-height: 70px;
-            overflow-y: auto;
-            word-break: break-word;
+        .btn-wa-action:hover {
+            background: #059669;
+            color: #ffffff;
         }
     </style>
 </head>
@@ -328,16 +331,23 @@ $cancelled_count = (int)$conn->query("SELECT COUNT(*) FROM appointments WHERE st
     <!-- Top Header -->
     <div class="page-header-box d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3">
         <div>
-            <h3 class="fw-bold mb-1 text-dark">Patient Appointments & Inquiries</h3>
-            <p class="text-muted mb-0 small">Manage, update status, and instantly contact patients across Delhi NCR.</p>
+            <h3 class="fw-bold mb-1 text-dark">Patient Appointments & Leads</h3>
+            <p class="text-muted mb-0 small">Review inquiries, contact patients instantly via WhatsApp or Call, and update booking status.</p>
         </div>
         
         <div class="d-flex align-items-center gap-2 flex-wrap">
             <!-- Export CSV Button -->
-            <a href="appointments.php?action=export_csv" class="btn btn-outline-dark rounded-pill px-3 py-2 fw-semibold btn-sm shadow-sm" title="Download Excel/CSV Spreadsheet">
+            <a href="appointments.php?action=export_csv" class="btn btn-outline-dark rounded-pill px-3 py-2 fw-semibold btn-sm shadow-sm" title="Download Spreadsheet">
                 <i class="fa-solid fa-file-excel text-success me-1"></i> Export CSV
             </a>
             
+            <!-- Clear All / Wipe Spam Data -->
+            <form method="POST" onsubmit="return confirm('WARNING: Are you sure you want to delete ALL appointment records from the database?');" class="m-0">
+                <button type="submit" name="clear_all_records" class="btn btn-outline-danger rounded-pill px-3 py-2 fw-semibold btn-sm shadow-sm" title="Clear all test/spam data">
+                    <i class="fa-solid fa-broom me-1"></i> Clear All Data
+                </button>
+            </form>
+
             <!-- Refresh Page -->
             <a href="appointments.php" class="btn btn-light border rounded-pill px-3 py-2 fw-semibold btn-sm shadow-sm" title="Refresh List">
                 <i class="fa-solid fa-rotate-right me-1"></i> Refresh
@@ -352,7 +362,7 @@ $cancelled_count = (int)$conn->query("SELECT COUNT(*) FROM appointments WHERE st
             <a href="appointments.php?filter=all<?= !empty($search_query) ? '&q='.urlencode($search_query) : '' ?>" class="kpi-card <?= ($status_filter == 'all') ? 'active' : '' ?>">
                 <div class="d-flex justify-content-between align-items-start">
                     <div>
-                        <span class="kpi-label">All Inquiries</span>
+                        <span class="kpi-label">All Leads</span>
                         <div class="kpi-value text-dark"><?= $total_count ?></div>
                         <small class="kpi-sub text-muted">Total bookings</small>
                     </div>
@@ -412,6 +422,25 @@ $cancelled_count = (int)$conn->query("SELECT COUNT(*) FROM appointments WHERE st
         </div>
     </div>
 
+    <!-- Search & Filter Controls -->
+    <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3 mb-4 p-3 bg-white rounded-4 border">
+        <div class="d-flex align-items-center gap-2">
+            <h6 class="fw-bold mb-0 text-dark">Active Leads (<?= count($appointments) ?>)</h6>
+            <span class="badge bg-light text-muted border font-monospace"><?= htmlspecialchars(ucfirst($status_filter)) ?></span>
+        </div>
+
+        <form method="GET" class="d-flex align-items-center gap-2 m-0" style="min-width: 320px;">
+            <input type="hidden" name="filter" value="<?= htmlspecialchars($status_filter) ?>">
+            <div class="input-group">
+                <span class="input-group-text bg-light border-end-0 rounded-start-pill"><i class="fa-solid fa-magnifying-glass text-muted"></i></span>
+                <input type="text" name="q" class="form-control bg-light border-start-0 rounded-end-pill" placeholder="Search patient, phone, service..." value="<?= htmlspecialchars($search_query) ?>">
+            </div>
+            <?php if(!empty($search_query)): ?>
+                <a href="appointments.php?filter=<?= htmlspecialchars($status_filter) ?>" class="btn btn-sm btn-outline-secondary rounded-pill">Clear</a>
+            <?php endif; ?>
+        </form>
+    </div>
+
     <?php if($success): ?>
         <div class="alert alert-success alert-dismissible fade show rounded-4 border-0 shadow-sm mb-4" role="alert">
             <i class="fa-solid fa-circle-check me-2"></i> <?= htmlspecialchars($success) ?>
@@ -426,157 +455,119 @@ $cancelled_count = (int)$conn->query("SELECT COUNT(*) FROM appointments WHERE st
         </div>
     <?php endif; ?>
 
-    <!-- Main Data Card & Live Search -->
-    <div class="data-card">
-        <div class="data-card-header d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3">
-            <div class="d-flex align-items-center gap-2">
-                <h5 class="fw-bold mb-0 text-dark">Appointment Records</h5>
-                <span class="badge bg-light text-secondary border rounded-pill"><?= count($appointments) ?> Shown</span>
-            </div>
-            
-            <!-- Search Input Form -->
-            <form method="GET" class="d-flex align-items-center gap-2">
-                <input type="hidden" name="filter" value="<?= htmlspecialchars($status_filter) ?>">
-                <div class="input-group" style="min-width: 280px;">
-                    <span class="input-group-text bg-light border-end-0 rounded-start-pill"><i class="fa-solid fa-magnifying-glass text-muted"></i></span>
-                    <input type="text" name="q" class="form-control bg-light border-start-0 rounded-end-pill" placeholder="Search name, phone, service..." value="<?= htmlspecialchars($search_query) ?>">
-                </div>
-                <?php if(!empty($search_query)): ?>
-                    <a href="appointments.php?filter=<?= htmlspecialchars($status_filter) ?>" class="btn btn-sm btn-outline-secondary rounded-pill">Clear</a>
-                <?php endif; ?>
-            </form>
-        </div>
-
-        <div class="table-responsive">
-            <table class="table align-middle mb-0">
-                <thead class="bg-light text-muted small text-uppercase fw-bold">
-                    <tr>
-                        <th class="ps-4" style="width: 250px;">Patient Details</th>
-                        <th style="width: 200px;">Requested Service</th>
-                        <th>Preferred Timing</th>
-                        <th>Notes / Message</th>
-                        <th>Status</th>
-                        <th>Quick Contact</th>
-                        <th class="pe-4 text-end" style="width: 170px;">Action</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <?php if(!empty($appointments)): ?>
-                        <?php foreach($appointments as $appt): ?>
-                            <?php
-                            $initials = strtoupper(substr($appt['full_name'], 0, 1));
-                            $phone_clean = preg_replace('/[^0-9]/', '', $appt['phone_number']);
-                            $wa_msg = urlencode("Hello " . $appt['full_name'] . ", this is from DM Healthcare regarding your appointment request for " . $appt['service_required'] . ". How may we assist you?");
-                            ?>
-                        <tr>
-                            <!-- Patient Avatar & Details -->
-                            <td class="ps-4">
-                                <div class="d-flex align-items-center gap-3">
-                                    <div class="patient-avatar">
-                                        <?= $initials ?>
-                                    </div>
-                                    <div>
-                                        <span class="badge bg-light text-secondary border font-monospace" style="font-size: 0.7rem;">#<?= $appt['id'] ?></span>
-                                        <div class="fw-bold text-dark fs-6"><?= htmlspecialchars($appt['full_name']) ?></div>
-                                        <div class="text-muted small">
-                                            <i class="fa-solid fa-phone me-1 text-muted"></i> <?= htmlspecialchars($appt['phone_number']) ?>
-                                        </div>
-                                        <?php if(!empty($appt['email'])): ?>
-                                            <div class="text-muted small">
-                                                <i class="fa-regular fa-envelope me-1 text-muted"></i> <?= htmlspecialchars($appt['email']) ?>
-                                            </div>
-                                        <?php endif; ?>
-                                    </div>
+    <!-- PATIENT LEADS GRID (Modern CRM Cards Layout) -->
+    <div class="row g-4">
+        <?php if(!empty($appointments)): ?>
+            <?php foreach($appointments as $appt): ?>
+                <?php
+                $initials = strtoupper(substr($appt['full_name'], 0, 1));
+                $phone_clean = preg_replace('/[^0-9]/', '', $appt['phone_number']);
+                $wa_msg = urlencode("Hello " . $appt['full_name'] . ", this is from DM Healthcare regarding your appointment inquiry for " . $appt['service_required'] . ". How may we assist you?");
+                ?>
+                <div class="col-lg-6 col-xl-4">
+                    <div class="patient-card border-<?= strtolower($appt['status']) ?>">
+                        <!-- Card Header -->
+                        <div class="d-flex justify-content-between align-items-start mb-3 pb-3 border-bottom">
+                            <div class="d-flex align-items-center gap-3">
+                                <div class="patient-initial-badge">
+                                    <?= $initials ?>
                                 </div>
-                            </td>
+                                <div>
+                                    <span class="badge bg-light text-secondary border font-monospace small">#<?= $appt['id'] ?></span>
+                                    <h5 class="fw-bold text-dark mb-0 fs-6"><?= htmlspecialchars($appt['full_name']) ?></h5>
+                                    <small class="text-muted"><i class="fa-regular fa-clock me-1"></i> <?= date('d M Y, h:i A', strtotime($appt['created_at'])) ?></small>
+                                </div>
+                            </div>
+                            <span class="badge-status-<?= $appt['status'] ?>">
+                                <?= htmlspecialchars($appt['status']) ?>
+                            </span>
+                        </div>
 
-                            <!-- Service Required -->
-                            <td>
-                                <span class="badge bg-light text-dark border px-3 py-2 rounded-pill fw-semibold mb-1 d-inline-block">
-                                    <?= htmlspecialchars($appt['service_required']) ?>
+                        <!-- Service & Preferred Timing -->
+                        <div class="mb-3">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="badge bg-light text-dark border px-3 py-2 rounded-pill fw-bold">
+                                    <i class="fa-solid fa-stethoscope text-danger me-1"></i> <?= htmlspecialchars($appt['service_required']) ?>
                                 </span>
-                            </td>
-
-                            <!-- Preferred Timing -->
-                            <td>
                                 <?php if(!empty($appt['pref_date'])): ?>
-                                    <div class="fw-semibold text-primary small">
+                                    <span class="small fw-semibold text-primary">
                                         <i class="fa-regular fa-calendar-check me-1"></i> <?= htmlspecialchars($appt['pref_date']) ?>
-                                        <?= !empty($appt['pref_time']) ? ' &bull; ' . htmlspecialchars($appt['pref_time']) : '' ?>
-                                    </div>
-                                <?php else: ?>
-                                    <span class="text-muted small">Immediate / Earliest</span>
+                                    </span>
                                 <?php endif; ?>
-                                <div class="small text-muted mt-1">
-                                    Booked: <?= date('d M, Y h:i A', strtotime($appt['created_at'])) ?>
+                            </div>
+
+                            <!-- Phone & Email info -->
+                            <div class="p-2 bg-light rounded-3 border mb-2 small">
+                                <div class="fw-semibold text-dark mb-1">
+                                    <i class="fa-solid fa-phone text-muted me-2"></i> <?= htmlspecialchars($appt['phone_number']) ?>
                                 </div>
-                            </td>
-
-                            <!-- Patient Message / Notes -->
-                            <td style="max-width: 250px;">
-                                <?php if(!empty($appt['message'])): ?>
-                                    <div class="patient-note-preview">
-                                        <?= nl2br(htmlspecialchars($appt['message'])) ?>
+                                <?php if(!empty($appt['email'])): ?>
+                                    <div class="text-muted text-truncate">
+                                        <i class="fa-regular fa-envelope text-muted me-2"></i> <?= htmlspecialchars($appt['email']) ?>
                                     </div>
-                                <?php else: ?>
-                                    <span class="text-muted small italic opacity-75">No notes attached</span>
                                 <?php endif; ?>
-                            </td>
+                            </div>
+                        </div>
 
-                            <!-- Status Badge -->
-                            <td>
-                                <?php if($appt['status'] == 'Pending'): ?>
-                                    <span class="badge-pending">Pending</span>
-                                <?php elseif($appt['status'] == 'Completed'): ?>
-                                    <span class="badge-completed">Completed</span>
-                                <?php else: ?>
-                                    <span class="badge-cancelled">Cancelled</span>
-                                <?php endif; ?>
-                            </td>
-
-                            <!-- Quick Contact Actions -->
-                            <td>
-                                <div class="d-flex align-items-center gap-2">
-                                    <a href="tel:<?= htmlspecialchars($appt['phone_number']) ?>" class="btn-action-call" title="Call Patient">
-                                        <i class="fa-solid fa-phone"></i> Call
-                                    </a>
-                                    <a href="https://wa.me/91<?= $phone_clean ?>?text=<?= $wa_msg ?>" target="_blank" class="btn-action-wa" title="Chat on WhatsApp">
-                                        <i class="fa-brands fa-whatsapp"></i> Chat
-                                    </a>
+                        <!-- Message / Note Area -->
+                        <div class="mb-3">
+                            <label class="form-label text-muted small fw-bold text-uppercase mb-1">Patient Notes / Message:</label>
+                            <?php if(!empty($appt['message'])): ?>
+                                <div class="message-box-card">
+                                    <?= nl2br(htmlspecialchars($appt['message'])) ?>
                                 </div>
-                            </td>
+                            <?php else: ?>
+                                <div class="text-muted small italic p-2 bg-light rounded-3">No specific notes attached.</div>
+                            <?php endif; ?>
+                        </div>
 
-                            <!-- Status Form & Delete Action -->
-                            <td class="pe-4 text-end">
-                                <form method="POST" class="d-inline-flex align-items-center gap-2 justify-content-end">
-                                    <input type="hidden" name="appointment_id" value="<?= $appt['id'] ?>">
-                                    <select name="status" class="form-select form-select-sm rounded-3 shadow-none border" style="width: 110px; font-size: 0.85rem;">
-                                        <option value="Pending" <?= $appt['status'] == 'Pending' ? 'selected' : '' ?>>Pending</option>
-                                        <option value="Completed" <?= $appt['status'] == 'Completed' ? 'selected' : '' ?>>Completed</option>
-                                        <option value="Cancelled" <?= $appt['status'] == 'Cancelled' ? 'selected' : '' ?>>Cancelled</option>
-                                    </select>
-                                    <button type="submit" name="update_status" class="btn btn-sm btn-primary rounded-3 px-3 fw-bold" style="background: var(--primary-color); border: none;" title="Save Status">
-                                        Save
-                                    </button>
-                                    <button type="submit" name="delete_appointment" class="btn btn-sm btn-outline-danger rounded-3" onclick="return confirm('Are you sure you want to permanently delete appointment #<?= $appt['id'] ?>?');" title="Delete record">
-                                        <i class="fa-solid fa-trash"></i>
-                                    </button>
-                                </form>
-                            </td>
-                        </tr>
-                        <?php endforeach; ?>
-                    <?php else: ?>
-                        <tr>
-                            <td colspan="7" class="text-center py-5 text-muted">
-                                <i class="fa-regular fa-calendar-xmark fa-3x mb-3 opacity-40 d-block"></i>
-                                <h5>No appointments found for this filter.</h5>
-                                <p class="small text-muted mb-0">Try changing your search term or select "All Inquiries".</p>
-                            </td>
-                        </tr>
-                    <?php endif; ?>
-                </tbody>
-            </table>
-        </div>
+                        <!-- Contact Buttons (WhatsApp & Call) -->
+                        <div class="row g-2 mb-3 mt-auto">
+                            <div class="col-6">
+                                <a href="tel:<?= htmlspecialchars($appt['phone_number']) ?>" class="btn-call-action w-100">
+                                    <i class="fa-solid fa-phone"></i> Call Now
+                                </a>
+                            </div>
+                            <div class="col-6">
+                                <a href="https://wa.me/91<?= $phone_clean ?>?text=<?= $wa_msg ?>" target="_blank" class="btn-wa-action w-100">
+                                    <i class="fa-brands fa-whatsapp fs-6"></i> WhatsApp
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Update Status & Delete Form -->
+                        <div class="pt-3 border-top d-flex align-items-center justify-content-between gap-2">
+                            <form method="POST" class="d-flex align-items-center gap-2 flex-grow-1">
+                                <input type="hidden" name="appointment_id" value="<?= $appt['id'] ?>">
+                                <select name="status" class="form-select form-select-sm rounded-3 shadow-none border" style="font-size: 0.85rem;">
+                                    <option value="Pending" <?= $appt['status'] == 'Pending' ? 'selected' : '' ?>>Pending</option>
+                                    <option value="Completed" <?= $appt['status'] == 'Completed' ? 'selected' : '' ?>>Completed</option>
+                                    <option value="Cancelled" <?= $appt['status'] == 'Cancelled' ? 'selected' : '' ?>>Cancelled</option>
+                                </select>
+                                <button type="submit" name="update_status" class="btn btn-sm btn-primary rounded-3 px-3 fw-bold" style="background: var(--primary-color); border: none;">
+                                    Save
+                                </button>
+                            </form>
+
+                            <form method="POST" onsubmit="return confirm('Delete appointment lead #<?= $appt['id'] ?>? This cannot be undone.');" class="m-0">
+                                <input type="hidden" name="appointment_id" value="<?= $appt['id'] ?>">
+                                <button type="submit" name="delete_appointment" class="btn btn-sm btn-outline-danger rounded-3" title="Delete lead">
+                                    <i class="fa-solid fa-trash"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            <?php endforeach; ?>
+        <?php else: ?>
+            <div class="col-12">
+                <div class="text-center py-5 bg-white rounded-4 border p-5">
+                    <i class="fa-regular fa-calendar-xmark fa-3x mb-3 text-muted opacity-40 d-block"></i>
+                    <h5 class="fw-bold text-dark">No appointments found.</h5>
+                    <p class="small text-muted mb-0">There are currently no patient leads matching your selected filter.</p>
+                </div>
+            </div>
+        <?php endif; ?>
     </div>
 </main>
 
