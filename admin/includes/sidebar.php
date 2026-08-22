@@ -80,6 +80,14 @@ $current_cat_id = isset($_GET['cat_id']) ? (int)$_GET['cat_id'] : null;
                     <span class="nav-text">Manage Categories</span>
                 </a>
             </li>
+
+            <!-- Prominent Logout Item in Nav List -->
+            <li class="nav-item mt-3 pt-2 border-top border-secondary border-opacity-25">
+                <a class="nav-link text-danger logout-nav-item" href="logout.php" onclick="return confirm('Are you sure you want to sign out from DM Admin?');">
+                    <div class="nav-icon text-danger"><i class="fa-solid fa-power-off"></i></div>
+                    <span class="nav-text fw-bold">Sign Out / Logout</span>
+                </a>
+            </li>
         </ul>
     </div>
 
@@ -95,11 +103,11 @@ $current_cat_id = isset($_GET['cat_id']) ? (int)$_GET['cat_id'] : null;
             </div>
         </div>
         <div class="d-flex gap-2">
-            <a href="../index.php" target="_blank" class="btn btn-outline-light btn-sm flex-grow-1 rounded-pill" title="View Live Website">
+            <a href="../index.php" target="_blank" class="btn btn-outline-light btn-sm flex-grow-1 rounded-3 py-2 fw-semibold" title="View Live Website">
                 <i class="fa-solid fa-arrow-up-right-from-square me-1"></i> Live Site
             </a>
-            <a href="logout.php" class="btn btn-danger btn-sm rounded-circle d-flex align-items-center justify-content-center" style="width: 32px; height: 32px;" title="Logout">
-                <i class="fa-solid fa-power-off"></i>
+            <a href="logout.php" class="btn btn-danger btn-sm rounded-3 px-3 py-2 fw-bold d-flex align-items-center justify-content-center gap-1 shadow" title="Sign Out" onclick="return confirm('Sign out of DM Admin?');">
+                <i class="fa-solid fa-power-off"></i> Logout
             </a>
         </div>
     </div>
@@ -125,6 +133,7 @@ $current_cat_id = isset($_GET['cat_id']) ? (int)$_GET['cat_id'] : null;
 .sidebar-brand {
     padding: 1.5rem 1.4rem;
     border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+    background: #0b1120;
 }
 
 .brand-icon-box {
@@ -203,19 +212,29 @@ $current_cat_id = isset($_GET['cat_id']) ? (int)$_GET['cat_id'] : null;
 
 .sidebar-nav .nav-link:hover {
     color: #ffffff;
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(255, 255, 255, 0.06);
     transform: translateX(3px);
 }
 
 .sidebar-nav .nav-link.active {
     color: #ffffff;
-    background: linear-gradient(90deg, rgba(229, 37, 42, 0.15) 0%, rgba(229, 37, 42, 0.05) 100%);
+    background: linear-gradient(90deg, rgba(229, 37, 42, 0.18) 0%, rgba(229, 37, 42, 0.05) 100%);
     border-left: 3px solid #E5252A;
     font-weight: 600;
 }
 
 .sidebar-nav .nav-link.active .nav-icon {
     color: #E5252A;
+}
+
+.logout-nav-item {
+    background: rgba(239, 68, 68, 0.08) !important;
+    border: 1px solid rgba(239, 68, 68, 0.2) !important;
+}
+
+.logout-nav-item:hover {
+    background: rgba(239, 68, 68, 0.2) !important;
+    color: #f87171 !important;
 }
 
 .sidebar-footer {
