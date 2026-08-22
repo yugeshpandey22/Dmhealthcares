@@ -1,73 +1,258 @@
-<div class="sidebar p-4 vh-100 d-flex flex-column" style="width: 260px; position: fixed; background: #0f172a; box-shadow: 4px 0 20px rgba(0,0,0,0.1); z-index: 100;">
-    <div class="d-flex align-items-center gap-3 mb-5 mt-2">
-        <div class="bg-primary rounded-circle d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;">
-            <i class="fa-solid fa-hospital text-white"></i>
-        </div>
-        <h4 class="fw-bold mb-0 text-white" style="letter-spacing: -0.5px;">DM Admin</h4>
+<?php
+if (!isset($_SESSION)) {
+    session_start();
+}
+require_once '../config/db.php';
+
+// Fetch counts for badges
+$pending_count = 0;
+$jobs_count = 0;
+try {
+    $pending_count = (int)$conn->query("SELECT COUNT(*) FROM appointments WHERE status = 'Pending'")->fetchColumn();
+    $jobs_count = (int)$conn->query("SELECT COUNT(*) FROM job_applications WHERE status = 'Pending'")->fetchColumn();
+    $sidebar_categories = $conn->query("SELECT * FROM nav_categories ORDER BY display_order ASC")->fetchAll(PDO::FETCH_ASSOC);
+} catch (Exception $e) {
+    $sidebar_categories = [];
+}
+$current_page = basename($_SERVER['PHP_SELF']);
+$current_cat_id = isset($_GET['cat_id']) ? (int)$_GET['cat_id'] : null;
+?>
+
+<!-- Modern Admin Sidebar -->
+<aside class="admin-sidebar" id="adminSidebar">
+    <!-- Brand Logo Area -->
+    <div class="sidebar-brand d-flex align-items-center justify-content-between">
+        <a href="index.php" class="d-flex align-items-center text-decoration-none">
+            <div class="brand-icon-box me-3">
+                <i class="fa-solid fa-heart-pulse text-white"></i>
+            </div>
+            <div>
+                <h5 class="brand-title mb-0">DM Healthcare</h5>
+                <span class="brand-subtitle">Control Center</span>
+            </div>
+        </a>
     </div>
-    
-    <p class="small fw-bold text-uppercase tracking-wider mb-3" style="color: #64748b;">Menu</p>
-    
-    <div class="sidebar-nav-scroll" style="flex-grow: 1; overflow-y: auto; overflow-x: hidden; margin-right: -10px; padding-right: 10px;">
-        <ul class="nav flex-column gap-2">
+
+    <!-- Navigation Menu -->
+    <div class="sidebar-nav-container">
+        <div class="nav-section-label">MAIN DASHBOARD</div>
+        <ul class="nav flex-column sidebar-nav">
             <li class="nav-item">
-                <a class="nav-link rounded-3 px-3 py-2 fw-semibold d-flex align-items-center gap-3 transition <?= basename($_SERVER['PHP_SELF']) == 'index.php' ? 'active-link' : 'inactive-link' ?>" href="index.php">
-                    <i class="fa-solid fa-gauge"></i> Dashboard
+                <a class="nav-link <?= ($current_page == 'index.php') ? 'active' : '' ?>" href="index.php">
+                    <div class="nav-icon"><i class="fa-solid fa-chart-pie"></i></div>
+                    <span class="nav-text">Dashboard</span>
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link rounded-3 px-3 py-2 fw-semibold d-flex align-items-center gap-3 transition <?= basename($_SERVER['PHP_SELF']) == 'appointments.php' ? 'active-link' : 'inactive-link' ?>" href="appointments.php">
-                    <i class="fa-solid fa-calendar-check"></i> Appointments
+                <a class="nav-link <?= ($current_page == 'appointments.php') ? 'active' : '' ?>" href="appointments.php">
+                    <div class="nav-icon"><i class="fa-solid fa-calendar-check"></i></div>
+                    <span class="nav-text">Appointments</span>
+                    <?php if ($pending_count > 0): ?>
+                        <span class="badge bg-danger rounded-pill ms-auto"><?= $pending_count ?></span>
+                    <?php endif; ?>
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link rounded-3 px-3 py-2 fw-semibold d-flex align-items-center gap-3 transition <?= basename($_SERVER['PHP_SELF']) == 'job_applications.php' ? 'active-link' : 'inactive-link' ?>" href="job_applications.php">
-                    <i class="fa-solid fa-briefcase"></i> Job Applications
+                <a class="nav-link <?= ($current_page == 'job_applications.php') ? 'active' : '' ?>" href="job_applications.php">
+                    <div class="nav-icon"><i class="fa-solid fa-user-doctor"></i></div>
+                    <span class="nav-text">Job Applications</span>
+                    <?php if ($jobs_count > 0): ?>
+                        <span class="badge bg-warning text-dark rounded-pill ms-auto"><?= $jobs_count ?></span>
+                    <?php endif; ?>
                 </a>
             </li>
-            
-            <!-- Dynamic Categories from Database -->
-            <?php
-                require_once '../config/db.php';
-                $sidebar_categories = $conn->query("SELECT * FROM nav_categories ORDER BY display_order ASC")->fetchAll(PDO::FETCH_ASSOC);
-                foreach($sidebar_categories as $cat):
-                    // We'll pass the category ID as a URL parameter to navbar_manager.php
-                    $is_active = (basename($_SERVER['PHP_SELF']) == 'navbar_manager.php' && isset($_GET['cat_id']) && $_GET['cat_id'] == $cat['id']) ? 'active-link' : 'inactive-link';
-            ?>
-            <li class="nav-item">
-                <a class="nav-link rounded-3 px-3 py-2 fw-semibold d-flex align-items-center gap-3 transition <?= $is_active ?>" href="navbar_manager.php?cat_id=<?= $cat['id'] ?>">
-                    <i class="fa-solid fa-folder"></i> <?= htmlspecialchars($cat['name']) ?>
-                </a>
-            </li>
+        </ul>
+
+        <div class="nav-section-label mt-4">PAGES & CATEGORIES</div>
+        <ul class="nav flex-column sidebar-nav">
+            <?php foreach ($sidebar_categories as $cat): ?>
+                <?php $is_active = ($current_page == 'navbar_manager.php' && $current_cat_id == $cat['id']); ?>
+                <li class="nav-item">
+                    <a class="nav-link <?= $is_active ? 'active' : '' ?>" href="navbar_manager.php?cat_id=<?= $cat['id'] ?>">
+                        <div class="nav-icon"><i class="fa-regular fa-folder-open"></i></div>
+                        <span class="nav-text"><?= htmlspecialchars($cat['name']) ?></span>
+                    </a>
+                </li>
             <?php endforeach; ?>
-            
-            <li class="nav-item mt-2">
-                <a class="nav-link rounded-3 px-3 py-2 fw-semibold d-flex align-items-center gap-3 transition <?= basename($_SERVER['PHP_SELF']) == 'navbar_manager.php' && !isset($_GET['cat_id']) ? 'active-link' : 'inactive-link' ?>" href="navbar_manager.php">
-                    <i class="fa-solid fa-gear"></i> Category Settings
+            <li class="nav-item">
+                <a class="nav-link <?= ($current_page == 'navbar_manager.php' && !$current_cat_id) ? 'active' : '' ?>" href="navbar_manager.php">
+                    <div class="nav-icon"><i class="fa-solid fa-sliders"></i></div>
+                    <span class="nav-text">Manage Categories</span>
                 </a>
             </li>
         </ul>
     </div>
-    
-    <div class="mt-auto">
-        <hr style="border-color: #334155;">
-        <div class="d-flex flex-column gap-2">
-            <a class="nav-link rounded-3 px-3 py-2 fw-semibold d-flex align-items-center gap-3 transition view-site-btn" href="../index.php" target="_blank">
-                <i class="fa-solid fa-globe"></i> View Website
+
+    <!-- User Profile & Quick Actions at Bottom -->
+    <div class="sidebar-footer">
+        <div class="user-card d-flex align-items-center mb-3">
+            <div class="user-avatar">
+                <i class="fa-solid fa-user-shield"></i>
+            </div>
+            <div class="user-info ms-3 overflow-hidden">
+                <div class="user-name text-truncate"><?= htmlspecialchars($_SESSION['admin_user'] ?? 'Administrator') ?></div>
+                <div class="user-role">Super Admin</div>
+            </div>
+        </div>
+        <div class="d-flex gap-2">
+            <a href="../index.php" target="_blank" class="btn btn-outline-light btn-sm flex-grow-1 rounded-pill" title="View Live Website">
+                <i class="fa-solid fa-arrow-up-right-from-square me-1"></i> Live Site
             </a>
-            <a class="nav-link text-danger rounded-3 px-3 py-2 fw-semibold d-flex align-items-center gap-3 hover-danger transition" href="logout.php">
-                <i class="fa-solid fa-right-from-bracket"></i> Logout
+            <a href="logout.php" class="btn btn-danger btn-sm rounded-circle d-flex align-items-center justify-content-center" style="width: 32px; height: 32px;" title="Logout">
+                <i class="fa-solid fa-power-off"></i>
             </a>
         </div>
     </div>
-</div>
+</aside>
 
 <style>
-    .transition { transition: all 0.3s ease; }
-    .active-link { background: rgba(10, 91, 255, 0.15); color: #60a5fa !important; border-left: 3px solid #3b82f6; }
-    .inactive-link { color: #94a3b8 !important; }
-    .inactive-link:hover { background: rgba(255, 255, 255, 0.05); color: #f8fafc !important; }
-    .hover-danger:hover { background: rgba(239, 68, 68, 0.15); color: #ef4444 !important; }
-    .view-site-btn { background: rgba(14, 165, 233, 0.1); color: #38bdf8 !important; border: 1px solid rgba(14, 165, 233, 0.2); }
-    .view-site-btn:hover { background: rgba(14, 165, 233, 0.2); color: #bae6fd !important; }
+/* Modern Admin Sidebar Styles */
+.admin-sidebar {
+    width: 270px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #0f172a;
+    border-right: 1px solid rgba(255, 255, 255, 0.06);
+    display: flex;
+    flex-direction: column;
+    z-index: 1050;
+    transition: all 0.3s ease;
+    box-shadow: 4px 0 25px rgba(0, 0, 0, 0.15);
+}
+
+.sidebar-brand {
+    padding: 1.5rem 1.4rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.brand-icon-box {
+    width: 42px;
+    height: 42px;
+    background: linear-gradient(135deg, #E5252A 0%, #B91C1C 100%);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    box-shadow: 0 4px 12px rgba(229, 37, 42, 0.35);
+}
+
+.brand-title {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 1.05rem;
+    letter-spacing: -0.3px;
+}
+
+.brand-subtitle {
+    color: #94a3b8;
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.sidebar-nav-container {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 1.2rem 1rem;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255, 255, 255, 0.1) transparent;
+}
+
+.nav-section-label {
+    font-size: 0.68rem;
+    font-weight: 700;
+    color: #64748b;
+    letter-spacing: 1.2px;
+    padding: 0 0.8rem;
+    margin-bottom: 0.6rem;
+}
+
+.sidebar-nav .nav-item {
+    margin-bottom: 4px;
+}
+
+.sidebar-nav .nav-link {
+    color: #94a3b8;
+    padding: 0.7rem 0.9rem;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 0.92rem;
+    display: flex;
+    align-items: center;
+    transition: all 0.2s ease;
+    border: 1px solid transparent;
+}
+
+.sidebar-nav .nav-icon {
+    width: 32px;
+    font-size: 1.05rem;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar-nav .nav-text {
+    flex-grow: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.sidebar-nav .nav-link:hover {
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.05);
+    transform: translateX(3px);
+}
+
+.sidebar-nav .nav-link.active {
+    color: #ffffff;
+    background: linear-gradient(90deg, rgba(229, 37, 42, 0.15) 0%, rgba(229, 37, 42, 0.05) 100%);
+    border-left: 3px solid #E5252A;
+    font-weight: 600;
+}
+
+.sidebar-nav .nav-link.active .nav-icon {
+    color: #E5252A;
+}
+
+.sidebar-footer {
+    padding: 1.2rem 1.2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.07);
+    background: #090e1a;
+}
+
+.user-card {
+    background: rgba(255, 255, 255, 0.04);
+    padding: 0.6rem 0.8rem;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.user-avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
+    background: rgba(229, 37, 42, 0.15);
+    color: #E5252A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+}
+
+.user-name {
+    color: #f8fafc;
+    font-weight: 600;
+    font-size: 0.88rem;
+}
+
+.user-role {
+    color: #64748b;
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
 </style>
