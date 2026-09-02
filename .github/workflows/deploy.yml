@@ -1,7 +1,10 @@
 name: Deploy Website via FTP
 
 on:
-  workflow_dispatch: # Allows manual trigger from GitHub Actions tab only
+  push:
+    branches:
+      - main
+  workflow_dispatch:
 
 jobs:
   web-deploy:
@@ -21,6 +24,7 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           port: ${{ secrets.FTP_PORT || 21 }}
           server-dir: ${{ secrets.FTP_SERVER_DIR || '/public_html/' }}
+          dangerous-clean-slate: true
           exclude: |
             **/.git*
             **/.git*/**
