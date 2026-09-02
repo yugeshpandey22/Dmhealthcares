@@ -91,15 +91,15 @@
                 <div class="card h-100 border-0 rounded-4 shadow-sm p-4 bg-white" style="transition: all 0.3s ease; border-top: 4px solid #ea580c !important;">
                     <div class="d-flex align-items-center gap-3 mb-3">
                         <div class="rounded-circle d-flex align-items-center justify-content-center" style="width: 50px; height: 50px; background: rgba(234, 88, 12, 0.1); color: #ea580c; font-size: 1.3rem;">
-                            <i class="fa-solid fa-droplet"></i>
+                            <i class="fa-solid fa-flask-vial"></i>
                         </div>
-                        <h5 class="fw-bold mb-0 text-dark">Dialysis & Lab at Home</h5>
+                        <h5 class="fw-bold mb-0 text-dark">Diagnostics & Lab Tests</h5>
                     </div>
                     <p class="text-muted small mb-4 lh-base">
-                        Doorstep peritoneal & hemodialysis support, ECG at home, 24-hr Holter monitoring, sleep study tests, and sample collection with certified lab reports.
+                        Doorstep blood sample collection, CBC, LFT, KFT, ECG at home, comprehensive preventive health checkup packages, and overnight sleep study tests.
                     </p>
-                    <a href="#appointment" class="btn btn-sm btn-outline-warning rounded-pill px-3 fw-bold mt-auto align-self-start">
-                        Book Diagnostic <i class="fa-solid fa-arrow-right ms-1"></i>
+                    <a href="preventive-lab-tests" class="btn btn-sm btn-outline-warning rounded-pill px-3 fw-bold mt-auto align-self-start">
+                        View Lab Tests <i class="fa-solid fa-arrow-right ms-1"></i>
                     </a>
                 </div>
             </div>
