@@ -312,7 +312,6 @@ $page_keywords_seo = isset($seo_keywords) && !empty($seo_keywords)
                                     <ul class="dropdown-menu border-0 shadow-sm rounded-3">
                                         <?php if (isset($grouped_items[$cat['id']]) && count($grouped_items[$cat['id']]) > 0): ?>
                                             <?php foreach ($grouped_items[$cat['id']] as $nav_item): ?>
-                                                <?php if ($nav_item['id'] == 53) continue; ?>
                                                 <li><a class="dropdown-item py-2" href="<?= htmlspecialchars($nav_item['link']) ?>"><?= htmlspecialchars($nav_item['title']) ?></a></li>
                                             <?php endforeach; ?>
                                         <?php else: ?>
