@@ -127,6 +127,26 @@ try {
     .rich-text-content table { width: 100% !important; min-width: auto !important; }
     .rich-text-content img { max-width: 100%; height: auto; border-radius: 12px; }
 
+    .page-header-banner-wrap {
+        width: 100%;
+        background: #0f172a;
+        border-bottom: 4px solid var(--primary-color);
+        box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+        overflow: hidden;
+    }
+    .page-header-banner-wrap img {
+        width: 100%;
+        height: auto;
+        display: block;
+        max-height: 380px;
+        object-fit: cover;
+    }
+    @media (max-width: 768px) {
+        .page-header-banner-wrap img {
+            max-height: 220px;
+        }
+    }
+
     /* SEO Breadcrumbs Bar */
     .breadcrumb-nav-bar {
         background: #ffffff;
@@ -223,8 +243,19 @@ try {
     }
 </style>
 
-<!-- SEO Breadcrumb Navigation Bar -->
+<?php
+    $banner_src = (!empty($banner_image) && file_exists($banner_image)) ? $banner_image : 'assets/images/banner1.jpg';
+    if (!file_exists($banner_src)) {
+        $banner_src = 'assets/images/banner2.jpg';
+    }
+?>
+<!-- Page Header Banner (Clean, Full-Width, No Text Overlay) -->
 <?php if(!isset($full_page_override) || !$full_page_override): ?>
+    <div class="page-header-banner-wrap">
+        <img src="<?= htmlspecialchars($banner_src) ?>" alt="<?= htmlspecialchars($display_title) ?>" class="img-fluid w-100" onerror="this.onerror=null; this.src='assets/images/banner1.jpg';">
+    </div>
+
+    <!-- SEO Breadcrumb Navigation Bar -->
     <div class="breadcrumb-nav-bar">
         <div class="container">
             <nav aria-label="breadcrumb">
