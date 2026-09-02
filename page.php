@@ -128,22 +128,12 @@ try {
     .rich-text-content img { max-width: 100%; height: auto; border-radius: 12px; }
 
     .page-header {
-        background: <?= (!empty($banner_image)) ? "url('".htmlspecialchars($banner_image)."')" : "linear-gradient(135deg, #0F172A 0%, #1E293B 100%)" ?>;
-        background-size: cover;
-        background-position: center;
-        color: white;
-        min-height: <?= (!empty($banner_image)) ? '380px' : '260px' ?>;
+        background: <?= (!empty($banner_image)) ? "url('".htmlspecialchars($banner_image)."')" : "url('assets/images/banner1.jpg')" ?> center/cover no-repeat;
+        min-height: 280px;
+        width: 100%;
         position: relative;
         border-bottom: 4px solid var(--primary-color);
-        display: flex;
-        align-items: center;
-    }
-    
-    .page-header::before {
-        content: '';
-        position: absolute;
-        top: 0; left: 0; right: 0; bottom: 0;
-        background: rgba(15, 23, 42, 0.7);
+        display: block;
     }
 
     .page-header .container {
@@ -247,19 +237,9 @@ try {
     }
 </style>
 
-<!-- Page Header (Only show if not full page override) -->
+<!-- Page Header (Clean, Fresh Banner Without Text Overlay) -->
 <?php if(!isset($full_page_override) || !$full_page_override): ?>
-    <div class="page-header py-5 text-center text-md-start">
-        <div class="container">
-            <span class="badge px-3 py-2 rounded-pill fw-bold mb-3" style="background: rgba(229, 37, 42, 0.2); color: #FF8082; letter-spacing: 1px;">
-                <i class="fa-solid fa-heart-pulse me-1"></i> DM HEALTHCARE SERVICES
-            </span>
-            <h1 class="display-5 fw-bold text-white mb-2"><?= htmlspecialchars($display_title) ?></h1>
-            <p class="lead text-white-50 mb-0" style="max-width: 750px;">
-                <?= $short_desc ? htmlspecialchars($short_desc) : 'Professional, certified and compassionate healthcare delivered right at your doorstep across Delhi NCR.' ?>
-            </p>
-        </div>
-    </div>
+    <div class="page-header"></div>
 
     <!-- SEO Breadcrumb Navigation Bar -->
     <div class="breadcrumb-nav-bar">
