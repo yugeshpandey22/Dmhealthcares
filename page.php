@@ -247,19 +247,11 @@ try {
     }
 </style>
 
-<!-- Page Header (Only show if not full page override) -->
+<!-- Page Header Banner (Clean, Fresh, No Text Clutter) -->
 <?php if(!isset($full_page_override) || !$full_page_override): ?>
-    <div class="page-header py-5 text-center text-md-start">
-        <div class="container">
-            <span class="badge px-3 py-2 rounded-pill fw-bold mb-3" style="background: rgba(229, 37, 42, 0.2); color: #FF8082; letter-spacing: 1px;">
-                <i class="fa-solid fa-heart-pulse me-1"></i> DM HEALTHCARE SERVICES
-            </span>
-            <h1 class="display-5 fw-bold text-white mb-2"><?= htmlspecialchars($display_title) ?></h1>
-            <p class="lead text-white-50 mb-0" style="max-width: 750px;">
-                <?= $short_desc ? htmlspecialchars($short_desc) : 'Professional, certified and compassionate healthcare delivered right at your doorstep across Delhi NCR.' ?>
-            </p>
-        </div>
-    </div>
+    <?php if(!empty($banner_image) && file_exists($banner_image)): ?>
+        <div class="page-header-banner" style="background: url('<?= htmlspecialchars($banner_image) ?>') center/cover no-repeat; height: 300px; width: 100%; border-bottom: 4px solid var(--primary-color);"></div>
+    <?php endif; ?>
 
     <!-- SEO Breadcrumb Navigation Bar -->
     <div class="breadcrumb-nav-bar">
