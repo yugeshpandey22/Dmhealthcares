@@ -127,18 +127,28 @@ try {
     .rich-text-content table { width: 100% !important; min-width: auto !important; }
     .rich-text-content img { max-width: 100%; height: auto; border-radius: 12px; }
 
-    .page-header-banner-wrap {
-        width: 100%;
-        background: #0f172a;
+    .page-header {
+        background: <?= (!empty($banner_image)) ? "url('".htmlspecialchars($banner_image)."')" : "linear-gradient(135deg, #0F172A 0%, #1E293B 100%)" ?>;
+        background-size: cover;
+        background-position: center;
+        color: white;
+        min-height: <?= (!empty($banner_image)) ? '380px' : '260px' ?>;
+        position: relative;
         border-bottom: 4px solid var(--primary-color);
-        overflow: hidden;
+        display: flex;
+        align-items: center;
     }
-    .page-header-banner-wrap img {
-        width: 100%;
-        height: auto;
-        display: block;
-        max-height: 480px;
-        object-fit: cover;
+    
+    .page-header::before {
+        content: '';
+        position: absolute;
+        top: 0; left: 0; right: 0; bottom: 0;
+        background: rgba(15, 23, 42, 0.7);
+    }
+
+    .page-header .container {
+        position: relative;
+        z-index: 2;
     }
 
     /* SEO Breadcrumbs Bar */
@@ -237,8 +247,21 @@ try {
     }
 </style>
 
-<!-- SEO Breadcrumb Navigation Bar -->
+<!-- Page Header (Only show if not full page override) -->
 <?php if(!isset($full_page_override) || !$full_page_override): ?>
+    <div class="page-header py-5 text-center text-md-start">
+        <div class="container">
+            <span class="badge px-3 py-2 rounded-pill fw-bold mb-3" style="background: rgba(229, 37, 42, 0.2); color: #FF8082; letter-spacing: 1px;">
+                <i class="fa-solid fa-heart-pulse me-1"></i> DM HEALTHCARE SERVICES
+            </span>
+            <h1 class="display-5 fw-bold text-white mb-2"><?= htmlspecialchars($display_title) ?></h1>
+            <p class="lead text-white-50 mb-0" style="max-width: 750px;">
+                <?= $short_desc ? htmlspecialchars($short_desc) : 'Professional, certified and compassionate healthcare delivered right at your doorstep across Delhi NCR.' ?>
+            </p>
+        </div>
+    </div>
+
+    <!-- SEO Breadcrumb Navigation Bar -->
     <div class="breadcrumb-nav-bar">
         <div class="container">
             <nav aria-label="breadcrumb">
