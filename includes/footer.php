@@ -83,10 +83,6 @@
                         <a href="index.php" style="text-decoration: none;">
                             <strong style="color: var(--primary-color);">DmHealthcare</strong>
                         </a>
-                        <span class="mx-2 text-secondary">|</span>
-                        <a href="admin/index.php" class="text-secondary text-decoration-none small hover-primary" style="transition: all 0.2s;">
-                            <i class="fa-solid fa-lock me-1"></i> Admin Portal
-                        </a>
                     </p>
                 </div>
                 <div class="col-md-5 col-lg-6 text-md-end mt-3 mt-md-0">
