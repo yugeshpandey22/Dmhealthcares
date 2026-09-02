@@ -1,15 +1,17 @@
 <?php
-// DO NOT set $full_page_override = true;
-// We assign our frontend custom design to $frontend_custom_sections so it renders full width!
+// Custom Page Overrides for Jobs / Careers
+$display_title = "Careers & Healthcare Jobs";
+$seo_title = "Healthcare Careers & Jobs in Delhi NCR - DM Healthcare";
+$seo_desc = "Join DM Healthcare as a registered nurse, healthcare attendant, physiotherapist, or physician. Apply online for rewarding home healthcare jobs across Delhi NCR.";
+$short_desc = "Explore high-growth healthcare careers at DM Healthcare. Join our clinical squad delivering quality care across Delhi NCR.";
+$category_name = "Careers";
+$full_page_override = true;
 
 $frontend_custom_sections = '
 <style>
-/* Premium Fonts */
-@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap");
-
+/* Jobs & Careers Portal Styling */
 .jobs-container {
-    font-family: "Outfit", sans-serif;
-    background-color: #f8fbff;
+    background-color: #f8fafc;
     overflow-x: hidden;
     width: 100%;
 }
@@ -17,62 +19,55 @@ $frontend_custom_sections = '
 /* Hero Section */
 .jobs-hero {
     position: relative;
-    padding: 100px 0;
+    padding: 70px 0 60px 0;
     background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
-    overflow: hidden;
+    border-bottom: 4px solid var(--primary-color);
 }
-.jobs-hero::before {
-    content: "";
-    position: absolute;
-    top: -50%; left: -50%;
-    width: 200%; height: 200%;
-    background: radial-gradient(circle at center, rgba(56, 189, 248, 0.1) 0%, transparent 50%);
-    animation: rotate 30s linear infinite;
-}
-@keyframes rotate { 100% { transform: rotate(360deg); } }
-
 .hero-title {
     font-weight: 800;
-    font-size: 3.5rem;
+    font-size: 3rem;
     color: #ffffff;
-    letter-spacing: -1px;
-    margin-bottom: 20px;
+    letter-spacing: -0.5px;
+    margin-bottom: 16px;
 }
 .hero-subtitle {
-    font-size: 1.2rem;
+    font-size: 1.15rem;
     color: #94a3b8;
-    max-width: 600px;
+    max-width: 650px;
+    line-height: 1.7;
 }
 
 /* Content Area */
 .jobs-content {
-    padding: 80px 0;
+    padding: 60px 0 80px 0;
 }
 
 /* Feature Cards */
 .feature-box {
     background: #ffffff;
     border-radius: 20px;
-    padding: 30px;
-    margin-bottom: 30px;
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.03);
-    border: 1px solid rgba(0,0,0,0.02);
+    padding: 26px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+    border: 1px solid #e2e8f0;
     transition: all 0.3s ease;
 }
 .feature-box:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 50px rgba(10, 91, 255, 0.08);
+    transform: translateY(-4px);
+    box-shadow: 0 15px 35px rgba(229, 37, 42, 0.08);
+    border-color: rgba(229, 37, 42, 0.2);
 }
 .feature-icon {
-    width: 60px;
-    height: 60px;
-    border-radius: 16px;
+    width: 54px;
+    height: 54px;
+    border-radius: 14px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 24px;
-    margin-bottom: 20px;
+    font-size: 22px;
+    margin-bottom: 18px;
 }
+.icon-red { background: rgba(229, 37, 42, 0.1); color: var(--primary-color); }
 .icon-blue { background: rgba(59, 130, 246, 0.1); color: #3b82f6; }
 .icon-green { background: rgba(16, 185, 129, 0.1); color: #10b981; }
 .icon-purple { background: rgba(139, 92, 246, 0.1); color: #8b5cf6; }
@@ -81,17 +76,17 @@ $frontend_custom_sections = '
 .form-card {
     background: #ffffff;
     border-radius: 24px;
-    padding: 40px;
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 36px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+    border: 1px solid #e2e8f0;
     position: relative;
 }
 .form-card::after {
     content: "";
     position: absolute;
     top: 0; left: 0; right: 0;
-    height: 6px;
-    background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+    height: 5px;
+    background: linear-gradient(90deg, var(--primary-color), #f97316);
     border-radius: 24px 24px 0 0;
 }
 
@@ -103,16 +98,16 @@ $frontend_custom_sections = '
     font-size: 0.95rem;
 }
 .form-control, .form-select {
-    padding: 14px 20px;
+    padding: 13px 18px;
     border-radius: 12px;
-    border: 1px solid #e2e8f0;
-    background-color: #f8fafc;
-    font-size: 1rem;
+    border: 1px solid #cbd5e1;
+    background-color: #ffffff;
+    font-size: 0.98rem;
     transition: all 0.2s ease;
 }
 .form-control:focus, .form-select:focus {
-    box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.15);
-    border-color: #3b82f6;
+    box-shadow: 0 0 0 4px rgba(229, 37, 42, 0.12);
+    border-color: var(--primary-color);
     background-color: #ffffff;
 }
 
@@ -120,7 +115,7 @@ $frontend_custom_sections = '
 .upload-area {
     border: 2px dashed #cbd5e1;
     border-radius: 16px;
-    padding: 40px 20px;
+    padding: 30px 20px;
     text-align: center;
     background: #f8fafc;
     transition: all 0.3s ease;
@@ -128,8 +123,8 @@ $frontend_custom_sections = '
     position: relative;
 }
 .upload-area:hover, .upload-area.dragover {
-    border-color: #3b82f6;
-    background: #eff6ff;
+    border-color: var(--primary-color);
+    background: #fff5f5;
 }
 .upload-area input[type="file"] {
     position: absolute;
@@ -137,31 +132,32 @@ $frontend_custom_sections = '
     opacity: 0; cursor: pointer;
 }
 .upload-icon {
-    font-size: 40px;
+    font-size: 36px;
     color: #94a3b8;
-    margin-bottom: 15px;
+    margin-bottom: 12px;
     transition: color 0.3s ease;
 }
 .upload-area:hover .upload-icon {
-    color: #3b82f6;
+    color: var(--primary-color);
 }
 
 /* Submit Button */
 .btn-submit {
-    background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+    background: var(--primary-color);
     color: white;
     border: none;
-    padding: 16px 30px;
+    padding: 15px 30px;
     border-radius: 12px;
-    font-size: 1.1rem;
-    font-weight: 600;
+    font-size: 1.05rem;
+    font-weight: 700;
     width: 100%;
     transition: all 0.3s ease;
-    box-shadow: 0 10px 20px rgba(37, 99, 235, 0.2);
+    box-shadow: 0 8px 20px rgba(229, 37, 42, 0.25);
 }
 .btn-submit:hover {
+    background: #c4181d;
     transform: translateY(-2px);
-    box-shadow: 0 15px 25px rgba(37, 99, 235, 0.3);
+    box-shadow: 0 12px 25px rgba(229, 37, 42, 0.35);
     color: white;
 }
 </style>
@@ -169,12 +165,19 @@ $frontend_custom_sections = '
 <div class="jobs-container">
     <!-- Premium Hero -->
     <div class="jobs-hero">
-        <div class="container position-relative" style="z-index: 2;">
-            <div class="row">
+        <div class="container position-relative">
+            <div class="row align-items-center">
                 <div class="col-lg-8">
-                    <span class="badge bg-primary bg-opacity-25 text-info px-3 py-2 rounded-pill mb-3 fw-semibold">We\'re Hiring!</span>
-                    <h1 class="hero-title">Shape the Future of <br><span style="color: #38bdf8;">Healthcare</span> with Us.</h1>
-                    <p class="hero-subtitle">Join a team of passionate professionals dedicated to providing world-class home healthcare services. Discover your next career move.</p>
+                    <span class="badge px-3 py-2 rounded-pill mb-3 fw-bold shadow-sm" style="background: rgba(229, 37, 42, 0.2); color: #ff8b8e;">
+                        <i class="fa-solid fa-briefcase me-1"></i> WE ARE HIRING ACROSS DELHI NCR
+                    </span>
+                    <h1 class="hero-title">Shape the Future of <span style="color: #ff6b6e;">Home Healthcare</span></h1>
+                    <p class="hero-subtitle mb-0">Join North India\'s fastest-growing home healthcare network. Work with certified clinical leaders, enjoy high payout packages, flexible shifts, and continuous career growth.</p>
+                </div>
+                <div class="col-lg-4 text-lg-end mt-4 mt-lg-0">
+                    <a href="#apply-now" class="btn btn-danger btn-lg rounded-pill px-4 py-3 fw-bold shadow" style="background: var(--primary-color); border-color: var(--primary-color);">
+                        <i class="fa-solid fa-paper-plane me-2"></i> Apply Online Now
+                    </a>
                 </div>
             </div>
         </div>
@@ -186,80 +189,122 @@ $frontend_custom_sections = '
             <div class="row g-5">
                 
                 <!-- Left Column: Culture & Benefits -->
-                <div class="col-lg-5 pe-lg-5">
-                    <h3 class="fw-bold text-slate-900 mb-4" style="color:#0f172a;">Why DM Healthcare?</h3>
-                    <p class="text-muted mb-5">We believe that great care starts with taking care of our team. We offer a supportive environment where you can grow professionally.</p>
+                <div class="col-lg-5 pe-lg-4">
+                    <div class="mb-4">
+                        <span class="text-uppercase fw-bold small text-danger" style="color: var(--primary-color) !important; letter-spacing: 1px;">Why Work With Us</span>
+                        <h3 class="fw-bold text-dark mt-1">Why Choose a Career at DM Healthcare?</h3>
+                        <p class="text-muted small">We empower our medical and nursing professionals with competitive compensation, respect, safety, and continuous skill advancement.</p>
+                    </div>
                     
                     <div class="feature-box">
-                        <div class="feature-icon icon-blue">
+                        <div class="feature-icon icon-red">
                             <i class="fa-solid fa-heart-pulse"></i>
                         </div>
-                        <h5 class="fw-bold mb-2">Meaningful Work</h5>
-                        <p class="text-muted small mb-0">Make a direct impact on patients\' lives by delivering quality care right at their doorstep.</p>
+                        <h5 class="fw-bold text-dark mb-1">Meaningful Patient Impact</h5>
+                        <p class="text-muted small mb-0">Deliver 1-on-1 personalized bedside medical care directly to patients recovering at home in Delhi, Faridabad, Noida & Gurugram.</p>
                     </div>
 
                     <div class="feature-box">
                         <div class="feature-icon icon-green">
                             <i class="fa-solid fa-graduation-cap"></i>
                         </div>
-                        <h5 class="fw-bold mb-2">Continuous Learning</h5>
-                        <p class="text-muted small mb-0">We provide regular training sessions, workshops, and opportunities to upgrade your skills.</p>
+                        <h5 class="fw-bold text-dark mb-1">Skill Certification & Training</h5>
+                        <p class="text-muted small mb-0">Regular clinical workshops on advanced ICU protocols, ventilator management, tracheostomy care, and geriatric nursing.</p>
+                    </div>
+
+                    <div class="feature-box">
+                        <div class="feature-icon icon-blue">
+                            <i class="fa-solid fa-hand-holding-dollar"></i>
+                        </div>
+                        <h5 class="fw-bold text-dark mb-1">Top-Tier Payouts & Timely Pay</h5>
+                        <p class="text-muted small mb-0">Industry-leading salary packages, overtime bonuses, flexible 12-hour/24-hour shifts, and on-time direct bank transfers.</p>
                     </div>
 
                     <div class="feature-box">
                         <div class="feature-icon icon-purple">
-                            <i class="fa-solid fa-hand-holding-dollar"></i>
+                            <i class="fa-solid fa-shield-halved"></i>
                         </div>
-                        <h5 class="fw-bold mb-2">Competitive Benefits</h5>
-                        <p class="text-muted small mb-0">Enjoy excellent compensation, flexible scheduling, and comprehensive health benefits.</p>
+                        <h5 class="fw-bold text-dark mb-1">Staff Safety & 24/7 Support</h5>
+                        <p class="text-muted small mb-0">Complete staff insurance coverage, emergency coordinator backup, and respectful, verified household environments.</p>
                     </div>
                 </div>
 
                 <!-- Right Column: Application Form -->
                 <div class="col-lg-7">
                     <div class="form-card" id="apply-now">
-                        <h3 class="fw-bold mb-1" style="color: #1e293b;">Submit Your Application</h3>
-                        <p class="text-muted mb-4 small">Fill out the form below and we\'ll get back to you shortly.</p>
+                        <div class="d-flex align-items-center justify-content-between mb-3">
+                            <div>
+                                <h3 class="fw-bold mb-1 text-dark">Submit Job Application</h3>
+                                <p class="text-muted mb-0 small">Fill out your details below and our HR team will contact you within 24 hours.</p>
+                            </div>
+                            <span class="badge bg-success bg-opacity-10 text-success px-3 py-2 rounded-pill fw-bold small">Active Openings</span>
+                        </div>
                         
                         <div id="alert-box" style="display: none;" class="alert rounded-3 mb-4" role="alert"></div>
 
                         <form id="jobApplicationForm" enctype="multipart/form-data">
-                            <div class="row g-4">
+                            <div class="row g-3">
                                 <div class="col-md-6">
                                     <label class="form-label">Full Name <span class="text-danger">*</span></label>
-                                    <input type="text" name="full_name" class="form-control" placeholder="John Doe" required>
+                                    <input type="text" name="full_name" class="form-control" placeholder="Enter your full name" required>
                                 </div>
                                 
                                 <div class="col-md-6">
                                     <label class="form-label">Email Address <span class="text-danger">*</span></label>
-                                    <input type="email" name="email" class="form-control" placeholder="john@example.com" required>
+                                    <input type="email" name="email" class="form-control" placeholder="name@example.com" required>
                                 </div>
                                 
                                 <div class="col-md-6">
                                     <label class="form-label">Phone Number <span class="text-danger">*</span></label>
-                                    <input type="tel" name="phone" class="form-control" placeholder="9876543210" pattern="[0-9]{10}" maxlength="10" title="Please enter a valid 10-digit mobile number" oninput="this.value = this.value.replace(/[^0-9]/g, \'\')" required>
+                                    <input type="tel" name="phone" class="form-control" placeholder="10-digit mobile number" pattern="[0-9]{10}" maxlength="10" title="Please enter a valid 10-digit mobile number" oninput="this.value = this.value.replace(/[^0-9]/g, \'\')" required>
                                 </div>
                                 
                                 <div class="col-md-6">
                                     <label class="form-label">Position Applying For <span class="text-danger">*</span></label>
                                     <select name="role_applied" class="form-select" required>
-                                        <option value="" disabled selected>Select a role...</option>
-                                        <option value="Registered Nurse">Registered Nurse</option>
-                                        <option value="Caregiver / Attendant">Caregiver / Attendant</option>
-                                        <option value="Physiotherapist">Physiotherapist</option>
-                                        <option value="Physician / Doctor">Physician / Doctor</option>
-                                        <option value="Medical Technician">Medical Technician</option>
-                                        <option value="Admin / Office Staff">Admin / Office Staff</option>
+                                        <option value="" disabled selected>Select position...</option>
+                                        <option value="Registered Nurse (GNM / B.Sc)">Registered Nurse (GNM / B.Sc)</option>
+                                        <option value="ICU / Critical Care Nurse">ICU / Critical Care Nurse</option>
+                                        <option value="Elderly Care Attendant">Elderly Care Attendant</option>
+                                        <option value="General Patient Caregiver">General Patient Caregiver</option>
+                                        <option value="Physiotherapist (BPT / MPT)">Physiotherapist (BPT / MPT)</option>
+                                        <option value="General Physician / Doctor">General Physician / Doctor</option>
+                                        <option value="Medical Equipment Technician">Medical Equipment Technician</option>
+                                        <option value="Phlebotomist / Lab Technician">Phlebotomist / Lab Technician</option>
+                                        <option value="Administrative / Operations">Administrative / Operations</option>
                                         <option value="Other">Other</option>
                                     </select>
                                 </div>
+
+                                <div class="col-md-6">
+                                    <label class="form-label">Total Experience <span class="text-danger">*</span></label>
+                                    <select name="experience" class="form-select" required>
+                                        <option value="" disabled selected>Select experience...</option>
+                                        <option value="Fresher (0-1 yr)">Fresher (0 - 1 Year)</option>
+                                        <option value="1-3 Years">1 - 3 Years</option>
+                                        <option value="3-5 Years">3 - 5 Years</option>
+                                        <option value="5+ Years">5+ Years Experience</option>
+                                    </select>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label class="form-label">Preferred Location <span class="text-danger">*</span></label>
+                                    <select name="preferred_location" class="form-select" required>
+                                        <option value="" disabled selected>Select preferred city...</option>
+                                        <option value="Faridabad">Faridabad</option>
+                                        <option value="Noida & Greater Noida">Noida & Greater Noida</option>
+                                        <option value="Delhi Capital">Delhi Capital Region</option>
+                                        <option value="Gurugram">Gurugram</option>
+                                        <option value="Any NCR Location">Anywhere in Delhi NCR</option>
+                                    </select>
+                                </div>
                                 
-                                <div class="col-12 mt-4">
-                                    <label class="form-label">Upload Resume (PDF, DOC, DOCX) <span class="text-danger">*</span></label>
+                                <div class="col-12 mt-3">
+                                    <label class="form-label">Upload Resume / CV (PDF, DOC, DOCX) <span class="text-danger">*</span></label>
                                     <div class="upload-area" id="drop-zone">
                                         <i class="fa-solid fa-cloud-arrow-up upload-icon"></i>
-                                        <h6 class="fw-bold text-dark mb-1">Click to browse or drag & drop</h6>
-                                        <p class="text-muted small mb-0">Max file size: 5MB</p>
+                                        <h6 class="fw-bold text-dark mb-1">Click to browse or drag & drop your resume</h6>
+                                        <p class="text-muted small mb-0">Accepted formats: PDF, DOC, DOCX (Max: 5MB)</p>
                                         <input type="file" name="resume" id="resume" accept=".pdf,.doc,.docx" required>
                                     </div>
                                     <div id="file-name-display" class="mt-3 p-3 bg-light rounded-3 d-flex align-items-center" style="display:none !important;">
@@ -273,7 +318,7 @@ $frontend_custom_sections = '
 
                                 <div class="col-12 mt-4 pt-2">
                                     <button type="submit" class="btn btn-submit" id="submitBtn">
-                                        Send Application <i class="fa-solid fa-arrow-right ms-2"></i>
+                                        Submit Application <i class="fa-solid fa-arrow-right ms-2"></i>
                                     </button>
                                 </div>
                             </div>
@@ -287,66 +332,70 @@ $frontend_custom_sections = '
 </div>
 
 <script>
-// File Upload Styling
+// File Upload Display Handler
 const fileInput = document.getElementById("resume");
 const fileDisplay = document.getElementById("file-name-display");
 const fnameText = document.getElementById("fname-text");
 const dropZone = document.getElementById("drop-zone");
 
-fileInput.addEventListener("change", function(e) {
-    let fileName = e.target.files[0] ? e.target.files[0].name : "";
-    if(fileName) {
-        fnameText.textContent = fileName;
-        fileDisplay.style.setProperty("display", "flex", "important");
-        dropZone.style.display = "none";
-    } else {
-        fileDisplay.style.setProperty("display", "none", "important");
-        dropZone.style.display = "block";
-    }
-});
-
-// AJAX Form Submission
-document.getElementById("jobApplicationForm").addEventListener("submit", function(e) {
-    e.preventDefault();
-    
-    let submitBtn = document.getElementById("submitBtn");
-    let alertBox = document.getElementById("alert-box");
-    let formData = new FormData(this);
-    
-    submitBtn.innerHTML = "<span class=\'spinner-border spinner-border-sm me-2\' role=\'status\' aria-hidden=\'true\'></span> Processing...";
-    submitBtn.disabled = true;
-    
-    fetch("backend/submit_job_application.php", {
-        method: "POST",
-        body: formData
-    })
-    .then(response => response.json())
-    .then(data => {
-        alertBox.style.display = "block";
-        if(data.success) {
-            alertBox.className = "alert alert-success fw-bold border-0";
-            alertBox.innerHTML = "<i class=\'fa-solid fa-circle-check me-2\'></i>" + data.message;
-            this.reset();
+if (fileInput) {
+    fileInput.addEventListener("change", function(e) {
+        let fileName = e.target.files[0] ? e.target.files[0].name : "";
+        if(fileName) {
+            fnameText.textContent = fileName;
+            fileDisplay.style.setProperty("display", "flex", "important");
+            dropZone.style.display = "none";
+        } else {
             fileDisplay.style.setProperty("display", "none", "important");
             dropZone.style.display = "block";
-        } else {
-            alertBox.className = "alert alert-danger fw-bold border-0";
-            alertBox.innerHTML = "<i class=\'fa-solid fa-triangle-exclamation me-2\'></i>" + data.message;
         }
-        submitBtn.innerHTML = "Send Application <i class=\'fa-solid fa-arrow-right ms-2\'></i>";
-        submitBtn.disabled = false;
-        
-        // Scroll to alert
-        document.getElementById("apply-now").scrollIntoView({ behavior: "smooth", block: "start" });
-    })
-    .catch(error => {
-        alertBox.style.display = "block";
-        alertBox.className = "alert alert-danger fw-bold border-0";
-        alertBox.innerHTML = "<i class=\'fa-solid fa-triangle-exclamation me-2\'></i> An error occurred. Please try again.";
-        submitBtn.innerHTML = "Send Application <i class=\'fa-solid fa-arrow-right ms-2\'></i>";
-        submitBtn.disabled = false;
     });
-});
+}
+
+// AJAX Form Submission
+const jobForm = document.getElementById("jobApplicationForm");
+if (jobForm) {
+    jobForm.addEventListener("submit", function(e) {
+        e.preventDefault();
+        
+        let submitBtn = document.getElementById("submitBtn");
+        let alertBox = document.getElementById("alert-box");
+        let formData = new FormData(this);
+        
+        submitBtn.innerHTML = "<span class=\'spinner-border spinner-border-sm me-2\' role=\'status\' aria-hidden=\'true\'></span> Submitting Application...";
+        submitBtn.disabled = true;
+        
+        fetch("backend/submit_job_application.php", {
+            method: "POST",
+            body: formData
+        })
+        .then(response => response.json())
+        .then(data => {
+            alertBox.style.display = "block";
+            if(data.success) {
+                alertBox.className = "alert alert-success fw-bold border-0";
+                alertBox.innerHTML = "<i class=\'fa-solid fa-circle-check me-2\'></i>" + data.message;
+                this.reset();
+                if (fileDisplay) fileDisplay.style.setProperty("display", "none", "important");
+                if (dropZone) dropZone.style.display = "block";
+            } else {
+                alertBox.className = "alert alert-danger fw-bold border-0";
+                alertBox.innerHTML = "<i class=\'fa-solid fa-triangle-exclamation me-2\'></i>" + data.message;
+            }
+            submitBtn.innerHTML = "Submit Application <i class=\'fa-solid fa-arrow-right ms-2\'></i>";
+            submitBtn.disabled = false;
+            
+            document.getElementById("apply-now").scrollIntoView({ behavior: "smooth", block: "start" });
+        })
+        .catch(error => {
+            alertBox.style.display = "block";
+            alertBox.className = "alert alert-danger fw-bold border-0";
+            alertBox.innerHTML = "<i class=\'fa-solid fa-triangle-exclamation me-2\'></i> An error occurred while submitting your application. Please try again or call HR.";
+            submitBtn.innerHTML = "Submit Application <i class=\'fa-solid fa-arrow-right ms-2\'></i>";
+            submitBtn.disabled = false;
+        });
+    });
+}
 </script>
 ';
 ?>

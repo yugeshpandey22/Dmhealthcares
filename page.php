@@ -275,8 +275,9 @@ try {
 <!-- Main Content Area -->
 <main style="overflow-x: hidden; width: 100%;">
     <?php if(isset($full_page_override) && $full_page_override): ?>
-        <div class="content-section">
-            <?= $custom_content ?>
+        <div class="content-section p-0">
+            <?= isset($custom_content) ? $custom_content : '' ?>
+            <?= isset($frontend_custom_sections) ? $frontend_custom_sections : '' ?>
             
             <div class="container mt-5">
                 <?php if(!empty($specs)): ?>
@@ -455,20 +456,25 @@ try {
                 </div>
 
                 <!-- Right Column: Media, Contact Card & Related Internal Links (5 Cols) -->
-                <div class="col-lg-5 order-1 order-lg-2">
-                    <div class="sticky-top" style="top: 100px; z-index: 10;">
+                <div class="col-lg-5 order-1 order-lg-2" style="align-self: flex-start;">
+                    <div style="position: sticky; top: 100px; z-index: 10;">
                         <!-- Feature Image -->
                         <div class="mb-4">
                             <img src="<?= htmlspecialchars($display_image) ?>" alt="<?= htmlspecialchars($display_title) ?>" class="img-fluid rounded-4 shadow w-100 border border-3 border-white" style="height: 280px; object-fit: cover;" onerror="this.src='assets/images/about.jpg'">
                         </div>
 
                         <!-- Sticky Contact & Booking Card -->
+                        <?php
+                            $is_equipment_page = (stripos($slug, 'bed') !== false || stripos($slug, 'oxygen') !== false || stripos($slug, 'bipap') !== false || stripos($slug, 'wheelchair') !== false || stripos($slug, 'equipment') !== false || stripos($slug, 'scooter') !== false || stripos($slug, 'accessories') !== false);
+                            $card_heading = $is_equipment_page ? 'Rent or Buy Equipment' : 'Need Immediate Healthcare?';
+                            $card_subtitle = $is_equipment_page ? 'Call our 24/7 care desk for same-day doorstep delivery, free installation & best rental rates.' : 'Speak directly with our 24/7 care coordinator for instant booking & doorstep medical service.';
+                        ?>
                         <div class="contact-card p-4 text-center mb-4">
                             <div class="rounded-circle d-flex align-items-center justify-content-center mx-auto mb-3 text-white shadow" style="width: 56px; height: 56px; background: var(--primary-color);">
                                 <i class="fa-solid fa-headset fs-4"></i>
                             </div>
-                            <h5 class="fw-bold mb-1 text-dark">Need Immediate Care?</h5>
-                            <p class="text-muted small mb-3">Speak directly with our Chief Medical Coordinator for free clinical guidance.</p>
+                            <h5 class="fw-bold mb-1 text-dark"><?= $card_heading ?></h5>
+                            <p class="text-muted small mb-3"><?= $card_subtitle ?></p>
                             
                             <div class="d-grid gap-2 mb-3">
                                 <a href="tel:+919891989686" class="btn btn-primary py-3 rounded-pill fw-bold shadow-sm d-flex align-items-center justify-content-center gap-2" style="background: var(--primary-color); border: none;">
@@ -478,7 +484,7 @@ try {
                                     <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
                                 </a>
                             </div>
-                            <small class="text-success fw-bold"><i class="fa-solid fa-circle-check me-1"></i> 24/7 Availability across Delhi NCR</small>
+                            <small class="text-success fw-bold"><i class="fa-solid fa-bolt me-1"></i> 30-60 Mins Response Across Delhi NCR</small>
                         </div>
 
                         <!-- Related Services Links (Internal Linking for SEO) -->
