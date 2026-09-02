@@ -457,11 +457,11 @@ $frontend_custom_sections = '
                     <i class="fa-solid fa-flask-vial"></i>
                 </div>
                 <h4 class="fw-bold text-dark mb-2">Diagnostics & Lab Tests</h4>
-                <p class="text-muted small mb-4 flex-grow-1">Accurate, NABL-partnered home blood collections with barcoded vials, fast online reporting, routine checkups, 12-Lead ECG at home, and overnight Sleep Apnea studies.</p>
+                <p class="text-muted small mb-4 flex-grow-1">Accurate, NABL-accredited home blood collections with barcoded vials, fast online reporting, routine checkups, 12-Lead ECG at home, and overnight Sleep Apnea studies.</p>
                 <ul class="list-unstyled text-muted small mb-4">
                     <li class="mb-2"><i class="fa-solid fa-circle-check text-info me-2" style="color: #0284c7;"></i> CBC, LFT, KFT & Lipid Profile Tests</li>
                     <li class="mb-2"><i class="fa-solid fa-circle-check text-info me-2" style="color: #0284c7;"></i> Instant Digital 12-Lead ECG at Home</li>
-                    <li><i class="fa-solid fa-circle-check text-info me-2" style="color: #0284c7;"></i> NABL Certified Laboratory Partners</li>
+                    <li><i class="fa-solid fa-circle-check text-info me-2" style="color: #0284c7;"></i> NABL Quality Accredited Standards</li>
                 </ul>
                 <a href="preventive-lab-tests" class="btn btn-outline-info rounded-pill fw-bold w-100 py-2" style="color: #0284c7; border-color: #0284c7;">View Lab Test Packages</a>
             </div>
@@ -595,72 +595,95 @@ $frontend_custom_sections = '
     </div>
 </div>
 
-<!-- SECTION 6: MAJOR PARTNER HOSPITALS IN NCR -->
+<!-- SECTION 6: SPECIALIZED POST-HOSPITAL CARE PROGRAMS -->
 <div class="mb-5 pt-4 border-top">
     <div class="text-center mb-5">
-        <span class="text-uppercase fw-bold px-3 py-1 rounded-pill small" style="background: rgba(229, 37, 42, 0.08); color: var(--primary-color); letter-spacing: 1.5px;">Institutional Synergy</span>
-        <h2 class="fw-bold text-dark mt-2">Partnered Hospital Networks Across NCR</h2>
-        <p class="text-muted mx-auto" style="max-width: 650px;">Seamless post-discharge continuum of care aligned with senior consultants and hospital discharge teams.</p>
+        <span class="text-uppercase fw-bold px-3 py-1 rounded-pill small" style="background: rgba(229, 37, 42, 0.08); color: var(--primary-color); letter-spacing: 1.5px;">Clinical Specializations</span>
+        <h2 class="fw-bold text-dark mt-2">Specialized Post-Discharge & Chronic Care Programs</h2>
+        <p class="text-muted mx-auto" style="max-width: 700px;">Expert home medical care tailored to specific health conditions and post-hospital discharge protocols.</p>
     </div>
 
-    <div class="row g-3">
+    <div class="row g-4">
         <div class="col-md-6 col-lg-4">
             <div class="hospital-box" style="border-left-color: #0d6efd;">
-                <h5 class="fw-bold mb-1 text-dark">Asian Institute of Medical Sciences</h5>
-                <p class="text-muted small mb-2"><i class="fa-solid fa-location-dot me-1 text-primary"></i> Sector 21A, Faridabad</p>
+                <div class="d-flex align-items-center gap-2 mb-2">
+                    <i class="fa-solid fa-bed-pulse text-primary fs-5"></i>
+                    <h5 class="fw-bold mb-0 text-dark">Post-Operative Recovery</h5>
+                </div>
+                <p class="text-muted small mb-3">Complete bedside assistance after major surgeries, including wound care, sterile dressing changes, suture care, and mobility assistance.</p>
                 <div class="d-flex flex-wrap gap-1">
-                    <span class="badge bg-light text-dark border">Post-Surgery Care</span>
-                    <span class="badge bg-light text-dark border">Cardiac Care</span>
+                    <span class="badge bg-light text-dark border">Wound Dressing</span>
+                    <span class="badge bg-light text-dark border">Pain Management</span>
                 </div>
             </div>
         </div>
+
         <div class="col-md-6 col-lg-4">
             <div class="hospital-box" style="border-left-color: #198754;">
-                <h5 class="fw-bold mb-1 text-dark">Fortis Escorts Hospital</h5>
-                <p class="text-muted small mb-2"><i class="fa-solid fa-location-dot me-1 text-success"></i> NIT Faridabad & Okhla Delhi</p>
+                <div class="d-flex align-items-center gap-2 mb-2">
+                    <i class="fa-solid fa-brain text-success fs-5"></i>
+                    <h5 class="fw-bold mb-0 text-dark">Stroke & Neuro Rehab</h5>
+                </div>
+                <p class="text-muted small mb-3">Structured rehabilitation for paralysis, stroke recovery, Parkinson\'s, and neurological conditions with physical therapy and attendant support.</p>
                 <div class="d-flex flex-wrap gap-1">
-                    <span class="badge bg-light text-dark border">Critical Care</span>
-                    <span class="badge bg-light text-dark border">Neurology Rehab</span>
+                    <span class="badge bg-light text-dark border">Gait Training</span>
+                    <span class="badge bg-light text-dark border">ADL Assistance</span>
                 </div>
             </div>
         </div>
+
         <div class="col-md-6 col-lg-4">
             <div class="hospital-box" style="border-left-color: #dc3545;">
-                <h5 class="fw-bold mb-1 text-dark">Apollo Hospitals & Clinics</h5>
-                <p class="text-muted small mb-2"><i class="fa-solid fa-location-dot me-1 text-danger"></i> Sarita Vihar & Noida Sector 26</p>
+                <div class="d-flex align-items-center gap-2 mb-2">
+                    <i class="fa-solid fa-heart-pulse text-danger fs-5" style="color: var(--primary-color) !important;"></i>
+                    <h5 class="fw-bold mb-0 text-dark">Cardiac & Pulmonary Care</h5>
+                </div>
+                <p class="text-muted small mb-3">Monitoring vitals for heart failure and COPD patients, continuous oxygen therapy management, nebulization, and BiPAP/CPAP support.</p>
                 <div class="d-flex flex-wrap gap-1">
-                    <span class="badge bg-light text-dark border">Emergency Escalation</span>
-                    <span class="badge bg-light text-dark border">Oncology Support</span>
+                    <span class="badge bg-light text-dark border">Oxygen Therapy</span>
+                    <span class="badge bg-light text-dark border">Vitals Tracking</span>
                 </div>
             </div>
         </div>
+
         <div class="col-md-6 col-lg-4">
             <div class="hospital-box" style="border-left-color: #6f42c1;">
-                <h5 class="fw-bold mb-1 text-dark">Max Super Speciality Hospital</h5>
-                <p class="text-muted small mb-2"><i class="fa-solid fa-location-dot me-1" style="color: #6f42c1;"></i> Saket Delhi & Vaishali Ghaziabad</p>
+                <div class="d-flex align-items-center gap-2 mb-2">
+                    <i class="fa-solid fa-bone fs-5" style="color: #6f42c1;"></i>
+                    <h5 class="fw-bold mb-0 text-dark">Orthopedic & Joint Rehab</h5>
+                </div>
+                <p class="text-muted small mb-3">Specialized mobilization protocols after total knee replacement (TKR), hip replacement (THR), and complex fracture surgeries.</p>
                 <div class="d-flex flex-wrap gap-1">
-                    <span class="badge bg-light text-dark border">Elder Care</span>
-                    <span class="badge bg-light text-dark border">Pulmonology</span>
+                    <span class="badge bg-light text-dark border">Joint Mobilization</span>
+                    <span class="badge bg-light text-dark border">Fall Prevention</span>
                 </div>
             </div>
         </div>
+
         <div class="col-md-6 col-lg-4">
             <div class="hospital-box" style="border-left-color: #fd7e14;">
-                <h5 class="fw-bold mb-1 text-dark">Amrita Hospital</h5>
-                <p class="text-muted small mb-2"><i class="fa-solid fa-location-dot me-1 text-warning"></i> Sector 88, Greater Faridabad</p>
+                <div class="d-flex align-items-center gap-2 mb-2">
+                    <i class="fa-solid fa-hand-holding-heart text-warning fs-5"></i>
+                    <h5 class="fw-bold mb-0 text-dark">Palliative & Comfort Care</h5>
+                </div>
+                <p class="text-muted small mb-3">Empathetic bedside care for advanced cancer and terminal illness patients, focusing on dignity, comfort, pain relief, and family support.</p>
                 <div class="d-flex flex-wrap gap-1">
-                    <span class="badge bg-light text-dark border">Transplant Recovery</span>
-                    <span class="badge bg-light text-dark border">Pediatric Care</span>
+                    <span class="badge bg-light text-dark border">Comfort Care</span>
+                    <span class="badge bg-light text-dark border">24/7 Attendants</span>
                 </div>
             </div>
         </div>
+
         <div class="col-md-6 col-lg-4">
             <div class="hospital-box" style="border-left-color: #0dcaf0;">
-                <h5 class="fw-bold mb-1 text-dark">Jaypee Hospital</h5>
-                <p class="text-muted small mb-2"><i class="fa-solid fa-location-dot me-1 text-info"></i> Sector 128, Noida Expressway</p>
+                <div class="d-flex align-items-center gap-2 mb-2">
+                    <i class="fa-solid fa-kit-medical text-info fs-5"></i>
+                    <h5 class="fw-bold mb-0 text-dark">Tracheostomy & Critical Care</h5>
+                </div>
+                <p class="text-muted small mb-3">ICU-trained nurses skilled in airway suctioning, tracheostomy tube hygiene, catheterization, and enteral Ryle\'s tube feedings.</p>
                 <div class="d-flex flex-wrap gap-1">
-                    <span class="badge bg-light text-dark border">Orthopaedic Rehab</span>
-                    <span class="badge bg-light text-dark border">Stroke Care</span>
+                    <span class="badge bg-light text-dark border">Suction Care</span>
+                    <span class="badge bg-light text-dark border">Tube Feeding</span>
                 </div>
             </div>
         </div>
