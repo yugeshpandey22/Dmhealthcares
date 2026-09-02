@@ -57,12 +57,12 @@
                     <div class="accordion-item border-0 border-bottom">
                         <h2 class="accordion-header" id="headingFour">
                             <button class="accordion-button fw-bold text-dark py-4 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour" style="font-size: 1.1rem; box-shadow: none;">
-                                Is ICU setup at home possible in case of emergencies?
+                                How does Critical Care & ICU Nursing work at home?
                             </button>
                         </h2>
                         <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
                             <div class="accordion-body text-muted pb-4">
-                                Yes, we specialize in complete ICU setups at home. This includes advanced life support equipment, cardiac monitors, ventilator support, and dedicated 24/7 critical care nurses stationed at your home under senior doctor supervision.
+                                We provide comprehensive critical care at home with hospital-grade life support equipment, cardiac monitors, ventilator/BiPAP support, and dedicated 24/7 critical care nurses stationed at your home under senior doctor supervision.
                             </div>
                         </div>
                     </div>

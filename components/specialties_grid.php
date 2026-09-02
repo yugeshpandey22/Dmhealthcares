@@ -39,13 +39,13 @@
                         <div class="rounded-circle d-flex align-items-center justify-content-center" style="width: 50px; height: 50px; background: rgba(2, 132, 199, 0.1); color: #0284c7; font-size: 1.3rem;">
                             <i class="fa-solid fa-bed-pulse"></i>
                         </div>
-                        <h5 class="fw-bold mb-0 text-dark">Home ICU Setup</h5>
+                        <h5 class="fw-bold mb-0 text-dark">ICU & Critical Care</h5>
                     </div>
                     <p class="text-muted small mb-4 lh-base">
-                        Complete hospital-standard intensive care with ventilators, BiPAP, multipara cardiac monitors, syringe pumps, and certified critical care nurses.
+                        Hospital-standard intensive care with ventilators, BiPAP, multipara cardiac monitors, syringe pumps, and certified critical care nurses.
                     </p>
-                    <a href="pages/icu-care---critical-care.php" class="btn btn-sm btn-outline-primary rounded-pill px-3 fw-bold mt-auto align-self-start">
-                        Explore ICU Setup <i class="fa-solid fa-arrow-right ms-1"></i>
+                    <a href="icu-care---critical-care" class="btn btn-sm btn-outline-primary rounded-pill px-3 fw-bold mt-auto align-self-start">
+                        Explore Critical Care <i class="fa-solid fa-arrow-right ms-1"></i>
                     </a>
                 </div>
             </div>

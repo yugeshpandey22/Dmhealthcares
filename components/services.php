@@ -30,7 +30,7 @@
                             <i class="fa-solid fa-heart-pulse" style="font-size: 2.5rem; color: var(--primary-color); transform: rotate(-5deg);"></i>
                         </div>
                         <h4 class="card-title fw-bold text-dark mb-2">Critical & ICU Care</h4>
-                        <p class="small text-muted mb-4 px-2">Advanced critical care and complete ICU setup at home for severe conditions.</p>
+                        <p class="small text-muted mb-4 px-2">Advanced critical care and 24/7 intensive nursing support for complex medical conditions.</p>
                         <a href="#contact" class="btn btn-outline-primary rounded-pill px-4 fw-semibold w-100">Book Service</a>
                     </div>
                 </div>
