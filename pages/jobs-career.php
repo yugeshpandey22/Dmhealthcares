@@ -6,43 +6,44 @@ $seo_desc = "Join DM Healthcare as a registered nurse, healthcare attendant, phy
 $short_desc = "Explore high-growth healthcare careers at DM Healthcare. Join our clinical squad delivering quality care across Delhi NCR.";
 $category_name = "Careers";
 $full_page_override = true;
+$custom_content = ''; // Suppress old unstyled raw database text
 
 $frontend_custom_sections = '
 <style>
-:root {
-    --primary-color: #e5252a;
-    --primary-dark: #c4181d;
-    --secondary-color: #0f172a;
-    --border-light: #e2e8f0;
-}
-
 /* Page Layout */
 .careers-page {
     background-color: #f8fafc;
     overflow-x: hidden;
+    width: 100%;
 }
 
 /* Top Banner Header */
 .careers-banner-wrap {
     width: 100%;
     background: #0f172a;
-    border-bottom: 4px solid var(--primary-color);
+    border-bottom: 4px solid var(--primary-color, #e5252a);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.06);
     overflow: hidden;
 }
 .careers-banner-wrap img {
     width: 100%;
     height: auto;
-    max-height: 420px;
+    max-height: 380px;
     object-fit: cover;
     display: block;
+}
+@media (max-width: 768px) {
+    .careers-banner-wrap img {
+        max-height: 220px;
+    }
 }
 
 /* Hero Section */
 .careers-intro-box {
     background: #ffffff;
-    border: 1px solid var(--border-light);
+    border: 1px solid #e2e8f0;
     border-radius: 24px;
-    padding: 40px;
+    padding: 36px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.03);
     margin-bottom: 40px;
 }
@@ -50,7 +51,7 @@ $frontend_custom_sections = '
 /* Position Vacancy Pills */
 .vacancy-pill {
     background: #ffffff;
-    border: 1px solid var(--border-light);
+    border: 1px solid #e2e8f0;
     border-radius: 16px;
     padding: 16px 20px;
     display: flex;
@@ -60,7 +61,7 @@ $frontend_custom_sections = '
     box-shadow: 0 2px 8px rgba(0,0,0,0.02);
 }
 .vacancy-pill:hover {
-    border-color: var(--primary-color);
+    border-color: #e5252a;
     transform: translateY(-3px);
     box-shadow: 0 10px 25px rgba(229, 37, 42, 0.08);
 }
@@ -68,33 +69,33 @@ $frontend_custom_sections = '
 /* Feature Cards */
 .career-feature-card {
     background: #ffffff;
-    border: 1px solid var(--border-light);
+    border: 1px solid #e2e8f0;
     border-radius: 20px;
-    padding: 28px 24px;
+    padding: 24px 20px;
     height: 100%;
     transition: all 0.3s ease;
     box-shadow: 0 4px 15px rgba(0,0,0,0.02);
 }
 .career-feature-card:hover {
     transform: translateY(-5px);
-    border-color: var(--primary-color);
+    border-color: #e5252a;
     box-shadow: 0 15px 35px rgba(229, 37, 42, 0.08);
 }
 .career-icon-box {
-    width: 52px;
-    height: 52px;
+    width: 48px;
+    height: 48px;
     border-radius: 14px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.3rem;
-    margin-bottom: 16px;
+    font-size: 1.2rem;
+    margin-bottom: 14px;
 }
 
 /* Form Card */
 .career-form-card {
     background: #ffffff;
-    border: 1px solid var(--border-light);
+    border: 1px solid #e2e8f0;
     border-radius: 24px;
     padding: 36px;
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.04);
@@ -106,7 +107,7 @@ $frontend_custom_sections = '
     position: absolute;
     top: 0; left: 0; right: 0;
     height: 5px;
-    background: linear-gradient(90deg, var(--primary-color) 0%, #ff7300 100%);
+    background: linear-gradient(90deg, #e5252a 0%, #ff7300 100%);
 }
 
 .career-form-label {
@@ -128,7 +129,7 @@ $frontend_custom_sections = '
 }
 .career-input:focus {
     background: #ffffff;
-    border-color: var(--primary-color);
+    border-color: #e5252a;
     box-shadow: 0 0 0 4px rgba(229, 37, 42, 0.12);
 }
 
@@ -144,7 +145,7 @@ $frontend_custom_sections = '
     position: relative;
 }
 .career-upload-box:hover {
-    border-color: var(--primary-color);
+    border-color: #e5252a;
     background: #fff8f8;
 }
 .career-upload-box input[type="file"] {
@@ -156,7 +157,7 @@ $frontend_custom_sections = '
 
 /* Submit Button */
 .btn-career-submit {
-    background: var(--primary-color);
+    background: #e5252a;
     color: white;
     border: none;
     padding: 15px 30px;
@@ -179,7 +180,7 @@ $frontend_custom_sections = '
     width: 42px;
     height: 42px;
     border-radius: 50%;
-    background: var(--primary-color);
+    background: #e5252a;
     color: white;
     display: inline-flex;
     align-items: center;
@@ -192,7 +193,12 @@ $frontend_custom_sections = '
 </style>
 
 <div class="careers-page">
-    <!-- Breadcrumbs Bar -->
+    <!-- 1. Top Uncropped Responsive Banner -->
+    <div class="careers-banner-wrap">
+        <img src="assets/images/banner2.jpg" alt="Healthcare Careers & Jobs - DM Healthcare" class="img-fluid w-100" onerror="this.onerror=null; this.src=\'assets/images/banner1.jpg\';">
+    </div>
+
+    <!-- 2. Breadcrumbs Bar -->
     <div class="bg-white border-bottom py-2 shadow-sm">
         <div class="container">
             <nav aria-label="breadcrumb">
@@ -211,11 +217,11 @@ $frontend_custom_sections = '
         <div class="careers-intro-box">
             <div class="row align-items-center">
                 <div class="col-lg-8 mb-4 mb-lg-0">
-                    <span class="badge px-3 py-2 rounded-pill fw-bold mb-3 shadow-sm" style="background: rgba(229, 37, 42, 0.1); color: var(--primary-color); font-size: 0.82rem; letter-spacing: 1px;">
+                    <span class="badge px-3 py-2 rounded-pill fw-bold mb-3 shadow-sm" style="background: rgba(229, 37, 42, 0.1); color: #e5252a; font-size: 0.82rem; letter-spacing: 1px;">
                         <i class="fa-solid fa-briefcase me-1"></i> WE ARE HIRING ACROSS DELHI NCR
                     </span>
                     <h2 class="fw-bolder text-dark display-6 mb-3" style="letter-spacing: -0.5px;">
-                        Build a Rewarding Career in <span style="color: var(--primary-color);">Home Healthcare</span>
+                        Build a Rewarding Career in <span style="color: #e5252a;">Home Healthcare</span>
                     </h2>
                     <p class="text-muted lead fs-6 mb-0" style="line-height: 1.8;">
                         Join North India\'s premier home healthcare network. We offer industry-leading remuneration, verified patient environments, continuous ICU & clinical training, flexible 12/24 hour shifts, and dedicated staff safety support across Faridabad, Noida, Delhi & Gurugram.
@@ -224,7 +230,7 @@ $frontend_custom_sections = '
                 <div class="col-lg-4 text-lg-end">
                     <div class="p-3 bg-light rounded-4 border d-inline-block text-center w-100" style="max-width: 320px;">
                         <span class="small fw-bold text-muted text-uppercase d-block mb-1">Direct HR Recruitment Helpline</span>
-                        <a href="tel:+919891989686" class="fs-5 fw-bolder text-danger text-decoration-none d-block mb-2" style="color: var(--primary-color) !important;">
+                        <a href="tel:+919891989686" class="fs-5 fw-bolder text-danger text-decoration-none d-block mb-2" style="color: #e5252a !important;">
                             <i class="fa-solid fa-phone me-1"></i> +91-9891989686
                         </a>
                         <span class="badge bg-success bg-opacity-10 text-success fw-bold px-3 py-1 rounded-pill">
@@ -243,14 +249,14 @@ $frontend_custom_sections = '
                 
                 <!-- Open Positions -->
                 <div class="mb-4">
-                    <span class="text-uppercase fw-bold small text-danger" style="color: var(--primary-color) !important; letter-spacing: 1.2px;">Urgent Requirements</span>
+                    <span class="text-uppercase fw-bold small text-danger" style="color: #e5252a !important; letter-spacing: 1.2px;">Urgent Requirements</span>
                     <h4 class="fw-bold text-dark mt-1 mb-3">Current Active Vacancies</h4>
                 </div>
 
                 <div class="d-flex flex-column gap-3 mb-5">
                     <div class="vacancy-pill">
                         <div class="d-flex align-items-center gap-3">
-                            <div class="rounded-circle d-flex align-items-center justify-content-center" style="width: 40px; height: 40px; background: rgba(229, 37, 42, 0.1); color: var(--primary-color);">
+                            <div class="rounded-circle d-flex align-items-center justify-content-center" style="width: 40px; height: 40px; background: rgba(229, 37, 42, 0.1); color: #e5252a;">
                                 <i class="fa-solid fa-user-nurse"></i>
                             </div>
                             <div>
@@ -258,7 +264,7 @@ $frontend_custom_sections = '
                                 <small class="text-muted">Home & ICU Patient Care</small>
                             </div>
                         </div>
-                        <span class="badge bg-danger rounded-pill px-3 py-2 fw-semibold" style="background: var(--primary-color) !important;">15+ Open</span>
+                        <span class="badge bg-danger rounded-pill px-3 py-2 fw-semibold" style="background: #e5252a !important;">15+ Open</span>
                     </div>
 
                     <div class="vacancy-pill">
@@ -303,14 +309,14 @@ $frontend_custom_sections = '
 
                 <!-- Why Join Us Highlights -->
                 <div class="mb-4">
-                    <span class="text-uppercase fw-bold small text-danger" style="color: var(--primary-color) !important; letter-spacing: 1.2px;">Staff Benefits</span>
+                    <span class="text-uppercase fw-bold small text-danger" style="color: #e5252a !important; letter-spacing: 1.2px;">Staff Benefits</span>
                     <h4 class="fw-bold text-dark mt-1 mb-3">Why Healthcare Staff Chooses DM</h4>
                 </div>
 
                 <div class="row g-3">
                     <div class="col-sm-6">
                         <div class="career-feature-card">
-                            <div class="career-icon-box" style="background: rgba(229, 37, 42, 0.1); color: var(--primary-color);">
+                            <div class="career-icon-box" style="background: rgba(229, 37, 42, 0.1); color: #e5252a;">
                                 <i class="fa-solid fa-money-bill-wave"></i>
                             </div>
                             <h6 class="fw-bold text-dark mb-1">Top Salary Packages</h6>
@@ -353,7 +359,7 @@ $frontend_custom_sections = '
                 <div class="career-form-card">
                     <div class="d-flex align-items-center justify-content-between mb-4">
                         <div>
-                            <span class="badge px-3 py-1 rounded-pill small fw-bold mb-1" style="background: rgba(229, 37, 42, 0.1); color: var(--primary-color);">
+                            <span class="badge px-3 py-1 rounded-pill small fw-bold mb-1" style="background: rgba(229, 37, 42, 0.1); color: #e5252a;">
                                 Express Hiring Portal
                             </span>
                             <h3 class="fw-bold text-dark mb-0">Submit Online Job Application</h3>
@@ -422,14 +428,14 @@ $frontend_custom_sections = '
                             <div class="col-12 mt-3">
                                 <label class="career-form-label">Upload Resume / CV (PDF, DOC, DOCX) <span class="text-danger">*</span></label>
                                 <div class="career-upload-box" id="careerDropZone">
-                                    <i class="fa-solid fa-cloud-arrow-up fs-2 text-danger mb-2" style="color: var(--primary-color) !important;"></i>
+                                    <i class="fa-solid fa-cloud-arrow-up fs-2 text-danger mb-2" style="color: #e5252a !important;"></i>
                                     <h6 class="fw-bold text-dark mb-1">Click to browse or drag & drop resume</h6>
                                     <small class="text-muted d-block">Supported formats: PDF, DOC, DOCX (Max size: 5MB)</small>
                                     <input type="file" name="resume" id="careerResumeInput" accept=".pdf,.doc,.docx" required>
                                 </div>
                                 <div id="careerFileDisplay" class="mt-2 p-3 bg-light rounded-3 d-flex align-items-center justify-content-between" style="display:none !important;">
                                     <div class="d-flex align-items-center">
-                                        <i class="fa-solid fa-file-pdf text-danger fs-3 me-3" style="color: var(--primary-color) !important;"></i>
+                                        <i class="fa-solid fa-file-pdf text-danger fs-3 me-3" style="color: #e5252a !important;"></i>
                                         <div>
                                             <span class="fw-bold text-dark small d-block" id="careerFileName">resume.pdf</span>
                                             <small class="text-success fw-bold"><i class="fa-solid fa-check-circle"></i> File attached successfully</small>
@@ -457,7 +463,7 @@ $frontend_custom_sections = '
         <!-- 5. 4-Step Transparent Hiring Workflow -->
         <div class="mt-5 pt-5 border-top">
             <div class="text-center mb-5">
-                <span class="text-uppercase fw-bold small text-danger" style="color: var(--primary-color) !important; letter-spacing: 1.5px;">Fast & Transparent</span>
+                <span class="text-uppercase fw-bold small text-danger" style="color: #e5252a !important; letter-spacing: 1.5px;">Fast & Transparent</span>
                 <h3 class="fw-bold text-dark mt-1">Our 4-Step Recruitment Process</h3>
                 <p class="text-muted mx-auto" style="max-width: 600px;">From application to first doorstep patient care deployment within 48 to 72 hours.</p>
             </div>
