@@ -292,8 +292,12 @@ try {
     <div class="content-section">
         <div class="container">
             <?php 
-                $has_backend_content = !empty($custom_content) || !empty($specs) || !empty($gallery_images);
-                $should_show_top_section = $has_backend_content || (!isset($hide_default_welcome) || !$hide_default_welcome);
+                $has_real_custom_content = !empty(trim($custom_content ?? ''));
+                $has_real_specs = !empty(trim($specs ?? ''));
+                $has_real_gallery = !empty($gallery_images) && $gallery_images !== '[]' && $gallery_images !== 'null' && $gallery_images !== '""';
+                $has_backend_content = $has_real_custom_content || $has_real_specs || $has_real_gallery;
+                $is_welcome_hidden = isset($hide_default_welcome) && $hide_default_welcome;
+                $should_show_top_section = $is_welcome_hidden ? $has_real_custom_content : true;
             ?>
             <?php if($should_show_top_section): ?>
             <div class="row g-4 mb-5">
@@ -456,8 +460,8 @@ try {
                 </div>
 
                 <!-- Right Column: Media, Contact Card & Related Internal Links (5 Cols) -->
-                <div class="col-lg-5 order-1 order-lg-2" style="align-self: flex-start;">
-                    <div style="position: sticky; top: 100px; z-index: 10;">
+                <div class="col-lg-5 order-1 order-lg-2">
+                    <div>
                         <!-- Feature Image -->
                         <div class="mb-4">
                             <img src="<?= htmlspecialchars($display_image) ?>" alt="<?= htmlspecialchars($display_title) ?>" class="img-fluid rounded-4 shadow w-100 border border-3 border-white" style="height: 280px; object-fit: cover;" onerror="this.src='assets/images/about.jpg'">
