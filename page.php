@@ -16,7 +16,7 @@ $specs = $page_data ? $page_data['specifications'] : null;
 $custom_image = $page_data && $page_data['page_image'] ? $page_data['page_image'] : null;
 $banner_image = $page_data && $page_data['banner_image'] ? $page_data['banner_image'] : null;
 $gallery_images = $page_data && $page_data['gallery_images'] ? json_decode($page_data['gallery_images'], true) : [];
-$display_image = $custom_image ? $custom_image : 'assets/images/about.jpg';
+$display_image = ($custom_image && file_exists($custom_image)) ? $custom_image : 'assets/images/about.jpg';
 $category_name = $page_data && !empty($page_data['category_name']) ? $page_data['category_name'] : 'Healthcare Services';
 
 // HYBRID ROUTING: If a physical file exists for this page, let it override variables
@@ -198,13 +198,16 @@ try {
         border-color: rgba(229, 37, 42, 0.2);
     }
 
-    /* Sticky Contact Card */
+    /* Contact Card */
     .contact-card {
         background: #ffffff;
         border-radius: 20px;
-        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
         border: 1px solid #edf2f7;
         border-top: 4px solid var(--primary-color);
+        transform: translateZ(0);
+        backface-visibility: hidden;
+        will-change: auto;
     }
 
     .related-links-card {
@@ -464,7 +467,7 @@ try {
                     <div>
                         <!-- Feature Image -->
                         <div class="mb-4">
-                            <img src="<?= htmlspecialchars($display_image) ?>" alt="<?= htmlspecialchars($display_title) ?>" class="img-fluid rounded-4 shadow w-100 border border-3 border-white" style="height: 280px; object-fit: cover;" onerror="this.src='assets/images/about.jpg'">
+                            <img src="<?= htmlspecialchars($display_image) ?>" alt="<?= htmlspecialchars($display_title) ?>" class="img-fluid rounded-4 shadow w-100 border border-3 border-white" style="height: 280px; object-fit: cover;" onerror="this.onerror=null; this.src='assets/images/about.jpg';">
                         </div>
 
                         <!-- Sticky Contact & Booking Card -->
