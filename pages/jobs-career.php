@@ -162,8 +162,25 @@ $frontend_custom_sections = '
 }
 </style>
 
+<!-- Top Responsive Banner -->
+<div class="page-header-banner-wrap w-100" style="border-bottom: 4px solid var(--primary-color); background: #0f172a;">
+    <img src="assets/images/banner2.jpg" alt="Healthcare Careers & Jobs - DM Healthcare" class="img-fluid w-100" style="width: 100%; height: auto; max-height: 480px; object-fit: cover; display: block;" onerror="this.onerror=null; this.src=\'assets/images/banner1.jpg\';">
+</div>
+
+<!-- Breadcrumbs Bar -->
+<div class="bg-white border-bottom py-2 shadow-sm">
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb mb-0" style="font-size: 0.88rem;">
+                <li class="breadcrumb-item"><a href="index.php" class="text-decoration-none text-muted"><i class="fa-solid fa-house me-1"></i> Home</a></li>
+                <li class="breadcrumb-item active text-dark fw-bold" aria-current="page">Jobs & Careers</li>
+            </ol>
+        </nav>
+    </div>
+</div>
+
 <div class="jobs-container">
-    <!-- Premium Hero -->
+    <!-- Premium Hero Intro -->
     <div class="jobs-hero">
         <div class="container position-relative">
             <div class="row align-items-center">
