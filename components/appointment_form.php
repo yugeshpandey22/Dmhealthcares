@@ -86,10 +86,12 @@
                                 <div class="form-floating">
                                     <select class="form-select bg-light" id="serviceReq" name="service_required" required>
                                         <option value="" selected disabled>Select a Service...</option>
-                                        <option value="nursing">Home Nursing</option>
-                                        <option value="elderly">Elderly Care</option>
-                                        <option value="physio">Physiotherapy</option>
+                                        <option value="nursing">Home Nursing Services</option>
+                                        <option value="elderly">Elderly Care & Attendant</option>
+                                        <option value="physio">Physiotherapy at Home</option>
                                         <option value="equipment">Medical Equipment on Rent</option>
+                                        <option value="diagnostics">Diagnostics & Lab Tests</option>
+                                        <option value="other">Other Medical Assistance</option>
                                     </select>
                                     <label for="serviceReq"><i class="fa-solid fa-stethoscope me-2 text-muted"></i>Service Required *</label>
                                 </div>

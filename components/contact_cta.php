@@ -64,9 +64,10 @@
                                         <option value="" selected disabled>Select Required Service...</option>
                                         <option value="patient-attendant">Patient Attendant / Caretaker</option>
                                         <option value="nursing">Home Nursing Services</option>
-                                        <option value="icu-setup">ICU Setup at Home</option>
+                                        <option value="icu-care">ICU & Critical Care</option>
                                         <option value="physiotherapy">Physiotherapy at Home</option>
                                         <option value="medical-equipment">Medical Equipment Rent/Sale</option>
+                                        <option value="diagnostics">Diagnostics & Lab Tests</option>
                                         <option value="other">Other Inquiry</option>
                                     </select>
                                     <label for="enqService">Required Service *</label>
