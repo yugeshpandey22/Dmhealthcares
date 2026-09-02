@@ -192,12 +192,7 @@ $frontend_custom_sections = '
 </style>
 
 <div class="careers-page">
-    <!-- 1. Top Uncropped Responsive Banner -->
-    <div class="careers-banner-wrap">
-        <img src="assets/images/banner2.jpg" alt="Healthcare Careers & Jobs - DM Healthcare" class="img-fluid w-100" onerror="this.onerror=null; this.src=\'assets/images/banner1.jpg\';">
-    </div>
-
-    <!-- 2. Breadcrumbs Bar -->
+    <!-- Breadcrumbs Bar -->
     <div class="bg-white border-bottom py-2 shadow-sm">
         <div class="container">
             <nav aria-label="breadcrumb">

@@ -237,19 +237,8 @@ try {
     }
 </style>
 
-<?php
-    $banner_src = (!empty($banner_image) && file_exists($banner_image)) ? $banner_image : 'assets/images/banner1.jpg';
-    if (!file_exists($banner_src)) {
-        $banner_src = 'assets/images/banner2.jpg';
-    }
-?>
-<!-- Page Header (Fully Responsive Uncropped Banner) -->
+<!-- SEO Breadcrumb Navigation Bar -->
 <?php if(!isset($full_page_override) || !$full_page_override): ?>
-    <div class="page-header-banner-wrap">
-        <img src="<?= htmlspecialchars($banner_src) ?>" alt="<?= htmlspecialchars($display_title) ?>" class="img-fluid w-100" onerror="this.onerror=null; this.src='assets/images/banner1.jpg';">
-    </div>
-
-    <!-- SEO Breadcrumb Navigation Bar -->
     <div class="breadcrumb-nav-bar">
         <div class="container">
             <nav aria-label="breadcrumb">
