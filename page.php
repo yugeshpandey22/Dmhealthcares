@@ -127,20 +127,6 @@ try {
     .rich-text-content table { width: 100% !important; min-width: auto !important; }
     .rich-text-content img { max-width: 100%; height: auto; border-radius: 12px; }
 
-    .page-header {
-        background: <?= (!empty($banner_image)) ? "url('".htmlspecialchars($banner_image)."')" : "url('assets/images/banner1.jpg')" ?> center/cover no-repeat;
-        min-height: 280px;
-        width: 100%;
-        position: relative;
-        border-bottom: 4px solid var(--primary-color);
-        display: block;
-    }
-
-    .page-header .container {
-        position: relative;
-        z-index: 2;
-    }
-
     /* SEO Breadcrumbs Bar */
     .breadcrumb-nav-bar {
         background: #ffffff;
@@ -237,11 +223,8 @@ try {
     }
 </style>
 
-<!-- Page Header (Clean, Fresh Banner Without Text Overlay) -->
+<!-- SEO Breadcrumb Navigation Bar -->
 <?php if(!isset($full_page_override) || !$full_page_override): ?>
-    <div class="page-header"></div>
-
-    <!-- SEO Breadcrumb Navigation Bar -->
     <div class="breadcrumb-nav-bar">
         <div class="container">
             <nav aria-label="breadcrumb">
