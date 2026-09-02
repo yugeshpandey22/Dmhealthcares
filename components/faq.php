@@ -71,12 +71,12 @@
                     <div class="accordion-item border-0">
                         <h2 class="accordion-header" id="headingFive">
                             <button class="accordion-button fw-bold text-dark py-4 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive" style="font-size: 1.1rem; box-shadow: none;">
-                                Do you provide healthcare services for NRIs' parents?
+                                Which areas across Delhi & NCR do you provide home services to?
                             </button>
                         </h2>
                         <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
                             <div class="accordion-body text-muted pb-4">
-                                Yes! We offer specialized NRI Care packages focused on providing trusted healthcare, routine doctor checkups, lab tests, and assisted living support for elderly parents in Faridabad, Noida, and Delhi NCR, providing regular updates to family members abroad.
+                                We provide full 24/7 doorstep healthcare across Faridabad, Noida, Greater Noida, South/Central/West/East Delhi, and Gurugram with rapid deployment of medical attendants and equipment within 30 to 60 minutes.
                             </div>
                         </div>
                     </div>

@@ -20,16 +20,47 @@ $display_image = $custom_image ? $custom_image : 'assets/images/about.jpg';
 $category_name = $page_data && !empty($page_data['category_name']) ? $page_data['category_name'] : 'Healthcare Services';
 
 // HYBRID ROUTING: If a physical file exists for this page, let it override variables
-$slug = strtolower(str_replace([' ', '/'], ['-', '-'], $page_title));
-$slug = preg_replace('/-+/', '-', $slug);
-$physical_file = 'pages/' . $slug . '.php';
-if (file_exists($physical_file)) {
-    require $physical_file;
+$slug_raw = strtolower(str_replace([' ', '/'], ['-', '-'], $page_title));
+$slug_clean = strtolower(trim(preg_replace('/[^A-Za-z0-9-]+/', '-', $page_title), '-'));
+$slug_single_dash = preg_replace('/-+/', '-', $slug_clean);
+
+$possible_files = [
+    'pages/' . $page_title . '.php',
+    'pages/' . $slug_raw . '.php',
+    'pages/' . $slug_clean . '.php',
+    'pages/' . $slug_single_dash . '.php'
+];
+
+foreach ($possible_files as $file) {
+    if (file_exists($file)) {
+        require $file;
+        break;
+    }
+}
+$slug = $slug_single_dash;
+
+$clean_title = trim(str_replace(['.', '_'], [' ', ' '], $page_title));
+$default_display = ucwords(str_replace(['-', '+', '%20'], ' ', $clean_title));
+if (!isset($display_title) || empty($display_title)) {
+    $display_title = ($page_data && !empty($page_data['title'])) ? $page_data['title'] : $default_display;
 }
 
-$display_title = $page_data && !empty($page_data['title']) ? $page_data['title'] : ucwords(str_replace(['-', '+', '%20'], ' ', $page_title));
-$seo_title = $page_data && !empty($page_data['seo_title']) ? $page_data['seo_title'] : $display_title . ' at Home in Faridabad, Noida & Delhi NCR - DM Healthcare';
-$seo_desc = $page_data && !empty($page_data['seo_description']) ? $page_data['seo_description'] : 'Get verified ' . $display_title . ' services at home by DM Healthcare. Certified medical staff, 24/7 doctor supervision, and affordable care packages across Delhi NCR.';
+if (!isset($seo_title) || empty($seo_title)) {
+    if ($page_data && !empty($page_data['seo_title'])) {
+        $seo_title = $page_data['seo_title'];
+    } elseif (stripos($slug, 'delhi') !== false || stripos($slug, 'faridabad') !== false || stripos($slug, 'noida') !== false) {
+        $seo_title = $display_title . ' - Home Healthcare & Nursing Services - DM Healthcare';
+    } else {
+        $seo_title = $display_title . ' at Home in Faridabad, Noida & Delhi NCR - DM Healthcare';
+    }
+}
+
+if (!isset($seo_desc) || empty($seo_desc)) {
+    $seo_desc = ($page_data && !empty($page_data['seo_description'])) ? $page_data['seo_description'] : 'Get verified ' . $display_title . ' services at home by DM Healthcare. Certified medical staff, 24/7 doctor supervision, and affordable care packages across Delhi NCR.';
+}
+if (!isset($short_desc) || empty($short_desc)) {
+    $short_desc = ($page_data && !empty($page_data['short_description'])) ? $page_data['short_description'] : 'Professional, certified and compassionate healthcare delivered right at your doorstep across Delhi NCR.';
+}
 $seo_keywords = $display_title . ', ' . $display_title . ' at home, ' . $display_title . ' in Faridabad, ' . $display_title . ' in Noida, DM Healthcare, DmHealthcares, home healthcare Delhi NCR, 24/7 nursing care';
 
 // Related Services for Internal Linking (SEO Booster)
@@ -274,11 +305,15 @@ try {
                     <?php elseif(!isset($hide_default_welcome) || !$hide_default_welcome): ?>
                         <!-- High-Quality Generated SEO Copy for this service -->
                         <div class="bg-white p-4 p-lg-5 rounded-4 shadow-sm border mb-5">
-                            <span class="text-uppercase fw-bold small text-danger" style="color: var(--primary-color) !important;">Dedicated Home Healthcare</span>
-                            <h2 class="fw-bold mb-4 text-dark">Comprehensive <?= htmlspecialchars($display_title) ?> at Home</h2>
+                            <?php 
+                                $heading_text = (stripos($display_title, 'services') !== false || stripos($display_title, 'ncr') !== false) 
+                                    ? htmlspecialchars($display_title) 
+                                    : 'Comprehensive ' . htmlspecialchars($display_title) . ' at Home';
+                            ?>
+                            <h2 class="fw-bold mb-4 text-dark"><?= $heading_text ?></h2>
                             
                             <p class="text-muted lead fs-6 mb-4" style="line-height: 1.8;">
-                                At <strong>DM Healthcare</strong>, we deliver dedicated hospital-standard medical care directly to your living room. Our specialized team for <strong><?= htmlspecialchars($display_title) ?></strong> combines clinical excellence, certified caregiver assistance, and 24/7 physician oversight to ensure patient safety, dignity, and faster recovery across Faridabad, Noida, Delhi, and Gurugram.
+                                At <strong>DM Healthcare</strong>, we deliver dedicated hospital-standard medical care directly to your doorstep. Our specialized team for <strong><?= htmlspecialchars($display_title) ?></strong> combines clinical excellence, certified caregiver assistance, and 24/7 physician oversight to ensure patient safety, dignity, and faster recovery across Faridabad, Noida, Delhi, and Gurugram.
                             </p>
 
                             <!-- Key Pillars Grid -->

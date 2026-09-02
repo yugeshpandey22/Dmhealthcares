@@ -52,7 +52,6 @@
                     <p><a href="#services" class="text-white text-decoration-none" style="transition: 0.3s;" onmouseover="this.style.color='var(--primary-color)'" onmouseout="this.style.color='white'">Home Care</a></p>
                     <p><a href="#services" class="text-white text-decoration-none" style="transition: 0.3s;" onmouseover="this.style.color='var(--primary-color)'" onmouseout="this.style.color='white'">Medical Equipment</a></p>
                     <p><a href="#services" class="text-white text-decoration-none" style="transition: 0.3s;" onmouseover="this.style.color='var(--primary-color)'" onmouseout="this.style.color='white'">Diagnostics</a></p>
-                    <p><a href="#services" class="text-white text-decoration-none" style="transition: 0.3s;" onmouseover="this.style.color='var(--primary-color)'" onmouseout="this.style.color='white'">NRI Care Services</a></p>
                     <p><a href="#services" class="text-white text-decoration-none" style="transition: 0.3s;" onmouseover="this.style.color='var(--primary-color)'" onmouseout="this.style.color='white'">Specialized Care</a></p>
                 </div>
 

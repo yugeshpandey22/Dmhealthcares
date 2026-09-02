@@ -72,7 +72,7 @@
                             <i class="fa-solid fa-microscope" style="font-size: 2.5rem; color: var(--primary-color); transform: rotate(5deg);"></i>
                         </div>
                         <h4 class="card-title fw-bold text-dark mb-2">Diagnostics at Home</h4>
-                        <p class="small text-muted mb-4 px-2">ECG, Holter monitoring, Sleep Study, and lab sample collections.</p>
+                        <p class="small text-muted mb-4 px-2">ECG at Home, Sleep Study, and certified lab sample collections.</p>
                         <a href="#contact" class="btn btn-outline-primary rounded-pill px-4 fw-semibold w-100">Book Service</a>
                     </div>
                 </div>
@@ -86,7 +86,7 @@
                             <i class="fa-solid fa-wheelchair" style="font-size: 2.5rem; color: var(--primary-color); transform: rotate(-5deg);"></i>
                         </div>
                         <h4 class="card-title fw-bold text-dark mb-2">Medical Equipment</h4>
-                        <p class="small text-muted mb-4 px-2">Hospital beds, BiPAP/CPAP, wheelchairs, and respiratory tools on rent.</p>
+                        <p class="small text-muted mb-4 px-2">Hospital beds, BiPAP/CPAP, oxygen concentrators, and wheelchairs on rent.</p>
                         <a href="#contact" class="btn btn-outline-primary rounded-pill px-4 fw-semibold w-100">Book Service</a>
                     </div>
                 </div>

@@ -347,9 +347,9 @@ $frontend_custom_sections = '
             </div>
             <div class="col-lg-3 col-md-4">
                 <div class="addon-card">
-                    <i class="fa-solid fa-pager fs-1 text-primary mb-3"></i>
-                    <h5 class="fw-bold text-dark mb-2">Holter Monitor</h5>
-                    <p class="text-muted small mb-2">(24Hrs monitoring)</p>
+                    <i class="fa-solid fa-lungs fs-1 text-primary mb-3"></i>
+                    <h5 class="fw-bold text-dark mb-2">Sleep Study at Home</h5>
+                    <p class="text-muted small mb-2">(Overnight sleep test)</p>
                     <div class="d-flex align-items-center justify-content-center gap-2">
                         <h4 class="fw-bold text-primary mb-0">₹3000</h4>
                         <span class="text-muted small text-decoration-line-through">₹5000</span>
@@ -368,11 +368,11 @@ $frontend_custom_sections = '
         <h1 class="display-4 fw-bold text-warning mb-5">Offered Price: ₹15,856</h1>
         
         <div class="d-flex flex-wrap justify-content-center gap-3">
-            <button class="btn btn-primary btn-lg fw-bold px-5 py-3 rounded-pill shadow-sm">
-                Buy Now
-            </button>
-            <a href="tel:+918725024124" class="btn btn-outline-light btn-lg fw-bold px-5 py-3 rounded-pill shadow-sm">
-                <i class="fa-solid fa-phone me-2"></i> Call (+91) 8725024124
+            <a href="index.php#appointment" class="btn btn-primary btn-lg fw-bold px-5 py-3 rounded-pill shadow-sm">
+                Book Package Now
+            </a>
+            <a href="tel:+919891989686" class="btn btn-outline-light btn-lg fw-bold px-5 py-3 rounded-pill shadow-sm">
+                <i class="fa-solid fa-phone me-2"></i> Call (+91) 9891989686
             </a>
         </div>
     </div>

@@ -52,8 +52,8 @@
                     <div class="d-flex justify-content-center align-items-center mb-3" style="height: 120px; background-color: rgba(229, 37, 42, 0.06); border-radius: 15px;">
                         <i class="fa-solid fa-heart-circle-bolt fs-1" style="color: var(--primary-color);"></i>
                     </div>
-                    <h5 class="fw-bold text-dark">Cardiac Monitors</h5>
-                    <p class="text-muted small">ECG/Holter monitors and standard patient monitoring systems.</p>
+                    <h5 class="fw-bold text-dark">Patient Monitors</h5>
+                    <p class="text-muted small">Multipara vitals monitors and standard patient monitoring systems.</p>
                 </div>
             </div>
         </div>

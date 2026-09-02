@@ -310,11 +310,11 @@ $frontend_custom_sections = '
 <!-- 3. Partners & Trust -->
 <section class="py-4 border-top border-bottom bg-white">
     <div class="container text-center">
-        <p class="text-muted fw-bold mb-3 text-uppercase tracking-wider small">Our Fulfill Partners</p>
+        <p class="text-muted fw-bold mb-3 text-uppercase tracking-wider small">Our Certified Laboratory & Diagnostic Partners</p>
         <div class="d-flex flex-wrap justify-content-center gap-4 align-items-center opacity-75">
-            <h5 class="mb-0 fw-bold"><i class="fa-solid fa-user-nurse text-primary me-2"></i> need-nurse-care-at-home</h5>
-            <h5 class="mb-0 fw-bold"><i class="fa-solid fa-user-nurse text-primary me-2"></i> need-nurse-care-at-home</h5>
-            <h5 class="mb-0 fw-bold"><i class="fa-solid fa-user-nurse text-primary me-2"></i> need-nurse-care-at-home</h5>
+            <h5 class="mb-0 fw-bold"><i class="fa-solid fa-microscope text-primary me-2"></i> NABL Certified Labs</h5>
+            <h5 class="mb-0 fw-bold"><i class="fa-solid fa-certificate text-success me-2"></i> ISO 9001 Quality Assured</h5>
+            <h5 class="mb-0 fw-bold"><i class="fa-solid fa-flask-vial text-danger me-2"></i> 100% Barcoded Sample Security</h5>
         </div>
     </div>
 </section>
