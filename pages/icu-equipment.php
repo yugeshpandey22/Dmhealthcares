@@ -77,16 +77,16 @@ body {
 }
 </style>
 
-<!-- 1. Hero Section -->
-<section class="icu-hero">
-    <div class="container text-center z-1 position-relative py-5">
-        <span class="badge bg-light text-primary px-3 py-2 rounded-pill mb-4 fw-bold">Premium Medical & Healthcare</span>
-        <h1 class="display-4 fw-bold mb-4">Advanced ICU Equipment for Modern Healthcare</h1>
-        <p class="lead mb-5 mx-auto" style="max-width: 800px; opacity: 0.9;">High-quality ICU solutions designed for hospitals, nursing homes, and healthcare institutions. We provide state-of-the-art medical devices to ensure the best patient care.</p>
+<!-- 1. Intro Section -->
+<section class="py-5 bg-white border-bottom">
+    <div class="container text-center py-4">
+        <span class="badge bg-danger bg-opacity-10 text-danger px-3 py-2 rounded-pill mb-3 fw-bold" style="color: var(--primary-color) !important;">Premium Medical & Healthcare</span>
+        <h1 class="display-5 fw-bold text-dark mb-3">Advanced ICU Equipment for Modern Healthcare</h1>
+        <p class="lead text-muted mb-4 mx-auto" style="max-width: 800px;">High-quality ICU solutions designed for home setups, hospitals, and nursing homes across Delhi NCR. We provide certified medical devices to ensure the best patient care.</p>
         
         <div class="d-flex justify-content-center gap-3">
-            <a href="#featured-products" class="btn btn-light btn-lg text-primary fw-bold px-5 rounded-pill shadow-sm">Get a Quote</a>
-            <a href="index.php#appointment" class="btn btn-outline-light btn-lg fw-bold px-5 rounded-pill">Contact Us</a>
+            <a href="#featured-products" class="btn btn-danger btn-lg fw-bold px-5 rounded-pill shadow-sm" style="background: var(--primary-color); border-color: var(--primary-color);">Explore Products</a>
+            <a href="index.php#appointment" class="btn btn-outline-dark btn-lg fw-bold px-5 rounded-pill">Book Setup</a>
         </div>
     </div>
 </section>

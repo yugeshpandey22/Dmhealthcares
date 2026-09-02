@@ -5,42 +5,6 @@ $hide_default_welcome = true; // Hides the default "Welcome to TITLE" section fr
 $frontend_custom_sections = '
 
 <style>
-/* HDU Inspired Theme */
-.hdu-hero {
-    background: linear-gradient(135deg, #1E293B 0%, #0F172A 100%);
-    color: white;
-    padding: 80px 0;
-    position: relative;
-    overflow: hidden;
-}
-.hdu-hero::after {
-    content: "";
-    position: absolute;
-    bottom: 0; left: 0; right: 0;
-    height: 50px;
-    background: #f8f9fa;
-    clip-path: polygon(0 100%, 100% 100%, 100% 0);
-}
-.hdu-trust-badge {
-    background: rgba(229, 37, 42, 0.15);
-    border: 1px solid rgba(229, 37, 42, 0.3);
-    padding: 8px 20px;
-    border-radius: 50px;
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    font-size: 14px;
-    font-weight: 600;
-    margin-bottom: 30px;
-    color: #FF8082;
-}
-.hdu-callback-card {
-    background: white;
-    border-radius: 16px;
-    padding: 30px;
-    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
-    color: #333;
-}
 .hdu-feature-card {
     background: white;
     border-radius: 12px;
@@ -69,21 +33,24 @@ $frontend_custom_sections = '
 }
 </style>
 
-<!-- Hero Section -->
-<div class="hdu-hero">
-    <div class="container position-relative z-1">
+<!-- Clean Intro Section -->
+<div class="container py-4">
+    <div class="bg-white p-4 p-md-5 rounded-4 shadow-sm border mb-4">
         <div class="row align-items-center">
-            <div class="col-lg-7 mb-5 mb-lg-0">
-                <div class="hdu-trust-badge">
-                    <i class="fa-solid fa-star text-warning"></i> Trusted by 1000+ Families for ICU Care at Home
-                </div>
-                <h1 class="display-4 fw-bold mb-4">Complete Home ICU Setup</h1>
-                <p class="lead mb-4 opacity-75" style="max-width: 600px;">
-                    We provide ICU beds, ventilators, monitors, and trained medical staff for critical care in the comfort of your home.
+            <div class="col-lg-7 mb-4 mb-lg-0">
+                <span class="badge px-3 py-2 rounded-pill fw-bold mb-3" style="background: rgba(229, 37, 42, 0.1); color: var(--primary-color);">
+                    <i class="fa-solid fa-star text-warning me-1"></i> Trusted by 1000+ Families for ICU at Home
+                </span>
+                <h1 class="display-5 fw-bold text-dark mb-3">Complete Home ICU Setup</h1>
+                <p class="lead text-muted mb-4" style="line-height: 1.7;">
+                    We provide hospital-grade ICU beds, ventilators, multi-para monitors, and trained critical care medical staff in the comfort of your home across Delhi NCR.
                 </p>
-                <div class="d-flex gap-3">
-                    <a href="tel:+919891989686" class="btn btn-primary btn-lg fw-bold px-4 rounded-pill">
-                        <i class="fa-solid fa-phone me-2"></i> Call Us Now
+                <div class="d-flex flex-wrap gap-3">
+                    <a href="tel:+919891989686" class="btn btn-danger btn-lg fw-bold px-4 rounded-pill shadow-sm" style="background: var(--primary-color); border-color: var(--primary-color);">
+                        <i class="fa-solid fa-phone me-2"></i> Call 24/7 ICU Desk
+                    </a>
+                    <a href="index.php#appointment" class="btn btn-outline-dark btn-lg fw-bold px-4 rounded-pill">
+                        <i class="fa-solid fa-calendar-check me-2"></i> Book Setup
                     </a>
                 </div>
             </div>

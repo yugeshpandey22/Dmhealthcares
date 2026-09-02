@@ -41,22 +41,25 @@ $frontend_custom_sections = '
 }
 </style>
 
-<!-- Hero Section with Overlay -->
-<div class="container mb-5 pb-5">
-    <div class="doctor-hero-bg">
-        <div class="doctor-hero-overlay"></div>
-        <div class="container position-relative z-1">
-            <div class="row">
-                <div class="col-lg-7 text-white p-4 p-md-5">
-                    <span class="badge bg-white text-success px-3 py-2 rounded-pill mb-3 fw-bold shadow-sm">Expert Medical Consultation</span>
-                    <h1 class="fw-bold display-5 mb-4">Physician Visits at Home</h1>
-                    <p class="lead mb-4 opacity-75">Skip the crowded waiting rooms and travel hassle. Our highly qualified and experienced physicians bring complete medical diagnosis and treatment right to your living room.</p>
-                    <div class="d-flex gap-3 mt-4">
-                        <a href="index.php#appointment" class="btn btn-light text-success rounded-pill px-5 py-3 shadow-sm fw-bold">
-                            <i class="fa-solid fa-stethoscope me-2"></i> Book Doctor Visit
-                        </a>
-                    </div>
+<!-- Intro Section -->
+<div class="container mb-5 pb-3">
+    <div class="bg-white p-4 p-md-5 rounded-4 shadow-sm border">
+        <div class="row align-items-center">
+            <div class="col-lg-8">
+                <span class="badge bg-success bg-opacity-10 text-success px-3 py-2 rounded-pill mb-3 fw-bold">Expert Medical Consultation</span>
+                <h1 class="fw-bold text-dark display-5 mb-3">Physician Visits at Home</h1>
+                <p class="lead text-muted mb-4" style="font-size: 1.1rem; line-height: 1.7;">Skip the crowded waiting rooms and travel hassle. Our highly qualified and experienced physicians bring complete medical diagnosis, prescription, and treatment right to your living room.</p>
+                <div class="d-flex flex-wrap gap-3">
+                    <a href="index.php#appointment" class="btn btn-danger rounded-pill px-5 py-3 shadow-sm fw-bold" style="background: var(--primary-color); border-color: var(--primary-color);">
+                        <i class="fa-solid fa-stethoscope me-2"></i> Book Doctor Visit
+                    </a>
+                    <a href="tel:+919891989686" class="btn btn-outline-dark rounded-pill px-4 py-3 fw-bold">
+                        <i class="fa-solid fa-phone me-2"></i> Call Consultation Desk
+                    </a>
                 </div>
+            </div>
+            <div class="col-lg-4 text-center mt-4 mt-lg-0">
+                <img src="assets/images/pages/physician_visit.png" alt="Doctor Consultation" class="img-fluid rounded-4 shadow-sm" style="max-height: 240px; object-fit: cover;" onerror="this.onerror=null; this.src=\'assets/images/about.jpg\';">
             </div>
         </div>
     </div>
