@@ -128,22 +128,14 @@ try {
     .rich-text-content img { max-width: 100%; height: auto; border-radius: 12px; }
 
     .page-header {
-        background: <?= $banner_image ? "url('".htmlspecialchars($banner_image)."')" : "linear-gradient(135deg, #0F172A 0%, #1E293B 100%)" ?>;
+        background: <?= (!empty($banner_image)) ? "url('".htmlspecialchars($banner_image)."')" : "url('assets/images/banner1.jpg')" ?>;
         background-size: cover;
         background-position: center;
-        color: white;
-        min-height: <?= $banner_image ? '380px' : '260px' ?>;
+        min-height: 320px;
+        width: 100%;
         position: relative;
         border-bottom: 4px solid var(--primary-color);
-        display: flex;
-        align-items: center;
-    }
-    
-    .page-header::before {
-        content: '';
-        position: absolute;
-        top: 0; left: 0; right: 0; bottom: 0;
-        background: rgba(15, 23, 42, 0.7);
+        display: block;
     }
 
     .page-header .container {
@@ -247,11 +239,9 @@ try {
     }
 </style>
 
-<!-- Page Header Banner (Clean, Fresh, No Text Clutter) -->
+<!-- Page Header (Original Full-Size Banner, Clean Without Text Clutter) -->
 <?php if(!isset($full_page_override) || !$full_page_override): ?>
-    <?php if(!empty($banner_image) && file_exists($banner_image)): ?>
-        <div class="page-header-banner" style="background: url('<?= htmlspecialchars($banner_image) ?>') center/cover no-repeat; height: 300px; width: 100%; border-bottom: 4px solid var(--primary-color);"></div>
-    <?php endif; ?>
+    <div class="page-header"></div>
 
     <!-- SEO Breadcrumb Navigation Bar -->
     <div class="breadcrumb-nav-bar">
