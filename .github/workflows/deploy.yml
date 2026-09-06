@@ -24,7 +24,6 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           port: ${{ secrets.FTP_PORT || 21 }}
           server-dir: ${{ secrets.FTP_SERVER_DIR || '/public_html/' }}
-          dangerous-clean-slate: true
           exclude: |
             **/.git*
             **/.git*/**
