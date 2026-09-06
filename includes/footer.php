@@ -87,7 +87,7 @@
                 </div>
                 <div class="col-md-5 col-lg-6 text-md-end mt-3 mt-md-0">
                     <p class="mb-0" style="color: #b0b0b0;">
-                        Designed by <a href="https://www.mineib.com/" target="_blank" style="color: var(--primary-color); text-decoration: none; font-weight: bold;">Mineib</a>
+                        Designed & Developed by <span style="color: var(--primary-color); font-weight: bold;">Yugesh</span>
                     </p>
                 </div>
             </div>
