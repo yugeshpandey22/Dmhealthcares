@@ -29,13 +29,18 @@ $frontend_custom_sections = '
 .careers-banner-wrap img {
     width: 100%;
     height: auto;
-    max-height: 380px;
+    aspect-ratio: 1808 / 506;
+    max-height: 506px;
     object-fit: cover;
     display: block;
 }
 @media (max-width: 768px) {
     .careers-banner-wrap img {
-        max-height: 220px;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1808 / 506;
+        object-fit: contain;
+        background: #0f172a;
     }
 }
 
