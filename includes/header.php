@@ -517,7 +517,6 @@ $page_keywords_seo = isset($seo_keywords) && !empty($seo_keywords)
                                             <i class="fa-solid fa-chevron-down ms-1" style="font-size: 0.8em;"></i>
                                         </a>
                                         <ul class="dropdown-menu border-0 shadow-sm rounded-3">
-                                            <li><a class="dropdown-item py-2" href="<?= $base_domain_url ?>/"><i class="fa-solid fa-house me-2 text-danger"></i> Home Page</a></li>
                                             <?php foreach ($grouped_items[$cat['id']] as $nav_item): ?>
                                                 <li><a class="dropdown-item py-2" href="<?= htmlspecialchars($get_nav_url($nav_item['link'])) ?>"><?= htmlspecialchars($nav_item['title']) ?></a></li>
                                             <?php endforeach; ?>
