@@ -187,7 +187,10 @@ if ($current_cat_id) {
                 <?= $current_category ? 'Manage sub-pages, service content and URLs under this category.' : 'Configure main top navbar categories and navigation structure.' ?>
             </p>
         </div>
-        <div>
+        <div class="d-flex gap-2">
+            <a href="../backend/sync_database.php" target="_blank" class="btn btn-outline-primary rounded-pill px-3 fw-semibold btn-sm" title="Sync database categories & links">
+                <i class="fa-solid fa-arrows-rotate me-1"></i> Sync DB
+            </a>
             <?php if($current_category): ?>
                 <a href="navbar_manager.php" class="btn btn-outline-dark rounded-pill px-4 fw-semibold btn-sm">
                     <i class="fa-solid fa-arrow-left me-1"></i> All Categories
