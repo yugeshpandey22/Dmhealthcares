@@ -154,7 +154,7 @@ CREATE TABLE `nav_categories` (
 
 LOCK TABLES `nav_categories` WRITE;
 /*!40000 ALTER TABLE `nav_categories` DISABLE KEYS */;
-INSERT INTO `nav_categories` VALUES (2,'Home Care',4,'2026-08-05 06:53:18'),(3,'Medical Equipment',3,'2026-08-05 06:53:18'),(4,'Diagnostics',2,'2026-08-05 06:53:18'),(6,'Specialized Care',7,'2026-08-05 06:53:18'),(7,'Job',5,'2026-08-05 06:53:18'),(8,'Blood Checkup',6,'2026-08-05 06:53:18'),(13,'Home',1,'2026-08-05 08:34:40');
+INSERT INTO `nav_categories` VALUES (2,'Home Care',4,'2026-08-05 06:53:18'),(3,'Medical Equipment',3,'2026-08-05 06:53:18'),(4,'Diagnostics',2,'2026-08-05 06:53:18'),(7,'Job',5,'2026-08-05 06:53:18'),(8,'Blood Checkup',6,'2026-08-05 06:53:18'),(13,'Home',1,'2026-08-05 08:34:40');
 /*!40000 ALTER TABLE `nav_categories` ENABLE KEYS */;
 UNLOCK TABLES;
 

@@ -37,18 +37,18 @@ header('Content-Type: text/html; charset=utf-8');
 try {
     echo "<div>[1/4] Connecting to Database... <span class='text-success'>CONNECTED</span></div>";
 
-    // Categories definition
+    // Categories definition (Strict 6 categories)
     $categories = [
         ['id' => 13, 'name' => 'Home', 'display_order' => 1],
         ['id' => 4,  'name' => 'Diagnostics', 'display_order' => 2],
         ['id' => 3,  'name' => 'Medical Equipment', 'display_order' => 3],
         ['id' => 2,  'name' => 'Home Care', 'display_order' => 4],
         ['id' => 7,  'name' => 'Job', 'display_order' => 5],
-        ['id' => 8,  'name' => 'Blood Checkup', 'display_order' => 6],
-        ['id' => 6,  'name' => 'Specialized Care', 'display_order' => 7],
+        ['id' => 8,  'name' => 'Blood Checkup', 'display_order' => 6]
     ];
 
     // 1. Sync Categories
+    $conn->exec("DELETE FROM nav_categories WHERE id NOT IN (13, 4, 3, 2, 7, 8) OR name LIKE '%NRI%' OR name LIKE '%Specialized%'");
     $cat_stmt = $conn->prepare("INSERT INTO nav_categories (id, name, display_order) VALUES (:id, :name, :order) ON DUPLICATE KEY UPDATE name = VALUES(name), display_order = VALUES(display_order)");
     foreach ($categories as $cat) {
         $cat_stmt->execute(['id' => $cat['id'], 'name' => $cat['name'], 'order' => $cat['display_order']]);
