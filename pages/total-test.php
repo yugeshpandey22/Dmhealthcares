@@ -5,9 +5,9 @@
  */
 
 $display_title = "HealthFit Blood Test Packages";
-$seo_title = "Asian HealthFit Total Test Packages at Home - 75 to 100 Tests - DM Healthcare";
-$seo_desc = "Book Asian HealthFit Blood Test Packages at Home across Delhi NCR. 75 to 100 tests starting at ₹999. Includes free home sample collection and free specialist doctor consultation.";
-$short_desc = "Comprehensive full-body HealthFit test packages from 75 to 100 tests. Free doorstep blood collection across Delhi, Noida, Faridabad, Gurugram & Palwal.";
+$seo_title = "Asian HealthFit Total Test Packages at Home - 75 to 92 Tests - DM Healthcare";
+$seo_desc = "Book Asian HealthFit Blood Test Packages at Home across Delhi NCR. 75 to 92 tests starting at ₹999. Includes free home sample collection and free specialist doctor consultation.";
+$short_desc = "Comprehensive full-body HealthFit test packages from 75 to 92 tests. Free doorstep blood collection across Delhi, Noida, Faridabad, Gurugram & Palwal.";
 $category_name = "Blood Checkup";
 $full_page_override = true; // Use custom full-page design without generic nursing CMS layout
 
@@ -119,10 +119,6 @@ $frontend_custom_sections = '
 .hf-header-bronze { background: linear-gradient(135deg, #fffbeb 0%, #fef3c7 100%); }
 .hf-header-silver { background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%); }
 .hf-header-gold   { background: linear-gradient(135deg, #fff7ed 0%, #ffedd5 100%); }
-.hf-header-plat-m { background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%); }
-.hf-header-plat-f { background: linear-gradient(135deg, #fdf2f8 0%, #fce7f3 100%); }
-.hf-header-saph-m { background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%); }
-.hf-header-saph-f { background: linear-gradient(135deg, #faf5ff 0%, #f3e8ff 100%); }
 
 .hf-tests-pill {
     font-size: 0.82rem;
@@ -137,10 +133,6 @@ $frontend_custom_sections = '
 .hf-pill-bronze { background: #d97706; color: white; }
 .hf-pill-silver { background: #64748b; color: white; }
 .hf-pill-gold   { background: #b45309; color: white; }
-.hf-pill-plat-m { background: #059669; color: white; }
-.hf-pill-plat-f { background: #db2777; color: white; }
-.hf-pill-saph-m { background: #2563eb; color: white; }
-.hf-pill-saph-f { background: #7c3aed; color: white; }
 
 .hf-pkg-body {
     padding: 24px;
@@ -228,7 +220,7 @@ $frontend_custom_sections = '
                 </h1>
 
                 <p class="text-muted fs-6 mb-4" style="line-height: 1.7; max-width: 720px;">
-                    From essential metabolic screenings (75 tests) to comprehensive organ, hormonal, vitamin and cancer marker evaluations (100 tests). DM Healthcare in certified partnership with <strong>Asian Labs</strong> brings painless, hygienic doorstep sample collection directly to your living room across Delhi NCR.
+                    From essential metabolic screenings (75 tests) to comprehensive organ, cardiac, vitamin and lipid evaluations (92 tests). DM Healthcare in certified partnership with <strong>Asian Labs</strong> brings painless, hygienic doorstep sample collection directly to your living room across Delhi NCR.
                 </p>
 
                 <!-- Quick Stats Grid -->
@@ -305,24 +297,23 @@ $frontend_custom_sections = '
 
     <!-- 2. FILTER TABS -->
     <div class="text-center mb-4">
-        <span class="text-uppercase fw-bold px-3 py-1 rounded-pill small" style="background: rgba(229, 37, 42, 0.08); color: var(--primary-red); letter-spacing: 1.5px;">All 7 HealthFit Plans</span>
+        <span class="text-uppercase fw-bold px-3 py-1 rounded-pill small" style="background: rgba(229, 37, 42, 0.08); color: var(--primary-red); letter-spacing: 1.5px;">HealthFit Plans</span>
         <h2 class="fw-bold text-dark mt-2 mb-3">Choose Your HealthFit Package</h2>
-        <p class="text-muted mx-auto" style="max-width: 650px;">Select from our standard or specialized packages tailored for complete organ function, nutritional levels, cancer screenings, and gender-specific requirements.</p>
+        <p class="text-muted mx-auto" style="max-width: 650px;">Select from our comprehensive packages tailored for complete organ function, nutritional levels, bone health, and cardiac risk markers.</p>
 
         <div class="d-flex flex-wrap justify-content-center gap-2 mt-3" id="hfFilterGroup">
-            <button class="hf-filter-btn active" onclick="filterPackages(\'all\', this)">All Packages (7)</button>
-            <button class="hf-filter-btn" onclick="filterPackages(\'essential\', this)">Bronze & Silver (75-86 Tests)</button>
+            <button class="hf-filter-btn active" onclick="filterPackages(\'all\', this)">All Packages (3)</button>
+            <button class="hf-filter-btn" onclick="filterPackages(\'bronze\', this)">Bronze (75 Tests)</button>
+            <button class="hf-filter-btn" onclick="filterPackages(\'silver\', this)">Silver (86 Tests)</button>
             <button class="hf-filter-btn" onclick="filterPackages(\'gold\', this)">Gold (92 Tests)</button>
-            <button class="hf-filter-btn" onclick="filterPackages(\'male\', this)">For Men (Platinum & Sapphire)</button>
-            <button class="hf-filter-btn" onclick="filterPackages(\'female\', this)">For Women (Platinum & Sapphire)</button>
         </div>
     </div>
 
     <!-- 3. PACKAGE CARDS GRID -->
-    <div class="row g-4 row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-3" id="hfPackagesContainer">
+    <div class="row g-4 row-cols-1 row-cols-md-2 row-cols-lg-3" id="hfPackagesContainer">
         
         <!-- 1. HEALTHFIT BRONZE (75 TESTS) -->
-        <div class="col hf-pkg-item" data-category="essential">
+        <div class="col hf-pkg-item" data-category="bronze">
             <div class="hf-pkg-card">
                 <div class="hf-pkg-header hf-header-bronze">
                     <div class="d-flex justify-content-between align-items-start mb-2">
@@ -370,7 +361,7 @@ $frontend_custom_sections = '
         </div>
 
         <!-- 2. HEALTHFIT SILVER (86 TESTS) -->
-        <div class="col hf-pkg-item" data-category="essential">
+        <div class="col hf-pkg-item" data-category="silver">
             <div class="hf-pkg-card">
                 <div class="hf-pkg-header hf-header-silver">
                     <div class="d-flex justify-content-between align-items-start mb-2">
@@ -469,204 +460,6 @@ $frontend_custom_sections = '
             </div>
         </div>
 
-        <!-- 4. HEALTHFIT PLATINUM - MALE (96 TESTS) -->
-        <div class="col hf-pkg-item" data-category="male">
-            <div class="hf-pkg-card">
-                <div class="hf-pkg-header hf-header-plat-m">
-                    <div class="d-flex justify-content-between align-items-start mb-2">
-                        <span class="hf-tests-pill hf-pill-plat-m"><i class="fa-solid fa-mars"></i> 96 Tests (Male)</span>
-                        <span class="badge bg-dark bg-opacity-75 text-white rounded-pill px-2 py-1 small">PKS321M</span>
-                    </div>
-                    <h4 class="fw-bold text-dark mb-1">HealthFit Platinum - Male</h4>
-                    <p class="text-muted small mb-0">Includes PSA (Prostate) & CEA Cancer Marker</p>
-                </div>
-                <div class="hf-pkg-body">
-                    <div class="d-flex align-items-baseline gap-2 mb-3">
-                        <h2 class="fw-bold text-dark mb-0">₹3,999</h2>
-                        <span class="text-muted text-decoration-line-through small">₹15,048</span>
-                        <span class="badge bg-danger bg-opacity-10 text-danger fw-bold rounded-pill ms-auto">Save 73%</span>
-                    </div>
-
-                    <div class="mb-3">
-                        <div class="hf-benefit-row"><i class="fa-solid fa-circle-check text-success"></i> Free Home Sample Collection (Blood & Urine)</div>
-                        <div class="hf-benefit-row"><i class="fa-solid fa-circle-check text-success"></i> PHC Specialist Doctor Consultation Free*</div>
-                        <div class="hf-benefit-row"><i class="fa-solid fa-circle-check text-success"></i> Prostate Health & GI Tumor Screening</div>
-                    </div>
-
-                    <h6 class="fw-bold text-dark small mb-2 text-uppercase" style="letter-spacing: 0.5px;">Key Parameters Included:</h6>
-                    <div class="mb-4">
-                        <span class="hf-param-tag" style="background:#dcfce7; color:#166534; font-weight: 700;">PSA (Prostate Specific Antigen)</span>
-                        <span class="hf-param-tag" style="background:#dcfce7; color:#166534; font-weight: 700;">CEA (Tumor Marker)</span>
-                        <span class="hf-param-tag">Magnesium</span>
-                        <span class="hf-param-tag">Vitamin D & Vitamin B12</span>
-                        <span class="hf-param-tag">Ferritin & Folate</span>
-                        <span class="hf-param-tag">Apo A1 & Apo B</span>
-                        <span class="hf-param-tag">HS-CRP & RA Factor</span>
-                        <span class="hf-param-tag">Lipase & Amylase</span>
-                        <span class="hf-param-tag">Thyroid, LFT, KFT, Lipid</span>
-                        <span class="hf-param-tag">HbA1c & CBC</span>
-                    </div>
-
-                    <div class="mt-auto pt-3 border-top d-flex gap-2">
-                        <a href="https://wa.me/918860600423?text=Hi%20DM%20Healthcare,%20I%20want%20to%20book%20HealthFit%20Platinum%20Male%20(96%20Tests%20at%20Rs.3999,%20Code:%20PKS321M)." target="_blank" class="btn hf-btn-whatsapp btn-sm rounded-pill w-50 py-2">
-                            <i class="fa-brands fa-whatsapp me-1"></i> WhatsApp
-                        </a>
-                        <button onclick="openBookingModal(\'HealthFit Platinum Male (96 Tests)\', \'₹3,999\', \'PKS321M\')" class="btn hf-btn-book btn-sm rounded-pill w-50 py-2">
-                            Book Now
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- 5. HEALTHFIT PLATINUM - FEMALE (95 TESTS) -->
-        <div class="col hf-pkg-item" data-category="female">
-            <div class="hf-pkg-card">
-                <div class="hf-pkg-header hf-header-plat-f">
-                    <div class="d-flex justify-content-between align-items-start mb-2">
-                        <span class="hf-tests-pill hf-pill-plat-f"><i class="fa-solid fa-venus"></i> 95 Tests (Female)</span>
-                        <span class="badge bg-dark bg-opacity-75 text-white rounded-pill px-2 py-1 small">PKS321N</span>
-                    </div>
-                    <h4 class="fw-bold text-dark mb-1">HealthFit Platinum - Female</h4>
-                    <p class="text-muted small mb-0">Includes CA-125 (Ovarian Marker) & CEA</p>
-                </div>
-                <div class="hf-pkg-body">
-                    <div class="d-flex align-items-baseline gap-2 mb-3">
-                        <h2 class="fw-bold text-dark mb-0">₹3,999</h2>
-                        <span class="text-muted text-decoration-line-through small">₹16,326</span>
-                        <span class="badge bg-danger bg-opacity-10 text-danger fw-bold rounded-pill ms-auto">Save 75%</span>
-                    </div>
-
-                    <div class="mb-3">
-                        <div class="hf-benefit-row"><i class="fa-solid fa-circle-check text-success"></i> Free Home Sample Collection (Blood & Urine)</div>
-                        <div class="hf-benefit-row"><i class="fa-solid fa-circle-check text-success"></i> PHC Specialist Doctor Consultation Free*</div>
-                        <div class="hf-benefit-row"><i class="fa-solid fa-circle-check text-success"></i> Women Specific Health & Cancer Screening</div>
-                    </div>
-
-                    <h6 class="fw-bold text-dark small mb-2 text-uppercase" style="letter-spacing: 0.5px;">Key Parameters Included:</h6>
-                    <div class="mb-4">
-                        <span class="hf-param-tag" style="background:#fce7f3; color:#9d174d; font-weight: 700;">CA-125 (Ovarian Marker)</span>
-                        <span class="hf-param-tag" style="background:#fce7f3; color:#9d174d; font-weight: 700;">CEA (Tumor Marker)</span>
-                        <span class="hf-param-tag">Magnesium</span>
-                        <span class="hf-param-tag">Vitamin D & Vitamin B12</span>
-                        <span class="hf-param-tag">Ferritin & Folate</span>
-                        <span class="hf-param-tag">Apo A1 & Apo B</span>
-                        <span class="hf-param-tag">HS-CRP & RA Factor</span>
-                        <span class="hf-param-tag">Amylase</span>
-                        <span class="hf-param-tag">Thyroid Profile (T3, T4, TSH)</span>
-                        <span class="hf-param-tag">LFT, KFT, Calcium, CBC</span>
-                    </div>
-
-                    <div class="mt-auto pt-3 border-top d-flex gap-2">
-                        <a href="https://wa.me/918860600423?text=Hi%20DM%20Healthcare,%20I%20want%20to%20book%20HealthFit%20Platinum%20Female%20(95%20Tests%20at%20Rs.3999,%20Code:%20PKS321N)." target="_blank" class="btn hf-btn-whatsapp btn-sm rounded-pill w-50 py-2">
-                            <i class="fa-brands fa-whatsapp me-1"></i> WhatsApp
-                        </a>
-                        <button onclick="openBookingModal(\'HealthFit Platinum Female (95 Tests)\', \'₹3,999\', \'PKS321N\')" class="btn hf-btn-book btn-sm rounded-pill w-50 py-2">
-                            Book Now
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- 6. HEALTHFIT SAPPHIRE - MALE (100 TESTS) -->
-        <div class="col hf-pkg-item" data-category="male">
-            <div class="hf-pkg-card" style="border: 2px solid #2563eb;">
-                <div class="hf-pkg-header hf-header-saph-m">
-                    <div class="d-flex justify-content-between align-items-start mb-2">
-                        <span class="hf-tests-pill hf-pill-saph-m"><i class="fa-solid fa-gem"></i> 100 Tests (Ultimate Male)</span>
-                        <span class="badge bg-dark bg-opacity-75 text-white rounded-pill px-2 py-1 small">PKS321O</span>
-                    </div>
-                    <h4 class="fw-bold text-dark mb-1">HealthFit Sapphire - Male</h4>
-                    <p class="text-muted small mb-0">Includes Lp(a), Cortisol, IgE, PSA & CEA</p>
-                </div>
-                <div class="hf-pkg-body">
-                    <div class="d-flex align-items-baseline gap-2 mb-3">
-                        <h2 class="fw-bold text-dark mb-0">₹4,999</h2>
-                        <span class="text-muted text-decoration-line-through small">₹18,559</span>
-                        <span class="badge bg-danger bg-opacity-10 text-danger fw-bold rounded-pill ms-auto">Save 73%</span>
-                    </div>
-
-                    <div class="mb-3">
-                        <div class="hf-benefit-row"><i class="fa-solid fa-circle-check text-success"></i> Free Home Sample Collection (Blood & Urine)</div>
-                        <div class="hf-benefit-row"><i class="fa-solid fa-circle-check text-success"></i> PHC Specialist Doctor Consultation Free*</div>
-                        <div class="hf-benefit-row"><i class="fa-solid fa-circle-check text-success"></i> Stress Hormone, Allergy & Cardiac Risk</div>
-                    </div>
-
-                    <h6 class="fw-bold text-dark small mb-2 text-uppercase" style="letter-spacing: 0.5px;">Key Parameters Included:</h6>
-                    <div class="mb-4">
-                        <span class="hf-param-tag" style="background:#dbeafe; color:#1e40af; font-weight: 700;">Lp(a) - Lipoprotein A</span>
-                        <span class="hf-param-tag" style="background:#dbeafe; color:#1e40af; font-weight: 700;">Cortisol (Stress Hormone)</span>
-                        <span class="hf-param-tag" style="background:#dbeafe; color:#1e40af; font-weight: 700;">Immunoglobulin IgE (Allergy)</span>
-                        <span class="hf-param-tag">PSA & CEA Markers</span>
-                        <span class="hf-param-tag">Vitamin D, B12, Ferritin</span>
-                        <span class="hf-param-tag">Apo A1, Apo B, HS-CRP</span>
-                        <span class="hf-param-tag">RA Factor & Folate</span>
-                        <span class="hf-param-tag">Amylase, Lipase, Magnesium</span>
-                        <span class="hf-param-tag">Full Lipid, LFT, KFT, CBC</span>
-                    </div>
-
-                    <div class="mt-auto pt-3 border-top d-flex gap-2">
-                        <a href="https://wa.me/918860600423?text=Hi%20DM%20Healthcare,%20I%20want%20to%20book%20HealthFit%20Sapphire%20Male%20(100%20Tests%20at%20Rs.4999,%20Code:%20PKS321O)." target="_blank" class="btn hf-btn-whatsapp btn-sm rounded-pill w-50 py-2">
-                            <i class="fa-brands fa-whatsapp me-1"></i> WhatsApp
-                        </a>
-                        <button onclick="openBookingModal(\'HealthFit Sapphire Male (100 Tests)\', \'₹4,999\', \'PKS321O\')" class="btn hf-btn-book btn-sm rounded-pill w-50 py-2">
-                            Book Now
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- 7. HEALTHFIT SAPPHIRE - FEMALE (100 TESTS) -->
-        <div class="col hf-pkg-item" data-category="female">
-            <div class="hf-pkg-card" style="border: 2px solid #7c3aed;">
-                <div class="hf-pkg-header hf-header-saph-f">
-                    <div class="d-flex justify-content-between align-items-start mb-2">
-                        <span class="hf-tests-pill hf-pill-saph-f"><i class="fa-solid fa-gem"></i> 100 Tests (Ultimate Female)</span>
-                        <span class="badge bg-dark bg-opacity-75 text-white rounded-pill px-2 py-1 small">PKS321P</span>
-                    </div>
-                    <h4 class="fw-bold text-dark mb-1">HealthFit Sapphire - Female</h4>
-                    <p class="text-muted small mb-0">Includes Lp(a), Cortisol, IgE, CA-125 & CEA</p>
-                </div>
-                <div class="hf-pkg-body">
-                    <div class="d-flex align-items-baseline gap-2 mb-3">
-                        <h2 class="fw-bold text-dark mb-0">₹4,999</h2>
-                        <span class="text-muted text-decoration-line-through small">₹18,949</span>
-                        <span class="badge bg-danger bg-opacity-10 text-danger fw-bold rounded-pill ms-auto">Save 74%</span>
-                    </div>
-
-                    <div class="mb-3">
-                        <div class="hf-benefit-row"><i class="fa-solid fa-circle-check text-success"></i> Free Home Sample Collection (Blood & Urine)</div>
-                        <div class="hf-benefit-row"><i class="fa-solid fa-circle-check text-success"></i> PHC Specialist Doctor Consultation Free*</div>
-                        <div class="hf-benefit-row"><i class="fa-solid fa-circle-check text-success"></i> Comprehensive Hormonal, Stress & Cancer Profile</div>
-                    </div>
-
-                    <h6 class="fw-bold text-dark small mb-2 text-uppercase" style="letter-spacing: 0.5px;">Key Parameters Included:</h6>
-                    <div class="mb-4">
-                        <span class="hf-param-tag" style="background:#f3e8ff; color:#6b21a8; font-weight: 700;">CA-125 (Ovarian Marker)</span>
-                        <span class="hf-param-tag" style="background:#f3e8ff; color:#6b21a8; font-weight: 700;">Lp(a) - Lipoprotein A</span>
-                        <span class="hf-param-tag" style="background:#f3e8ff; color:#6b21a8; font-weight: 700;">Cortisol (Stress Hormone)</span>
-                        <span class="hf-param-tag" style="background:#f3e8ff; color:#6b21a8; font-weight: 700;">Immunoglobulin IgE (Allergy)</span>
-                        <span class="hf-param-tag">CEA Tumor Marker</span>
-                        <span class="hf-param-tag">Vitamin D, B12, Ferritin</span>
-                        <span class="hf-param-tag">Apo A1, Apo B, HS-CRP</span>
-                        <span class="hf-param-tag">Amylase, Lipase, Magnesium</span>
-                        <span class="hf-param-tag">Full Lipid, LFT, KFT, CBC</span>
-                    </div>
-
-                    <div class="mt-auto pt-3 border-top d-flex gap-2">
-                        <a href="https://wa.me/918860600423?text=Hi%20DM%20Healthcare,%20I%20want%20to%20book%20HealthFit%20Sapphire%20Female%20(100%20Tests%20at%20Rs.4999,%20Code:%20PKS321P)." target="_blank" class="btn hf-btn-whatsapp btn-sm rounded-pill w-50 py-2">
-                            <i class="fa-brands fa-whatsapp me-1"></i> WhatsApp
-                        </a>
-                        <button onclick="openBookingModal(\'HealthFit Sapphire Female (100 Tests)\', \'₹4,999\', \'PKS321P\')" class="btn hf-btn-book btn-sm rounded-pill w-50 py-2">
-                            Book Now
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
     </div>
 
     <!-- 4. COMPARISON MATRIX -->
@@ -680,19 +473,15 @@ $frontend_custom_sections = '
             <table class="table table-hover align-middle mb-0 text-center" style="font-size: 0.88rem;">
                 <thead class="table-light">
                     <tr>
-                        <th class="text-start ps-3" style="width: 28%;">Test Parameter / Organ Profile</th>
-                        <th style="width: 12%;">Bronze (75)<br><span class="text-danger fw-bold">₹999</span></th>
-                        <th style="width: 12%;">Silver (86)<br><span class="text-danger fw-bold">₹1,999</span></th>
-                        <th style="width: 12%;">Gold (92)<br><span class="text-danger fw-bold">₹2,999</span></th>
-                        <th style="width: 18%;">Platinum M/F (95-96)<br><span class="text-danger fw-bold">₹3,999</span></th>
-                        <th style="width: 18%;">Sapphire M/F (100)<br><span class="text-danger fw-bold">₹4,999</span></th>
+                        <th class="text-start ps-3" style="width: 40%;">Test Parameter / Organ Profile</th>
+                        <th style="width: 20%;">Bronze (75 Tests)<br><span class="text-danger fw-bold">₹999</span></th>
+                        <th style="width: 20%;">Silver (86 Tests)<br><span class="text-danger fw-bold">₹1,999</span></th>
+                        <th style="width: 20%;">Gold (92 Tests)<br><span class="text-danger fw-bold">₹2,999</span></th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
                         <td class="text-start ps-3 fw-semibold text-dark"><i class="fa-solid fa-droplet text-danger me-2"></i> Sugar Fasting & HbA1c</td>
-                        <td><i class="fa-solid fa-check text-success fs-6"></i></td>
-                        <td><i class="fa-solid fa-check text-success fs-6"></i></td>
                         <td><i class="fa-solid fa-check text-success fs-6"></i></td>
                         <td><i class="fa-solid fa-check text-success fs-6"></i></td>
                         <td><i class="fa-solid fa-check text-success fs-6"></i></td>
@@ -702,13 +491,9 @@ $frontend_custom_sections = '
                         <td><i class="fa-solid fa-check text-success fs-6"></i></td>
                         <td><i class="fa-solid fa-check text-success fs-6"></i></td>
                         <td><i class="fa-solid fa-check text-success fs-6"></i></td>
-                        <td><i class="fa-solid fa-check text-success fs-6"></i></td>
-                        <td><i class="fa-solid fa-check text-success fs-6"></i></td>
                     </tr>
                     <tr>
                         <td class="text-start ps-3 fw-semibold text-dark"><i class="fa-solid fa-virus text-warning me-2"></i> Liver Function Test (LFT)</td>
-                        <td><i class="fa-solid fa-check text-success fs-6"></i></td>
-                        <td><i class="fa-solid fa-check text-success fs-6"></i></td>
                         <td><i class="fa-solid fa-check text-success fs-6"></i></td>
                         <td><i class="fa-solid fa-check text-success fs-6"></i></td>
                         <td><i class="fa-solid fa-check text-success fs-6"></i></td>
@@ -718,14 +503,10 @@ $frontend_custom_sections = '
                         <td><i class="fa-solid fa-check text-success fs-6"></i></td>
                         <td><i class="fa-solid fa-check text-success fs-6"></i></td>
                         <td><i class="fa-solid fa-check text-success fs-6"></i></td>
-                        <td><i class="fa-solid fa-check text-success fs-6"></i></td>
-                        <td><i class="fa-solid fa-check text-success fs-6"></i></td>
                     </tr>
                     <tr>
                         <td class="text-start ps-3 fw-semibold text-dark"><i class="fa-solid fa-heart-pulse text-danger me-2"></i> Lipid Profile (Cholesterol)</td>
                         <td>Screening</td>
-                        <td><i class="fa-solid fa-check text-success fs-6"></i></td>
-                        <td><i class="fa-solid fa-check text-success fs-6"></i></td>
                         <td><i class="fa-solid fa-check text-success fs-6"></i></td>
                         <td><i class="fa-solid fa-check text-success fs-6"></i></td>
                     </tr>
@@ -734,14 +515,10 @@ $frontend_custom_sections = '
                         <td>TSH only</td>
                         <td>Full Profile</td>
                         <td>Full Profile</td>
-                        <td>Full Profile</td>
-                        <td>Full Profile</td>
                     </tr>
                     <tr>
                         <td class="text-start ps-3 fw-semibold text-dark"><i class="fa-solid fa-sun text-warning me-2"></i> Vitamin D (25-OH) & Vitamin B12</td>
                         <td><span class="text-muted">—</span></td>
-                        <td><i class="fa-solid fa-check text-success fs-6"></i></td>
-                        <td><i class="fa-solid fa-check text-success fs-6"></i></td>
                         <td><i class="fa-solid fa-check text-success fs-6"></i></td>
                         <td><i class="fa-solid fa-check text-success fs-6"></i></td>
                     </tr>
@@ -750,15 +527,11 @@ $frontend_custom_sections = '
                         <td><span class="text-muted">—</span></td>
                         <td><i class="fa-solid fa-check text-success fs-6"></i></td>
                         <td><i class="fa-solid fa-check text-success fs-6"></i></td>
-                        <td><i class="fa-solid fa-check text-success fs-6"></i></td>
-                        <td><i class="fa-solid fa-check text-success fs-6"></i></td>
                     </tr>
                     <tr>
                         <td class="text-start ps-3 fw-semibold text-dark"><i class="fa-solid fa-heart-crack text-danger me-2"></i> HS-CRP, Apo A1 & Apo B</td>
                         <td><span class="text-muted">—</span></td>
                         <td><span class="text-muted">—</span></td>
-                        <td><i class="fa-solid fa-check text-success fs-6"></i></td>
-                        <td><i class="fa-solid fa-check text-success fs-6"></i></td>
                         <td><i class="fa-solid fa-check text-success fs-6"></i></td>
                     </tr>
                     <tr>
@@ -766,24 +539,12 @@ $frontend_custom_sections = '
                         <td><span class="text-muted">—</span></td>
                         <td>Iron Studies</td>
                         <td><i class="fa-solid fa-check text-success fs-6"></i></td>
-                        <td><i class="fa-solid fa-check text-success fs-6"></i></td>
-                        <td><i class="fa-solid fa-check text-success fs-6"></i></td>
                     </tr>
                     <tr>
-                        <td class="text-start ps-3 fw-semibold text-dark"><i class="fa-solid fa-shield-virus text-danger me-2"></i> Cancer Markers (PSA for Men / CA-125 for Women) & CEA</td>
+                        <td class="text-start ps-3 fw-semibold text-dark"><i class="fa-solid fa-flask-vial text-info me-2"></i> Pancreatic Enzymes (Amylase & Lipase)</td>
                         <td><span class="text-muted">—</span></td>
                         <td><span class="text-muted">—</span></td>
-                        <td><span class="text-muted">—</span></td>
-                        <td><i class="fa-solid fa-check text-success fs-6"></i> (PSA or CA-125 + CEA)</td>
-                        <td><i class="fa-solid fa-check text-success fs-6"></i> (PSA or CA-125 + CEA)</td>
-                    </tr>
-                    <tr>
-                        <td class="text-start ps-3 fw-semibold text-dark"><i class="fa-solid fa-brain text-primary me-2"></i> Advanced: Lp(a), Cortisol (Stress) & IgE (Allergy)</td>
-                        <td><span class="text-muted">—</span></td>
-                        <td><span class="text-muted">—</span></td>
-                        <td><span class="text-muted">—</span></td>
-                        <td><span class="text-muted">—</span></td>
-                        <td><i class="fa-solid fa-check text-success fs-6"></i> <strong>Full Advanced</strong></td>
+                        <td><i class="fa-solid fa-check text-success fs-6"></i></td>
                     </tr>
                 </tbody>
             </table>
@@ -846,7 +607,7 @@ $frontend_custom_sections = '
                         </h2>
                         <div id="hfFaqC2" class="accordion-collapse collapse" data-bs-parent="#hfFaqAccordion">
                             <div class="accordion-body text-muted small lh-base">
-                                Yes! Home sample collection is completely free with all 7 Asian HealthFit packages across Faridabad, Noida, Greater Noida, Delhi, Gurugram, and Palwal. There are no convenience charges or hidden travel fees.
+                                Yes! Home sample collection is completely free with all Asian HealthFit packages across Faridabad, Noida, Greater Noida, Delhi, Gurugram, and Palwal. There are no convenience charges or hidden travel fees.
                             </div>
                         </div>
                     </div>
