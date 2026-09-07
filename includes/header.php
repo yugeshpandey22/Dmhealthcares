@@ -365,6 +365,11 @@ $page_keywords_seo = isset($seo_keywords) && !empty($seo_keywords)
                         ['id' => 8,  'name' => 'Blood Checkup']
                     ];
 
+                    // Automatically remove redundant 'Home Page' entries from database if present
+                    try {
+                        $conn->query("DELETE FROM nav_items WHERE category_id = 13 AND (LOWER(title) LIKE '%home%page%' OR LOWER(link) LIKE '%home%page%')");
+                    } catch (Exception $e) {}
+
                     // Fetch all items grouped by category
                     $nav_items_all = $conn->query("SELECT * FROM nav_items ORDER BY display_order ASC, id ASC")->fetchAll(PDO::FETCH_ASSOC);
                     $grouped_items = [];
@@ -480,15 +485,24 @@ $page_keywords_seo = isset($seo_keywords) && !empty($seo_keywords)
                                 </li>
 
                             <?php elseif ($cat_norm === 'home'): ?>
+                                <?php 
+                                    // Ensure redundant 'Home Page' is never listed in dropdown
+                                    $home_filtered_items = array_values(array_filter($cat_items, function($nav_item) {
+                                        $t = strtolower(trim(strip_tags($nav_item['title'] ?? '')));
+                                        $l = strtolower(trim($nav_item['link'] ?? ''));
+                                        return !in_array($t, ['home', 'home page', 'homepage']) && !in_array($l, ['home', 'home-page', 'homepage', 'index.php', 'index']);
+                                    }));
+                                    $has_home_subitems = count($home_filtered_items) > 0;
+                                ?>
                                 <!-- Home Item -->
-                                <li class="nav-item dropdown">
-                                    <?php if ($has_items): ?>
+                                <li class="nav-item <?= $has_home_subitems ? 'dropdown' : '' ?>">
+                                    <?php if ($has_home_subitems): ?>
                                         <a class="nav-link dropdown-toggle text-dark text-uppercase px-3" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                             <?= htmlspecialchars($cat['name']) ?>
                                             <i class="fa-solid fa-chevron-down ms-1" style="font-size: 0.8em;"></i>
                                         </a>
                                         <ul class="dropdown-menu border-0 shadow-sm rounded-3">
-                                            <?php foreach ($cat_items as $nav_item): ?>
+                                            <?php foreach ($home_filtered_items as $nav_item): ?>
                                                 <li><a class="dropdown-item py-2" href="<?= htmlspecialchars($nav_item['link']) ?>"><?= htmlspecialchars($nav_item['title']) ?></a></li>
                                             <?php endforeach; ?>
                                         </ul>

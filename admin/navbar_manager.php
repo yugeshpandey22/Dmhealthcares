@@ -69,6 +69,11 @@ if (isset($_POST['add_item'])) {
     }
 }
 
+// Automatically remove redundant 'Home Page' entries from database if present
+try {
+    $conn->query("DELETE FROM nav_items WHERE category_id = 13 AND (LOWER(title) LIKE '%home%page%' OR LOWER(link) LIKE '%home%page%')");
+} catch (Exception $e) {}
+
 // Fetch all categories
 $categories = $conn->query("SELECT * FROM nav_categories ORDER BY display_order ASC")->fetchAll(PDO::FETCH_ASSOC);
 
