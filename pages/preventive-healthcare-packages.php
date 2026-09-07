@@ -181,8 +181,8 @@ $frontend_custom_sections = '
                 <a href="#packageDetails" class="btn btn-danger btn-lg rounded-pill px-5 py-3 fw-bold shadow-sm" style="background: var(--primary-color); border-color: var(--primary-color);">
                     <i class="fa-solid fa-layer-group me-2"></i> View Package Inclusions
                 </a>
-                <a href="tel:+919891989686" class="btn btn-outline-light btn-lg rounded-pill px-4 py-3 fw-bold">
-                    <i class="fa-solid fa-phone me-2"></i> +91-9891989686
+                <a href="tel:+918860600423" class="btn btn-outline-light btn-lg rounded-pill px-4 py-3 fw-bold">
+                    <i class="fa-solid fa-phone me-2"></i> +91 88606 00423
                 </a>
             </div>
         </div>

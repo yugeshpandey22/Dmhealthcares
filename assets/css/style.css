@@ -434,3 +434,25 @@ ul {
   from { opacity: 0; transform: translateY(8px); }
   to { opacity: 1; transform: translateY(0); }
 }
+
+/* Blood Checkup Button - Dedicated Medical Red */
+.nav-blood-checkup-btn,
+a.nav-blood-checkup-btn {
+  background-color: #E5252A !important;
+  background: #E5252A !important;
+  color: #FFFFFF !important;
+  border-radius: 6px !important;
+  box-shadow: 0 4px 10px rgba(229, 37, 42, 0.25) !important;
+  transition: all 0.3s ease !important;
+}
+
+.nav-blood-checkup-btn:hover,
+.nav-blood-checkup-btn:focus,
+a.nav-blood-checkup-btn:hover,
+a.nav-blood-checkup-btn:focus {
+  background-color: #C8102E !important;
+  background: #C8102E !important;
+  color: #FFFFFF !important;
+  box-shadow: 0 6px 14px rgba(229, 37, 42, 0.4) !important;
+}
+

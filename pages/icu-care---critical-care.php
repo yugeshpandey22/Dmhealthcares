@@ -46,8 +46,8 @@ $frontend_custom_sections = '
                     We provide hospital-grade ICU beds, ventilators, multi-para monitors, and trained critical care medical staff in the comfort of your home across Delhi NCR.
                 </p>
                 <div class="d-flex flex-wrap gap-3">
-                    <a href="tel:+919891989686" class="btn btn-danger btn-lg fw-bold px-4 rounded-pill shadow-sm" style="background: var(--primary-color); border-color: var(--primary-color);">
-                        <i class="fa-solid fa-phone me-2"></i> Call 24/7 ICU Desk
+                    <a href="tel:+918860600423" class="btn btn-danger btn-lg fw-bold px-4 rounded-pill shadow-sm" style="background: var(--primary-color); border-color: var(--primary-color);">
+                        <i class="fa-solid fa-phone me-2"></i> Call +91 88606 00423
                     </a>
                     <a href="index.php#appointment" class="btn btn-outline-dark btn-lg fw-bold px-4 rounded-pill">
                         <i class="fa-solid fa-calendar-check me-2"></i> Book Setup

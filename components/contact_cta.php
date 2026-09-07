@@ -18,7 +18,7 @@
                             </div>
                             <div>
                                 <small class="text-uppercase text-light d-block fw-semibold mb-1" style="font-size: 11px; letter-spacing: 1px;">Emergency Helpline</small>
-                                <span class="fs-4 fw-bold text-white">+91-9891989686</span>
+                                <a href="tel:+918860600423" class="fs-4 fw-bold text-white text-decoration-none">+91 88606 00423</a>
                             </div>
                         </div>
 

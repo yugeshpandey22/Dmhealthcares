@@ -20,7 +20,7 @@
                         </h2>
                         <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
                             <div class="accordion-body text-muted pb-4">
-                                You can easily book an appointment by clicking the "Book Service" button on our services, calling our 24/7 helpline at <a href="tel:+919891989686" class="fw-bold" style="color: var(--primary-color);">+91-9891989686</a>, or filling out the appointment form on this page. Our team will get back to you immediately within 30 minutes.
+                                You can easily book an appointment by clicking the "Book Service" button on our services, calling our 24/7 helpline at <a href="tel:+918860600423" class="fw-bold" style="color: var(--primary-color);">+91 88606 00423</a>, or filling out the appointment form on this page. Our team will get back to you immediately within 30 minutes.
                             </div>
                         </div>
                     </div>

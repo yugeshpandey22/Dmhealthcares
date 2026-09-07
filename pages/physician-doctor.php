@@ -53,8 +53,8 @@ $frontend_custom_sections = '
                     <a href="index.php#appointment" class="btn btn-danger rounded-pill px-5 py-3 shadow-sm fw-bold" style="background: var(--primary-color); border-color: var(--primary-color);">
                         <i class="fa-solid fa-stethoscope me-2"></i> Book Doctor Visit
                     </a>
-                    <a href="tel:+919891989686" class="btn btn-outline-dark rounded-pill px-4 py-3 fw-bold">
-                        <i class="fa-solid fa-phone me-2"></i> Call Consultation Desk
+                    <a href="tel:+918860600423" class="btn btn-outline-dark rounded-pill px-4 py-3 fw-bold">
+                        <i class="fa-solid fa-phone me-2"></i> Call +91 88606 00423
                     </a>
                 </div>
             </div>

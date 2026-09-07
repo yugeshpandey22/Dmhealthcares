@@ -86,7 +86,7 @@ try {
   "provider": {
     "@type": "MedicalOrganization",
     "name": "DM Healthcare",
-    "telephone": "+91-9891989686",
+    "telephone": "+91-8860600423",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Faridabad",
@@ -244,18 +244,23 @@ try {
 </style>
 
 <?php
-    $banner_src = (!empty($banner_image) && file_exists($banner_image)) ? $banner_image : 'assets/images/banner1.jpg';
+    $has_uploaded_banner = (!empty($banner_image) && file_exists($banner_image));
+    $banner_src = $has_uploaded_banner ? $banner_image : 'assets/images/banner1.jpg';
     if (!file_exists($banner_src)) {
         $banner_src = 'assets/images/banner2.jpg';
     }
+    // If the user has uploaded a custom banner, ALWAYS show it!
+    $show_page_banner = $has_uploaded_banner || (!isset($hide_page_banner) || !$hide_page_banner);
 ?>
 <!-- Page Header Banner (Clean, Full-Width, No Text Overlay) -->
-<?php if(!isset($full_page_override) || !$full_page_override): ?>
+<?php if($show_page_banner): ?>
     <div class="page-header-banner-wrap">
         <img src="<?= htmlspecialchars($banner_src) ?>" alt="<?= htmlspecialchars($display_title) ?>" class="img-fluid w-100" onerror="this.onerror=null; this.src='assets/images/banner1.jpg';">
     </div>
+<?php endif; ?>
 
-    <!-- SEO Breadcrumb Navigation Bar -->
+<!-- SEO Breadcrumb Navigation Bar -->
+<?php if(!isset($full_page_override) || !$full_page_override): ?>
     <div class="breadcrumb-nav-bar">
         <div class="container">
             <nav aria-label="breadcrumb">
@@ -448,7 +453,7 @@ try {
                                 </h2>
                                 <div id="faqCollapse4" class="accordion-collapse collapse" data-bs-parent="#pageFaqAccordion">
                                     <div class="accordion-body text-muted small lh-base">
-                                        You can call our 24/7 helpline at <strong>+91-9891989686</strong> or fill out the appointment form on this page. Our care coordinator will contact you in under 10 minutes.
+                                        You can call our 24/7 helpline at <strong>+91 88606 00423</strong> or fill out the appointment form on this page. Our care coordinator will contact you in under 10 minutes.
                                     </div>
                                 </div>
                             </div>
@@ -478,10 +483,10 @@ try {
                             <p class="text-muted small mb-3"><?= $card_subtitle ?></p>
                             
                             <div class="d-grid gap-2 mb-3">
-                                <a href="tel:+919891989686" class="btn btn-primary py-3 rounded-pill fw-bold shadow-sm d-flex align-items-center justify-content-center gap-2" style="background: var(--primary-color); border: none;">
-                                    <i class="fa-solid fa-phone"></i> Call +91-9891989686
+                                <a href="tel:+918860600423" class="btn btn-primary py-3 rounded-pill fw-bold shadow-sm d-flex align-items-center justify-content-center gap-2" style="background: var(--primary-color); border: none;">
+                                    <i class="fa-solid fa-phone"></i> Call +91 88606 00423
                                 </a>
-                                <a href="https://wa.me/919891989686?text=Hello%20DM%20Healthcare,%20I%20need%20details%20for%20<?= urlencode($display_title) ?>" target="_blank" class="btn btn-outline-success py-2 rounded-pill fw-bold d-flex align-items-center justify-content-center gap-2">
+                                <a href="https://wa.me/918860600423?text=Hello%20DM%20Healthcare,%20I%20need%20details%20for%20<?= urlencode($display_title) ?>" target="_blank" class="btn btn-outline-success py-2 rounded-pill fw-bold d-flex align-items-center justify-content-center gap-2">
                                     <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
                                 </a>
                             </div>

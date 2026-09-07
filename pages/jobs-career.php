@@ -6,6 +6,7 @@ $seo_desc = "Join DM Healthcare as a registered nurse, healthcare attendant, phy
 $short_desc = "Explore high-growth healthcare careers at DM Healthcare. Join our clinical squad delivering quality care across Delhi NCR.";
 $category_name = "Careers";
 $full_page_override = true;
+$hide_page_banner = true; // Use internal custom banner layout with breadcrumbs
 $custom_content = ''; // Suppress old unstyled raw database text
 
 $frontend_custom_sections = '
@@ -230,8 +231,8 @@ $frontend_custom_sections = '
                 <div class="col-lg-4 text-lg-end">
                     <div class="p-3 bg-light rounded-4 border d-inline-block text-center w-100" style="max-width: 320px;">
                         <span class="small fw-bold text-muted text-uppercase d-block mb-1">Direct HR Recruitment Helpline</span>
-                        <a href="tel:+919891989686" class="fs-5 fw-bolder text-danger text-decoration-none d-block mb-2" style="color: #e5252a !important;">
-                            <i class="fa-solid fa-phone me-1"></i> +91-9891989686
+                        <a href="tel:+918860600423" class="fs-5 fw-bolder text-danger text-decoration-none d-block mb-2" style="color: #e5252a !important;">
+                            <i class="fa-solid fa-phone me-1"></i> +91 88606 00423
                         </a>
                         <span class="badge bg-success bg-opacity-10 text-success fw-bold px-3 py-1 rounded-pill">
                             <i class="fa-solid fa-circle-check me-1"></i> 50+ Active Openings

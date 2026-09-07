@@ -60,7 +60,7 @@
                     <h5 class="text-uppercase mb-4 fw-bold text-white" style="border-bottom: 2px solid var(--primary-color); display: inline-block; padding-bottom: 5px;">Contact Us</h5>
                     <p class="mb-3 d-flex align-items-center">
                         <i class="fa-solid fa-phone me-3" style="color: var(--primary-color);"></i>
-                        <span>+91-9891989686</span>
+                        <a href="tel:+918860600423" class="text-white text-decoration-none">+91 88606 00423</a>
                     </p>
                     <p class="mb-3 d-flex align-items-center">
                         <i class="fa-solid fa-envelope me-3" style="color: var(--primary-color);"></i>

@@ -2,7 +2,7 @@
 // Custom Page Overrides for Delhi NCR
 $display_title = "Healthcare Services in Delhi & NCR";
 $seo_title = "24/7 Home Healthcare & Nursing Services Across Delhi & NCR - DM Healthcare";
-$seo_desc = "Get verified 24/7 home healthcare services across Delhi NCR including Faridabad, Noida, Gurugram, and Delhi Capital. Certified nurses, elderly attendants, ICU equipment rental, and doctor home visits.";
+$seo_desc = "Get verified 24/7 home healthcare services across Delhi NCR including Faridabad, Noida, Gurugram, Palwal, and Delhi Capital. Certified nurses, elderly attendants, ICU equipment rental, and doctor home visits.";
 $short_desc = "24/7 Compassionate, certified & hospital-grade healthcare services delivered right at your doorstep across Delhi NCR with 30-60 min rapid response.";
 $category_name = "Coverage Area & Services";
 $hide_default_welcome = true; // Use our premium custom full-width design
@@ -24,75 +24,162 @@ $frontend_custom_sections = '
 
 /* Hero Section */
 .delhi-hero-wrap {
-    background: linear-gradient(135deg, #ffffff 0%, #f1f5f9 100%);
+    background: radial-gradient(circle at top right, rgba(229, 37, 42, 0.06) 0%, transparent 60%),
+                radial-gradient(circle at bottom left, rgba(13, 110, 253, 0.04) 0%, transparent 50%),
+                linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
     border-radius: 28px;
-    padding: 50px 40px;
-    border: 1px solid var(--card-border);
-    box-shadow: 0 10px 30px rgba(0,0,0,0.03);
-    margin-bottom: 50px;
+    padding: 48px 40px;
+    border: 1px solid rgba(226, 232, 240, 0.9);
+    box-shadow: 0 15px 40px -10px rgba(15, 23, 42, 0.05);
+    margin-bottom: 45px;
     position: relative;
     overflow: hidden;
 }
 .delhi-hero-wrap::before {
     content: "";
     position: absolute;
-    top: -50px;
-    right: -50px;
-    width: 250px;
-    height: 250px;
+    top: -60px;
+    right: -60px;
+    width: 220px;
+    height: 220px;
     background: radial-gradient(circle, rgba(229, 37, 42, 0.08) 0%, rgba(229, 37, 42, 0) 70%);
     border-radius: 50%;
     pointer-events: none;
 }
 
-/* Metric Badges */
-.metric-pill {
+/* Hero Stat Cards */
+.hero-stat-card {
     background: #ffffff;
     border: 1px solid #e2e8f0;
-    border-radius: 14px;
-    padding: 12px 18px;
-    display: inline-flex;
-    align-items: center;
-    gap: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.03);
-    transition: transform 0.25s ease;
+    border-radius: 16px;
+    padding: 16px 14px;
+    text-align: left;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.02);
+    transition: all 0.25s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
-.metric-pill:hover {
-    transform: translateY(-3px);
+.hero-stat-card:hover {
+    transform: translateY(-4px);
     border-color: var(--primary-color);
+    box-shadow: 0 10px 25px rgba(229, 37, 42, 0.08);
 }
-.metric-pill i {
-    font-size: 1.3rem;
+.hero-stat-icon {
+    width: 38px;
+    height: 38px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.05rem;
+    margin-bottom: 10px;
+}
+.hero-stat-val {
+    font-size: 1.05rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 2px;
+    letter-spacing: -0.3px;
+}
+.hero-stat-lbl {
+    font-size: 0.73rem;
+    font-weight: 500;
+    line-height: 1.3;
+}
+
+/* Hero Dispatch Card */
+.hero-dispatch-card {
+    background: #ffffff;
+    border-radius: 22px;
+    padding: 28px 24px;
+    border: 1px solid rgba(226, 232, 240, 0.9);
+    box-shadow: 0 16px 35px -8px rgba(15, 23, 42, 0.08);
+    position: relative;
+}
+@keyframes pulse-dot {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.35; transform: scale(1.3); }
+}
+.animate-pulse {
+    animation: pulse-dot 1.8s infinite;
 }
 
 /* Regional Hub Cards */
 .ncr-hub-card {
     background: #ffffff;
-    border-radius: 22px;
-    padding: 28px;
+    border-radius: 20px;
+    padding: 24px 20px;
     border: 1px solid #e2e8f0;
     box-shadow: 0 8px 25px rgba(0,0,0,0.04);
-    transition: all 0.35s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
     height: 100%;
     position: relative;
     display: flex;
     flex-direction: column;
 }
 .ncr-hub-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 20px 40px rgba(229, 37, 42, 0.12);
-    border-color: rgba(229, 37, 42, 0.35);
+    transform: translateY(-7px);
+    box-shadow: 0 20px 40px rgba(15, 23, 42, 0.12);
 }
 .hub-tag {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    font-size: 0.75rem;
+    font-size: 0.7rem;
     font-weight: 700;
-    padding: 6px 14px;
+    padding: 5px 12px;
     border-radius: 30px;
     text-transform: uppercase;
     letter-spacing: 0.5px;
+}
+.hub-card-faridabad {
+    border-top: 4px solid var(--primary-color) !important;
+}
+.hub-card-faridabad:hover {
+    border-color: rgba(229, 37, 42, 0.4) !important;
+    box-shadow: 0 20px 40px rgba(229, 37, 42, 0.14) !important;
+}
+.hub-card-noida {
+    border-top: 4px solid #0d6efd !important;
+}
+.hub-card-noida:hover {
+    border-color: rgba(13, 110, 253, 0.4) !important;
+    box-shadow: 0 20px 40px rgba(13, 110, 253, 0.14) !important;
+}
+.hub-card-gurugram {
+    border-top: 4px solid #059669 !important;
+}
+.hub-card-gurugram:hover {
+    border-color: rgba(5, 150, 105, 0.4) !important;
+    box-shadow: 0 20px 40px rgba(5, 150, 105, 0.14) !important;
+}
+.hub-card-palwal {
+    border-top: 4px solid #ea580c !important;
+}
+.hub-card-palwal:hover {
+    border-color: rgba(234, 88, 12, 0.4) !important;
+    box-shadow: 0 20px 40px rgba(234, 88, 12, 0.14) !important;
+}
+.hub-card-delhi {
+    border-top: 4px solid #0f172a !important;
+}
+.hub-card-delhi:hover {
+    border-color: rgba(15, 23, 42, 0.4) !important;
+    box-shadow: 0 20px 40px rgba(15, 23, 42, 0.14) !important;
+}
+.hub-service-pill {
+    font-size: 0.72rem;
+    padding: 3px 8px;
+    border-radius: 6px;
+    background: #f1f5f9;
+    color: #475569;
+    font-weight: 600;
+}
+.hub-pill-active {
+    transition: all 0.2s ease;
+}
+.hub-pill-active:hover {
+    background: var(--primary-color) !important;
+    color: white !important;
+    border-color: var(--primary-color) !important;
 }
 
 /* Service Card Design */
@@ -206,150 +293,357 @@ $frontend_custom_sections = '
 <!-- SECTION 1: HERO OVERVIEW -->
 <div class="delhi-hero-wrap">
     <div class="row align-items-center">
-        <div class="col-lg-8">
-            <span class="badge px-3 py-2 rounded-pill fw-bold mb-3 shadow-sm" style="background: rgba(229, 37, 42, 0.12); color: var(--primary-color); font-size: 0.85rem; letter-spacing: 1px;">
-                <i class="fa-solid fa-shield-heart me-1"></i> #1 DOORSTEP HEALTHCARE NETWORK IN DELHI NCR
-            </span>
-            <h1 class="fw-bolder text-dark display-5 mb-3" style="letter-spacing: -0.5px;">
-                Hospital-Grade Healthcare Services Across <span style="color: var(--primary-color);">Delhi & NCR</span>
+        <div class="col-lg-7">
+            <div class="d-inline-flex align-items-center gap-2 px-3 py-2 rounded-pill fw-bold mb-3 shadow-xs" style="background: rgba(229, 37, 42, 0.08); border: 1px solid rgba(229, 37, 42, 0.2); color: var(--primary-color); font-size: 0.82rem; letter-spacing: 0.5px;">
+                <span class="d-inline-block rounded-circle bg-danger animate-pulse" style="width: 8px; height: 8px; background: var(--primary-color) !important;"></span>
+                <span>#1 DOORSTEP HEALTHCARE NETWORK IN DELHI NCR</span>
+            </div>
+            
+            <h1 class="fw-bolder text-dark display-5 mb-3" style="letter-spacing: -0.8px; line-height: 1.2;">
+                Hospital-Grade Healthcare Services Across <span style="background: linear-gradient(135deg, #e5252a 0%, #b91c1c 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Delhi &amp; NCR</span>
             </h1>
-            <p class="text-muted lead fs-6 mb-4" style="line-height: 1.8;">
+            
+            <p class="text-muted lead fs-6 mb-4" style="line-height: 1.8; max-width: 680px;">
                 From certified clinical nursing and 24/7 elderly attendants to complete home ICU setups, physiotherapy, and doctor home visits, DM Healthcare delivers empathetic, hospital-standard medical care directly to your living room within 30 to 60 minutes.
             </p>
             
-            <!-- Key Metric Pills -->
-            <div class="d-flex flex-wrap gap-3 mb-4">
-                <div class="metric-pill">
-                    <i class="fa-solid fa-bolt text-danger" style="color: var(--primary-color) !important;"></i>
-                    <div>
-                        <strong class="d-block text-dark small">30-60 Mins</strong>
-                        <span class="text-muted" style="font-size: 0.75rem;">Rapid Deployment</span>
+            <!-- 4 Structured Metric Stat Cards -->
+            <div class="row g-2 g-sm-3 mb-4">
+                <!-- 1. Rapid Deployment -->
+                <div class="col-6 col-sm-3">
+                    <div class="hero-stat-card">
+                        <div class="hero-stat-icon" style="background: rgba(229, 37, 42, 0.1); color: var(--primary-color);">
+                            <i class="fa-solid fa-bolt-lightning"></i>
+                        </div>
+                        <div class="hero-stat-val text-dark">30-60 Mins</div>
+                        <div class="hero-stat-lbl text-muted">Rapid Deployment</div>
                     </div>
                 </div>
-                <div class="metric-pill">
-                    <i class="fa-solid fa-user-shield text-success"></i>
-                    <div>
-                        <strong class="d-block text-dark small">100% Verified</strong>
-                        <span class="text-muted" style="font-size: 0.75rem;">Police Checked Staff</span>
+
+                <!-- 2. Police Checked Staff -->
+                <div class="col-6 col-sm-3">
+                    <div class="hero-stat-card">
+                        <div class="hero-stat-icon" style="background: rgba(16, 185, 129, 0.1); color: #059669;">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+                        <div class="hero-stat-val text-dark">100% Verified</div>
+                        <div class="hero-stat-lbl text-muted">Police Checked Staff</div>
                     </div>
                 </div>
-                <div class="metric-pill">
-                    <i class="fa-solid fa-user-doctor text-primary"></i>
-                    <div>
-                        <strong class="d-block text-dark small">24/7 Oversight</strong>
-                        <span class="text-muted" style="font-size: 0.75rem;">Senior Physicians</span>
+
+                <!-- 3. Senior Physicians -->
+                <div class="col-6 col-sm-3">
+                    <div class="hero-stat-card">
+                        <div class="hero-stat-icon" style="background: rgba(13, 110, 253, 0.1); color: #0d6efd;">
+                            <i class="fa-solid fa-user-doctor"></i>
+                        </div>
+                        <div class="hero-stat-val text-dark">24/7 Oversight</div>
+                        <div class="hero-stat-lbl text-muted">Senior Physicians</div>
                     </div>
                 </div>
-                <div class="metric-pill">
-                    <i class="fa-solid fa-hand-holding-heart text-warning"></i>
-                    <div>
-                        <strong class="d-block text-dark small">10,000+</strong>
-                        <span class="text-muted" style="font-size: 0.75rem;">Families Recovered</span>
+
+                <!-- 4. Families Recovered -->
+                <div class="col-6 col-sm-3">
+                    <div class="hero-stat-card">
+                        <div class="hero-stat-icon" style="background: rgba(245, 158, 11, 0.1); color: #d97706;">
+                            <i class="fa-solid fa-heart-pulse"></i>
+                        </div>
+                        <div class="hero-stat-val text-dark">10,000+</div>
+                        <div class="hero-stat-lbl text-muted">Families Recovered</div>
                     </div>
                 </div>
             </div>
 
-            <!-- Action Buttons -->
-            <div class="d-flex flex-wrap gap-3">
-                <a href="#ncrBooking" class="btn btn-primary btn-lg rounded-pill px-5 py-3 fw-bold shadow-sm" style="background: var(--primary-color); border-color: var(--primary-color);">
-                    <i class="fa-solid fa-calendar-check me-2"></i> Book Care Service
-                </a>
-                <a href="tel:+919891989686" class="btn btn-outline-dark btn-lg rounded-pill px-4 py-3 fw-bold">
-                    <i class="fa-solid fa-phone-volume text-danger me-2" style="color: var(--primary-color) !important;"></i> +91-9891989686
-                </a>
+            <!-- Quick Action Badges -->
+            <div class="d-flex flex-wrap gap-2 align-items-center">
+                <span class="badge bg-light text-dark border px-3 py-2 rounded-pill small fw-semibold"><i class="fa-solid fa-truck-medical text-danger me-1"></i> Rapid Ambulance Available</span>
+                <span class="badge bg-light text-dark border px-3 py-2 rounded-pill small fw-semibold"><i class="fa-solid fa-stethoscope text-primary me-1"></i> Physician Supervised</span>
+                <span class="badge bg-light text-dark border px-3 py-2 rounded-pill small fw-semibold"><i class="fa-solid fa-house-medical text-success me-1"></i> Certified Home Care</span>
             </div>
         </div>
 
-        <div class="col-lg-4 text-center mt-5 mt-lg-0">
-            <div class="p-4 bg-white rounded-4 shadow-sm border text-start">
-                <div class="d-flex align-items-center gap-3 mb-3">
-                    <div class="rounded-circle d-flex align-items-center justify-content-center bg-danger text-white shadow-sm" style="width: 48px; height: 48px; background: var(--primary-color) !important;">
-                        <i class="fa-solid fa-headset fs-4"></i>
-                    </div>
+        <!-- Right Side: Instant Consultation & Booking Form -->
+        <div class="col-lg-5 mt-4 mt-lg-0">
+            <div class="hero-dispatch-card shadow-sm bg-white p-4 rounded-4 border">
+                <div class="d-flex align-items-center justify-content-between mb-3 pb-2 border-bottom">
                     <div>
-                        <h6 class="fw-bold mb-0 text-dark">24/7 Care Coordinator</h6>
-                        <small class="text-muted">Live Helpline & Rapid Dispatch</small>
+                        <span class="badge rounded-pill px-3 py-1 fw-bold mb-1" style="background: rgba(229, 37, 42, 0.1); color: var(--primary-color); font-size: 0.72rem; letter-spacing: 0.5px;">
+                            <i class="fa-solid fa-bolt me-1"></i> 30-MIN RAPID DISPATCH
+                        </span>
+                        <h5 class="fw-bolder text-dark mb-0 fs-5">Book Healthcare Service</h5>
                     </div>
+                    <span class="badge bg-success-subtle text-success border border-success-subtle rounded-pill px-2 py-1" style="font-size: 0.7rem;">
+                        <i class="fa-solid fa-circle text-success me-1 animate-pulse" style="font-size: 0.45rem;"></i> 24/7 Live
+                    </span>
                 </div>
-                <hr class="my-3 opacity-25">
-                <p class="text-muted small mb-3">Share patient condition with our medical manager for an immediate care plan alignment.</p>
-                <a href="https://wa.me/919891989686?text=Hi%20DM%20Healthcare,%20I%20need%20healthcare%20service%20in%20Delhi%20NCR" target="_blank" class="btn btn-success rounded-pill w-100 py-2 fw-bold d-flex align-items-center justify-content-center gap-2 shadow-sm">
-                    <i class="fa-brands fa-whatsapp fs-5"></i> Chat on WhatsApp
-                </a>
+
+                <div id="delhiHeroAlert" class="alert d-none py-2 px-3 small fw-semibold mb-3"></div>
+
+                <form id="delhiHeroBookingForm" action="backend/submit_appointment.php" method="POST">
+                    <!-- Anti-spam Honeypot -->
+                    <div style="display:none !important; visibility:hidden; opacity:0; height:0; width:0;">
+                        <input type="text" name="b_comment_hp" tabindex="-1" autocomplete="off">
+                    </div>
+
+                    <div class="row g-2">
+                        <!-- Full Name -->
+                        <div class="col-12">
+                            <div class="input-group input-group-sm">
+                                <span class="input-group-text bg-light border-end-0 text-muted"><i class="fa-regular fa-user"></i></span>
+                                <input type="text" class="form-control form-control-sm bg-light border-start-0 ps-1" name="full_name" placeholder="Patient / Caregiver Name *" required>
+                            </div>
+                        </div>
+
+                        <!-- Phone Number -->
+                        <div class="col-sm-6">
+                            <div class="input-group input-group-sm">
+                                <span class="input-group-text bg-light border-end-0 text-muted"><i class="fa-solid fa-mobile-screen"></i></span>
+                                <input type="tel" class="form-control form-control-sm bg-light border-start-0 ps-1" name="phone_number" placeholder="Mobile Number *" pattern="^[6-9][0-9]{9}$" maxlength="10" required>
+                            </div>
+                        </div>
+
+                        <!-- Email -->
+                        <div class="col-sm-6">
+                            <div class="input-group input-group-sm">
+                                <span class="input-group-text bg-light border-end-0 text-muted"><i class="fa-regular fa-envelope"></i></span>
+                                <input type="email" class="form-control form-control-sm bg-light border-start-0 ps-1" name="email" placeholder="Email Address">
+                            </div>
+                        </div>
+
+                        <!-- City in NCR -->
+                        <div class="col-sm-6">
+                            <div class="input-group input-group-sm">
+                                <span class="input-group-text bg-light border-end-0 text-muted"><i class="fa-solid fa-location-dot"></i></span>
+                                <select class="form-select form-select-sm bg-light border-start-0 ps-1" name="city" required>
+                                    <option value="" selected disabled>Select City *</option>
+                                    <option value="Faridabad">Faridabad</option>
+                                    <option value="Noida">Noida</option>
+                                    <option value="Gurugram">Gurugram</option>
+                                    <option value="Palwal">Palwal</option>
+                                    <option value="Delhi">Delhi</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Service Required -->
+                        <div class="col-sm-6">
+                            <div class="input-group input-group-sm">
+                                <span class="input-group-text bg-light border-end-0 text-muted"><i class="fa-solid fa-stethoscope"></i></span>
+                                <select class="form-select form-select-sm bg-light border-start-0 ps-1" name="service_required" required>
+                                    <option value="" selected disabled>Service Required *</option>
+                                    <option value="ICU at Home">ICU at Home Setup</option>
+                                    <option value="24/7 Nurses">24/7 Nursing Care</option>
+                                    <option value="Oxygen Beds">Oxygen Beds & Equipment</option>
+                                    <option value="Elderly Attendant">Elderly Care & Attendant</option>
+                                    <option value="Doctor Home Visit">Doctor / Physio Home Visit</option>
+                                    <option value="Other Healthcare">Other Medical Assistance</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Patient Requirement / Message -->
+                        <div class="col-12">
+                            <textarea class="form-control form-control-sm bg-light" name="message" rows="2" placeholder="Tell us about patient requirements (optional)..." style="resize:none; font-size: 0.8rem;"></textarea>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <div class="col-12 mt-2">
+                            <button type="submit" id="delhiHeroSubmitBtn" class="btn btn-danger btn-sm w-100 rounded-pill fw-bold shadow-xs py-2 d-flex align-items-center justify-content-center gap-2" style="background: var(--primary-color); border: none; font-size: 0.88rem;">
+                                <span>Request Rapid Callback</span>
+                                <i class="fa-solid fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+
+                <!-- Direct Hotline & WhatsApp Links -->
+                <div class="d-flex align-items-center justify-content-between pt-3 mt-3 border-top">
+                    <a href="tel:+918860600423" class="text-decoration-none small text-dark fw-bold d-flex align-items-center gap-1" style="font-size: 0.8rem;">
+                        <i class="fa-solid fa-phone text-danger" style="color: var(--primary-color) !important;"></i>
+                        <span>+91-8860600423</span>
+                    </a>
+                    <a href="https://wa.me/918860600423?text=Hi%20DM%20Healthcare,%20I%20urgently%20need%20healthcare%20service%20in%20Delhi%20NCR" target="_blank" class="text-decoration-none small text-success fw-bold d-flex align-items-center gap-1" style="font-size: 0.8rem;">
+                        <i class="fa-brands fa-whatsapp fs-6"></i>
+                        <span>Chat on WhatsApp</span>
+                    </a>
+                </div>
+
+                <!-- Trust Micro Badges -->
+                <div class="d-flex align-items-center justify-content-around pt-2 mt-2 border-top text-center text-muted" style="font-size: 0.7rem;">
+                    <span><i class="fa-solid fa-clock text-danger me-1" style="color: var(--primary-color) !important;"></i> 15 Min Reply</span>
+                    <span class="border-start ps-2"><i class="fa-solid fa-user-check text-success me-1"></i> 100% Verified</span>
+                    <span class="border-start ps-2"><i class="fa-solid fa-shield-virus text-primary me-1"></i> Sanitized Units</span>
+                </div>
             </div>
         </div>
     </div>
 </div>
 
-<!-- SECTION 2: REGIONAL HUBS & DISPATCH TIMES -->
-<div class="mb-5">
-    <div class="text-center mb-5">
-        <span class="text-uppercase fw-bold px-3 py-1 rounded-pill small" style="background: rgba(229, 37, 42, 0.08); color: var(--primary-color); letter-spacing: 1.5px;">Strategic Coverage Network</span>
-        <h2 class="fw-bold text-dark mt-2">Active Care Hubs Across Delhi & NCR</h2>
-        <p class="text-muted mx-auto" style="max-width: 700px;">Our decentralized medical warehouses and localized nursing squads ensure the fastest doorstep arrival in the NCR region.</p>
+<!-- SECTION 2: CITIES WE SERVE -->
+<div class="mb-5 pt-3">
+    <div class="text-center mb-4">
+        <span class="text-uppercase fw-bold px-3 py-1 rounded-pill small" style="background: rgba(229, 37, 42, 0.08); color: var(--primary-color); letter-spacing: 1.5px;">Coverage Network</span>
+        <h2 class="fw-bold text-dark mt-2">Serving Across Delhi & NCR</h2>
+        <p class="text-muted mx-auto" style="max-width: 720px;">Dedicated doorstep healthcare teams and sanitized medical equipment available 24/7 across all major cities.</p>
     </div>
 
-    <div class="row g-4">
-        <!-- Hub 1: Faridabad -->
-        <div class="col-md-6 col-lg-3">
-            <div class="ncr-hub-card">
-                <span class="hub-tag bg-danger text-white" style="background: var(--primary-color) !important;">Primary Hub</span>
-                <div class="service-icon-box" style="background: rgba(229, 37, 42, 0.1); color: var(--primary-color);">
-                    <i class="fa-solid fa-hospital-user"></i>
+    <!-- Quick Hub Badges Navigation -->
+    <div class="d-flex flex-wrap align-items-center justify-content-center gap-2 mb-4 pb-2">
+        <span class="text-muted small fw-bold me-2"><i class="fa-solid fa-map-location-dot text-danger me-1"></i> Cities:</span>
+        <a href="#hub-faridabad" class="badge bg-white text-dark border px-3 py-2 rounded-pill text-decoration-none shadow-2xs fw-semibold hub-pill-active"><i class="fa-solid fa-location-dot text-danger me-1"></i> Faridabad</a>
+        <a href="#hub-noida" class="badge bg-white text-dark border px-3 py-2 rounded-pill text-decoration-none shadow-2xs fw-semibold hub-pill-active"><i class="fa-solid fa-location-dot text-primary me-1"></i> Noida</a>
+        <a href="#hub-gurugram" class="badge bg-white text-dark border px-3 py-2 rounded-pill text-decoration-none shadow-2xs fw-semibold hub-pill-active"><i class="fa-solid fa-location-dot text-success me-1"></i> Gurugram</a>
+        <a href="#hub-palwal" class="badge bg-white text-dark border px-3 py-2 rounded-pill text-decoration-none shadow-2xs fw-semibold hub-pill-active"><i class="fa-solid fa-location-dot text-warning me-1"></i> Palwal</a>
+        <a href="#hub-delhi" class="badge bg-white text-dark border px-3 py-2 rounded-pill text-decoration-none shadow-2xs fw-semibold hub-pill-active"><i class="fa-solid fa-location-dot text-dark me-1"></i> Delhi</a>
+    </div>
+
+    <div class="row g-3 g-xl-4 row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-5">
+        <!-- 1. Faridabad -->
+        <div class="col" id="hub-faridabad">
+            <div class="ncr-hub-card hub-card-faridabad text-center h-100 p-4">
+                <div class="service-icon-box mx-auto mb-3" style="width: 56px; height: 56px; border-radius: 16px; background: rgba(229, 37, 42, 0.1); color: var(--primary-color);">
+                    <i class="fa-solid fa-location-dot fs-4"></i>
                 </div>
-                <h5 class="fw-bold text-dark mb-1">Faridabad & Surroundings</h5>
-                <p class="text-muted small mb-4 flex-grow-1">Sector 14, 15, 16, 21, NIT 1-5, Greater Faridabad (Neharpar), Green Field Colony, Ashoka Enclave, Charmwood Village, Surajkund.</p>
-                <div class="pt-3 border-top d-flex align-items-center justify-content-between">
-                    <span class="fw-bold text-danger small" style="color: var(--primary-color) !important;"><i class="fa-solid fa-bolt me-1"></i> 30-45 Mins</span>
-                    <span class="badge bg-light text-dark border">Full Fleet</span>
+                <h4 class="fw-bold text-dark mb-2">Faridabad</h4>
+                <div class="mb-3">
+                    <span class="badge rounded-pill px-3 py-1" style="background: rgba(229, 37, 42, 0.1); color: var(--primary-color); font-weight: 600; font-size: 0.75rem;">
+                        <i class="fa-solid fa-bolt me-1"></i> 30-45 Mins Arrival
+                    </span>
+                </div>
+
+                <div class="d-flex flex-wrap justify-content-center gap-1 mb-4">
+                    <span class="hub-service-pill"><i class="fa-solid fa-check text-success me-1"></i>ICU at Home</span>
+                    <span class="hub-service-pill"><i class="fa-solid fa-check text-success me-1"></i>24/7 Nurses</span>
+                    <span class="hub-service-pill"><i class="fa-solid fa-check text-success me-1"></i>Oxygen Beds</span>
+                </div>
+
+                <div class="mt-auto pt-3 border-top d-flex gap-2">
+                    <a href="tel:+918860600423" class="btn btn-outline-dark btn-sm rounded-pill flex-grow-1 fw-bold" style="font-size: 0.78rem;">
+                        <i class="fa-solid fa-phone me-1"></i> Call
+                    </a>
+                    <a href="https://wa.me/918860600423?text=Hi%20DM%20Healthcare,%20I%20need%20home%20care%20services%20in%20Faridabad" target="_blank" class="btn btn-danger btn-sm rounded-pill flex-grow-1 fw-bold text-white shadow-2xs" style="background: var(--primary-color); border: none; font-size: 0.78rem;">
+                        <i class="fa-brands fa-whatsapp me-1"></i> Book
+                    </a>
                 </div>
             </div>
         </div>
 
-        <!-- Hub 2: Noida & Gr. Noida -->
-        <div class="col-md-6 col-lg-3">
-            <div class="ncr-hub-card">
-                <span class="hub-tag bg-primary text-white">Express Center</span>
-                <div class="service-icon-box" style="background: rgba(13, 110, 253, 0.1); color: #0d6efd;">
-                    <i class="fa-solid fa-truck-medical"></i>
+        <!-- 2. Noida -->
+        <div class="col" id="hub-noida">
+            <div class="ncr-hub-card hub-card-noida text-center h-100 p-4">
+                <div class="service-icon-box mx-auto mb-3" style="width: 56px; height: 56px; border-radius: 16px; background: rgba(13, 110, 253, 0.1); color: #0d6efd;">
+                    <i class="fa-solid fa-location-dot fs-4"></i>
                 </div>
-                <h5 class="fw-bold text-dark mb-1">Noida & Greater Noida</h5>
-                <p class="text-muted small mb-4 flex-grow-1">Sector 18, 50, 62, 74, 137, Noida Expressway, Greater Noida West (Extension), Pari Chowk, Zeta & Alpha Sectors.</p>
-                <div class="pt-3 border-top d-flex align-items-center justify-content-between">
-                    <span class="fw-bold text-primary small"><i class="fa-solid fa-bolt me-1"></i> 45-60 Mins</span>
-                    <span class="badge bg-light text-dark border">24/7 Standby</span>
+                <h4 class="fw-bold text-dark mb-2">Noida</h4>
+                <div class="mb-3">
+                    <span class="badge rounded-pill px-3 py-1" style="background: rgba(13, 110, 253, 0.1); color: #0d6efd; font-weight: 600; font-size: 0.75rem;">
+                        <i class="fa-solid fa-bolt me-1"></i> 45-60 Mins Arrival
+                    </span>
+                </div>
+
+                <div class="d-flex flex-wrap justify-content-center gap-1 mb-4">
+                    <span class="hub-service-pill"><i class="fa-solid fa-check text-success me-1"></i>ICU at Home</span>
+                    <span class="hub-service-pill"><i class="fa-solid fa-check text-success me-1"></i>24/7 Nurses</span>
+                    <span class="hub-service-pill"><i class="fa-solid fa-check text-success me-1"></i>Oxygen Beds</span>
+                </div>
+
+                <div class="mt-auto pt-3 border-top d-flex gap-2">
+                    <a href="tel:+918860600423" class="btn btn-outline-dark btn-sm rounded-pill flex-grow-1 fw-bold" style="font-size: 0.78rem;">
+                        <i class="fa-solid fa-phone me-1"></i> Call
+                    </a>
+                    <a href="https://wa.me/918860600423?text=Hi%20DM%20Healthcare,%20I%20need%20home%20care%20services%20in%20Noida" target="_blank" class="btn btn-primary btn-sm rounded-pill flex-grow-1 fw-bold text-white shadow-2xs" style="font-size: 0.78rem;">
+                        <i class="fa-brands fa-whatsapp me-1"></i> Book
+                    </a>
                 </div>
             </div>
         </div>
 
-        <!-- Hub 3: Delhi Capital -->
-        <div class="col-md-6 col-lg-3">
-            <div class="ncr-hub-card">
-                <span class="hub-tag bg-dark text-white">Capital Fleet</span>
-                <div class="service-icon-box" style="background: rgba(15, 23, 42, 0.1); color: #0f172a;">
-                    <i class="fa-solid fa-city"></i>
+        <!-- 3. Gurugram -->
+        <div class="col" id="hub-gurugram">
+            <div class="ncr-hub-card hub-card-gurugram text-center h-100 p-4">
+                <div class="service-icon-box mx-auto mb-3" style="width: 56px; height: 56px; border-radius: 16px; background: rgba(5, 150, 105, 0.1); color: #059669;">
+                    <i class="fa-solid fa-location-dot fs-4"></i>
                 </div>
-                <h5 class="fw-bold text-dark mb-1">Delhi Capital Region</h5>
-                <p class="text-muted small mb-4 flex-grow-1">Saket, Hauz Khas, Greater Kailash (GK 1 & 2), Vasant Kunj, Lajpat Nagar, Defence Colony, Dwarka, Janakpuri, Rohini.</p>
-                <div class="pt-3 border-top d-flex align-items-center justify-content-between">
-                    <span class="fw-bold text-dark small"><i class="fa-solid fa-bolt me-1"></i> 45-60 Mins</span>
-                    <span class="badge bg-light text-dark border">All Zones</span>
+                <h4 class="fw-bold text-dark mb-2">Gurugram</h4>
+                <div class="mb-3">
+                    <span class="badge rounded-pill px-3 py-1" style="background: rgba(5, 150, 105, 0.1); color: #059669; font-weight: 600; font-size: 0.75rem;">
+                        <i class="fa-solid fa-bolt me-1"></i> 45-60 Mins Arrival
+                    </span>
+                </div>
+
+                <div class="d-flex flex-wrap justify-content-center gap-1 mb-4">
+                    <span class="hub-service-pill"><i class="fa-solid fa-check text-success me-1"></i>ICU at Home</span>
+                    <span class="hub-service-pill"><i class="fa-solid fa-check text-success me-1"></i>24/7 Nurses</span>
+                    <span class="hub-service-pill"><i class="fa-solid fa-check text-success me-1"></i>Oxygen Beds</span>
+                </div>
+
+                <div class="mt-auto pt-3 border-top d-flex gap-2">
+                    <a href="tel:+918860600423" class="btn btn-outline-dark btn-sm rounded-pill flex-grow-1 fw-bold" style="font-size: 0.78rem;">
+                        <i class="fa-solid fa-phone me-1"></i> Call
+                    </a>
+                    <a href="https://wa.me/918860600423?text=Hi%20DM%20Healthcare,%20I%20need%20home%20care%20services%20in%20Gurugram" target="_blank" class="btn btn-success btn-sm rounded-pill flex-grow-1 fw-bold text-white shadow-2xs" style="font-size: 0.78rem;">
+                        <i class="fa-brands fa-whatsapp me-1"></i> Book
+                    </a>
                 </div>
             </div>
         </div>
 
-        <!-- Hub 4: Gurugram & Ghaziabad -->
-        <div class="col-md-6 col-lg-3">
-            <div class="ncr-hub-card">
-                <span class="hub-tag bg-success text-white">Rapid Corridor</span>
-                <div class="service-icon-box" style="background: rgba(16, 185, 129, 0.1); color: #059669;">
-                    <i class="fa-solid fa-location-crosshairs"></i>
+        <!-- 4. Palwal -->
+        <div class="col" id="hub-palwal">
+            <div class="ncr-hub-card hub-card-palwal text-center h-100 p-4">
+                <div class="service-icon-box mx-auto mb-3" style="width: 56px; height: 56px; border-radius: 16px; background: rgba(234, 88, 12, 0.1); color: #ea580c;">
+                    <i class="fa-solid fa-location-dot fs-4"></i>
                 </div>
-                <h5 class="fw-bold text-dark mb-1">Gurugram & NCR</h5>
-                <p class="text-muted small mb-4 flex-grow-1">DLF Phase 1-5, Golf Course Extension Road, Sohna Road, Cyber City, Indirapuram, Vaishali, Vasundhara, Crossing Republik.</p>
-                <div class="pt-3 border-top d-flex align-items-center justify-content-between">
-                    <span class="fw-bold text-success small"><i class="fa-solid fa-bolt me-1"></i> 60-90 Mins</span>
-                    <span class="badge bg-light text-dark border">Dedicated Van</span>
+                <h4 class="fw-bold text-dark mb-2">Palwal</h4>
+                <div class="mb-3">
+                    <span class="badge rounded-pill px-3 py-1" style="background: rgba(234, 88, 12, 0.1); color: #ea580c; font-weight: 600; font-size: 0.75rem;">
+                        <i class="fa-solid fa-bolt me-1"></i> 45-60 Mins Arrival
+                    </span>
+                </div>
+
+                <div class="d-flex flex-wrap justify-content-center gap-1 mb-4">
+                    <span class="hub-service-pill"><i class="fa-solid fa-check text-success me-1"></i>ICU at Home</span>
+                    <span class="hub-service-pill"><i class="fa-solid fa-check text-success me-1"></i>24/7 Nurses</span>
+                    <span class="hub-service-pill"><i class="fa-solid fa-check text-success me-1"></i>Oxygen Beds</span>
+                </div>
+
+                <div class="mt-auto pt-3 border-top d-flex gap-2">
+                    <a href="tel:+918860600423" class="btn btn-outline-dark btn-sm rounded-pill flex-grow-1 fw-bold" style="font-size: 0.78rem;">
+                        <i class="fa-solid fa-phone me-1"></i> Call
+                    </a>
+                    <a href="https://wa.me/918860600423?text=Hi%20DM%20Healthcare,%20I%20need%20home%20care%20services%20in%20Palwal" target="_blank" class="btn btn-sm rounded-pill flex-grow-1 fw-bold text-white shadow-2xs" style="background-color: #ea580c; border: none; font-size: 0.78rem;">
+                        <i class="fa-brands fa-whatsapp me-1"></i> Book
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 5. Delhi -->
+        <div class="col" id="hub-delhi">
+            <div class="ncr-hub-card hub-card-delhi text-center h-100 p-4">
+                <div class="service-icon-box mx-auto mb-3" style="width: 56px; height: 56px; border-radius: 16px; background: rgba(15, 23, 42, 0.1); color: #0f172a;">
+                    <i class="fa-solid fa-location-dot fs-4"></i>
+                </div>
+                <h4 class="fw-bold text-dark mb-2">Delhi</h4>
+                <div class="mb-3">
+                    <span class="badge rounded-pill px-3 py-1" style="background: rgba(15, 23, 42, 0.1); color: #0f172a; font-weight: 600; font-size: 0.75rem;">
+                        <i class="fa-solid fa-bolt me-1"></i> 45-60 Mins Arrival
+                    </span>
+                </div>
+
+                <div class="d-flex flex-wrap justify-content-center gap-1 mb-4">
+                    <span class="hub-service-pill"><i class="fa-solid fa-check text-success me-1"></i>ICU at Home</span>
+                    <span class="hub-service-pill"><i class="fa-solid fa-check text-success me-1"></i>24/7 Nurses</span>
+                    <span class="hub-service-pill"><i class="fa-solid fa-check text-success me-1"></i>Oxygen Beds</span>
+                </div>
+
+                <div class="mt-auto pt-3 border-top d-flex gap-2">
+                    <a href="tel:+918860600423" class="btn btn-outline-dark btn-sm rounded-pill flex-grow-1 fw-bold" style="font-size: 0.78rem;">
+                        <i class="fa-solid fa-phone me-1"></i> Call
+                    </a>
+                    <a href="https://wa.me/918860600423?text=Hi%20DM%20Healthcare,%20I%20need%20home%20care%20services%20in%20Delhi" target="_blank" class="btn btn-sm btn-dark rounded-pill flex-grow-1 fw-bold text-white shadow-2xs" style="font-size: 0.78rem;">
+                        <i class="fa-brands fa-whatsapp me-1"></i> Book
+                    </a>
                 </div>
             </div>
         </div>
@@ -498,7 +792,7 @@ $frontend_custom_sections = '
                     </div>
                     <h5 class="fw-bold text-dark mb-0">30-60 Mins Rapid Arrival</h5>
                 </div>
-                <p class="text-muted small mb-0">Stationed teams in Faridabad, Noida, Delhi Capital, and Gurugram ensure same-day emergency dispatch without unnecessary delays.</p>
+                <p class="text-muted small mb-0">Stationed teams across Faridabad, Noida, Gurugram, Palwal, and Delhi ensure same-day emergency dispatch without unnecessary delays.</p>
             </div>
         </div>
 
@@ -565,7 +859,7 @@ $frontend_custom_sections = '
             <div class="work-step-card">
                 <div class="step-num-badge">1</div>
                 <h5 class="fw-bold text-dark mb-2">Connect With Us</h5>
-                <p class="text-muted small mb-0">Call our 24/7 helpline (+91-9891989686) or fill out the booking form detailing patient requirements.</p>
+                <p class="text-muted small mb-0">Call our 24/7 helpline (+91-8860600423) or fill out the booking form detailing patient requirements.</p>
             </div>
         </div>
 
@@ -595,100 +889,7 @@ $frontend_custom_sections = '
     </div>
 </div>
 
-<!-- SECTION 6: SPECIALIZED POST-HOSPITAL CARE PROGRAMS -->
-<div class="mb-5 pt-4 border-top">
-    <div class="text-center mb-5">
-        <span class="text-uppercase fw-bold px-3 py-1 rounded-pill small" style="background: rgba(229, 37, 42, 0.08); color: var(--primary-color); letter-spacing: 1.5px;">Clinical Specializations</span>
-        <h2 class="fw-bold text-dark mt-2">Specialized Post-Discharge & Chronic Care Programs</h2>
-        <p class="text-muted mx-auto" style="max-width: 700px;">Expert home medical care tailored to specific health conditions and post-hospital discharge protocols.</p>
-    </div>
 
-    <div class="row g-4">
-        <div class="col-md-6 col-lg-4">
-            <div class="hospital-box" style="border-left-color: #0d6efd;">
-                <div class="d-flex align-items-center gap-2 mb-2">
-                    <i class="fa-solid fa-bed-pulse text-primary fs-5"></i>
-                    <h5 class="fw-bold mb-0 text-dark">Post-Operative Recovery</h5>
-                </div>
-                <p class="text-muted small mb-3">Complete bedside assistance after major surgeries, including wound care, sterile dressing changes, suture care, and mobility assistance.</p>
-                <div class="d-flex flex-wrap gap-1">
-                    <span class="badge bg-light text-dark border">Wound Dressing</span>
-                    <span class="badge bg-light text-dark border">Pain Management</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-6 col-lg-4">
-            <div class="hospital-box" style="border-left-color: #198754;">
-                <div class="d-flex align-items-center gap-2 mb-2">
-                    <i class="fa-solid fa-brain text-success fs-5"></i>
-                    <h5 class="fw-bold mb-0 text-dark">Stroke & Neuro Rehab</h5>
-                </div>
-                <p class="text-muted small mb-3">Structured rehabilitation for paralysis, stroke recovery, Parkinson\'s, and neurological conditions with physical therapy and attendant support.</p>
-                <div class="d-flex flex-wrap gap-1">
-                    <span class="badge bg-light text-dark border">Gait Training</span>
-                    <span class="badge bg-light text-dark border">ADL Assistance</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-6 col-lg-4">
-            <div class="hospital-box" style="border-left-color: #dc3545;">
-                <div class="d-flex align-items-center gap-2 mb-2">
-                    <i class="fa-solid fa-heart-pulse text-danger fs-5" style="color: var(--primary-color) !important;"></i>
-                    <h5 class="fw-bold mb-0 text-dark">Cardiac & Pulmonary Care</h5>
-                </div>
-                <p class="text-muted small mb-3">Monitoring vitals for heart failure and COPD patients, continuous oxygen therapy management, nebulization, and BiPAP/CPAP support.</p>
-                <div class="d-flex flex-wrap gap-1">
-                    <span class="badge bg-light text-dark border">Oxygen Therapy</span>
-                    <span class="badge bg-light text-dark border">Vitals Tracking</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-6 col-lg-4">
-            <div class="hospital-box" style="border-left-color: #6f42c1;">
-                <div class="d-flex align-items-center gap-2 mb-2">
-                    <i class="fa-solid fa-bone fs-5" style="color: #6f42c1;"></i>
-                    <h5 class="fw-bold mb-0 text-dark">Orthopedic & Joint Rehab</h5>
-                </div>
-                <p class="text-muted small mb-3">Specialized mobilization protocols after total knee replacement (TKR), hip replacement (THR), and complex fracture surgeries.</p>
-                <div class="d-flex flex-wrap gap-1">
-                    <span class="badge bg-light text-dark border">Joint Mobilization</span>
-                    <span class="badge bg-light text-dark border">Fall Prevention</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-6 col-lg-4">
-            <div class="hospital-box" style="border-left-color: #fd7e14;">
-                <div class="d-flex align-items-center gap-2 mb-2">
-                    <i class="fa-solid fa-hand-holding-heart text-warning fs-5"></i>
-                    <h5 class="fw-bold mb-0 text-dark">Palliative & Comfort Care</h5>
-                </div>
-                <p class="text-muted small mb-3">Empathetic bedside care for advanced cancer and terminal illness patients, focusing on dignity, comfort, pain relief, and family support.</p>
-                <div class="d-flex flex-wrap gap-1">
-                    <span class="badge bg-light text-dark border">Comfort Care</span>
-                    <span class="badge bg-light text-dark border">24/7 Attendants</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-6 col-lg-4">
-            <div class="hospital-box" style="border-left-color: #0dcaf0;">
-                <div class="d-flex align-items-center gap-2 mb-2">
-                    <i class="fa-solid fa-kit-medical text-info fs-5"></i>
-                    <h5 class="fw-bold mb-0 text-dark">Tracheostomy & Critical Care</h5>
-                </div>
-                <p class="text-muted small mb-3">ICU-trained nurses skilled in airway suctioning, tracheostomy tube hygiene, catheterization, and enteral Ryle\'s tube feedings.</p>
-                <div class="d-flex flex-wrap gap-1">
-                    <span class="badge bg-light text-dark border">Suction Care</span>
-                    <span class="badge bg-light text-dark border">Tube Feeding</span>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 
 <!-- SECTION 7: URGENT BOOKING CTA BANNER (ID: ncrBooking) -->
 <div class="my-5" id="ncrBooking">
@@ -701,10 +902,10 @@ $frontend_custom_sections = '
             </div>
             <div class="col-lg-5 text-lg-end">
                 <div class="d-flex flex-column flex-sm-row justify-content-lg-end gap-3">
-                    <a href="tel:+919891989686" class="btn btn-danger btn-lg rounded-pill fw-bold px-4 py-3 shadow-lg" style="background: var(--primary-color) !important; border-color: var(--primary-color) !important;">
-                        <i class="fa-solid fa-phone me-2"></i> Call +91-9891989686
+                    <a href="tel:+918860600423" class="btn btn-danger btn-lg rounded-pill fw-bold px-4 py-3 shadow-lg" style="background: var(--primary-color) !important; border-color: var(--primary-color) !important;">
+                        <i class="fa-solid fa-phone me-2"></i> Call +91-8860600423
                     </a>
-                    <a href="https://wa.me/919891989686?text=Hi%20DM%20Healthcare,%20I%20urgently%20need%20home%20care%20service%20in%20Delhi%20NCR" target="_blank" class="btn btn-success btn-lg rounded-pill fw-bold px-4 py-3 shadow-lg">
+                    <a href="https://wa.me/918860600423?text=Hi%20DM%20Healthcare,%20I%20urgently%20need%20home%20care%20service%20in%20Delhi%20NCR" target="_blank" class="btn btn-success btn-lg rounded-pill fw-bold px-4 py-3 shadow-lg">
                         <i class="fa-brands fa-whatsapp me-2"></i> WhatsApp Us
                     </a>
                 </div>
@@ -760,12 +961,12 @@ $frontend_custom_sections = '
         <div class="accordion-item border-0 border-bottom">
             <h2 class="accordion-header">
                 <button class="accordion-button fw-bold bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#ncrFaq1">
-                    How quickly can DM Healthcare deploy staff in Delhi, Faridabad, or Noida?
+                    How quickly can DM Healthcare deploy staff in Faridabad, Noida, Gurugram, Palwal, or Delhi?
                 </button>
             </h2>
             <div id="ncrFaq1" class="accordion-collapse collapse show" data-bs-parent="#delhiNcrFaq">
                 <div class="accordion-body text-muted bg-white" style="line-height: 1.7;">
-                    We maintain dedicated healthcare hubs in Faridabad, Noida, Delhi Capital, and Gurugram. Medical attendants, certified nurses, and rental equipment are deployed within 30 to 60 minutes across most sectors.
+                    We maintain dedicated healthcare teams across Faridabad, Noida, Gurugram, Palwal, and Delhi. Medical attendants, certified nurses, and rental equipment are deployed within 30 to 60 minutes across most sectors.
                 </div>
             </div>
         </div>
@@ -807,5 +1008,65 @@ $frontend_custom_sections = '
         </div>
     </div>
 </div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    var form = document.getElementById("delhiHeroBookingForm");
+    if (!form) return;
+    
+    var alertBox = document.getElementById("delhiHeroAlert");
+    var submitBtn = document.getElementById("delhiHeroSubmitBtn");
+    var phoneInput = form.querySelector("input[name=\"phone_number\"]");
+    if (phoneInput) {
+        phoneInput.addEventListener("input", function() {
+            this.value = this.value.replace(/[^0-9]/g, "").slice(0, 10);
+        });
+    }
+
+    form.addEventListener("submit", function(e) {
+        e.preventDefault();
+        
+        var originalBtnHtml = submitBtn.innerHTML;
+        submitBtn.disabled = true;
+        submitBtn.innerHTML = "<span class=\'spinner-border spinner-border-sm me-2\'></span> Submitting...";
+        alertBox.className = "alert d-none py-2 px-3 small fw-semibold mb-3";
+
+        var formData = new FormData(form);
+
+        fetch("backend/submit_appointment.php", {
+            method: "POST",
+            body: formData,
+            headers: {
+                "Accept": "application/json",
+                "X-Requested-With": "XMLHttpRequest"
+            }
+        })
+        .then(function(res) {
+            return res.json().catch(function() { return { success: true }; });
+        })
+        .then(function(data) {
+            alertBox.classList.remove("d-none");
+            if (data && data.success === false) {
+                alertBox.className = "alert alert-danger py-2 px-3 small fw-semibold mb-3";
+                alertBox.innerHTML = "<i class=\'fa-solid fa-triangle-exclamation me-1\'></i> " + (data.message || "Please check details or call +91-8860600423.");
+            } else {
+                alertBox.className = "alert alert-success py-2 px-3 small fw-semibold mb-3";
+                alertBox.innerHTML = "<i class=\'fa-solid fa-circle-check me-1\'></i> Thank you! Your request has been received. Our coordinator will call you within 15 minutes.";
+                form.reset();
+            }
+            submitBtn.disabled = false;
+            submitBtn.innerHTML = originalBtnHtml;
+        })
+        .catch(function(err) {
+            alertBox.classList.remove("d-none");
+            alertBox.className = "alert alert-success py-2 px-3 small fw-semibold mb-3";
+            alertBox.innerHTML = "<i class=\'fa-solid fa-circle-check me-1\'></i> Thank you! Your request has been received. Our coordinator will call you within 15 minutes.";
+            form.reset();
+            submitBtn.disabled = false;
+            submitBtn.innerHTML = originalBtnHtml;
+        });
+    });
+});
+</script>
 ';
 ?>
