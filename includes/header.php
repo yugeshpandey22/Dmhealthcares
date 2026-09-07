@@ -355,6 +355,27 @@ $page_keywords_seo = isset($seo_keywords) && !empty($seo_keywords)
                     require_once 'config/db.php';
                     // Fetch all categories
                     $nav_categories = $conn->query("SELECT * FROM nav_categories ORDER BY display_order ASC")->fetchAll(PDO::FETCH_ASSOC);
+                    
+                    // Enforce standard category order: HOME -> DIAGNOSTICS -> MEDICAL EQUIPMENT -> HOME CARE -> JOB -> BLOOD CHECKUP
+                    $nav_order_priority = [
+                        'home' => 1,
+                        'diagnostics' => 2,
+                        'medical equipment' => 3,
+                        'home care' => 4,
+                        'job' => 5,
+                        'blood checkup' => 6
+                    ];
+                    usort($nav_categories, function($a, $b) use ($nav_order_priority) {
+                        $a_key = strtolower(trim($a['name'] ?? ''));
+                        $b_key = strtolower(trim($b['name'] ?? ''));
+                        $a_rank = $nav_order_priority[$a_key] ?? ((int)($a['display_order'] ?? 99));
+                        $b_rank = $nav_order_priority[$b_key] ?? ((int)($b['display_order'] ?? 99));
+                        if ($a_rank === $b_rank) {
+                            return ((int)($a['display_order'] ?? 0)) <=> ((int)($b['display_order'] ?? 0));
+                        }
+                        return $a_rank <=> $b_rank;
+                    });
+
                     // Fetch all items
                     $nav_items_all = $conn->query("SELECT * FROM nav_items ORDER BY display_order ASC")->fetchAll(PDO::FETCH_ASSOC);
 
