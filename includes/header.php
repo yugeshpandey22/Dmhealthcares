@@ -155,37 +155,6 @@ $page_keywords_seo = isset($seo_keywords) && !empty($seo_keywords)
             font-size: 0.75em !important;
         }
 
-        /* Active Navbar Link Styling (Matches User Reference Image) */
-        .navbar-nav .nav-item .nav-link.active,
-        .navbar-nav .nav-item.active > .nav-link,
-        .navbar-nav .nav-item.dropdown.active > .nav-link {
-            background-color: rgba(229, 37, 42, 0.08) !important;
-            color: var(--primary-color, #e5252a) !important;
-            border-bottom: 2.5px solid var(--primary-color, #e5252a) !important;
-            border-radius: 8px 8px 0 0 !important;
-            font-weight: 800 !important;
-        }
-        .navbar-nav .nav-item .nav-link.active .fa-chevron-down,
-        .navbar-nav .nav-item.active > .nav-link .fa-chevron-down {
-            color: var(--primary-color, #e5252a) !important;
-        }
-
-        /* For active dropdown items */
-        .dropdown-item.active-page,
-        .dropdown-item.active {
-            background-color: rgba(229, 37, 42, 0.08) !important;
-            color: var(--primary-color, #e5252a) !important;
-            font-weight: 700 !important;
-        }
-        .mega-menu-list a.active-page {
-            color: var(--primary-color, #d80000) !important;
-            font-weight: 700 !important;
-        }
-        .mega-menu-list a.active-page i {
-            color: var(--primary-color, #d80000) !important;
-            transform: scale(1.15);
-        }
-
         /* Standard Dropdown Styling */
         .dropdown-menu {
             border-radius: 14px !important;
@@ -227,9 +196,7 @@ $page_keywords_seo = isset($seo_keywords) && !empty($seo_keywords)
         .nav-blood-checkup-btn:hover,
         .nav-blood-checkup-btn:focus,
         a.nav-blood-checkup-btn:hover,
-        a.nav-blood-checkup-btn:focus,
-        .nav-blood-checkup-btn.active,
-        a.nav-blood-checkup-btn.active {
+        a.nav-blood-checkup-btn:focus {
             background-color: #c8102e !important;
             background: #c8102e !important;
             color: #ffffff !important;
@@ -387,79 +354,22 @@ $page_keywords_seo = isset($seo_keywords) && !empty($seo_keywords)
                     <?php
                     require_once 'config/db.php';
 
-                    // Strict canonical ordering of categories:
-                    // 1. Home, 2. Diagnostics, 3. Medical Equipment, 4. Home Care, 5. Job, 6. Blood Checkup
-                    $canonical_order_map = [
-                        'home' => 1,
-                        'diagnostics' => 2,
-                        'medical equipment' => 3,
-                        'home care' => 4,
-                        'job' => 5,
-                        'careers' => 5,
-                        'jobs/career' => 5,
-                        'blood checkup' => 6,
-                        'total test' => 6
+                    // 100% Fixed Canonical 6 Categories in exact order:
+                    // 1. HOME, 2. DIAGNOSTICS, 3. MEDICAL EQUIPMENT, 4. HOME CARE, 5. JOB, 6. BLOOD CHECKUP
+                    $nav_categories = [
+                        ['id' => 13, 'name' => 'Home'],
+                        ['id' => 4,  'name' => 'Diagnostics'],
+                        ['id' => 3,  'name' => 'Medical Equipment'],
+                        ['id' => 2,  'name' => 'Home Care'],
+                        ['id' => 7,  'name' => 'Job'],
+                        ['id' => 8,  'name' => 'Blood Checkup']
                     ];
 
-                    $raw_categories = $conn->query("SELECT * FROM nav_categories")->fetchAll(PDO::FETCH_ASSOC);
-                    $nav_categories = [];
-
-                    foreach ($raw_categories as $rcat) {
-                        $norm_name = strtolower(trim($rcat['name']));
-                        // Exclude obsolete categories like 'NRI Care Services' or 'Specialized Care'
-                        if (strpos($norm_name, 'nri') !== false || strpos($norm_name, 'specialized') !== false) {
-                            continue;
-                        }
-                        if (isset($canonical_order_map[$norm_name])) {
-                            $rcat['canonical_order'] = $canonical_order_map[$norm_name];
-                            $nav_categories[] = $rcat;
-                        }
-                    }
-
-                    // Sort strictly by canonical order
-                    usort($nav_categories, function($a, $b) {
-                        return ($a['canonical_order'] ?? 99) <=> ($b['canonical_order'] ?? 99);
-                    });
-
                     // Fetch all items grouped by category
-                    $nav_items_all = $conn->query("SELECT * FROM nav_items ORDER BY display_order ASC")->fetchAll(PDO::FETCH_ASSOC);
+                    $nav_items_all = $conn->query("SELECT * FROM nav_items ORDER BY display_order ASC, id ASC")->fetchAll(PDO::FETCH_ASSOC);
                     $grouped_items = [];
                     foreach ($nav_items_all as $item) {
                         $grouped_items[$item['category_id']][] = $item;
-                    }
-
-                    // Determine current active category & active page slug
-                    $req_path = parse_url($_SERVER['REQUEST_URI'] ?? '', PHP_URL_PATH);
-                    $current_slug = strtolower(trim(str_replace(['/DmHealthcare', '.php', '/'], ['', '', ''], $req_path)));
-
-                    $active_nav_category = '';
-                    if (!empty($category_name)) {
-                        $active_nav_category = strtolower(trim($category_name));
-                    } elseif (!empty($page_data['category_name'])) {
-                        $active_nav_category = strtolower(trim($page_data['category_name']));
-                    }
-
-                    // Also match current slug against items in $nav_items_all to identify active category
-                    if (empty($active_nav_category) || $active_nav_category === 'healthcare services') {
-                        if (!empty($current_slug)) {
-                            foreach ($nav_items_all as $ni) {
-                                if (strtolower($ni['link']) === $current_slug) {
-                                    foreach ($nav_categories as $nc) {
-                                        if ($nc['id'] == $ni['category_id']) {
-                                            $active_nav_category = strtolower(trim($nc['name']));
-                                            break 2;
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-
-                    // Normalize aliases
-                    if ($active_nav_category === 'careers') $active_nav_category = 'job';
-                    if ($active_nav_category === 'total test') $active_nav_category = 'blood checkup';
-                    if (empty($active_nav_category) && (empty($current_slug) || $current_slug === 'index' || $current_slug === 'delhi-ncr')) {
-                        $active_nav_category = 'home';
                     }
                     ?>
                     
@@ -470,16 +380,13 @@ $page_keywords_seo = isset($seo_keywords) && !empty($seo_keywords)
                             <?php 
                                 $cat_items = $grouped_items[$cat['id']] ?? [];
                                 $has_items = count($cat_items) > 0;
-                                if (!$has_items && strtolower($cat['name']) !== 'home') continue; 
-
                                 $cat_norm = strtolower(trim($cat['name']));
-                                $is_cat_active = ($active_nav_category === $cat_norm || strpos($active_nav_category, $cat_norm) !== false || strpos($cat_norm, $active_nav_category) !== false);
                             ?>
 
                             <?php if ($cat_norm === 'home care'): ?>
                                 <!-- Home Care Mega Menu -->
-                                <li class="nav-item dropdown position-static <?= $is_cat_active ? 'active' : '' ?>">
-                                    <a class="nav-link dropdown-toggle text-dark text-uppercase px-3 <?= $is_cat_active ? 'active' : '' ?>" href="#" role="button" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                                <li class="nav-item dropdown position-static">
+                                    <a class="nav-link dropdown-toggle text-dark text-uppercase px-3" href="#" role="button" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
                                         <?= htmlspecialchars($cat['name']) ?>
                                         <i class="fa-solid fa-chevron-down ms-1" style="font-size: 0.8em;"></i>
                                     </a>
@@ -531,10 +438,9 @@ $page_keywords_seo = isset($seo_keywords) && !empty($seo_keywords)
                                                             <?php 
                                                                 $slug_key = strtolower($nav_item['link']);
                                                                 $icon_cls = $icon_map[$slug_key] ?? 'fa-solid fa-hand-holding-medical';
-                                                                $is_curr_link = ($slug_key === $current_slug);
                                                             ?>
                                                             <li>
-                                                                <a href="<?= htmlspecialchars($nav_item['link']) ?>" class="<?= $is_curr_link ? 'active-page' : '' ?>">
+                                                                <a href="<?= htmlspecialchars($nav_item['link']) ?>">
                                                                     <i class="<?= $icon_cls ?>"></i>
                                                                     <span><?= htmlspecialchars($nav_item['title']) ?></span>
                                                                 </a>
@@ -551,10 +457,9 @@ $page_keywords_seo = isset($seo_keywords) && !empty($seo_keywords)
                                                             <?php 
                                                                 $slug_key = strtolower($nav_item['link']);
                                                                 $icon_cls = $icon_map[$slug_key] ?? 'fa-solid fa-user-nurse';
-                                                                $is_curr_link = ($slug_key === $current_slug);
                                                             ?>
                                                             <li>
-                                                                <a href="<?= htmlspecialchars($nav_item['link']) ?>" class="<?= $is_curr_link ? 'active-page' : '' ?>">
+                                                                <a href="<?= htmlspecialchars($nav_item['link']) ?>">
                                                                     <i class="<?= $icon_cls ?>"></i>
                                                                     <span><?= htmlspecialchars($nav_item['title']) ?></span>
                                                                 </a>
@@ -576,20 +481,19 @@ $page_keywords_seo = isset($seo_keywords) && !empty($seo_keywords)
 
                             <?php elseif ($cat_norm === 'home'): ?>
                                 <!-- Home Item -->
-                                <li class="nav-item dropdown <?= $is_cat_active ? 'active' : '' ?>">
+                                <li class="nav-item dropdown">
                                     <?php if ($has_items): ?>
-                                        <a class="nav-link dropdown-toggle text-dark text-uppercase px-3 <?= $is_cat_active ? 'active' : '' ?>" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <a class="nav-link dropdown-toggle text-dark text-uppercase px-3" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                             <?= htmlspecialchars($cat['name']) ?>
                                             <i class="fa-solid fa-chevron-down ms-1" style="font-size: 0.8em;"></i>
                                         </a>
                                         <ul class="dropdown-menu border-0 shadow-sm rounded-3">
                                             <?php foreach ($cat_items as $nav_item): ?>
-                                                <?php $is_curr_link = (strtolower($nav_item['link']) === $current_slug); ?>
-                                                <li><a class="dropdown-item py-2 <?= $is_curr_link ? 'active-page' : '' ?>" href="<?= htmlspecialchars($nav_item['link']) ?>"><?= htmlspecialchars($nav_item['title']) ?></a></li>
+                                                <li><a class="dropdown-item py-2" href="<?= htmlspecialchars($nav_item['link']) ?>"><?= htmlspecialchars($nav_item['title']) ?></a></li>
                                             <?php endforeach; ?>
                                         </ul>
                                     <?php else: ?>
-                                        <a class="nav-link text-dark text-uppercase px-3 <?= $is_cat_active ? 'active' : '' ?>" href="index.php">
+                                        <a class="nav-link text-dark text-uppercase px-3" href="index.php">
                                             <?= htmlspecialchars($cat['name']) ?>
                                         </a>
                                     <?php endif; ?>
@@ -597,15 +501,15 @@ $page_keywords_seo = isset($seo_keywords) && !empty($seo_keywords)
 
                             <?php else: ?>
                                 <!-- Standard Dropdown & Blood Checkup -->
-                                <li class="nav-item dropdown <?= $is_cat_active ? 'active' : '' ?>">
+                                <li class="nav-item dropdown">
                                     <?php 
                                         $is_blood_checkup = (stripos($cat['name'], 'blood') !== false);
                                         $display_name = $is_blood_checkup ? 'Blood Checkup' : $cat['name'];
                                     ?>
                                     <?php if ($is_blood_checkup): ?>
-                                        <a class="nav-link dropdown-toggle text-white fw-bold text-uppercase px-3 ms-2 shadow-sm nav-blood-checkup-btn <?= $is_cat_active ? 'active' : '' ?>" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: #e5252a !important; background: #e5252a !important; color: #ffffff !important; border-radius: 6px; padding: 8px 16px !important; align-self: center; font-size: 14px;">
+                                        <a class="nav-link dropdown-toggle text-white fw-bold text-uppercase px-3 ms-2 shadow-sm nav-blood-checkup-btn" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: #e5252a !important; background: #e5252a !important; color: #ffffff !important; border-radius: 6px; padding: 8px 16px !important; align-self: center; font-size: 14px;">
                                     <?php else: ?>
-                                        <a class="nav-link dropdown-toggle text-dark text-uppercase px-3 <?= $is_cat_active ? 'active' : '' ?>" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <a class="nav-link dropdown-toggle text-dark text-uppercase px-3" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     <?php endif; ?>
                                         <?= htmlspecialchars($display_name) ?>
                                         <?php if ($has_items): ?>
@@ -615,8 +519,7 @@ $page_keywords_seo = isset($seo_keywords) && !empty($seo_keywords)
                                     <ul class="dropdown-menu border-0 shadow-sm rounded-3">
                                         <?php if ($has_items): ?>
                                             <?php foreach ($cat_items as $nav_item): ?>
-                                                <?php $is_curr_link = (strtolower($nav_item['link']) === $current_slug); ?>
-                                                <li><a class="dropdown-item py-2 <?= $is_curr_link ? 'active-page' : '' ?>" href="<?= htmlspecialchars($nav_item['link']) ?>"><?= htmlspecialchars($nav_item['title']) ?></a></li>
+                                                <li><a class="dropdown-item py-2" href="<?= htmlspecialchars($nav_item['link']) ?>"><?= htmlspecialchars($nav_item['title']) ?></a></li>
                                             <?php endforeach; ?>
                                         <?php else: ?>
                                             <li><a class="dropdown-item py-2 text-muted" href="#">Coming Soon</a></li>
