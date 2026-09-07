@@ -101,6 +101,7 @@ try {
     // Remove obsolete items
     $conn->exec("DELETE FROM nav_categories WHERE id = 5 OR name LIKE '%NRI%'");
     $conn->exec("DELETE FROM nav_items WHERE link IN ('holter-test-at-home', 'HOLTER+TEST+AT+HOME', 'dialysis-at-home', 'DIALYSIS+AT+HOME', 'nri-family-care')");
+    $conn->exec("DELETE FROM nav_items WHERE category_id = 13 AND id != 62");
 
     $item_stmt = $conn->prepare("INSERT INTO nav_items (id, category_id, title, link, display_order) VALUES (:id, :cat_id, :title, :link, :order) ON DUPLICATE KEY UPDATE category_id = VALUES(category_id), title = VALUES(title), link = VALUES(link), display_order = VALUES(display_order)");
 
