@@ -6,10 +6,11 @@
         overflow: hidden;
     }
     
-    /* Desktop & Tablet Banner Sizing */
+    /* Desktop & Tablet Banner Sizing (Standard 1808x506) */
     .hero-banner-img {
         width: 100%;
         height: auto;
+        aspect-ratio: 1808 / 506;
         display: block;
         object-fit: cover;
     }
@@ -19,7 +20,7 @@
         .hero-banner-img {
             width: 100%;
             height: auto;
-            aspect-ratio: 3322 / 873;
+            aspect-ratio: 1808 / 506;
             object-fit: contain;
             background: #0f172a;
         }
@@ -38,7 +39,9 @@
 
     @media (min-width: 768px) and (max-width: 1199.98px) {
         .hero-banner-img {
-            min-height: 320px;
+            width: 100%;
+            height: auto;
+            aspect-ratio: 1808 / 506;
             max-height: 440px;
             object-fit: cover;
         }
@@ -46,8 +49,10 @@
 
     @media (min-width: 1200px) {
         .hero-banner-img {
-            min-height: 380px;
-            max-height: 560px;
+            width: 100%;
+            height: auto;
+            aspect-ratio: 1808 / 506;
+            max-height: 506px;
             object-fit: cover;
         }
     }

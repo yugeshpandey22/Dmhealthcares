@@ -420,7 +420,7 @@ $gallery = $item['gallery_images'] ? json_decode($item['gallery_images'], true) 
                                 </div>
                             <?php endif; ?>
                             <input type="file" name="banner_image" class="form-control" accept="image/*">
-                            <small class="text-muted d-block mt-1">Recommended size: 1920x450px</small>
+                            <small class="text-muted d-block mt-1">Recommended size: <strong>1808 &times; 506 px</strong> (Aspect Ratio ~3.57:1)</small>
                         </div>
 
                         <!-- Main Content Side Image -->

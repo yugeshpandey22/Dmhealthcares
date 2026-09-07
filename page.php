@@ -137,13 +137,18 @@ try {
     .page-header-banner-wrap img {
         width: 100%;
         height: auto;
+        aspect-ratio: 1808 / 506;
         display: block;
-        max-height: 380px;
+        max-height: 506px;
         object-fit: cover;
     }
     @media (max-width: 768px) {
         .page-header-banner-wrap img {
-            max-height: 220px;
+            width: 100%;
+            height: auto;
+            aspect-ratio: 1808 / 506;
+            object-fit: contain;
+            background: #0f172a;
         }
     }
 
