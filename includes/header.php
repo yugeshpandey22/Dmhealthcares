@@ -353,43 +353,11 @@ $page_keywords_seo = isset($seo_keywords) && !empty($seo_keywords)
                 <div class="collapse navbar-collapse" id="mainNavbar">
                     <?php
                     require_once 'config/db.php';
-                    // Fetch all categories
+                    // Fetch all categories ordered by display_order
                     $nav_categories = $conn->query("SELECT * FROM nav_categories ORDER BY display_order ASC")->fetchAll(PDO::FETCH_ASSOC);
-                    
-                    // Enforce standard category order: HOME -> DIAGNOSTICS -> MEDICAL EQUIPMENT -> HOME CARE -> JOB -> BLOOD CHECKUP
-                    $get_cat_rank = function($name, $default_order) {
-                        $n = strtolower(trim($name ?? ''));
-                        if ($n === 'home') return 1;
-                        if (strpos($n, 'diag') !== false) return 2;
-                        if (strpos($n, 'equip') !== false) return 3;
-                        if (strpos($n, 'home care') !== false || $n === 'homecare') return 4;
-                        if (strpos($n, 'job') !== false || strpos($n, 'career') !== false) return 5;
-                        if (strpos($n, 'blood') !== false) return 6;
-                        return (int)($default_order ?? 99);
-                    };
 
-                    usort($nav_categories, function($a, $b) use ($get_cat_rank) {
-                        $a_rank = $get_cat_rank($a['name'] ?? '', $a['display_order'] ?? 99);
-                        $b_rank = $get_cat_rank($b['name'] ?? '', $b['display_order'] ?? 99);
-                        if ($a_rank === $b_rank) {
-                            return ((int)($a['display_order'] ?? 0)) <=> ((int)($b['display_order'] ?? 0));
-                        }
-                        return $a_rank <=> $b_rank;
-                    });
-
-                    // Helper for robust absolute navigation links across all pages
-                    $get_nav_url = function($link) use ($base_domain_url) {
-                        $link = trim($link ?? '');
-                        if (empty($link)) return '#';
-                        if (strpos($link, 'http://') === 0 || strpos($link, 'https://') === 0 || strpos($link, '#') === 0 || strpos($link, 'tel:') === 0 || strpos($link, 'mailto:') === 0) {
-                            return $link;
-                        }
-                        return rtrim($base_domain_url, '/') . '/' . ltrim($link, '/');
-                    };
-
-                    // Fetch all items
+                    // Fetch all items grouped by category
                     $nav_items_all = $conn->query("SELECT * FROM nav_items ORDER BY display_order ASC")->fetchAll(PDO::FETCH_ASSOC);
-
                     $grouped_items = [];
                     foreach ($nav_items_all as $item) {
                         $grouped_items[$item['category_id']][] = $item;
@@ -401,11 +369,13 @@ $page_keywords_seo = isset($seo_keywords) && !empty($seo_keywords)
 
                         <?php foreach ($nav_categories as $cat): ?>
                             <?php 
-                                // Only show category if it has items, or if it is 'Home' which doesn't need items to be displayed
-                                $has_items = isset($grouped_items[$cat['id']]) && count($grouped_items[$cat['id']]) > 0;
+                                $cat_items = $grouped_items[$cat['id']] ?? [];
+                                $has_items = count($cat_items) > 0;
                                 if (!$has_items && strtolower($cat['name']) !== 'home') continue; 
                             ?>
+
                             <?php if (strtolower($cat['name']) === 'home care'): ?>
+                                <!-- Home Care Mega Menu -->
                                 <li class="nav-item dropdown position-static">
                                     <a class="nav-link dropdown-toggle text-dark text-uppercase px-3" href="#" role="button" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
                                         <?= htmlspecialchars($cat['name']) ?>
@@ -413,27 +383,18 @@ $page_keywords_seo = isset($seo_keywords) && !empty($seo_keywords)
                                     </a>
                                     <div class="dropdown-menu w-100 border-0 shadow-lg mt-0 p-3 p-xl-4 home-care-mega-menu">
                                         <div class="container-fluid px-2 px-md-4" style="max-width: 1440px;">
-                                             <?php
-                                                $home_items = isset($grouped_items[$cat['id']]) ? $grouped_items[$cat['id']] : [];
-                                                
-                                                // Specific categorization for OUR SERVICES vs OUR CAREGIVERS
+                                            <?php
                                                 $services_slugs = [
-                                                    'attendant-providing',
-                                                    'gda-providing',
-                                                    'patient-attendant',
-                                                    'elder-care---basic-care',
-                                                    'patient-care---general-nursing',
-                                                    'icu-care---critical-care',
-                                                    'live-in-care---24-hours-care',
-                                                    'palliative-care',
-                                                    'assisted-living-facility',
-                                                    'staircase-mobility-assistance'
+                                                    'attendant-providing', 'gda-providing', 'patient-attendant',
+                                                    'elder-care---basic-care', 'patient-care---general-nursing',
+                                                    'icu-care---critical-care', 'live-in-care---24-hours-care',
+                                                    'palliative-care', 'assisted-living-facility', 'staircase-mobility-assistance'
                                                 ];
                                                 
                                                 $col1_items = [];
                                                 $col2_items = [];
                                                 
-                                                foreach ($home_items as $h_item) {
+                                                foreach ($cat_items as $h_item) {
                                                     if (in_array(strtolower($h_item['link']), $services_slugs)) {
                                                         $col1_items[] = $h_item;
                                                     } else {
@@ -441,7 +402,6 @@ $page_keywords_seo = isset($seo_keywords) && !empty($seo_keywords)
                                                     }
                                                 }
 
-                                                // Icon mapper matching screenshot
                                                 $icon_map = [
                                                     'attendant-providing' => 'fa-solid fa-hand-holding-medical',
                                                     'gda-providing' => 'fa-solid fa-stethoscope',
@@ -471,7 +431,7 @@ $page_keywords_seo = isset($seo_keywords) && !empty($seo_keywords)
                                                                 $icon_cls = $icon_map[$slug_key] ?? 'fa-solid fa-hand-holding-medical';
                                                             ?>
                                                             <li>
-                                                                <a href="<?= htmlspecialchars($get_nav_url($nav_item['link'])) ?>">
+                                                                <a href="<?= htmlspecialchars($nav_item['link']) ?>">
                                                                     <i class="<?= $icon_cls ?>"></i>
                                                                     <span><?= htmlspecialchars($nav_item['title']) ?></span>
                                                                 </a>
@@ -490,7 +450,7 @@ $page_keywords_seo = isset($seo_keywords) && !empty($seo_keywords)
                                                                 $icon_cls = $icon_map[$slug_key] ?? 'fa-solid fa-user-nurse';
                                                             ?>
                                                             <li>
-                                                                <a href="<?= htmlspecialchars($get_nav_url($nav_item['link'])) ?>">
+                                                                <a href="<?= htmlspecialchars($nav_item['link']) ?>">
                                                                     <i class="<?= $icon_cls ?>"></i>
                                                                     <span><?= htmlspecialchars($nav_item['title']) ?></span>
                                                                 </a>
@@ -502,32 +462,36 @@ $page_keywords_seo = isset($seo_keywords) && !empty($seo_keywords)
                                                 <!-- Column 3: Image -->
                                                 <div class="col-lg-4 col-md-4 col-12 d-none d-md-block">
                                                     <div class="rounded-3 overflow-hidden shadow-sm h-100">
-                                                        <img src="<?= $base_domain_url ?>/assets/images/caregiver-helping.jpg" class="img-fluid w-100 h-100" alt="Caregiver helping patient" style="object-fit: cover; min-height: 280px;">
+                                                        <img src="assets/images/caregiver-helping.jpg" class="img-fluid w-100 h-100" alt="Caregiver helping patient" style="object-fit: cover; min-height: 280px;">
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </li>
+
                             <?php elseif (strtolower($cat['name']) === 'home'): ?>
+                                <!-- Home Item -->
                                 <li class="nav-item dropdown">
-                                    <?php if (isset($grouped_items[$cat['id']]) && count($grouped_items[$cat['id']]) > 0): ?>
+                                    <?php if ($has_items): ?>
                                         <a class="nav-link dropdown-toggle text-dark text-uppercase px-3" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                             <?= htmlspecialchars($cat['name']) ?>
                                             <i class="fa-solid fa-chevron-down ms-1" style="font-size: 0.8em;"></i>
                                         </a>
                                         <ul class="dropdown-menu border-0 shadow-sm rounded-3">
-                                            <?php foreach ($grouped_items[$cat['id']] as $nav_item): ?>
-                                                <li><a class="dropdown-item py-2" href="<?= htmlspecialchars($get_nav_url($nav_item['link'])) ?>"><?= htmlspecialchars($nav_item['title']) ?></a></li>
+                                            <?php foreach ($cat_items as $nav_item): ?>
+                                                <li><a class="dropdown-item py-2" href="<?= htmlspecialchars($nav_item['link']) ?>"><?= htmlspecialchars($nav_item['title']) ?></a></li>
                                             <?php endforeach; ?>
                                         </ul>
                                     <?php else: ?>
-                                        <a class="nav-link text-dark text-uppercase px-3" href="<?= $base_domain_url ?>/">
+                                        <a class="nav-link text-dark text-uppercase px-3" href="index.php">
                                             <?= htmlspecialchars($cat['name']) ?>
                                         </a>
                                     <?php endif; ?>
                                 </li>
+
                             <?php else: ?>
+                                <!-- Standard Dropdown & Blood Checkup -->
                                 <li class="nav-item dropdown">
                                     <?php 
                                         $is_blood_checkup = (stripos($cat['name'], 'blood') !== false);
@@ -539,14 +503,14 @@ $page_keywords_seo = isset($seo_keywords) && !empty($seo_keywords)
                                         <a class="nav-link dropdown-toggle text-dark text-uppercase px-3" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     <?php endif; ?>
                                         <?= htmlspecialchars($display_name) ?>
-                                        <?php if (isset($grouped_items[$cat['id']]) && count($grouped_items[$cat['id']]) > 0): ?>
+                                        <?php if ($has_items): ?>
                                             <i class="fa-solid fa-chevron-down ms-1" style="font-size: 0.8em;"></i>
                                         <?php endif; ?>
                                     </a>
                                     <ul class="dropdown-menu border-0 shadow-sm rounded-3">
-                                        <?php if (isset($grouped_items[$cat['id']]) && count($grouped_items[$cat['id']]) > 0): ?>
-                                            <?php foreach ($grouped_items[$cat['id']] as $nav_item): ?>
-                                                <li><a class="dropdown-item py-2" href="<?= htmlspecialchars($get_nav_url($nav_item['link'])) ?>"><?= htmlspecialchars($nav_item['title']) ?></a></li>
+                                        <?php if ($has_items): ?>
+                                            <?php foreach ($cat_items as $nav_item): ?>
+                                                <li><a class="dropdown-item py-2" href="<?= htmlspecialchars($nav_item['link']) ?>"><?= htmlspecialchars($nav_item['title']) ?></a></li>
                                             <?php endforeach; ?>
                                         <?php else: ?>
                                             <li><a class="dropdown-item py-2 text-muted" href="#">Coming Soon</a></li>
