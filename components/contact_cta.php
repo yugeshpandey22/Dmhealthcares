@@ -1,91 +1,73 @@
-<section class="cta-section py-5" style="background-color: #f8fafc;" id="contact">
-    <div class="container py-4">
-        <div class="card border-0 shadow-lg overflow-hidden" style="border-radius: 20px;">
-            <div class="row g-0">
+<!-- High-Converting 24/7 Emergency & Rapid Assistance CTA Banner -->
+<section class="cta-banner-section py-5 position-relative" style="background-color: #ffffff;" id="contact">
+    <div class="container py-3">
+        <div class="card border-0 shadow-lg overflow-hidden position-relative" style="border-radius: 28px; background: linear-gradient(135deg, #0F172A 0%, #1E293B 100%);">
+            
+            <!-- Glow Accents -->
+            <div class="position-absolute top-0 end-0 opacity-25" style="width: 400px; height: 400px; background: radial-gradient(circle, var(--primary-color) 0%, transparent 70%); pointer-events: none;"></div>
+            <div class="position-absolute bottom-0 start-0 opacity-15" style="width: 300px; height: 300px; background: radial-gradient(circle, #3B82F6 0%, transparent 70%); pointer-events: none;"></div>
+
+            <div class="row align-items-center p-4 p-md-5 position-relative z-1 g-4">
                 <!-- Left Content -->
-                <div class="col-lg-5 text-white p-5 d-flex flex-column justify-content-center" style="background: linear-gradient(135deg, #1E293B 0%, #0F172A 100%); position: relative;">
-                    <!-- Pattern overlay -->
-                    <div class="position-absolute top-0 start-0 w-100 h-100 opacity-10" style="background-image: radial-gradient(#fff 1px, transparent 1px); background-size: 20px 20px;"></div>
-                    
-                    <div class="position-relative z-1">
-                        <span class="text-uppercase fw-bold mb-2 d-inline-block px-3 py-1 rounded-pill" style="background: rgba(229, 37, 42, 0.2); color: #FF8082; font-size: 0.75rem; letter-spacing: 1px;">24/7 Home Healthcare</span>
-                        <h2 class="fw-bold mb-3 display-6">Need Professional Home Healthcare?</h2>
-                        <p class="fs-5 mb-4 text-light" style="opacity: 0.9;">Our medical experts are just a call away. Get immediate assistance for your loved ones.</p>
-                        
-                        <div class="d-flex align-items-center mb-4 p-3 rounded" style="background: rgba(255, 255, 255, 0.08); backdrop-filter: blur(10px); border-left: 4px solid var(--primary-color);">
-                            <div class="bg-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 50px; height: 50px; min-width: 50px;">
-                                <i class="fa-solid fa-phone fs-4" style="color: var(--primary-color);"></i>
-                            </div>
-                            <div>
-                                <small class="text-uppercase text-light d-block fw-semibold mb-1" style="font-size: 11px; letter-spacing: 1px;">Emergency Helpline</small>
-                                <a href="tel:+918860600423" class="fs-4 fw-bold text-white text-decoration-none">+91 88606 00423</a>
+                <div class="col-lg-7 text-white">
+                    <div class="d-inline-flex align-items-center gap-2 px-3 py-1 rounded-pill mb-3" style="background: rgba(229, 37, 42, 0.25); color: #FF8082; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.5px;">
+                        <span class="spinner-grow spinner-grow-sm text-danger" style="width: 8px; height: 8px;" role="status"></span>
+                        24/7 EMERGENCY & HOME CARE HOTLINE
+                    </div>
+
+                    <h2 class="fw-bolder mb-3 text-white" style="font-size: clamp(1.8rem, 3.2vw, 2.5rem); letter-spacing: -0.5px; line-height: 1.25;">
+                        Need Immediate Medical Care <br>or Equipment <span style="color: var(--primary-color);">At Your Home?</span>
+                    </h2>
+
+                    <p class="text-light fs-6 mb-4" style="line-height: 1.6; opacity: 0.88; max-width: 580px;">
+                        Our medical coordinators are on standby 24/7 across Delhi NCR. Connect directly with our clinical desk for instant nurse assignment, ICU setup, or equipment delivery.
+                    </p>
+
+                    <div class="row g-3">
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center gap-2">
+                                <i class="fa-solid fa-circle-check text-danger fs-5"></i>
+                                <span class="small fw-semibold text-white">30-60 Min Rapid Dispatch</span>
                             </div>
                         </div>
-
-                        <div class="d-flex flex-column gap-3 mt-4">
-                            <div class="d-flex align-items-center gap-3">
-                                <i class="fa-solid fa-check-circle fs-5" style="color: var(--primary-color);"></i>
-                                <span>Verified & Certified Caretakers</span>
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center gap-2">
+                                <i class="fa-solid fa-circle-check text-danger fs-5"></i>
+                                <span class="small fw-semibold text-white">100% Background Verified</span>
                             </div>
-                            <div class="d-flex align-items-center gap-3">
-                                <i class="fa-solid fa-check-circle fs-5" style="color: var(--primary-color);"></i>
-                                <span>Affordable & Transparent Pricing</span>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center gap-2">
+                                <i class="fa-solid fa-circle-check text-danger fs-5"></i>
+                                <span class="small fw-semibold text-white">Transparent & Affordable Rates</span>
                             </div>
-                            <div class="d-flex align-items-center gap-3">
-                                <i class="fa-solid fa-check-circle fs-5" style="color: var(--primary-color);"></i>
-                                <span>Immediate 30-Min Response Time</span>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center gap-2">
+                                <i class="fa-solid fa-circle-check text-danger fs-5"></i>
+                                <span class="small fw-semibold text-white">Senior Doctor Supervision</span>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Right Form Content -->
-                <div class="col-lg-7 bg-white p-5">
-                    <h3 class="fw-bold mb-2" style="color: var(--secondary-color);">Send an Enquiry</h3>
-                    <p class="text-muted mb-4 pb-2 border-bottom">We will get back to you within 30 minutes.</p>
-                    
-                    <form action="backend/submit_appointment.php" method="POST" class="enquiry-form">
-                        <div class="row g-3">
-                            <div class="col-md-6">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control bg-light border-0" id="enqName" name="full_name" placeholder="Full Name" required>
-                                    <label for="enqName">Full Name *</label>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-floating">
-                                    <input type="tel" class="form-control bg-light border-0" id="enqPhone" name="phone_number" placeholder="Phone Number" pattern="^[6-9][0-9]{9}$" minlength="10" maxlength="10" title="Valid 10-digit mobile number required" oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0, 10);" required>
-                                    <label for="enqPhone">Phone Number *</label>
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="form-floating">
-                                    <select class="form-select bg-light border-0" id="enqService" name="service_required" required>
-                                        <option value="" selected disabled>Select Required Service...</option>
-                                        <option value="patient-attendant">Patient Attendant / Caretaker</option>
-                                        <option value="nursing">Home Nursing Services</option>
-                                        <option value="icu-care">ICU & Critical Care</option>
-                                        <option value="physiotherapy">Physiotherapy at Home</option>
-                                        <option value="medical-equipment">Medical Equipment Rent/Sale</option>
-                                        <option value="diagnostics">Diagnostics & Lab Tests</option>
-                                        <option value="other">Other Inquiry</option>
-                                    </select>
-                                    <label for="enqService">Required Service *</label>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-floating">
-                                    <textarea class="form-control bg-light border-0" id="enqMessage" name="message" placeholder="Message" style="height: 120px; resize: none;"></textarea>
-                                    <label for="enqMessage">How can we help you? (Optional)</label>
-                                </div>
-                            </div>
-                            <div class="col-12 mt-4 pt-2">
-                                <button type="submit" class="btn btn-primary btn-lg w-100 fw-bold shadow d-flex align-items-center justify-content-center gap-2" style="border-radius: 12px; padding: 15px;">
-                                    Submit Enquiry <i class="fa-solid fa-paper-plane"></i>
-                                </button>
-                            </div>
+                <!-- Right Action Buttons -->
+                <div class="col-lg-5 text-lg-end">
+                    <div class="p-4 rounded-4 shadow-sm text-center d-inline-block w-100" style="background: rgba(255, 255, 255, 0.06); border: 1px solid rgba(255, 255, 255, 0.12); backdrop-filter: blur(12px); max-width: 440px;">
+                        <small class="text-white-50 text-uppercase fw-bold d-block mb-1" style="font-size: 0.72rem; letter-spacing: 1px;">Speak with Medical Expert</small>
+                        <a href="tel:+918860600423" class="display-6 fw-bold text-white text-decoration-none d-block mb-3 hover-red" style="font-size: 1.85rem;">
+                            +91 88606 00423
+                        </a>
+
+                        <div class="d-grid gap-2">
+                            <a href="tel:+918860600423" class="btn btn-primary btn-lg rounded-pill fw-bold py-3 d-flex align-items-center justify-content-center gap-2 shadow" style="background: var(--primary-color); border: none;">
+                                <i class="fa-solid fa-phone-volume"></i> Call Priority Helpline
+                            </a>
+                            <a href="https://wa.me/918860600423?text=Hi%2C%20I%20need%20urgent%20home%20healthcare%20support" target="_blank" class="btn btn-success btn-lg rounded-pill fw-bold py-3 d-flex align-items-center justify-content-center gap-2 shadow-sm" style="background: #25D366; border: none;">
+                                <i class="fa-brands fa-whatsapp fs-5"></i> Chat on WhatsApp
+                            </a>
                         </div>
-                    </form>
+                    </div>
                 </div>
             </div>
         </div>
@@ -93,22 +75,7 @@
 </section>
 
 <style>
-    .enquiry-form .form-control,
-    .enquiry-form .form-select {
-        border-radius: 10px;
-        transition: all 0.3s ease;
-    }
-    
-    .enquiry-form .form-control:focus, 
-    .enquiry-form .form-select:focus {
-        box-shadow: 0 0 0 4px rgba(229, 37, 42, 0.15) !important;
-        background-color: #fff !important;
-        border: 1px solid var(--primary-color) !important;
-    }
-
-    .enquiry-form label {
-        color: #64748b;
-        font-weight: 500;
-        font-size: 0.95rem;
-    }
+.cta-banner-section .hover-red:hover {
+    color: #FF8082 !important;
+}
 </style>
