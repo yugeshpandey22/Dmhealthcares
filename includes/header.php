@@ -367,14 +367,37 @@ $page_keywords_seo = isset($seo_keywords) && !empty($seo_keywords)
 
                     // Automatically remove redundant 'Home Page' entries from database if present
                     try {
-                        $conn->query("DELETE FROM nav_items WHERE category_id = 13 AND (LOWER(title) LIKE '%home%page%' OR LOWER(link) LIKE '%home%page%')");
+                        $conn->query("DELETE FROM nav_items WHERE LOWER(title) LIKE '%home%page%' OR LOWER(link) LIKE '%home%page%'");
                     } catch (Exception $e) {}
 
-                    // Fetch all items grouped by category
-                    $nav_items_all = $conn->query("SELECT * FROM nav_items ORDER BY display_order ASC, id ASC")->fetchAll(PDO::FETCH_ASSOC);
+                    // Dynamically map category IDs from DB to prevent mismatch on live vs local database
+                    try {
+                        $db_cats = $conn->query("SELECT id, LOWER(TRIM(name)) as name_lower FROM nav_categories")->fetchAll(PDO::FETCH_ASSOC);
+                        $cat_name_to_id = [];
+                        foreach ($db_cats as $dbc) {
+                            $cat_name_to_id[$dbc['name_lower']] = (int)$dbc['id'];
+                        }
+                        foreach ($nav_categories as &$c_entry) {
+                            $norm = strtolower(trim($c_entry['name']));
+                            if (isset($cat_name_to_id[$norm])) {
+                                $c_entry['id'] = $cat_name_to_id[$norm];
+                            }
+                        }
+                        unset($c_entry);
+                    } catch (Exception $e) {}
+
+                    // Fetch all items with category names for dual-matching resilience (ID & Name)
+                    $nav_items_all = [];
+                    try {
+                        $nav_items_all = $conn->query("SELECT n.*, LOWER(TRIM(c.name)) as cat_name FROM nav_items n LEFT JOIN nav_categories c ON n.category_id = c.id ORDER BY n.display_order ASC, n.id ASC")->fetchAll(PDO::FETCH_ASSOC);
+                    } catch (Exception $e) {}
+
                     $grouped_items = [];
                     foreach ($nav_items_all as $item) {
                         $grouped_items[$item['category_id']][] = $item;
+                        if (!empty($item['cat_name'])) {
+                            $grouped_items[$item['cat_name']][] = $item;
+                        }
                     }
                     ?>
                     
@@ -383,9 +406,9 @@ $page_keywords_seo = isset($seo_keywords) && !empty($seo_keywords)
 
                         <?php foreach ($nav_categories as $cat): ?>
                             <?php 
-                                $cat_items = $grouped_items[$cat['id']] ?? [];
-                                $has_items = count($cat_items) > 0;
                                 $cat_norm = strtolower(trim($cat['name']));
+                                $cat_items = $grouped_items[$cat['id']] ?? $grouped_items[$cat_norm] ?? [];
+                                $has_items = count($cat_items) > 0;
                             ?>
 
                             <?php if ($cat_norm === 'home care'): ?>
