@@ -9,6 +9,14 @@ $full_page_override = true;
 $hide_page_banner = true; // Use internal custom banner layout with breadcrumbs
 $custom_content = ''; // Suppress old unstyled raw database text
 
+if (empty($banner_image) || !file_exists($banner_image)) {
+    $matches = glob('assets/images/pages/banner_49_*.*');
+    if (!empty($matches)) {
+        $banner_image = end($matches);
+    }
+}
+$career_banner_src = (!empty($banner_image) && file_exists($banner_image)) ? $banner_image : 'assets/images/banner2.jpg';
+
 $frontend_custom_sections = '
 <style>
 /* Page Layout */
@@ -201,7 +209,7 @@ $frontend_custom_sections = '
 <div class="careers-page">
     <!-- 1. Top Uncropped Responsive Banner -->
     <div class="careers-banner-wrap">
-        <img src="assets/images/banner2.jpg" alt="Healthcare Careers & Jobs - DM Healthcare" class="img-fluid w-100" onerror="this.onerror=null; this.src=\'assets/images/banner1.jpg\';">
+        <img src="' . htmlspecialchars($career_banner_src) . '" alt="Healthcare Careers & Jobs - DM Healthcare" class="img-fluid w-100" onerror="this.onerror=null; this.src=\'assets/images/banner1.jpg\';">
     </div>
 
     <!-- 2. Breadcrumbs Bar -->

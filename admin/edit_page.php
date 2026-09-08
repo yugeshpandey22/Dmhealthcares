@@ -33,20 +33,34 @@ if (isset($_POST['update_page'])) {
     if (!is_dir($upload_dir)) mkdir($upload_dir, 0777, true);
 
     // Upload Main Image
-    if (isset($_FILES['page_image']) && $_FILES['page_image']['error'] === 0) {
-        $ext = pathinfo($_FILES['page_image']['name'], PATHINFO_EXTENSION);
-        $name = 'main_' . $id . '_' . time() . '.' . $ext;
-        if (move_uploaded_file($_FILES['page_image']['tmp_name'], $upload_dir . $name)) {
-            $page_image = 'assets/images/pages/' . $name;
+    if (isset($_FILES['page_image']) && !empty($_FILES['page_image']['name'])) {
+        if ($_FILES['page_image']['error'] === 0) {
+            $ext = strtolower(pathinfo($_FILES['page_image']['name'], PATHINFO_EXTENSION));
+            $name = 'main_' . $id . '_' . time() . '.' . $ext;
+            if (move_uploaded_file($_FILES['page_image']['tmp_name'], $upload_dir . $name)) {
+                $page_image = 'assets/images/pages/' . $name;
+            } else {
+                $error = "Failed to upload feature image to folder.";
+            }
+        } elseif ($_FILES['page_image']['error'] === 1 || $_FILES['page_image']['error'] === 2) {
+            $error = "Feature image file exceeds upload size limit.";
         }
     }
 
     // Upload Banner Image
-    if (isset($_FILES['banner_image']) && $_FILES['banner_image']['error'] === 0) {
-        $ext = pathinfo($_FILES['banner_image']['name'], PATHINFO_EXTENSION);
-        $name = 'banner_' . $id . '_' . time() . '.' . $ext;
-        if (move_uploaded_file($_FILES['banner_image']['tmp_name'], $upload_dir . $name)) {
-            $banner_image = 'assets/images/pages/' . $name;
+    if (isset($_FILES['banner_image']) && !empty($_FILES['banner_image']['name'])) {
+        if ($_FILES['banner_image']['error'] === 0) {
+            $ext = strtolower(pathinfo($_FILES['banner_image']['name'], PATHINFO_EXTENSION));
+            $name = 'banner_' . $id . '_' . time() . '.' . $ext;
+            if (move_uploaded_file($_FILES['banner_image']['tmp_name'], $upload_dir . $name)) {
+                $banner_image = 'assets/images/pages/' . $name;
+            } else {
+                $error = "Failed to upload banner image to folder. Please check permissions.";
+            }
+        } elseif ($_FILES['banner_image']['error'] === 1 || $_FILES['banner_image']['error'] === 2) {
+            $error = "Banner image file exceeds upload size limit. Please upload an image under 5MB.";
+        } else {
+            $error = "Failed to upload banner image (error code: " . $_FILES['banner_image']['error'] . ")";
         }
     }
 
@@ -414,9 +428,18 @@ $gallery = $item['gallery_images'] ? json_decode($item['gallery_images'], true) 
                         <!-- Top Banner Image -->
                         <div class="col-md-6 border-end pe-md-4">
                             <label class="form-label fw-bold text-dark d-block">Top Header Banner Image</label>
-                            <?php if(!empty($item['banner_image'])): ?>
+                            <?php 
+                                $preview_banner = !empty($item['banner_image']) ? $item['banner_image'] : null;
+                                if (empty($preview_banner) || !file_exists('../' . $preview_banner)) {
+                                    $auto_banners = glob('../assets/images/pages/banner_' . $id . '_*.*');
+                                    if (!empty($auto_banners)) {
+                                        $preview_banner = str_replace('../', '', end($auto_banners));
+                                    }
+                                }
+                            ?>
+                            <?php if(!empty($preview_banner) && file_exists('../' . $preview_banner)): ?>
                                 <div class="mb-3 rounded-3 overflow-hidden border">
-                                    <img src="../<?= htmlspecialchars($item['banner_image']) ?>" class="w-100" style="max-height: 160px; object-fit: cover;" alt="Banner Preview">
+                                    <img src="../<?= htmlspecialchars($preview_banner) ?>?v=<?= time() ?>" class="w-100" style="max-height: 160px; object-fit: cover;" alt="Banner Preview">
                                 </div>
                             <?php endif; ?>
                             <input type="file" name="banner_image" class="form-control" accept="image/*">

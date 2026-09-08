@@ -15,6 +15,12 @@ $short_desc = $page_data ? $page_data['short_description'] : null;
 $specs = $page_data ? $page_data['specifications'] : null;
 $custom_image = $page_data && $page_data['page_image'] ? $page_data['page_image'] : null;
 $banner_image = $page_data && $page_data['banner_image'] ? $page_data['banner_image'] : null;
+if (($page_data && !empty($page_data['id'])) && (empty($banner_image) || !file_exists($banner_image))) {
+    $auto_banners = glob('assets/images/pages/banner_' . (int)$page_data['id'] . '_*.*');
+    if (!empty($auto_banners)) {
+        $banner_image = end($auto_banners);
+    }
+}
 $gallery_images = $page_data && $page_data['gallery_images'] ? json_decode($page_data['gallery_images'], true) : [];
 $display_image = ($custom_image && file_exists($custom_image)) ? $custom_image : 'assets/images/about.jpg';
 $category_name = $page_data && !empty($page_data['category_name']) ? $page_data['category_name'] : 'Healthcare Services';
