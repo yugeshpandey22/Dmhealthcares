@@ -10,7 +10,6 @@ $seo_desc = "24/7 emergency medical oxygen cylinder rental & doorstep refill acr
 $short_desc = "Certified 99% pure IP grade medical oxygen cylinders (B-Type & D-Type Jumbo) with complete accessory kit and 24/7 instant refill swap service.";
 $category_name = "Medical Equipment";
 $full_page_override = true;
-$hide_page_banner = true;
 
 ob_start();
 ?>

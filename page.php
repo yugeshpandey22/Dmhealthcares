@@ -3,10 +3,26 @@ require_once 'config/db.php';
 $page_title = isset($_GET['title']) ? $_GET['title'] : 'Page Not Found';
 
 // Fetch custom page content from nav_items if it exists
-$stmt = $conn->prepare("SELECT n.*, c.name as category_name FROM nav_items n LEFT JOIN nav_categories c ON n.category_id = c.id WHERE n.title = :title OR n.link = :link LIMIT 1");
+$slug_raw = strtolower(str_replace([' ', '/'], ['-', '-'], $page_title));
+$slug_clean = strtolower(trim(preg_replace('/[^A-Za-z0-9-]+/', '-', $page_title), '-'));
+$slug_single_dash = preg_replace('/-+/', '-', $slug_clean);
+
+$stmt = $conn->prepare("SELECT n.*, c.name as category_name FROM nav_items n 
+    LEFT JOIN nav_categories c ON n.category_id = c.id 
+    WHERE n.title = :title 
+       OR n.link = :link 
+       OR n.link = :slug_clean 
+       OR n.link = :slug_single_dash 
+       OR LOWER(n.title) = :lower_title 
+       OR LOWER(n.title) = :slug_title 
+    LIMIT 1");
 $stmt->execute([
     'title' => $page_title,
-    'link' => $page_title
+    'link' => $page_title,
+    'slug_clean' => $slug_clean,
+    'slug_single_dash' => $slug_single_dash,
+    'lower_title' => strtolower($page_title),
+    'slug_title' => strtolower(str_replace('-', ' ', $slug_single_dash))
 ]);
 $page_data = $stmt->fetch(PDO::FETCH_ASSOC);
 
@@ -26,10 +42,6 @@ $display_image = ($custom_image && file_exists($custom_image)) ? $custom_image :
 $category_name = $page_data && !empty($page_data['category_name']) ? $page_data['category_name'] : 'Healthcare Services';
 
 // HYBRID ROUTING: If a physical file exists for this page, let it override variables
-$slug_raw = strtolower(str_replace([' ', '/'], ['-', '-'], $page_title));
-$slug_clean = strtolower(trim(preg_replace('/[^A-Za-z0-9-]+/', '-', $page_title), '-'));
-$slug_single_dash = preg_replace('/-+/', '-', $slug_clean);
-
 $possible_files = [
     'pages/' . $page_title . '.php',
     'pages/' . $slug_raw . '.php',
@@ -255,13 +267,24 @@ try {
 </style>
 
 <?php
+    if (($page_data && !empty($page_data['id'])) && (empty($banner_image) || !file_exists($banner_image))) {
+        $auto_banners = glob('assets/images/pages/banner_' . (int)$page_data['id'] . '_*.*');
+        if (!empty($auto_banners)) {
+            $banner_image = end($auto_banners);
+        }
+    }
     $has_uploaded_banner = (!empty($banner_image) && file_exists($banner_image));
     $banner_src = $has_uploaded_banner ? $banner_image : 'assets/images/banner1.jpg';
     if (!file_exists($banner_src)) {
         $banner_src = 'assets/images/banner2.jpg';
     }
-    // Only show page banner if not explicitly hidden by the page
-    $show_page_banner = empty($hide_page_banner);
+    // If admin uploaded a banner for this page, ALWAYS show it!
+    // If no custom banner is uploaded, show default banner unless hidden by page.
+    if ($has_uploaded_banner) {
+        $show_page_banner = true;
+    } else {
+        $show_page_banner = empty($hide_page_banner);
+    }
 ?>
 <!-- Page Header Banner (Clean, Full-Width, No Text Overlay) -->
 <?php if($show_page_banner): ?>

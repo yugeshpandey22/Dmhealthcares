@@ -3,15 +3,7 @@
 // We assign our completely unique frontend custom design to $frontend_custom_sections!
 $hide_default_welcome = true; // Hides the default "Welcome to TITLE" section from page.php
 
-// Use uploaded hospital bed 1808x506 banner if present
-if (empty($banner_image) || !file_exists($banner_image)) {
-    if (file_exists('assets/images/pages/banner_27_1788782784.jpeg')) {
-        $banner_image = 'assets/images/pages/banner_27_1788782784.jpeg';
-    } elseif (file_exists('assets/images/pages/banner_27_1788781330.jpeg')) {
-        $banner_image = 'assets/images/pages/banner_27_1788781330.jpeg';
-    }
-}
-
+// Hospital Bed page custom content
 $frontend_custom_sections = '
 
 <style>

@@ -10,7 +10,6 @@ $seo_desc = "Rent or buy NeoBolt motorized wheelchair add-on scooter in Delhi NC
 $short_desc = "Convert your manual wheelchair into a powerful road-ready motorized electric scooter in 10 seconds. Hospital-grade safety, lithium-ion battery & 24/7 technical support.";
 $category_name = "Medical Equipment";
 $full_page_override = true;
-$hide_page_banner = true;
 
 ob_start();
 ?>

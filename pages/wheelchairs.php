@@ -10,7 +10,6 @@ $seo_desc = "Rent or buy manual, motorized electric, recliner, commode & stair-c
 $short_desc = "Hospital-grade manual and electric power wheelchairs on rent & sale. Free home delivery, demonstration, and 24/7 technical support across Delhi NCR.";
 $category_name = "Medical Equipment";
 $full_page_override = true;
-$hide_page_banner = true;
 
 // Wheelchair Catalog Data
 $wheelchairs = [

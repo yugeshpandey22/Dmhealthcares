@@ -10,7 +10,6 @@ $seo_desc = "Rent or buy 5 LPM and 10 LPM hospital-grade oxygen concentrators in
 $short_desc = "Continuous 93%-96% pure medical oxygen supply at home. Free doorstep delivery, demonstration, complimentary cannula kit, and 24/7 technical support.";
 $category_name = "Medical Equipment";
 $full_page_override = true;
-$hide_page_banner = true;
 
 // Oxygen Concentrator Inventory Models
 $oxygen_models = [
