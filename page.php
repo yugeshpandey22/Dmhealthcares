@@ -260,8 +260,8 @@ try {
     if (!file_exists($banner_src)) {
         $banner_src = 'assets/images/banner2.jpg';
     }
-    // If the user has uploaded a custom banner, ALWAYS show it!
-    $show_page_banner = $has_uploaded_banner || (!isset($hide_page_banner) || !$hide_page_banner);
+    // Only show page banner if not explicitly hidden by the page
+    $show_page_banner = empty($hide_page_banner);
 ?>
 <!-- Page Header Banner (Clean, Full-Width, No Text Overlay) -->
 <?php if($show_page_banner): ?>

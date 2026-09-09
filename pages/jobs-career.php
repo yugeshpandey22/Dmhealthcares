@@ -6,16 +6,7 @@ $seo_desc = "Join DM Healthcare as a registered nurse, healthcare attendant, phy
 $short_desc = "Explore high-growth healthcare careers at DM Healthcare. Join our clinical squad delivering quality care across Delhi NCR.";
 $category_name = "Careers";
 $full_page_override = true;
-$hide_page_banner = true; // Use internal custom banner layout with breadcrumbs
 $custom_content = ''; // Suppress old unstyled raw database text
-
-if (empty($banner_image) || !file_exists($banner_image)) {
-    $matches = glob('assets/images/pages/banner_49_*.*');
-    if (!empty($matches)) {
-        $banner_image = end($matches);
-    }
-}
-$career_banner_src = (!empty($banner_image) && file_exists($banner_image)) ? $banner_image : 'assets/images/banner2.jpg';
 
 $frontend_custom_sections = '
 <style>
@@ -26,31 +17,7 @@ $frontend_custom_sections = '
     width: 100%;
 }
 
-/* Top Banner Header */
-.careers-banner-wrap {
-    width: 100%;
-    background: #0f172a;
-    border-bottom: 4px solid var(--primary-color, #e5252a);
-    box-shadow: 0 4px 15px rgba(0,0,0,0.06);
-    overflow: hidden;
-}
-.careers-banner-wrap img {
-    width: 100%;
-    height: auto;
-    aspect-ratio: 1808 / 506;
-    max-height: 506px;
-    object-fit: cover;
-    display: block;
-}
-@media (max-width: 768px) {
-    .careers-banner-wrap img {
-        width: 100%;
-        height: auto;
-        aspect-ratio: 1808 / 506;
-        object-fit: contain;
-        background: #0f172a;
-    }
-}
+
 
 /* Hero Section */
 .careers-intro-box {
@@ -207,10 +174,6 @@ $frontend_custom_sections = '
 </style>
 
 <div class="careers-page">
-    <!-- 1. Top Uncropped Responsive Banner -->
-    <div class="careers-banner-wrap">
-        <img src="' . htmlspecialchars($career_banner_src) . '" alt="Healthcare Careers & Jobs - DM Healthcare" class="img-fluid w-100" onerror="this.onerror=null; this.src=\'assets/images/banner1.jpg\';">
-    </div>
 
     <!-- 2. Breadcrumbs Bar -->
     <div class="bg-white border-bottom py-2 shadow-sm">
