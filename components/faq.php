@@ -102,10 +102,10 @@
                         </div>
                     </div>
                     <div class="d-flex align-items-center gap-2">
-                        <a href="tel:+918860600423" class="btn btn-primary rounded-pill px-4 py-2 fw-bold text-nowrap" style="background: var(--primary-color); border: none;">
+                        <a href="tel:+919319149644" class="btn btn-primary rounded-pill px-4 py-2 fw-bold text-nowrap" style="background: var(--primary-color); border: none;">
                             <i class="fa-solid fa-phone me-1"></i> Call Now
                         </a>
-                        <a href="https://wa.me/918860600423?text=Hi%2C%20I%20have%20a%20question%20regarding%20DM%20Healthcare%20services" target="_blank" class="btn btn-outline-success rounded-pill px-3 py-2 fw-bold text-nowrap">
+                        <a href="https://wa.me/919319149644?text=Hi%2C%20I%20have%20a%20question%20regarding%20DM%20Healthcare%20services" target="_blank" class="btn btn-outline-success rounded-pill px-3 py-2 fw-bold text-nowrap">
                             <i class="fa-brands fa-whatsapp me-1"></i> WhatsApp
                         </a>
                     </div>

@@ -76,7 +76,7 @@ body {
                     <a href="index.php#appointment" class="btn btn-primary btn-lg fw-bold px-5 rounded-pill shadow-sm">
                         Free Consultation
                     </a>
-                    <a href="https://wa.me/918725024124" target="_blank" class="btn btn-success btn-lg fw-bold px-5 rounded-pill shadow-sm">
+                    <a href="https://wa.me/919319149644" target="_blank" class="btn btn-success btn-lg fw-bold px-5 rounded-pill shadow-sm">
                         <i class="fa-brands fa-whatsapp me-2"></i> WhatsApp Us
                     </a>
                 </div>
@@ -147,8 +147,8 @@ body {
         </div>
         
         <div class="text-center mt-5">
-            <a href="tel:+918725024124" class="btn btn-outline-primary fw-bold px-4 rounded-pill">
-                <i class="fa-solid fa-phone me-2"></i> Book Sleep Test — (+91) 8725024124
+            <a href="tel:+919319149644" class="btn btn-outline-primary fw-bold px-4 rounded-pill">
+                <i class="fa-solid fa-phone me-2"></i> Book Sleep Test — (+91) 93191 49644
             </a>
         </div>
     </div>
@@ -200,8 +200,8 @@ body {
                 <h2 class="fw-bold text-dark">How We Work</h2>
                 <div class="mt-3 mb-4" style="width: 60px; height: 4px; background-color: var(--primary-color); border-radius: 2px;"></div>
                 <p class="text-muted lead mb-5">Book to report in 4 simple steps — all done at your home.</p>
-                <a href="tel:+918725024124" class="btn btn-primary fw-bold px-4 rounded-pill shadow-sm d-none d-lg-inline-block">
-                    Book Your Sleep Test — (+91) 8725024124
+                <a href="tel:+919319149644" class="btn btn-primary fw-bold px-4 rounded-pill shadow-sm d-none d-lg-inline-block">
+                    Book Your Sleep Test — (+91) 93191 49644
                 </a>
             </div>
             
@@ -301,7 +301,7 @@ body {
             </div>
         </div>
         
-        <p class="text-center text-white opacity-75 small mb-0"><i class="fa-solid fa-circle-info me-2"></i> Prices are indicative and vary by location and test type. Call (+91) 8725024124 for an exact quote.</p>
+        <p class="text-center text-white opacity-75 small mb-0"><i class="fa-solid fa-circle-info me-2"></i> Prices are indicative and vary by location and test type. Call (+91) 93191 49644 for an exact quote.</p>
     </div>
 </section>
 
@@ -405,7 +405,7 @@ body {
                 <div class="bg-white text-primary fw-bold px-3 py-1 rounded-pill d-inline-block mb-3">Report in 24 Hours</div>
                 <h3 class="fw-bold mb-3">Get Clinically Accurate Results Fast</h3>
                 <p class="opacity-75 mb-4">Delivered to your email & WhatsApp. Share directly with your physician for next steps.</p>
-                <a href="tel:+918725024124" class="btn btn-light btn-lg fw-bold px-5 py-3 rounded-pill shadow-sm text-primary">
+                <a href="tel:+919319149644" class="btn btn-light btn-lg fw-bold px-5 py-3 rounded-pill shadow-sm text-primary">
                     <i class="fa-solid fa-phone me-2"></i> Book Sleep Test
                 </a>
             </div>

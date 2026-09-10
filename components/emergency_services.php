@@ -95,10 +95,10 @@
             </div>
             <div class="col-lg-5 text-center text-lg-end">
                 <div class="d-inline-flex flex-wrap justify-content-center justify-content-lg-end gap-2">
-                    <a href="tel:+918860600423" class="btn btn-emergency-call">
-                        <i class="fa-solid fa-phone-volume"></i> Call +91 88606 00423
+                    <a href="tel:+919319149644" class="btn btn-emergency-call">
+                        <i class="fa-solid fa-phone-volume"></i> Call +91 93191 49644
                     </a>
-                    <a href="https://wa.me/918860600423?text=Hi%20DM%20Healthcare,%20I%20need%20immediate%20home%20healthcare%20support." target="_blank" class="btn btn-emergency-wa">
+                    <a href="https://wa.me/919319149644?text=Hi%20DM%20Healthcare,%20I%20need%20immediate%20home%20healthcare%20support." target="_blank" class="btn btn-emergency-wa">
                         <i class="fa-brands fa-whatsapp fs-5 text-success"></i> WhatsApp Chat
                     </a>
                 </div>

@@ -458,11 +458,11 @@ $frontend_custom_sections = '
 
                 <!-- Direct Hotline & WhatsApp Links -->
                 <div class="d-flex align-items-center justify-content-between pt-3 mt-3 border-top">
-                    <a href="tel:+918860600423" class="text-decoration-none small text-dark fw-bold d-flex align-items-center gap-1" style="font-size: 0.8rem;">
+                    <a href="tel:+919319149644" class="text-decoration-none small text-dark fw-bold d-flex align-items-center gap-1" style="font-size: 0.8rem;">
                         <i class="fa-solid fa-phone text-danger" style="color: var(--primary-color) !important;"></i>
-                        <span>+91-8860600423</span>
+                        <span>+91-9319149644</span>
                     </a>
-                    <a href="https://wa.me/918860600423?text=Hi%20DM%20Healthcare,%20I%20urgently%20need%20healthcare%20service%20in%20Delhi%20NCR" target="_blank" class="text-decoration-none small text-success fw-bold d-flex align-items-center gap-1" style="font-size: 0.8rem;">
+                    <a href="https://wa.me/919319149644?text=Hi%20DM%20Healthcare,%20I%20urgently%20need%20healthcare%20service%20in%20Delhi%20NCR" target="_blank" class="text-decoration-none small text-success fw-bold d-flex align-items-center gap-1" style="font-size: 0.8rem;">
                         <i class="fa-brands fa-whatsapp fs-6"></i>
                         <span>Chat on WhatsApp</span>
                     </a>
@@ -518,10 +518,10 @@ $frontend_custom_sections = '
                 </div>
 
                 <div class="mt-auto pt-3 border-top d-flex gap-2">
-                    <a href="tel:+918860600423" class="btn btn-outline-dark btn-sm rounded-pill flex-grow-1 fw-bold" style="font-size: 0.78rem;">
+                    <a href="tel:+919319149644" class="btn btn-outline-dark btn-sm rounded-pill flex-grow-1 fw-bold" style="font-size: 0.78rem;">
                         <i class="fa-solid fa-phone me-1"></i> Call
                     </a>
-                    <a href="https://wa.me/918860600423?text=Hi%20DM%20Healthcare,%20I%20need%20home%20care%20services%20in%20Faridabad" target="_blank" class="btn btn-danger btn-sm rounded-pill flex-grow-1 fw-bold text-white shadow-2xs" style="background: var(--primary-color); border: none; font-size: 0.78rem;">
+                    <a href="https://wa.me/919319149644?text=Hi%20DM%20Healthcare,%20I%20need%20home%20care%20services%20in%20Faridabad" target="_blank" class="btn btn-danger btn-sm rounded-pill flex-grow-1 fw-bold text-white shadow-2xs" style="background: var(--primary-color); border: none; font-size: 0.78rem;">
                         <i class="fa-brands fa-whatsapp me-1"></i> Book
                     </a>
                 </div>
@@ -548,10 +548,10 @@ $frontend_custom_sections = '
                 </div>
 
                 <div class="mt-auto pt-3 border-top d-flex gap-2">
-                    <a href="tel:+918860600423" class="btn btn-outline-dark btn-sm rounded-pill flex-grow-1 fw-bold" style="font-size: 0.78rem;">
+                    <a href="tel:+919319149644" class="btn btn-outline-dark btn-sm rounded-pill flex-grow-1 fw-bold" style="font-size: 0.78rem;">
                         <i class="fa-solid fa-phone me-1"></i> Call
                     </a>
-                    <a href="https://wa.me/918860600423?text=Hi%20DM%20Healthcare,%20I%20need%20home%20care%20services%20in%20Noida" target="_blank" class="btn btn-primary btn-sm rounded-pill flex-grow-1 fw-bold text-white shadow-2xs" style="font-size: 0.78rem;">
+                    <a href="https://wa.me/919319149644?text=Hi%20DM%20Healthcare,%20I%20need%20home%20care%20services%20in%20Noida" target="_blank" class="btn btn-primary btn-sm rounded-pill flex-grow-1 fw-bold text-white shadow-2xs" style="font-size: 0.78rem;">
                         <i class="fa-brands fa-whatsapp me-1"></i> Book
                     </a>
                 </div>
@@ -578,10 +578,10 @@ $frontend_custom_sections = '
                 </div>
 
                 <div class="mt-auto pt-3 border-top d-flex gap-2">
-                    <a href="tel:+918860600423" class="btn btn-outline-dark btn-sm rounded-pill flex-grow-1 fw-bold" style="font-size: 0.78rem;">
+                    <a href="tel:+919319149644" class="btn btn-outline-dark btn-sm rounded-pill flex-grow-1 fw-bold" style="font-size: 0.78rem;">
                         <i class="fa-solid fa-phone me-1"></i> Call
                     </a>
-                    <a href="https://wa.me/918860600423?text=Hi%20DM%20Healthcare,%20I%20need%20home%20care%20services%20in%20Gurugram" target="_blank" class="btn btn-success btn-sm rounded-pill flex-grow-1 fw-bold text-white shadow-2xs" style="font-size: 0.78rem;">
+                    <a href="https://wa.me/919319149644?text=Hi%20DM%20Healthcare,%20I%20need%20home%20care%20services%20in%20Gurugram" target="_blank" class="btn btn-success btn-sm rounded-pill flex-grow-1 fw-bold text-white shadow-2xs" style="font-size: 0.78rem;">
                         <i class="fa-brands fa-whatsapp me-1"></i> Book
                     </a>
                 </div>
@@ -608,10 +608,10 @@ $frontend_custom_sections = '
                 </div>
 
                 <div class="mt-auto pt-3 border-top d-flex gap-2">
-                    <a href="tel:+918860600423" class="btn btn-outline-dark btn-sm rounded-pill flex-grow-1 fw-bold" style="font-size: 0.78rem;">
+                    <a href="tel:+919319149644" class="btn btn-outline-dark btn-sm rounded-pill flex-grow-1 fw-bold" style="font-size: 0.78rem;">
                         <i class="fa-solid fa-phone me-1"></i> Call
                     </a>
-                    <a href="https://wa.me/918860600423?text=Hi%20DM%20Healthcare,%20I%20need%20home%20care%20services%20in%20Palwal" target="_blank" class="btn btn-sm rounded-pill flex-grow-1 fw-bold text-white shadow-2xs" style="background-color: #ea580c; border: none; font-size: 0.78rem;">
+                    <a href="https://wa.me/919319149644?text=Hi%20DM%20Healthcare,%20I%20need%20home%20care%20services%20in%20Palwal" target="_blank" class="btn btn-sm rounded-pill flex-grow-1 fw-bold text-white shadow-2xs" style="background-color: #ea580c; border: none; font-size: 0.78rem;">
                         <i class="fa-brands fa-whatsapp me-1"></i> Book
                     </a>
                 </div>
@@ -638,10 +638,10 @@ $frontend_custom_sections = '
                 </div>
 
                 <div class="mt-auto pt-3 border-top d-flex gap-2">
-                    <a href="tel:+918860600423" class="btn btn-outline-dark btn-sm rounded-pill flex-grow-1 fw-bold" style="font-size: 0.78rem;">
+                    <a href="tel:+919319149644" class="btn btn-outline-dark btn-sm rounded-pill flex-grow-1 fw-bold" style="font-size: 0.78rem;">
                         <i class="fa-solid fa-phone me-1"></i> Call
                     </a>
-                    <a href="https://wa.me/918860600423?text=Hi%20DM%20Healthcare,%20I%20need%20home%20care%20services%20in%20Delhi" target="_blank" class="btn btn-sm btn-dark rounded-pill flex-grow-1 fw-bold text-white shadow-2xs" style="font-size: 0.78rem;">
+                    <a href="https://wa.me/919319149644?text=Hi%20DM%20Healthcare,%20I%20need%20home%20care%20services%20in%20Delhi" target="_blank" class="btn btn-sm btn-dark rounded-pill flex-grow-1 fw-bold text-white shadow-2xs" style="font-size: 0.78rem;">
                         <i class="fa-brands fa-whatsapp me-1"></i> Book
                     </a>
                 </div>
@@ -859,7 +859,7 @@ $frontend_custom_sections = '
             <div class="work-step-card">
                 <div class="step-num-badge">1</div>
                 <h5 class="fw-bold text-dark mb-2">Connect With Us</h5>
-                <p class="text-muted small mb-0">Call our 24/7 helpline (+91-8860600423) or fill out the booking form detailing patient requirements.</p>
+                <p class="text-muted small mb-0">Call our 24/7 helpline (+91-9319149644) or fill out the booking form detailing patient requirements.</p>
             </div>
         </div>
 
@@ -902,10 +902,10 @@ $frontend_custom_sections = '
             </div>
             <div class="col-lg-5 text-lg-end">
                 <div class="d-flex flex-column flex-sm-row justify-content-lg-end gap-3">
-                    <a href="tel:+918860600423" class="btn btn-danger btn-lg rounded-pill fw-bold px-4 py-3 shadow-lg" style="background: var(--primary-color) !important; border-color: var(--primary-color) !important;">
-                        <i class="fa-solid fa-phone me-2"></i> Call +91-8860600423
+                    <a href="tel:+919319149644" class="btn btn-danger btn-lg rounded-pill fw-bold px-4 py-3 shadow-lg" style="background: var(--primary-color) !important; border-color: var(--primary-color) !important;">
+                        <i class="fa-solid fa-phone me-2"></i> Call +91-9319149644
                     </a>
-                    <a href="https://wa.me/918860600423?text=Hi%20DM%20Healthcare,%20I%20urgently%20need%20home%20care%20service%20in%20Delhi%20NCR" target="_blank" class="btn btn-success btn-lg rounded-pill fw-bold px-4 py-3 shadow-lg">
+                    <a href="https://wa.me/919319149644?text=Hi%20DM%20Healthcare,%20I%20urgently%20need%20home%20care%20service%20in%20Delhi%20NCR" target="_blank" class="btn btn-success btn-lg rounded-pill fw-bold px-4 py-3 shadow-lg">
                         <i class="fa-brands fa-whatsapp me-2"></i> WhatsApp Us
                     </a>
                 </div>
@@ -1048,7 +1048,7 @@ document.addEventListener("DOMContentLoaded", function() {
             alertBox.classList.remove("d-none");
             if (data && data.success === false) {
                 alertBox.className = "alert alert-danger py-2 px-3 small fw-semibold mb-3";
-                alertBox.innerHTML = "<i class=\'fa-solid fa-triangle-exclamation me-1\'></i> " + (data.message || "Please check details or call +91-8860600423.");
+                alertBox.innerHTML = "<i class=\'fa-solid fa-triangle-exclamation me-1\'></i> " + (data.message || "Please check details or call +91-9319149644.");
             } else {
                 alertBox.className = "alert alert-success py-2 px-3 small fw-semibold mb-3";
                 alertBox.innerHTML = "<i class=\'fa-solid fa-circle-check me-1\'></i> Thank you! Your request has been received. Our coordinator will call you within 15 minutes.";

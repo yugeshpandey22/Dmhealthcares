@@ -96,10 +96,10 @@ $frontend_custom_sections = '
                     Get dedicated clinical care from government-registered, background-verified male & female nurses. From ICU ventilator management, IV infusions, wound debridement, and tracheostomy care to post-operative monitoring across Faridabad, Noida, Delhi & Gurugram.
                 </p>
                 <div class="d-flex flex-wrap gap-3">
-                    <a href="tel:+918860600423" class="btn btn-danger px-4 py-3 rounded-pill fw-bold shadow-sm d-inline-flex align-items-center gap-2" style="background: #d80000; border-color: #d80000;">
-                        <i class="fa-solid fa-phone"></i> Book a Nurse: +91 88606 00423
+                    <a href="tel:+919319149644" class="btn btn-danger px-4 py-3 rounded-pill fw-bold shadow-sm d-inline-flex align-items-center gap-2" style="background: #d80000; border-color: #d80000;">
+                        <i class="fa-solid fa-phone"></i> Book a Nurse: +91 93191 49644
                     </a>
-                    <a href="https://wa.me/918860600423?text=Hello%20DM%20Healthcare,%20I%20need%20a%20Qualified%20Nurse%20at%20home." target="_blank" class="btn btn-outline-success px-4 py-3 rounded-pill fw-bold d-inline-flex align-items-center gap-2">
+                    <a href="https://wa.me/919319149644?text=Hello%20DM%20Healthcare,%20I%20need%20a%20Qualified%20Nurse%20at%20home." target="_blank" class="btn btn-outline-success px-4 py-3 rounded-pill fw-bold d-inline-flex align-items-center gap-2">
                         <i class="fa-brands fa-whatsapp"></i> WhatsApp Booking
                     </a>
                 </div>
@@ -229,7 +229,7 @@ $frontend_custom_sections = '
                         <li class="mb-2"><i class="fa-solid fa-check text-success me-2"></i> IV & wound care included</li>
                         <li class="mb-2"><i class="fa-solid fa-check text-success me-2"></i> Hygiene & feeding support</li>
                     </ul>
-                    <a href="tel:+918860600423" class="btn btn-outline-danger w-100 rounded-pill fw-bold">Book 12-Hr Shift</a>
+                    <a href="tel:+919319149644" class="btn btn-outline-danger w-100 rounded-pill fw-bold">Book 12-Hr Shift</a>
                 </div>
             </div>
 
@@ -243,7 +243,7 @@ $frontend_custom_sections = '
                         <li class="mb-2"><i class="fa-solid fa-check text-success me-2"></i> Night emergency response</li>
                         <li class="mb-2"><i class="fa-solid fa-check text-success me-2"></i> Free replacement guarantee</li>
                     </ul>
-                    <a href="tel:+918860600423" class="btn btn-danger w-100 rounded-pill fw-bold" style="background: #d80000; border-color: #d80000;">Book 24-Hr Nurse</a>
+                    <a href="tel:+919319149644" class="btn btn-danger w-100 rounded-pill fw-bold" style="background: #d80000; border-color: #d80000;">Book 24-Hr Nurse</a>
                 </div>
             </div>
 
@@ -257,7 +257,7 @@ $frontend_custom_sections = '
                         <li class="mb-2"><i class="fa-solid fa-check text-success me-2"></i> Sterile consumables check</li>
                         <li class="mb-2"><i class="fa-solid fa-check text-success me-2"></i> Same-day urgent slots</li>
                     </ul>
-                    <a href="tel:+918860600423" class="btn btn-outline-dark w-100 rounded-pill fw-bold">Request Procedure</a>
+                    <a href="tel:+919319149644" class="btn btn-outline-dark w-100 rounded-pill fw-bold">Request Procedure</a>
                 </div>
             </div>
         </div>

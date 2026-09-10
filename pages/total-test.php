@@ -6,7 +6,7 @@
 
 $display_title = "Asian HealthFit Total Test Packages";
 $seo_title = "Asian HealthFit Total Test Packages at Home - 75 to 100 Tests - DM Healthcare";
-$seo_desc = "Book Asian HealthFit Blood Test Packages at Home across Delhi NCR. 75 to 100 tests starting at ₹999. Includes free home sample collection and free specialist doctor consultation. Call 7575907474 / 8860600423.";
+$seo_desc = "Book Asian HealthFit Blood Test Packages at Home across Delhi NCR. 75 to 100 tests starting at ₹999. Includes free home sample collection and free specialist doctor consultation. Call 9319149644.";
 $short_desc = "Comprehensive full-body HealthFit test packages from 75 to 100 tests. Free doorstep blood collection across Delhi, Noida, Faridabad, Gurugram & Palwal.";
 $category_name = "Blood Checkup";
 $full_page_override = true;
@@ -345,10 +345,10 @@ $frontend_custom_sections = '
                 </div>
 
                 <div class="d-flex flex-wrap align-items-center gap-3">
-                    <a href="tel:7575907474" class="btn btn-danger rounded-pill px-4 py-2 fw-bold shadow-sm d-inline-flex align-items-center gap-2" style="background: var(--primary-red); border: none;">
-                        <i class="fa-solid fa-phone"></i> Call: 7575907474
+                    <a href="tel:9319149644" class="btn btn-danger rounded-pill px-4 py-2 fw-bold shadow-sm d-inline-flex align-items-center gap-2" style="background: var(--primary-red); border: none;">
+                        <i class="fa-solid fa-phone"></i> Call: 9319149644
                     </a>
-                    <a href="https://wa.me/918860600423?text=Hi%20DM%20Healthcare,%20I%20want%20to%20book%20an%20Asian%20HealthFit%20Blood%20Test%20Package." target="_blank" class="btn btn-outline-success rounded-pill px-4 py-2 fw-bold shadow-sm d-inline-flex align-items-center gap-2">
+                    <a href="https://wa.me/919319149644?text=Hi%20DM%20Healthcare,%20I%20want%20to%20book%20an%20Asian%20HealthFit%20Blood%20Test%20Package." target="_blank" class="btn btn-outline-success rounded-pill px-4 py-2 fw-bold shadow-sm d-inline-flex align-items-center gap-2">
                         <i class="fa-brands fa-whatsapp fs-5"></i> Book on WhatsApp
                     </a>
                     <span class="text-muted small fw-semibold"><i class="fa-solid fa-shield-check text-success me-1"></i> No Hidden Travel Charges</span>
@@ -366,10 +366,10 @@ $frontend_custom_sections = '
                     
                     <div class="bg-white bg-opacity-10 p-3 rounded-3 text-center mb-3">
                         <small class="text-white-50 d-block mb-1">Direct Call Booking Helpline</small>
-                        <a href="tel:7575907474" class="text-white text-decoration-none fw-bold fs-4 d-block">
-                            <i class="fa-solid fa-phone me-2 text-danger"></i>7575907474
+                        <a href="tel:9319149644" class="text-white text-decoration-none fw-bold fs-4 d-block">
+                            <i class="fa-solid fa-phone me-2 text-danger"></i>9319149644
                         </a>
-                        <span class="text-white-50 small">Alt: +91-8860600423</span>
+                        <span class="text-white-50 small">24/7 Home Diagnostics Support</span>
                     </div>
 
                     <div class="d-flex justify-content-between text-white-50 small border-top border-secondary pt-2">
@@ -439,7 +439,7 @@ $frontend_custom_sections = '
                     </div>
 
                     <div class="mt-auto pt-3 border-top d-flex gap-2">
-                        <a href="https://wa.me/918860600423?text=Hi%20DM%20Healthcare,%20I%20want%20to%20book%20Asian%20HealthFit%20Bronze%20(75%20Tests%20at%20Rs.999,%20Code:%20PKS321J)." target="_blank" class="btn hf-btn-whatsapp btn-sm rounded-pill w-50 py-2">
+                        <a href="https://wa.me/919319149644?text=Hi%20DM%20Healthcare,%20I%20want%20to%20book%20Asian%20HealthFit%20Bronze%20(75%20Tests%20at%20Rs.999,%20Code:%20PKS321J)." target="_blank" class="btn hf-btn-whatsapp btn-sm rounded-pill w-50 py-2">
                             <i class="fa-brands fa-whatsapp me-1"></i> WhatsApp
                         </a>
                         <button onclick="openBookingModal(\'Asian HealthFit Bronze (75 Tests)\', \'₹999\', \'PKS321J\')" class="btn hf-btn-book btn-sm rounded-pill w-50 py-2">
@@ -489,7 +489,7 @@ $frontend_custom_sections = '
                     </div>
 
                     <div class="mt-auto pt-3 border-top d-flex gap-2">
-                        <a href="https://wa.me/918860600423?text=Hi%20DM%20Healthcare,%20I%20want%20to%20book%20Asian%20HealthFit%20Silver%20(86%20Tests%20at%20Rs.1999,%20Code:%20PKS321K)." target="_blank" class="btn hf-btn-whatsapp btn-sm rounded-pill w-50 py-2">
+                        <a href="https://wa.me/919319149644?text=Hi%20DM%20Healthcare,%20I%20want%20to%20book%20Asian%20HealthFit%20Silver%20(86%20Tests%20at%20Rs.1999,%20Code:%20PKS321K)." target="_blank" class="btn hf-btn-whatsapp btn-sm rounded-pill w-50 py-2">
                             <i class="fa-brands fa-whatsapp me-1"></i> WhatsApp
                         </a>
                         <button onclick="openBookingModal(\'Asian HealthFit Silver (86 Tests)\', \'₹1,999\', \'PKS321K\')" class="btn hf-btn-book btn-sm rounded-pill w-50 py-2">
@@ -540,7 +540,7 @@ $frontend_custom_sections = '
                     </div>
 
                     <div class="mt-auto pt-3 border-top d-flex gap-2">
-                        <a href="https://wa.me/918860600423?text=Hi%20DM%20Healthcare,%20I%20want%20to%20book%20Asian%20HealthFit%20Gold%20(92%20Tests%20at%20Rs.2999,%20Code:%20PKS321L)." target="_blank" class="btn hf-btn-whatsapp btn-sm rounded-pill w-50 py-2">
+                        <a href="https://wa.me/919319149644?text=Hi%20DM%20Healthcare,%20I%20want%20to%20book%20Asian%20HealthFit%20Gold%20(92%20Tests%20at%20Rs.2999,%20Code:%20PKS321L)." target="_blank" class="btn hf-btn-whatsapp btn-sm rounded-pill w-50 py-2">
                             <i class="fa-brands fa-whatsapp me-1"></i> WhatsApp
                         </a>
                         <button onclick="openBookingModal(\'Asian HealthFit Gold (92 Tests)\', \'₹2,999\', \'PKS321L\')" class="btn hf-btn-book btn-sm rounded-pill w-50 py-2">
@@ -591,7 +591,7 @@ $frontend_custom_sections = '
                     </div>
 
                     <div class="mt-auto pt-3 border-top d-flex gap-2">
-                        <a href="https://wa.me/918860600423?text=Hi%20DM%20Healthcare,%20I%20want%20to%20book%20Asian%20HealthFit%20Platinum%20Male%20(96%20Tests%20at%20Rs.3999,%20Code:%20PKS321M)." target="_blank" class="btn hf-btn-whatsapp btn-sm rounded-pill w-50 py-2">
+                        <a href="https://wa.me/919319149644?text=Hi%20DM%20Healthcare,%20I%20want%20to%20book%20Asian%20HealthFit%20Platinum%20Male%20(96%20Tests%20at%20Rs.3999,%20Code:%20PKS321M)." target="_blank" class="btn hf-btn-whatsapp btn-sm rounded-pill w-50 py-2">
                             <i class="fa-brands fa-whatsapp me-1"></i> WhatsApp
                         </a>
                         <button onclick="openBookingModal(\'Asian HealthFit Platinum Male (96 Tests)\', \'₹3,999\', \'PKS321M\')" class="btn hf-btn-book btn-sm rounded-pill w-50 py-2">
@@ -642,7 +642,7 @@ $frontend_custom_sections = '
                     </div>
 
                     <div class="mt-auto pt-3 border-top d-flex gap-2">
-                        <a href="https://wa.me/918860600423?text=Hi%20DM%20Healthcare,%20I%20want%20to%20book%20Asian%20HealthFit%20Platinum%20Female%20(95%20Tests%20at%20Rs.3999,%20Code:%20PKS321N)." target="_blank" class="btn hf-btn-whatsapp btn-sm rounded-pill w-50 py-2">
+                        <a href="https://wa.me/919319149644?text=Hi%20DM%20Healthcare,%20I%20want%20to%20book%20Asian%20HealthFit%20Platinum%20Female%20(95%20Tests%20at%20Rs.3999,%20Code:%20PKS321N)." target="_blank" class="btn hf-btn-whatsapp btn-sm rounded-pill w-50 py-2">
                             <i class="fa-brands fa-whatsapp me-1"></i> WhatsApp
                         </a>
                         <button onclick="openBookingModal(\'Asian HealthFit Platinum Female (95 Tests)\', \'₹3,999\', \'PKS321N\')" class="btn hf-btn-book btn-sm rounded-pill w-50 py-2">
@@ -693,7 +693,7 @@ $frontend_custom_sections = '
                     </div>
 
                     <div class="mt-auto pt-3 border-top d-flex gap-2">
-                        <a href="https://wa.me/918860600423?text=Hi%20DM%20Healthcare,%20I%20want%20to%20book%20Asian%20HealthFit%20Sapphire%20Male%20(100%20Tests%20at%20Rs.4999,%20Code:%20PKS321O)." target="_blank" class="btn hf-btn-whatsapp btn-sm rounded-pill w-50 py-2">
+                        <a href="https://wa.me/919319149644?text=Hi%20DM%20Healthcare,%20I%20want%20to%20book%20Asian%20HealthFit%20Sapphire%20Male%20(100%20Tests%20at%20Rs.4999,%20Code:%20PKS321O)." target="_blank" class="btn hf-btn-whatsapp btn-sm rounded-pill w-50 py-2">
                             <i class="fa-brands fa-whatsapp me-1"></i> WhatsApp
                         </a>
                         <button onclick="openBookingModal(\'Asian HealthFit Sapphire Male (100 Tests)\', \'₹4,999\', \'PKS321O\')" class="btn hf-btn-book btn-sm rounded-pill w-50 py-2">
@@ -744,7 +744,7 @@ $frontend_custom_sections = '
                     </div>
 
                     <div class="mt-auto pt-3 border-top d-flex gap-2">
-                        <a href="https://wa.me/918860600423?text=Hi%20DM%20Healthcare,%20I%20want%20to%20book%20Asian%20HealthFit%20Sapphire%20Female%20(100%20Tests%20at%20Rs.4999,%20Code:%20PKS321P)." target="_blank" class="btn hf-btn-whatsapp btn-sm rounded-pill w-50 py-2">
+                        <a href="https://wa.me/919319149644?text=Hi%20DM%20Healthcare,%20I%20want%20to%20book%20Asian%20HealthFit%20Sapphire%20Female%20(100%20Tests%20at%20Rs.4999,%20Code:%20PKS321P)." target="_blank" class="btn hf-btn-whatsapp btn-sm rounded-pill w-50 py-2">
                             <i class="fa-brands fa-whatsapp me-1"></i> WhatsApp
                         </a>
                         <button onclick="openBookingModal(\'Asian HealthFit Sapphire Female (100 Tests)\', \'₹4,999\', \'PKS321P\')" class="btn hf-btn-book btn-sm rounded-pill w-50 py-2">
@@ -930,7 +930,7 @@ $frontend_custom_sections = '
             <div class="bg-white p-4 rounded-4 shadow-sm border h-100 text-center">
                 <div class="rounded-circle d-flex align-items-center justify-content-center mx-auto mb-3 fw-bold text-white shadow" style="width: 50px; height: 50px; background: var(--primary-red);">1</div>
                 <h5 class="fw-bold text-dark mb-2">Book Slot Online or on Call</h5>
-                <p class="text-muted small mb-0">Select your package and pick your preferred fasting morning time slot online, on WhatsApp, or call <strong>7575907474</strong>.</p>
+                <p class="text-muted small mb-0">Select your package and pick your preferred fasting morning time slot online, on WhatsApp, or call <strong>9319149644</strong>.</p>
             </div>
         </div>
         <div class="col-md-4">
@@ -980,7 +980,7 @@ $frontend_custom_sections = '
                         </h2>
                         <div id="hfFaqC2" class="accordion-collapse collapse" data-bs-parent="#hfFaqAccordion">
                             <div class="accordion-body text-muted small lh-base">
-                                Yes! Home sample collection is completely free with all 7 Asian HealthFit packages across Faridabad, Noida, Greater Noida, Delhi, Gurugram, and Palwal. There are no convenience charges or hidden travel fees. Call <strong>7575907474</strong> to book.
+                                Yes! Home sample collection is completely free with all 7 Asian HealthFit packages across Faridabad, Noida, Greater Noida, Delhi, Gurugram, and Palwal. There are no convenience charges or hidden travel fees. Call <strong>9319149644</strong> to book.
                             </div>
                         </div>
                     </div>
@@ -1035,13 +1035,10 @@ $frontend_custom_sections = '
             <h2 class="fw-bold mb-2">Need Home Sample Collection?</h2>
             <p class="text-white-50 mx-auto mb-4" style="max-width: 620px;">Book a morning slot across Faridabad, Noida, Delhi, Gurugram & Palwal. Call directly or send a WhatsApp message.</p>
             <div class="d-flex flex-wrap justify-content-center gap-3">
-                <a href="tel:7575907474" class="btn btn-danger btn-lg rounded-pill fw-bold px-4 py-3 shadow" style="background: var(--primary-red); border: none;">
-                    <i class="fa-solid fa-phone me-2"></i> Call: 7575907474
+                <a href="tel:9319149644" class="btn btn-danger btn-lg rounded-pill fw-bold px-4 py-3 shadow" style="background: var(--primary-red); border: none;">
+                    <i class="fa-solid fa-phone me-2"></i> Call: 9319149644
                 </a>
-                <a href="tel:+918860600423" class="btn btn-outline-light btn-lg rounded-pill fw-bold px-4 py-3">
-                    <i class="fa-solid fa-phone me-2"></i> +91-8860600423
-                </a>
-                <a href="https://wa.me/918860600423?text=Hi%20DM%20Healthcare,%20I%20want%20to%20book%20an%20Asian%20HealthFit%20Blood%20Test%20Package." target="_blank" class="btn btn-success btn-lg rounded-pill fw-bold px-4 py-3 shadow" style="background: #25d366; border: none;">
+                <a href="https://wa.me/919319149644?text=Hi%20DM%20Healthcare,%20I%20want%20to%20book%20an%20Asian%20HealthFit%20Blood%20Test%20Package." target="_blank" class="btn btn-success btn-lg rounded-pill fw-bold px-4 py-3 shadow" style="background: #25d366; border: none;">
                     <i class="fa-brands fa-whatsapp me-2"></i> WhatsApp Booking
                 </a>
             </div>
@@ -1171,7 +1168,7 @@ function handleHfFormSubmit(e) {
                 "• *Preferred Slot:* " + encodeURIComponent(slot) + "%0A" +
                 "• *Address:* " + encodeURIComponent(addr || "Will share on call") + "%0A%0APlease confirm phlebotomist visit!";
 
-    window.open("https://wa.me/918860600423?text=" + msg, "_blank");
+    window.open("https://wa.me/919319149644?text=" + msg, "_blank");
 
     const modalEl = document.getElementById("hfBookingModal");
     const modalInstance = bootstrap.Modal.getInstance(modalEl);

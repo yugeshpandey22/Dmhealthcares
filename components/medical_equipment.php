@@ -51,7 +51,7 @@
                 </p>
             </div>
             <div class="col-lg-4 text-lg-end mt-4 mt-lg-0">
-                <a href="tel:+918860600423" class="btn btn-primary rounded-pill px-4 py-3 fw-bold shadow-sm d-inline-flex align-items-center gap-2">
+                <a href="tel:+919319149644" class="btn btn-primary rounded-pill px-4 py-3 fw-bold shadow-sm d-inline-flex align-items-center gap-2">
                     <i class="fa-solid fa-phone"></i>
                     <span>Rent Equipment Now</span>
                 </a>

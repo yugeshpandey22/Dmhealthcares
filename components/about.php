@@ -141,9 +141,9 @@
                         <span>Book Care Assessment</span>
                         <i class="fa-solid fa-arrow-right"></i>
                     </a>
-                    <a href="tel:+918860600423" class="btn btn-outline-dark rounded-pill px-4 py-3 fw-semibold d-inline-flex align-items-center gap-2">
+                    <a href="tel:+919319149644" class="btn btn-outline-dark rounded-pill px-4 py-3 fw-semibold d-inline-flex align-items-center gap-2">
                         <i class="fa-solid fa-phone text-danger"></i>
-                        <span>+91 88606 00423</span>
+                        <span>+91 93191 49644</span>
                     </a>
                 </div>
             </div>

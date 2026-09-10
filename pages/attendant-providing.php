@@ -117,10 +117,10 @@ $frontend_custom_sections = '
                 </p>
 
                 <div class="d-flex flex-wrap align-items-center gap-3">
-                    <a href="tel:+918860600423" class="btn btn-danger rounded-pill px-4 py-2 fw-bold shadow-sm d-inline-flex align-items-center gap-2" style="background: var(--primary-red); border: none;">
-                        <i class="fa-solid fa-phone"></i> Call: +91-8860600423
+                    <a href="tel:+919319149644" class="btn btn-danger rounded-pill px-4 py-2 fw-bold shadow-sm d-inline-flex align-items-center gap-2" style="background: var(--primary-red); border: none;">
+                        <i class="fa-solid fa-phone"></i> Call: +91-9319149644
                     </a>
-                    <a href="https://wa.me/918860600423?text=Hi%20DM%20Healthcare,%20I%20need%20a%20Patient%20Attendant%20at%20Home." target="_blank" class="btn btn-outline-success rounded-pill px-4 py-2 fw-bold shadow-sm d-inline-flex align-items-center gap-2">
+                    <a href="https://wa.me/919319149644?text=Hi%20DM%20Healthcare,%20I%20need%20a%20Patient%20Attendant%20at%20Home." target="_blank" class="btn btn-outline-success rounded-pill px-4 py-2 fw-bold shadow-sm d-inline-flex align-items-center gap-2">
                         <i class="fa-brands fa-whatsapp fs-5"></i> WhatsApp Enquiry
                     </a>
                 </div>
@@ -161,7 +161,7 @@ $frontend_custom_sections = '
                         <li class="mb-2"><i class="fa-solid fa-check text-success me-2"></i> Timely meals & fruit feeds</li>
                         <li class="mb-2"><i class="fa-solid fa-check text-success me-2"></i> Wheelchair & walking support</li>
                     </ul>
-                    <a href="tel:+918860600423" class="btn btn-outline-danger rounded-pill fw-bold w-100 mt-auto py-2">Book 12h Day Shift</a>
+                    <a href="tel:+919319149644" class="btn btn-outline-danger rounded-pill fw-bold w-100 mt-auto py-2">Book 12h Day Shift</a>
                 </div>
             </div>
 
@@ -178,7 +178,7 @@ $frontend_custom_sections = '
                         <li class="mb-2"><i class="fa-solid fa-check text-success me-2"></i> Night diaper change & position turning</li>
                         <li class="mb-2"><i class="fa-solid fa-check text-success me-2"></i> Bed sore prevention & safety</li>
                     </ul>
-                    <a href="tel:+918860600423" class="btn btn-danger rounded-pill fw-bold w-100 mt-auto py-2" style="background: var(--primary-red); border: none;">Book 24h Live-in</a>
+                    <a href="tel:+919319149644" class="btn btn-danger rounded-pill fw-bold w-100 mt-auto py-2" style="background: var(--primary-red); border: none;">Book 24h Live-in</a>
                 </div>
             </div>
 
@@ -194,7 +194,7 @@ $frontend_custom_sections = '
                         <li class="mb-2"><i class="fa-solid fa-check text-success me-2"></i> Bedpan / urinal assistance</li>
                         <li class="mb-2"><i class="fa-solid fa-check text-success me-2"></i> Peaceful night sleep for family</li>
                     </ul>
-                    <a href="tel:+918860600423" class="btn btn-outline-danger rounded-pill fw-bold w-100 mt-auto py-2">Book 12h Night Shift</a>
+                    <a href="tel:+919319149644" class="btn btn-outline-danger rounded-pill fw-bold w-100 mt-auto py-2">Book 12h Night Shift</a>
                 </div>
             </div>
         </div>

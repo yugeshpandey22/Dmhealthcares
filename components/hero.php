@@ -245,10 +245,10 @@
 
     <!-- Mobile Quick Action Buttons (Directly Under Banner on Phone) -->
     <div class="hero-mobile-actions d-flex d-md-none gap-2">
-        <a href="tel:+918860600423" class="hero-mobile-btn btn btn-danger text-white shadow-sm" style="background: var(--primary-color); border: none;">
+        <a href="tel:+919319149644" class="hero-mobile-btn btn btn-danger text-white shadow-sm" style="background: var(--primary-color); border: none;">
             <i class="fa-solid fa-phone-volume"></i> Call 24/7
         </a>
-        <a href="https://wa.me/918860600423?text=Hi%2C%20I%20need%20urgent%20home%20healthcare%20services" target="_blank" class="hero-mobile-btn btn btn-success text-white shadow-sm" style="background: #25D366; border: none;">
+        <a href="https://wa.me/919319149644?text=Hi%2C%20I%20need%20urgent%20home%20healthcare%20services" target="_blank" class="hero-mobile-btn btn btn-success text-white shadow-sm" style="background: #25D366; border: none;">
             <i class="fa-brands fa-whatsapp fs-6"></i> WhatsApp
         </a>
         <a href="#appointment" class="hero-mobile-btn btn btn-outline-light text-white">

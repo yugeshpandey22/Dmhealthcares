@@ -95,10 +95,10 @@ ob_start();
 
                 <!-- Quick Action Buttons -->
                 <div class="d-flex flex-wrap gap-2 mb-4">
-                    <a href="tel:+918860600423" class="btn btn-dm-red btn-lg rounded-pill px-4 py-2 fw-bold shadow-sm d-inline-flex align-items-center gap-2 small">
-                        <i class="fa-solid fa-phone-volume"></i> Call +91 88606 00423
+                    <a href="tel:+919319149644" class="btn btn-dm-red btn-lg rounded-pill px-4 py-2 fw-bold shadow-sm d-inline-flex align-items-center gap-2 small">
+                        <i class="fa-solid fa-phone-volume"></i> Call +91 93191 49644
                     </a>
-                    <a href="https://wa.me/918860600423?text=Hi%20DM%20Healthcare,%20I%20urgently%20need%20an%20Oxygen%20Cylinder%20or%20Refill." target="_blank" class="btn btn-outline-success btn-lg rounded-pill px-4 py-2 fw-bold d-inline-flex align-items-center gap-2 small bg-white text-success border-white">
+                    <a href="https://wa.me/919319149644?text=Hi%20DM%20Healthcare,%20I%20urgently%20need%20an%20Oxygen%20Cylinder%20or%20Refill." target="_blank" class="btn btn-outline-success btn-lg rounded-pill px-4 py-2 fw-bold d-inline-flex align-items-center gap-2 small bg-white text-success border-white">
                         <i class="fa-brands fa-whatsapp"></i> WhatsApp Refill / Booking
                     </a>
                     <a href="#quick-order" class="btn btn-outline-light btn-lg rounded-pill px-4 py-2 fw-bold small">
@@ -158,7 +158,7 @@ ob_start();
                         </div>
                     </div>
 
-                    <a href="tel:+918860600423" class="btn btn-dm-red w-100 rounded-pill fw-bold py-2 shadow-sm">
+                    <a href="tel:+919319149644" class="btn btn-dm-red w-100 rounded-pill fw-bold py-2 shadow-sm">
                         <i class="fa-solid fa-truck-fast me-1"></i> Order Instant Emergency Delivery
                     </a>
                 </div>
@@ -352,10 +352,10 @@ ob_start();
                             <small class="text-muted" style="font-size: 0.72rem;">Active 24 Hours / 365 Days</small>
                         </div>
                     </div>
-                    <a href="tel:+918860600423" class="btn btn-dm-red rounded-pill fw-bold py-2 mb-2 btn-sm">
-                        <i class="fa-solid fa-phone me-1"></i> Call +91 88606 00423
+                    <a href="tel:+919319149644" class="btn btn-dm-red rounded-pill fw-bold py-2 mb-2 btn-sm">
+                        <i class="fa-solid fa-phone me-1"></i> Call +91 93191 49644
                     </a>
-                    <a href="https://wa.me/918860600423?text=Hi%20DM%20Healthcare,%20I%20urgently%20need%20an%20oxygen%20cylinder/refill." target="_blank" class="btn btn-outline-success rounded-pill fw-bold py-2 btn-sm">
+                    <a href="https://wa.me/919319149644?text=Hi%20DM%20Healthcare,%20I%20urgently%20need%20an%20oxygen%20cylinder/refill." target="_blank" class="btn btn-outline-success rounded-pill fw-bold py-2 btn-sm">
                         <i class="fa-brands fa-whatsapp me-1"></i> Quick WhatsApp Booking
                     </a>
                 </div>

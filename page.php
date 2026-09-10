@@ -104,7 +104,7 @@ try {
   "provider": {
     "@type": "MedicalOrganization",
     "name": "DM Healthcare",
-    "telephone": "+91-8860600423",
+    "telephone": "+91-9319149644",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Faridabad",
@@ -517,10 +517,10 @@ try {
                             <p class="text-muted small mb-3"><?= $card_subtitle ?></p>
                             
                             <div class="d-grid gap-2 mb-3">
-                                <a href="tel:+918860600423" class="btn btn-primary py-3 rounded-pill fw-bold shadow-sm d-flex align-items-center justify-content-center gap-2" style="background: var(--primary-color); border: none;">
-                                    <i class="fa-solid fa-phone"></i> Call +91 88606 00423
+                                <a href="tel:+919319149644" class="btn btn-primary py-3 rounded-pill fw-bold shadow-sm d-flex align-items-center justify-content-center gap-2" style="background: var(--primary-color); border: none;">
+                                    <i class="fa-solid fa-phone"></i> Call +91 93191 49644
                                 </a>
-                                <a href="https://wa.me/918860600423?text=Hello%20DM%20Healthcare,%20I%20need%20details%20for%20<?= urlencode($display_title) ?>" target="_blank" class="btn btn-outline-success py-2 rounded-pill fw-bold d-flex align-items-center justify-content-center gap-2">
+                                <a href="https://wa.me/919319149644?text=Hello%20DM%20Healthcare,%20I%20need%20details%20for%20<?= urlencode($display_title) ?>" target="_blank" class="btn btn-outline-success py-2 rounded-pill fw-bold d-flex align-items-center justify-content-center gap-2">
                                     <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
                                 </a>
                             </div>

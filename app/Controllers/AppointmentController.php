@@ -64,7 +64,7 @@ class AppointmentController {
                 $_SESSION['success_msg'] = "Your appointment has been successfully booked! We will contact you soon.";
             } else {
                 if ($isAjax) {
-                    echo json_encode(['success' => false, 'message' => "Could not submit your request. Please call us directly at +91-8860600423."]);
+                    echo json_encode(['success' => false, 'message' => "Could not submit your request. Please call us directly at +91-9319149644."]);
                     exit();
                 }
                 $_SESSION['error_msg'] = "Something went wrong. Please try again later.";

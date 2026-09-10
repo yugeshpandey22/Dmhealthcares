@@ -37,9 +37,9 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 text-lg-end">
-                        <a href="tel:+918860600423" class="btn btn-footer-call px-4 py-2 rounded-pill fw-bold shadow-sm d-inline-flex align-items-center gap-2">
+                        <a href="tel:+919319149644" class="btn btn-footer-call px-4 py-2 rounded-pill fw-bold shadow-sm d-inline-flex align-items-center gap-2">
                             <i class="fa-solid fa-phone-volume text-white"></i>
-                            <span>24x7 Helpline: +91 88606 00423</span>
+                            <span>24x7 Helpline: +91 93191 49644</span>
                         </a>
                     </div>
                 </div>
@@ -85,8 +85,8 @@
 
                         <!-- Social Media Links -->
                         <div class="d-flex align-items-center gap-2 footer-social-wrap">
-                            <a href="https://wa.me/918860600423" target="_blank" class="footer-social-btn" aria-label="WhatsApp" title="Chat on WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
-                            <a href="tel:+918860600423" class="footer-social-btn" aria-label="Phone" title="Call Us"><i class="fa-solid fa-phone"></i></a>
+                            <a href="https://wa.me/919319149644" target="_blank" class="footer-social-btn" aria-label="WhatsApp" title="Chat on WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                            <a href="tel:+919319149644" class="footer-social-btn" aria-label="Phone" title="Call Us"><i class="fa-solid fa-phone"></i></a>
                             <a href="#" class="footer-social-btn" aria-label="Facebook" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
                             <a href="#" class="footer-social-btn" aria-label="Instagram" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
                             <a href="#" class="footer-social-btn" aria-label="LinkedIn" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
@@ -131,7 +131,7 @@
                                 </div>
                                 <div>
                                     <span class="small text-secondary d-block">24/7 Helpline & Booking</span>
-                                    <a href="tel:+918860600423" class="text-white fw-bold text-decoration-none fs-6 hover-brand-red">+91 88606 00423</a>
+                                    <a href="tel:+919319149644" class="text-white fw-bold text-decoration-none fs-6 hover-brand-red">+91 93191 49644</a>
                                 </div>
                             </div>
 

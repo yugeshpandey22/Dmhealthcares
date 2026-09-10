@@ -5,12 +5,12 @@ $current_url = $protocol . $host . ($_SERVER['REQUEST_URI'] ?? '');
 $is_local = (strpos($host, 'localhost') !== false || strpos($host, '127.0.0.1') !== false);
 $base_domain_url = $protocol . $host . ($is_local ? '/DmHealthcare' : '');
 
-$page_title_seo = isset($seo_title) && !empty($seo_title) 
-    ? htmlspecialchars($seo_title) 
+$page_title_seo = isset($seo_title) && !empty($seo_title)
+    ? htmlspecialchars($seo_title)
     : 'DmHealthcare (DmHealthcares) - Best Home Healthcare, Nursing & Elder Care Services';
 
-$page_desc_seo = isset($seo_desc) && !empty($seo_desc) 
-    ? htmlspecialchars($seo_desc) 
+$page_desc_seo = isset($seo_desc) && !empty($seo_desc)
+    ? htmlspecialchars($seo_desc)
     : 'DmHealthcare (DmHealthcares) provides 24/7 compassionate & professional home healthcare services, nursing care, elder care, ICU setup at home, and medical equipment rental in Faridabad, Noida, and Delhi NCR.';
 
 $page_keywords_seo = isset($seo_keywords) && !empty($seo_keywords)
@@ -24,7 +24,7 @@ $page_keywords_seo = isset($seo_keywords) && !empty($seo_keywords)
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google-site-verification" content="KMZGSRjIT760bemoBIWp27Ys4M_zrjIGPZrulcFcsLI" />
-    
+
     <!-- Primary SEO Meta Tags -->
     <title><?= $page_title_seo ?></title>
     <meta name="title" content="<?= $page_title_seo ?>">
@@ -55,53 +55,52 @@ $page_keywords_seo = isset($seo_keywords) && !empty($seo_keywords)
 
     <!-- Schema.org Structured Data (JSON-LD) -->
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "MedicalBusiness",
-      "name": "DmHealthcare",
-      "alternateName": ["DmHealthcares", "DM Health Care", "DM Healthcare Services"],
-      "url": "<?= $base_domain_url ?>",
-      "logo": "<?= $base_domain_url ?>/assets/images/logo.png",
-      "image": "<?= $base_domain_url ?>/assets/images/logo.png",
-      "description": "DmHealthcare (DmHealthcares) provides 24/7 comprehensive home healthcare services, nursing, elder care, ICU setup at home, physiotherapy, and medical equipment rental in Faridabad, Noida, and Delhi NCR.",
-      "telephone": "+91-8860600423",
-      "email": "dmhealthcare48@gmail.com",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "B-191, IInd Floor, Green Field Colony",
-        "addressLocality": "Faridabad",
-        "addressRegion": "Haryana",
-        "addressCountry": "IN"
-      },
-      "areaServed": [
         {
-          "@type": "City",
-          "name": "Faridabad"
-        },
-        {
-          "@type": "City",
-          "name": "Noida"
-        },
-        {
-          "@type": "City",
-          "name": "Delhi NCR"
+            "@context": "https://schema.org",
+            "@type": "MedicalBusiness",
+            "name": "DmHealthcare",
+            "alternateName": ["DmHealthcares", "DM Health Care", "DM Healthcare Services"],
+            "url": "<?= $base_domain_url ?>",
+            "logo": "<?= $base_domain_url ?>/assets/images/logo.png",
+            "image": "<?= $base_domain_url ?>/assets/images/logo.png",
+            "description": "DmHealthcare (DmHealthcares) provides 24/7 comprehensive home healthcare services, nursing, elder care, ICU setup at home, physiotherapy, and medical equipment rental in Faridabad, Noida, and Delhi NCR.",
+            "telephone": "+91-9319149644",
+            "email": "dmhealthcare48@gmail.com",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "B-191, IInd Floor, Green Field Colony",
+                "addressLocality": "Faridabad",
+                "addressRegion": "Haryana",
+                "addressCountry": "IN"
+            },
+            "areaServed": [{
+                    "@type": "City",
+                    "name": "Faridabad"
+                },
+                {
+                    "@type": "City",
+                    "name": "Noida"
+                },
+                {
+                    "@type": "City",
+                    "name": "Delhi NCR"
+                }
+            ],
+            "openingHoursSpecification": {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                    "Sunday"
+                ],
+                "opens": "00:00",
+                "closes": "23:59"
+            }
         }
-      ],
-      "openingHoursSpecification": {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-          "Monday",
-          "Tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday",
-          "Saturday",
-          "Sunday"
-        ],
-        "opens": "00:00",
-        "closes": "23:59"
-      }
-    }
     </script>
 
     <!-- Google Fonts -->
@@ -123,11 +122,13 @@ $page_keywords_seo = isset($seo_keywords) && !empty($seo_keywords)
                 margin-top: 0;
             }
         }
+
         /* Modern Navbar Spacing & Polish */
         .navbar-nav {
             gap: 8px;
             align-items: center;
         }
+
         .navbar-nav .nav-item .nav-link {
             padding: 9px 16px !important;
             border-radius: 8px;
@@ -141,15 +142,18 @@ $page_keywords_seo = isset($seo_keywords) && !empty($seo_keywords)
             gap: 6px;
             white-space: nowrap;
         }
+
         .navbar-nav .nav-item .nav-link:hover,
         .navbar-nav .nav-item .nav-link:focus {
             background-color: rgba(229, 37, 42, 0.07);
             color: var(--primary-color, #e5252a) !important;
         }
-        .navbar-nav .nav-item.dropdown:hover > .nav-link .fa-chevron-down {
+
+        .navbar-nav .nav-item.dropdown:hover>.nav-link .fa-chevron-down {
             transform: rotate(180deg);
             color: var(--primary-color, #e5252a);
         }
+
         .navbar-nav .nav-link .fa-chevron-down {
             transition: transform 0.25s ease;
             font-size: 0.75em !important;
@@ -163,6 +167,7 @@ $page_keywords_seo = isset($seo_keywords) && !empty($seo_keywords)
             padding: 8px !important;
             min-width: 240px;
         }
+
         .dropdown-item {
             border-radius: 8px !important;
             padding: 8px 14px !important;
@@ -173,6 +178,7 @@ $page_keywords_seo = isset($seo_keywords) && !empty($seo_keywords)
             white-space: normal !important;
             word-break: normal !important;
         }
+
         .dropdown-item:hover,
         .dropdown-item:focus {
             background-color: rgba(229, 37, 42, 0.08) !important;
@@ -193,6 +199,7 @@ $page_keywords_seo = isset($seo_keywords) && !empty($seo_keywords)
             transition: all 0.3s ease !important;
             letter-spacing: 0.5px;
         }
+
         .nav-blood-checkup-btn:hover,
         .nav-blood-checkup-btn:focus,
         a.nav-blood-checkup-btn:hover,
@@ -208,9 +215,11 @@ $page_keywords_seo = isset($seo_keywords) && !empty($seo_keywords)
         .navbar {
             position: relative !important;
         }
+
         .navbar-nav .nav-item.dropdown.position-static {
             position: static !important;
         }
+
         .home-care-mega-menu {
             position: absolute !important;
             left: 0 !important;
@@ -228,6 +237,7 @@ $page_keywords_seo = isset($seo_keywords) && !empty($seo_keywords)
             padding: 24px 0 !important;
             z-index: 1050 !important;
         }
+
         .mega-menu-title-brand {
             font-size: 14px;
             font-weight: 800;
@@ -239,22 +249,26 @@ $page_keywords_seo = isset($seo_keywords) && !empty($seo_keywords)
             padding-bottom: 4px;
             text-transform: uppercase;
         }
+
         .mega-menu-list {
             list-style: none;
             padding: 0;
             margin: 0;
             font-size: 13px;
         }
+
         .mega-menu-list li {
             padding-bottom: 9px;
             margin-bottom: 9px;
             border-bottom: 1px dashed #edf2f7;
         }
+
         .mega-menu-list li:last-child {
             border-bottom: none;
             padding-bottom: 0;
             margin-bottom: 0;
         }
+
         .mega-menu-list a {
             display: flex;
             align-items: center;
@@ -266,10 +280,12 @@ $page_keywords_seo = isset($seo_keywords) && !empty($seo_keywords)
             white-space: normal;
             word-break: normal;
         }
+
         .mega-menu-list a:hover {
             color: var(--primary-color, #d80000) !important;
             transform: translateX(4px);
         }
+
         .mega-menu-list a i {
             color: var(--primary-color, #d80000);
             width: 24px;
@@ -279,6 +295,7 @@ $page_keywords_seo = isset($seo_keywords) && !empty($seo_keywords)
             flex-shrink: 0;
             transition: all 0.2s ease;
         }
+
         .mega-menu-list a:hover i {
             color: #b00000;
             transform: scale(1.15);
@@ -298,12 +315,12 @@ $page_keywords_seo = isset($seo_keywords) && !empty($seo_keywords)
                 <a class="navbar-brand logo p-0 d-flex align-items-center" href="<?= $home_link ?>" style="margin-top: -10px; margin-bottom: -10px; text-decoration: none;">
                     <!-- Logo Icon -->
                     <img src="assets/images/logo.png" alt="DmHealthcare Logo Icon" style="height: 85px; width: auto; object-fit: contain;">
-                    
+
                     <!-- Logo Typography -->
                     <div class="d-flex flex-column justify-content-center" style="line-height: 1.1; margin-left: -25px; position: relative; z-index: 1;">
                         <div style="font-size: 14px; font-weight: 900; letter-spacing: 1px; font-family: 'Arial', sans-serif;">
-                            <span style="color: #d80000;">D</span><span style="color: #333333;">M</span> 
-                            <span style="color: #444444; margin-left: 5px;">HEALTH</span> 
+                            <span style="color: #d80000;">D</span><span style="color: #333333;">M</span>
+                            <span style="color: #444444; margin-left: 5px;">HEALTH</span>
                             <span style="color: #d80000; margin-left: 5px;">CARE</span>
                         </div>
                         <div class="d-flex align-items-center w-100" style="margin: 2px 0;">
@@ -316,7 +333,7 @@ $page_keywords_seo = isset($seo_keywords) && !empty($seo_keywords)
                         </div>
                     </div>
                 </a>
-                
+
                 <!-- Contact Info -->
                 <div class="d-none d-lg-flex gap-4 align-items-center">
                     <div class="d-flex align-items-center gap-3">
@@ -325,10 +342,10 @@ $page_keywords_seo = isset($seo_keywords) && !empty($seo_keywords)
                         </div>
                         <div>
                             <span class="text-muted d-block small fw-bold text-uppercase" style="font-size: 0.7rem; letter-spacing: 1px;">Call Us Anytime</span>
-                            <a href="tel:+918860600423" class="text-dark fw-bold text-decoration-none" style="font-size: 1.1rem;">+91 88606 00423</a>
+                            <a href="tel:+919319149644" class="text-dark fw-bold text-decoration-none" style="font-size: 1.1rem;">+91 93191 49644</a>
                         </div>
                     </div>
-                    
+
                     <div class="d-flex align-items-center gap-3 border-start ps-4">
                         <div class="bg-primary bg-opacity-10 rounded-circle d-flex align-items-center justify-content-center text-primary" style="width: 45px; height: 45px;">
                             <i class="fa-solid fa-envelope fs-5"></i>
@@ -339,7 +356,7 @@ $page_keywords_seo = isset($seo_keywords) && !empty($seo_keywords)
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Mobile Toggle -->
                 <button class="navbar-toggler d-xl-none border-0 fs-2 text-dark bg-transparent p-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fa-solid fa-bars"></i>
@@ -368,7 +385,8 @@ $page_keywords_seo = isset($seo_keywords) && !empty($seo_keywords)
                     // Automatically remove redundant 'Home Page' entries from database if present
                     try {
                         $conn->query("DELETE FROM nav_items WHERE LOWER(title) LIKE '%home%page%' OR LOWER(link) LIKE '%home%page%'");
-                    } catch (Exception $e) {}
+                    } catch (Exception $e) {
+                    }
 
                     // Dynamically map category IDs from DB to prevent mismatch on live vs local database
                     try {
@@ -384,13 +402,15 @@ $page_keywords_seo = isset($seo_keywords) && !empty($seo_keywords)
                             }
                         }
                         unset($c_entry);
-                    } catch (Exception $e) {}
+                    } catch (Exception $e) {
+                    }
 
                     // Fetch all items with category names for dual-matching resilience (ID & Name)
                     $nav_items_all = [];
                     try {
                         $nav_items_all = $conn->query("SELECT n.*, LOWER(TRIM(c.name)) as cat_name FROM nav_items n LEFT JOIN nav_categories c ON n.category_id = c.id ORDER BY n.display_order ASC, n.id ASC")->fetchAll(PDO::FETCH_ASSOC);
-                    } catch (Exception $e) {}
+                    } catch (Exception $e) {
+                    }
 
                     $grouped_items = [];
                     foreach ($nav_items_all as $item) {
@@ -400,15 +420,15 @@ $page_keywords_seo = isset($seo_keywords) && !empty($seo_keywords)
                         }
                     }
                     ?>
-                    
+
                     <!-- Nav Links -->
                     <ul class="navbar-nav mx-auto mb-2 mb-xl-0 fw-bold" style="font-size: 15px;">
 
                         <?php foreach ($nav_categories as $cat): ?>
-                            <?php 
-                                $cat_norm = strtolower(trim($cat['name']));
-                                $cat_items = $grouped_items[$cat['id']] ?? $grouped_items[$cat_norm] ?? [];
-                                $has_items = count($cat_items) > 0;
+                            <?php
+                            $cat_norm = strtolower(trim($cat['name']));
+                            $cat_items = $grouped_items[$cat['id']] ?? $grouped_items[$cat_norm] ?? [];
+                            $has_items = count($cat_items) > 0;
                             ?>
 
                             <?php if ($cat_norm === 'home care'): ?>
@@ -421,41 +441,47 @@ $page_keywords_seo = isset($seo_keywords) && !empty($seo_keywords)
                                     <div class="dropdown-menu w-100 border-0 shadow-lg mt-0 p-3 p-xl-4 home-care-mega-menu">
                                         <div class="container-fluid px-2 px-md-4" style="max-width: 1440px;">
                                             <?php
-                                                $services_slugs = [
-                                                    'attendant-providing', 'gda-providing', 'patient-attendant',
-                                                    'elder-care---basic-care', 'patient-care---general-nursing',
-                                                    'icu-care---critical-care', 'live-in-care---24-hours-care',
-                                                    'palliative-care', 'assisted-living-facility', 'staircase-mobility-assistance'
-                                                ];
-                                                
-                                                $col1_items = [];
-                                                $col2_items = [];
-                                                
-                                                foreach ($cat_items as $h_item) {
-                                                    if (in_array(strtolower($h_item['link']), $services_slugs)) {
-                                                        $col1_items[] = $h_item;
-                                                    } else {
-                                                        $col2_items[] = $h_item;
-                                                    }
-                                                }
+                                            $services_slugs = [
+                                                'attendant-providing',
+                                                'gda-providing',
+                                                'patient-attendant',
+                                                'elder-care---basic-care',
+                                                'patient-care---general-nursing',
+                                                'icu-care---critical-care',
+                                                'live-in-care---24-hours-care',
+                                                'palliative-care',
+                                                'assisted-living-facility',
+                                                'staircase-mobility-assistance'
+                                            ];
 
-                                                $icon_map = [
-                                                    'attendant-providing' => 'fa-solid fa-hand-holding-medical',
-                                                    'gda-providing' => 'fa-solid fa-stethoscope',
-                                                    'patient-attendant' => 'fa-solid fa-wheelchair',
-                                                    'elder-care---basic-care' => 'fa-solid fa-person-cane',
-                                                    'patient-care---general-nursing' => 'fa-solid fa-bed-pulse',
-                                                    'icu-care---critical-care' => 'fa-solid fa-heart-pulse',
-                                                    'live-in-care---24-hours-care' => 'fa-solid fa-clock-rotate-left',
-                                                    'palliative-care' => 'fa-solid fa-hand-holding-heart',
-                                                    'assisted-living-facility' => 'fa-solid fa-house-chimney-medical',
-                                                    'staircase-mobility-assistance' => 'fa-solid fa-stairs',
-                                                    'general-duty-assistant-gda' => 'fa-solid fa-user-doctor',
-                                                    'elderly-caretaker' => 'fa-solid fa-person-cane',
-                                                    'qualified-nurse' => 'fa-solid fa-user-nurse',
-                                                    'physician-doctor' => 'fa-solid fa-user-doctor',
-                                                    'physiotherapist' => 'fa-solid fa-person-walking'
-                                                ];
+                                            $col1_items = [];
+                                            $col2_items = [];
+
+                                            foreach ($cat_items as $h_item) {
+                                                if (in_array(strtolower($h_item['link']), $services_slugs)) {
+                                                    $col1_items[] = $h_item;
+                                                } else {
+                                                    $col2_items[] = $h_item;
+                                                }
+                                            }
+
+                                            $icon_map = [
+                                                'attendant-providing' => 'fa-solid fa-hand-holding-medical',
+                                                'gda-providing' => 'fa-solid fa-stethoscope',
+                                                'patient-attendant' => 'fa-solid fa-wheelchair',
+                                                'elder-care---basic-care' => 'fa-solid fa-person-cane',
+                                                'patient-care---general-nursing' => 'fa-solid fa-bed-pulse',
+                                                'icu-care---critical-care' => 'fa-solid fa-heart-pulse',
+                                                'live-in-care---24-hours-care' => 'fa-solid fa-clock-rotate-left',
+                                                'palliative-care' => 'fa-solid fa-hand-holding-heart',
+                                                'assisted-living-facility' => 'fa-solid fa-house-chimney-medical',
+                                                'staircase-mobility-assistance' => 'fa-solid fa-stairs',
+                                                'general-duty-assistant-gda' => 'fa-solid fa-user-doctor',
+                                                'elderly-caretaker' => 'fa-solid fa-person-cane',
+                                                'qualified-nurse' => 'fa-solid fa-user-nurse',
+                                                'physician-doctor' => 'fa-solid fa-user-doctor',
+                                                'physiotherapist' => 'fa-solid fa-person-walking'
+                                            ];
                                             ?>
                                             <div class="row g-4 align-items-stretch">
                                                 <!-- Column 1: OUR SERVICES -->
@@ -463,9 +489,9 @@ $page_keywords_seo = isset($seo_keywords) && !empty($seo_keywords)
                                                     <h6 class="mega-menu-title-brand">OUR SERVICES</h6>
                                                     <ul class="mega-menu-list">
                                                         <?php foreach ($col1_items as $nav_item): ?>
-                                                            <?php 
-                                                                $slug_key = strtolower($nav_item['link']);
-                                                                $icon_cls = $icon_map[$slug_key] ?? 'fa-solid fa-hand-holding-medical';
+                                                            <?php
+                                                            $slug_key = strtolower($nav_item['link']);
+                                                            $icon_cls = $icon_map[$slug_key] ?? 'fa-solid fa-hand-holding-medical';
                                                             ?>
                                                             <li>
                                                                 <a href="<?= htmlspecialchars($nav_item['link']) ?>">
@@ -482,9 +508,9 @@ $page_keywords_seo = isset($seo_keywords) && !empty($seo_keywords)
                                                     <h6 class="mega-menu-title-brand">OUR CAREGIVERS</h6>
                                                     <ul class="mega-menu-list">
                                                         <?php foreach ($col2_items as $nav_item): ?>
-                                                            <?php 
-                                                                $slug_key = strtolower($nav_item['link']);
-                                                                $icon_cls = $icon_map[$slug_key] ?? 'fa-solid fa-user-nurse';
+                                                            <?php
+                                                            $slug_key = strtolower($nav_item['link']);
+                                                            $icon_cls = $icon_map[$slug_key] ?? 'fa-solid fa-user-nurse';
                                                             ?>
                                                             <li>
                                                                 <a href="<?= htmlspecialchars($nav_item['link']) ?>">
@@ -508,14 +534,14 @@ $page_keywords_seo = isset($seo_keywords) && !empty($seo_keywords)
                                 </li>
 
                             <?php elseif ($cat_norm === 'home'): ?>
-                                <?php 
-                                    // Ensure redundant 'Home Page' is never listed in dropdown
-                                    $home_filtered_items = array_values(array_filter($cat_items, function($nav_item) {
-                                        $t = strtolower(trim(strip_tags($nav_item['title'] ?? '')));
-                                        $l = strtolower(trim($nav_item['link'] ?? ''));
-                                        return !in_array($t, ['home', 'home page', 'homepage']) && !in_array($l, ['home', 'home-page', 'homepage', 'index.php', 'index']);
-                                    }));
-                                    $has_home_subitems = count($home_filtered_items) > 0;
+                                <?php
+                                // Ensure redundant 'Home Page' is never listed in dropdown
+                                $home_filtered_items = array_values(array_filter($cat_items, function ($nav_item) {
+                                    $t = strtolower(trim(strip_tags($nav_item['title'] ?? '')));
+                                    $l = strtolower(trim($nav_item['link'] ?? ''));
+                                    return !in_array($t, ['home', 'home page', 'homepage']) && !in_array($l, ['home', 'home-page', 'homepage', 'index.php', 'index']);
+                                }));
+                                $has_home_subitems = count($home_filtered_items) > 0;
                                 ?>
                                 <!-- Home Item -->
                                 <li class="nav-item <?= $has_home_subitems ? 'dropdown' : '' ?>">
@@ -539,29 +565,29 @@ $page_keywords_seo = isset($seo_keywords) && !empty($seo_keywords)
                             <?php else: ?>
                                 <!-- Standard Dropdown & Blood Checkup -->
                                 <li class="nav-item dropdown">
-                                    <?php 
-                                        $is_blood_checkup = (stripos($cat['name'], 'blood') !== false);
-                                        $display_name = $is_blood_checkup ? 'Blood Checkup' : $cat['name'];
+                                    <?php
+                                    $is_blood_checkup = (stripos($cat['name'], 'blood') !== false);
+                                    $display_name = $is_blood_checkup ? 'Blood Checkup' : $cat['name'];
                                     ?>
                                     <?php if ($is_blood_checkup): ?>
                                         <a class="nav-link dropdown-toggle text-white fw-bold text-uppercase px-3 ms-2 shadow-sm nav-blood-checkup-btn" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: #e5252a !important; background: #e5252a !important; color: #ffffff !important; border-radius: 6px; padding: 8px 16px !important; align-self: center; font-size: 14px;">
-                                    <?php else: ?>
-                                        <a class="nav-link dropdown-toggle text-dark text-uppercase px-3" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <?php endif; ?>
-                                        <?= htmlspecialchars($display_name) ?>
-                                        <?php if ($has_items): ?>
-                                            <i class="fa-solid fa-chevron-down ms-1" style="font-size: 0.8em;"></i>
-                                        <?php endif; ?>
-                                    </a>
-                                    <ul class="dropdown-menu border-0 shadow-sm rounded-3">
-                                        <?php if ($has_items): ?>
-                                            <?php foreach ($cat_items as $nav_item): ?>
-                                                <li><a class="dropdown-item py-2" href="<?= htmlspecialchars($nav_item['link']) ?>"><?= htmlspecialchars($nav_item['title']) ?></a></li>
-                                            <?php endforeach; ?>
                                         <?php else: ?>
-                                            <li><a class="dropdown-item py-2 text-muted" href="#">Coming Soon</a></li>
-                                        <?php endif; ?>
-                                    </ul>
+                                            <a class="nav-link dropdown-toggle text-dark text-uppercase px-3" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <?php endif; ?>
+                                            <?= htmlspecialchars($display_name) ?>
+                                            <?php if ($has_items): ?>
+                                                <i class="fa-solid fa-chevron-down ms-1" style="font-size: 0.8em;"></i>
+                                            <?php endif; ?>
+                                            </a>
+                                            <ul class="dropdown-menu border-0 shadow-sm rounded-3">
+                                                <?php if ($has_items): ?>
+                                                    <?php foreach ($cat_items as $nav_item): ?>
+                                                        <li><a class="dropdown-item py-2" href="<?= htmlspecialchars($nav_item['link']) ?>"><?= htmlspecialchars($nav_item['title']) ?></a></li>
+                                                    <?php endforeach; ?>
+                                                <?php else: ?>
+                                                    <li><a class="dropdown-item py-2 text-muted" href="#">Coming Soon</a></li>
+                                                <?php endif; ?>
+                                            </ul>
                                 </li>
                             <?php endif; ?>
                         <?php endforeach; ?>

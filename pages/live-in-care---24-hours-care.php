@@ -189,8 +189,8 @@ $frontend_custom_sections = '
                 <p class="text-light opacity-75 mb-0" style="font-size: 1.05rem;">We deploy trained male & female attendants across Delhi, Noida, Faridabad, Gurugram & Ghaziabad.</p>
             </div>
             <div class="col-lg-4 text-lg-end">
-                <a href="tel:+918860600423" class="btn btn-danger btn-lg rounded-pill px-4 py-3 fw-bold shadow">
-                    <i class="fa-solid fa-phone-volume me-2"></i> +91 8860600423
+                <a href="tel:+919319149644" class="btn btn-danger btn-lg rounded-pill px-4 py-3 fw-bold shadow">
+                    <i class="fa-solid fa-phone-volume me-2"></i> +91 93191 49644
                 </a>
             </div>
         </div>

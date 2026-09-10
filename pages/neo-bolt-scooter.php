@@ -82,10 +82,10 @@ ob_start();
                 </div>
                 
                 <div class="d-flex flex-wrap gap-2 mb-3">
-                    <a href="tel:+918860600423" class="btn btn-dm-red rounded-pill px-3 py-2 fw-bold shadow-sm d-inline-flex align-items-center gap-2 small">
-                        <i class="fa-solid fa-phone"></i> Call +91 88606 00423
+                    <a href="tel:+919319149644" class="btn btn-dm-red rounded-pill px-3 py-2 fw-bold shadow-sm d-inline-flex align-items-center gap-2 small">
+                        <i class="fa-solid fa-phone"></i> Call +91 93191 49644
                     </a>
-                    <a href="https://wa.me/918860600423?text=Hello%20DM%20Healthcare,%20I%20want%20to%20know%20more%20about%20NeoBolt%20Scooter%20Rental/Sale." target="_blank" class="btn btn-outline-success rounded-pill px-3 py-2 fw-bold d-inline-flex align-items-center gap-2 small">
+                    <a href="https://wa.me/919319149644?text=Hello%20DM%20Healthcare,%20I%20want%20to%20know%20more%20about%20NeoBolt%20Scooter%20Rental/Sale." target="_blank" class="btn btn-outline-success rounded-pill px-3 py-2 fw-bold d-inline-flex align-items-center gap-2 small">
                         <i class="fa-brands fa-whatsapp"></i> WhatsApp Inquiry
                     </a>
                     <a href="#booking-form" class="btn btn-outline-secondary rounded-pill px-3 py-2 fw-bold small">
@@ -302,10 +302,10 @@ ob_start();
                             <small class="text-muted" style="font-size: 0.72rem;">Immediate consultation & pricing</small>
                         </div>
                     </div>
-                    <a href="tel:+918860600423" class="btn btn-dm-red rounded-pill fw-bold py-2 mb-2 btn-sm">
-                        <i class="fa-solid fa-phone me-1"></i> Call +91 88606 00423
+                    <a href="tel:+919319149644" class="btn btn-dm-red rounded-pill fw-bold py-2 mb-2 btn-sm">
+                        <i class="fa-solid fa-phone me-1"></i> Call +91 93191 49644
                     </a>
-                    <a href="https://wa.me/918860600423?text=Hi%20DM%20Healthcare,%20I%20want%20to%20book%20a%20NeoBolt%20demo." target="_blank" class="btn btn-outline-success rounded-pill fw-bold py-2 btn-sm">
+                    <a href="https://wa.me/919319149644?text=Hi%20DM%20Healthcare,%20I%20want%20to%20book%20a%20NeoBolt%20demo." target="_blank" class="btn btn-outline-success rounded-pill fw-bold py-2 btn-sm">
                         <i class="fa-brands fa-whatsapp me-1"></i> Chat on WhatsApp
                     </a>
                 </div>

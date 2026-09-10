@@ -184,10 +184,10 @@ ob_start();
                     <a href="#products-grid" class="btn btn-dm-red btn-lg rounded-pill px-4 py-2 fw-bold shadow-sm d-inline-flex align-items-center gap-2 small">
                         <i class="fa-solid fa-cart-shopping"></i> Explore Products Below
                     </a>
-                    <a href="tel:+918860600423" class="btn btn-outline-light btn-lg rounded-pill px-4 py-2 fw-bold d-inline-flex align-items-center gap-2 small">
-                        <i class="fa-solid fa-phone"></i> Order on Call (+91 88606 00423)
+                    <a href="tel:+919319149644" class="btn btn-outline-light btn-lg rounded-pill px-4 py-2 fw-bold d-inline-flex align-items-center gap-2 small">
+                        <i class="fa-solid fa-phone"></i> Order on Call (+91 93191 49644)
                     </a>
-                    <a href="https://wa.me/918860600423?text=Hello%20DM%20Healthcare,%20I%20want%20to%20buy/rent%20medical%20equipment%20from%20your%20E-Store." target="_blank" class="btn btn-success btn-lg rounded-pill px-4 py-2 fw-bold d-inline-flex align-items-center gap-2 small">
+                    <a href="https://wa.me/919319149644?text=Hello%20DM%20Healthcare,%20I%20want%20to%20buy/rent%20medical%20equipment%20from%20your%20E-Store." target="_blank" class="btn btn-success btn-lg rounded-pill px-4 py-2 fw-bold d-inline-flex align-items-center gap-2 small">
                         <i class="fa-brands fa-whatsapp"></i> WhatsApp Order
                     </a>
                 </div>
@@ -318,7 +318,7 @@ ob_start();
                                 </div>
                             </div>
                             <div class="d-grid gap-2">
-                                <a href="https://wa.me/918860600423?text=I+want+to+order+5L+Oxygen+Concentrator" target="_blank" class="btn btn-dm-red btn-sm rounded-pill fw-bold py-2">
+                                <a href="https://wa.me/919319149644?text=I+want+to+order+5L+Oxygen+Concentrator" target="_blank" class="btn btn-dm-red btn-sm rounded-pill fw-bold py-2">
                                     <i class="fa-brands fa-whatsapp me-1"></i> Order / Rent Now
                                 </a>
                                 <a href="oxygen-concentrator" class="btn btn-outline-secondary btn-sm rounded-pill py-1 small">
@@ -362,7 +362,7 @@ ob_start();
                                 </div>
                             </div>
                             <div class="d-grid gap-2">
-                                <a href="https://wa.me/918860600423?text=I+want+to+order+10L+Oxygen+Concentrator" target="_blank" class="btn btn-dm-red btn-sm rounded-pill fw-bold py-2">
+                                <a href="https://wa.me/919319149644?text=I+want+to+order+10L+Oxygen+Concentrator" target="_blank" class="btn btn-dm-red btn-sm rounded-pill fw-bold py-2">
                                     <i class="fa-brands fa-whatsapp me-1"></i> Order / Rent Now
                                 </a>
                                 <a href="oxygen-concentrator" class="btn btn-outline-secondary btn-sm rounded-pill py-1 small">
@@ -406,7 +406,7 @@ ob_start();
                                 </div>
                             </div>
                             <div class="d-grid gap-2">
-                                <a href="https://wa.me/918860600423?text=I+want+to+order+ResMed+Auto+CPAP" target="_blank" class="btn btn-dm-red btn-sm rounded-pill fw-bold py-2">
+                                <a href="https://wa.me/919319149644?text=I+want+to+order+ResMed+Auto+CPAP" target="_blank" class="btn btn-dm-red btn-sm rounded-pill fw-bold py-2">
                                     <i class="fa-brands fa-whatsapp me-1"></i> Order / Rent Now
                                 </a>
                                 <a href="bipap-cpap" class="btn btn-outline-secondary btn-sm rounded-pill py-1 small">
@@ -450,7 +450,7 @@ ob_start();
                                 </div>
                             </div>
                             <div class="d-grid gap-2">
-                                <a href="https://wa.me/918860600423?text=I+want+to+order+ResMed+BiPAP+Machine" target="_blank" class="btn btn-dm-red btn-sm rounded-pill fw-bold py-2">
+                                <a href="https://wa.me/919319149644?text=I+want+to+order+ResMed+BiPAP+Machine" target="_blank" class="btn btn-dm-red btn-sm rounded-pill fw-bold py-2">
                                     <i class="fa-brands fa-whatsapp me-1"></i> Order / Rent Now
                                 </a>
                                 <a href="bipap-cpap" class="btn btn-outline-secondary btn-sm rounded-pill py-1 small">
@@ -494,7 +494,7 @@ ob_start();
                                 </div>
                             </div>
                             <div class="d-grid gap-2">
-                                <a href="https://wa.me/918860600423?text=I+want+to+order+Motorized+Hospital+Bed" target="_blank" class="btn btn-dm-red btn-sm rounded-pill fw-bold py-2">
+                                <a href="https://wa.me/919319149644?text=I+want+to+order+Motorized+Hospital+Bed" target="_blank" class="btn btn-dm-red btn-sm rounded-pill fw-bold py-2">
                                     <i class="fa-brands fa-whatsapp me-1"></i> Order / Rent Now
                                 </a>
                                 <a href="patient-beds-rent" class="btn btn-outline-secondary btn-sm rounded-pill py-1 small">
@@ -538,7 +538,7 @@ ob_start();
                                 </div>
                             </div>
                             <div class="d-grid gap-2">
-                                <a href="https://wa.me/918860600423?text=I+want+to+order+Manual+Fowler+Bed" target="_blank" class="btn btn-dm-red btn-sm rounded-pill fw-bold py-2">
+                                <a href="https://wa.me/919319149644?text=I+want+to+order+Manual+Fowler+Bed" target="_blank" class="btn btn-dm-red btn-sm rounded-pill fw-bold py-2">
                                     <i class="fa-brands fa-whatsapp me-1"></i> Order / Rent Now
                                 </a>
                                 <a href="patient-beds-rent" class="btn btn-outline-secondary btn-sm rounded-pill py-1 small">
@@ -582,7 +582,7 @@ ob_start();
                                 </div>
                             </div>
                             <div class="d-grid gap-2">
-                                <a href="https://wa.me/918860600423?text=I+want+to+order+NeoBolt+Electric+Scooter" target="_blank" class="btn btn-dm-red btn-sm rounded-pill fw-bold py-2">
+                                <a href="https://wa.me/919319149644?text=I+want+to+order+NeoBolt+Electric+Scooter" target="_blank" class="btn btn-dm-red btn-sm rounded-pill fw-bold py-2">
                                     <i class="fa-brands fa-whatsapp me-1"></i> Order / Rent Now
                                 </a>
                                 <a href="neo-bolt-scooter" class="btn btn-outline-secondary btn-sm rounded-pill py-1 small">
@@ -626,7 +626,7 @@ ob_start();
                                 </div>
                             </div>
                             <div class="d-grid gap-2">
-                                <a href="https://wa.me/918860600423?text=I+want+to+order+Recliner+Commode+Wheelchair" target="_blank" class="btn btn-dm-red btn-sm rounded-pill fw-bold py-2">
+                                <a href="https://wa.me/919319149644?text=I+want+to+order+Recliner+Commode+Wheelchair" target="_blank" class="btn btn-dm-red btn-sm rounded-pill fw-bold py-2">
                                     <i class="fa-brands fa-whatsapp me-1"></i> Order / Rent Now
                                 </a>
                                 <a href="wheelchairs" class="btn btn-outline-secondary btn-sm rounded-pill py-1 small">
@@ -670,7 +670,7 @@ ob_start();
                                 </div>
                             </div>
                             <div class="d-grid gap-2">
-                                <a href="https://wa.me/918860600423?text=I+want+to+order+Electric+Motorized+Wheelchair" target="_blank" class="btn btn-dm-red btn-sm rounded-pill fw-bold py-2">
+                                <a href="https://wa.me/919319149644?text=I+want+to+order+Electric+Motorized+Wheelchair" target="_blank" class="btn btn-dm-red btn-sm rounded-pill fw-bold py-2">
                                     <i class="fa-brands fa-whatsapp me-1"></i> Order / Rent Now
                                 </a>
                                 <a href="wheelchairs" class="btn btn-outline-secondary btn-sm rounded-pill py-1 small">
@@ -714,7 +714,7 @@ ob_start();
                                 </div>
                             </div>
                             <div class="d-grid gap-2">
-                                <a href="https://wa.me/918860600423?text=I+want+to+order+Multipara+Patient+Monitor" target="_blank" class="btn btn-dm-red btn-sm rounded-pill fw-bold py-2">
+                                <a href="https://wa.me/919319149644?text=I+want+to+order+Multipara+Patient+Monitor" target="_blank" class="btn btn-dm-red btn-sm rounded-pill fw-bold py-2">
                                     <i class="fa-brands fa-whatsapp me-1"></i> Order / Rent Now
                                 </a>
                                 <a href="icu-care---critical-care" class="btn btn-outline-secondary btn-sm rounded-pill py-1 small">
@@ -758,7 +758,7 @@ ob_start();
                                 </div>
                             </div>
                             <div class="d-grid gap-2">
-                                <a href="https://wa.me/918860600423?text=I+want+to+order+Air+Mattress+with+Pump" target="_blank" class="btn btn-dm-red btn-sm rounded-pill fw-bold py-2">
+                                <a href="https://wa.me/919319149644?text=I+want+to+order+Air+Mattress+with+Pump" target="_blank" class="btn btn-dm-red btn-sm rounded-pill fw-bold py-2">
                                     <i class="fa-brands fa-whatsapp me-1"></i> Order / Rent Now
                                 </a>
                                 <a href="patient-beds-rent" class="btn btn-outline-secondary btn-sm rounded-pill py-1 small">
@@ -802,7 +802,7 @@ ob_start();
                                 </div>
                             </div>
                             <div class="d-grid gap-2">
-                                <a href="https://wa.me/918860600423?text=I+need+Oxygen+Cylinder+Urgent+Delivery" target="_blank" class="btn btn-dm-red btn-sm rounded-pill fw-bold py-2">
+                                <a href="https://wa.me/919319149644?text=I+need+Oxygen+Cylinder+Urgent+Delivery" target="_blank" class="btn btn-dm-red btn-sm rounded-pill fw-bold py-2">
                                     <i class="fa-brands fa-whatsapp me-1"></i> Order / Rent Now
                                 </a>
                                 <a href="oxygen-cylinder" class="btn btn-outline-secondary btn-sm rounded-pill py-1 small">
@@ -846,7 +846,7 @@ ob_start();
                                 </div>
                             </div>
                             <div class="d-grid gap-2">
-                                <a href="https://wa.me/918860600423?text=I+want+to+buy+Finger+Pulse+Oximeter" target="_blank" class="btn btn-dm-red btn-sm rounded-pill fw-bold py-2">
+                                <a href="https://wa.me/919319149644?text=I+want+to+buy+Finger+Pulse+Oximeter" target="_blank" class="btn btn-dm-red btn-sm rounded-pill fw-bold py-2">
                                     <i class="fa-brands fa-whatsapp me-1"></i> Buy on WhatsApp
                                 </a>
                             </div>
@@ -887,7 +887,7 @@ ob_start();
                                 </div>
                             </div>
                             <div class="d-grid gap-2">
-                                <a href="https://wa.me/918860600423?text=I+want+to+buy+Portable+Mesh+Nebulizer" target="_blank" class="btn btn-dm-red btn-sm rounded-pill fw-bold py-2">
+                                <a href="https://wa.me/919319149644?text=I+want+to+buy+Portable+Mesh+Nebulizer" target="_blank" class="btn btn-dm-red btn-sm rounded-pill fw-bold py-2">
                                     <i class="fa-brands fa-whatsapp me-1"></i> Buy on WhatsApp
                                 </a>
                             </div>
@@ -927,7 +927,7 @@ ob_start();
                                 </div>
                             </div>
                             <div class="d-grid gap-2">
-                                <a href="https://wa.me/918860600423?text=I+need+CPAP/BiPAP+Mask+Fitting" target="_blank" class="btn btn-dm-red btn-sm rounded-pill fw-bold py-2">
+                                <a href="https://wa.me/919319149644?text=I+need+CPAP/BiPAP+Mask+Fitting" target="_blank" class="btn btn-dm-red btn-sm rounded-pill fw-bold py-2">
                                     <i class="fa-brands fa-whatsapp me-1"></i> Order Mask Kit
                                 </a>
                             </div>
@@ -1006,7 +1006,7 @@ ob_start();
                 <div class="p-3">
                     <span class="shop-step-circle">1</span>
                     <h5 class="fw-bold text-dark mb-2">Select Item or Call</h5>
-                    <p class="small text-muted mb-0">Choose your equipment or share your doctor's prescription with our pulmonology & nursing desk on WhatsApp or Call (+91 88606 00423).</p>
+                    <p class="small text-muted mb-0">Choose your equipment or share your doctor's prescription with our pulmonology & nursing desk on WhatsApp or Call (+91 93191 49644).</p>
                 </div>
             </div>
 
@@ -1047,16 +1047,16 @@ ob_start();
                         </div>
                         <div>
                             <h6 class="fw-bold mb-0 text-dark small">E-Store Helpline</h6>
-                            <span class="text-dm-red fw-bold fs-6">+91 88606 00423</span>
+                            <span class="text-dm-red fw-bold fs-6">+91 93191 49644</span>
                         </div>
                     </div>
                 </div>
 
                 <div class="d-flex gap-2">
-                    <a href="tel:+918860600423" class="btn btn-dm-red rounded-pill fw-bold py-2 px-3 btn-sm">
-                        <i class="fa-solid fa-phone me-1"></i> Call Now (+91 88606 00423)
+                    <a href="tel:+919319149644" class="btn btn-dm-red rounded-pill fw-bold py-2 px-3 btn-sm">
+                        <i class="fa-solid fa-phone me-1"></i> Call Now (+91 93191 49644)
                     </a>
-                    <a href="https://wa.me/918860600423?text=Hi%20DM%20Healthcare,%20I%20need%20help%20selecting%20medical%20equipment%20from%20the%20E-Store." target="_blank" class="btn btn-success rounded-pill fw-bold py-2 px-3 btn-sm">
+                    <a href="https://wa.me/919319149644?text=Hi%20DM%20Healthcare,%20I%20need%20help%20selecting%20medical%20equipment%20from%20the%20E-Store." target="_blank" class="btn btn-success rounded-pill fw-bold py-2 px-3 btn-sm">
                         <i class="fa-brands fa-whatsapp me-1"></i> WhatsApp
                     </a>
                 </div>
@@ -1187,7 +1187,7 @@ ob_start();
                 </h2>
                 <div id="efaqC5" class="accordion-collapse collapse" data-bs-parent="#estoreFaq">
                     <div class="accordion-body text-muted small lh-base">
-                        We operate a 24/7 technical hotline (+91 88606 00423). If there is any technical issue, alarm, or malfunction, our technician provides immediate phone assistance and, if necessary, dispatches a replacement backup machine immediately at zero extra cost.
+                        We operate a 24/7 technical hotline (+91 93191 49644). If there is any technical issue, alarm, or malfunction, our technician provides immediate phone assistance and, if necessary, dispatches a replacement backup machine immediately at zero extra cost.
                     </div>
                 </div>
             </div>
@@ -1222,11 +1222,11 @@ ob_start();
             <div class="col-lg-4 text-lg-end">
                 <div class="card bg-secondary bg-opacity-25 border border-secondary rounded-4 p-4 text-center">
                     <h6 class="text-white fw-bold mb-1">Call for Instant Dispatch</h6>
-                    <span class="text-dm-red fw-bold fs-4 d-block mb-3">+91 88606 00423</span>
-                    <a href="tel:+918860600423" class="btn btn-dm-red rounded-pill w-100 fw-bold py-2 mb-2">
+                    <span class="text-dm-red fw-bold fs-4 d-block mb-3">+91 93191 49644</span>
+                    <a href="tel:+919319149644" class="btn btn-dm-red rounded-pill w-100 fw-bold py-2 mb-2">
                         <i class="fa-solid fa-phone me-1"></i> Call E-Store Desk
                     </a>
-                    <a href="https://wa.me/918860600423?text=Hi%20DM%20Healthcare,%20I%20want%20to%20order%20from%20E-Store." target="_blank" class="btn btn-success rounded-pill w-100 fw-bold py-2 btn-sm">
+                    <a href="https://wa.me/919319149644?text=Hi%20DM%20Healthcare,%20I%20want%20to%20order%20from%20E-Store." target="_blank" class="btn btn-success rounded-pill w-100 fw-bold py-2 btn-sm">
                         <i class="fa-brands fa-whatsapp me-1"></i> WhatsApp Order
                     </a>
                 </div>

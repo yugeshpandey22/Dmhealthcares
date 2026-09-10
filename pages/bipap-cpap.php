@@ -186,10 +186,10 @@ ob_start();
                 </p>
 
                 <div class="d-flex flex-wrap gap-2 mb-4">
-                    <a href="tel:+918860600423" class="btn btn-dm-red btn-lg rounded-pill px-4 py-2 fw-bold shadow-sm d-inline-flex align-items-center gap-2 small">
-                        <i class="fa-solid fa-phone-volume"></i> Call for Price & Availability (+91 88606 00423)
+                    <a href="tel:+919319149644" class="btn btn-dm-red btn-lg rounded-pill px-4 py-2 fw-bold shadow-sm d-inline-flex align-items-center gap-2 small">
+                        <i class="fa-solid fa-phone-volume"></i> Call for Price & Availability (+91 93191 49644)
                     </a>
-                    <a href="https://wa.me/918860600423?text=I+need+BiPAP+CPAP+on+Rent" target="_blank" class="btn btn-success btn-lg rounded-pill px-4 py-2 fw-bold d-inline-flex align-items-center gap-2 small">
+                    <a href="https://wa.me/919319149644?text=I+need+BiPAP+CPAP+on+Rent" target="_blank" class="btn btn-success btn-lg rounded-pill px-4 py-2 fw-bold d-inline-flex align-items-center gap-2 small">
                         <i class="fa-brands fa-whatsapp"></i> WhatsApp Now
                     </a>
                 </div>
@@ -294,7 +294,7 @@ ob_start();
                             <a href="#inventory" class="btn btn-dm-red rounded-pill fw-bold btn-sm py-2">
                                 <i class="fa-solid fa-tag me-1"></i> Check Models & Price
                             </a>
-                            <a href="https://wa.me/918860600423?text=I+want+to+book+BiPAP+machine+on+rent" target="_blank" class="btn btn-outline-success rounded-pill fw-bold btn-sm py-2">
+                            <a href="https://wa.me/919319149644?text=I+want+to+book+BiPAP+machine+on+rent" target="_blank" class="btn btn-outline-success rounded-pill fw-bold btn-sm py-2">
                                 <i class="fa-brands fa-whatsapp me-1"></i> Rent on WhatsApp
                             </a>
                         </div>
@@ -329,7 +329,7 @@ ob_start();
                             <a href="#inventory" class="btn btn-dm-red rounded-pill fw-bold btn-sm py-2">
                                 <i class="fa-solid fa-tag me-1"></i> Check Models & Price
                             </a>
-                            <a href="https://wa.me/918860600423?text=I+want+to+book+CPAP+machine+on+rent" target="_blank" class="btn btn-outline-success rounded-pill fw-bold btn-sm py-2">
+                            <a href="https://wa.me/919319149644?text=I+want+to+book+CPAP+machine+on+rent" target="_blank" class="btn btn-outline-success rounded-pill fw-bold btn-sm py-2">
                                 <i class="fa-brands fa-whatsapp me-1"></i> Rent on WhatsApp
                             </a>
                         </div>
@@ -364,7 +364,7 @@ ob_start();
                             <a href="#inventory" class="btn btn-dm-red rounded-pill fw-bold btn-sm py-2">
                                 <i class="fa-solid fa-tag me-1"></i> Check Models & Price
                             </a>
-                            <a href="https://wa.me/918860600423?text=I+need+Home+Ventilator+Rental+with+ICU+Care" target="_blank" class="btn btn-outline-success rounded-pill fw-bold btn-sm py-2">
+                            <a href="https://wa.me/919319149644?text=I+need+Home+Ventilator+Rental+with+ICU+Care" target="_blank" class="btn btn-outline-success rounded-pill fw-bold btn-sm py-2">
                                 <i class="fa-brands fa-whatsapp me-1"></i> Rent on WhatsApp
                             </a>
                         </div>
@@ -394,8 +394,8 @@ ob_start();
                         </div>
                     </div>
                 </div>
-                <a href="tel:+918860600423" class="btn btn-dm-red rounded-pill px-4 py-2 fw-bold btn-sm">
-                    <i class="fa-solid fa-phone me-1"></i> Order Rental Kit (+91 88606 00423)
+                <a href="tel:+919319149644" class="btn btn-dm-red rounded-pill px-4 py-2 fw-bold btn-sm">
+                    <i class="fa-solid fa-phone me-1"></i> Order Rental Kit (+91 93191 49644)
                 </a>
             </div>
 
@@ -639,7 +639,7 @@ ob_start();
                     </p>
                 </div>
                 <div class="col-lg-3 text-lg-end">
-                    <a href="tel:+918860600423" class="btn btn-dm-red rounded-pill fw-bold py-2 px-3 btn-sm">
+                    <a href="tel:+919319149644" class="btn btn-dm-red rounded-pill fw-bold py-2 px-3 btn-sm">
                         <i class="fa-solid fa-phone me-1"></i> Speak to Expert
                     </a>
                 </div>
@@ -755,8 +755,8 @@ ob_start();
                 <h3 class="fw-bold text-dark mb-0">Respiratory Equipment Available on Rent - Our Inventory</h3>
                 <p class="text-muted small mb-0">Browse all respiratory equipment models with transparent pricing and instant booking.</p>
             </div>
-            <a href="tel:+918860600423" class="btn btn-outline-dm-red rounded-pill fw-bold btn-sm mt-2 mt-sm-0">
-                <i class="fa-solid fa-phone me-1"></i> Call +91 88606 00423 for Availability
+            <a href="tel:+919319149644" class="btn btn-outline-dm-red rounded-pill fw-bold btn-sm mt-2 mt-sm-0">
+                <i class="fa-solid fa-phone me-1"></i> Call +91 93191 49644 for Availability
             </a>
         </div>
 
@@ -780,7 +780,7 @@ ob_start();
                             <span class="d-block text-muted" style="font-size: 0.72rem;">Rental Price:</span>
                             <span class="fw-bold text-dm-red fs-6">₹4,500 <small class="text-muted">/mo</small></span>
                         </div>
-                        <a href="https://wa.me/918860600423?text=I+want+to+book+ResMed+BiPAP+on+Rent" target="_blank" class="btn btn-dm-red rounded-pill btn-sm px-3 fw-bold">
+                        <a href="https://wa.me/919319149644?text=I+want+to+book+ResMed+BiPAP+on+Rent" target="_blank" class="btn btn-dm-red rounded-pill btn-sm px-3 fw-bold">
                             Book Delivery
                         </a>
                     </div>
@@ -806,7 +806,7 @@ ob_start();
                             <span class="d-block text-muted" style="font-size: 0.72rem;">Rental Price:</span>
                             <span class="fw-bold text-dm-red fs-6">₹4,000 <small class="text-muted">/mo</small></span>
                         </div>
-                        <a href="https://wa.me/918860600423?text=I+want+to+book+BiPAP+Nidek+on+Rent" target="_blank" class="btn btn-dm-red rounded-pill btn-sm px-3 fw-bold">
+                        <a href="https://wa.me/919319149644?text=I+want+to+book+BiPAP+Nidek+on+Rent" target="_blank" class="btn btn-dm-red rounded-pill btn-sm px-3 fw-bold">
                             Book Delivery
                         </a>
                     </div>
@@ -832,7 +832,7 @@ ob_start();
                             <span class="d-block text-muted" style="font-size: 0.72rem;">Rental Price:</span>
                             <span class="fw-bold text-dm-red fs-6">₹2,500 - ₹3,500 <small class="text-muted">/mo</small></span>
                         </div>
-                        <a href="https://wa.me/918860600423?text=I+want+to+book+Auto+CPAP+Machine+on+Rent" target="_blank" class="btn btn-dm-red rounded-pill btn-sm px-3 fw-bold">
+                        <a href="https://wa.me/919319149644?text=I+want+to+book+Auto+CPAP+Machine+on+Rent" target="_blank" class="btn btn-dm-red rounded-pill btn-sm px-3 fw-bold">
                             Book Delivery
                         </a>
                     </div>
@@ -858,7 +858,7 @@ ob_start();
                             <span class="d-block text-muted" style="font-size: 0.72rem;">Rental Price:</span>
                             <span class="fw-bold text-dm-red fs-6">₹3,500 <small class="text-muted">/mo</small></span>
                         </div>
-                        <a href="https://wa.me/918860600423?text=I+want+to+book+Topson+BiPAP+on+Rent" target="_blank" class="btn btn-dm-red rounded-pill btn-sm px-3 fw-bold">
+                        <a href="https://wa.me/919319149644?text=I+want+to+book+Topson+BiPAP+on+Rent" target="_blank" class="btn btn-dm-red rounded-pill btn-sm px-3 fw-bold">
                             Book Delivery
                         </a>
                     </div>
@@ -884,7 +884,7 @@ ob_start();
                             <span class="d-block text-muted" style="font-size: 0.72rem;">Rental Price:</span>
                             <span class="fw-bold text-dm-red fs-6">₹7,500 <small class="text-muted">/mo</small></span>
                         </div>
-                        <a href="https://wa.me/918860600423?text=I+want+to+book+ResMed+Lumis+150+VPAP+on+Rent" target="_blank" class="btn btn-dm-red rounded-pill btn-sm px-3 fw-bold">
+                        <a href="https://wa.me/919319149644?text=I+want+to+book+ResMed+Lumis+150+VPAP+on+Rent" target="_blank" class="btn btn-dm-red rounded-pill btn-sm px-3 fw-bold">
                             Book Delivery
                         </a>
                     </div>
@@ -910,7 +910,7 @@ ob_start();
                             <span class="d-block text-muted" style="font-size: 0.72rem;">Rental Price:</span>
                             <span class="fw-bold text-dm-red fs-6">₹5,000 <small class="text-muted">/mo</small></span>
                         </div>
-                        <a href="https://wa.me/918860600423?text=I+want+to+book+ResMed+AirSense+10+on+Rent" target="_blank" class="btn btn-dm-red rounded-pill btn-sm px-3 fw-bold">
+                        <a href="https://wa.me/919319149644?text=I+want+to+book+ResMed+AirSense+10+on+Rent" target="_blank" class="btn btn-dm-red rounded-pill btn-sm px-3 fw-bold">
                             Book Delivery
                         </a>
                     </div>
@@ -936,7 +936,7 @@ ob_start();
                             <span class="d-block text-muted" style="font-size: 0.72rem;">Rental Price:</span>
                             <span class="fw-bold text-dm-red fs-6">₹5,000 <small class="text-muted">/mo</small></span>
                         </div>
-                        <a href="https://wa.me/918860600423?text=I+want+to+book+ResMed+Floton+ST+on+Rent" target="_blank" class="btn btn-dm-red rounded-pill btn-sm px-3 fw-bold">
+                        <a href="https://wa.me/919319149644?text=I+want+to+book+ResMed+Floton+ST+on+Rent" target="_blank" class="btn btn-dm-red rounded-pill btn-sm px-3 fw-bold">
                             Book Delivery
                         </a>
                     </div>
@@ -962,7 +962,7 @@ ob_start();
                             <span class="d-block text-muted" style="font-size: 0.72rem;">Rent / Buy:</span>
                             <span class="fw-bold text-dm-red fs-6">₹5,500 <small class="text-muted">/mo</small></span>
                         </div>
-                        <a href="https://wa.me/918860600423?text=I+want+to+inquire+about+Evox+NoahSleep+BiPAP" target="_blank" class="btn btn-dm-red rounded-pill btn-sm px-3 fw-bold">
+                        <a href="https://wa.me/919319149644?text=I+want+to+inquire+about+Evox+NoahSleep+BiPAP" target="_blank" class="btn btn-dm-red rounded-pill btn-sm px-3 fw-bold">
                             Rent / Buy
                         </a>
                     </div>
@@ -988,7 +988,7 @@ ob_start();
                             <span class="d-block text-muted" style="font-size: 0.72rem;">Rent / Buy:</span>
                             <span class="fw-bold text-dm-red fs-6">₹3,500 - ₹4,500 <small class="text-muted">/mo</small></span>
                         </div>
-                        <a href="https://wa.me/918860600423?text=I+want+to+inquire+about+Evox+CPAP+BiPAP+series" target="_blank" class="btn btn-dm-red rounded-pill btn-sm px-3 fw-bold">
+                        <a href="https://wa.me/919319149644?text=I+want+to+inquire+about+Evox+CPAP+BiPAP+series" target="_blank" class="btn btn-dm-red rounded-pill btn-sm px-3 fw-bold">
                             Rent / Buy
                         </a>
                     </div>
@@ -1500,11 +1500,11 @@ ob_start();
             <div class="col-lg-4 text-lg-end">
                 <div class="card bg-secondary bg-opacity-25 border border-secondary rounded-4 p-4 text-center">
                     <h6 class="text-white fw-bold mb-1">Prescription Review & Setup</h6>
-                    <span class="text-dm-red fw-bold fs-4 d-block mb-3">+91 88606 00423</span>
-                    <a href="tel:+918860600423" class="btn btn-dm-red rounded-pill w-100 fw-bold py-2 mb-2">
-                        <i class="fa-solid fa-phone me-1"></i> Call Now (+91 88606 00423)
+                    <span class="text-dm-red fw-bold fs-4 d-block mb-3">+91 93191 49644</span>
+                    <a href="tel:+919319149644" class="btn btn-dm-red rounded-pill w-100 fw-bold py-2 mb-2">
+                        <i class="fa-solid fa-phone me-1"></i> Call Now (+91 93191 49644)
                     </a>
-                    <a href="https://wa.me/918860600423?text=I+need+BiPAP+CPAP+on+Rent" target="_blank" class="btn btn-success rounded-pill w-100 fw-bold py-2 btn-sm">
+                    <a href="https://wa.me/919319149644?text=I+need+BiPAP+CPAP+on+Rent" target="_blank" class="btn btn-success rounded-pill w-100 fw-bold py-2 btn-sm">
                         <i class="fa-brands fa-whatsapp me-1"></i> WhatsApp Prescription
                     </a>
                 </div>

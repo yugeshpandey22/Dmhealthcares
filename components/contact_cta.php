@@ -55,15 +55,15 @@
                 <div class="col-lg-5 text-lg-end">
                     <div class="p-4 rounded-4 shadow-sm text-center d-inline-block w-100" style="background: rgba(255, 255, 255, 0.06); border: 1px solid rgba(255, 255, 255, 0.12); backdrop-filter: blur(12px); max-width: 440px;">
                         <small class="text-white-50 text-uppercase fw-bold d-block mb-1" style="font-size: 0.72rem; letter-spacing: 1px;">Speak with Medical Expert</small>
-                        <a href="tel:+918860600423" class="display-6 fw-bold text-white text-decoration-none d-block mb-3 hover-red" style="font-size: 1.85rem;">
-                            +91 88606 00423
+                        <a href="tel:+919319149644" class="display-6 fw-bold text-white text-decoration-none d-block mb-3 hover-red" style="font-size: 1.85rem;">
+                            +91 93191 49644
                         </a>
 
                         <div class="d-grid gap-2">
-                            <a href="tel:+918860600423" class="btn btn-primary btn-lg rounded-pill fw-bold py-3 d-flex align-items-center justify-content-center gap-2 shadow" style="background: var(--primary-color); border: none;">
+                            <a href="tel:+919319149644" class="btn btn-primary btn-lg rounded-pill fw-bold py-3 d-flex align-items-center justify-content-center gap-2 shadow" style="background: var(--primary-color); border: none;">
                                 <i class="fa-solid fa-phone-volume"></i> Call Priority Helpline
                             </a>
-                            <a href="https://wa.me/918860600423?text=Hi%2C%20I%20need%20urgent%20home%20healthcare%20support" target="_blank" class="btn btn-success btn-lg rounded-pill fw-bold py-3 d-flex align-items-center justify-content-center gap-2 shadow-sm" style="background: #25D366; border: none;">
+                            <a href="https://wa.me/919319149644?text=Hi%2C%20I%20need%20urgent%20home%20healthcare%20support" target="_blank" class="btn btn-success btn-lg rounded-pill fw-bold py-3 d-flex align-items-center justify-content-center gap-2 shadow-sm" style="background: #25D366; border: none;">
                                 <i class="fa-brands fa-whatsapp fs-5"></i> Chat on WhatsApp
                             </a>
                         </div>

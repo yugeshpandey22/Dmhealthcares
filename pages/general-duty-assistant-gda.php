@@ -142,10 +142,10 @@ $frontend_custom_sections = '
                 </p>
 
                 <div class="d-flex flex-wrap align-items-center gap-3">
-                    <a href="tel:+918860600423" class="btn btn-danger rounded-pill px-4 py-3 fw-bold shadow-sm d-inline-flex align-items-center gap-2" style="background: #d80000; border-color: #d80000;">
-                        <i class="fa-solid fa-phone"></i> Book GDA: +91 88606 00423
+                    <a href="tel:+919319149644" class="btn btn-danger rounded-pill px-4 py-3 fw-bold shadow-sm d-inline-flex align-items-center gap-2" style="background: #d80000; border-color: #d80000;">
+                        <i class="fa-solid fa-phone"></i> Book GDA: +91 93191 49644
                     </a>
-                    <a href="https://wa.me/918860600423?text=Hello%20DM%20Healthcare,%20I%20urgently%20need%20a%20General%20Duty%20Assistant%20(GDA)%20for%20home%20patient%20care." target="_blank" class="btn btn-outline-success rounded-pill px-4 py-3 fw-bold d-inline-flex align-items-center gap-2">
+                    <a href="https://wa.me/919319149644?text=Hello%20DM%20Healthcare,%20I%20urgently%20need%20a%20General%20Duty%20Assistant%20(GDA)%20for%20home%20patient%20care." target="_blank" class="btn btn-outline-success rounded-pill px-4 py-3 fw-bold d-inline-flex align-items-center gap-2">
                         <i class="fa-brands fa-whatsapp fs-5"></i> WhatsApp Booking
                     </a>
                 </div>
@@ -405,7 +405,7 @@ $frontend_custom_sections = '
                         <li class="mb-2"><i class="fa-solid fa-check text-success me-2"></i> Ryle\'s tube & oral feeding</li>
                         <li class="mb-2"><i class="fa-solid fa-check text-success me-2"></i> Daily vitals tracking</li>
                     </ul>
-                    <a href="tel:+918860600423" class="btn btn-outline-danger w-100 rounded-pill fw-bold">Book 12-Hr Day</a>
+                    <a href="tel:+919319149644" class="btn btn-outline-danger w-100 rounded-pill fw-bold">Book 12-Hr Day</a>
                 </div>
             </div>
 
@@ -419,7 +419,7 @@ $frontend_custom_sections = '
                         <li class="mb-2"><i class="fa-solid fa-check text-success me-2"></i> Night turning & diaper changes</li>
                         <li class="mb-2"><i class="fa-solid fa-check text-success me-2"></i> Prompt free staff replacement</li>
                     </ul>
-                    <a href="tel:+918860600423" class="btn btn-danger w-100 rounded-pill fw-bold" style="background: #d80000; border-color: #d80000;">Book 24-Hr Live-In</a>
+                    <a href="tel:+919319149644" class="btn btn-danger w-100 rounded-pill fw-bold" style="background: #d80000; border-color: #d80000;">Book 24-Hr Live-In</a>
                 </div>
             </div>
 
@@ -433,7 +433,7 @@ $frontend_custom_sections = '
                         <li class="mb-2"><i class="fa-solid fa-check text-success me-2"></i> 2-hourly night bed repositioning</li>
                         <li class="mb-2"><i class="fa-solid fa-check text-success me-2"></i> Peace of mind for family sleep</li>
                     </ul>
-                    <a href="tel:+918860600423" class="btn btn-outline-dark w-100 rounded-pill fw-bold">Book 12-Hr Night</a>
+                    <a href="tel:+919319149644" class="btn btn-outline-dark w-100 rounded-pill fw-bold">Book 12-Hr Night</a>
                 </div>
             </div>
         </div>

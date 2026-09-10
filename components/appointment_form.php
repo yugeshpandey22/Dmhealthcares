@@ -30,7 +30,7 @@
                                 </div>
                                 <div>
                                     <small class="d-block fw-bold text-uppercase text-light mb-0" style="font-size: 10px; letter-spacing: 1px; opacity: 0.8;">24/7 Priority Emergency Helpline</small>
-                                    <a href="tel:+918860600423" class="fs-5 fw-bolder text-white text-decoration-none hover-red">+91 88606 00423</a>
+                                    <a href="tel:+919319149644" class="fs-5 fw-bolder text-white text-decoration-none hover-red">+91 93191 49644</a>
                                 </div>
                             </div>
                         </div>
@@ -156,7 +156,7 @@
                                 <button type="submit" class="btn btn-primary btn-lg fw-bold shadow-sm flex-grow-1 d-flex align-items-center justify-content-center gap-2 transition" style="border-radius: 12px; padding: 14px; background: var(--primary-color); border: none;">
                                     Confirm Appointment <i class="fa-solid fa-arrow-right"></i>
                                 </button>
-                                <a href="tel:+918860600423" class="btn btn-outline-danger btn-lg fw-bold flex-grow-1 d-flex align-items-center justify-content-center gap-2 transition" style="border-radius: 12px; padding: 14px; border: 2px solid var(--primary-color);">
+                                <a href="tel:+919319149644" class="btn btn-outline-danger btn-lg fw-bold flex-grow-1 d-flex align-items-center justify-content-center gap-2 transition" style="border-radius: 12px; padding: 14px; border: 2px solid var(--primary-color);">
                                     <i class="fa-solid fa-phone"></i> Direct Call
                                 </a>
                             </div>
