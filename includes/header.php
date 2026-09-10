@@ -65,7 +65,7 @@ $page_keywords_seo = isset($seo_keywords) && !empty($seo_keywords)
       "image": "<?= $base_domain_url ?>/assets/images/logo.png",
       "description": "DmHealthcare (DmHealthcares) provides 24/7 comprehensive home healthcare services, nursing, elder care, ICU setup at home, physiotherapy, and medical equipment rental in Faridabad, Noida, and Delhi NCR.",
       "telephone": "+91-8860600423",
-      "email": "care@dmhealthcare.com",
+      "email": "dmhealthcare48@gmail.com",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "B-191, IInd Floor, Green Field Colony",
@@ -335,7 +335,7 @@ $page_keywords_seo = isset($seo_keywords) && !empty($seo_keywords)
                         </div>
                         <div>
                             <span class="text-muted d-block small fw-bold text-uppercase" style="font-size: 0.7rem; letter-spacing: 1px;">Email Us</span>
-                            <a href="mailto:care@dmhealthcare.com" class="text-dark fw-bold text-decoration-none" style="font-size: 1.1rem;">care@dmhealthcare.com</a>
+                            <a href="mailto:dmhealthcare48@gmail.com" class="text-dark fw-bold text-decoration-none" style="font-size: 1.1rem;">dmhealthcare48@gmail.com</a>
                         </div>
                     </div>
                 </div>
