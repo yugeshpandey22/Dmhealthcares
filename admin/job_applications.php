@@ -167,19 +167,19 @@ $applications = $stmt->fetchAll(PDO::FETCH_ASSOC);
                         <tr>
                             <td class="ps-4">
                                 <div class="fw-bold text-dark fs-6"><?= htmlspecialchars($app['full_name']) ?></div>
-                                <div class="text-muted small"><i class="fa-solid fa-phone me-1"></i> <?= htmlspecialchars($app['phone_number']) ?></div>
+                                <div class="text-muted small"><i class="fa-solid fa-phone me-1 text-danger"></i> <a href="tel:<?= htmlspecialchars($app['phone'] ?? $app['phone_number'] ?? '') ?>" class="text-decoration-none text-dark fw-bold"><?= htmlspecialchars($app['phone'] ?? $app['phone_number'] ?? 'N/A') ?></a></div>
                                 <?php if(!empty($app['email'])): ?>
-                                    <div class="text-muted small"><i class="fa-regular fa-envelope me-1"></i> <?= htmlspecialchars($app['email']) ?></div>
+                                    <div class="text-muted small"><i class="fa-regular fa-envelope me-1 text-primary"></i> <a href="mailto:<?= htmlspecialchars($app['email']) ?>" class="text-muted text-decoration-none"><?= htmlspecialchars($app['email']) ?></a></div>
                                 <?php endif; ?>
                             </td>
 
                             <td>
-                                <span class="badge bg-light text-dark border px-3 py-2 rounded-pill fw-semibold">
-                                    <?= htmlspecialchars($app['position_applied'] ?? 'General Application') ?>
+                                <?php 
+                                $raw_role = $app['role_applied'] ?? $app['position_applied'] ?? 'General Application';
+                                ?>
+                                <span class="badge bg-danger bg-opacity-10 text-danger border border-danger border-opacity-25 px-3 py-2 rounded-pill fw-bold text-wrap text-start" style="font-size: 0.85rem; max-width: 260px; line-height: 1.4;">
+                                    <i class="fa-solid fa-user-doctor me-1"></i> <?= htmlspecialchars($raw_role) ?>
                                 </span>
-                                <?php if(!empty($app['experience'])): ?>
-                                    <div class="small text-muted mt-1"><i class="fa-solid fa-briefcase me-1"></i> Exp: <?= htmlspecialchars($app['experience']) ?></div>
-                                <?php endif; ?>
                             </td>
 
                             <td>

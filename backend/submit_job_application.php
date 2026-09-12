@@ -8,20 +8,28 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $email = trim($_POST['email'] ?? '');
     $phone = trim($_POST['phone'] ?? '');
     $role_applied = trim($_POST['role_applied'] ?? '');
+    $experience = trim($_POST['experience'] ?? '');
+    $preferred_location = trim($_POST['preferred_location'] ?? '');
 
     if (empty($full_name) || empty($email) || empty($phone) || empty($role_applied)) {
-        echo json_encode(['success' => false, 'message' => 'All fields are required.']);
+        echo json_encode(['success' => false, 'message' => 'All required fields must be filled.']);
         exit;
     }
 
-    // Validate Phone Number (10 digits)
-    if (strlen($phone) !== 10 || !ctype_digit($phone)) {
-        echo json_encode(['success' => false, 'message' => 'Please enter a valid 10-digit mobile number.']);
+    // Validate Phone Number (10 digits starting with 6-9)
+    if (!preg_match('/^[6-9][0-9]{9}$/', $phone)) {
+        echo json_encode(['success' => false, 'message' => 'Please enter a valid 10-digit Indian mobile number.']);
+        exit;
+    }
+
+    // Validate Email
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        echo json_encode(['success' => false, 'message' => 'Please enter a valid email address.']);
         exit;
     }
 
     if (!isset($_FILES['resume']) || $_FILES['resume']['error'] !== UPLOAD_ERR_OK) {
-        echo json_encode(['success' => false, 'message' => 'Please upload a valid resume.']);
+        echo json_encode(['success' => false, 'message' => 'Please upload a valid resume (PDF, DOC, or DOCX).']);
         exit;
     }
 
@@ -30,13 +38,27 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $file_ext = strtolower(pathinfo($file['name'], PATHINFO_EXTENSION));
 
     if (!in_array($file_ext, $allowed_exts)) {
-        echo json_encode(['success' => false, 'message' => 'Invalid file format. Only PDF, DOC, and DOCX are allowed.']);
+        echo json_encode(['success' => false, 'message' => 'Invalid file format. Only PDF, DOC, and DOCX files are allowed.']);
         exit;
     }
 
     if ($file['size'] > 5 * 1024 * 1024) { // 5MB limit
-        echo json_encode(['success' => false, 'message' => 'File size exceeds 5MB limit.']);
+        echo json_encode(['success' => false, 'message' => 'File size exceeds 5MB limit. Please upload a smaller file.']);
         exit;
+    }
+
+    // Format role details with experience & location for clear admin view
+    $extra_details = [];
+    if (!empty($experience)) {
+        $extra_details[] = "Exp: " . $experience;
+    }
+    if (!empty($preferred_location)) {
+        $extra_details[] = "Loc: " . $preferred_location;
+    }
+    
+    $full_role_applied = $role_applied;
+    if (!empty($extra_details)) {
+        $full_role_applied .= " (" . implode(" | ", $extra_details) . ")";
     }
 
     // Generate unique filename
@@ -61,10 +83,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 'full_name' => $full_name,
                 'email' => $email,
                 'phone' => $phone,
-                'role_applied' => $role_applied,
+                'role_applied' => $full_role_applied,
                 'resume_path' => $db_path
             ]);
-            echo json_encode(['success' => true, 'message' => 'Your application has been submitted successfully!']);
+            echo json_encode([
+                'success' => true, 
+                'message' => 'Thank you, ' . htmlspecialchars($full_name) . '! Your application for "' . htmlspecialchars($role_applied) . '" has been received. Our HR coordinator will contact you within 24 hours.'
+            ]);
         } catch (PDOException $e) {
             echo json_encode(['success' => false, 'message' => 'Database error. Please try again later.']);
         }

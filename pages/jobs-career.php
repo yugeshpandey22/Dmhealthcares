@@ -17,8 +17,6 @@ $frontend_custom_sections = '
     width: 100%;
 }
 
-
-
 /* Hero Section */
 .careers-intro-box {
     background: #ffffff;
@@ -29,22 +27,47 @@ $frontend_custom_sections = '
     margin-bottom: 40px;
 }
 
-/* Position Vacancy Pills */
+/* Position Vacancy Pills & Cards */
 .vacancy-pill {
     background: #ffffff;
-    border: 1px solid #e2e8f0;
+    border: 1.5px solid #e2e8f0;
     border-radius: 16px;
     padding: 16px 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    transition: all 0.3s ease;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
     box-shadow: 0 2px 8px rgba(0,0,0,0.02);
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
 }
 .vacancy-pill:hover {
     border-color: #e5252a;
+    background: #fff8f8;
     transform: translateY(-3px);
-    box-shadow: 0 10px 25px rgba(229, 37, 42, 0.08);
+    box-shadow: 0 10px 25px rgba(229, 37, 42, 0.1);
+}
+.vacancy-pill.active-selected {
+    border-color: #e5252a;
+    background: #fff1f2;
+    box-shadow: 0 0 0 3px rgba(229, 37, 42, 0.15);
+}
+
+.btn-apply-pill {
+    font-size: 0.82rem;
+    font-weight: 700;
+    padding: 6px 14px;
+    border-radius: 20px;
+    border: 1.5px solid #e5252a;
+    color: #e5252a;
+    background: transparent;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+}
+.vacancy-pill:hover .btn-apply-pill {
+    background: #e5252a;
+    color: #ffffff;
 }
 
 /* Feature Cards */
@@ -89,6 +112,23 @@ $frontend_custom_sections = '
     top: 0; left: 0; right: 0;
     height: 5px;
     background: linear-gradient(90deg, #e5252a 0%, #ff7300 100%);
+}
+
+.selected-role-banner {
+    background: linear-gradient(135deg, #fff5f5 0%, #ffebeb 100%);
+    border: 1.5px solid #fca5a5;
+    border-radius: 14px;
+    padding: 14px 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    animation: fadeInRole 0.3s ease;
+}
+
+@keyframes fadeInRole {
+    from { opacity: 0; transform: translateY(-6px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
 .career-form-label {
@@ -227,60 +267,153 @@ $frontend_custom_sections = '
                 <!-- Open Positions -->
                 <div class="mb-4">
                     <span class="text-uppercase fw-bold small text-danger" style="color: #e5252a !important; letter-spacing: 1.2px;">Urgent Requirements</span>
-                    <h4 class="fw-bold text-dark mt-1 mb-3">Current Active Vacancies</h4>
+                    <h4 class="fw-bold text-dark mt-1 mb-1">Current Active Vacancies</h4>
+                    <p class="text-muted small mb-3">Click on any role to auto-select and apply directly.</p>
                 </div>
 
-                <div class="d-flex flex-column gap-3 mb-5">
-                    <div class="vacancy-pill">
+                <div class="d-flex flex-column gap-3 mb-5" id="vacanciesList">
+                    <!-- 1. Registered Nurse -->
+                    <div class="vacancy-pill" onclick="selectJobRole(\'Registered Nurse (GNM / B.Sc)\', this)">
                         <div class="d-flex align-items-center gap-3">
-                            <div class="rounded-circle d-flex align-items-center justify-content-center" style="width: 40px; height: 40px; background: rgba(229, 37, 42, 0.1); color: #e5252a;">
-                                <i class="fa-solid fa-user-nurse"></i>
+                            <div class="rounded-circle d-flex align-items-center justify-content-center" style="width: 42px; height: 42px; background: rgba(229, 37, 42, 0.1); color: #e5252a;">
+                                <i class="fa-solid fa-user-nurse fs-5"></i>
                             </div>
                             <div>
                                 <h6 class="fw-bold text-dark mb-0">Registered GNM / B.Sc Nurses</h6>
-                                <small class="text-muted">Home & ICU Patient Care</small>
+                                <small class="text-muted">Home & Bedside Patient Care</small>
                             </div>
                         </div>
-                        <span class="badge bg-danger rounded-pill px-3 py-2 fw-semibold" style="background: #e5252a !important;">15+ Open</span>
+                        <div class="text-end">
+                            <span class="btn-apply-pill d-inline-block"><i class="fa-solid fa-arrow-right me-1"></i> Apply</span>
+                        </div>
                     </div>
 
-                    <div class="vacancy-pill">
+                    <!-- 2. ICU Critical Care Nurse -->
+                    <div class="vacancy-pill" onclick="selectJobRole(\'ICU / Critical Care Nurse\', this)">
                         <div class="d-flex align-items-center gap-3">
-                            <div class="rounded-circle d-flex align-items-center justify-content-center" style="width: 40px; height: 40px; background: rgba(16, 185, 129, 0.1); color: #059669;">
-                                <i class="fa-solid fa-person-cane"></i>
+                            <div class="rounded-circle d-flex align-items-center justify-content-center" style="width: 42px; height: 42px; background: rgba(239, 68, 68, 0.1); color: #dc2626;">
+                                <i class="fa-solid fa-heart-pulse fs-5"></i>
+                            </div>
+                            <div>
+                                <h6 class="fw-bold text-dark mb-0">ICU / Critical Care Nurses</h6>
+                                <small class="text-muted">Tracheostomy & Ventilator Patient Care</small>
+                            </div>
+                        </div>
+                        <div class="text-end">
+                            <span class="btn-apply-pill d-inline-block"><i class="fa-solid fa-arrow-right me-1"></i> Apply</span>
+                        </div>
+                    </div>
+
+                    <!-- 3. Elderly Care Attendant -->
+                    <div class="vacancy-pill" onclick="selectJobRole(\'Elderly Care Attendant\', this)">
+                        <div class="d-flex align-items-center gap-3">
+                            <div class="rounded-circle d-flex align-items-center justify-content-center" style="width: 42px; height: 42px; background: rgba(16, 185, 129, 0.1); color: #059669;">
+                                <i class="fa-solid fa-person-cane fs-5"></i>
                             </div>
                             <div>
                                 <h6 class="fw-bold text-dark mb-0">Elderly Care Attendants</h6>
                                 <small class="text-muted">12-hr & 24-hr Live-in shifts</small>
                             </div>
                         </div>
-                        <span class="badge bg-success rounded-pill px-3 py-2 fw-semibold">25+ Open</span>
+                        <div class="text-end">
+                            <span class="btn-apply-pill d-inline-block"><i class="fa-solid fa-arrow-right me-1"></i> Apply</span>
+                        </div>
                     </div>
 
-                    <div class="vacancy-pill">
+                    <!-- 4. General Patient Caregiver / GDA -->
+                    <div class="vacancy-pill" onclick="selectJobRole(\'General Patient Caregiver / GDA\', this)">
                         <div class="d-flex align-items-center gap-3">
-                            <div class="rounded-circle d-flex align-items-center justify-content-center" style="width: 40px; height: 40px; background: rgba(59, 130, 246, 0.1); color: #2563eb;">
-                                <i class="fa-solid fa-person-walking"></i>
+                            <div class="rounded-circle d-flex align-items-center justify-content-center" style="width: 42px; height: 42px; background: rgba(13, 148, 136, 0.1); color: #0d9488;">
+                                <i class="fa-solid fa-hands-holding-child fs-5"></i>
+                            </div>
+                            <div>
+                                <h6 class="fw-bold text-dark mb-0">Patient Caregiver / GDA Staff</h6>
+                                <small class="text-muted">Bedside Assistance & Hygiene</small>
+                            </div>
+                        </div>
+                        <div class="text-end">
+                            <span class="btn-apply-pill d-inline-block"><i class="fa-solid fa-arrow-right me-1"></i> Apply</span>
+                        </div>
+                    </div>
+
+                    <!-- 5. Support Staff / Ward Boy / Ayah -->
+                    <div class="vacancy-pill" onclick="selectJobRole(\'Support Staff / Ward Boy / Ayah\', this)">
+                        <div class="d-flex align-items-center gap-3">
+                            <div class="rounded-circle d-flex align-items-center justify-content-center" style="width: 42px; height: 42px; background: rgba(147, 51, 234, 0.1); color: #9333ea;">
+                                <i class="fa-solid fa-users-gear fs-5"></i>
+                            </div>
+                            <div>
+                                <h6 class="fw-bold text-dark mb-0">Support Staff & Ward Boys / Ayah</h6>
+                                <small class="text-muted">Clinical Assistance & Patient Mobility</small>
+                            </div>
+                        </div>
+                        <div class="text-end">
+                            <span class="btn-apply-pill d-inline-block"><i class="fa-solid fa-arrow-right me-1"></i> Apply</span>
+                        </div>
+                    </div>
+
+                    <!-- 6. Physiotherapist -->
+                    <div class="vacancy-pill" onclick="selectJobRole(\'Physiotherapist (BPT / MPT)\', this)">
+                        <div class="d-flex align-items-center gap-3">
+                            <div class="rounded-circle d-flex align-items-center justify-content-center" style="width: 42px; height: 42px; background: rgba(59, 130, 246, 0.1); color: #2563eb;">
+                                <i class="fa-solid fa-person-walking fs-5"></i>
                             </div>
                             <div>
                                 <h6 class="fw-bold text-dark mb-0">Physiotherapists (BPT / MPT)</h6>
-                                <small class="text-muted">Ortho & Neuro Rehabilitation</small>
+                                <small class="text-muted">Ortho & Neuro Home Rehabilitation</small>
                             </div>
                         </div>
-                        <span class="badge bg-primary rounded-pill px-3 py-2 fw-semibold">8+ Open</span>
+                        <div class="text-end">
+                            <span class="btn-apply-pill d-inline-block"><i class="fa-solid fa-arrow-right me-1"></i> Apply</span>
+                        </div>
                     </div>
 
-                    <div class="vacancy-pill">
+                    <!-- 7. Phlebotomist / Lab Tech -->
+                    <div class="vacancy-pill" onclick="selectJobRole(\'Phlebotomist / Lab Technician\', this)">
                         <div class="d-flex align-items-center gap-3">
-                            <div class="rounded-circle d-flex align-items-center justify-content-center" style="width: 40px; height: 40px; background: rgba(245, 158, 11, 0.1); color: #d97706;">
-                                <i class="fa-solid fa-vial"></i>
+                            <div class="rounded-circle d-flex align-items-center justify-content-center" style="width: 42px; height: 42px; background: rgba(245, 158, 11, 0.1); color: #d97706;">
+                                <i class="fa-solid fa-vial fs-5"></i>
                             </div>
                             <div>
                                 <h6 class="fw-bold text-dark mb-0">Phlebotomists & Lab Techs</h6>
                                 <small class="text-muted">Doorstep Blood Sample Collection</small>
                             </div>
                         </div>
-                        <span class="badge bg-warning text-dark rounded-pill px-3 py-2 fw-semibold">5+ Open</span>
+                        <div class="text-end">
+                            <span class="btn-apply-pill d-inline-block"><i class="fa-solid fa-arrow-right me-1"></i> Apply</span>
+                        </div>
+                    </div>
+
+                    <!-- 8. Medical Equipment Technician -->
+                    <div class="vacancy-pill" onclick="selectJobRole(\'Medical Equipment Technician\', this)">
+                        <div class="d-flex align-items-center gap-3">
+                            <div class="rounded-circle d-flex align-items-center justify-content-center" style="width: 42px; height: 42px; background: rgba(14, 165, 233, 0.1); color: #0284c7;">
+                                <i class="fa-solid fa-screwdriver-wrench fs-5"></i>
+                            </div>
+                            <div>
+                                <h6 class="fw-bold text-dark mb-0">Medical Equipment Technicians</h6>
+                                <small class="text-muted">BiPAP, CPAP, Oxygen & Beds</small>
+                            </div>
+                        </div>
+                        <div class="text-end">
+                            <span class="btn-apply-pill d-inline-block"><i class="fa-solid fa-arrow-right me-1"></i> Apply</span>
+                        </div>
+                    </div>
+
+                    <!-- 9. General Physician / Doctor -->
+                    <div class="vacancy-pill" onclick="selectJobRole(\'General Physician / Doctor\', this)">
+                        <div class="d-flex align-items-center gap-3">
+                            <div class="rounded-circle d-flex align-items-center justify-content-center" style="width: 42px; height: 42px; background: rgba(168, 85, 247, 0.1); color: #9333ea;">
+                                <i class="fa-solid fa-user-doctor fs-5"></i>
+                            </div>
+                            <div>
+                                <h6 class="fw-bold text-dark mb-0">General Physicians (MBBS)</h6>
+                                <small class="text-muted">Home Consultations & Follow-ups</small>
+                            </div>
+                        </div>
+                        <div class="text-end">
+                            <span class="btn-apply-pill d-inline-block"><i class="fa-solid fa-arrow-right me-1"></i> Apply</span>
+                        </div>
                     </div>
                 </div>
 
@@ -334,7 +467,7 @@ $frontend_custom_sections = '
             <!-- Right Column: Online Job Application Form -->
             <div class="col-lg-7" id="apply-now">
                 <div class="career-form-card">
-                    <div class="d-flex align-items-center justify-content-between mb-4">
+                    <div class="d-flex align-items-center justify-content-between mb-3">
                         <div>
                             <span class="badge px-3 py-1 rounded-pill small fw-bold mb-1" style="background: rgba(229, 37, 42, 0.1); color: #e5252a;">
                                 Express Hiring Portal
@@ -343,33 +476,46 @@ $frontend_custom_sections = '
                         </div>
                     </div>
 
+                    <!-- Selected Role Alert Highlight -->
+                    <div id="selectedRoleAlert" class="selected-role-banner" style="display: none;">
+                        <div class="d-flex align-items-center gap-2">
+                            <i class="fa-solid fa-circle-check text-danger fs-5"></i>
+                            <div>
+                                <small class="text-muted fw-bold d-block text-uppercase" style="font-size: 0.72rem; letter-spacing: 0.5px;">Applying For Role</small>
+                                <strong id="selectedRoleText" class="text-dark fs-6">Registered Nurse (GNM / B.Sc)</strong>
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-sm btn-outline-secondary rounded-pill px-3 py-1" onclick="focusRoleSelect()">Change</button>
+                    </div>
+
                     <div id="jobAlertBox" style="display: none;" class="alert rounded-3 mb-4 small" role="alert"></div>
 
                     <form id="dmJobForm" enctype="multipart/form-data">
                         <div class="row g-3">
                             <div class="col-md-6">
                                 <label class="career-form-label">Full Name <span class="text-danger">*</span></label>
-                                <input type="text" name="full_name" class="form-control career-input" placeholder="Enter your full name" required>
+                                <input type="text" name="full_name" id="appFullName" class="form-control career-input" placeholder="Enter your full name" required>
                             </div>
                             
                             <div class="col-md-6">
                                 <label class="career-form-label">Mobile Number <span class="text-danger">*</span></label>
-                                <input type="tel" name="phone" class="form-control career-input" placeholder="10-digit mobile number" pattern="^[6-9][0-9]{9}$" maxlength="10" title="Valid 10-digit phone number" oninput="this.value = this.value.replace(/[^0-9]/g, \'\').slice(0, 10);" required>
+                                <input type="tel" name="phone" id="appPhone" class="form-control career-input" placeholder="10-digit mobile number" pattern="^[6-9][0-9]{9}$" maxlength="10" title="Valid 10-digit Indian phone number" oninput="this.value = this.value.replace(/[^0-9]/g, \'\').slice(0, 10);" required>
                             </div>
 
                             <div class="col-md-6">
                                 <label class="career-form-label">Email Address <span class="text-danger">*</span></label>
-                                <input type="email" name="email" class="form-control career-input" placeholder="name@example.com" required>
+                                <input type="email" name="email" id="appEmail" class="form-control career-input" placeholder="name@example.com" required>
                             </div>
 
                             <div class="col-md-6">
                                 <label class="career-form-label">Position Applying For <span class="text-danger">*</span></label>
-                                <select name="role_applied" class="form-select career-input" required>
-                                    <option value="" disabled selected>Select job profile...</option>
+                                <select name="role_applied" id="roleAppliedSelect" class="form-select career-input" onchange="handleRoleDropdownChange(this.value)" required>
+                                    <option value="" disabled selected>Select job position...</option>
                                     <option value="Registered Nurse (GNM / B.Sc)">Registered Nurse (GNM / B.Sc)</option>
                                     <option value="ICU / Critical Care Nurse">ICU / Critical Care Nurse</option>
                                     <option value="Elderly Care Attendant">Elderly Care Attendant</option>
-                                    <option value="General Patient Caregiver">General Patient Caregiver</option>
+                                    <option value="General Patient Caregiver / GDA">General Patient Caregiver / GDA</option>
+                                    <option value="Support Staff / Ward Boy / Ayah">Support Staff / Ward Boy / Ayah</option>
                                     <option value="Physiotherapist (BPT / MPT)">Physiotherapist (BPT / MPT)</option>
                                     <option value="General Physician / Doctor">General Physician / Doctor</option>
                                     <option value="Medical Equipment Technician">Medical Equipment Technician</option>
@@ -384,8 +530,8 @@ $frontend_custom_sections = '
                                 <select name="experience" class="form-select career-input" required>
                                     <option value="" disabled selected>Select experience...</option>
                                     <option value="Fresher (0-1 yr)">Fresher (0 - 1 Year)</option>
-                                    <option value="1-3 Years">1 - 3 Years</option>
-                                    <option value="3-5 Years">3 - 5 Years</option>
+                                    <option value="1-3 Years">1 - 3 Years Experience</option>
+                                    <option value="3-5 Years">3 - 5 Years Experience</option>
                                     <option value="5+ Years">5+ Years Experience</option>
                                 </select>
                             </div>
@@ -484,6 +630,80 @@ $frontend_custom_sections = '
 </div>
 
 <script>
+// Select Job Role Function
+function selectJobRole(roleName, element) {
+    const roleSelect = document.getElementById("roleAppliedSelect");
+    const roleAlert = document.getElementById("selectedRoleAlert");
+    const roleText = document.getElementById("selectedRoleText");
+
+    if (roleSelect) {
+        // Try exact match or partial match
+        let matched = false;
+        for (let i = 0; i < roleSelect.options.length; i++) {
+            const optVal = roleSelect.options[i].value;
+            if (optVal === roleName || optVal.toLowerCase().includes(roleName.toLowerCase()) || roleName.toLowerCase().includes(optVal.toLowerCase())) {
+                roleSelect.selectedIndex = i;
+                matched = true;
+                break;
+            }
+        }
+        if (!matched) {
+            roleSelect.value = "Other";
+        }
+    }
+
+    if (roleAlert && roleText) {
+        roleText.textContent = roleName;
+        roleAlert.style.display = "flex";
+    }
+
+    // Highlight active vacancy pill
+    document.querySelectorAll(".vacancy-pill").forEach(p => p.classList.remove("active-selected"));
+    if (element) {
+        element.classList.add("active-selected");
+    }
+
+    // Smooth scroll to form
+    const applySection = document.getElementById("apply-now");
+    if (applySection) {
+        applySection.scrollIntoView({ behavior: "smooth", block: "start" });
+        // Focus first field
+        setTimeout(() => {
+            const nameInput = document.getElementById("appFullName");
+            if (nameInput) nameInput.focus();
+        }, 600);
+    }
+}
+
+function handleRoleDropdownChange(val) {
+    const roleAlert = document.getElementById("selectedRoleAlert");
+    const roleText = document.getElementById("selectedRoleText");
+    if (val && val !== "") {
+        if (roleAlert && roleText) {
+            roleText.textContent = val;
+            roleAlert.style.display = "flex";
+        }
+    } else {
+        if (roleAlert) roleAlert.style.display = "none";
+    }
+}
+
+function focusRoleSelect() {
+    const roleSelect = document.getElementById("roleAppliedSelect");
+    if (roleSelect) {
+        roleSelect.focus();
+    }
+}
+
+// Check URL Params for preselection (e.g. jobs-career.php?role=nurse)
+document.addEventListener("DOMContentLoaded", function() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const roleParam = urlParams.get("role") || urlParams.get("position");
+    if (roleParam) {
+        selectJobRole(decodeURIComponent(roleParam));
+    }
+});
+
 // Resume Upload Handler
 const careerResume = document.getElementById("careerResumeInput");
 const careerFileDisp = document.getElementById("careerFileDisplay");
@@ -530,6 +750,9 @@ if (jobFormElem) {
                 alertBox.innerHTML = "<i class=\'fa-solid fa-circle-check me-2\'></i>" + data.message;
                 jobFormElem.reset();
                 resetResumeUpload();
+                const roleAlert = document.getElementById("selectedRoleAlert");
+                if (roleAlert) roleAlert.style.display = "none";
+                document.querySelectorAll(".vacancy-pill").forEach(p => p.classList.remove("active-selected"));
             } else {
                 alertBox.className = "alert alert-danger fw-bold border-0";
                 alertBox.innerHTML = "<i class=\'fa-solid fa-triangle-exclamation me-2\'></i>" + data.message;
@@ -544,6 +767,8 @@ if (jobFormElem) {
             alertBox.innerHTML = "<i class=\'fa-solid fa-circle-check me-2\'></i> Application submitted successfully! Our HR team will contact you within 24 hours.";
             jobFormElem.reset();
             resetResumeUpload();
+            const roleAlert = document.getElementById("selectedRoleAlert");
+            if (roleAlert) roleAlert.style.display = "none";
             submitBtn.disabled = false;
             submitBtn.innerHTML = "<i class=\'fa-solid fa-paper-plane me-2\'></i> Submit Application & Join Team";
         });
