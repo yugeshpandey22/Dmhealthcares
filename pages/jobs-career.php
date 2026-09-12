@@ -272,14 +272,14 @@ $frontend_custom_sections = '
                 </div>
 
                 <div class="d-flex flex-column gap-3 mb-5" id="vacanciesList">
-                    <!-- 1. Registered Nurse -->
-                    <div class="vacancy-pill" onclick="selectJobRole(\'Registered Nurse (GNM / B.Sc)\', this)">
+                    <!-- 1. Qualified Nurse -->
+                    <div class="vacancy-pill" onclick="selectJobRole(\'Qualified Nurse (GNM / B.Sc)\', this)">
                         <div class="d-flex align-items-center gap-3">
                             <div class="rounded-circle d-flex align-items-center justify-content-center" style="width: 42px; height: 42px; background: rgba(229, 37, 42, 0.1); color: #e5252a;">
                                 <i class="fa-solid fa-user-nurse fs-5"></i>
                             </div>
                             <div>
-                                <h6 class="fw-bold text-dark mb-0">Registered GNM / B.Sc Nurses</h6>
+                                <h6 class="fw-bold text-dark mb-0">Qualified Nurse (GNM / B.Sc)</h6>
                                 <small class="text-muted">Home & Bedside Patient Care</small>
                             </div>
                         </div>
@@ -288,15 +288,15 @@ $frontend_custom_sections = '
                         </div>
                     </div>
 
-                    <!-- 2. ICU Critical Care Nurse -->
-                    <div class="vacancy-pill" onclick="selectJobRole(\'ICU / Critical Care Nurse\', this)">
+                    <!-- 2. ICU Care - Critical Care Nurse -->
+                    <div class="vacancy-pill" onclick="selectJobRole(\'ICU Care - Critical Care Nurse\', this)">
                         <div class="d-flex align-items-center gap-3">
                             <div class="rounded-circle d-flex align-items-center justify-content-center" style="width: 42px; height: 42px; background: rgba(239, 68, 68, 0.1); color: #dc2626;">
                                 <i class="fa-solid fa-heart-pulse fs-5"></i>
                             </div>
                             <div>
-                                <h6 class="fw-bold text-dark mb-0">ICU / Critical Care Nurses</h6>
-                                <small class="text-muted">Tracheostomy & Ventilator Patient Care</small>
+                                <h6 class="fw-bold text-dark mb-0">ICU Care - Critical Care Nurse</h6>
+                                <small class="text-muted">Tracheostomy & Ventilator Support</small>
                             </div>
                         </div>
                         <div class="text-end">
@@ -304,14 +304,14 @@ $frontend_custom_sections = '
                         </div>
                     </div>
 
-                    <!-- 3. Elderly Care Attendant -->
-                    <div class="vacancy-pill" onclick="selectJobRole(\'Elderly Care Attendant\', this)">
+                    <!-- 3. Elderly Caretaker & Elder Care -->
+                    <div class="vacancy-pill" onclick="selectJobRole(\'Elderly Caretaker\', this)">
                         <div class="d-flex align-items-center gap-3">
                             <div class="rounded-circle d-flex align-items-center justify-content-center" style="width: 42px; height: 42px; background: rgba(16, 185, 129, 0.1); color: #059669;">
                                 <i class="fa-solid fa-person-cane fs-5"></i>
                             </div>
                             <div>
-                                <h6 class="fw-bold text-dark mb-0">Elderly Care Attendants</h6>
+                                <h6 class="fw-bold text-dark mb-0">Elderly Caretaker / Elder Care</h6>
                                 <small class="text-muted">12-hr & 24-hr Live-in shifts</small>
                             </div>
                         </div>
@@ -320,15 +320,15 @@ $frontend_custom_sections = '
                         </div>
                     </div>
 
-                    <!-- 4. General Patient Caregiver / GDA -->
-                    <div class="vacancy-pill" onclick="selectJobRole(\'General Patient Caregiver / GDA\', this)">
+                    <!-- 4. Patient Attendant Services -->
+                    <div class="vacancy-pill" onclick="selectJobRole(\'Patient Attendant Services\', this)">
                         <div class="d-flex align-items-center gap-3">
                             <div class="rounded-circle d-flex align-items-center justify-content-center" style="width: 42px; height: 42px; background: rgba(13, 148, 136, 0.1); color: #0d9488;">
-                                <i class="fa-solid fa-hands-holding-child fs-5"></i>
+                                <i class="fa-solid fa-hand-holding-medical fs-5"></i>
                             </div>
                             <div>
-                                <h6 class="fw-bold text-dark mb-0">Patient Caregiver / GDA Staff</h6>
-                                <small class="text-muted">Bedside Assistance & Hygiene</small>
+                                <h6 class="fw-bold text-dark mb-0">Patient Attendant Services</h6>
+                                <small class="text-muted">Male & Female Attendants</small>
                             </div>
                         </div>
                         <div class="text-end">
@@ -336,14 +336,30 @@ $frontend_custom_sections = '
                         </div>
                     </div>
 
-                    <!-- 5. Support Staff / Ward Boy / Ayah -->
-                    <div class="vacancy-pill" onclick="selectJobRole(\'Support Staff / Ward Boy / Ayah\', this)">
+                    <!-- 5. General Duty Assistant (GDA) -->
+                    <div class="vacancy-pill" onclick="selectJobRole(\'General Duty Assistant (GDA)\', this)">
+                        <div class="d-flex align-items-center gap-3">
+                            <div class="rounded-circle d-flex align-items-center justify-content-center" style="width: 42px; height: 42px; background: rgba(14, 165, 233, 0.1); color: #0284c7;">
+                                <i class="fa-solid fa-bed-pulse fs-5"></i>
+                            </div>
+                            <div>
+                                <h6 class="fw-bold text-dark mb-0">General Duty Assistant (GDA)</h6>
+                                <small class="text-muted">Hospital & Home Bedside Care</small>
+                            </div>
+                        </div>
+                        <div class="text-end">
+                            <span class="btn-apply-pill d-inline-block"><i class="fa-solid fa-arrow-right me-1"></i> Apply</span>
+                        </div>
+                    </div>
+
+                    <!-- 6. Support Staff / Ward Boy / Ayah -->
+                    <div class="vacancy-pill" onclick="selectJobRole(\'Support Staff (Ward Boy / Ayah)\', this)">
                         <div class="d-flex align-items-center gap-3">
                             <div class="rounded-circle d-flex align-items-center justify-content-center" style="width: 42px; height: 42px; background: rgba(147, 51, 234, 0.1); color: #9333ea;">
                                 <i class="fa-solid fa-users-gear fs-5"></i>
                             </div>
                             <div>
-                                <h6 class="fw-bold text-dark mb-0">Support Staff & Ward Boys / Ayah</h6>
+                                <h6 class="fw-bold text-dark mb-0">Support Staff (Ward Boy / Ayah)</h6>
                                 <small class="text-muted">Clinical Assistance & Patient Mobility</small>
                             </div>
                         </div>
@@ -352,14 +368,30 @@ $frontend_custom_sections = '
                         </div>
                     </div>
 
-                    <!-- 6. Physiotherapist -->
-                    <div class="vacancy-pill" onclick="selectJobRole(\'Physiotherapist (BPT / MPT)\', this)">
+                    <!-- 7. Live-In Care (24 Hours Care) -->
+                    <div class="vacancy-pill" onclick="selectJobRole(\'Live-In Care (24 Hours Care)\', this)">
+                        <div class="d-flex align-items-center gap-3">
+                            <div class="rounded-circle d-flex align-items-center justify-content-center" style="width: 42px; height: 42px; background: rgba(245, 158, 11, 0.1); color: #d97706;">
+                                <i class="fa-solid fa-clock-rotate-left fs-5"></i>
+                            </div>
+                            <div>
+                                <h6 class="fw-bold text-dark mb-0">Live-In Care (24 Hours Care)</h6>
+                                <small class="text-muted">Full-Time Dedicated Home Caregiver</small>
+                            </div>
+                        </div>
+                        <div class="text-end">
+                            <span class="btn-apply-pill d-inline-block"><i class="fa-solid fa-arrow-right me-1"></i> Apply</span>
+                        </div>
+                    </div>
+
+                    <!-- 8. Physiotherapist -->
+                    <div class="vacancy-pill" onclick="selectJobRole(\'Physiotherapist\', this)">
                         <div class="d-flex align-items-center gap-3">
                             <div class="rounded-circle d-flex align-items-center justify-content-center" style="width: 42px; height: 42px; background: rgba(59, 130, 246, 0.1); color: #2563eb;">
                                 <i class="fa-solid fa-person-walking fs-5"></i>
                             </div>
                             <div>
-                                <h6 class="fw-bold text-dark mb-0">Physiotherapists (BPT / MPT)</h6>
+                                <h6 class="fw-bold text-dark mb-0">Physiotherapist</h6>
                                 <small class="text-muted">Ortho & Neuro Home Rehabilitation</small>
                             </div>
                         </div>
@@ -368,46 +400,14 @@ $frontend_custom_sections = '
                         </div>
                     </div>
 
-                    <!-- 7. Phlebotomist / Lab Tech -->
-                    <div class="vacancy-pill" onclick="selectJobRole(\'Phlebotomist / Lab Technician\', this)">
-                        <div class="d-flex align-items-center gap-3">
-                            <div class="rounded-circle d-flex align-items-center justify-content-center" style="width: 42px; height: 42px; background: rgba(245, 158, 11, 0.1); color: #d97706;">
-                                <i class="fa-solid fa-vial fs-5"></i>
-                            </div>
-                            <div>
-                                <h6 class="fw-bold text-dark mb-0">Phlebotomists & Lab Techs</h6>
-                                <small class="text-muted">Doorstep Blood Sample Collection</small>
-                            </div>
-                        </div>
-                        <div class="text-end">
-                            <span class="btn-apply-pill d-inline-block"><i class="fa-solid fa-arrow-right me-1"></i> Apply</span>
-                        </div>
-                    </div>
-
-                    <!-- 8. Medical Equipment Technician -->
-                    <div class="vacancy-pill" onclick="selectJobRole(\'Medical Equipment Technician\', this)">
-                        <div class="d-flex align-items-center gap-3">
-                            <div class="rounded-circle d-flex align-items-center justify-content-center" style="width: 42px; height: 42px; background: rgba(14, 165, 233, 0.1); color: #0284c7;">
-                                <i class="fa-solid fa-screwdriver-wrench fs-5"></i>
-                            </div>
-                            <div>
-                                <h6 class="fw-bold text-dark mb-0">Medical Equipment Technicians</h6>
-                                <small class="text-muted">BiPAP, CPAP, Oxygen & Beds</small>
-                            </div>
-                        </div>
-                        <div class="text-end">
-                            <span class="btn-apply-pill d-inline-block"><i class="fa-solid fa-arrow-right me-1"></i> Apply</span>
-                        </div>
-                    </div>
-
-                    <!-- 9. General Physician / Doctor -->
-                    <div class="vacancy-pill" onclick="selectJobRole(\'General Physician / Doctor\', this)">
+                    <!-- 9. Physician / Doctor -->
+                    <div class="vacancy-pill" onclick="selectJobRole(\'Physician / Doctor\', this)">
                         <div class="d-flex align-items-center gap-3">
                             <div class="rounded-circle d-flex align-items-center justify-content-center" style="width: 42px; height: 42px; background: rgba(168, 85, 247, 0.1); color: #9333ea;">
                                 <i class="fa-solid fa-user-doctor fs-5"></i>
                             </div>
                             <div>
-                                <h6 class="fw-bold text-dark mb-0">General Physicians (MBBS)</h6>
+                                <h6 class="fw-bold text-dark mb-0">Physician / Doctor</h6>
                                 <small class="text-muted">Home Consultations & Follow-ups</small>
                             </div>
                         </div>
@@ -482,7 +482,7 @@ $frontend_custom_sections = '
                             <i class="fa-solid fa-circle-check text-danger fs-5"></i>
                             <div>
                                 <small class="text-muted fw-bold d-block text-uppercase" style="font-size: 0.72rem; letter-spacing: 0.5px;">Applying For Role</small>
-                                <strong id="selectedRoleText" class="text-dark fs-6">Registered Nurse (GNM / B.Sc)</strong>
+                                <strong id="selectedRoleText" class="text-dark fs-6">Qualified Nurse (GNM / B.Sc)</strong>
                             </div>
                         </div>
                         <button type="button" class="btn btn-sm btn-outline-secondary rounded-pill px-3 py-1" onclick="focusRoleSelect()">Change</button>
@@ -511,59 +511,22 @@ $frontend_custom_sections = '
                                 <label class="career-form-label">Position Applying For <span class="text-danger">*</span></label>
                                 <select name="role_applied" id="roleAppliedSelect" class="form-select career-input" onchange="handleRoleDropdownChange(this.value)" required>
                                     <option value="" disabled selected>-- Select Home Care Position --</option>
-                                    
-                                    <optgroup label="🩺 Nursing & Critical Care at Home">
-                                        <option value="Registered Nurse (GNM / B.Sc)">Registered Nurse (GNM / B.Sc)</option>
-                                        <option value="ICU / Critical Care Nurse">ICU / Critical Care Nurse (Tracheostomy / Ventilator)</option>
-                                        <option value="General Nursing & Bedside Care">General Nursing & Bedside Care</option>
-                                        <option value="Injection & IV Infusion Nurse">Injection & IV Infusion Nurse</option>
-                                        <option value="Wound Care & Dressing Nurse">Wound Care & Dressing Nurse</option>
-                                        <option value="Palliative & Cancer Care Nurse">Palliative & Cancer Care Nurse</option>
-                                    </optgroup>
-
-                                    <optgroup label="🤝 Patient Attendants & Caregivers (12h / 24h Live-in)">
-                                        <option value="Elderly Care Attendant (12h / 24h)">Elderly Care Attendant (12h / 24h Live-in)</option>
-                                        <option value="Patient Care Attendant (Male / Female)">Patient Care Attendant (Male / Female)</option>
-                                        <option value="General Duty Assistant (GDA)">General Duty Assistant (GDA)</option>
-                                        <option value="Live-In 24-Hours Patient Caregiver">Live-In 24-Hours Patient Caregiver</option>
-                                        <option value="Dementia & Alzheimer Caregiver">Dementia & Alzheimer Caregiver</option>
-                                        <option value="Stroke & Paralysis Care Attendant">Stroke & Paralysis Care Attendant</option>
-                                        <option value="Post-Surgery Recovery Attendant">Post-Surgery Recovery Attendant</option>
-                                    </optgroup>
-
-                                    <optgroup label="🏥 Support Staff & Hospital / Home Help">
-                                        <option value="Support Staff / Ward Boy">Support Staff / Ward Boy</option>
-                                        <option value="Female Ayah / Attendant">Female Ayah / Attendant</option>
-                                        <option value="Staircase & Patient Mobility Helper">Staircase & Patient Mobility Helper</option>
-                                    </optgroup>
-
-                                    <optgroup label="🏃 Physiotherapy & Rehabilitation">
-                                        <option value="Physiotherapist (BPT / MPT)">Physiotherapist (BPT / MPT)</option>
-                                        <option value="Neuro Rehabilitation Physiotherapist">Neuro Rehabilitation Physiotherapist</option>
-                                        <option value="Orthopedic / Post-Op Physiotherapist">Orthopedic / Post-Op Physiotherapist</option>
-                                        <option value="Geriatric (Elderly) Physiotherapist">Geriatric (Elderly) Physiotherapist</option>
-                                    </optgroup>
-
-                                    <optgroup label="👨‍⚕️ Doctors & Clinical Consultation">
-                                        <option value="General Physician / Home Visit Doctor">General Physician / Home Visit Doctor (MBBS)</option>
-                                        <option value="Critical Care / ICU Specialist Doctor">Critical Care / ICU Specialist Doctor</option>
-                                    </optgroup>
-
-                                    <optgroup label="🧪 Diagnostics & Lab Technician">
-                                        <option value="Phlebotomist (Home Sample Collection)">Phlebotomist (Home Sample Collection)</option>
-                                        <option value="Lab Technician (DMLT / BMLT)">Lab Technician (DMLT / BMLT)</option>
-                                    </optgroup>
-
-                                    <optgroup label="⚙️ Medical Equipment & Biomedical Support">
-                                        <option value="Medical Equipment Technician">Medical Equipment Technician (BiPAP / CPAP / Oxygen)</option>
-                                        <option value="Biomedical Service Engineer">Biomedical Service Engineer</option>
-                                    </optgroup>
-
-                                    <optgroup label="💼 Operations & Coordination">
-                                        <option value="Patient Care Coordinator / Tele-Counsellor">Patient Care Coordinator / Tele-Counsellor</option>
-                                        <option value="Field Nursing Supervisor">Field Nursing Supervisor</option>
-                                        <option value="Other Healthcare Profile">Other Healthcare Profile</option>
-                                    </optgroup>
+                                    <option value="Qualified Nurse (GNM / B.Sc)">Qualified Nurse (GNM / B.Sc)</option>
+                                    <option value="ICU Care - Critical Care Nurse">ICU Care - Critical Care Nurse</option>
+                                    <option value="Patient Care - General Nursing">Patient Care - General Nursing</option>
+                                    <option value="Elder Care - Basic Care">Elder Care - Basic Care</option>
+                                    <option value="Elderly Caretaker">Elderly Caretaker</option>
+                                    <option value="Patient Attendant Services">Patient Attendant Services</option>
+                                    <option value="Attendant Providing (Male / Female)">Attendant Providing (Male / Female)</option>
+                                    <option value="General Duty Assistant (GDA)">General Duty Assistant (GDA)</option>
+                                    <option value="Support Staff (Ward Boy / Ayah)">Support Staff (Ward Boy / Ayah)</option>
+                                    <option value="Live-In Care (24 Hours Care)">Live-In Care (24 Hours Care)</option>
+                                    <option value="Palliative Care Attendant">Palliative Care Attendant</option>
+                                    <option value="Assisted Living Caregiver">Assisted Living Caregiver</option>
+                                    <option value="Staircase Mobility Assistance">Staircase Mobility Assistance</option>
+                                    <option value="Physiotherapist">Physiotherapist</option>
+                                    <option value="Physician / Doctor">Physician / Doctor</option>
+                                    <option value="Other Home Care Profile">Other Home Care Profile</option>
                                 </select>
                             </div>
 
