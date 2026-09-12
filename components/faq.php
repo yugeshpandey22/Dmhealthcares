@@ -10,7 +10,7 @@
             </h2>
             <div style="width: 60px; height: 4px; background: var(--primary-color); margin: 0 auto 16px auto; border-radius: 2px;"></div>
             <p class="text-muted fs-6 mx-auto" style="max-width: 620px;">
-                Quick answers regarding home nurse deployment, medical equipment rental, ICU setup, and emergency response.
+                Quick answers regarding home nurse deployment, medical equipment services, ICU setup, and emergency response.
             </p>
         </div>
 
@@ -50,12 +50,12 @@
                     <div class="accordion-item mb-3 border-0 shadow-sm custom-faq-item">
                         <h2 class="accordion-header" id="headingThree">
                             <button class="accordion-button fw-bold py-3 px-4 collapsed custom-faq-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                <span class="me-3 faq-num text-danger fw-bold">03.</span> Do you provide hospital beds, oxygen concentrators, and BiPAP machines on rent?
+                                <span class="me-3 faq-num text-danger fw-bold">03.</span> Do you provide hospital beds, oxygen concentrators, and BiPAP machine services at home?
                             </button>
                         </h2>
                         <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
                             <div class="accordion-body text-secondary px-4 pb-4 pt-1 lh-base">
-                                Yes. We have an extensive inventory of sanitized, biomedical-tested equipment available for rent and purchase, including motorized ICU beds, 5L/10L oxygen concentrators, BiPAP/CPAP devices, cardiac monitors, and suction machines. Our technicians handle complete doorstep setup and demonstration.
+                                Yes. We have an extensive inventory of sanitized, biomedical-tested equipment with full home delivery, installation, and demonstration services, including motorized ICU beds, 5L/10L oxygen concentrators, BiPAP/CPAP devices, cardiac monitors, and suction machines. Our technicians handle complete doorstep setup and maintenance support.
                             </div>
                         </div>
                     </div>

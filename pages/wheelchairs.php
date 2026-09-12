@@ -4,10 +4,10 @@
  * Modern, Bootstrap 5-Powered Medical Equipment Portal
  */
 
-$display_title = "Wheelchairs on Rent & Sale";
-$seo_title = "Wheelchair on Rent & Sale in Delhi NCR, Faridabad & Noida - DM Healthcare";
-$seo_desc = "Rent or buy manual, motorized electric, recliner, commode & stair-climbing wheelchairs across Delhi NCR, Faridabad, Noida & Gurugram. Same-day delivery, 100% sanitized, starting at ₹1,000/mo.";
-$short_desc = "Hospital-grade manual and electric power wheelchairs on rent & sale. Free home delivery, demonstration, and 24/7 technical support across Delhi NCR.";
+$display_title = "Wheelchairs & Mobility Services";
+$seo_title = "Wheelchairs & Mobility Healthcare Services in Delhi NCR - DM Healthcare";
+$seo_desc = "Get certified manual, motorized electric, recliner, commode & stair-climbing wheelchairs across Delhi NCR, Faridabad, Noida & Gurugram. Same-day delivery with full maintenance support.";
+$short_desc = "Hospital-grade manual and electric power wheelchairs with full maintenance & home delivery services across Delhi NCR.";
 $category_name = "Medical Equipment";
 $full_page_override = true;
 
@@ -168,7 +168,7 @@ ob_start();
                     <i class="fa-solid fa-truck-fast me-1"></i> Same-Day Home Delivery Across Delhi NCR
                 </span>
                 <h1 class="display-6 fw-bold text-dark lh-sm mb-2">
-                    Hospital-Grade <span class="text-dm-red">Wheelchairs</span> on Rent & Sale
+                    Hospital-Grade <span class="text-dm-red">Wheelchairs</span> & Mobility Services
                 </h1>
                 <p class="text-muted fs-6 mb-3">
                     Manual, motorized electric, recliner & commode wheelchairs delivered at your doorstep. 100% sanitized with free demonstration & 24/7 support in Faridabad, Delhi, Noida & Gurugram.
@@ -178,7 +178,7 @@ ob_start();
                     <a href="tel:+919319149644" class="btn btn-dm-red rounded-pill px-3 py-2 fw-bold shadow-sm d-inline-flex align-items-center gap-2 small">
                         <i class="fa-solid fa-phone"></i> Call +91 93191 49644
                     </a>
-                    <a href="https://wa.me/919319149644?text=Hello%20DM%20Healthcare,%20I%20want%20to%20rent/buy%20a%20wheelchair." target="_blank" class="btn btn-outline-success rounded-pill px-3 py-2 fw-bold d-inline-flex align-items-center gap-2 small">
+                    <a href="https://wa.me/919319149644?text=Hello%20DM%20Healthcare,%20I%20want%20to%20inquire%20about%20wheelchair%20services." target="_blank" class="btn btn-outline-success rounded-pill px-3 py-2 fw-bold d-inline-flex align-items-center gap-2 small">
                         <i class="fa-brands fa-whatsapp"></i> WhatsApp Booking
                     </a>
                     <a href="#booking-form" class="btn btn-outline-secondary rounded-pill px-3 py-2 fw-bold small">
@@ -457,7 +457,7 @@ ob_start();
                     <h4 class="fw-bold text-dark mb-3">Request Wheelchair Delivery</h4>
                     
                     <form action="backend/submit_appointment.php" method="POST" id="wheelchairBookingForm">
-                        <input type="hidden" name="service" value="Wheelchair Rental & Sale">
+                        <input type="hidden" name="service" value="Wheelchair Mobility Services">
                         
                         <div class="row g-3">
                             <div class="col-md-6">

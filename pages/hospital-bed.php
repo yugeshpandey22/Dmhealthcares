@@ -37,7 +37,7 @@ $frontend_custom_sections = '
     <div class="container py-4">
         <div class="row align-items-center">
             <div class="col-lg-6 mb-4 mb-lg-0 pe-lg-5">
-                <span class="badge equip-badge px-3 py-2 rounded-pill mb-3 fw-bold shadow-sm">Available on Rent & Sale</span>
+                <span class="badge equip-badge px-3 py-2 rounded-pill mb-3 fw-bold shadow-sm">Hospital-Grade Bed & Care Services</span>
                 <h1 class="fw-bold text-dark mb-4 display-5">Premium Hospital Beds for Home</h1>
                 <p class="text-muted mb-4 lead">Ensure maximum comfort and rapid recovery for your loved ones. We provide high-quality, sanitized hospital beds delivered and installed directly at your home.</p>
                 <p class="text-muted mb-4">Whether you need a basic manual bed for short-term recovery or a fully motorized ICU bed for long-term critical care, we have the perfect solution to meet your medical requirements.</p>
@@ -58,7 +58,7 @@ $frontend_custom_sections = '
                 </div>
                 
                 <a href="index.php#appointment" class="btn btn-primary rounded-pill px-5 py-3 shadow-sm fw-bold">
-                    <i class="fa-solid fa-cart-shopping me-2"></i> Inquire for Rent / Buy
+                    <i class="fa-solid fa-bed me-2"></i> Inquire for Rental Services
                 </a>
             </div>
             <div class="col-lg-6">
@@ -96,7 +96,7 @@ $beds = [
     ["name" => "Three Function Motorized Patient Bed / ICU Bed", "price" => "₹6,500/month", "tag" => "Premium"],
     ["name" => "ICU Patient Bed", "price" => "₹7,590/month", "tag" => "Critical Care"],
     ["name" => "Motorized Recliner Patient Bed", "price" => "₹3,000/month", "tag" => ""],
-    ["name" => "Air Mattress", "price" => "Buy ₹1,800", "tag" => "Accessory"],
+    ["name" => "Air Mattress", "price" => "₹1,800", "tag" => "Accessory"],
     ["name" => "Fowler Motorised Recliner Patient Bed", "price" => "₹3,500/month", "tag" => ""],
     ["name" => "Commode Hospital Bed", "price" => "₹2,500/month", "tag" => "Specialty"],
 ];

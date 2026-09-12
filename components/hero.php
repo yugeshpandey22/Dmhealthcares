@@ -226,7 +226,7 @@
           <img src="assets/images/banner1.jpg" class="d-block hero-banner-img" alt="DM Healthcare Home Nursing & Patient Care" fetchpriority="high">
         </div>
         <div class="carousel-item">
-          <img src="assets/images/banner2.jpg" class="d-block hero-banner-img" alt="DM Healthcare Medical Equipment on Rent" loading="lazy" decoding="async">
+          <img src="assets/images/banner2.jpg" class="d-block hero-banner-img" alt="DM Healthcare Medical Equipment Services" loading="lazy" decoding="async">
         </div>
         <div class="carousel-item">
           <img src="assets/images/banner3.jpg" class="d-block hero-banner-img" alt="DM Healthcare Critical ICU Care at Home" loading="lazy" decoding="async">

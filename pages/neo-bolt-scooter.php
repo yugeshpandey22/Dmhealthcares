@@ -5,8 +5,8 @@
  */
 
 $display_title = "NeoBolt Motorized Wheelchair Scooter";
-$seo_title = "NeoBolt Wheelchair Scooter on Rent & Sale in Delhi NCR, Faridabad - DM Healthcare";
-$seo_desc = "Rent or buy NeoBolt motorized wheelchair add-on scooter in Delhi NCR, Faridabad, Noida & Gurugram. 25 km/h top speed, 25 km range per charge. Free home demo available.";
+$seo_title = "NeoBolt Wheelchair Scooter Mobility Services in Delhi NCR - DM Healthcare";
+$seo_desc = "Get NeoBolt motorized wheelchair add-on scooter in Delhi NCR, Faridabad, Noida & Gurugram. 25 km/h top speed, 25 km range per charge. Free home demo & complete maintenance support.";
 $short_desc = "Convert your manual wheelchair into a powerful road-ready motorized electric scooter in 10 seconds. Hospital-grade safety, lithium-ion battery & 24/7 technical support.";
 $category_name = "Medical Equipment";
 $full_page_override = true;
@@ -85,7 +85,7 @@ ob_start();
                     <a href="tel:+919319149644" class="btn btn-dm-red rounded-pill px-3 py-2 fw-bold shadow-sm d-inline-flex align-items-center gap-2 small">
                         <i class="fa-solid fa-phone"></i> Call +91 93191 49644
                     </a>
-                    <a href="https://wa.me/919319149644?text=Hello%20DM%20Healthcare,%20I%20want%20to%20know%20more%20about%20NeoBolt%20Scooter%20Rental/Sale." target="_blank" class="btn btn-outline-success rounded-pill px-3 py-2 fw-bold d-inline-flex align-items-center gap-2 small">
+                    <a href="https://wa.me/919319149644?text=Hello%20DM%20Healthcare,%20I%20want%20to%20know%20more%20about%20NeoBolt%20Scooter%20Rental%20Services." target="_blank" class="btn btn-outline-success rounded-pill px-3 py-2 fw-bold d-inline-flex align-items-center gap-2 small">
                         <i class="fa-brands fa-whatsapp"></i> WhatsApp Inquiry
                     </a>
                     <a href="#booking-form" class="btn btn-outline-secondary rounded-pill px-3 py-2 fw-bold small">

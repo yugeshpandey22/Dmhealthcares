@@ -11,11 +11,11 @@ $page_title_seo = isset($seo_title) && !empty($seo_title)
 
 $page_desc_seo = isset($seo_desc) && !empty($seo_desc)
     ? htmlspecialchars($seo_desc)
-    : 'DmHealthcare (DmHealthcares) provides 24/7 compassionate & professional home healthcare services, nursing care, elder care, ICU setup at home, and medical equipment rental in Faridabad, Noida, and Delhi NCR.';
+    : 'DmHealthcare (DmHealthcares) provides 24/7 compassionate & professional home healthcare services, nursing care, elder care, ICU setup at home, and medical equipment services in Faridabad, Noida, and Delhi NCR.';
 
 $page_keywords_seo = isset($seo_keywords) && !empty($seo_keywords)
     ? htmlspecialchars($seo_keywords)
-    : 'DmHealthcares, DmHealthcare, DM Health Care, DM Healthcare Faridabad, DM Healthcare Noida, DM Healthcare Delhi NCR, Home Healthcare Services, Nursing Care at Home, Elderly Care, Patient Attendant, ICU Setup at Home, Medical Equipment on Rent';
+    : 'DmHealthcares, DmHealthcare, DM Health Care, DM Healthcare Faridabad, DM Healthcare Noida, DM Healthcare Delhi NCR, Home Healthcare Services, Nursing Care at Home, Elderly Care, Patient Attendant, ICU Setup at Home, Medical Equipment Services';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -63,7 +63,7 @@ $page_keywords_seo = isset($seo_keywords) && !empty($seo_keywords)
             "url": "<?= $base_domain_url ?>",
             "logo": "<?= $base_domain_url ?>/assets/images/logo.png",
             "image": "<?= $base_domain_url ?>/assets/images/logo.png",
-            "description": "DmHealthcare (DmHealthcares) provides 24/7 comprehensive home healthcare services, nursing, elder care, ICU setup at home, physiotherapy, and medical equipment rental in Faridabad, Noida, and Delhi NCR.",
+            "description": "DmHealthcare (DmHealthcares) provides 24/7 comprehensive home healthcare services, nursing, elder care, ICU setup at home, physiotherapy, and medical equipment services in Faridabad, Noida, and Delhi NCR.",
             "telephone": "+91-9319149644",
             "email": "info@dmhealthcares.com",
             "address": {

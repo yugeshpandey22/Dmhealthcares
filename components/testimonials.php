@@ -57,7 +57,7 @@
                             </div>
                             <div>
                                 <h6 class="fw-bold mb-0 text-dark">Anjali Singh</h6>
-                                <small class="text-muted d-block" style="font-size: 0.78rem;">Noida Sector 62 &bull; Equipment Rental</small>
+                                <small class="text-muted d-block" style="font-size: 0.78rem;">Noida Sector 62 &bull; Equipment Services</small>
                             </div>
                         </div>
                         <i class="fa-brands fa-google fs-4" style="color: #4285F4;" title="Google Verified Review"></i>
@@ -73,7 +73,7 @@
                     </div>
 
                     <p class="text-secondary fs-6 mb-0" style="line-height: 1.65;">
-                        "The medical equipment rental service was a lifesaver. We received a motorized hospital bed and a 10L oxygen concentrator delivered and installed at home within 2 hours. Seamless and transparent process!"
+                        "The medical equipment and home setup service was a lifesaver. We received a motorized hospital bed and a 10L oxygen concentrator delivered and installed at home within 2 hours. Seamless and transparent process!"
                     </p>
                 </div>
             </div>

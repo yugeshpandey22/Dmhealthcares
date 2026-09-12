@@ -40,10 +40,10 @@
             <div class="col-lg-8">
                 <div class="d-inline-flex align-items-center gap-2 px-3 py-1 rounded-pill fw-bold mb-2" style="background: rgba(229, 37, 42, 0.08); border: 1px solid rgba(229, 37, 42, 0.2); color: var(--primary-color); font-size: 0.8rem; letter-spacing: 1px;">
                     <i class="fa-solid fa-truck-ramp-box"></i>
-                    <span>RENT & PURCHASE WITH SAME-DAY SETUP</span>
+                    <span>HOME HEALTHCARE & MEDICAL EQUIPMENT SERVICES</span>
                 </div>
                 <h2 class="fw-bolder display-6 mb-2" style="color: var(--secondary-color);">
-                    Medical Equipment <span style="color: var(--primary-color);">On Rent & Sale</span>
+                    Medical Equipment <span style="color: var(--primary-color);">Healthcare Services</span>
                 </h2>
                 <div style="width: 60px; height: 4px; background: var(--primary-color); margin-bottom: 16px; border-radius: 2px;"></div>
                 <p class="text-muted fs-6 mb-0">
@@ -53,7 +53,7 @@
             <div class="col-lg-4 text-lg-end mt-4 mt-lg-0">
                 <a href="tel:+919319149644" class="btn btn-primary rounded-pill px-4 py-3 fw-bold shadow-sm d-inline-flex align-items-center gap-2">
                     <i class="fa-solid fa-phone"></i>
-                    <span>Rent Equipment Now</span>
+                    <span>Book Equipment Services</span>
                 </a>
             </div>
         </div>

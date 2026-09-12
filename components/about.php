@@ -129,7 +129,7 @@
                                 <i class="fa-solid fa-bed-pulse fs-5"></i>
                             </div>
                             <div>
-                                <h6 class="fw-bold mb-0 text-dark" style="font-size: 0.92rem;">ICU & Rent Support</h6>
+                                <h6 class="fw-bold mb-0 text-dark" style="font-size: 0.92rem;">ICU & Equipment Services</h6>
                                 <small class="text-muted" style="font-size: 0.78rem;">Beds, BiPAP, Oxygen delivered</small>
                             </div>
                         </div>

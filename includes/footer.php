@@ -74,7 +74,7 @@
                         </a>
 
                         <p class="footer-desc-text text-secondary mb-4">
-                            <strong class="text-white"><span style="color: #d80000;">DM</span> Healthcare</strong> is North India’s premier doorstep medical network providing certified nursing care, ICU setups at home, elderly companionship, and hospital-grade medical equipment rental across Delhi NCR.
+                            <strong class="text-white"><span style="color: #d80000;">DM</span> Healthcare</strong> is North India’s premier doorstep medical network providing certified nursing care, ICU setups at home, elderly companionship, and hospital-grade medical equipment services across Delhi NCR.
                         </p>
 
                         <!-- Accreditation Badge -->
@@ -109,7 +109,7 @@
 
                     <!-- Column 3: Medical Equipment (2.5 cols) -->
                     <div class="col-lg-3 col-md-6 col-sm-6">
-                        <h6 class="footer-heading">Equipment on Rent</h6>
+                        <h6 class="footer-heading">Medical Equipment</h6>
                         <ul class="footer-links-list list-unstyled mb-0">
                             <li><a href="page.php?title=oxygen-concentrator"><i class="fa-solid fa-angle-right me-1"></i> Oxygen Concentrator (5L/10L)</a></li>
                             <li><a href="page.php?title=hospital-bed"><i class="fa-solid fa-angle-right me-1"></i> ICU & Motorized Beds</a></li>

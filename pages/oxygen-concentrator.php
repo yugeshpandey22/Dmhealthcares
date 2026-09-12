@@ -4,9 +4,9 @@
  * Modern, Bootstrap 5-Powered Medical Equipment Portal
  */
 
-$display_title = "Oxygen Concentrators on Rent & Sale";
-$seo_title = "Oxygen Concentrator on Rent & Sale in Delhi NCR, Faridabad & Noida - DM Healthcare";
-$seo_desc = "Rent or buy 5 LPM and 10 LPM hospital-grade oxygen concentrators in Delhi NCR, Faridabad, Noida & Gurugram. Same-day 30-60 min delivery, 100% sanitized, starting at ₹3,500/mo.";
+$display_title = "Oxygen Concentrators & Respiratory Services";
+$seo_title = "Oxygen Concentrators & Respiratory Services in Delhi NCR - DM Healthcare";
+$seo_desc = "Get 5 LPM and 10 LPM hospital-grade oxygen concentrators in Delhi NCR, Faridabad, Noida & Gurugram. Same-day 30-60 min delivery, 100% sanitized with technician support.";
 $short_desc = "Continuous 93%-96% pure medical oxygen supply at home. Free doorstep delivery, demonstration, complimentary cannula kit, and 24/7 technical support.";
 $category_name = "Medical Equipment";
 $full_page_override = true;
@@ -98,7 +98,7 @@ ob_start();
                     <i class="fa-solid fa-truck-medical me-1"></i> 30-60 Mins Emergency Delivery Across Delhi NCR
                 </span>
                 <h1 class="display-6 fw-bold text-dark lh-sm mb-2">
-                    Medical-Grade <span class="text-dm-red">Oxygen Concentrators</span> on Rent & Sale
+                    Medical-Grade <span class="text-dm-red">Oxygen Concentrators</span> & Respiratory Services
                 </h1>
                 <p class="text-muted fs-6 mb-3">
                     Ensure continuous 93%–96% pure oxygen supply right at your home without the hassle of cylinder refills. Hospital-tested, sanitized machines delivered with complimentary nasal cannula and on-site demonstration in Faridabad, Noida, Delhi & Gurugram.

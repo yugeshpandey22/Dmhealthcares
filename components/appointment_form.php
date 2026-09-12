@@ -118,7 +118,7 @@
                                         <option value="elderly">Elderly Care & Attendant</option>
                                         <option value="icu-care">ICU & Critical Care Setup</option>
                                         <option value="physio">Physiotherapy at Home</option>
-                                        <option value="equipment">Medical Equipment on Rent</option>
+                                        <option value="equipment">Medical Equipment Services</option>
                                         <option value="diagnostics">Diagnostics & Lab Tests</option>
                                         <option value="doctor-visit">Doctor Home Visit</option>
                                         <option value="other">Other Medical Assistance</option>
