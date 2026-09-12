@@ -141,7 +141,7 @@
                                 </div>
                                 <div>
                                     <span class="small text-secondary d-block">Official Email Desk</span>
-                                    <a href="mailto:dmhealthcare48@gmail.com" class="text-white small text-decoration-none hover-brand-red">dmhealthcare48@gmail.com</a>
+                                    <a href="mailto:info@dmhealthcares.com" class="text-white small text-decoration-none hover-brand-red">info@dmhealthcares.com</a>
                                 </div>
                             </div>
 
