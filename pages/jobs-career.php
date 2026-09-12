@@ -510,18 +510,60 @@ $frontend_custom_sections = '
                             <div class="col-md-6">
                                 <label class="career-form-label">Position Applying For <span class="text-danger">*</span></label>
                                 <select name="role_applied" id="roleAppliedSelect" class="form-select career-input" onchange="handleRoleDropdownChange(this.value)" required>
-                                    <option value="" disabled selected>Select job position...</option>
-                                    <option value="Registered Nurse (GNM / B.Sc)">Registered Nurse (GNM / B.Sc)</option>
-                                    <option value="ICU / Critical Care Nurse">ICU / Critical Care Nurse</option>
-                                    <option value="Elderly Care Attendant">Elderly Care Attendant</option>
-                                    <option value="General Patient Caregiver / GDA">General Patient Caregiver / GDA</option>
-                                    <option value="Support Staff / Ward Boy / Ayah">Support Staff / Ward Boy / Ayah</option>
-                                    <option value="Physiotherapist (BPT / MPT)">Physiotherapist (BPT / MPT)</option>
-                                    <option value="General Physician / Doctor">General Physician / Doctor</option>
-                                    <option value="Medical Equipment Technician">Medical Equipment Technician</option>
-                                    <option value="Phlebotomist / Lab Technician">Phlebotomist / Lab Technician</option>
-                                    <option value="Administrative / Operations">Administrative / Operations</option>
-                                    <option value="Other">Other Profile</option>
+                                    <option value="" disabled selected>-- Select Home Care Position --</option>
+                                    
+                                    <optgroup label="🩺 Nursing & Critical Care at Home">
+                                        <option value="Registered Nurse (GNM / B.Sc)">Registered Nurse (GNM / B.Sc)</option>
+                                        <option value="ICU / Critical Care Nurse">ICU / Critical Care Nurse (Tracheostomy / Ventilator)</option>
+                                        <option value="General Nursing & Bedside Care">General Nursing & Bedside Care</option>
+                                        <option value="Injection & IV Infusion Nurse">Injection & IV Infusion Nurse</option>
+                                        <option value="Wound Care & Dressing Nurse">Wound Care & Dressing Nurse</option>
+                                        <option value="Palliative & Cancer Care Nurse">Palliative & Cancer Care Nurse</option>
+                                    </optgroup>
+
+                                    <optgroup label="🤝 Patient Attendants & Caregivers (12h / 24h Live-in)">
+                                        <option value="Elderly Care Attendant (12h / 24h)">Elderly Care Attendant (12h / 24h Live-in)</option>
+                                        <option value="Patient Care Attendant (Male / Female)">Patient Care Attendant (Male / Female)</option>
+                                        <option value="General Duty Assistant (GDA)">General Duty Assistant (GDA)</option>
+                                        <option value="Live-In 24-Hours Patient Caregiver">Live-In 24-Hours Patient Caregiver</option>
+                                        <option value="Dementia & Alzheimer Caregiver">Dementia & Alzheimer Caregiver</option>
+                                        <option value="Stroke & Paralysis Care Attendant">Stroke & Paralysis Care Attendant</option>
+                                        <option value="Post-Surgery Recovery Attendant">Post-Surgery Recovery Attendant</option>
+                                    </optgroup>
+
+                                    <optgroup label="🏥 Support Staff & Hospital / Home Help">
+                                        <option value="Support Staff / Ward Boy">Support Staff / Ward Boy</option>
+                                        <option value="Female Ayah / Attendant">Female Ayah / Attendant</option>
+                                        <option value="Staircase & Patient Mobility Helper">Staircase & Patient Mobility Helper</option>
+                                    </optgroup>
+
+                                    <optgroup label="🏃 Physiotherapy & Rehabilitation">
+                                        <option value="Physiotherapist (BPT / MPT)">Physiotherapist (BPT / MPT)</option>
+                                        <option value="Neuro Rehabilitation Physiotherapist">Neuro Rehabilitation Physiotherapist</option>
+                                        <option value="Orthopedic / Post-Op Physiotherapist">Orthopedic / Post-Op Physiotherapist</option>
+                                        <option value="Geriatric (Elderly) Physiotherapist">Geriatric (Elderly) Physiotherapist</option>
+                                    </optgroup>
+
+                                    <optgroup label="👨‍⚕️ Doctors & Clinical Consultation">
+                                        <option value="General Physician / Home Visit Doctor">General Physician / Home Visit Doctor (MBBS)</option>
+                                        <option value="Critical Care / ICU Specialist Doctor">Critical Care / ICU Specialist Doctor</option>
+                                    </optgroup>
+
+                                    <optgroup label="🧪 Diagnostics & Lab Technician">
+                                        <option value="Phlebotomist (Home Sample Collection)">Phlebotomist (Home Sample Collection)</option>
+                                        <option value="Lab Technician (DMLT / BMLT)">Lab Technician (DMLT / BMLT)</option>
+                                    </optgroup>
+
+                                    <optgroup label="⚙️ Medical Equipment & Biomedical Support">
+                                        <option value="Medical Equipment Technician">Medical Equipment Technician (BiPAP / CPAP / Oxygen)</option>
+                                        <option value="Biomedical Service Engineer">Biomedical Service Engineer</option>
+                                    </optgroup>
+
+                                    <optgroup label="💼 Operations & Coordination">
+                                        <option value="Patient Care Coordinator / Tele-Counsellor">Patient Care Coordinator / Tele-Counsellor</option>
+                                        <option value="Field Nursing Supervisor">Field Nursing Supervisor</option>
+                                        <option value="Other Healthcare Profile">Other Healthcare Profile</option>
+                                    </optgroup>
                                 </select>
                             </div>
 
@@ -637,23 +679,26 @@ function selectJobRole(roleName, element) {
     const roleText = document.getElementById("selectedRoleText");
 
     if (roleSelect) {
-        // Try exact match or partial match
         let matched = false;
         for (let i = 0; i < roleSelect.options.length; i++) {
             const optVal = roleSelect.options[i].value;
+            if (!optVal) continue;
             if (optVal === roleName || optVal.toLowerCase().includes(roleName.toLowerCase()) || roleName.toLowerCase().includes(optVal.toLowerCase())) {
                 roleSelect.selectedIndex = i;
                 matched = true;
+                if (roleText) roleText.textContent = optVal;
                 break;
             }
         }
         if (!matched) {
-            roleSelect.value = "Other";
+            roleSelect.value = "Other Healthcare Profile";
+            if (roleText) roleText.textContent = roleName;
         }
+    } else {
+        if (roleText) roleText.textContent = roleName;
     }
 
-    if (roleAlert && roleText) {
-        roleText.textContent = roleName;
+    if (roleAlert) {
         roleAlert.style.display = "flex";
     }
 
@@ -671,7 +716,7 @@ function selectJobRole(roleName, element) {
         setTimeout(() => {
             const nameInput = document.getElementById("appFullName");
             if (nameInput) nameInput.focus();
-        }, 600);
+        }, 500);
     }
 }
 
