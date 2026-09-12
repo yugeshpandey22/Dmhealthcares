@@ -442,6 +442,7 @@ $page_keywords_seo = isset($seo_keywords) && !empty($seo_keywords)
                                         <div class="container-fluid px-2 px-md-4" style="max-width: 1440px;">
                                             <?php
                                             $services_slugs = [
+                                                'support-staff',
                                                 'attendant-providing',
                                                 'gda-providing',
                                                 'patient-attendant',
@@ -466,6 +467,7 @@ $page_keywords_seo = isset($seo_keywords) && !empty($seo_keywords)
                                             }
 
                                             $icon_map = [
+                                                'support-staff' => 'fa-solid fa-hospital-user',
                                                 'attendant-providing' => 'fa-solid fa-hand-holding-medical',
                                                 'gda-providing' => 'fa-solid fa-stethoscope',
                                                 'patient-attendant' => 'fa-solid fa-wheelchair',
