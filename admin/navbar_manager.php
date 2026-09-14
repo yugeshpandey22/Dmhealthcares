@@ -24,6 +24,18 @@ if (isset($_POST['add_category'])) {
             $error = "Failed to add category.";
         }
     }
+} elseif (isset($_POST['edit_category'])) {
+    $id = (int)$_POST['category_id'];
+    $name = trim($_POST['name']);
+    $order = (int)$_POST['display_order'];
+    if (!empty($name) && $id > 0) {
+        $stmt = $conn->prepare("UPDATE nav_categories SET name = :name, display_order = :order WHERE id = :id");
+        if($stmt->execute(['name' => $name, 'order' => $order, 'id' => $id])) {
+            $success = "Category '{$name}' updated successfully.";
+        } else {
+            $error = "Failed to update category.";
+        }
+    }
 } elseif (isset($_POST['delete_category'])) {
     $id = (int)$_POST['category_id'];
     $stmt = $conn->prepare("DELETE FROM nav_categories WHERE id = :id");
@@ -51,6 +63,27 @@ if (isset($_POST['add_item'])) {
             }
         } else {
             $error = "Failed to add page link.";
+        }
+    }
+} elseif (isset($_POST['quick_edit_item'])) {
+    $id = (int)$_POST['item_id'];
+    $title = trim($_POST['title']);
+    $cat_id = (int)$_POST['category_id'];
+    $link = trim($_POST['link']);
+    $order = (int)$_POST['display_order'];
+    if (!empty($title) && $id > 0) {
+        if (empty($link)) {
+            $link = strtolower(trim(preg_replace('/[^A-Za-z0-9-]+/', '-', $title), '-'));
+        }
+        $stmt = $conn->prepare("UPDATE nav_items SET title = :title, link = :link, category_id = :cat_id, display_order = :order WHERE id = :id");
+        if($stmt->execute(['title' => $title, 'link' => $link, 'cat_id' => $cat_id, 'order' => $order, 'id' => $id])) {
+            $success = "Page link '{$title}' updated successfully!";
+            $filename = '../pages/' . $link . '.php';
+            if (!file_exists($filename)) {
+                file_put_contents($filename, "");
+            }
+        } else {
+            $error = "Failed to update page link.";
         }
     }
 } elseif (isset($_POST['delete_item'])) {
@@ -263,8 +296,11 @@ if ($current_cat_id) {
                                         <a href="../page.php?title=<?= urlencode($item['link']) ?>" target="_blank" class="btn btn-sm btn-light border rounded-pill px-3 fw-semibold text-muted" title="View live page">
                                             <i class="fa-solid fa-arrow-up-right-from-square"></i> Preview
                                         </a>
-                                        <a href="edit_page.php?id=<?= $item['id'] ?>" class="btn btn-sm btn-primary rounded-pill px-3 fw-semibold" style="background: var(--primary-color); border: none;" title="Edit page content & SEO">
-                                            <i class="fa-solid fa-pen-to-square me-1"></i> Edit Content
+                                        <button type="button" class="btn btn-sm btn-outline-dark rounded-pill px-3 fw-semibold" data-bs-toggle="modal" data-bs-target="#editItemModal<?= $item['id'] ?>" title="Quick Edit Title / Slug / Category">
+                                            <i class="fa-solid fa-pen me-1"></i> Edit Info
+                                        </button>
+                                        <a href="edit_page.php?id=<?= $item['id'] ?>" class="btn btn-sm btn-primary rounded-pill px-3 fw-semibold" style="background: var(--primary-color); border: none;" title="Edit full page content, banner & SEO">
+                                            <i class="fa-solid fa-pen-to-square me-1"></i> Full Content
                                         </a>
                                         <form method="POST" onsubmit="return confirm('Delete this page link? This cannot be undone.');" class="m-0">
                                             <input type="hidden" name="item_id" value="<?= $item['id'] ?>">
@@ -272,6 +308,54 @@ if ($current_cat_id) {
                                                 <i class="fa-solid fa-trash"></i>
                                             </button>
                                         </form>
+                                    </div>
+
+                                    <!-- Quick Edit Modal for this Item -->
+                                    <div class="modal fade" id="editItemModal<?= $item['id'] ?>" tabindex="-1" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered">
+                                            <div class="modal-content border-0 shadow-lg rounded-4 overflow-hidden">
+                                                <div class="modal-header bg-light border-0 px-4 py-3">
+                                                    <h5 class="modal-title fw-bold text-dark">
+                                                        <i class="fa-solid fa-pen-to-square text-danger me-2"></i> Edit Page Info
+                                                    </h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                                </div>
+                                                <form method="POST">
+                                                    <div class="modal-body p-4 text-start">
+                                                        <input type="hidden" name="item_id" value="<?= $item['id'] ?>">
+                                                        <div class="mb-3">
+                                                            <label class="form-label text-muted small fw-bold text-uppercase">Page / Service Title</label>
+                                                            <input type="text" name="title" class="form-control form-control-lg bg-light border-0 fw-bold" value="<?= htmlspecialchars($item['title']) ?>" required>
+                                                        </div>
+                                                        <div class="mb-3">
+                                                            <label class="form-label text-muted small fw-bold text-uppercase">Category</label>
+                                                            <select name="category_id" class="form-select form-select-lg bg-light border-0 fw-semibold">
+                                                                <?php foreach($categories as $c_opt): ?>
+                                                                    <option value="<?= $c_opt['id'] ?>" <?= ($item['category_id'] == $c_opt['id']) ? 'selected' : '' ?>>
+                                                                        <?= htmlspecialchars($c_opt['name']) ?>
+                                                                    </option>
+                                                                <?php endforeach; ?>
+                                                            </select>
+                                                        </div>
+                                                        <div class="mb-3">
+                                                            <label class="form-label text-muted small fw-bold text-uppercase">URL Slug / Link</label>
+                                                            <input type="text" name="link" class="form-control bg-light border-0 font-monospace" value="<?= htmlspecialchars($item['link']) ?>">
+                                                            <small class="text-muted">Slug used in URL (e.g. delhi-ncr)</small>
+                                                        </div>
+                                                        <div class="mb-3">
+                                                            <label class="form-label text-muted small fw-bold text-uppercase">Display Sort Order</label>
+                                                            <input type="number" name="display_order" class="form-control bg-light border-0" value="<?= (int)($item['display_order'] ?? 0) ?>">
+                                                        </div>
+                                                    </div>
+                                                    <div class="modal-footer bg-light border-0 px-4 py-3">
+                                                        <button type="button" class="btn btn-outline-secondary rounded-pill px-3" data-bs-dismiss="modal">Cancel</button>
+                                                        <button type="submit" name="quick_edit_item" class="btn btn-primary rounded-pill px-4 fw-bold" style="background: var(--primary-color); border: none;">
+                                                            Save Changes
+                                                        </button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
                                     </div>
                                 </li>
                                 <?php endforeach; ?>
@@ -343,12 +427,48 @@ if ($current_cat_id) {
                                         <a href="navbar_manager.php?cat_id=<?= $cat['id'] ?>" class="btn btn-sm btn-primary rounded-pill px-3 fw-semibold" style="background: var(--primary-color); border: none;">
                                             <i class="fa-solid fa-list-check me-1"></i> Manage Pages
                                         </a>
+                                        <button type="button" class="btn btn-sm btn-light border rounded-pill px-3 fw-semibold text-dark" data-bs-toggle="modal" data-bs-target="#editCategoryModal<?= $cat['id'] ?>" title="Edit Category Name & Order">
+                                            <i class="fa-solid fa-pen me-1"></i> Rename
+                                        </button>
                                         <form method="POST" onsubmit="return confirm('Are you sure? Deleting this category will delete all associated pages!');" class="m-0">
                                             <input type="hidden" name="category_id" value="<?= $cat['id'] ?>">
                                             <button type="submit" name="delete_category" class="btn btn-sm btn-outline-danger rounded-circle" title="Delete Category">
                                                 <i class="fa-solid fa-trash"></i>
                                             </button>
                                         </form>
+                                    </div>
+
+                                    <!-- Edit Category Modal -->
+                                    <div class="modal fade" id="editCategoryModal<?= $cat['id'] ?>" tabindex="-1" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered">
+                                            <div class="modal-content border-0 shadow-lg rounded-4 overflow-hidden">
+                                                <div class="modal-header bg-light border-0 px-4 py-3">
+                                                    <h5 class="modal-title fw-bold text-dark">
+                                                        <i class="fa-solid fa-folder-pen text-danger me-2"></i> Rename Category
+                                                    </h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                                </div>
+                                                <form method="POST">
+                                                    <div class="modal-body p-4 text-start">
+                                                        <input type="hidden" name="category_id" value="<?= $cat['id'] ?>">
+                                                        <div class="mb-3">
+                                                            <label class="form-label text-muted small fw-bold text-uppercase">Category Name</label>
+                                                            <input type="text" name="name" class="form-control form-control-lg bg-light border-0 fw-bold" value="<?= htmlspecialchars($cat['name']) ?>" required>
+                                                        </div>
+                                                        <div class="mb-3">
+                                                            <label class="form-label text-muted small fw-bold text-uppercase">Display Sort Order</label>
+                                                            <input type="number" name="display_order" class="form-control bg-light border-0" value="<?= (int)$cat['display_order'] ?>">
+                                                        </div>
+                                                    </div>
+                                                    <div class="modal-footer bg-light border-0 px-4 py-3">
+                                                        <button type="button" class="btn btn-outline-secondary rounded-pill px-3" data-bs-dismiss="modal">Cancel</button>
+                                                        <button type="submit" name="edit_category" class="btn btn-primary rounded-pill px-4 fw-bold" style="background: var(--primary-color); border: none;">
+                                                            Save Changes
+                                                        </button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
                                     </div>
                                 </li>
                                 <?php endforeach; ?>

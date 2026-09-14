@@ -371,16 +371,16 @@ $page_keywords_seo = isset($seo_keywords) && !empty($seo_keywords)
                     <?php
                     require_once 'config/db.php';
 
-                    // 100% Fixed Canonical 6 Categories in exact order:
-                    // 1. HOME, 2. DIAGNOSTICS, 3. MEDICAL EQUIPMENT, 4. HOME CARE, 5. JOB, 6. BLOOD CHECKUP
-                    $nav_categories = [
-                        ['id' => 13, 'name' => 'Home'],
-                        ['id' => 4,  'name' => 'Diagnostics'],
-                        ['id' => 3,  'name' => 'Medical Equipment'],
-                        ['id' => 2,  'name' => 'Home Care'],
-                        ['id' => 7,  'name' => 'Job'],
-                        ['id' => 8,  'name' => 'Blood Checkup']
-                    ];
+                    if (!function_exists('format_medical_nav_title')) {
+                        function format_medical_nav_title($title) {
+                            $formatted = preg_replace('/\bncr\b/i', 'NCR', $title);
+                            $formatted = preg_replace('/\bicu\b/i', 'ICU', $formatted);
+                            $formatted = preg_replace('/\bgda\b/i', 'GDA', $formatted);
+                            $formatted = preg_replace('/\bbipap\b/i', 'BiPAP', $formatted);
+                            $formatted = preg_replace('/\bcpap\b/i', 'CPAP', $formatted);
+                            return $formatted;
+                        }
+                    }
 
                     // Automatically remove redundant 'Home Page' entries from database if present
                     try {
@@ -388,24 +388,28 @@ $page_keywords_seo = isset($seo_keywords) && !empty($seo_keywords)
                     } catch (Exception $e) {
                     }
 
-                    // Dynamically map category IDs from DB to prevent mismatch on live vs local database
+                    // Dynamically fetch all active categories from DB in exact display_order
+                    $nav_categories = [];
                     try {
-                        $db_cats = $conn->query("SELECT id, LOWER(TRIM(name)) as name_lower FROM nav_categories")->fetchAll(PDO::FETCH_ASSOC);
-                        $cat_name_to_id = [];
-                        foreach ($db_cats as $dbc) {
-                            $cat_name_to_id[$dbc['name_lower']] = (int)$dbc['id'];
+                        $db_cats = $conn->query("SELECT id, name, display_order FROM nav_categories ORDER BY display_order ASC, id ASC")->fetchAll(PDO::FETCH_ASSOC);
+                        if (!empty($db_cats)) {
+                            $nav_categories = $db_cats;
                         }
-                        foreach ($nav_categories as &$c_entry) {
-                            $norm = strtolower(trim($c_entry['name']));
-                            if (isset($cat_name_to_id[$norm])) {
-                                $c_entry['id'] = $cat_name_to_id[$norm];
-                            }
-                        }
-                        unset($c_entry);
                     } catch (Exception $e) {
                     }
 
-                    // Fetch all items with category names for dual-matching resilience (ID & Name)
+                    if (empty($nav_categories)) {
+                        $nav_categories = [
+                            ['id' => 13, 'name' => 'Home'],
+                            ['id' => 4,  'name' => 'Diagnostics'],
+                            ['id' => 3,  'name' => 'Medical Equipment'],
+                            ['id' => 2,  'name' => 'Home Care'],
+                            ['id' => 7,  'name' => 'Job'],
+                            ['id' => 8,  'name' => 'Blood Checkup']
+                        ];
+                    }
+
+                    // Fetch all items with category names for resilient grouping
                     $nav_items_all = [];
                     try {
                         $nav_items_all = $conn->query("SELECT n.*, LOWER(TRIM(c.name)) as cat_name FROM nav_items n LEFT JOIN nav_categories c ON n.category_id = c.id ORDER BY n.display_order ASC, n.id ASC")->fetchAll(PDO::FETCH_ASSOC);
@@ -492,13 +496,13 @@ $page_keywords_seo = isset($seo_keywords) && !empty($seo_keywords)
                                                     <ul class="mega-menu-list">
                                                         <?php foreach ($col1_items as $nav_item): ?>
                                                             <?php
-                                                            $slug_key = strtolower($nav_item['link']);
-                                                            $icon_cls = $icon_map[$slug_key] ?? 'fa-solid fa-hand-holding-medical';
-                                                            ?>
+                                                             $slug_key = strtolower($nav_item['link']);
+                                                             $icon_cls = $icon_map[$slug_key] ?? 'fa-solid fa-hand-holding-medical';
+                                                             ?>
                                                             <li>
                                                                 <a href="<?= htmlspecialchars($nav_item['link']) ?>">
                                                                     <i class="<?= $icon_cls ?>"></i>
-                                                                    <span><?= htmlspecialchars($nav_item['title']) ?></span>
+                                                                    <span><?= htmlspecialchars(format_medical_nav_title($nav_item['title'])) ?></span>
                                                                 </a>
                                                             </li>
                                                         <?php endforeach; ?>
@@ -511,13 +515,13 @@ $page_keywords_seo = isset($seo_keywords) && !empty($seo_keywords)
                                                     <ul class="mega-menu-list">
                                                         <?php foreach ($col2_items as $nav_item): ?>
                                                             <?php
-                                                            $slug_key = strtolower($nav_item['link']);
-                                                            $icon_cls = $icon_map[$slug_key] ?? 'fa-solid fa-user-nurse';
-                                                            ?>
+                                                             $slug_key = strtolower($nav_item['link']);
+                                                             $icon_cls = $icon_map[$slug_key] ?? 'fa-solid fa-user-nurse';
+                                                             ?>
                                                             <li>
                                                                 <a href="<?= htmlspecialchars($nav_item['link']) ?>">
                                                                     <i class="<?= $icon_cls ?>"></i>
-                                                                    <span><?= htmlspecialchars($nav_item['title']) ?></span>
+                                                                    <span><?= htmlspecialchars(format_medical_nav_title($nav_item['title'])) ?></span>
                                                                 </a>
                                                             </li>
                                                         <?php endforeach; ?>
@@ -537,29 +541,29 @@ $page_keywords_seo = isset($seo_keywords) && !empty($seo_keywords)
 
                             <?php elseif ($cat_norm === 'home'): ?>
                                 <?php
-                                // Ensure redundant 'Home Page' is never listed in dropdown
-                                $home_filtered_items = array_values(array_filter($cat_items, function ($nav_item) {
-                                    $t = strtolower(trim(strip_tags($nav_item['title'] ?? '')));
-                                    $l = strtolower(trim($nav_item['link'] ?? ''));
-                                    return !in_array($t, ['home', 'home page', 'homepage']) && !in_array($l, ['home', 'home-page', 'homepage', 'index.php', 'index']);
-                                }));
-                                $has_home_subitems = count($home_filtered_items) > 0;
-                                ?>
+                                 // Ensure redundant 'Home Page' is never listed in dropdown
+                                 $home_filtered_items = array_values(array_filter($cat_items, function ($nav_item) {
+                                     $t = strtolower(trim(strip_tags($nav_item['title'] ?? '')));
+                                     $l = strtolower(trim($nav_item['link'] ?? ''));
+                                     return !in_array($t, ['home', 'home page', 'homepage']) && !in_array($l, ['home', 'home-page', 'homepage', 'index.php', 'index']);
+                                 }));
+                                 $has_home_subitems = count($home_filtered_items) > 0;
+                                 ?>
                                 <!-- Home Item -->
                                 <li class="nav-item <?= $has_home_subitems ? 'dropdown' : '' ?>">
                                     <?php if ($has_home_subitems): ?>
                                         <a class="nav-link dropdown-toggle text-dark text-uppercase px-3" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                            <?= htmlspecialchars($cat['name']) ?>
+                                            <?= htmlspecialchars(format_medical_nav_title($cat['name'])) ?>
                                             <i class="fa-solid fa-chevron-down ms-1" style="font-size: 0.8em;"></i>
                                         </a>
                                         <ul class="dropdown-menu border-0 shadow-sm rounded-3">
                                             <?php foreach ($home_filtered_items as $nav_item): ?>
-                                                <li><a class="dropdown-item py-2" href="<?= htmlspecialchars($nav_item['link']) ?>"><?= htmlspecialchars($nav_item['title']) ?></a></li>
+                                                <li><a class="dropdown-item py-2" href="<?= htmlspecialchars($nav_item['link']) ?>"><?= htmlspecialchars(format_medical_nav_title($nav_item['title'])) ?></a></li>
                                             <?php endforeach; ?>
                                         </ul>
                                     <?php else: ?>
                                         <a class="nav-link text-dark text-uppercase px-3" href="index.php">
-                                            <?= htmlspecialchars($cat['name']) ?>
+                                            <?= htmlspecialchars(format_medical_nav_title($cat['name'])) ?>
                                         </a>
                                     <?php endif; ?>
                                 </li>
@@ -568,9 +572,9 @@ $page_keywords_seo = isset($seo_keywords) && !empty($seo_keywords)
                                 <!-- Standard Dropdown & Blood Checkup -->
                                 <li class="nav-item dropdown">
                                     <?php
-                                    $is_blood_checkup = (stripos($cat['name'], 'blood') !== false);
-                                    $display_name = $is_blood_checkup ? 'Blood Checkup' : $cat['name'];
-                                    ?>
+                                     $is_blood_checkup = (stripos($cat['name'], 'blood') !== false);
+                                     $display_name = $is_blood_checkup ? 'Blood Checkup' : format_medical_nav_title($cat['name']);
+                                     ?>
                                     <?php if ($is_blood_checkup): ?>
                                         <a class="nav-link dropdown-toggle text-white fw-bold text-uppercase px-3 ms-2 shadow-sm nav-blood-checkup-btn" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: #e5252a !important; background: #e5252a !important; color: #ffffff !important; border-radius: 6px; padding: 8px 16px !important; align-self: center; font-size: 14px;">
                                         <?php else: ?>
@@ -584,7 +588,7 @@ $page_keywords_seo = isset($seo_keywords) && !empty($seo_keywords)
                                             <ul class="dropdown-menu border-0 shadow-sm rounded-3">
                                                 <?php if ($has_items): ?>
                                                     <?php foreach ($cat_items as $nav_item): ?>
-                                                        <li><a class="dropdown-item py-2" href="<?= htmlspecialchars($nav_item['link']) ?>"><?= htmlspecialchars($nav_item['title']) ?></a></li>
+                                                        <li><a class="dropdown-item py-2" href="<?= htmlspecialchars($nav_item['link']) ?>"><?= htmlspecialchars(format_medical_nav_title($nav_item['title'])) ?></a></li>
                                                     <?php endforeach; ?>
                                                 <?php else: ?>
                                                     <li><a class="dropdown-item py-2 text-muted" href="#">Coming Soon</a></li>

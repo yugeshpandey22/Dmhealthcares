@@ -14,6 +14,14 @@ $error = '';
 
 // Handle form submission
 if (isset($_POST['update_page'])) {
+    $title = trim($_POST['title'] ?? '');
+    $category_id = isset($_POST['category_id']) ? (int)$_POST['category_id'] : 0;
+    $link = trim($_POST['link'] ?? '');
+    if (empty($link) && !empty($title)) {
+        $link = strtolower(trim(preg_replace('/[^A-Za-z0-9-]+/', '-', $title), '-'));
+    }
+    $display_order = isset($_POST['display_order']) ? (int)$_POST['display_order'] : 0;
+
     $short_desc = trim($_POST['short_description']);
     $content = trim($_POST['page_content']);
     $specs = trim($_POST['specifications']);
@@ -21,9 +29,19 @@ if (isset($_POST['update_page'])) {
     $seo_desc = trim($_POST['seo_description']);
 
     // Fetch existing item to keep old images if not overwritten
-    $stmt = $conn->prepare("SELECT page_image, banner_image, gallery_images FROM nav_items WHERE id = :id");
+    $stmt = $conn->prepare("SELECT title, link, category_id, display_order, page_image, banner_image, gallery_images FROM nav_items WHERE id = :id");
     $stmt->execute(['id' => $id]);
     $current = $stmt->fetch(PDO::FETCH_ASSOC);
+
+    if (empty($title)) {
+        $title = $current['title'];
+    }
+    if ($category_id <= 0) {
+        $category_id = (int)$current['category_id'];
+    }
+    if (empty($link)) {
+        $link = $current['link'];
+    }
 
     $page_image = $current['page_image'];
     $banner_image = $current['banner_image'];
@@ -91,6 +109,10 @@ if (isset($_POST['update_page'])) {
     $gallery_json = json_encode($gallery_images);
 
     $stmt = $conn->prepare("UPDATE nav_items SET 
+        title = :title,
+        link = :link,
+        category_id = :category_id,
+        display_order = :display_order,
         page_content = :content, 
         page_image = :image,
         short_description = :short_desc,
@@ -102,6 +124,10 @@ if (isset($_POST['update_page'])) {
         WHERE id = :id");
 
     $params = [
+        'title' => $title,
+        'link' => $link,
+        'category_id' => $category_id,
+        'display_order' => $display_order,
         'content' => $content,
         'image' => $page_image,
         'short_desc' => $short_desc,
@@ -115,6 +141,11 @@ if (isset($_POST['update_page'])) {
     
     if ($stmt->execute($params)) {
         $success = "Page content and media saved successfully!";
+        // Auto create physical file if doesn't exist
+        $target_php = '../pages/' . $link . '.php';
+        if (!file_exists($target_php)) {
+            file_put_contents($target_php, "");
+        }
     } else {
         $error = "Failed to update page in database.";
     }
@@ -126,6 +157,9 @@ $stmt->execute(['id' => $id]);
 $item = $stmt->fetch(PDO::FETCH_ASSOC);
 
 if (!$item) die('Page not found');
+
+// Fetch all categories for selector
+$all_categories = $conn->query("SELECT * FROM nav_categories ORDER BY display_order ASC, name ASC")->fetchAll(PDO::FETCH_ASSOC);
 
 $gallery = $item['gallery_images'] ? json_decode($item['gallery_images'], true) : [];
 ?>
@@ -388,10 +422,37 @@ $gallery = $item['gallery_images'] ? json_decode($item['gallery_images'], true) 
                 <!-- TAB 1: CONTENT -->
                 <div class="tab-pane fade show active" id="tab-content">
                     <div class="row g-4">
-                        <div class="col-12">
-                            <label class="form-label fw-bold text-dark">Page Title</label>
-                            <input type="text" class="form-control bg-light fw-bold" value="<?= htmlspecialchars($item['title']) ?>" readonly>
-                            <small class="text-muted">Slug / Title identifier for routing.</small>
+                        <div class="col-md-6">
+                            <label class="form-label fw-bold text-dark">Page / Service Title <span class="text-danger">*</span></label>
+                            <input type="text" name="title" class="form-control fw-bold" value="<?= htmlspecialchars($item['title']) ?>" required placeholder="e.g. Delhi NCR">
+                            <small class="text-muted">Displayed in navigation menus, headings, and across the website.</small>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label class="form-label fw-bold text-dark">Parent Navbar Category</label>
+                            <select name="category_id" class="form-select fw-semibold">
+                                <?php foreach ($all_categories as $cat): ?>
+                                    <option value="<?= $cat['id'] ?>" <?= ((int)$item['category_id'] === (int)$cat['id']) ? 'selected' : '' ?>>
+                                        <?= htmlspecialchars($cat['name']) ?>
+                                    </option>
+                                <?php endforeach; ?>
+                            </select>
+                            <small class="text-muted">Which category dropdown this page appears under.</small>
+                        </div>
+
+                        <div class="col-md-8">
+                            <label class="form-label fw-bold text-dark">URL Slug / Link</label>
+                            <div class="input-group">
+                                <span class="input-group-text bg-light text-muted small">/page.php?title=</span>
+                                <input type="text" name="link" class="form-control font-monospace" value="<?= htmlspecialchars($item['link']) ?>" placeholder="e.g. delhi-ncr">
+                            </div>
+                            <small class="text-muted">Slug used for URLs. Leave as is or update to match new title.</small>
+                        </div>
+
+                        <div class="col-md-4">
+                            <label class="form-label fw-bold text-dark">Display Order (Sort Order)</label>
+                            <input type="number" name="display_order" class="form-control" value="<?= (int)($item['display_order'] ?? 0) ?>">
+                            <small class="text-muted">Lower number appears first.</small>
                         </div>
 
                         <div class="col-12">

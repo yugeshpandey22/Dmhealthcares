@@ -62,6 +62,11 @@ $default_display = ucwords(str_replace(['-', '+', '%20'], ' ', $clean_title));
 if (!isset($display_title) || empty($display_title)) {
     $display_title = ($page_data && !empty($page_data['title'])) ? $page_data['title'] : $default_display;
 }
+$display_title = preg_replace('/\bncr\b/i', 'NCR', $display_title);
+$display_title = preg_replace('/\bicu\b/i', 'ICU', $display_title);
+$display_title = preg_replace('/\bgda\b/i', 'GDA', $display_title);
+$display_title = preg_replace('/\bbipap\b/i', 'BiPAP', $display_title);
+$display_title = preg_replace('/\bcpap\b/i', 'CPAP', $display_title);
 
 if (!isset($seo_title) || empty($seo_title)) {
     if ($page_data && !empty($page_data['seo_title'])) {
