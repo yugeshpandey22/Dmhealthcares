@@ -71,12 +71,8 @@ ob_start();
                         <small class="text-muted">/ month</small>
                     </div>
                     <div class="border-start ps-3">
-                        <small class="text-muted d-block" style="font-size: 0.72rem;">Purchase New</small>
-                        <span class="fs-6 fw-bold text-dark">₹95,000</span>
-                    </div>
-                    <div class="border-start ps-3">
                         <span class="badge bg-success bg-opacity-10 text-success border border-success rounded-pill px-2 py-1 small">
-                            <i class="fa-solid fa-check me-1"></i> Free Home Demo
+                            <i class="fa-solid fa-check me-1"></i> Free Home Demo & Trial
                         </span>
                     </div>
                 </div>
@@ -333,8 +329,7 @@ ob_start();
                                 <select name="requirement_type" class="form-select form-select-sm rounded-2" required>
                                     <option value="Monthly Rental (₹4,500/mo)">Monthly Rental (₹4,500/mo)</option>
                                     <option value="Free Home Trial / Demo">Free Home Trial / Demo</option>
-                                    <option value="Permanent Purchase (₹95,000)">Permanent Purchase (₹95,000)</option>
-                                    <option value="Rent-to-Buy Option">Rent-to-Buy Option</option>
+                                    <option value="Long-term Rental">Long-term Rental</option>
                                 </select>
                             </div>
                             <div class="col-md-6">

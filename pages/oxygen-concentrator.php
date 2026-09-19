@@ -1,6 +1,6 @@
 <?php
 /**
- * DM Healthcare - Oxygen Concentrators on Rent & Sale
+ * DM Healthcare - Oxygen Concentrators on Rent
  * Modern, Bootstrap 5-Powered Medical Equipment Portal
  */
 
@@ -21,7 +21,6 @@ $oxygen_models = [
         'badge_class' => 'bg-danger',
         'rent_price' => '₹3,500',
         'rent_period' => '/ month',
-        'buy_price' => '₹38,000',
         'image' => 'assets/images/pages/oxygen_concentrator_5l.jpg',
         'features' => ['Continuous 0.5 - 5 LPM flow rate (93% ± 3% purity)', 'Ultra-quiet operation (<45 dB) for night sleep', 'Built-in oxygen purity sensor & low-flow alarms', 'Lightweight with castor wheels for easy room movement'],
         'ideal_for' => 'COPD, Asthma, post-COVID & mild-to-moderate respiratory support'
@@ -34,7 +33,6 @@ $oxygen_models = [
         'badge_class' => 'bg-primary',
         'rent_price' => '₹6,500',
         'rent_period' => '/ month',
-        'buy_price' => '₹68,000',
         'image' => 'assets/images/pages/oxygen_concentrator_10l.jpg',
         'features' => ['Heavy-duty 1 - 10 LPM continuous high-pressure output', 'Dual flowmeter ports (can support 2 patients simultaneously)', 'Compatible with BiPAP, CPAP & High-Flow nasal cannulas', '24/7 continuous non-stop heavy medical operation'],
         'ideal_for' => 'Severe lung fibrosis, critical respiratory distress & ICU setup'
@@ -47,7 +45,6 @@ $oxygen_models = [
         'badge_class' => 'bg-success',
         'rent_price' => '₹4,000',
         'rent_period' => '/ month',
-        'buy_price' => '₹42,000',
         'image' => 'assets/images/pages/oxygen_concentrator_hero.jpg',
         'features' => ['Dual function: Medical oxygen + Nebulization therapy', 'High-definition digital LCD displaying real-time purity %', 'Self-diagnostic safety alarms & digital timer function', 'Includes complimentary humidifier & nasal tubing kit'],
         'ideal_for' => 'Patients requiring frequent bronchodilator nebulizer treatments'
@@ -191,21 +188,15 @@ ob_start();
                             <?php endforeach; ?>
                         </ul>
 
-                        <!-- Compact Pricing Row -->
+                        <!-- Status & Delivery Badge -->
                         <div class="bg-light p-2 px-3 rounded-2 mb-2 border d-flex justify-content-between align-items-center">
-                            <div>
-                                <span class="d-block text-muted" style="font-size: 0.7rem; line-height: 1;">Rent / Month</span>
-                                <span class="fw-bold text-dm-red fs-6"><?= $oc['rent_price'] ?></span>
-                            </div>
-                            <div class="text-end border-start ps-2">
-                                <span class="d-block text-muted" style="font-size: 0.7rem; line-height: 1;">Buy New</span>
-                                <span class="fw-bold text-dark small"><?= $oc['buy_price'] ?></span>
-                            </div>
+                            <span class="small fw-semibold text-dark" style="font-size: 0.78rem;"><i class="fa-solid fa-circle-check text-success me-1"></i> Available on Rent</span>
+                            <span class="badge bg-success bg-opacity-10 text-success border border-success rounded-pill px-2 py-1" style="font-size: 0.7rem;">Same-Day Delivery</span>
                         </div>
 
                         <!-- Actions (Side by Side Compact) -->
                         <div class="d-flex gap-2">
-                            <a href="https://wa.me/919319149644?text=<?= urlencode('Hi DM Healthcare, I need ' . $oc['title'] . ' (' . $oc['rent_price'] . '/mo) urgently. Please share availability.') ?>" target="_blank" class="btn btn-outline-success btn-sm rounded-pill fw-bold px-2 py-1 flex-fill d-flex align-items-center justify-content-center gap-1" style="font-size: 0.78rem;">
+                            <a href="https://wa.me/919319149644?text=<?= urlencode('Hi DM Healthcare, I need ' . $oc['title'] . ' urgently. Please share availability and details.') ?>" target="_blank" class="btn btn-outline-success btn-sm rounded-pill fw-bold px-2 py-1 flex-fill d-flex align-items-center justify-content-center gap-1" style="font-size: 0.78rem;">
                                 <i class="fa-brands fa-whatsapp"></i> Chat
                             </a>
                             <a href="#booking-form" onclick="selectOcModel('<?= addslashes($oc['title']) ?>')" class="btn btn-dm-red btn-sm rounded-pill fw-bold px-2 py-1 flex-fill d-flex align-items-center justify-content-center gap-1" style="font-size: 0.78rem;">
@@ -271,10 +262,10 @@ ob_start();
                         <td class="py-2 px-3 text-success">Silent (No motor)</td>
                     </tr>
                     <tr>
-                        <td class="py-2 px-3 fw-bold text-dark">Monthly Rent</td>
-                        <td class="py-2 px-3 fw-bold text-dm-red">₹3,500 / month</td>
-                        <td class="py-2 px-3 fw-bold text-dm-red">₹6,500 / month</td>
-                        <td class="py-2 px-3 text-dark">₹1,500 + Refills</td>
+                        <td class="py-2 px-3 fw-bold text-dark">Rental Status</td>
+                        <td class="py-2 px-3 fw-bold text-success"><i class="fa-solid fa-circle-check me-1"></i> Available on Rent</td>
+                        <td class="py-2 px-3 fw-bold text-success"><i class="fa-solid fa-circle-check me-1"></i> Available on Rent</td>
+                        <td class="py-2 px-3 fw-bold text-success"><i class="fa-solid fa-circle-check me-1"></i> Available on Rent</td>
                     </tr>
                 </tbody>
             </table>
@@ -380,9 +371,9 @@ ob_start();
                             <div class="col-md-6">
                                 <label class="form-label small fw-semibold text-secondary mb-1">Select Oxygen Model *</label>
                                 <select name="model" id="ocModelSelect" class="form-select form-select-sm rounded-2" required>
-                                    <option value="5 Litre Oxygen Concentrator (₹3,500/mo)">5 Litre Standard (₹3,500/mo)</option>
-                                    <option value="10 Litre High-Flow Dual Machine (₹6,500/mo)">10 Litre High-Flow Dual (₹6,500/mo)</option>
-                                    <option value="5 Litre with Inbuilt Nebulizer (₹4,000/mo)">5 Litre + Nebulizer (₹4,000/mo)</option>
+                                    <option value="5 Litre Home Oxygen Concentrator">5 Litre Home Oxygen Concentrator</option>
+                                    <option value="10 Litre High-Flow Dual Oxygen Concentrator">10 Litre High-Flow Dual Oxygen Concentrator</option>
+                                    <option value="5 Litre Concentrator with Inbuilt Nebulizer">5 Litre Concentrator with Inbuilt Nebulizer</option>
                                     <option value="Oxygen Cylinder Backup Kit">Oxygen Cylinder Backup Kit</option>
                                 </select>
                             </div>

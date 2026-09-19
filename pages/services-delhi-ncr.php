@@ -717,7 +717,7 @@ $frontend_custom_sections = '
                     <i class="fa-solid fa-wheelchair"></i>
                 </div>
                 <h4 class="fw-bold text-dark mb-2">Medical Equipment on Rent</h4>
-                <p class="text-muted small mb-4 flex-grow-1">High-grade sanitized medical machinery available on flexible rental and purchase. Delivered and professionally installed at your home with 24/7 technical assistance.</p>
+                <p class="text-muted small mb-4 flex-grow-1">High-grade sanitized medical machinery available on flexible rental. Delivered and professionally installed at your home with 24/7 technical assistance.</p>
                 <ul class="list-unstyled text-muted small mb-4">
                     <li class="mb-2"><i class="fa-solid fa-circle-check text-warning me-2" style="color: #d97706 !important;"></i> 3 & 5 Function Motorized Hospital Beds</li>
                     <li class="mb-2"><i class="fa-solid fa-circle-check text-warning me-2" style="color: #d97706 !important;"></i> Oxygen Concentrators (5L / 10L) & BiPAP/CPAP</li>

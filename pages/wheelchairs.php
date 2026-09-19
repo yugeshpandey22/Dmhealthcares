@@ -1,6 +1,6 @@
 <?php
 /**
- * DM Healthcare - Wheelchairs on Rent & Sale
+ * DM Healthcare - Wheelchairs on Rent
  * Modern, Bootstrap 5-Powered Medical Equipment Portal
  */
 
@@ -21,7 +21,6 @@ $wheelchairs = [
         'badge_class' => 'bg-danger',
         'rent_price' => '₹1,200',
         'rent_period' => '/ month',
-        'buy_price' => '₹6,500',
         'image' => 'assets/images/pages/wheelchair_manual_standard.jpg',
         'features' => ['Chrome-plated heavy duty steel frame', 'Foldable & compact for car boot fit', '100 kg weight capacity & safety brakes', 'Padded armrests & swing-away footrests'],
         'ideal_for' => 'Post-surgery recovery, senior home mobility'
@@ -34,7 +33,6 @@ $wheelchairs = [
         'badge_class' => 'bg-primary',
         'rent_price' => '₹1,800',
         'rent_period' => '/ month',
-        'buy_price' => '₹11,500',
         'image' => 'assets/images/pages/wheelchair_manual_standard.jpg',
         'features' => ['Aircraft-grade lightweight aluminium frame', 'Dual attendant handbrakes for safety', 'Quick single-pull fold mechanism', 'Breathable antibacterial cushion seat'],
         'ideal_for' => 'Frequent outdoor travel & hospital OPD visits'
@@ -47,7 +45,6 @@ $wheelchairs = [
         'badge_class' => 'bg-info text-dark',
         'rent_price' => '₹1,500',
         'rent_period' => '/ month',
-        'buy_price' => '₹8,500',
         'image' => 'assets/images/pages/wheelchair_recliner_commode.jpg',
         'features' => ['Waterproof padded seat with center cut-out', 'Slide-out removable commode pan with lid', 'Direct roll-over western toilet design', 'Rust-proof chrome frame with wheel locks'],
         'ideal_for' => 'Bedridden & elderly patients needing bathroom assistance'
@@ -60,7 +57,6 @@ $wheelchairs = [
         'badge_class' => 'bg-warning text-dark',
         'rent_price' => '₹2,500',
         'rent_period' => '/ month',
-        'buy_price' => '₹16,000',
         'image' => 'assets/images/pages/wheelchair_recliner_commode.jpg',
         'features' => ['Hydraulic recline from 90° upright to 180° bed flat', 'Detachable headrest & neck stabilizer cushion', 'Elevating leg-rests with cushioned calf pads', 'Built-in commode pot & anti-tipper rear wheels'],
         'ideal_for' => 'Spinal injuries, paralysis, stroke rehabilitation'
@@ -73,7 +69,6 @@ $wheelchairs = [
         'badge_class' => 'bg-success',
         'rent_price' => '₹4,500',
         'rent_period' => '/ month',
-        'buy_price' => '₹45,000',
         'image' => 'assets/images/pages/wheelchair_electric_motorized.jpg',
         'features' => ['360° sensitive joystick control (interchangeable)', 'Dual 250W powerful brushless motors', '20 km travel range per full charge', 'Electromagnetic auto-braking on slopes'],
         'ideal_for' => 'Independent mobility for seniors and disabled individuals'
@@ -86,7 +81,6 @@ $wheelchairs = [
         'badge_class' => 'bg-dark',
         'rent_price' => '₹6,000',
         'rent_period' => '/ month',
-        'buy_price' => '₹68,000',
         'image' => 'assets/images/pages/wheelchair_electric_motorized.jpg',
         'features' => ['One-touch 5-second automatic fold', 'Removable lightweight Lithium-ion battery', 'Fits in any small car boot or flight cargo', 'Anti-skid polyurethane all-terrain tyres'],
         'ideal_for' => 'Independent air travel, malls, parks & daily commute'
@@ -99,7 +93,6 @@ $wheelchairs = [
         'badge_class' => 'bg-danger',
         'rent_price' => '₹8,500',
         'rent_period' => '/ month',
-        'buy_price' => '₹1,25,000',
         'image' => 'assets/images/pages/wheelchair_stair_climber.jpg',
         'features' => ['High-traction rubber track for stairs', 'Zero effort single-operator motorized climb & descend', 'Safety restraint harness & emergency auto-lock', '160 kg heavy-duty weight support'],
         'ideal_for' => 'Buildings without elevators, multi-storey residential transfers'
@@ -112,7 +105,6 @@ $wheelchairs = [
         'badge_class' => 'bg-info text-dark',
         'rent_price' => '₹2,000',
         'rent_period' => '/ month',
-        'buy_price' => '₹12,000',
         'image' => 'assets/images/pages/wheelchair_manual_standard.jpg',
         'features' => ['Compact 14-inch seat designed for children', 'Adjustable footplate height & side lateral supports', 'Vibrant cheerful frame & comfortable cushions', 'Attendant handbrakes & harness belts'],
         'ideal_for' => 'Paediatric orthopaedic recovery & cerebral palsy care'
@@ -267,21 +259,15 @@ ob_start();
                             <?php endforeach; ?>
                         </ul>
 
-                        <!-- Compact Pricing Row -->
+                        <!-- Status & Delivery Badge -->
                         <div class="bg-light p-2 px-3 rounded-2 mb-2 border d-flex justify-content-between align-items-center">
-                            <div>
-                                <span class="d-block text-muted" style="font-size: 0.7rem; line-height: 1;">Rent / Month</span>
-                                <span class="fw-bold text-dm-red fs-6"><?= $wc['rent_price'] ?></span>
-                            </div>
-                            <div class="text-end border-start ps-2">
-                                <span class="d-block text-muted" style="font-size: 0.7rem; line-height: 1;">Buy New</span>
-                                <span class="fw-bold text-dark small"><?= $wc['buy_price'] ?></span>
-                            </div>
+                            <span class="small fw-semibold text-dark" style="font-size: 0.78rem;"><i class="fa-solid fa-circle-check text-success me-1"></i> Available on Rent</span>
+                            <span class="badge bg-success bg-opacity-10 text-success border border-success rounded-pill px-2 py-1" style="font-size: 0.7rem;">Same-Day Delivery</span>
                         </div>
 
                         <!-- Actions (Side by Side Compact) -->
                         <div class="d-flex gap-2">
-                            <a href="https://wa.me/919319149644?text=<?= urlencode('Hi DM Healthcare, I am interested in ' . $wc['title'] . ' (' . $wc['rent_price'] . '/mo). Please share details.') ?>" target="_blank" class="btn btn-outline-success btn-sm rounded-pill fw-bold px-2 py-1 flex-fill d-flex align-items-center justify-content-center gap-1" style="font-size: 0.78rem;">
+                            <a href="https://wa.me/919319149644?text=<?= urlencode('Hi DM Healthcare, I am interested in renting ' . $wc['title'] . '. Please share details.') ?>" target="_blank" class="btn btn-outline-success btn-sm rounded-pill fw-bold px-2 py-1 flex-fill d-flex align-items-center justify-content-center gap-1" style="font-size: 0.78rem;">
                                 <i class="fa-brands fa-whatsapp"></i> Chat
                             </a>
                             <a href="#booking-form" onclick="selectModel('<?= addslashes($wc['title']) ?>')" class="btn btn-dm-red btn-sm rounded-pill fw-bold px-2 py-1 flex-fill d-flex align-items-center justify-content-center gap-1" style="font-size: 0.78rem;">
@@ -314,7 +300,7 @@ ob_start();
                         <th class="py-3 px-3">Recline Capability</th>
                         <th class="py-3 px-3">Power / Battery</th>
                         <th class="py-3 px-3">Best Recommended For</th>
-                        <th class="py-3 px-4 text-end">Rent / Month</th>
+                        <th class="py-3 px-4 text-end">Rental Availability</th>
                     </tr>
                 </thead>
                 <tbody class="divide-y">
@@ -324,7 +310,7 @@ ob_start();
                         <td class="py-3 px-3 text-muted">Fixed 90° Back</td>
                         <td class="py-3 px-3 text-muted">Manual Push</td>
                         <td class="py-3 px-3 text-muted">General home recovery & senior care</td>
-                        <td class="py-3 px-4 text-end fw-bold text-dm-red">₹1,200</td>
+                        <td class="py-3 px-4 text-end fw-bold text-success"><i class="fa-solid fa-circle-check me-1"></i> Available on Rent</td>
                     </tr>
                     <tr>
                         <td class="py-3 px-4 fw-bold text-dark"><i class="fa-solid fa-feather-pointed me-2 text-primary"></i> Aluminium Lightweight</td>
@@ -332,7 +318,7 @@ ob_start();
                         <td class="py-3 px-3 text-muted">Half-folding back</td>
                         <td class="py-3 px-3 text-muted">Manual Push</td>
                         <td class="py-3 px-3 text-muted">Frequent car travel & doctor visits</td>
-                        <td class="py-3 px-4 text-end fw-bold text-dm-red">₹1,800</td>
+                        <td class="py-3 px-4 text-end fw-bold text-success"><i class="fa-solid fa-circle-check me-1"></i> Available on Rent</td>
                     </tr>
                     <tr>
                         <td class="py-3 px-4 fw-bold text-dark"><i class="fa-solid fa-restroom me-2 text-info"></i> Commode & Toilet Type</td>
@@ -340,7 +326,7 @@ ob_start();
                         <td class="py-3 px-3 text-muted">Fixed Back</td>
                         <td class="py-3 px-3 text-muted">Manual Push</td>
                         <td class="py-3 px-3 text-muted">Bathroom assistance for bedridden patients</td>
-                        <td class="py-3 px-4 text-end fw-bold text-dm-red">₹1,500</td>
+                        <td class="py-3 px-4 text-end fw-bold text-success"><i class="fa-solid fa-circle-check me-1"></i> Available on Rent</td>
                     </tr>
                     <tr>
                         <td class="py-3 px-4 fw-bold text-dark"><i class="fa-solid fa-bed me-2 text-warning"></i> High-Back Recliner (180°)</td>
@@ -348,7 +334,7 @@ ob_start();
                         <td class="py-3 px-3 text-success fw-semibold">90° to 180° Bed Flat</td>
                         <td class="py-3 px-3 text-muted">Manual Hydraulic</td>
                         <td class="py-3 px-3 text-muted">Paralysis, stroke, head/neck support</td>
-                        <td class="py-3 px-4 text-end fw-bold text-dm-red">₹2,500</td>
+                        <td class="py-3 px-4 text-end fw-bold text-success"><i class="fa-solid fa-circle-check me-1"></i> Available on Rent</td>
                     </tr>
                     <tr>
                         <td class="py-3 px-4 fw-bold text-dark"><i class="fa-solid fa-bolt me-2 text-success"></i> Motorized Power Wheelchair</td>
@@ -356,7 +342,7 @@ ob_start();
                         <td class="py-3 px-3 text-muted">Semi-Recline Option</td>
                         <td class="py-3 px-3 text-success fw-semibold">20 km / Charge (Dual Motor)</td>
                         <td class="py-3 px-3 text-muted">Self-driving independent senior mobility</td>
-                        <td class="py-3 px-4 text-end fw-bold text-dm-red">₹4,500</td>
+                        <td class="py-3 px-4 text-end fw-bold text-success"><i class="fa-solid fa-circle-check me-1"></i> Available on Rent</td>
                     </tr>
                     <tr>
                         <td class="py-3 px-4 fw-bold text-dark"><i class="fa-solid fa-stairs me-2 text-danger"></i> Tracked Stair Climber</td>
@@ -364,7 +350,7 @@ ob_start();
                         <td class="py-3 px-3 text-muted">Ergonomic Safety Angle</td>
                         <td class="py-3 px-3 text-success fw-semibold">Motorized Track Crawler</td>
                         <td class="py-3 px-3 text-muted">Multi-storey homes with no lift</td>
-                        <td class="py-3 px-4 text-end fw-bold text-dm-red">₹8,500</td>
+                        <td class="py-3 px-4 text-end fw-bold text-success"><i class="fa-solid fa-circle-check me-1"></i> Available on Rent</td>
                     </tr>
                 </tbody>
             </table>
@@ -429,7 +415,7 @@ ob_start();
             <!-- Left Info -->
             <div class="col-lg-5">
                 <span class="badge bg-danger bg-opacity-10 text-danger px-3 py-1 rounded-pill fw-semibold mb-2">Instant Booking</span>
-                <h2 class="fw-bold text-dark mb-3">Book Wheelchair for Rent or Purchase</h2>
+                <h2 class="fw-bold text-dark mb-3">Book Wheelchair for Rent</h2>
                 <p class="text-muted mb-4">Fill out the form to request instant same-day delivery in Faridabad, Noida, Delhi, or Gurugram. Our care desk will confirm your order in under 10 minutes.</p>
                 
                 <div class="card bg-light border-0 rounded-4 p-4 mb-3">
@@ -472,23 +458,22 @@ ob_start();
                                 <label class="form-label small fw-semibold text-secondary">Select Wheelchair Model *</label>
                                 <select name="model" id="modelSelect" class="form-select rounded-3 py-2" required>
                                     <option value="">-- Choose Wheelchair --</option>
-                                    <option value="Standard Manual Foldable (₹1,200/mo)">Standard Manual Foldable (₹1,200/mo)</option>
-                                    <option value="Aluminium Ultra-Lightweight (₹1,800/mo)">Aluminium Ultra-Lightweight (₹1,800/mo)</option>
-                                    <option value="Commode Wheelchair with Pot (₹1,500/mo)">Commode Wheelchair with Pot (₹1,500/mo)</option>
-                                    <option value="High-Back Recliner 180° (₹2,500/mo)">High-Back Recliner 180° (₹2,500/mo)</option>
-                                    <option value="Motorized Electric Power (₹4,500/mo)">Motorized Electric Power (₹4,500/mo)</option>
-                                    <option value="Foldable Smart Power Wheelchair (₹6,000/mo)">Foldable Smart Power Wheelchair (₹6,000/mo)</option>
-                                    <option value="Tracked Stair Climber (₹8,500/mo)">Tracked Stair Climber (₹8,500/mo)</option>
-                                    <option value="Paediatric Child Wheelchair (₹2,000/mo)">Paediatric Child Wheelchair (₹2,000/mo)</option>
+                                    <option value="Standard Foldable Manual Wheelchair">Standard Foldable Manual Wheelchair</option>
+                                    <option value="Ultra-Lightweight Aluminium Wheelchair">Ultra-Lightweight Aluminium Wheelchair</option>
+                                    <option value="Commode Wheelchair with Removable Pot">Commode Wheelchair with Removable Pot</option>
+                                    <option value="High-Back Reclining Wheelchair (180°)">High-Back Reclining Wheelchair (180°)</option>
+                                    <option value="Motorized Electric Power Wheelchair">Motorized Electric Power Wheelchair</option>
+                                    <option value="Smart Foldable Power Wheelchair">Smart Foldable Power Wheelchair</option>
+                                    <option value="Motorized Tracked Stair-Climber Wheelchair">Motorized Tracked Stair-Climber Wheelchair</option>
+                                    <option value="Paediatric Child Wheelchair">Paediatric Child Wheelchair</option>
                                 </select>
                             </div>
                             <div class="col-md-6">
                                 <label class="form-label small fw-semibold text-secondary">Service Requirement *</label>
                                 <select name="requirement_type" class="form-select rounded-3 py-2" required>
                                     <option value="Monthly Rental">Monthly Rental</option>
-                                    <option value="Purchase / Buy New">Purchase / Buy New</option>
                                     <option value="15-Day Short Rental">15-Day Short Rental</option>
-                                    <option value="Rent-to-Buy Option">Rent-to-Buy Option</option>
+                                    <option value="Long-term Rental">Long-term Rental</option>
                                 </select>
                             </div>
                             <div class="col-md-6">
@@ -589,12 +574,12 @@ ob_start();
             <div class="accordion-item">
                 <h2 class="accordion-header" id="faqFive">
                     <button class="accordion-button collapsed fw-bold text-dark py-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive">
-                        Can I convert my rental into a permanent purchase (Rent-to-Buy)?
+                        Can I extend or upgrade my wheelchair rental anytime?
                     </button>
                 </h2>
                 <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#wcFaqAccordion">
                     <div class="accordion-body text-muted small lh-base">
-                        Yes! With our Rent-to-Buy scheme, up to 50% of the rent paid during your first 3 months can be adjusted against the purchase price if you decide to buy the equipment permanently.
+                        Yes, absolutely! You can extend your rental duration effortlessly with a quick call or WhatsApp message, or upgrade to an electric or recliner model whenever needed without hassle.
                     </div>
                 </div>
             </div>

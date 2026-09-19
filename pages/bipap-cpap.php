@@ -607,7 +607,7 @@ ob_start();
                         </tr>
                         <tr>
                             <td class="fw-bold text-dark">Equipment upgrade</td>
-                            <td class="text-muted">Cannot switch models easily without resale loss</td>
+                            <td class="text-muted">Cannot switch models easily without financial loss</td>
                             <td class="text-dark fw-semibold bg-danger bg-opacity-10">Upgrade model anytime as doctor changes prescription</td>
                         </tr>
                         <tr>
@@ -949,21 +949,21 @@ ob_start();
                     <div>
                         <div class="d-flex justify-content-between align-items-start mb-2">
                             <h6 class="fw-bold text-dark mb-0">Evox NoahSleep 25ST / 30ST</h6>
-                            <span class="badge bg-danger bg-opacity-10 text-danger small">Rent or Buy</span>
+                            <span class="badge bg-danger bg-opacity-10 text-danger small">Available on Rent</span>
                         </div>
                         <p class="small text-muted mb-2">Heavy duty hospital-grade ST BiPAP machine with target tidal volume and high pressure support up to 30 cmH2O.</p>
                         <ul class="list-unstyled small text-muted mb-3" style="font-size: 0.78rem;">
-                            <li><i class="fa-solid fa-check text-success me-1"></i> Buy Price: ₹65,000 (Full Warranty)</li>
+                            <li><i class="fa-solid fa-check text-success me-1"></i> Sanitized & Certified with Mask Kit</li>
                             <li><i class="fa-solid fa-check text-success me-1"></i> Rent: ₹5,500 - ₹6,000 / month</li>
                         </ul>
                     </div>
                     <div class="pt-2 border-top d-flex justify-content-between align-items-center">
                         <div>
-                            <span class="d-block text-muted" style="font-size: 0.72rem;">Rent / Buy:</span>
+                            <span class="d-block text-muted" style="font-size: 0.72rem;">Monthly Rent:</span>
                             <span class="fw-bold text-dm-red fs-6">₹5,500 <small class="text-muted">/mo</small></span>
                         </div>
-                        <a href="https://wa.me/919319149644?text=I+want+to+inquire+about+Evox+NoahSleep+BiPAP" target="_blank" class="btn btn-dm-red rounded-pill btn-sm px-3 fw-bold">
-                            Rent / Buy
+                        <a href="https://wa.me/919319149644?text=I+want+to+inquire+about+Evox+NoahSleep+BiPAP+Rental" target="_blank" class="btn btn-dm-red rounded-pill btn-sm px-3 fw-bold">
+                            Rent Now
                         </a>
                     </div>
                 </div>
@@ -977,7 +977,7 @@ ob_start();
                             <h6 class="fw-bold text-dark mb-0">Evox Auto BiPAP & CPAP Series</h6>
                             <span class="badge bg-success bg-opacity-10 text-success small">Evox Fleet</span>
                         </div>
-                        <p class="small text-muted mb-2">Includes NoahSleep 25A Auto BiPAP (Buy ₹51,000), NoahSleep 5A CPAP (Buy ₹45,000), and Evox TWINPAP (Buy ₹45,000).</p>
+                        <p class="small text-muted mb-2">Includes NoahSleep 25A Auto BiPAP, NoahSleep 5A CPAP, and Evox TWINPAP high-performance devices.</p>
                         <ul class="list-unstyled small text-muted mb-3" style="font-size: 0.78rem;">
                             <li><i class="fa-solid fa-check text-success me-1"></i> Full digital display & heated humidifier</li>
                             <li><i class="fa-solid fa-check text-success me-1"></i> Ready for same-day delivery</li>
@@ -985,11 +985,11 @@ ob_start();
                     </div>
                     <div class="pt-2 border-top d-flex justify-content-between align-items-center">
                         <div>
-                            <span class="d-block text-muted" style="font-size: 0.72rem;">Rent / Buy:</span>
+                            <span class="d-block text-muted" style="font-size: 0.72rem;">Monthly Rent:</span>
                             <span class="fw-bold text-dm-red fs-6">₹3,500 - ₹4,500 <small class="text-muted">/mo</small></span>
                         </div>
-                        <a href="https://wa.me/919319149644?text=I+want+to+inquire+about+Evox+CPAP+BiPAP+series" target="_blank" class="btn btn-dm-red rounded-pill btn-sm px-3 fw-bold">
-                            Rent / Buy
+                        <a href="https://wa.me/919319149644?text=I+want+to+inquire+about+Evox+CPAP+BiPAP+series+Rental" target="_blank" class="btn btn-dm-red rounded-pill btn-sm px-3 fw-bold">
+                            Rent Now
                         </a>
                     </div>
                 </div>

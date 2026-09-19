@@ -399,7 +399,7 @@ $frontend_custom_sections .= '
                         </h2>
                         <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
                             <div class="accordion-body text-muted">
-                                Yes, we provide flexible procurement options including direct purchase, bulk order discounts, and rental options for select high-value equipment.
+                                Yes, we provide flexible equipment rental options, tailored monthly plans, and bulk institutional packages for select high-value equipment.
                             </div>
                         </div>
                     </div>

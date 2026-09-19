@@ -1,13 +1,13 @@
 <?php
 /**
  * DM Healthcare - E-Store (Medical Equipment, ICU Devices & Healthcare Supplies)
- * Complete Medical Marketplace & Online Rental/Purchase Portal
+ * Complete Medical Marketplace & Online Rental Portal
  */
 
-$display_title = "DM Healthcare E-Store - Buy & Rent Medical Equipment Online";
-$seo_title = "Medical Equipment E-Store in Delhi NCR - Buy & Rent Online | DM Healthcare";
-$seo_desc = "Buy and rent certified medical equipment online in Delhi NCR. Hospital beds, oxygen concentrators, BiPAP/CPAP, wheelchairs, ICU monitors, air mattresses & medical disposables with same-day doorstep delivery.";
-$short_desc = "North India's trusted online medical marketplace. Buy or rent doctor-certified hospital beds, oxygen machines, wheelchairs, and ICU devices with same-day delivery.";
+$display_title = "DM Healthcare E-Store - Medical Equipment Rental Online";
+$seo_title = "Medical Equipment Rental E-Store in Delhi NCR | DM Healthcare";
+$seo_desc = "Certified medical equipment rental online in Delhi NCR. Hospital beds, oxygen concentrators, BiPAP/CPAP, wheelchairs, ICU monitors, air mattresses & medical disposables with same-day doorstep delivery.";
+$short_desc = "North India's trusted online medical equipment catalog. Doctor-certified hospital beds, oxygen machines, wheelchairs, and ICU devices with same-day delivery.";
 $category_name = "Medical Equipment";
 $full_page_override = true;
 
@@ -164,7 +164,7 @@ ob_start();
             <span class="trust-badge-pill"><i class="fa-solid fa-certificate text-warning"></i> ISO 9001:2015 Certified E-Store</span>
             <span class="trust-badge-pill"><i class="fa-solid fa-truck-fast text-info"></i> Same-Day Doorstep Delivery</span>
             <span class="trust-badge-pill"><i class="fa-solid fa-shield-halved text-success"></i> 100% Genuine OEM Warranty</span>
-            <span class="trust-badge-pill"><i class="fa-solid fa-handshake text-warning"></i> Rent or Buy Flexibility</span>
+            <span class="trust-badge-pill"><i class="fa-solid fa-handshake text-warning"></i> Flexible Rental Plans</span>
             <span class="trust-badge-pill"><i class="fa-solid fa-money-bill-wave text-success"></i> Cash / UPI on Delivery</span>
         </div>
 
@@ -174,10 +174,10 @@ ob_start();
                     <i class="fa-solid fa-store me-1"></i> Official Medical Marketplace
                 </span>
                 <h1 class="display-6 fw-bold text-white lh-sm mb-3">
-                    Buy & Rent Medical Equipment <span class="text-dm-red">Online</span>
+                    Medical Equipment Rental <span class="text-dm-red">Online</span>
                 </h1>
                 <p class="text-light fs-6 mb-4 opacity-90" style="line-height: 1.7;">
-                    Explore North India's largest verified medical healthcare catalog. Rent or purchase <strong>Hospital Beds, Oxygen Concentrators, BiPAP/CPAP Machines, Wheelchairs, ICU Monitors, Air Mattresses, and Medical Accessories</strong> at direct hospital rates with free home installation and titration across Delhi NCR.
+                    Explore North India's largest verified medical healthcare catalog. Rent <strong>Hospital Beds, Oxygen Concentrators, BiPAP/CPAP Machines, Wheelchairs, ICU Monitors, Air Mattresses, and Medical Accessories</strong> at direct hospital rates with free home installation and titration across Delhi NCR.
                 </p>
 
                 <div class="d-flex flex-wrap gap-2 mb-4">
@@ -187,7 +187,7 @@ ob_start();
                     <a href="tel:+919319149644" class="btn btn-outline-light btn-lg rounded-pill px-4 py-2 fw-bold d-inline-flex align-items-center gap-2 small">
                         <i class="fa-solid fa-phone"></i> Order on Call (+91 93191 49644)
                     </a>
-                    <a href="https://wa.me/919319149644?text=Hello%20DM%20Healthcare,%20I%20want%20to%20buy/rent%20medical%20equipment%20from%20your%20E-Store." target="_blank" class="btn btn-success btn-lg rounded-pill px-4 py-2 fw-bold d-inline-flex align-items-center gap-2 small">
+                    <a href="https://wa.me/919319149644?text=Hello%20DM%20Healthcare,%20I%20want%20to%20rent%20medical%20equipment%20from%20your%20E-Store." target="_blank" class="btn btn-success btn-lg rounded-pill px-4 py-2 fw-bold d-inline-flex align-items-center gap-2 small">
                         <i class="fa-brands fa-whatsapp"></i> WhatsApp Order
                     </a>
                 </div>
@@ -242,7 +242,7 @@ ob_start();
                             </select>
                         </div>
                         <div class="mb-3">
-                            <textarea name="message" rows="2" class="form-control form-control-sm rounded-2" placeholder="Mention whether you need Rent or Buy, specific model or doctor notes..."></textarea>
+                            <textarea name="message" rows="2" class="form-control form-control-sm rounded-2" placeholder="Mention equipment model needed, rental duration or doctor notes..."></textarea>
                         </div>
                         <button type="submit" class="btn btn-dm-red w-100 rounded-pill fw-bold py-2 shadow-sm">
                             <i class="fa-solid fa-paper-plane me-1"></i> Get Price & Confirm Delivery
@@ -309,12 +309,11 @@ ob_start();
                         <div>
                             <div class="d-flex justify-content-between align-items-baseline mb-3 pt-2 border-top">
                                 <div>
-                                    <span class="d-block text-muted" style="font-size: 0.72rem;">Rent / Buy:</span>
-                                    <span class="fw-bold text-dm-red fs-6">Rent: ₹3,500 <small class="text-muted">/mo</small></span>
+                                    <span class="d-block text-muted" style="font-size: 0.72rem;">Monthly Rental:</span>
+                                    <span class="fw-bold text-dm-red fs-6">₹3,500 <small class="text-muted">/mo</small></span>
                                 </div>
                                 <div class="text-end">
-                                    <span class="d-block text-muted" style="font-size: 0.72rem;">Buy Price:</span>
-                                    <span class="fw-bold text-dark fs-6">₹32,000</span>
+                                    <span class="badge bg-success bg-opacity-10 text-success border border-success rounded-pill px-2 py-1" style="font-size: 0.7rem;">In Stock</span>
                                 </div>
                             </div>
                             <div class="d-grid gap-2">
@@ -353,12 +352,11 @@ ob_start();
                         <div>
                             <div class="d-flex justify-content-between align-items-baseline mb-3 pt-2 border-top">
                                 <div>
-                                    <span class="d-block text-muted" style="font-size: 0.72rem;">Rent / Buy:</span>
-                                    <span class="fw-bold text-dm-red fs-6">Rent: ₹6,500 <small class="text-muted">/mo</small></span>
+                                    <span class="d-block text-muted" style="font-size: 0.72rem;">Monthly Rental:</span>
+                                    <span class="fw-bold text-dm-red fs-6">₹6,500 <small class="text-muted">/mo</small></span>
                                 </div>
                                 <div class="text-end">
-                                    <span class="d-block text-muted" style="font-size: 0.72rem;">Buy Price:</span>
-                                    <span class="fw-bold text-dark fs-6">₹62,000</span>
+                                    <span class="badge bg-success bg-opacity-10 text-success border border-success rounded-pill px-2 py-1" style="font-size: 0.7rem;">In Stock</span>
                                 </div>
                             </div>
                             <div class="d-grid gap-2">
@@ -397,12 +395,11 @@ ob_start();
                         <div>
                             <div class="d-flex justify-content-between align-items-baseline mb-3 pt-2 border-top">
                                 <div>
-                                    <span class="d-block text-muted" style="font-size: 0.72rem;">Rent / Buy:</span>
-                                    <span class="fw-bold text-dm-red fs-6">Rent: ₹3,500 <small class="text-muted">/mo</small></span>
+                                    <span class="d-block text-muted" style="font-size: 0.72rem;">Monthly Rental:</span>
+                                    <span class="fw-bold text-dm-red fs-6">₹3,500 <small class="text-muted">/mo</small></span>
                                 </div>
                                 <div class="text-end">
-                                    <span class="d-block text-muted" style="font-size: 0.72rem;">Buy Price:</span>
-                                    <span class="fw-bold text-dark fs-6">₹48,000</span>
+                                    <span class="badge bg-success bg-opacity-10 text-success border border-success rounded-pill px-2 py-1" style="font-size: 0.7rem;">In Stock</span>
                                 </div>
                             </div>
                             <div class="d-grid gap-2">
@@ -441,12 +438,11 @@ ob_start();
                         <div>
                             <div class="d-flex justify-content-between align-items-baseline mb-3 pt-2 border-top">
                                 <div>
-                                    <span class="d-block text-muted" style="font-size: 0.72rem;">Rent / Buy:</span>
-                                    <span class="fw-bold text-dm-red fs-6">Rent: ₹4,500 - ₹7,500 <small class="text-muted">/mo</small></span>
+                                    <span class="d-block text-muted" style="font-size: 0.72rem;">Monthly Rental:</span>
+                                    <span class="fw-bold text-dm-red fs-6">₹4,500 - ₹7,500 <small class="text-muted">/mo</small></span>
                                 </div>
                                 <div class="text-end">
-                                    <span class="d-block text-muted" style="font-size: 0.72rem;">Buy Price:</span>
-                                    <span class="fw-bold text-dark fs-6">₹65,000</span>
+                                    <span class="badge bg-success bg-opacity-10 text-success border border-success rounded-pill px-2 py-1" style="font-size: 0.7rem;">In Stock</span>
                                 </div>
                             </div>
                             <div class="d-grid gap-2">
@@ -485,12 +481,11 @@ ob_start();
                         <div>
                             <div class="d-flex justify-content-between align-items-baseline mb-3 pt-2 border-top">
                                 <div>
-                                    <span class="d-block text-muted" style="font-size: 0.72rem;">Rent / Buy:</span>
-                                    <span class="fw-bold text-dm-red fs-6">Rent: ₹4,000 - ₹6,000 <small class="text-muted">/mo</small></span>
+                                    <span class="d-block text-muted" style="font-size: 0.72rem;">Monthly Rental:</span>
+                                    <span class="fw-bold text-dm-red fs-6">₹4,000 - ₹6,000 <small class="text-muted">/mo</small></span>
                                 </div>
                                 <div class="text-end">
-                                    <span class="d-block text-muted" style="font-size: 0.72rem;">Buy Price:</span>
-                                    <span class="fw-bold text-dark fs-6">₹45,000</span>
+                                    <span class="badge bg-success bg-opacity-10 text-success border border-success rounded-pill px-2 py-1" style="font-size: 0.7rem;">In Stock</span>
                                 </div>
                             </div>
                             <div class="d-grid gap-2">
@@ -529,12 +524,11 @@ ob_start();
                         <div>
                             <div class="d-flex justify-content-between align-items-baseline mb-3 pt-2 border-top">
                                 <div>
-                                    <span class="d-block text-muted" style="font-size: 0.72rem;">Rent / Buy:</span>
-                                    <span class="fw-bold text-dm-red fs-6">Rent: ₹2,000 <small class="text-muted">/mo</small></span>
+                                    <span class="d-block text-muted" style="font-size: 0.72rem;">Monthly Rental:</span>
+                                    <span class="fw-bold text-dm-red fs-6">₹2,000 <small class="text-muted">/mo</small></span>
                                 </div>
                                 <div class="text-end">
-                                    <span class="d-block text-muted" style="font-size: 0.72rem;">Buy Price:</span>
-                                    <span class="fw-bold text-dark fs-6">₹18,500</span>
+                                    <span class="badge bg-success bg-opacity-10 text-success border border-success rounded-pill px-2 py-1" style="font-size: 0.7rem;">In Stock</span>
                                 </div>
                             </div>
                             <div class="d-grid gap-2">
@@ -573,12 +567,11 @@ ob_start();
                         <div>
                             <div class="d-flex justify-content-between align-items-baseline mb-3 pt-2 border-top">
                                 <div>
-                                    <span class="d-block text-muted" style="font-size: 0.72rem;">Rent / Buy:</span>
-                                    <span class="fw-bold text-dm-red fs-6">Rent: ₹8,000 <small class="text-muted">/mo</small></span>
+                                    <span class="d-block text-muted" style="font-size: 0.72rem;">Monthly Rental:</span>
+                                    <span class="fw-bold text-dm-red fs-6">₹8,000 <small class="text-muted">/mo</small></span>
                                 </div>
                                 <div class="text-end">
-                                    <span class="d-block text-muted" style="font-size: 0.72rem;">Buy Price:</span>
-                                    <span class="fw-bold text-dark fs-6">₹85,000</span>
+                                    <span class="badge bg-success bg-opacity-10 text-success border border-success rounded-pill px-2 py-1" style="font-size: 0.7rem;">In Stock</span>
                                 </div>
                             </div>
                             <div class="d-grid gap-2">
@@ -617,12 +610,11 @@ ob_start();
                         <div>
                             <div class="d-flex justify-content-between align-items-baseline mb-3 pt-2 border-top">
                                 <div>
-                                    <span class="d-block text-muted" style="font-size: 0.72rem;">Rent / Buy:</span>
-                                    <span class="fw-bold text-dm-red fs-6">Rent: ₹2,000 <small class="text-muted">/mo</small></span>
+                                    <span class="d-block text-muted" style="font-size: 0.72rem;">Monthly Rental:</span>
+                                    <span class="fw-bold text-dm-red fs-6">₹2,000 <small class="text-muted">/mo</small></span>
                                 </div>
                                 <div class="text-end">
-                                    <span class="d-block text-muted" style="font-size: 0.72rem;">Buy Price:</span>
-                                    <span class="fw-bold text-dark fs-6">₹12,500</span>
+                                    <span class="badge bg-success bg-opacity-10 text-success border border-success rounded-pill px-2 py-1" style="font-size: 0.7rem;">In Stock</span>
                                 </div>
                             </div>
                             <div class="d-grid gap-2">
@@ -661,12 +653,11 @@ ob_start();
                         <div>
                             <div class="d-flex justify-content-between align-items-baseline mb-3 pt-2 border-top">
                                 <div>
-                                    <span class="d-block text-muted" style="font-size: 0.72rem;">Rent / Buy:</span>
-                                    <span class="fw-bold text-dm-red fs-6">Rent: ₹4,500 <small class="text-muted">/mo</small></span>
+                                    <span class="d-block text-muted" style="font-size: 0.72rem;">Monthly Rental:</span>
+                                    <span class="fw-bold text-dm-red fs-6">₹4,500 <small class="text-muted">/mo</small></span>
                                 </div>
                                 <div class="text-end">
-                                    <span class="d-block text-muted" style="font-size: 0.72rem;">Buy Price:</span>
-                                    <span class="fw-bold text-dark fs-6">₹42,000</span>
+                                    <span class="badge bg-success bg-opacity-10 text-success border border-success rounded-pill px-2 py-1" style="font-size: 0.7rem;">In Stock</span>
                                 </div>
                             </div>
                             <div class="d-grid gap-2">
@@ -705,12 +696,11 @@ ob_start();
                         <div>
                             <div class="d-flex justify-content-between align-items-baseline mb-3 pt-2 border-top">
                                 <div>
-                                    <span class="d-block text-muted" style="font-size: 0.72rem;">Rent / Buy:</span>
-                                    <span class="fw-bold text-dm-red fs-6">Rent: ₹3,500 <small class="text-muted">/mo</small></span>
+                                    <span class="d-block text-muted" style="font-size: 0.72rem;">Monthly Rental:</span>
+                                    <span class="fw-bold text-dm-red fs-6">₹3,500 <small class="text-muted">/mo</small></span>
                                 </div>
                                 <div class="text-end">
-                                    <span class="d-block text-muted" style="font-size: 0.72rem;">Buy Price:</span>
-                                    <span class="fw-bold text-dark fs-6">₹34,000</span>
+                                    <span class="badge bg-success bg-opacity-10 text-success border border-success rounded-pill px-2 py-1" style="font-size: 0.7rem;">In Stock</span>
                                 </div>
                             </div>
                             <div class="d-grid gap-2">
@@ -749,12 +739,11 @@ ob_start();
                         <div>
                             <div class="d-flex justify-content-between align-items-baseline mb-3 pt-2 border-top">
                                 <div>
-                                    <span class="d-block text-muted" style="font-size: 0.72rem;">Rent / Buy:</span>
-                                    <span class="fw-bold text-dm-red fs-6">Rent: ₹800 <small class="text-muted">/mo</small></span>
+                                    <span class="d-block text-muted" style="font-size: 0.72rem;">Monthly Rental:</span>
+                                    <span class="fw-bold text-dm-red fs-6">₹800 <small class="text-muted">/mo</small></span>
                                 </div>
                                 <div class="text-end">
-                                    <span class="d-block text-muted" style="font-size: 0.72rem;">Buy Price:</span>
-                                    <span class="fw-bold text-dark fs-6">₹2,800</span>
+                                    <span class="badge bg-success bg-opacity-10 text-success border border-success rounded-pill px-2 py-1" style="font-size: 0.7rem;">In Stock</span>
                                 </div>
                             </div>
                             <div class="d-grid gap-2">
@@ -793,12 +782,11 @@ ob_start();
                         <div>
                             <div class="d-flex justify-content-between align-items-baseline mb-3 pt-2 border-top">
                                 <div>
-                                    <span class="d-block text-muted" style="font-size: 0.72rem;">Rent / Buy:</span>
-                                    <span class="fw-bold text-dm-red fs-6">Rent: ₹2,500 <small class="text-muted">/mo</small></span>
+                                    <span class="d-block text-muted" style="font-size: 0.72rem;">Monthly Rental:</span>
+                                    <span class="fw-bold text-dm-red fs-6">₹2,500 <small class="text-muted">/mo</small></span>
                                 </div>
                                 <div class="text-end">
-                                    <span class="d-block text-muted" style="font-size: 0.72rem;">Buy Price:</span>
-                                    <span class="fw-bold text-dark fs-6">₹8,500</span>
+                                    <span class="badge bg-success bg-opacity-10 text-success border border-success rounded-pill px-2 py-1" style="font-size: 0.7rem;">In Stock</span>
                                 </div>
                             </div>
                             <div class="d-grid gap-2">
@@ -841,13 +829,13 @@ ob_start();
                                     <span class="badge bg-success text-white small">In Stock</span>
                                 </div>
                                 <div class="text-end">
-                                    <span class="d-block text-muted" style="font-size: 0.72rem;">Buy Price:</span>
+                                    <span class="d-block text-muted" style="font-size: 0.72rem;">Price:</span>
                                     <span class="fw-bold text-dm-red fs-6">₹850 <small class="text-muted text-decoration-line-through">₹1,500</small></span>
                                 </div>
                             </div>
                             <div class="d-grid gap-2">
-                                <a href="https://wa.me/919319149644?text=I+want+to+buy+Finger+Pulse+Oximeter" target="_blank" class="btn btn-dm-red btn-sm rounded-pill fw-bold py-2">
-                                    <i class="fa-brands fa-whatsapp me-1"></i> Buy on WhatsApp
+                                <a href="https://wa.me/919319149644?text=I+want+to+order+Finger+Pulse+Oximeter" target="_blank" class="btn btn-dm-red btn-sm rounded-pill fw-bold py-2">
+                                    <i class="fa-brands fa-whatsapp me-1"></i> Order on WhatsApp
                                 </a>
                             </div>
                         </div>
@@ -882,13 +870,13 @@ ob_start();
                                     <span class="badge bg-success text-white small">In Stock</span>
                                 </div>
                                 <div class="text-end">
-                                    <span class="d-block text-muted" style="font-size: 0.72rem;">Buy Price:</span>
+                                    <span class="d-block text-muted" style="font-size: 0.72rem;">Price:</span>
                                     <span class="fw-bold text-dm-red fs-6">₹1,450 <small class="text-muted text-decoration-line-through">₹2,200</small></span>
                                 </div>
                             </div>
                             <div class="d-grid gap-2">
-                                <a href="https://wa.me/919319149644?text=I+want+to+buy+Portable+Mesh+Nebulizer" target="_blank" class="btn btn-dm-red btn-sm rounded-pill fw-bold py-2">
-                                    <i class="fa-brands fa-whatsapp me-1"></i> Buy on WhatsApp
+                                <a href="https://wa.me/919319149644?text=I+want+to+order+Portable+Mesh+Nebulizer" target="_blank" class="btn btn-dm-red btn-sm rounded-pill fw-bold py-2">
+                                    <i class="fa-brands fa-whatsapp me-1"></i> Order on WhatsApp
                                 </a>
                             </div>
                         </div>
@@ -984,8 +972,8 @@ ob_start();
                     <div class="rounded-circle bg-warning bg-opacity-10 text-dark d-inline-flex align-items-center justify-content-center mx-auto mb-3" style="width: 52px; height: 52px;">
                         <i class="fa-solid fa-rotate fs-4"></i>
                     </div>
-                    <h6 class="fw-bold text-dark mb-1">Rent-to-Buy & Upgrades</h6>
-                    <p class="text-muted small mb-0">Rent during recovery, upgrade models anytime as prescriptions change, or convert rental into purchase seamlessly.</p>
+                    <h6 class="fw-bold text-dark mb-1">Flexible Rental & Upgrades</h6>
+                    <p class="text-muted small mb-0">Rent during recovery, upgrade models anytime as prescriptions change, or extend rental seamlessly.</p>
                 </div>
             </div>
         </div>
@@ -997,7 +985,7 @@ ob_start();
     <div class="container">
         <div class="text-center max-w-700 mx-auto mb-4">
             <span class="badge bg-secondary bg-opacity-10 text-secondary px-3 py-1 rounded-pill fw-semibold mb-1 small">3 Easy Steps</span>
-            <h3 class="fw-bold text-dark mb-1">How to Order or Rent Medical Equipment Online</h3>
+            <h3 class="fw-bold text-dark mb-1">How to Rent Medical Equipment Online</h3>
             <p class="text-muted small">Simple, hassle-free doorstep delivery with cash / UPI on delivery.</p>
         </div>
 
@@ -1082,7 +1070,7 @@ ob_start();
                                 <label class="form-label small fw-semibold text-secondary mb-1">Requirement Type *</label>
                                 <select name="order_type" class="form-select form-select-sm rounded-2" required>
                                     <option value="Rental (Monthly / Weekly)">Rental (Monthly / Weekly)</option>
-                                    <option value="Purchase (Brand New Unit)">Purchase (Brand New Unit)</option>
+                                    <option value="Long-Term Rental (3+ Months)">Long-Term Rental (3+ Months)</option>
                                     <option value="Rental with Nurse / ICU Attendant">Rental with Nurse / ICU Attendant</option>
                                     <option value="Bulk Order for Hospital / Clinic">Bulk Order for Hospital / Clinic</option>
                                 </select>
@@ -1143,12 +1131,12 @@ ob_start();
             <div class="accordion-item border-bottom">
                 <h2 class="accordion-header" id="efaqH2">
                     <button class="accordion-button collapsed fw-bold text-dark py-3" type="button" data-bs-toggle="collapse" data-bs-target="#efaqC2">
-                        Can I rent equipment first and then buy if required?
+                        Can I extend or change my rental duration anytime?
                     </button>
                 </h2>
                 <div id="efaqC2" class="accordion-collapse collapse" data-bs-parent="#estoreFaq">
                     <div class="accordion-body text-muted small lh-base">
-                        Yes! Our flexible <strong>Rent-to-Buy program</strong> allows you to rent any equipment for your initial recovery period. If your doctor later advises long-term usage, we can adjust a portion of your paid rental against the purchase price of a brand-new unit.
+                        Yes! Our flexible rental plans allow you to rent equipment for as long as needed. You can extend your rental month-to-month or upgrade/swap models easily whenever your doctor updates your prescription.
                     </div>
                 </div>
             </div>

@@ -159,7 +159,7 @@ $frontend_custom_sections .= '
     </div>
 </section>
 
-<!-- 3. Why Buy From Us -->
+<!-- 3. Why Source From Us -->
 <section class="py-5">
     <div class="container py-4">
         <div class="text-center mb-5">

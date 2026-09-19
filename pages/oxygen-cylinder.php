@@ -220,7 +220,7 @@ ob_start();
         <div class="text-center max-w-700 mx-auto mb-4">
             <span class="badge bg-secondary bg-opacity-10 text-secondary px-3 py-1 rounded-pill fw-semibold mb-1 small">Everything Included</span>
             <h3 class="fw-bold text-dark mb-1">Complete 6-Piece Oxygen Setup</h3>
-            <p class="text-muted small">No need to purchase extra accessories. Our technician arrives with everything needed for immediate bedside operation.</p>
+            <p class="text-muted small">No need to arrange extra accessories. Our technician arrives with everything needed for immediate bedside operation.</p>
         </div>
 
         <div class="row g-3">
