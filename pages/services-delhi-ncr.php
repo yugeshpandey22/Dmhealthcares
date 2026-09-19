@@ -1051,8 +1051,13 @@ document.addEventListener("DOMContentLoaded", function() {
                 alertBox.innerHTML = "<i class=\'fa-solid fa-triangle-exclamation me-1\'></i> " + (data.message || "Please check details or call +91-9319149644.");
             } else {
                 alertBox.className = "alert alert-success py-2 px-3 small fw-semibold mb-3";
-                alertBox.innerHTML = "<i class=\'fa-solid fa-circle-check me-1\'></i> Thank you! Your request has been received. Our coordinator will call you within 15 minutes.";
+                alertBox.innerHTML = "<i class=\'fa-solid fa-circle-check me-1\'></i> Thank you! Your request has been received. Connecting to WhatsApp...";
                 form.reset();
+                if (data && data.whatsapp_url) {
+                    setTimeout(function() {
+                        window.open(data.whatsapp_url, \'_blank\');
+                    }, 400);
+                }
             }
             submitBtn.disabled = false;
             submitBtn.innerHTML = originalBtnHtml;

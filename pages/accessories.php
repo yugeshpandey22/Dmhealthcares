@@ -93,7 +93,7 @@ body {
                     <a href="#inventory" class="btn btn-primary btn-lg fw-bold px-5 rounded-pill shadow-sm">
                         Browse Catalog
                     </a>
-                    <a href="tel:+918521179540" class="btn btn-outline-dark btn-lg fw-bold px-5 rounded-pill">
+                    <a href="tel:+919319149644" class="btn btn-outline-dark btn-lg fw-bold px-5 rounded-pill">
                         Order in Bulk
                     </a>
                 </div>
@@ -217,10 +217,10 @@ $frontend_custom_sections .= '
         <h2 class="display-6 fw-bold mb-4">Need Specific Medical Spares?</h2>
         <p class="lead mb-5 opacity-75 mx-auto" style="max-width: 600px;">If you are looking for a specific machine part, filter, or specialized disposable, reach out to us. We will source it for you immediately.</p>
         <div class="d-flex flex-wrap justify-content-center gap-3">
-            <a href="tel:+918521179540" class="btn btn-primary btn-lg fw-bold px-5 py-3 rounded-pill shadow-sm">
-                <i class="fa-solid fa-phone me-2"></i> +91-8521179540
+            <a href="tel:+919319149644" class="btn btn-primary btn-lg fw-bold px-5 py-3 rounded-pill shadow-sm">
+                <i class="fa-solid fa-phone me-2"></i> +91-9319149644
             </a>
-            <a href="https://wa.me/918521179540" target="_blank" class="btn btn-success btn-lg fw-bold px-5 py-3 rounded-pill shadow-sm">
+            <a href="https://wa.me/919319149644" target="_blank" class="btn btn-success btn-lg fw-bold px-5 py-3 rounded-pill shadow-sm">
                 <i class="fa-brands fa-whatsapp me-2"></i> Message on WhatsApp
             </a>
         </div>

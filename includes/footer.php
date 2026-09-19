@@ -404,6 +404,56 @@
     }
     </style>
 
+    <!-- Floating WhatsApp Widget (+91 93191 49644) -->
+    <a href="https://wa.me/919319149644?text=Hello%20DM%20Healthcare,%20I%20have%20an%20inquiry." target="_blank" class="floating-wa-btn" aria-label="Chat on WhatsApp" title="Chat with DM Healthcare">
+        <i class="fa-brands fa-whatsapp"></i>
+        <span class="floating-wa-text">Chat with us</span>
+    </a>
+
+    <style>
+    .floating-wa-btn {
+        position: fixed;
+        bottom: 24px;
+        right: 24px;
+        z-index: 9999;
+        background: #25d366;
+        color: #ffffff !important;
+        border-radius: 50px;
+        padding: 10px 18px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-weight: bold;
+        font-size: 0.9rem;
+        box-shadow: 0 4px 20px rgba(37, 211, 102, 0.45);
+        text-decoration: none !important;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .floating-wa-btn i {
+        font-size: 1.4rem;
+    }
+    .floating-wa-btn:hover {
+        background: #1ebd56;
+        color: #ffffff !important;
+        transform: translateY(-3px) scale(1.03);
+        box-shadow: 0 8px 25px rgba(37, 211, 102, 0.6);
+    }
+    @media (max-width: 576px) {
+        .floating-wa-btn {
+            bottom: 18px;
+            right: 18px;
+            padding: 12px;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            justify-content: center;
+        }
+        .floating-wa-btn .floating-wa-text {
+            display: none;
+        }
+    }
+    </style>
+
     <!-- Bootstrap JS for Carousel -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>

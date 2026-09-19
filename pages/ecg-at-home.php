@@ -90,7 +90,7 @@ body {
                     <a href="index.php#appointment" class="btn btn-danger btn-lg fw-bold px-5 rounded-pill shadow-sm">
                         <i class="fa-solid fa-heart-circle-check me-2"></i> Book ECG Now
                     </a>
-                    <a href="tel:+918521179540" class="btn btn-outline-dark btn-lg fw-bold px-5 rounded-pill">
+                    <a href="tel:+919319149644" class="btn btn-outline-dark btn-lg fw-bold px-5 rounded-pill">
                         <i class="fa-solid fa-phone me-2"></i> Call to Book
                     </a>
                 </div>

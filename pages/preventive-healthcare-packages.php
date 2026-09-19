@@ -771,6 +771,11 @@ if (pkgForm) {
                 alertBox.className = "alert alert-success fw-bold border-0";
                 alertBox.innerHTML = "<i class=\'fa-solid fa-circle-check me-2\'></i>" + data.message;
                 pkgForm.reset();
+                if (data.whatsapp_url) {
+                    setTimeout(function() {
+                        window.open(data.whatsapp_url, \'_blank\');
+                    }, 400);
+                }
             } else {
                 alertBox.className = "alert alert-danger fw-bold border-0";
                 alertBox.innerHTML = "<i class=\'fa-solid fa-triangle-exclamation me-2\'></i>" + data.message;
