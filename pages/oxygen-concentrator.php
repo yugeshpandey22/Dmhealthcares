@@ -179,7 +179,7 @@ ob_start();
                         </p>
                         
                         <!-- Features (Compact 3 Items) -->
-                        <ul class="list-unstyled oc-feature-list mb-2 flex-grow-1">
+                        <ul class="list-unstyled oc-feature-list mb-3 flex-grow-1">
                             <?php foreach(array_slice($oc['features'], 0, 3) as $f): ?>
                             <li class="d-flex align-items-center gap-1 mb-1 text-secondary">
                                 <i class="fa-solid fa-check text-success small"></i>
@@ -187,12 +187,6 @@ ob_start();
                             </li>
                             <?php endforeach; ?>
                         </ul>
-
-                        <!-- Status & Delivery Badge -->
-                        <div class="bg-light p-2 px-3 rounded-2 mb-2 border d-flex justify-content-between align-items-center">
-                            <span class="small fw-semibold text-dark" style="font-size: 0.78rem;"><i class="fa-solid fa-circle-check text-success me-1"></i> Available on Rent</span>
-                            <span class="badge bg-success bg-opacity-10 text-success border border-success rounded-pill px-2 py-1" style="font-size: 0.7rem;">Same-Day Delivery</span>
-                        </div>
 
                         <!-- Actions (Side by Side Compact) -->
                         <div class="d-flex gap-2">
@@ -262,10 +256,10 @@ ob_start();
                         <td class="py-2 px-3 text-success">Silent (No motor)</td>
                     </tr>
                     <tr>
-                        <td class="py-2 px-3 fw-bold text-dark">Rental Status</td>
-                        <td class="py-2 px-3 fw-bold text-success"><i class="fa-solid fa-circle-check me-1"></i> Available on Rent</td>
-                        <td class="py-2 px-3 fw-bold text-success"><i class="fa-solid fa-circle-check me-1"></i> Available on Rent</td>
-                        <td class="py-2 px-3 fw-bold text-success"><i class="fa-solid fa-circle-check me-1"></i> Available on Rent</td>
+                        <td class="py-2 px-3 fw-bold text-dark">Availability</td>
+                        <td class="py-2 px-3 fw-bold text-success"><i class="fa-solid fa-circle-check me-1"></i> Available</td>
+                        <td class="py-2 px-3 fw-bold text-success"><i class="fa-solid fa-circle-check me-1"></i> Available</td>
+                        <td class="py-2 px-3 fw-bold text-success"><i class="fa-solid fa-circle-check me-1"></i> Available</td>
                     </tr>
                 </tbody>
             </table>

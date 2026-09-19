@@ -189,8 +189,8 @@ ob_start();
                         <span class="small text-secondary fw-semibold">100% Sanitized</span>
                     </div>
                     <div class="col-6 col-sm-4 d-flex align-items-center gap-2">
-                        <i class="fa-solid fa-indian-rupee-sign text-primary"></i>
-                        <span class="small text-secondary fw-semibold">From ₹1,000/Mo</span>
+                        <i class="fa-solid fa-certificate text-primary"></i>
+                        <span class="small text-secondary fw-semibold">Certified Quality</span>
                     </div>
                 </div>
             </div>
@@ -250,7 +250,7 @@ ob_start();
                         </p>
                         
                         <!-- Features (Compact 3 Items) -->
-                        <ul class="list-unstyled wc-feature-list mb-2 flex-grow-1">
+                        <ul class="list-unstyled wc-feature-list mb-3 flex-grow-1">
                             <?php foreach(array_slice($wc['features'], 0, 3) as $f): ?>
                             <li class="d-flex align-items-center gap-1 mb-1 text-secondary">
                                 <i class="fa-solid fa-check text-success small"></i>
@@ -258,12 +258,6 @@ ob_start();
                             </li>
                             <?php endforeach; ?>
                         </ul>
-
-                        <!-- Status & Delivery Badge -->
-                        <div class="bg-light p-2 px-3 rounded-2 mb-2 border d-flex justify-content-between align-items-center">
-                            <span class="small fw-semibold text-dark" style="font-size: 0.78rem;"><i class="fa-solid fa-circle-check text-success me-1"></i> Available on Rent</span>
-                            <span class="badge bg-success bg-opacity-10 text-success border border-success rounded-pill px-2 py-1" style="font-size: 0.7rem;">Same-Day Delivery</span>
-                        </div>
 
                         <!-- Actions (Side by Side Compact) -->
                         <div class="d-flex gap-2">
@@ -300,7 +294,7 @@ ob_start();
                         <th class="py-3 px-3">Recline Capability</th>
                         <th class="py-3 px-3">Power / Battery</th>
                         <th class="py-3 px-3">Best Recommended For</th>
-                        <th class="py-3 px-4 text-end">Rental Availability</th>
+                        <th class="py-3 px-4 text-end">Availability</th>
                     </tr>
                 </thead>
                 <tbody class="divide-y">
@@ -310,7 +304,7 @@ ob_start();
                         <td class="py-3 px-3 text-muted">Fixed 90° Back</td>
                         <td class="py-3 px-3 text-muted">Manual Push</td>
                         <td class="py-3 px-3 text-muted">General home recovery & senior care</td>
-                        <td class="py-3 px-4 text-end fw-bold text-success"><i class="fa-solid fa-circle-check me-1"></i> Available on Rent</td>
+                        <td class="py-3 px-4 text-end fw-bold text-success"><i class="fa-solid fa-circle-check me-1"></i> Available</td>
                     </tr>
                     <tr>
                         <td class="py-3 px-4 fw-bold text-dark"><i class="fa-solid fa-feather-pointed me-2 text-primary"></i> Aluminium Lightweight</td>
@@ -318,7 +312,7 @@ ob_start();
                         <td class="py-3 px-3 text-muted">Half-folding back</td>
                         <td class="py-3 px-3 text-muted">Manual Push</td>
                         <td class="py-3 px-3 text-muted">Frequent car travel & doctor visits</td>
-                        <td class="py-3 px-4 text-end fw-bold text-success"><i class="fa-solid fa-circle-check me-1"></i> Available on Rent</td>
+                        <td class="py-3 px-4 text-end fw-bold text-success"><i class="fa-solid fa-circle-check me-1"></i> Available</td>
                     </tr>
                     <tr>
                         <td class="py-3 px-4 fw-bold text-dark"><i class="fa-solid fa-restroom me-2 text-info"></i> Commode & Toilet Type</td>
@@ -326,7 +320,7 @@ ob_start();
                         <td class="py-3 px-3 text-muted">Fixed Back</td>
                         <td class="py-3 px-3 text-muted">Manual Push</td>
                         <td class="py-3 px-3 text-muted">Bathroom assistance for bedridden patients</td>
-                        <td class="py-3 px-4 text-end fw-bold text-success"><i class="fa-solid fa-circle-check me-1"></i> Available on Rent</td>
+                        <td class="py-3 px-4 text-end fw-bold text-success"><i class="fa-solid fa-circle-check me-1"></i> Available</td>
                     </tr>
                     <tr>
                         <td class="py-3 px-4 fw-bold text-dark"><i class="fa-solid fa-bed me-2 text-warning"></i> High-Back Recliner (180°)</td>
@@ -334,7 +328,7 @@ ob_start();
                         <td class="py-3 px-3 text-success fw-semibold">90° to 180° Bed Flat</td>
                         <td class="py-3 px-3 text-muted">Manual Hydraulic</td>
                         <td class="py-3 px-3 text-muted">Paralysis, stroke, head/neck support</td>
-                        <td class="py-3 px-4 text-end fw-bold text-success"><i class="fa-solid fa-circle-check me-1"></i> Available on Rent</td>
+                        <td class="py-3 px-4 text-end fw-bold text-success"><i class="fa-solid fa-circle-check me-1"></i> Available</td>
                     </tr>
                     <tr>
                         <td class="py-3 px-4 fw-bold text-dark"><i class="fa-solid fa-bolt me-2 text-success"></i> Motorized Power Wheelchair</td>
@@ -342,7 +336,7 @@ ob_start();
                         <td class="py-3 px-3 text-muted">Semi-Recline Option</td>
                         <td class="py-3 px-3 text-success fw-semibold">20 km / Charge (Dual Motor)</td>
                         <td class="py-3 px-3 text-muted">Self-driving independent senior mobility</td>
-                        <td class="py-3 px-4 text-end fw-bold text-success"><i class="fa-solid fa-circle-check me-1"></i> Available on Rent</td>
+                        <td class="py-3 px-4 text-end fw-bold text-success"><i class="fa-solid fa-circle-check me-1"></i> Available</td>
                     </tr>
                     <tr>
                         <td class="py-3 px-4 fw-bold text-dark"><i class="fa-solid fa-stairs me-2 text-danger"></i> Tracked Stair Climber</td>
@@ -350,7 +344,7 @@ ob_start();
                         <td class="py-3 px-3 text-muted">Ergonomic Safety Angle</td>
                         <td class="py-3 px-3 text-success fw-semibold">Motorized Track Crawler</td>
                         <td class="py-3 px-3 text-muted">Multi-storey homes with no lift</td>
-                        <td class="py-3 px-4 text-end fw-bold text-success"><i class="fa-solid fa-circle-check me-1"></i> Available on Rent</td>
+                        <td class="py-3 px-4 text-end fw-bold text-success"><i class="fa-solid fa-circle-check me-1"></i> Available</td>
                     </tr>
                 </tbody>
             </table>
@@ -596,7 +590,7 @@ ob_start();
                 <a href="page.php?title=hospital-beds" class="card border rounded-4 p-3 text-decoration-none shadow-sm h-100 wc-product-card bg-light">
                     <i class="fa-solid fa-bed-pulse text-dm-red fs-3 mb-2"></i>
                     <span class="fw-bold text-dark small d-block">ICU & Hospital Beds</span>
-                    <small class="text-muted">From ₹2,500/mo</small>
+                    <small class="text-muted">Manual & Motorized</small>
                 </a>
             </div>
             <div class="col-6 col-md-3">
