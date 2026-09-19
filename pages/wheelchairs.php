@@ -171,10 +171,10 @@ ob_start();
                         <i class="fa-solid fa-phone"></i> Call +91 93191 49644
                     </a>
                     <a href="https://wa.me/919319149644?text=Hello%20DM%20Healthcare,%20I%20want%20to%20inquire%20about%20wheelchair%20services." target="_blank" class="btn btn-outline-success rounded-pill px-3 py-2 fw-bold d-inline-flex align-items-center gap-2 small">
-                        <i class="fa-brands fa-whatsapp"></i> WhatsApp Booking
+                        <i class="fa-brands fa-whatsapp"></i> WhatsApp Chat
                     </a>
-                    <a href="#booking-form" class="btn btn-outline-secondary rounded-pill px-3 py-2 fw-bold small">
-                        Book Online
+                    <a href="#inquiry-form" class="btn btn-outline-secondary rounded-pill px-3 py-2 fw-bold small">
+                        Send Inquiry
                     </a>
                 </div>
 
@@ -261,11 +261,11 @@ ob_start();
 
                         <!-- Actions (Side by Side Compact) -->
                         <div class="d-flex gap-2">
-                            <a href="https://wa.me/919319149644?text=<?= urlencode('Hi DM Healthcare, I am interested in renting ' . $wc['title'] . '. Please share details.') ?>" target="_blank" class="btn btn-outline-success btn-sm rounded-pill fw-bold px-2 py-1 flex-fill d-flex align-items-center justify-content-center gap-1" style="font-size: 0.78rem;">
+                            <a href="https://wa.me/919319149644?text=<?= urlencode('Hi DM Healthcare, I am interested in ' . $wc['title'] . '. Please share details.') ?>" target="_blank" class="btn btn-outline-success btn-sm rounded-pill fw-bold px-2 py-1 flex-fill d-flex align-items-center justify-content-center gap-1" style="font-size: 0.78rem;">
                                 <i class="fa-brands fa-whatsapp"></i> Chat
                             </a>
-                            <a href="#booking-form" onclick="selectModel('<?= addslashes($wc['title']) ?>')" class="btn btn-dm-red btn-sm rounded-pill fw-bold px-2 py-1 flex-fill d-flex align-items-center justify-content-center gap-1" style="font-size: 0.78rem;">
-                                <i class="fa-solid fa-calendar-check"></i> Book
+                            <a href="tel:+919319149644" class="btn btn-dm-red btn-sm rounded-pill fw-bold px-2 py-1 flex-fill d-flex align-items-center justify-content-center gap-1" style="font-size: 0.78rem;">
+                                <i class="fa-solid fa-phone"></i> Call Now
                             </a>
                         </div>
                     </div>
@@ -402,14 +402,14 @@ ob_start();
     </div>
 </section>
 
-<!-- 5. Booking Form & Contact Section -->
-<section class="py-5 bg-white" id="booking-form">
+<!-- 5. Request & Contact Section -->
+<section class="py-5 bg-white" id="inquiry-form">
     <div class="container">
         <div class="row g-4 align-items-center">
             <!-- Left Info -->
             <div class="col-lg-5">
-                <span class="badge bg-danger bg-opacity-10 text-danger px-3 py-1 rounded-pill fw-semibold mb-2">Instant Booking</span>
-                <h2 class="fw-bold text-dark mb-3">Book Wheelchair for Rent</h2>
+                <span class="badge bg-danger bg-opacity-10 text-danger px-3 py-1 rounded-pill fw-semibold mb-2">Instant Request</span>
+                <h2 class="fw-bold text-dark mb-3">Request Wheelchair Service</h2>
                 <p class="text-muted mb-4">Fill out the form to request instant same-day delivery in Faridabad, Noida, Delhi, or Gurugram. Our care desk will confirm your order in under 10 minutes.</p>
                 
                 <div class="card bg-light border-0 rounded-4 p-4 mb-3">
@@ -436,7 +436,7 @@ ob_start();
                 <div class="card border-0 shadow-lg rounded-4 p-4 p-md-5 bg-white border">
                     <h4 class="fw-bold text-dark mb-3">Request Wheelchair Delivery</h4>
                     
-                    <form action="backend/submit_appointment.php" method="POST" id="wheelchairBookingForm">
+                    <form action="backend/submit_appointment.php" method="POST" id="wheelchairRequestForm">
                         <input type="hidden" name="service" value="Wheelchair Mobility Services">
                         
                         <div class="row g-3">
@@ -490,7 +490,7 @@ ob_start();
                             </div>
                             <div class="col-12 mt-3">
                                 <button type="submit" class="btn btn-dm-red btn-lg w-100 rounded-pill fw-bold py-3 shadow">
-                                    <i class="fa-solid fa-paper-plane me-2"></i> Submit Wheelchair Booking Request
+                                    <i class="fa-solid fa-paper-plane me-2"></i> Submit Wheelchair Request
                                 </button>
                                 <small class="text-center d-block text-muted mt-2">
                                     <i class="fa-solid fa-lock text-success me-1"></i> Your information is secure. No upfront advance needed before delivery.
