@@ -14,6 +14,7 @@ $hide_default_welcome = true;
 $services_catalog = [
     "nursing" => [
         "title" => "Nursing Care & Shift Duties",
+        "tab_label" => "Nursing Care",
         "icon" => "fa-solid fa-user-nurse",
         "color" => "#e5252a",
         "subtitle" => "Certified GNM & B.Sc nurses for hospital-level clinical care, medication and vital monitoring.",
@@ -34,6 +35,7 @@ $services_catalog = [
     ],
     "icu" => [
         "title" => "ICU & Critical Care Packages",
+        "tab_label" => "ICU Packages",
         "icon" => "fa-solid fa-heart-pulse",
         "color" => "#d946ef",
         "subtitle" => "Hospital ICU replicated at home with ventilators, multipara monitors, and dedicated critical staff.",
@@ -47,6 +49,7 @@ $services_catalog = [
     ],
     "caregiver" => [
         "title" => "Caregiver, Japa Maid & Baby Care",
+        "tab_label" => "Caregivers & Japa",
         "icon" => "fa-solid fa-person-cane",
         "color" => "#059669",
         "subtitle" => "Compassionate patient attendants, newborn Japa maids and child caretakers for day & night care.",
@@ -61,6 +64,7 @@ $services_catalog = [
     ],
     "doctor" => [
         "title" => "Doctor & Specialist Home Visits",
+        "tab_label" => "Doctor Visits",
         "icon" => "fa-solid fa-user-doctor",
         "color" => "#0284c7",
         "subtitle" => "Qualified General Physicians and Critical Care Intensivists visiting your home.",
@@ -71,22 +75,24 @@ $services_catalog = [
         ]
     ],
     "physio" => [
-        "title" => "Physiotherapy & Speech Therapy",
+        "title" => "Physiotherapy & Speech-Language Therapy",
+        "tab_label" => "Physio & Speech",
         "icon" => "fa-solid fa-person-walking",
         "color" => "#ea580c",
-        "subtitle" => "Doorstep rehabilitation for post-surgery, stroke recovery, mobility and speech disorders.",
+        "subtitle" => "Doorstep orthopedic rehabilitation, stroke hemiplegia gait training, chest physio, dysarthria and dysphagia swallow recovery.",
         "items" => [
             ["name" => "Physiotherapy-Basic", "price" => "₹700", "unit" => "/ session (45m)", "tag" => "Basic Physio", "desc" => "Joint mobility, muscle activation, passive stretching and basic post-fracture rehab.", "popular" => false],
             ["name" => "Physiotherapy-Advanced", "price" => "₹800", "unit" => "/ session (60m)", "tag" => "Advanced Rehab", "desc" => "Targeted post-orthopedic, stroke hemiplegia gait training, and muscle re-education.", "popular" => true],
             ["name" => "Physiotherapy-Critical", "price" => "₹1,000", "unit" => "/ session (60m)", "tag" => "Chest & ICU Physio", "desc" => "Chest physiotherapy, secretion clearance, postural drainage, and ICU mobility therapy.", "popular" => false],
             ["name" => "Physiotherapy-Critical -Delhi NCR", "price" => "₹1,500", "unit" => "/ session (60m)", "tag" => "NCR Coverage", "desc" => "Specialized critical neuro-rehabilitation and chest clearance session across Delhi NCR.", "popular" => false],
-            ["name" => "Speech and Swallow Therapy", "price" => "₹1,500", "unit" => "/ session (45m)", "tag" => "Dysphagia Rehab", "desc" => "Therapy for swallowing disorders, dysarthria and vocal cord strengthening post-stroke.", "popular" => false],
-            ["name" => "Advanced Speech and Swallow Therapy", "price" => "₹2,000", "unit" => "/ session (60m)", "tag" => "Neuro Rehab", "desc" => "Neurological swallow coordination, electrical stimulation support and aphasia recovery.", "popular" => false],
-            ["name" => "Speech and Swallow Therapy Delhi NCR", "price" => "₹2,500", "unit" => "/ session (60m)", "tag" => "NCR Specialist", "desc" => "Specialist speech pathologist doorstep therapy across extended Delhi NCR.", "popular" => false]
+            ["name" => "Speech and Swallow Therapy", "price" => "₹1,500", "unit" => "/ session (45m)", "tag" => "Dysphagia Rehab", "desc" => "Targeted therapy for swallowing disorders, dysarthria and vocal cord strengthening post-stroke.", "popular" => false],
+            ["name" => "Advanced Speech and Swallow Therapy", "price" => "₹2,000", "unit" => "/ session (60m)", "tag" => "Neuro Swallow Rehab", "desc" => "Neurological swallow coordination, electrical stimulation support and aphasia recovery.", "popular" => false],
+            ["name" => "Speech and Swallow Therapy Delhi NCR", "price" => "₹2,500", "unit" => "/ session (60m)", "tag" => "NCR Specialist Visit", "desc" => "Senior speech pathologist doorstep assessment and comprehensive rehabilitation across extended Delhi NCR.", "popular" => true]
         ]
     ],
     "dietician" => [
         "title" => "Clinical Dietician Consultations",
+        "tab_label" => "Dietician",
         "icon" => "fa-solid fa-apple-whole",
         "color" => "#10b981",
         "subtitle" => "Custom clinical nutrition for diabetes, hypertension, cardiac health, and tube feeding.",
@@ -98,6 +104,7 @@ $services_catalog = [
     ],
     "procedures" => [
         "title" => "Doorstep Clinical Procedures & Dressings",
+        "tab_label" => "Clinical Procedures",
         "icon" => "fa-solid fa-syringe",
         "color" => "#6366f1",
         "subtitle" => "Sterile single-visit nursing interventions for injections, IV infusions, catheters and wound dressings.",
@@ -116,6 +123,7 @@ $services_catalog = [
     ],
     "diagnostics" => [
         "title" => "Diagnostics, Portable X-Ray & Pharmacy",
+        "tab_label" => "Diagnostics & X-Ray",
         "icon" => "fa-solid fa-x-ray",
         "color" => "#14b8a6",
         "subtitle" => "Bedside digital imaging, NABL blood tests and doorstep medicine delivery.",
@@ -209,12 +217,12 @@ $frontend_custom_sections = '
     box-shadow: 0 10px 20px rgba(229, 37, 42, 0.07);
 }
 
-/* Sticky Search & Category Navigation */
+/* Sticky Search & Category Navigation Toolbar */
 .tariff-sticky-toolbar {
     background: #ffffff;
     border: 1px solid var(--dm-border-color);
-    border-radius: 20px;
-    padding: 18px 20px;
+    border-radius: 22px;
+    padding: 20px;
     box-shadow: 0 8px 24px rgba(15, 23, 42, 0.04);
     margin-bottom: 35px;
 }
@@ -248,32 +256,54 @@ $frontend_custom_sections = '
     outline: none;
 }
 
-/* Category Filter Tabs */
+/* Category Filter Tabs with Pill Badges */
+.tariff-tabs-scroll-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: center;
+}
+
 .tab-filter-btn {
     border: 1px solid #cbd5e1;
     background: #ffffff;
     color: #475569;
     border-radius: 50px;
-    padding: 8px 18px;
+    padding: 7px 16px;
     font-weight: 700;
-    font-size: 0.82rem;
+    font-size: 0.83rem;
     transition: all 0.2s ease;
     cursor: pointer;
     white-space: nowrap;
     display: inline-flex;
     align-items: center;
-    gap: 6px;
+    gap: 7px;
 }
 .tab-filter-btn:hover {
-    background: #f1f5f9;
+    background: #f8fafc;
     color: #0f172a;
     border-color: #94a3b8;
+    transform: translateY(-1px);
 }
 .tab-filter-btn.active {
     background: var(--dm-brand-red) !important;
     color: #ffffff !important;
     border-color: var(--dm-brand-red) !important;
     box-shadow: 0 4px 12px rgba(229, 37, 42, 0.25);
+}
+
+.tab-badge-num {
+    background: rgba(15, 23, 42, 0.08);
+    color: #475569;
+    font-size: 0.72rem;
+    font-weight: 800;
+    padding: 2px 7px;
+    border-radius: 20px;
+    transition: all 0.2s ease;
+}
+.tab-filter-btn.active .tab-badge-num {
+    background: rgba(255, 255, 255, 0.28) !important;
+    color: #ffffff !important;
 }
 
 /* Service Item Cards */
@@ -457,15 +487,21 @@ $frontend_custom_sections = '
             </div>
         </div>
 
-        <div class="d-flex flex-wrap gap-2 pt-2 border-top" id="categoryTabsContainer">
+        <div class="tariff-tabs-scroll-wrap pt-2 border-top" id="categoryTabsContainer">
             <button class="tab-filter-btn active" onclick="switchTariffCategory(\'all\', this)">
-                <i class="fa-solid fa-layer-group"></i> All Services
+                <i class="fa-solid fa-layer-group"></i>
+                <span>All Services</span>
+                <span class="tab-badge-num">51</span>
             </button>';
 
 foreach($services_catalog as $cat_key => $cat_data) {
+    $tab_txt = htmlspecialchars($cat_data['tab_label'] ?? $cat_data['title']);
+    $cnt = count($cat_data['items']);
     $frontend_custom_sections .= '
             <button class="tab-filter-btn" onclick="switchTariffCategory(\''.$cat_key.'\', this)">
-                <i class="'.$cat_data['icon'].'"></i> '.$cat_data['title'].' ('.count($cat_data['items']).')
+                <i class="'.$cat_data['icon'].'"></i>
+                <span>'.$tab_txt.'</span>
+                <span class="tab-badge-num">'.$cnt.'</span>
             </button>';
 }
 
