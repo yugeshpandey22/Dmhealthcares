@@ -161,7 +161,7 @@ $care_pathways = [
                         </div>
 
                         <div class="pt-3 border-top">
-                            <a href="https://wa.me/919999023456?text=<?= urlencode('Hi DM Healthcare, I would like to consult about ' . $pw['title'] . ' for my family member.') ?>" target="_blank" rel="noopener" class="btn btn-light w-100 rounded-pill fw-bold text-dark border py-2 d-flex align-items-center justify-content-between px-3" style="font-size: 0.85rem;">
+                            <a href="https://wa.me/919319149644?text=<?= urlencode('Hi DM Healthcare, I would like to consult about ' . $pw['title'] . ' for my family member.') ?>" target="_blank" rel="noopener" class="btn btn-light w-100 rounded-pill fw-bold text-dark border py-2 d-flex align-items-center justify-content-between px-3" style="font-size: 0.85rem;">
                                 <span>Consult on WhatsApp</span>
                                 <i class="fa-solid fa-chevron-right text-muted small"></i>
                             </a>

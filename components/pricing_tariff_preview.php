@@ -202,7 +202,7 @@ $preview_rates = [
                         </div>
 
                         <div class="pt-3 mt-2 border-top d-flex gap-2">
-                            <a href="https://wa.me/919999023456?text=<?= urlencode('Hi DM Healthcare, I am interested in booking ' . $card['title'] . ' (Starts ' . $card['price'] . '). Please assist me.') ?>" target="_blank" rel="noopener" class="btn btn-outline-success flex-grow-1 fw-bold rounded-pill btn-sm py-2">
+                            <a href="https://wa.me/919319149644?text=<?= urlencode('Hi DM Healthcare, I am interested in booking ' . $card['title'] . ' (Starts ' . $card['price'] . '). Please assist me.') ?>" target="_blank" rel="noopener" class="btn btn-outline-success flex-grow-1 fw-bold rounded-pill btn-sm py-2">
                                 <i class="fa-brands fa-whatsapp me-1"></i> Book Now
                             </a>
                             <a href="rate-cards" class="btn btn-light rounded-pill btn-sm px-3 fw-bold text-secondary border">
