@@ -101,7 +101,7 @@ ob_start();
                     <a href="https://wa.me/919319149644?text=Hi%20DM%20Healthcare,%20I%20urgently%20need%20an%20Oxygen%20Cylinder%20or%20Refill." target="_blank" class="btn btn-outline-success btn-lg rounded-pill px-4 py-2 fw-bold d-inline-flex align-items-center gap-2 small bg-white text-success border-white">
                         <i class="fa-brands fa-whatsapp"></i> WhatsApp Refill / Booking
                     </a>
-                    <a href="#quick-order" class="btn btn-outline-light btn-lg rounded-pill px-4 py-2 fw-bold small">
+                    <a href="https://wa.me/919319149644?text=Hi%20DM%20Healthcare,%20I%20urgently%20need%20an%20Oxygen%20Cylinder%20or%20Refill." target="_blank" class="btn btn-outline-light btn-lg rounded-pill px-4 py-2 fw-bold small">
                         Request Refill
                     </a>
                 </div>
@@ -142,19 +142,19 @@ ob_start();
                             </span>
                             <h5 class="fw-bold mb-0 text-dark">Complete O2 Cylinder Kit</h5>
                         </div>
-                        <span class="fs-4 fw-bold text-dm-red">₹1,200<small class="fs-6 text-muted">/mo</small></span>
+                        <span class="fs-4 fw-bold text-dm-red">₹1,000<small class="fs-6 text-muted">/starting</small></span>
                     </div>
 
                     <img src="assets/images/pages/oxygen_concentrator_hero.jpg" alt="Medical Oxygen Cylinder Delivery Kit" class="img-fluid rounded-3 mb-3 border w-100" style="height: 180px; object-fit: cover;">
 
                     <div class="bg-light p-2 px-3 rounded-3 mb-3 border small text-muted">
                         <div class="d-flex justify-content-between py-1 border-bottom">
-                            <span><i class="fa-solid fa-check text-success me-1"></i> B-Type (10 Litres)</span>
-                            <strong class="text-dark">₹1,200/mo (Refill ₹400)</strong>
+                            <span><i class="fa-solid fa-check text-success me-1"></i> O2 Cylinder 10 ltrs</span>
+                            <strong class="text-dark">₹1,000 (Refill ₹700)</strong>
                         </div>
                         <div class="d-flex justify-content-between py-1">
-                            <span><i class="fa-solid fa-check text-success me-1"></i> D-Type Jumbo (46.7L)</span>
-                            <strong class="text-dark">₹2,000/mo (Refill ₹800)</strong>
+                            <span><i class="fa-solid fa-check text-success me-1"></i> O2 Cylinder 50 ltrs</span>
+                            <strong class="text-dark">₹2,000 (Refill ₹1,000)</strong>
                         </div>
                     </div>
 
@@ -332,86 +332,103 @@ ob_start();
     </div>
 </section>
 
-<!-- 5. Instant Booking / Refill Order Form -->
-<section class="py-5 bg-light" id="quick-order">
+<!-- Transparent Pricing & Refill Rates Section -->
+<section class="py-5 bg-white border-bottom">
     <div class="container">
-        <div class="row g-4 align-items-center">
-            <!-- Left Info -->
-            <div class="col-lg-5">
-                <span class="badge bg-danger bg-opacity-10 text-danger px-3 py-1 rounded-pill fw-semibold mb-2">30-Mins Response</span>
-                <h3 class="fw-bold text-dark mb-2">Order Oxygen Cylinder or Refill</h3>
-                <p class="text-muted small mb-3">Place your cylinder or refill request. Our dispatch team will confirm your order and reach your location in under 45 minutes.</p>
-                
-                <div class="card bg-white border-0 shadow-sm rounded-3 p-3 mb-3">
-                    <div class="d-flex align-items-center gap-3 mb-2">
-                        <div class="rounded-circle bg-dm-red text-white d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;">
-                            <i class="fa-solid fa-phone-volume fs-5"></i>
+        <div class="text-center max-w-700 mx-auto mb-4">
+            <span class="badge bg-danger bg-opacity-10 text-danger px-3 py-1 rounded-pill fw-semibold mb-1 small">Transparent Pricing</span>
+            <h3 class="fw-bold text-dark mb-1">Medical Oxygen Cylinder Pricing & Refill Rates</h3>
+            <p class="text-muted small">Standard rates with zero hidden charges. High-pressure certified cylinders delivered to your doorstep.</p>
+        </div>
+
+        <div class="row g-4 justify-content-center mb-4">
+            <!-- 10L Cylinder -->
+            <div class="col-md-6 col-lg-5">
+                <div class="card h-100 border rounded-4 shadow-sm p-4 text-center bg-light">
+                    <span class="badge bg-secondary bg-opacity-10 text-dark px-3 py-1 rounded-pill fw-bold mx-auto mb-2 small">Portable Bedside Unit</span>
+                    <img src="assets/images/equipment/oxygen_cylinder.jpg" class="img-fluid rounded-3 mb-3 border w-100" style="height: 180px; object-fit: contain; background: #fff;" alt="O2 Cylinder 10 ltrs">
+                    <h4 class="fw-bold text-dark mb-1">O2 Cylinder 10 ltrs</h4>
+                    <p class="text-muted small mb-3">Capacity: ~1,400 Litres • 11-12 hrs continuous supply at 2 LPM</p>
+                    
+                    <div class="p-3 bg-white rounded-3 border mb-3">
+                        <div class="d-flex justify-content-between align-items-center py-2 border-bottom">
+                            <span class="text-secondary fw-semibold">Equipment Setup Rate:</span>
+                            <span class="fs-4 fw-bold text-dm-red">₹1,000</span>
                         </div>
-                        <div>
-                            <h6 class="fw-bold mb-0 text-dark small">Emergency Dispatch Hotline</h6>
-                            <small class="text-muted" style="font-size: 0.72rem;">Active 24 Hours / 365 Days</small>
+                        <div class="d-flex justify-content-between align-items-center py-2">
+                            <span class="text-secondary fw-semibold">Doorstep Gas Refill:</span>
+                            <span class="fs-5 fw-bold text-success">₹700</span>
                         </div>
                     </div>
-                    <a href="tel:+919319149644" class="btn btn-dm-red rounded-pill fw-bold py-2 mb-2 btn-sm">
-                        <i class="fa-solid fa-phone me-1"></i> Call +91 93191 49644
-                    </a>
-                    <a href="https://wa.me/919319149644?text=Hi%20DM%20Healthcare,%20I%20urgently%20need%20an%20oxygen%20cylinder/refill." target="_blank" class="btn btn-outline-success rounded-pill fw-bold py-2 btn-sm">
-                        <i class="fa-brands fa-whatsapp me-1"></i> Quick WhatsApp Booking
+
+                    <ul class="list-unstyled text-start small text-muted mb-4 ps-2">
+                        <li class="mb-1"><i class="fa-solid fa-check text-success me-2"></i> Hydro-tested IP grade cylinder</li>
+                        <li class="mb-1"><i class="fa-solid fa-check text-success me-2"></i> Brass regulator & click flowmeter</li>
+                        <li class="mb-1"><i class="fa-solid fa-check text-success me-2"></i> Humidifier bottle & sterile cannula</li>
+                    </ul>
+
+                    <a href="https://wa.me/919319149644?text=Hi%20DM%20Healthcare,%20I%20want%20to%20order%20O2%20Cylinder%2010%20ltrs%20(Price:%20₹1,000,%20Refill:%20₹700)." target="_blank" class="btn btn-outline-success rounded-pill fw-bold py-2 w-100">
+                        <i class="fa-brands fa-whatsapp me-1"></i> Order 10L Cylinder
                     </a>
                 </div>
             </div>
 
-            <!-- Right Form -->
-            <div class="col-lg-7">
-                <div class="card border-0 shadow-lg rounded-4 p-4 p-md-4 bg-white border">
-                    <h5 class="fw-bold text-dark mb-3">Request Oxygen Cylinder Setup / Refill</h5>
+            <!-- 50L Cylinder -->
+            <div class="col-md-6 col-lg-5">
+                <div class="card h-100 border border-danger border-2 rounded-4 shadow-sm p-4 text-center bg-white position-relative">
+                    <span class="badge bg-dm-red text-white px-3 py-1 rounded-pill fw-bold position-absolute top-0 start-50 translate-middle small shadow-sm">High Capacity Recommended</span>
+                    <img src="assets/images/equipment/jumbo_cylinder.jpg" class="img-fluid rounded-3 mb-3 border w-100 mt-2" style="height: 180px; object-fit: contain; background: #fff;" alt="O2 Cylinder 50 ltrs">
+                    <h4 class="fw-bold text-dark mb-1 mt-1">O2 Cylinder 50 ltrs</h4>
+                    <p class="text-muted small mb-3">D-Type Jumbo Capacity: ~7,000 Litres • 52-56 hrs supply at 2 LPM</p>
                     
-                    <form action="backend/submit_appointment.php" method="POST">
-                        <input type="hidden" name="service" value="Oxygen Cylinder & Refill">
-                        
-                        <div class="row g-2">
-                            <div class="col-md-6">
-                                <label class="form-label small fw-semibold text-secondary mb-1">Patient / Contact Name *</label>
-                                <input type="text" name="name" class="form-control form-control-sm rounded-2" placeholder="Enter name" required>
-                            </div>
-                            <div class="col-md-6">
-                                <label class="form-label small fw-semibold text-secondary mb-1">Mobile Number *</label>
-                                <input type="tel" name="phone" class="form-control form-control-sm rounded-2" placeholder="10-digit mobile number" pattern="[0-9]{10}" required>
-                            </div>
-                            <div class="col-md-6">
-                                <label class="form-label small fw-semibold text-secondary mb-1">Requirement *</label>
-                                <select name="requirement_type" class="form-select form-select-sm rounded-2" required>
-                                    <option value="B-Type Cylinder Kit (₹1,200/mo)">B-Type (10L) Cylinder Kit (₹1,200/mo)</option>
-                                    <option value="D-Type Jumbo Kit (₹2,000/mo)">D-Type Jumbo (46.7L) Kit (₹2,000/mo)</option>
-                                    <option value="Doorstep Refill / Swap (B-Type ₹400)">Doorstep Refill (B-Type ₹400)</option>
-                                    <option value="Doorstep Refill / Swap (D-Type ₹800)">Doorstep Refill (D-Type ₹800)</option>
-                                    <option value="Emergency Standby Concentrator Backup">Emergency Standby Backup Package</option>
-                                </select>
-                            </div>
-                            <div class="col-md-6">
-                                <label class="form-label small fw-semibold text-secondary mb-1">City / Region *</label>
-                                <select name="city" class="form-select form-select-sm rounded-2" required>
-                                    <option value="Faridabad">Faridabad (30-min reach)</option>
-                                    <option value="Noida & Greater Noida">Noida & Greater Noida</option>
-                                    <option value="South Delhi & Central Delhi">South Delhi & Central Delhi</option>
-                                    <option value="Gurugram (Gurgaon)">Gurugram (Gurgaon)</option>
-                                    <option value="Ghaziabad & East Delhi">Ghaziabad & East Delhi</option>
-                                </select>
-                            </div>
-                            <div class="col-12">
-                                <label class="form-label small fw-semibold text-secondary mb-1">Complete Address</label>
-                                <textarea name="message" rows="2" class="form-control form-control-sm rounded-2" placeholder="House no., floor, street, landmark..."></textarea>
-                            </div>
-                            <div class="col-12 mt-2">
-                                <button type="submit" class="btn btn-dm-red w-100 rounded-pill fw-bold py-2 shadow-sm">
-                                    <i class="fa-solid fa-paper-plane me-1"></i> Submit Emergency Delivery Order
-                                </button>
-                                <small class="text-center d-block text-muted mt-1" style="font-size: 0.72rem;">
-                                    <i class="fa-solid fa-lock text-success me-1"></i> Certified 99% pure IP medical oxygen. Pay after doorstep setup.
-                                </small>
-                            </div>
+                    <div class="p-3 bg-light rounded-3 border mb-3">
+                        <div class="d-flex justify-content-between align-items-center py-2 border-bottom">
+                            <span class="text-secondary fw-semibold">Equipment Setup Rate:</span>
+                            <span class="fs-4 fw-bold text-dm-red">₹2,000</span>
                         </div>
-                    </form>
+                        <div class="d-flex justify-content-between align-items-center py-2">
+                            <span class="text-secondary fw-semibold">Doorstep Gas Refill:</span>
+                            <span class="fs-5 fw-bold text-success">₹1,000</span>
+                        </div>
+                    </div>
+
+                    <ul class="list-unstyled text-start small text-muted mb-4 ps-2">
+                        <li class="mb-1"><i class="fa-solid fa-check text-success me-2"></i> Heavy duty trolley stand with safety chain</li>
+                        <li class="mb-1"><i class="fa-solid fa-check text-success me-2"></i> High flow medical regulator</li>
+                        <li class="mb-1"><i class="fa-solid fa-check text-success me-2"></i> 24/7 doorstep cylinder swap service</li>
+                    </ul>
+
+                    <a href="https://wa.me/919319149644?text=Hi%20DM%20Healthcare,%20I%20want%20to%20order%20O2%20Cylinder%2050%20ltrs%20(Price:%20₹2,000,%20Refill:%20₹1,000)." target="_blank" class="btn btn-dm-red rounded-pill fw-bold py-2 w-100 shadow-sm">
+                        <i class="fa-brands fa-whatsapp me-1"></i> Order 50L Jumbo Cylinder
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Delivery & Sanitization Information -->
+        <div class="row g-3 justify-content-center">
+            <div class="col-md-4">
+                <div class="p-3 bg-light rounded-3 border text-center">
+                    <i class="fa-solid fa-truck-ramp-box text-primary fs-5 mb-1"></i>
+                    <h6 class="fw-bold text-dark mb-0 small">Freight charges Local</h6>
+                    <span class="fw-bold text-dark fs-6">₹700</span>
+                    <small class="text-muted d-block" style="font-size:0.75rem;">Immediate local dispatch</small>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="p-3 bg-light rounded-3 border text-center">
+                    <i class="fa-solid fa-truck-fast text-warning fs-5 mb-1"></i>
+                    <h6 class="fw-bold text-dark mb-0 small">Freight DELHI NCR</h6>
+                    <span class="fw-bold text-dark fs-6">₹3,000</span>
+                    <small class="text-muted d-block" style="font-size:0.75rem;">Extended Delhi NCR & outskirts</small>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="p-3 bg-light rounded-3 border text-center">
+                    <i class="fa-solid fa-pump-medical text-success fs-5 mb-1"></i>
+                    <h6 class="fw-bold text-dark mb-0 small">DISINFECTION PROCESS</h6>
+                    <span class="fw-bold text-dark fs-6">₹2,500</span>
+                    <small class="text-muted d-block" style="font-size:0.75rem;">Hospital-grade deep sterilization</small>
                 </div>
             </div>
         </div>

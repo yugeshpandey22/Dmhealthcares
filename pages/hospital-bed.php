@@ -80,25 +80,59 @@ $frontend_custom_sections = '
     <div class="text-center mb-5">
         <h2 class="fw-bold text-dark">Hospital Beds Available - Our Inventory</h2>
         <div class="mx-auto mt-3 mb-4" style="width: 60px; height: 4px; background-color: #0d6efd; border-radius: 2px;"></div>
-        <p class="text-muted mx-auto" style="max-width: 700px;">Browse all hospital bed models with current pricing. Click any item for full specifications, photos and to book delivery.</p>
+        <p class="text-muted mx-auto" style="max-width: 700px;">Browse all hospital bed models with current transparent pricing, specifications and photos.</p>
     </div>
        <div class="row g-4">
-';
-
-// Inventory Array
+';// Inventory Array
 $beds = [
-    ["name" => "Basic Hospital Bed", "price" => "₹1,800/month", "tag" => ""],
-    ["name" => "Basic Hospital Bed with ABS", "price" => "₹2,200/month", "tag" => "Upgraded"],
-    ["name" => "Fowler Hospital Bed", "price" => "₹2,500/month", "tag" => ""],
-    ["name" => "Fowler Patient Bed with ABS", "price" => "₹3,000/month", "tag" => ""],
-    ["name" => "One Function Motorized Patient Bed", "price" => "₹3,990/month", "tag" => "Motorized"],
-    ["name" => "Two Function Motorized Patient Bed", "price" => "₹4,590/month", "tag" => "Motorized"],
-    ["name" => "Three Function Motorized Patient Bed / ICU Bed", "price" => "₹6,500/month", "tag" => "Premium"],
-    ["name" => "ICU Patient Bed", "price" => "₹7,590/month", "tag" => "Critical Care"],
-    ["name" => "Motorized Recliner Patient Bed", "price" => "₹3,000/month", "tag" => ""],
-    ["name" => "Air Mattress", "price" => "₹1,800", "tag" => "Accessory"],
-    ["name" => "Fowler Motorised Recliner Patient Bed", "price" => "₹3,500/month", "tag" => ""],
-    ["name" => "Commode Hospital Bed", "price" => "₹2,500/month", "tag" => "Specialty"],
+    [
+        "name" => "BED MANUAL WITH MATTRESS", 
+        "price" => "₹3,000", 
+        "tag" => "Manual with Mattress",
+        "image" => "assets/images/equipment/manual_bed.jpg"
+    ],
+    [
+        "name" => "FIVE FUNCTION BED ELECTRIC", 
+        "price" => "₹12,500", 
+        "tag" => "Full Electric ICU",
+        "image" => "assets/images/pages/hospital_bed_home.png"
+    ],
+    [
+        "name" => "ELECTRIC-RECLINER", 
+        "price" => "₹6,000", 
+        "tag" => "Motorized Recliner",
+        "image" => "assets/images/pages/medical_equipment_bed.png"
+    ],
+    [
+        "name" => "Bed Step-up", 
+        "price" => "₹500", 
+        "tag" => "Safety Stool",
+        "image" => "assets/images/equipment/bed_step_up.jpg"
+    ],
+    [
+        "name" => "Cardiac Table", 
+        "price" => "₹4,800", 
+        "tag" => "Adjustable Overbed",
+        "image" => "assets/images/equipment/cardiac_table.jpg"
+    ],
+    [
+        "name" => "IV Stand", 
+        "price" => "₹1,500", 
+        "tag" => "Stainless Steel",
+        "image" => "assets/images/equipment/iv_stand.jpg"
+    ],
+    [
+        "name" => "Three Function Motorized Patient Bed", 
+        "price" => "₹6,500", 
+        "tag" => "Semi-Electric",
+        "image" => "assets/images/pages/hospital_bed_home.png"
+    ],
+    [
+        "name" => "Anti-Bedsore Air Mattress", 
+        "price" => "₹1,800", 
+        "tag" => "Pressure Care",
+        "image" => "assets/images/pages/hospital_bed_home.png"
+    ]
 ];
 
 foreach($beds as $bed) {
@@ -112,22 +146,46 @@ foreach($beds as $bed) {
     $frontend_custom_sections .= '<div class="col-lg-3 col-md-4 col-sm-6">
         <div class="card equip-card h-100 bg-white border shadow-sm">
             <div class="position-relative">
-                <img src="assets/images/pages/hospital_bed_home.png" class="card-img-top border-bottom" alt="'.$bed["name"].'" style="height: 180px; object-fit: cover;">
+                <img src="'.$bed["image"].'" onerror="this.onerror=null;this.src=\'assets/images/pages/hospital_bed_home.png\';" class="card-img-top border-bottom" alt="'.$bed["name"].'" style="height: 180px; object-fit: contain; background: #fff; padding: 6px;">
                 ' . $tag_html . '
             </div>
             <div class="card-body p-3 text-center d-flex flex-column">
                 <h6 class="fw-bold text-dark mb-2">'.$bed["name"].'</h6>
-                <h5 class="fw-bold text-primary mb-3 mt-auto">'.$bed["price"].'</h5>
-                
-                <a href="index.php#appointment" class="btn btn-outline-primary btn-sm rounded-pill px-3 fw-bold w-100">
-                    View Details <i class="fa-solid fa-arrow-right ms-1"></i>
-                </a>
+                <h5 class="fw-bold text-primary mb-0 mt-auto">'.$bed["price"].'</h5>
             </div>
         </div>
     </div>';
 }
 
 $frontend_custom_sections .= '
+    </div>
+
+    <!-- Delivery & Disinfection Tariff -->
+    <div class="mt-5 p-4 bg-white rounded-4 border shadow-sm">
+        <h5 class="fw-bold text-dark mb-3"><i class="fa-solid fa-truck-ramp-box text-primary me-2"></i> Bed Delivery, Installation & Disinfection</h5>
+        <div class="row g-3">
+            <div class="col-md-4">
+                <div class="p-3 bg-light rounded-3 border h-100">
+                    <div class="small text-muted fw-semibold">Local Delivery</div>
+                    <h6 class="fw-bold text-dark mb-1">Freight charges Local</h6>
+                    <span class="fs-5 fw-bold text-primary">₹700</span>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="p-3 bg-light rounded-3 border h-100">
+                    <div class="small text-muted fw-semibold">NCR Coverage</div>
+                    <h6 class="fw-bold text-dark mb-1">Freight DELHI NCR</h6>
+                    <span class="fs-5 fw-bold text-primary">₹3,000</span>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="p-3 bg-light rounded-3 border h-100">
+                    <div class="small text-muted fw-semibold">Hospital Protocol</div>
+                    <h6 class="fw-bold text-dark mb-1">DISINFECTION PROCESS</h6>
+                    <span class="fs-5 fw-bold text-primary">₹2,500</span>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 

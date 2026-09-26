@@ -21,24 +21,28 @@ ob_start();
         --dm-slate: #1e293b;
         --dm-sky: #0284c7;
         --dm-gray-bg: #f8fafc;
+        --dm-card-shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.06), 0 8px 10px -6px rgba(15, 23, 42, 0.03);
+        --dm-card-shadow-hover: 0 20px 30px -5px rgba(15, 23, 42, 0.12), 0 10px 12px -5px rgba(15, 23, 42, 0.06);
     }
     .text-dm-red { color: var(--dm-red) !important; }
     .bg-dm-red { background-color: var(--dm-red) !important; color: #fff !important; }
-    .btn-dm-red { background-color: var(--dm-red); border-color: var(--dm-red); color: #fff; }
-    .btn-dm-red:hover { background-color: var(--dm-red-dark); border-color: var(--dm-red-dark); color: #fff; }
-    .btn-outline-dm-red { border-color: var(--dm-red); color: var(--dm-red); }
-    .btn-outline-dm-red:hover, .btn-outline-dm-red.active { background-color: var(--dm-red); border-color: var(--dm-red); color: #fff; }
+    .btn-dm-red { background-color: var(--dm-red); border-color: var(--dm-red); color: #fff; transition: all 0.25s ease; }
+    .btn-dm-red:hover { background-color: var(--dm-red-dark); border-color: var(--dm-red-dark); color: #fff; transform: translateY(-2px); box-shadow: 0 6px 16px rgba(229, 37, 42, 0.25); }
+    .btn-outline-dm-red { border-color: var(--dm-red); color: var(--dm-red); transition: all 0.25s ease; }
+    .btn-outline-dm-red:hover, .btn-outline-dm-red.active { background-color: var(--dm-red); border-color: var(--dm-red); color: #fff; transform: translateY(-2px); }
 
     /* Hero Section */
     .bipap-hero {
-        background: radial-gradient(circle at 90% 10%, rgba(229, 37, 42, 0.15) 0%, transparent 50%),
-                    radial-gradient(circle at 10% 90%, rgba(2, 132, 199, 0.15) 0%, transparent 40%),
-                    linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+        background: radial-gradient(circle at 90% 10%, rgba(229, 37, 42, 0.18) 0%, transparent 50%),
+                    radial-gradient(circle at 10% 90%, rgba(2, 132, 199, 0.18) 0%, transparent 40%),
+                    linear-gradient(135deg, #0b1120 0%, #1e293b 100%);
         color: #ffffff;
     }
     .trust-pill {
         background: rgba(255, 255, 255, 0.08);
-        border: 1px solid rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+        border: 1px solid rgba(255, 255, 255, 0.14);
         border-radius: 50px;
         padding: 6px 14px;
         font-size: 0.8rem;
@@ -46,72 +50,150 @@ ob_start();
         display: inline-flex;
         align-items: center;
         gap: 6px;
+        transition: all 0.2s ease;
+    }
+    .trust-pill:hover {
+        background: rgba(255, 255, 255, 0.14);
+        border-color: rgba(255, 255, 255, 0.25);
+        transform: translateY(-1px);
+    }
+
+    /* Product Image Box */
+    .product-img-box {
+        background: #ffffff;
+        border: 1px solid #edf2f7;
+        border-radius: 14px;
+        height: 180px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        overflow: hidden;
+        padding: 12px;
+        transition: all 0.3s ease;
+    }
+    .product-img-box img {
+        max-height: 100%;
+        max-width: 100%;
+        object-fit: contain;
+        transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
     }
 
     /* Equipment Cards */
     .equip-tier-card {
         background: #ffffff;
-        border: 2px solid #e2e8f0;
-        border-radius: 18px;
-        transition: all 0.3s ease;
+        border: 1px solid #e2e8f0;
+        border-radius: 20px;
+        transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
         position: relative;
         overflow: hidden;
+        box-shadow: var(--dm-card-shadow);
     }
     .equip-tier-card:hover {
-        border-color: var(--dm-red);
-        transform: translateY(-5px);
-        box-shadow: 0 16px 32px rgba(15, 23, 42, 0.1);
+        border-color: rgba(229, 37, 42, 0.4);
+        transform: translateY(-6px);
+        box-shadow: var(--dm-card-shadow-hover);
+    }
+    .equip-tier-card:hover .product-img-box img {
+        transform: scale(1.05);
     }
     .equip-tier-card.featured {
-        border-color: var(--dm-red);
-        box-shadow: 0 10px 25px rgba(229, 37, 42, 0.12);
+        border: 2px solid var(--dm-red);
+        box-shadow: 0 14px 30px rgba(229, 37, 42, 0.12);
     }
     .featured-badge {
         position: absolute;
-        top: 12px;
-        right: 12px;
-        background: var(--dm-red);
+        top: 14px;
+        right: 14px;
+        background: linear-gradient(135deg, #e5252a 0%, #b91c1c 100%);
         color: #fff;
         font-size: 0.72rem;
         font-weight: 700;
-        padding: 4px 10px;
-        border-radius: 20px;
+        padding: 5px 12px;
+        border-radius: 30px;
         text-transform: uppercase;
         letter-spacing: 0.5px;
+        box-shadow: 0 4px 10px rgba(229, 37, 42, 0.3);
+        z-index: 2;
     }
 
     /* Inventory Cards */
     .inventory-card {
         background: #ffffff;
         border: 1px solid #e2e8f0;
-        border-radius: 14px;
-        transition: all 0.25s ease;
+        border-radius: 18px;
+        transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
         height: 100%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        box-shadow: var(--dm-card-shadow);
+        overflow: hidden;
     }
     .inventory-card:hover {
-        border-color: var(--dm-red);
-        box-shadow: 0 10px 20px rgba(0,0,0,0.06);
+        border-color: rgba(229, 37, 42, 0.45);
+        box-shadow: var(--dm-card-shadow-hover);
+        transform: translateY(-5px);
+    }
+    .inventory-card:hover .product-img-box img {
+        transform: scale(1.06);
+    }
+    .inventory-featured-card {
+        background: #ffffff;
+        border: 2px solid #e2e8f0;
+        border-radius: 20px;
+        transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        box-shadow: var(--dm-card-shadow);
+    }
+    .inventory-featured-card:hover {
+        transform: translateY(-5px);
+        box-shadow: var(--dm-card-shadow-hover);
+    }
+
+    /* Logistics Card */
+    .logistics-card {
+        background: #ffffff;
+        border: 1px solid #e2e8f0;
+        border-radius: 16px;
+        padding: 22px 18px;
+        transition: all 0.25s ease;
+        box-shadow: var(--dm-card-shadow);
+        text-align: center;
+        height: 100%;
+    }
+    .logistics-card:hover {
+        border-color: #cbd5e1;
         transform: translateY(-3px);
+        box-shadow: var(--dm-card-shadow-hover);
+    }
+    .logistics-icon-circle {
+        width: 52px;
+        height: 52px;
+        border-radius: 50%;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 12px;
+        font-size: 1.25rem;
     }
 
     /* Condition Box */
     .condition-pill-card {
         background: #ffffff;
         border: 1px solid #e2e8f0;
-        border-radius: 12px;
-        padding: 12px 14px;
+        border-radius: 14px;
+        padding: 14px 16px;
         display: flex;
         align-items: center;
-        gap: 12px;
-        transition: all 0.2s ease;
+        gap: 14px;
+        transition: all 0.25s ease;
+        box-shadow: 0 2px 6px rgba(15, 23, 42, 0.03);
     }
     .condition-pill-card:hover {
-        border-color: var(--dm-red);
-        background: #fffafa;
-        transform: translateX(3px);
+        border-color: rgba(229, 37, 42, 0.4);
+        background: #ffffff;
+        transform: translateY(-2px);
+        box-shadow: 0 8px 18px rgba(15, 23, 42, 0.06);
     }
 
     /* Comparison Table */
@@ -119,33 +201,33 @@ ob_start();
         background-color: #0f172a;
         color: #ffffff;
         font-size: 0.9rem;
-        padding: 12px 16px;
+        padding: 14px 18px;
     }
     .table-compare tbody td {
-        padding: 12px 16px;
+        padding: 14px 18px;
         font-size: 0.88rem;
         vertical-align: middle;
     }
 
     /* Step Circles */
     .step-circle {
-        width: 44px;
-        height: 44px;
+        width: 48px;
+        height: 48px;
         border-radius: 50%;
-        background: var(--dm-red);
+        background: linear-gradient(135deg, var(--dm-red) 0%, #b91c1c 100%);
         color: #ffffff;
         font-weight: 800;
-        font-size: 1.1rem;
+        font-size: 1.15rem;
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        margin-bottom: 12px;
-        box-shadow: 0 4px 10px rgba(229, 37, 42, 0.25);
+        margin-bottom: 14px;
+        box-shadow: 0 6px 14px rgba(229, 37, 42, 0.25);
     }
 
     .testimonial-avatar {
-        width: 46px;
-        height: 46px;
+        width: 48px;
+        height: 48px;
         border-radius: 50%;
         background: #f1f5f9;
         color: var(--dm-red);
@@ -153,7 +235,7 @@ ob_start();
         display: flex;
         align-items: center;
         justify-content: center;
-        font-size: 1.1rem;
+        font-size: 1.15rem;
         border: 2px solid #e2e8f0;
     }
 </style>
@@ -218,7 +300,7 @@ ob_start();
                         <span class="badge bg-danger bg-opacity-10 text-danger rounded-pill px-3 py-1 small fw-bold">
                             Quick Consultation & Dispatch
                         </span>
-                        <span class="fw-bold text-dm-red fs-6">From ₹2,500<small class="text-muted">/mo</small></span>
+                        <span class="fw-bold text-dm-red fs-6">From ₹7,000</span>
                     </div>
 
                     <h5 class="fw-bold text-dark mb-2">Request Respiratory Machine Setup</h5>
@@ -234,10 +316,9 @@ ob_start();
                         </div>
                         <div class="mb-2">
                             <select name="model" class="form-select form-select-sm rounded-2" required>
-                                <option value="BiPAP Machine (COPD / Weaning) - ₹4,000/mo">BiPAP Machine (COPD / Weaning) - From ₹4,000/mo</option>
-                                <option value="CPAP Machine (Sleep Apnea) - ₹2,500/mo">CPAP Machine (Sleep Apnea) - From ₹2,500/mo</option>
-                                <option value="Home Ventilator (Invasive/NIV) - ₹8,000/mo">Home Ventilator (Invasive/NIV) - From ₹8,000/mo</option>
-                                <option value="BiPAP ST / AVAPS - ₹6,500/mo">BiPAP ST / AVAPS Mode - From ₹6,500/mo</option>
+                                <option value="Bi-Pap ST - ₹7,000">Bi-Pap ST - ₹7,000</option>
+                                <option value="C-PAP - ₹9,500">C-PAP - ₹9,500</option>
+                                <option value="Home Ventilator (Vios) - ₹35,000">Home Ventilator (Vios) - ₹35,000</option>
                             </select>
                         </div>
                         <div class="mb-2">
@@ -269,35 +350,33 @@ ob_start();
             <!-- 1. BiPAP Machine -->
             <div class="col-md-4">
                 <div class="equip-tier-card featured p-4 h-100 d-flex flex-column justify-content-between">
-                    <span class="featured-badge">Most Prescribed</span>
+                    <span class="featured-badge"><i class="fa-solid fa-star me-1"></i> Most Prescribed</span>
                     <div>
-                        <div class="d-inline-flex align-items-center justify-content-center bg-danger bg-opacity-10 text-danger rounded-circle p-3 mb-3" style="width: 54px; height: 54px;">
-                            <i class="fa-solid fa-lungs fs-4"></i>
+                        <div class="product-img-box mb-3">
+                            <img src="assets/images/equipment/bipap_st.jpg" alt="Bi-Pap ST">
                         </div>
-                        <h4 class="fw-bold text-dark mb-1">BiPAP Machine</h4>
-                        <p class="text-muted small mb-2" style="line-height: 1.5;">
-                            <strong>Bilevel Positive Airway Pressure</strong> — two pressure levels (IPAP/EPAP). For COPD, respiratory failure, post-ICU weaning, neuromuscular disease, obesity hypoventilation, and central sleep apnea. Available with and without backup rate (BiPAP-ST).
+                        <div class="d-flex justify-content-between align-items-center mb-1">
+                            <h4 class="fw-bold text-dark mb-0">Bi-Pap ST</h4>
+                            <span class="badge bg-danger bg-opacity-10 text-danger rounded-pill px-2 py-1 small fw-semibold">BiLevel NIV</span>
+                        </div>
+                        <p class="text-muted small mb-3" style="line-height: 1.55;">
+                            <strong>Bilevel Positive Airway Pressure with Spontaneous/Timed backup rate</strong> — two pressure levels (IPAP/EPAP). For COPD, respiratory failure, post-ICU weaning, and neuromuscular support.
                         </p>
                         <ul class="list-unstyled small text-secondary mb-4">
-                            <li class="mb-1"><i class="fa-solid fa-check text-success me-2"></i>Dual pressure: IPAP (Inhale) & EPAP (Exhale)</li>
-                            <li class="mb-1"><i class="fa-solid fa-check text-success me-2"></i>Expiratory CO2 washout for COPD</li>
-                            <li class="mb-1"><i class="fa-solid fa-check text-success me-2"></i>Includes Heated Humidifier & Mask</li>
-                            <li class="mb-1"><i class="fa-solid fa-check text-success me-2"></i>SD Card / Cloud Compliance Data</li>
+                            <li class="mb-2 d-flex align-items-start gap-2"><i class="fa-solid fa-circle-check text-success mt-1"></i><span>Dual pressure: IPAP (Inhale) & EPAP (Exhale)</span></li>
+                            <li class="mb-2 d-flex align-items-start gap-2"><i class="fa-solid fa-circle-check text-success mt-1"></i><span>Expiratory CO2 washout for COPD patients</span></li>
+                            <li class="mb-2 d-flex align-items-start gap-2"><i class="fa-solid fa-circle-check text-success mt-1"></i><span>Includes Heated Humidifier & Mask Kit</span></li>
+                            <li class="mb-2 d-flex align-items-start gap-2"><i class="fa-solid fa-circle-check text-success mt-1"></i><span>SD Card / Cloud Compliance Data Tracking</span></li>
                         </ul>
                     </div>
                     <div>
                         <div class="d-flex justify-content-between align-items-baseline mb-3 pt-3 border-top">
-                            <span class="small text-muted">Rental Starts At:</span>
-                            <span class="fw-bold text-dm-red fs-5">From Rs 4,000 <small class="text-muted fs-6">/ mo</small></span>
+                            <span class="small text-muted fw-semibold">Rental Price:</span>
+                            <span class="fw-bold text-dm-red fs-4">₹7,000 <small class="text-muted fw-normal fs-6">/month</small></span>
                         </div>
-                        <div class="d-grid gap-2">
-                            <a href="#inventory" class="btn btn-dm-red rounded-pill fw-bold btn-sm py-2">
-                                <i class="fa-solid fa-tag me-1"></i> Check Models & Price
-                            </a>
-                            <a href="https://wa.me/919319149644?text=I+want+to+book+BiPAP+machine+on+rent" target="_blank" class="btn btn-outline-success rounded-pill fw-bold btn-sm py-2">
-                                <i class="fa-brands fa-whatsapp me-1"></i> Rent on WhatsApp
-                            </a>
-                        </div>
+                        <a href="#inventory" class="btn btn-dm-red rounded-pill fw-bold w-100 py-2 shadow-sm">
+                            <i class="fa-solid fa-list-check me-1"></i> Check Models & Fleet
+                        </a>
                     </div>
                 </div>
             </div>
@@ -306,33 +385,31 @@ ob_start();
             <div class="col-md-4">
                 <div class="equip-tier-card p-4 h-100 d-flex flex-column justify-content-between">
                     <div>
-                        <div class="d-inline-flex align-items-center justify-content-center bg-primary bg-opacity-10 text-primary rounded-circle p-3 mb-3" style="width: 54px; height: 54px;">
-                            <i class="fa-solid fa-moon fs-4"></i>
+                        <div class="product-img-box mb-3">
+                            <img src="assets/images/equipment/cpap.jpg" alt="C-PAP">
                         </div>
-                        <h4 class="fw-bold text-dark mb-1">CPAP Machine</h4>
-                        <p class="text-muted small mb-2" style="line-height: 1.5;">
-                            <strong>Continuous Positive Airway Pressure</strong> — single fixed pressure. For obstructive sleep apnea, mild respiratory insufficiency, and post-surgery airway support. Auto-adjusting CPAP (APAP) models also available.
+                        <div class="d-flex justify-content-between align-items-center mb-1">
+                            <h4 class="fw-bold text-dark mb-0">C-PAP</h4>
+                            <span class="badge bg-primary bg-opacity-10 text-primary rounded-pill px-2 py-1 small fw-semibold">Sleep Apnea</span>
+                        </div>
+                        <p class="text-muted small mb-3" style="line-height: 1.55;">
+                            <strong>Continuous Positive Airway Pressure</strong> — single fixed or auto-titrating pressure. For obstructive sleep apnea, mild respiratory insufficiency, and post-surgery airway support.
                         </p>
                         <ul class="list-unstyled small text-secondary mb-4">
-                            <li class="mb-1"><i class="fa-solid fa-check text-success me-2"></i>Constant pneumatic stent for airway</li>
-                            <li class="mb-1"><i class="fa-solid fa-check text-success me-2"></i>Eliminates snoring & sleep choking</li>
-                            <li class="mb-1"><i class="fa-solid fa-check text-success me-2"></i>Auto-adjusting pressure algorithms</li>
-                            <li class="mb-1"><i class="fa-solid fa-check text-success me-2"></i>Whisper quiet motor (<26 dBA)</li>
+                            <li class="mb-2 d-flex align-items-start gap-2"><i class="fa-solid fa-circle-check text-success mt-1"></i><span>Constant pneumatic stent for open airway</span></li>
+                            <li class="mb-2 d-flex align-items-start gap-2"><i class="fa-solid fa-circle-check text-success mt-1"></i><span>Eliminates loud snoring & nocturnal apnea</span></li>
+                            <li class="mb-2 d-flex align-items-start gap-2"><i class="fa-solid fa-circle-check text-success mt-1"></i><span>Auto-adjusting pressure algorithms</span></li>
+                            <li class="mb-2 d-flex align-items-start gap-2"><i class="fa-solid fa-circle-check text-success mt-1"></i><span>Whisper-quiet motor (<26 dBA sound level)</span></li>
                         </ul>
                     </div>
                     <div>
                         <div class="d-flex justify-content-between align-items-baseline mb-3 pt-3 border-top">
-                            <span class="small text-muted">Rental Starts At:</span>
-                            <span class="fw-bold text-dm-red fs-5">From Rs 2,500 <small class="text-muted fs-6">/ mo</small></span>
+                            <span class="small text-muted fw-semibold">Rental Price:</span>
+                            <span class="fw-bold text-dm-red fs-4">₹9,500 <small class="text-muted fw-normal fs-6">/month</small></span>
                         </div>
-                        <div class="d-grid gap-2">
-                            <a href="#inventory" class="btn btn-dm-red rounded-pill fw-bold btn-sm py-2">
-                                <i class="fa-solid fa-tag me-1"></i> Check Models & Price
-                            </a>
-                            <a href="https://wa.me/919319149644?text=I+want+to+book+CPAP+machine+on+rent" target="_blank" class="btn btn-outline-success rounded-pill fw-bold btn-sm py-2">
-                                <i class="fa-brands fa-whatsapp me-1"></i> Rent on WhatsApp
-                            </a>
-                        </div>
+                        <a href="#inventory" class="btn btn-dm-red rounded-pill fw-bold w-100 py-2 shadow-sm">
+                            <i class="fa-solid fa-list-check me-1"></i> Check Models & Fleet
+                        </a>
                     </div>
                 </div>
             </div>
@@ -341,33 +418,31 @@ ob_start();
             <div class="col-md-4">
                 <div class="equip-tier-card p-4 h-100 d-flex flex-column justify-content-between">
                     <div>
-                        <div class="d-inline-flex align-items-center justify-content-center bg-warning bg-opacity-10 text-dark rounded-circle p-3 mb-3" style="width: 54px; height: 54px;">
-                            <i class="fa-solid fa-heart-pulse fs-4"></i>
+                        <div class="product-img-box mb-3">
+                            <img src="assets/images/equipment/bipap_st.jpg" alt="Home Ventilator (Vios)">
                         </div>
-                        <h4 class="fw-bold text-dark mb-1">Home Ventilator</h4>
-                        <p class="text-muted small mb-2" style="line-height: 1.5;">
-                            <strong>For ventilator-dependent patients at home</strong>. Supports invasive (tracheostomy) and non-invasive modes. For patients with ALS, MND, high spinal injury, or those weaned to home ventilator from hospital ICU. Requires critical care nursing.
+                        <div class="d-flex justify-content-between align-items-center mb-1">
+                            <h4 class="fw-bold text-dark mb-0">Home Ventilator (Vios)</h4>
+                            <span class="badge bg-warning bg-opacity-25 text-dark rounded-pill px-2 py-1 small fw-semibold">Critical ICU</span>
+                        </div>
+                        <p class="text-muted small mb-3" style="line-height: 1.55;">
+                            <strong>For ventilator-dependent patients at home</strong>. Supports invasive (tracheostomy) and non-invasive modes. For ALS, MND, spinal injury, or post-ICU step-down. Requires critical care nursing.
                         </p>
                         <ul class="list-unstyled small text-secondary mb-4">
-                            <li class="mb-1"><i class="fa-solid fa-check text-success me-2"></i>Invasive (Trach) & Non-Invasive (Mask)</li>
-                            <li class="mb-1"><i class="fa-solid fa-check text-success me-2"></i>Volume & Pressure Control Modes</li>
-                            <li class="mb-1"><i class="fa-solid fa-check text-success me-2"></i>Internal Battery Backup (up to 8 hours)</li>
-                            <li class="mb-1"><i class="fa-solid fa-check text-success me-2"></i>ICU Trained Nurse Support Available</li>
+                            <li class="mb-2 d-flex align-items-start gap-2"><i class="fa-solid fa-circle-check text-success mt-1"></i><span>Invasive (Trach) & Non-Invasive (Mask)</span></li>
+                            <li class="mb-2 d-flex align-items-start gap-2"><i class="fa-solid fa-circle-check text-success mt-1"></i><span>Volume & Pressure Control Ventilation</span></li>
+                            <li class="mb-2 d-flex align-items-start gap-2"><i class="fa-solid fa-circle-check text-success mt-1"></i><span>Internal Battery Backup (up to 8 hours)</span></li>
+                            <li class="mb-2 d-flex align-items-start gap-2"><i class="fa-solid fa-circle-check text-success mt-1"></i><span>ICU Trained Nurse Support Available</span></li>
                         </ul>
                     </div>
                     <div>
                         <div class="d-flex justify-content-between align-items-baseline mb-3 pt-3 border-top">
-                            <span class="small text-muted">Rental Starts At:</span>
-                            <span class="fw-bold text-dm-red fs-5">From Rs 8,000 <small class="text-muted fs-6">/ mo</small></span>
+                            <span class="small text-muted fw-semibold">Rental Price:</span>
+                            <span class="fw-bold text-dm-red fs-4">₹35,000 <small class="text-muted fw-normal fs-6">/month</small></span>
                         </div>
-                        <div class="d-grid gap-2">
-                            <a href="#inventory" class="btn btn-dm-red rounded-pill fw-bold btn-sm py-2">
-                                <i class="fa-solid fa-tag me-1"></i> Check Models & Price
-                            </a>
-                            <a href="https://wa.me/919319149644?text=I+need+Home+Ventilator+Rental+with+ICU+Care" target="_blank" class="btn btn-outline-success rounded-pill fw-bold btn-sm py-2">
-                                <i class="fa-brands fa-whatsapp me-1"></i> Rent on WhatsApp
-                            </a>
-                        </div>
+                        <a href="#inventory" class="btn btn-dm-red rounded-pill fw-bold w-100 py-2 shadow-sm">
+                            <i class="fa-solid fa-list-check me-1"></i> Check Models & Fleet
+                        </a>
                     </div>
                 </div>
             </div>
@@ -760,28 +835,102 @@ ob_start();
             </a>
         </div>
 
-        <div class="row g-3">
+        <div class="row g-4">
+            <!-- Bi-Pap ST Featured Card -->
+            <div class="col-md-6 col-lg-6">
+                <div class="inventory-featured-card p-4 h-100 d-flex flex-column justify-content-between border-2 border-danger shadow-sm">
+                    <div>
+                        <div class="product-img-box mb-3 position-relative" style="height: 200px;">
+                            <img src="assets/images/equipment/bipap_st.jpg" alt="Bi-Pap ST">
+                            <span class="badge bg-danger rounded-pill px-3 py-1 position-absolute top-0 end-0 m-3 shadow-sm fw-bold small">
+                                <i class="fa-solid fa-fire me-1"></i> Most Popular
+                            </span>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mb-1">
+                            <h4 class="fw-bold text-dark mb-0">Bi-Pap ST</h4>
+                            <span class="badge bg-danger bg-opacity-10 text-danger rounded-pill px-2 py-1 small fw-semibold">BiLevel ST Mode</span>
+                        </div>
+                        <p class="small text-muted mb-3" style="line-height: 1.55;">
+                            Spontaneous/Timed (ST) mode BiLevel ventilation with doctor prescribed backup rate. Ideal for COPD, hypercapnia, and post-ICU respiratory recovery.
+                        </p>
+                        <ul class="list-unstyled small text-muted mb-4" style="font-size: 0.85rem;">
+                            <li class="mb-2 d-flex align-items-center gap-2"><i class="fa-solid fa-circle-check text-success"></i><span>Dual pressure: IPAP / EPAP with backup respiratory rate</span></li>
+                            <li class="mb-2 d-flex align-items-center gap-2"><i class="fa-solid fa-circle-check text-success"></i><span>Includes Heated Humidifier & sterile mask kit</span></li>
+                            <li class="mb-2 d-flex align-items-center gap-2"><i class="fa-solid fa-circle-check text-success"></i><span>Same-day bedside setup with doctor setting calibration</span></li>
+                        </ul>
+                    </div>
+                    <div class="pt-3 border-top d-flex flex-wrap justify-content-between align-items-center gap-2">
+                        <div>
+                            <span class="d-block text-muted small fw-semibold">Standard Service Rental:</span>
+                            <span class="fw-bold text-dm-red fs-4">₹7,000 <small class="text-muted fw-normal fs-6">/month</small></span>
+                        </div>
+                        <a href="https://wa.me/919319149644?text=I+want+to+inquire+about+Bi-Pap+ST+(Price:+₹7,000)" target="_blank" class="btn btn-dm-red rounded-pill btn-sm px-4 py-2 fw-bold shadow-sm d-inline-flex align-items-center gap-2">
+                            <i class="fa-brands fa-whatsapp fs-6"></i> Inquire on WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- C-PAP Featured Card -->
+            <div class="col-md-6 col-lg-6">
+                <div class="inventory-featured-card p-4 h-100 d-flex flex-column justify-content-between border-2 border-primary shadow-sm">
+                    <div>
+                        <div class="product-img-box mb-3 position-relative" style="height: 200px;">
+                            <img src="assets/images/equipment/cpap.jpg" alt="C-PAP">
+                            <span class="badge bg-primary rounded-pill px-3 py-1 position-absolute top-0 end-0 m-3 shadow-sm fw-bold small">
+                                <i class="fa-solid fa-moon me-1"></i> Sleep Apnea
+                            </span>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mb-1">
+                            <h4 class="fw-bold text-dark mb-0">C-PAP</h4>
+                            <span class="badge bg-primary bg-opacity-10 text-primary rounded-pill px-2 py-1 small fw-semibold">Continuous PAP</span>
+                        </div>
+                        <p class="small text-muted mb-3" style="line-height: 1.55;">
+                            Continuous Positive Airway Pressure machine for severe snoring, obstructive sleep apnea (OSA), and nocturnal oxygen desaturation.
+                        </p>
+                        <ul class="list-unstyled small text-muted mb-4" style="font-size: 0.85rem;">
+                            <li class="mb-2 d-flex align-items-center gap-2"><i class="fa-solid fa-circle-check text-success"></i><span>Constant pneumatic stent prevents airway collapse</span></li>
+                            <li class="mb-2 d-flex align-items-center gap-2"><i class="fa-solid fa-circle-check text-success"></i><span>Auto-titrating algorithm with heated humidifier</span></li>
+                            <li class="mb-2 d-flex align-items-center gap-2"><i class="fa-solid fa-circle-check text-success"></i><span>Complete with ergonomic nasal/full-face mask</span></li>
+                        </ul>
+                    </div>
+                    <div class="pt-3 border-top d-flex flex-wrap justify-content-between align-items-center gap-2">
+                        <div>
+                            <span class="d-block text-muted small fw-semibold">Standard Service Rental:</span>
+                            <span class="fw-bold text-dm-red fs-4">₹9,500 <small class="text-muted fw-normal fs-6">/month</small></span>
+                        </div>
+                        <a href="https://wa.me/919319149644?text=I+want+to+inquire+about+C-PAP+(Price:+₹9,500)" target="_blank" class="btn btn-outline-success rounded-pill btn-sm px-4 py-2 fw-bold shadow-sm d-inline-flex align-items-center gap-2">
+                            <i class="fa-brands fa-whatsapp fs-6"></i> Inquire on WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Specific Brand & Model Fleet Grid -->
+        <div class="row g-4 mt-1">
             <!-- 1. ResMed BiPAP -->
             <div class="col-md-6 col-lg-4">
                 <div class="inventory-card p-3 shadow-sm">
                     <div>
-                        <div class="d-flex justify-content-between align-items-start mb-2">
-                            <h6 class="fw-bold text-dark mb-0">ResMed BiPAP Machine</h6>
-                            <span class="badge bg-danger bg-opacity-10 text-danger small">Popular</span>
+                        <div class="product-img-box mb-3 position-relative">
+                            <img src="assets/images/equipment/bipap_st.jpg" alt="ResMed BiPAP Machine">
+                            <span class="badge bg-danger position-absolute top-0 end-0 m-2 rounded-pill px-2 py-1 small fw-semibold">Popular</span>
                         </div>
-                        <p class="small text-muted mb-2">High-end BiLevel ventilation for COPD, Hypercapnia, and post-ICU recovery. Whisper-quiet and ultra-reliable.</p>
-                        <ul class="list-unstyled small text-muted mb-3" style="font-size: 0.78rem;">
-                            <li><i class="fa-solid fa-check text-success me-1"></i> IPAP up to 25 cmH2O / EPAP 4-20</li>
-                            <li><i class="fa-solid fa-check text-success me-1"></i> Includes HumidAir Humidifier</li>
+                        <h6 class="fw-bold text-dark mb-1">ResMed BiPAP Machine</h6>
+                        <p class="small text-muted mb-3" style="line-height: 1.5;">High-end BiLevel ventilation for COPD, Hypercapnia, and post-ICU recovery. Whisper-quiet and ultra-reliable.</p>
+                        <ul class="list-unstyled small text-muted mb-3" style="font-size: 0.8rem;">
+                            <li class="mb-1 d-flex align-items-center gap-2"><i class="fa-solid fa-circle-check text-success"></i><span>IPAP up to 25 cmH2O / EPAP 4-20</span></li>
+                            <li class="mb-1 d-flex align-items-center gap-2"><i class="fa-solid fa-circle-check text-success"></i><span>Includes HumidAir Humidifier</span></li>
                         </ul>
                     </div>
-                    <div class="pt-2 border-top d-flex justify-content-between align-items-center">
+                    <div class="pt-3 border-top d-flex justify-content-between align-items-center">
                         <div>
-                            <span class="d-block text-muted" style="font-size: 0.72rem;">Rental Price:</span>
-                            <span class="fw-bold text-dm-red fs-6">₹4,500 <small class="text-muted">/mo</small></span>
+                            <span class="d-block text-muted" style="font-size: 0.72rem;">Monthly Rent:</span>
+                            <span class="fw-bold text-dm-red fs-5">₹4,500 <small class="text-muted fw-normal fs-6">/mo</small></span>
                         </div>
-                        <a href="https://wa.me/919319149644?text=I+want+to+book+ResMed+BiPAP+on+Rent" target="_blank" class="btn btn-dm-red rounded-pill btn-sm px-3 fw-bold">
-                            Book Delivery
+                        <a href="https://wa.me/919319149644?text=I+want+to+book+ResMed+BiPAP+on+Rent" target="_blank" class="btn btn-dm-red rounded-pill btn-sm px-3 fw-bold d-inline-flex align-items-center gap-1 shadow-sm">
+                            <i class="fa-brands fa-whatsapp"></i> Inquire Now
                         </a>
                     </div>
                 </div>
@@ -791,23 +940,24 @@ ob_start();
             <div class="col-md-6 col-lg-4">
                 <div class="inventory-card p-3 shadow-sm">
                     <div>
-                        <div class="d-flex justify-content-between align-items-start mb-2">
-                            <h6 class="fw-bold text-dark mb-0">BiPAP Nidek</h6>
-                            <span class="badge bg-primary bg-opacity-10 text-primary small">Economical</span>
+                        <div class="product-img-box mb-3 position-relative">
+                            <img src="assets/images/equipment/bipap_st.jpg" alt="BiPAP Nidek">
+                            <span class="badge bg-primary position-absolute top-0 end-0 m-2 rounded-pill px-2 py-1 small fw-semibold">Economical</span>
                         </div>
-                        <p class="small text-muted mb-2">Sturdy American engineering, dual-pressure bilevel support for chronic bronchitis and respiratory relief.</p>
-                        <ul class="list-unstyled small text-muted mb-3" style="font-size: 0.78rem;">
-                            <li><i class="fa-solid fa-check text-success me-1"></i> Accurate trigger & cycle sensitivity</li>
-                            <li><i class="fa-solid fa-check text-success me-1"></i> Easy-fill heated humidifier</li>
+                        <h6 class="fw-bold text-dark mb-1">BiPAP Nidek</h6>
+                        <p class="small text-muted mb-3" style="line-height: 1.5;">Sturdy American engineering, dual-pressure bilevel support for chronic bronchitis and respiratory relief.</p>
+                        <ul class="list-unstyled small text-muted mb-3" style="font-size: 0.8rem;">
+                            <li class="mb-1 d-flex align-items-center gap-2"><i class="fa-solid fa-circle-check text-success"></i><span>Accurate trigger & cycle sensitivity</span></li>
+                            <li class="mb-1 d-flex align-items-center gap-2"><i class="fa-solid fa-circle-check text-success"></i><span>Easy-fill heated humidifier</span></li>
                         </ul>
                     </div>
-                    <div class="pt-2 border-top d-flex justify-content-between align-items-center">
+                    <div class="pt-3 border-top d-flex justify-content-between align-items-center">
                         <div>
-                            <span class="d-block text-muted" style="font-size: 0.72rem;">Rental Price:</span>
-                            <span class="fw-bold text-dm-red fs-6">₹4,000 <small class="text-muted">/mo</small></span>
+                            <span class="d-block text-muted" style="font-size: 0.72rem;">Monthly Rent:</span>
+                            <span class="fw-bold text-dm-red fs-5">₹4,000 <small class="text-muted fw-normal fs-6">/mo</small></span>
                         </div>
-                        <a href="https://wa.me/919319149644?text=I+want+to+book+BiPAP+Nidek+on+Rent" target="_blank" class="btn btn-dm-red rounded-pill btn-sm px-3 fw-bold">
-                            Book Delivery
+                        <a href="https://wa.me/919319149644?text=I+want+to+book+BiPAP+Nidek+on+Rent" target="_blank" class="btn btn-dm-red rounded-pill btn-sm px-3 fw-bold d-inline-flex align-items-center gap-1 shadow-sm">
+                            <i class="fa-brands fa-whatsapp"></i> Inquire Now
                         </a>
                     </div>
                 </div>
@@ -817,23 +967,24 @@ ob_start();
             <div class="col-md-6 col-lg-4">
                 <div class="inventory-card p-3 shadow-sm">
                     <div>
-                        <div class="d-flex justify-content-between align-items-start mb-2">
-                            <h6 class="fw-bold text-dark mb-0">Auto CPAP Machine</h6>
-                            <span class="badge bg-success bg-opacity-10 text-success small">Sleep Apnea</span>
+                        <div class="product-img-box mb-3 position-relative">
+                            <img src="assets/images/equipment/cpap.jpg" alt="Auto CPAP Machine">
+                            <span class="badge bg-success position-absolute top-0 end-0 m-2 rounded-pill px-2 py-1 small fw-semibold">Sleep Apnea</span>
                         </div>
-                        <p class="small text-muted mb-2">Continuous positive airway pressure for Obstructive Sleep Apnea. Eliminates loud snoring & daytime sleepiness.</p>
-                        <ul class="list-unstyled small text-muted mb-3" style="font-size: 0.78rem;">
-                            <li><i class="fa-solid fa-check text-success me-1"></i> Auto-titrating pressure 4-20 cmH2O</li>
-                            <li><i class="fa-solid fa-check text-success me-1"></i> Complete with Nasal / Full-face mask</li>
+                        <h6 class="fw-bold text-dark mb-1">Auto CPAP Machine</h6>
+                        <p class="small text-muted mb-3" style="line-height: 1.5;">Continuous positive airway pressure for Obstructive Sleep Apnea. Eliminates loud snoring & daytime sleepiness.</p>
+                        <ul class="list-unstyled small text-muted mb-3" style="font-size: 0.8rem;">
+                            <li class="mb-1 d-flex align-items-center gap-2"><i class="fa-solid fa-circle-check text-success"></i><span>Auto-titrating pressure 4-20 cmH2O</span></li>
+                            <li class="mb-1 d-flex align-items-center gap-2"><i class="fa-solid fa-circle-check text-success"></i><span>Complete with Nasal / Full-face mask</span></li>
                         </ul>
                     </div>
-                    <div class="pt-2 border-top d-flex justify-content-between align-items-center">
+                    <div class="pt-3 border-top d-flex justify-content-between align-items-center">
                         <div>
-                            <span class="d-block text-muted" style="font-size: 0.72rem;">Rental Price:</span>
-                            <span class="fw-bold text-dm-red fs-6">₹2,500 - ₹3,500 <small class="text-muted">/mo</small></span>
+                            <span class="d-block text-muted" style="font-size: 0.72rem;">Monthly Rent:</span>
+                            <span class="fw-bold text-dm-red fs-5">₹2,500 - ₹3,500 <small class="text-muted fw-normal fs-6">/mo</small></span>
                         </div>
-                        <a href="https://wa.me/919319149644?text=I+want+to+book+Auto+CPAP+Machine+on+Rent" target="_blank" class="btn btn-dm-red rounded-pill btn-sm px-3 fw-bold">
-                            Book Delivery
+                        <a href="https://wa.me/919319149644?text=I+want+to+book+Auto+CPAP+Machine+on+Rent" target="_blank" class="btn btn-dm-red rounded-pill btn-sm px-3 fw-bold d-inline-flex align-items-center gap-1 shadow-sm">
+                            <i class="fa-brands fa-whatsapp"></i> Inquire Now
                         </a>
                     </div>
                 </div>
@@ -843,23 +994,24 @@ ob_start();
             <div class="col-md-6 col-lg-4">
                 <div class="inventory-card p-3 shadow-sm">
                     <div>
-                        <div class="d-flex justify-content-between align-items-start mb-2">
-                            <h6 class="fw-bold text-dark mb-0">Topson BiPAP SoundSleep</h6>
-                            <span class="badge bg-secondary bg-opacity-10 text-secondary small">Affordable</span>
+                        <div class="product-img-box mb-3 position-relative">
+                            <img src="assets/images/equipment/bipap_st.jpg" alt="Topson BiPAP SoundSleep">
+                            <span class="badge bg-secondary position-absolute top-0 end-0 m-2 rounded-pill px-2 py-1 small fw-semibold">Affordable</span>
                         </div>
-                        <p class="small text-muted mb-2">Reliable home bilevel non-invasive ventilator with ergonomic UI and ultra-quiet motor for smooth sleep.</p>
-                        <ul class="list-unstyled small text-muted mb-3" style="font-size: 0.78rem;">
-                            <li><i class="fa-solid fa-check text-success me-1"></i> S / T / ST operational modes</li>
-                            <li><i class="fa-solid fa-check text-success me-1"></i> Real-time tidal volume monitoring</li>
+                        <h6 class="fw-bold text-dark mb-1">Topson BiPAP SoundSleep</h6>
+                        <p class="small text-muted mb-3" style="line-height: 1.5;">Reliable home bilevel non-invasive ventilator with ergonomic UI and ultra-quiet motor for smooth sleep.</p>
+                        <ul class="list-unstyled small text-muted mb-3" style="font-size: 0.8rem;">
+                            <li class="mb-1 d-flex align-items-center gap-2"><i class="fa-solid fa-circle-check text-success"></i><span>S / T / ST operational modes</span></li>
+                            <li class="mb-1 d-flex align-items-center gap-2"><i class="fa-solid fa-circle-check text-success"></i><span>Real-time tidal volume monitoring</span></li>
                         </ul>
                     </div>
-                    <div class="pt-2 border-top d-flex justify-content-between align-items-center">
+                    <div class="pt-3 border-top d-flex justify-content-between align-items-center">
                         <div>
-                            <span class="d-block text-muted" style="font-size: 0.72rem;">Rental Price:</span>
-                            <span class="fw-bold text-dm-red fs-6">₹3,500 <small class="text-muted">/mo</small></span>
+                            <span class="d-block text-muted" style="font-size: 0.72rem;">Monthly Rent:</span>
+                            <span class="fw-bold text-dm-red fs-5">₹3,500 <small class="text-muted fw-normal fs-6">/mo</small></span>
                         </div>
-                        <a href="https://wa.me/919319149644?text=I+want+to+book+Topson+BiPAP+on+Rent" target="_blank" class="btn btn-dm-red rounded-pill btn-sm px-3 fw-bold">
-                            Book Delivery
+                        <a href="https://wa.me/919319149644?text=I+want+to+book+Topson+BiPAP+on+Rent" target="_blank" class="btn btn-dm-red rounded-pill btn-sm px-3 fw-bold d-inline-flex align-items-center gap-1 shadow-sm">
+                            <i class="fa-brands fa-whatsapp"></i> Inquire Now
                         </a>
                     </div>
                 </div>
@@ -869,23 +1021,24 @@ ob_start();
             <div class="col-md-6 col-lg-4">
                 <div class="inventory-card p-3 shadow-sm">
                     <div>
-                        <div class="d-flex justify-content-between align-items-start mb-2">
-                            <h6 class="fw-bold text-dark mb-0">ResMed Lumis 150 VPAP 4G</h6>
-                            <span class="badge bg-danger bg-opacity-10 text-danger small">Advanced ST</span>
+                        <div class="product-img-box mb-3 position-relative">
+                            <img src="assets/images/equipment/bipap_st.jpg" alt="ResMed Lumis 150 VPAP 4G">
+                            <span class="badge bg-danger position-absolute top-0 end-0 m-2 rounded-pill px-2 py-1 small fw-semibold">Advanced ST</span>
                         </div>
-                        <p class="small text-muted mb-2">State-of-the-art non-invasive ventilator with iVAPS (intelligent Volume-Assured Pressure Support) & 4G connectivity.</p>
-                        <ul class="list-unstyled small text-muted mb-3" style="font-size: 0.78rem;">
-                            <li><i class="fa-solid fa-check text-success me-1"></i> iVAPS + Intelligent Backup Rate (iBR)</li>
-                            <li><i class="fa-solid fa-check text-success me-1"></i> Remote Doctor Monitoring Cloud</li>
+                        <h6 class="fw-bold text-dark mb-1">ResMed Lumis 150 VPAP 4G</h6>
+                        <p class="small text-muted mb-3" style="line-height: 1.5;">State-of-the-art non-invasive ventilator with iVAPS (intelligent Volume-Assured Pressure Support) & 4G connectivity.</p>
+                        <ul class="list-unstyled small text-muted mb-3" style="font-size: 0.8rem;">
+                            <li class="mb-1 d-flex align-items-center gap-2"><i class="fa-solid fa-circle-check text-success"></i><span>iVAPS + Intelligent Backup Rate (iBR)</span></li>
+                            <li class="mb-1 d-flex align-items-center gap-2"><i class="fa-solid fa-circle-check text-success"></i><span>Remote Doctor Monitoring Cloud</span></li>
                         </ul>
                     </div>
-                    <div class="pt-2 border-top d-flex justify-content-between align-items-center">
+                    <div class="pt-3 border-top d-flex justify-content-between align-items-center">
                         <div>
-                            <span class="d-block text-muted" style="font-size: 0.72rem;">Rental Price:</span>
-                            <span class="fw-bold text-dm-red fs-6">₹7,500 <small class="text-muted">/mo</small></span>
+                            <span class="d-block text-muted" style="font-size: 0.72rem;">Monthly Rent:</span>
+                            <span class="fw-bold text-dm-red fs-5">₹7,500 <small class="text-muted fw-normal fs-6">/mo</small></span>
                         </div>
-                        <a href="https://wa.me/919319149644?text=I+want+to+book+ResMed+Lumis+150+VPAP+on+Rent" target="_blank" class="btn btn-dm-red rounded-pill btn-sm px-3 fw-bold">
-                            Book Delivery
+                        <a href="https://wa.me/919319149644?text=I+want+to+book+ResMed+Lumis+150+VPAP+on+Rent" target="_blank" class="btn btn-dm-red rounded-pill btn-sm px-3 fw-bold d-inline-flex align-items-center gap-1 shadow-sm">
+                            <i class="fa-brands fa-whatsapp"></i> Inquire Now
                         </a>
                     </div>
                 </div>
@@ -895,23 +1048,24 @@ ob_start();
             <div class="col-md-6 col-lg-4">
                 <div class="inventory-card p-3 shadow-sm">
                     <div>
-                        <div class="d-flex justify-content-between align-items-start mb-2">
-                            <h6 class="fw-bold text-dark mb-0">ResMed AirSense 10 Auto CPAP</h6>
-                            <span class="badge bg-primary bg-opacity-10 text-primary small">Gold Standard</span>
+                        <div class="product-img-box mb-3 position-relative">
+                            <img src="assets/images/equipment/cpap.jpg" alt="ResMed AirSense 10 Auto CPAP">
+                            <span class="badge bg-primary position-absolute top-0 end-0 m-2 rounded-pill px-2 py-1 small fw-semibold">Gold Standard</span>
                         </div>
-                        <p class="small text-muted mb-2">The world's most trusted AutoSet CPAP. Features AutoRamp with sleep onset detection and Climate Control.</p>
-                        <ul class="list-unstyled small text-muted mb-3" style="font-size: 0.78rem;">
-                            <li><i class="fa-solid fa-check text-success me-1"></i> AutoSet algorithm with EPR relief</li>
-                            <li><i class="fa-solid fa-check text-success me-1"></i> Built-in HumidAir & Heated Tube</li>
+                        <h6 class="fw-bold text-dark mb-1">ResMed AirSense 10 Auto CPAP</h6>
+                        <p class="small text-muted mb-3" style="line-height: 1.5;">The world's most trusted AutoSet CPAP. Features AutoRamp with sleep onset detection and Climate Control.</p>
+                        <ul class="list-unstyled small text-muted mb-3" style="font-size: 0.8rem;">
+                            <li class="mb-1 d-flex align-items-center gap-2"><i class="fa-solid fa-circle-check text-success"></i><span>AutoSet algorithm with EPR relief</span></li>
+                            <li class="mb-1 d-flex align-items-center gap-2"><i class="fa-solid fa-circle-check text-success"></i><span>Built-in HumidAir & Heated Tube</span></li>
                         </ul>
                     </div>
-                    <div class="pt-2 border-top d-flex justify-content-between align-items-center">
+                    <div class="pt-3 border-top d-flex justify-content-between align-items-center">
                         <div>
-                            <span class="d-block text-muted" style="font-size: 0.72rem;">Rental Price:</span>
-                            <span class="fw-bold text-dm-red fs-6">₹5,000 <small class="text-muted">/mo</small></span>
+                            <span class="d-block text-muted" style="font-size: 0.72rem;">Monthly Rent:</span>
+                            <span class="fw-bold text-dm-red fs-5">₹5,000 <small class="text-muted fw-normal fs-6">/mo</small></span>
                         </div>
-                        <a href="https://wa.me/919319149644?text=I+want+to+book+ResMed+AirSense+10+on+Rent" target="_blank" class="btn btn-dm-red rounded-pill btn-sm px-3 fw-bold">
-                            Book Delivery
+                        <a href="https://wa.me/919319149644?text=I+want+to+book+ResMed+AirSense+10+on+Rent" target="_blank" class="btn btn-dm-red rounded-pill btn-sm px-3 fw-bold d-inline-flex align-items-center gap-1 shadow-sm">
+                            <i class="fa-brands fa-whatsapp"></i> Inquire Now
                         </a>
                     </div>
                 </div>
@@ -921,23 +1075,24 @@ ob_start();
             <div class="col-md-6 col-lg-4">
                 <div class="inventory-card p-3 shadow-sm">
                     <div>
-                        <div class="d-flex justify-content-between align-items-start mb-2">
-                            <h6 class="fw-bold text-dark mb-0">ResMed Floton ST BiPAP</h6>
-                            <span class="badge bg-secondary bg-opacity-10 text-secondary small">Backup Rate</span>
+                        <div class="product-img-box mb-3 position-relative">
+                            <img src="assets/images/equipment/bipap_st.jpg" alt="ResMed Floton ST BiPAP">
+                            <span class="badge bg-secondary position-absolute top-0 end-0 m-2 rounded-pill px-2 py-1 small fw-semibold">Backup Rate</span>
                         </div>
-                        <p class="small text-muted mb-2">Spontaneous/Timed (ST) mode bilevel ventilator designed for patients with respiratory muscle weakness.</p>
-                        <ul class="list-unstyled small text-muted mb-3" style="font-size: 0.78rem;">
-                            <li><i class="fa-solid fa-check text-success me-1"></i> Backup breathing rate (BPM) control</li>
-                            <li><i class="fa-solid fa-check text-success me-1"></i> Comprehensive clinical alarms</li>
+                        <h6 class="fw-bold text-dark mb-1">ResMed Floton ST BiPAP</h6>
+                        <p class="small text-muted mb-3" style="line-height: 1.5;">Spontaneous/Timed (ST) mode bilevel ventilator designed for patients with respiratory muscle weakness.</p>
+                        <ul class="list-unstyled small text-muted mb-3" style="font-size: 0.8rem;">
+                            <li class="mb-1 d-flex align-items-center gap-2"><i class="fa-solid fa-circle-check text-success"></i><span>Backup breathing rate (BPM) control</span></li>
+                            <li class="mb-1 d-flex align-items-center gap-2"><i class="fa-solid fa-circle-check text-success"></i><span>Comprehensive clinical alarms</span></li>
                         </ul>
                     </div>
-                    <div class="pt-2 border-top d-flex justify-content-between align-items-center">
+                    <div class="pt-3 border-top d-flex justify-content-between align-items-center">
                         <div>
-                            <span class="d-block text-muted" style="font-size: 0.72rem;">Rental Price:</span>
-                            <span class="fw-bold text-dm-red fs-6">₹5,000 <small class="text-muted">/mo</small></span>
+                            <span class="d-block text-muted" style="font-size: 0.72rem;">Monthly Rent:</span>
+                            <span class="fw-bold text-dm-red fs-5">₹5,000 <small class="text-muted fw-normal fs-6">/mo</small></span>
                         </div>
-                        <a href="https://wa.me/919319149644?text=I+want+to+book+ResMed+Floton+ST+on+Rent" target="_blank" class="btn btn-dm-red rounded-pill btn-sm px-3 fw-bold">
-                            Book Delivery
+                        <a href="https://wa.me/919319149644?text=I+want+to+book+ResMed+Floton+ST+on+Rent" target="_blank" class="btn btn-dm-red rounded-pill btn-sm px-3 fw-bold d-inline-flex align-items-center gap-1 shadow-sm">
+                            <i class="fa-brands fa-whatsapp"></i> Inquire Now
                         </a>
                     </div>
                 </div>
@@ -947,23 +1102,24 @@ ob_start();
             <div class="col-md-6 col-lg-4">
                 <div class="inventory-card p-3 shadow-sm">
                     <div>
-                        <div class="d-flex justify-content-between align-items-start mb-2">
-                            <h6 class="fw-bold text-dark mb-0">Evox NoahSleep 25ST / 30ST</h6>
-                            <span class="badge bg-danger bg-opacity-10 text-danger small">Available on Rent</span>
+                        <div class="product-img-box mb-3 position-relative">
+                            <img src="assets/images/equipment/bipap_st.jpg" alt="Evox NoahSleep 25ST / 30ST">
+                            <span class="badge bg-danger position-absolute top-0 end-0 m-2 rounded-pill px-2 py-1 small fw-semibold">Heavy Duty</span>
                         </div>
-                        <p class="small text-muted mb-2">Heavy duty hospital-grade ST BiPAP machine with target tidal volume and high pressure support up to 30 cmH2O.</p>
-                        <ul class="list-unstyled small text-muted mb-3" style="font-size: 0.78rem;">
-                            <li><i class="fa-solid fa-check text-success me-1"></i> Sanitized & Certified with Mask Kit</li>
-                            <li><i class="fa-solid fa-check text-success me-1"></i> Rent: ₹5,500 - ₹6,000 / month</li>
+                        <h6 class="fw-bold text-dark mb-1">Evox NoahSleep 25ST / 30ST</h6>
+                        <p class="small text-muted mb-3" style="line-height: 1.5;">Heavy duty hospital-grade ST BiPAP machine with target tidal volume and high pressure support up to 30 cmH2O.</p>
+                        <ul class="list-unstyled small text-muted mb-3" style="font-size: 0.8rem;">
+                            <li class="mb-1 d-flex align-items-center gap-2"><i class="fa-solid fa-circle-check text-success"></i><span>Sanitized & Certified with Mask Kit</span></li>
+                            <li class="mb-1 d-flex align-items-center gap-2"><i class="fa-solid fa-circle-check text-success"></i><span>High Pressure Support up to 30 cmH2O</span></li>
                         </ul>
                     </div>
-                    <div class="pt-2 border-top d-flex justify-content-between align-items-center">
+                    <div class="pt-3 border-top d-flex justify-content-between align-items-center">
                         <div>
                             <span class="d-block text-muted" style="font-size: 0.72rem;">Monthly Rent:</span>
-                            <span class="fw-bold text-dm-red fs-6">₹5,500 <small class="text-muted">/mo</small></span>
+                            <span class="fw-bold text-dm-red fs-5">₹5,500 <small class="text-muted fw-normal fs-6">/mo</small></span>
                         </div>
-                        <a href="https://wa.me/919319149644?text=I+want+to+inquire+about+Evox+NoahSleep+BiPAP+Rental" target="_blank" class="btn btn-dm-red rounded-pill btn-sm px-3 fw-bold">
-                            Rent Now
+                        <a href="https://wa.me/919319149644?text=I+want+to+inquire+about+Evox+NoahSleep+BiPAP+Rental" target="_blank" class="btn btn-dm-red rounded-pill btn-sm px-3 fw-bold d-inline-flex align-items-center gap-1 shadow-sm">
+                            <i class="fa-brands fa-whatsapp"></i> Inquire Now
                         </a>
                     </div>
                 </div>
@@ -973,25 +1129,63 @@ ob_start();
             <div class="col-md-6 col-lg-4">
                 <div class="inventory-card p-3 shadow-sm">
                     <div>
-                        <div class="d-flex justify-content-between align-items-start mb-2">
-                            <h6 class="fw-bold text-dark mb-0">Evox Auto BiPAP & CPAP Series</h6>
-                            <span class="badge bg-success bg-opacity-10 text-success small">Evox Fleet</span>
+                        <div class="product-img-box mb-3 position-relative">
+                            <img src="assets/images/equipment/cpap.jpg" alt="Evox Auto BiPAP & CPAP Series">
+                            <span class="badge bg-success position-absolute top-0 end-0 m-2 rounded-pill px-2 py-1 small fw-semibold">Auto Fleet</span>
                         </div>
-                        <p class="small text-muted mb-2">Includes NoahSleep 25A Auto BiPAP, NoahSleep 5A CPAP, and Evox TWINPAP high-performance devices.</p>
-                        <ul class="list-unstyled small text-muted mb-3" style="font-size: 0.78rem;">
-                            <li><i class="fa-solid fa-check text-success me-1"></i> Full digital display & heated humidifier</li>
-                            <li><i class="fa-solid fa-check text-success me-1"></i> Ready for same-day delivery</li>
+                        <h6 class="fw-bold text-dark mb-1">Evox Auto BiPAP & CPAP Series</h6>
+                        <p class="small text-muted mb-3" style="line-height: 1.5;">Includes NoahSleep 25A Auto BiPAP, NoahSleep 5A CPAP, and Evox TWINPAP high-performance devices.</p>
+                        <ul class="list-unstyled small text-muted mb-3" style="font-size: 0.8rem;">
+                            <li class="mb-1 d-flex align-items-center gap-2"><i class="fa-solid fa-circle-check text-success"></i><span>Full digital display & heated humidifier</span></li>
+                            <li class="mb-1 d-flex align-items-center gap-2"><i class="fa-solid fa-circle-check text-success"></i><span>Ready for same-day delivery</span></li>
                         </ul>
                     </div>
-                    <div class="pt-2 border-top d-flex justify-content-between align-items-center">
+                    <div class="pt-3 border-top d-flex justify-content-between align-items-center">
                         <div>
                             <span class="d-block text-muted" style="font-size: 0.72rem;">Monthly Rent:</span>
-                            <span class="fw-bold text-dm-red fs-6">₹3,500 - ₹4,500 <small class="text-muted">/mo</small></span>
+                            <span class="fw-bold text-dm-red fs-5">₹3,500 - ₹4,500 <small class="text-muted fw-normal fs-6">/mo</small></span>
                         </div>
-                        <a href="https://wa.me/919319149644?text=I+want+to+inquire+about+Evox+CPAP+BiPAP+series+Rental" target="_blank" class="btn btn-dm-red rounded-pill btn-sm px-3 fw-bold">
-                            Rent Now
+                        <a href="https://wa.me/919319149644?text=I+want+to+inquire+about+Evox+CPAP+BiPAP+series+Rental" target="_blank" class="btn btn-dm-red rounded-pill btn-sm px-3 fw-bold d-inline-flex align-items-center gap-1 shadow-sm">
+                            <i class="fa-brands fa-whatsapp"></i> Inquire Now
                         </a>
                     </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Delivery & Sanitization Information -->
+        <div class="row g-4 justify-content-center mt-3">
+            <div class="col-md-4">
+                <div class="logistics-card">
+                    <div class="logistics-icon-circle bg-primary bg-opacity-10 text-primary mx-auto">
+                        <i class="fa-solid fa-truck-ramp-box"></i>
+                    </div>
+                    <h6 class="fw-bold text-dark mb-1">Freight Charges (Local)</h6>
+                    <span class="fw-bold text-dm-red fs-4 d-block mb-1">₹700</span>
+                    <span class="badge bg-light text-secondary border rounded-pill px-3 py-1 small">Same-Day Local Dispatch</span>
+                    <p class="text-muted small mt-2 mb-0" style="font-size: 0.8rem;">Immediate doorstep dispatch across immediate city limits with technician handover.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="logistics-card">
+                    <div class="logistics-icon-circle bg-warning bg-opacity-15 text-warning mx-auto">
+                        <i class="fa-solid fa-truck-fast"></i>
+                    </div>
+                    <h6 class="fw-bold text-dark mb-1">Freight (Delhi NCR)</h6>
+                    <span class="fw-bold text-dm-red fs-4 d-block mb-1">₹3,000</span>
+                    <span class="badge bg-light text-secondary border rounded-pill px-3 py-1 small">NCR & Outstation Zones</span>
+                    <p class="text-muted small mt-2 mb-0" style="font-size: 0.8rem;">Covers complete Delhi NCR territory including Noida, Gurugram, Ghaziabad & Faridabad.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="logistics-card">
+                    <div class="logistics-icon-circle bg-success bg-opacity-10 text-success mx-auto">
+                        <i class="fa-solid fa-pump-medical"></i>
+                    </div>
+                    <h6 class="fw-bold text-dark mb-1">Disinfection Process</h6>
+                    <span class="fw-bold text-dm-red fs-4 d-block mb-1">₹2,500</span>
+                    <span class="badge bg-light text-secondary border rounded-pill px-3 py-1 small">ISO 9001:2015 Certified</span>
+                    <p class="text-muted small mt-2 mb-0" style="font-size: 0.8rem;">Multi-tier hospital-grade chemical & UV sterilization with fresh filter replacement.</p>
                 </div>
             </div>
         </div>

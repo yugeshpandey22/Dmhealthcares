@@ -494,6 +494,13 @@ $page_keywords_seo = isset($seo_keywords) && !empty($seo_keywords)
                                                 <div class="col-lg-4 col-md-4 col-12">
                                                     <h6 class="mega-menu-title-brand">OUR SERVICES</h6>
                                                     <ul class="mega-menu-list">
+                                                        <li style="background: rgba(229, 37, 42, 0.06); border-radius: 8px; padding: 7px 10px; margin-bottom: 9px; border: 1px dashed rgba(229, 37, 42, 0.35);">
+                                                            <a href="rate-cards" style="color: #e5252a !important; font-weight: 700;">
+                                                                <i class="fa-solid fa-file-invoice-dollar" style="color: #e5252a;"></i>
+                                                                <span>SERVICE RATE CARD & TARIFF</span>
+                                                                <span class="badge bg-danger text-white ms-auto" style="font-size: 0.65rem; padding: 2px 6px;">PRICE LIST</span>
+                                                            </a>
+                                                        </li>
                                                         <?php foreach ($col1_items as $nav_item): ?>
                                                             <?php
                                                              $slug_key = strtolower($nav_item['link']);
@@ -528,10 +535,19 @@ $page_keywords_seo = isset($seo_keywords) && !empty($seo_keywords)
                                                     </ul>
                                                 </div>
 
-                                                <!-- Column 3: Image -->
+                                                <!-- Column 3: Rate Card CTA Banner -->
                                                 <div class="col-lg-4 col-md-4 col-12 d-none d-md-block">
-                                                    <div class="rounded-3 overflow-hidden shadow-sm h-100">
-                                                        <img src="assets/images/caregiver-helping.jpg" class="img-fluid w-100 h-100" alt="Caregiver helping patient" style="object-fit: cover; min-height: 280px;">
+                                                    <div class="rounded-3 overflow-hidden shadow-sm h-100 position-relative d-flex flex-column justify-content-between p-3" style="background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); color: #fff; min-height: 280px;">
+                                                        <div>
+                                                            <span class="badge bg-danger mb-2 px-3 py-1 rounded-pill" style="background: #e5252a !important;"><i class="fa-solid fa-file-invoice-dollar me-1"></i> Official 2026 Tariff</span>
+                                                            <h6 class="fw-bold text-white mb-2" style="font-size: 1.05rem;">Home Healthcare & Nursing Rate Card</h6>
+                                                            <p class="small text-white-50 mb-3" style="font-size: 0.82rem; line-height: 1.5;">Check transparent per-day & shift charges for 12h/24h Nursing, Caregivers, Doctor Visits, Physio, ICU Packages & Clinical Procedures.</p>
+                                                        </div>
+                                                        <div class="pt-2 border-top border-secondary border-opacity-50">
+                                                            <a href="rate-cards" class="btn btn-danger btn-sm rounded-pill fw-bold w-100 py-2 shadow-sm" style="background-color: #e5252a; border: none;">
+                                                                <i class="fa-solid fa-list-check me-1"></i> View Full Service Rate Card
+                                                            </a>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>

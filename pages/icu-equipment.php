@@ -315,50 +315,112 @@ ob_start();
             <?php
             $icu_equipment_items = [
                 [
-                    "name" => "5-Function Motorized ICU Bed",
-                    "category" => "beds",
-                    "tag" => "Critical Care Bed",
-                    "desc" => "Fully motorized 5-function electric ICU bed with remote control, Trendelenburg / Reverse Trendelenburg tilt, CPR emergency release, ABS head/foot boards, and collapsible safety side rails.",
-                    "specs" => ["5-Function Electric Adjustment", "Emergency CPR Quick Release", "ABS Collapsible Guard Rails", "360° Central Locking Wheels"],
-                    "icon" => "fa-bed-pulse"
-                ],
-                [
-                    "name" => "Advanced Mechanical ICU Ventilator",
+                    "name" => "Mechanical ICU Ventilator (Vios)",
                     "category" => "respiratory",
                     "tag" => "Life Support",
-                    "desc" => "State-of-the-art invasive & non-invasive medical ventilator supporting PCV, VCV, SIMV, PSV, and CPAP modes with integrated graphics screen, tidal volume monitoring, and battery backup.",
+                    "price" => "₹35,000",
+                    "image" => "assets/images/pages/oxygen_concentrator_10l.jpg",
+                    "desc" => "State-of-the-art invasive & non-invasive Vios medical ICU ventilator supporting PCV, VCV, SIMV, PSV, and CPAP modes with integrated graphics screen, tidal volume monitoring, and battery backup.",
                     "specs" => ["Invasive & Non-Invasive Modes", "Real-Time Waveform Graphics", "High-Flow Oxygen Blender", "Integrated 4-Hour Battery Backup"],
                     "icon" => "fa-mask-ventilator"
                 ],
                 [
-                    "name" => "Multi-Parameter Patient Monitor",
+                    "name" => "FIVE FUNCTION BED ELECTRIC",
+                    "category" => "beds",
+                    "tag" => "Critical Care Bed",
+                    "price" => "₹12,500",
+                    "image" => "assets/images/pages/hospital_bed_home.png",
+                    "desc" => "Fully motorized 5-function electric ICU hospital bed with remote control, Trendelenburg / Reverse Trendelenburg tilt, CPR emergency release, ABS head/foot boards, and collapsible safety side rails.",
+                    "specs" => ["5-Function Electric Adjustment", "Emergency CPR Quick Release", "ABS Collapsible Guard Rails", "360° Central Locking Wheels"],
+                    "icon" => "fa-bed-pulse"
+                ],
+                [
+                    "name" => "FIVE PARA MONITOR",
                     "category" => "monitoring",
                     "tag" => "Continuous Vitals",
-                    "desc" => "High-resolution 12.1-inch color TFT patient monitor with real-time waveform tracking for ECG (5/12-lead), SpO2, NIBP, Respiration Rate, Temperature, and Pulse Rate with intelligent alarm system.",
+                    "price" => "₹7,500",
+                    "image" => "assets/images/equipment/patient_monitor.jpg",
+                    "desc" => "High-resolution color TFT patient monitor with real-time waveform tracking for 5 parameters: ECG, SpO2, NIBP, Respiration Rate, and Temperature with intelligent audio-visual alarm system.",
                     "specs" => ["12.1\" High-Res Color TFT Display", "ECG, SpO2, NIBP, Respiration, Temp", "Arrhythmia & ST Segment Analysis", "Visual & Audio Smart Alarms"],
                     "icon" => "fa-desktop"
                 ],
                 [
-                    "name" => "High-Precision Syringe Infusion Pump",
-                    "category" => "pumps",
-                    "tag" => "Medication Delivery",
-                    "desc" => "Microprocessor-controlled volumetric syringe pump compatible with all standard syringe sizes (5ml - 60ml) for accurate drug delivery, anti-bolus system, and occlusion detection alarms.",
-                    "specs" => ["Supports 5ml to 60ml Syringes", "Flow Rate: 0.1 to 1500 ml/h", "Anti-Bolus & Anti-Siphon Protection", "Dual CPU Micro-Accuracy"],
-                    "icon" => "fa-syringe"
+                    "name" => "Bi-Pap ST",
+                    "category" => "respiratory",
+                    "tag" => "Respiratory Support",
+                    "price" => "₹7,000",
+                    "image" => "assets/images/equipment/bipap_st.jpg",
+                    "desc" => "Spontaneous/Timed (ST) mode BiLevel non-invasive ventilator with doctor prescribed backup rate, heated humidifier, and smart compliance reporting for COPD and respiratory recovery.",
+                    "specs" => ["Auto-ST & Spontaneous Modes", "Integrated Climate Control Humidifier", "Real-Time Leak Compensation", "Ultra-Quiet Motor (<28 dBA)"],
+                    "icon" => "fa-head-side-mask"
                 ],
                 [
-                    "name" => "Volumetric IV Infusion Pump",
+                    "name" => "Infusion Pump",
                     "category" => "pumps",
-                    "tag" => "Fluid & Blood Delivery",
+                    "tag" => "Fluid & Drug Delivery",
+                    "price" => "₹6,000",
+                    "image" => "assets/images/equipment/infusion_pump.jpg",
                     "desc" => "Automated IV fluid infusion pump with ultrasonic air-in-line sensor, double occlusion sensors, multi-infusion modes (Rate, Time, Body Weight), and rechargeable battery operation.",
                     "specs" => ["Ultrasonic Bubble & Air Detector", "Rate, Time & Body Weight Modes", "Compatible with All Standard IV Sets", "8-Hour Battery Operation"],
                     "icon" => "fa-pump-medical"
                 ],
                 [
+                    "name" => "DVT Pump",
+                    "category" => "pumps",
+                    "tag" => "Vascular Care",
+                    "price" => "₹6,000",
+                    "image" => "assets/images/equipment/dvt_pump.jpg",
+                    "desc" => "Pneumatic sequential compression device (DVT pump) for deep vein thrombosis prevention, enhancing blood circulation in post-operative and immobile bedridden ICU patients.",
+                    "specs" => ["Sequential Gradient Compression", "Dual Leg Calf / Thigh Sleeves", "Silent Digital Compressor Unit", "Pressure Auto-Regulation & Safety Alarms"],
+                    "icon" => "fa-heart-circle-bolt"
+                ],
+                [
+                    "name" => "DOUBLE JAR SUCTION MACHINE",
+                    "category" => "respiratory",
+                    "tag" => "Airway Clearance",
+                    "price" => "₹3,000",
+                    "image" => "assets/images/equipment/suction_machine.jpg",
+                    "desc" => "Heavy-duty oil-free piston pump suction apparatus with dual glass/polycarbonate bottles (2 x 2.5L), overflow protection device, and high negative pressure capacity for tracheostomy and ICU use.",
+                    "specs" => ["High Vacuum / High Flow Rate (>20L/min)", "Dual 2.5 Litre Autoclavable Jars", "Oil-Free Maintenance-Free Pump", "Anti-Bacterial Hydrophobic Filter"],
+                    "icon" => "fa-pump-soap"
+                ],
+                [
+                    "name" => "O2 Concentrator 10L",
+                    "category" => "respiratory",
+                    "tag" => "Continuous Oxygen",
+                    "price" => "₹8,500",
+                    "image" => "assets/images/pages/oxygen_concentrator_10l.jpg",
+                    "desc" => "Heavy-duty dual flowmeter 10 LPM continuous medical oxygen generator delivering 93% ± 3% pure oxygen 24/7 without needing cylinder refill swaps.",
+                    "specs" => ["High-Purity 93% ± 3% Medical O2", "Continuous 24/7 Heavy-Duty Operation", "Built-In Purity & Pressure Sensor", "Castor Wheels for Bedside Mobility"],
+                    "icon" => "fa-wind"
+                ],
+                [
+                    "name" => "Medical Storage Freezer",
+                    "category" => "monitoring",
+                    "tag" => "Storage & Pharmacy",
+                    "price" => "₹9,000",
+                    "image" => "assets/images/equipment/medical_freezer.jpg",
+                    "desc" => "Hospital-standard biomedical refrigeration unit for safe preservation of critical medications, vaccines, biological samples, and cold-chain therapeutics.",
+                    "specs" => ["Microprocessor Temperature Control", "Digital Temperature Display", "High/Low Alarm Safety System", "Low Noise Energy Efficient Compressor"],
+                    "icon" => "fa-snowflake"
+                ],
+                [
+                    "name" => "Anti-Bedsore Alternating Air Mattress",
+                    "category" => "beds",
+                    "tag" => "Pressure Care",
+                    "price" => "Included / Optional",
+                    "image" => "assets/images/pages/hospital_bed_home.png",
+                    "desc" => "Medical tubular alternating pressure air mattress with ultra-silent digital compressor pump, CPR emergency deflation valve, and micro-air loss ventilation to prevent bedsores.",
+                    "specs" => ["Alternating Air Cell Technology", "Ultra-Quiet Auto-Pressure Pump", "Quick CPR Emergency Deflate", "Hospital-Grade Antimicrobial Cover"],
+                    "icon" => "fa-mattress-pillow"
+                ],
+                [
                     "name" => "Biphasic Defibrillator with AED",
                     "category" => "pumps",
                     "tag" => "Cardiac Emergency",
-                    "desc" => "Advanced biphasic defibrillator with manual shock mode, Automated External Defibrillator (AED) protocol, pacing capability, integrated thermal printer, and internal paddles for clinical care.",
+                    "price" => "On Request",
+                    "image" => "assets/images/equipment/patient_monitor.jpg",
+                    "desc" => "Advanced biphasic defibrillator with manual shock mode, Automated External Defibrillator (AED) protocol, pacing capability, integrated thermal printer, and internal paddles.",
                     "specs" => ["Biphasic Truncated Exponential Wave", "AED & Manual Synchronized Cardioversion", "External & Internal Adult/Pediatric Paddles", "High-Speed Thermal Strip Recorder"],
                     "icon" => "fa-heart-pulse"
                 ],
@@ -366,74 +428,42 @@ ob_start();
                     "name" => "12-Lead Digital ECG Machine",
                     "category" => "monitoring",
                     "tag" => "Cardiac Diagnostic",
+                    "price" => "On Request",
+                    "image" => "assets/images/downloaded_img_2.jpg",
                     "desc" => "12-channel simultaneous digital ECG recorder with Glasgow interpretation algorithm, high-resolution color touchscreen, alphanumeric keyboard, and instant thermal reporting.",
                     "specs" => ["12-Channel Simultaneous Acquisition", "Automated Clinical Interpretation", "USB & PDF Direct Export", "High-Resolution Color Touchscreen"],
                     "icon" => "fa-file-waveform"
-                ],
-                [
-                    "name" => "High-Vacuum Medical Suction Machine",
-                    "category" => "respiratory",
-                    "tag" => "Airway Clearance",
-                    "desc" => "Heavy-duty oil-free piston pump suction apparatus with dual glass/polycarbonate bottles (2 x 2.5L), overflow protection device, and high negative pressure capacity for tracheostomy and ICU use.",
-                    "specs" => ["High Vacuum / High Flow Rate (>20L/min)", "Dual 2.5 Litre Autoclavable Jars", "Oil-Free Maintenance-Free Pump", "Anti-Bacterial Hydrophobic Filter"],
-                    "icon" => "fa-pump-soap"
-                ],
-                [
-                    "name" => "Medical-Grade Oxygen Concentrator (10L / 5L)",
-                    "category" => "respiratory",
-                    "tag" => "Continuous Oxygen",
-                    "desc" => "Continuous 93% ± 3% pure medical oxygen supply machine with high output pressure, integrated digital purity sensor, ultra-quiet operation, and dual humidifier support for ICU stepping down.",
-                    "specs" => ["High-Purity 93% ± 3% Medical O2", "Continuous 24/7 Heavy-Duty Operation", "Built-In Purity & Pressure Sensor", "Castor Wheels for Bedside Mobility"],
-                    "icon" => "fa-wind"
-                ],
-                [
-                    "name" => "Anti-Bedsore Alternating Air Mattress",
-                    "category" => "beds",
-                    "tag" => "Pressure Care",
-                    "desc" => "Medical tubular alternating pressure air mattress with ultra-silent digital compressor pump, CPR emergency deflation valve, waterproof breathable cover, and micro-air loss ventilation to prevent bedsores.",
-                    "specs" => ["Alternating Air Cell Technology", "Ultra-Quiet Auto-Pressure Pump", "Quick CPR Emergency Deflate", "Hospital-Grade Antimicrobial Cover"],
-                    "icon" => "fa-mattress-pillow"
-                ],
-                [
-                    "name" => "Medical Emergency Crash Cart Trolley",
-                    "category" => "monitoring",
-                    "tag" => "Emergency Ward",
-                    "desc" => "Heavy-duty ABS emergency resuscitation crash cart with central lock drawers, defibrillator shelf, oxygen cylinder holder, IV pole, CPR cardiac board, and 360° smooth swivel castors.",
-                    "specs" => ["ABS Molded Impact-Resistant Body", "Centralized Breakaway Key Lock", "Oxygen Tank Holder & IV Pole", "Built-In CPR Board & Defibrillator Tray"],
-                    "icon" => "fa-cart-flatbed"
-                ],
-                [
-                    "name" => "BiPAP / CPAP Non-Invasive Ventilator",
-                    "category" => "respiratory",
-                    "tag" => "Respiratory Support",
-                    "desc" => "Dual-level positive airway pressure non-invasive ventilator with Auto-ST mode, heated humidifier, leak compensation, and smart cloud adherence reporting for COPD and sleep apnea patients.",
-                    "specs" => ["Auto-ST & Spontaneous Modes", "Integrated Climate Control Humidifier", "Real-Time Leak Compensation", "Ultra-Quiet Motor (<28 dBA)"],
-                    "icon" => "fa-head-side-mask"
                 ]
             ];
 
             foreach($icu_equipment_items as $item): ?>
                 <div class="col-lg-4 col-md-6 icu-item" data-category="<?= htmlspecialchars($item['category']) ?>">
                     <div class="icu-equip-card">
-                        <div class="icu-icon-holder">
-                            <i class="fa-solid <?= htmlspecialchars($item['icon']) ?>"></i>
+                        <div class="position-relative" style="height: 180px; overflow: hidden; background: #fff; border-top-left-radius: 20px; border-top-right-radius: 20px;">
+                            <img src="<?= htmlspecialchars($item['image']) ?>" onerror="this.onerror=null;this.src='assets/images/pages/hospital_bed_home.png';" alt="<?= htmlspecialchars($item['name']) ?>" style="width: 100%; height: 100%; object-fit: contain; padding: 6px;">
                         </div>
                         <div class="p-4 d-flex flex-column flex-grow-1">
                             <div class="d-flex justify-content-between align-items-center mb-2">
                                 <span class="badge bg-danger bg-opacity-10 text-danger rounded-pill px-3 py-1 small fw-semibold"><?= htmlspecialchars($item['tag']) ?></span>
                                 <span class="text-success small fw-bold"><i class="fa-solid fa-check-circle"></i> Certified</span>
                             </div>
-                            <h5 class="fw-bold text-dark mb-2"><?= htmlspecialchars($item['name']) ?></h5>
-                            <p class="text-muted small mb-3 lh-base"><?= htmlspecialchars($item['desc']) ?></p>
+                            <h5 class="fw-bold text-dark mb-1"><?= htmlspecialchars($item['name']) ?></h5>
+                            <p class="text-muted small mb-2 lh-base"><?= htmlspecialchars($item['desc']) ?></p>
                             
-                            <ul class="list-unstyled small text-secondary mb-4" style="font-size: 0.8rem;">
+                            <!-- Price Display -->
+                            <div class="d-flex justify-content-between align-items-center mb-3 p-2 bg-light rounded-3 border">
+                                <span class="small text-muted fw-semibold">Service Price:</span>
+                                <span class="fs-5 fw-bold text-dm-red"><?= htmlspecialchars($item['price']) ?></span>
+                            </div>
+
+                            <ul class="list-unstyled small text-secondary mb-3" style="font-size: 0.8rem;">
                                 <?php foreach($item['specs'] as $spec): ?>
                                     <li class="mb-1"><i class="fa-solid fa-circle-check text-success me-2"></i><?= htmlspecialchars($spec) ?></li>
                                 <?php endforeach; ?>
                             </ul>
 
                             <div class="d-grid gap-2 mt-auto">
-                                <a href="https://wa.me/919319149644?text=<?= urlencode("Hello DM Healthcare, I want to inquire about " . $item['name']) ?>" target="_blank" class="btn btn-success btn-sm rounded-pill fw-bold py-2">
+                                <a href="https://wa.me/919319149644?text=<?= urlencode("Hello DM Healthcare, I want to inquire about " . $item['name'] . " (Price: " . $item['price'] . ")") ?>" target="_blank" class="btn btn-success btn-sm rounded-pill fw-bold py-2">
                                     <i class="fa-brands fa-whatsapp me-1"></i> Inquire on WhatsApp
                                 </a>
                                 <a href="index.php#appointment" class="btn btn-outline-secondary btn-sm rounded-pill fw-semibold py-1">
@@ -444,6 +474,34 @@ ob_start();
                     </div>
                 </div>
             <?php endforeach; ?>
+        </div>
+
+        <!-- Delivery & Sanitization Information -->
+        <div class="row g-3 justify-content-center mt-4">
+            <div class="col-md-4">
+                <div class="p-3 bg-white rounded-3 border text-center shadow-sm">
+                    <i class="fa-solid fa-truck-ramp-box text-primary fs-5 mb-1"></i>
+                    <h6 class="fw-bold text-dark mb-0 small">Freight charges Local</h6>
+                    <span class="fw-bold text-dark fs-6">₹700</span>
+                    <small class="text-muted d-block" style="font-size:0.75rem;">Immediate local dispatch</small>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="p-3 bg-white rounded-3 border text-center shadow-sm">
+                    <i class="fa-solid fa-truck-fast text-warning fs-5 mb-1"></i>
+                    <h6 class="fw-bold text-dark mb-0 small">Freight DELHI NCR</h6>
+                    <span class="fw-bold text-dark fs-6">₹3,000</span>
+                    <small class="text-muted d-block" style="font-size:0.75rem;">Delhi NCR & surrounding zones</small>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="p-3 bg-white rounded-3 border text-center shadow-sm">
+                    <i class="fa-solid fa-pump-medical text-success fs-5 mb-1"></i>
+                    <h6 class="fw-bold text-dark mb-0 small">DISINFECTION PROCESS</h6>
+                    <span class="fw-bold text-dark fs-6">₹2,500</span>
+                    <small class="text-muted d-block" style="font-size:0.75rem;">Hospital-grade deep sterilization</small>
+                </div>
+            </div>
         </div>
     </div>
 </section>

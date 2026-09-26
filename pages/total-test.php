@@ -349,7 +349,7 @@ $frontend_custom_sections = '
                         <i class="fa-solid fa-phone"></i> Call: 9319149644
                     </a>
                     <a href="https://wa.me/919319149644?text=Hi%20DM%20Healthcare,%20I%20want%20to%20book%20an%20Asian%20HealthFit%20Blood%20Test%20Package." target="_blank" class="btn btn-outline-success rounded-pill px-4 py-2 fw-bold shadow-sm d-inline-flex align-items-center gap-2">
-                        <i class="fa-brands fa-whatsapp fs-5"></i> Book on WhatsApp
+                        <i class="fa-brands fa-whatsapp fs-5"></i> WhatsApp Us
                     </a>
                     <span class="text-muted small fw-semibold"><i class="fa-solid fa-shield-check text-success me-1"></i> No Hidden Travel Charges</span>
                 </div>

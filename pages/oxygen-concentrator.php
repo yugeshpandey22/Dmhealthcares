@@ -16,11 +16,10 @@ $oxygen_models = [
     [
         'id' => 'oc-5lpm-std',
         'capacity' => '5 LPM',
-        'title' => '5 Litre Home Oxygen Concentrator',
+        'title' => 'O2 Concentrator 5L',
         'badge' => 'Most Prescribed',
         'badge_class' => 'bg-danger',
-        'rent_price' => '₹3,500',
-        'rent_period' => '/ month',
+        'price' => '₹4,500',
         'image' => 'assets/images/pages/oxygen_concentrator_5l.jpg',
         'features' => ['Continuous 0.5 - 5 LPM flow rate (93% ± 3% purity)', 'Ultra-quiet operation (<45 dB) for night sleep', 'Built-in oxygen purity sensor & low-flow alarms', 'Lightweight with castor wheels for easy room movement'],
         'ideal_for' => 'COPD, Asthma, post-COVID & mild-to-moderate respiratory support'
@@ -28,26 +27,13 @@ $oxygen_models = [
     [
         'id' => 'oc-10lpm-dual',
         'capacity' => '10 LPM',
-        'title' => '10 Litre High-Flow Dual Oxygen Concentrator',
+        'title' => 'O2 Concentrator 10L',
         'badge' => 'ICU & High Flow',
         'badge_class' => 'bg-primary',
-        'rent_price' => '₹6,500',
-        'rent_period' => '/ month',
+        'price' => '₹8,500',
         'image' => 'assets/images/pages/oxygen_concentrator_10l.jpg',
         'features' => ['Heavy-duty 1 - 10 LPM continuous high-pressure output', 'Dual flowmeter ports (can support 2 patients simultaneously)', 'Compatible with BiPAP, CPAP & High-Flow nasal cannulas', '24/7 continuous non-stop heavy medical operation'],
         'ideal_for' => 'Severe lung fibrosis, critical respiratory distress & ICU setup'
-    ],
-    [
-        'id' => 'oc-5lpm-nebulizer',
-        'capacity' => '5 LPM + Neb',
-        'title' => '5 Litre Concentrator with Inbuilt Nebulizer',
-        'badge' => '2-in-1 Medical',
-        'badge_class' => 'bg-success',
-        'rent_price' => '₹4,000',
-        'rent_period' => '/ month',
-        'image' => 'assets/images/pages/oxygen_concentrator_hero.jpg',
-        'features' => ['Dual function: Medical oxygen + Nebulization therapy', 'High-definition digital LCD displaying real-time purity %', 'Self-diagnostic safety alarms & digital timer function', 'Includes complimentary humidifier & nasal tubing kit'],
-        'ideal_for' => 'Patients requiring frequent bronchodilator nebulizer treatments'
     ]
 ];
 
@@ -164,7 +150,7 @@ ob_start();
             <div class="col-md-6 col-lg-4">
                 <div class="card h-100 rounded-3 shadow-sm oc-product-card bg-white overflow-hidden">
                     <div class="position-relative">
-                        <img src="<?= $oc['image'] ?>" alt="<?= htmlspecialchars($oc['title']) ?>" class="card-img-top oc-product-img">
+                        <img src="<?= $oc['image'] ?>" onerror="this.onerror=null;this.src='assets/images/pages/oxygen_concentrator_hero.jpg';" alt="<?= htmlspecialchars($oc['title']) ?>" class="card-img-top oc-product-img">
                         <span class="position-absolute top-0 start-0 m-2 badge <?= $oc['badge_class'] ?> rounded-pill px-2 py-1 shadow-sm" style="font-size: 0.72rem;">
                             <?= $oc['badge'] ?>
                         </span>
@@ -179,7 +165,7 @@ ob_start();
                         </p>
                         
                         <!-- Features (Compact 3 Items) -->
-                        <ul class="list-unstyled oc-feature-list mb-3 flex-grow-1">
+                        <ul class="list-unstyled oc-feature-list mb-2 flex-grow-1">
                             <?php foreach(array_slice($oc['features'], 0, 3) as $f): ?>
                             <li class="d-flex align-items-center gap-1 mb-1 text-secondary">
                                 <i class="fa-solid fa-check text-success small"></i>
@@ -188,9 +174,15 @@ ob_start();
                             <?php endforeach; ?>
                         </ul>
 
+                        <!-- Price Tag -->
+                        <div class="d-flex justify-content-between align-items-center mb-3 p-2 bg-light rounded-3 border">
+                            <span class="small text-muted fw-semibold">Service Price:</span>
+                            <span class="fs-5 fw-bold text-dm-red"><?= $oc['price'] ?></span>
+                        </div>
+
                         <!-- Actions (Side by Side Compact) -->
                         <div class="d-flex gap-2">
-                            <a href="https://wa.me/919319149644?text=<?= urlencode('Hi DM Healthcare, I need ' . $oc['title'] . ' urgently. Please share availability and details.') ?>" target="_blank" class="btn btn-outline-success btn-sm rounded-pill fw-bold px-2 py-1 flex-fill d-flex align-items-center justify-content-center gap-1" style="font-size: 0.78rem;">
+                            <a href="https://wa.me/919319149644?text=<?= urlencode('Hi DM Healthcare, I need ' . $oc['title'] . ' (Price: ' . $oc['price'] . ') urgently. Please share availability and details.') ?>" target="_blank" class="btn btn-outline-success btn-sm rounded-pill fw-bold px-2 py-1 flex-fill d-flex align-items-center justify-content-center gap-1" style="font-size: 0.78rem;">
                                 <i class="fa-brands fa-whatsapp"></i> Chat
                             </a>
                             <a href="#booking-form" onclick="selectOcModel('<?= addslashes($oc['title']) ?>')" class="btn btn-dm-red btn-sm rounded-pill fw-bold px-2 py-1 flex-fill d-flex align-items-center justify-content-center gap-1" style="font-size: 0.78rem;">
@@ -201,6 +193,34 @@ ob_start();
                 </div>
             </div>
             <?php endforeach; ?>
+        </div>
+
+        <!-- Delivery & Sanitization Information -->
+        <div class="row g-3 justify-content-center mt-3">
+            <div class="col-md-4">
+                <div class="p-3 bg-white rounded-3 border text-center shadow-sm">
+                    <i class="fa-solid fa-truck-ramp-box text-primary fs-5 mb-1"></i>
+                    <h6 class="fw-bold text-dark mb-0 small">Freight charges Local</h6>
+                    <span class="fw-bold text-dark fs-6">₹700</span>
+                    <small class="text-muted d-block" style="font-size:0.75rem;">Immediate local dispatch</small>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="p-3 bg-white rounded-3 border text-center shadow-sm">
+                    <i class="fa-solid fa-truck-fast text-warning fs-5 mb-1"></i>
+                    <h6 class="fw-bold text-dark mb-0 small">Freight DELHI NCR</h6>
+                    <span class="fw-bold text-dark fs-6">₹3,000</span>
+                    <small class="text-muted d-block" style="font-size:0.75rem;">Delhi NCR & surrounding zones</small>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="p-3 bg-white rounded-3 border text-center shadow-sm">
+                    <i class="fa-solid fa-pump-medical text-success fs-5 mb-1"></i>
+                    <h6 class="fw-bold text-dark mb-0 small">DISINFECTION PROCESS</h6>
+                    <span class="fw-bold text-dark fs-6">₹2,500</span>
+                    <small class="text-muted d-block" style="font-size:0.75rem;">Hospital-grade deep sterilization</small>
+                </div>
+            </div>
         </div>
     </div>
 </section>
@@ -365,9 +385,8 @@ ob_start();
                             <div class="col-md-6">
                                 <label class="form-label small fw-semibold text-secondary mb-1">Select Oxygen Model *</label>
                                 <select name="model" id="ocModelSelect" class="form-select form-select-sm rounded-2" required>
-                                    <option value="5 Litre Home Oxygen Concentrator">5 Litre Home Oxygen Concentrator</option>
-                                    <option value="10 Litre High-Flow Dual Oxygen Concentrator">10 Litre High-Flow Dual Oxygen Concentrator</option>
-                                    <option value="5 Litre Concentrator with Inbuilt Nebulizer">5 Litre Concentrator with Inbuilt Nebulizer</option>
+                                    <option value="O2 Concentrator 5L (₹4,500)">O2 Concentrator 5L (₹4,500)</option>
+                                    <option value="O2 Concentrator 10L (₹8,500)">O2 Concentrator 10L (₹8,500)</option>
                                     <option value="Oxygen Cylinder Backup Kit">Oxygen Cylinder Backup Kit</option>
                                 </select>
                             </div>
