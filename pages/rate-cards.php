@@ -1,7 +1,7 @@
 <?php
 /**
  * DM Healthcare - Official Service Tariff & Rate Cards
- * World-class, interactive healthcare tariff marketplace
+ * Ultra-Professional Medical Marketplace & Transparent Price List
  */
 
 $display_title = "Home Healthcare Services Rate Cards & Tariff";
@@ -140,57 +140,83 @@ $frontend_custom_sections = '
     --dm-light-bg: #f8fafc;
 }
 
-/* Premium Tariff Hero */
-.rate-hero-wrapper {
-    background: radial-gradient(circle at 90% 10%, rgba(229, 37, 42, 0.18) 0%, transparent 50%),
-                radial-gradient(circle at 10% 90%, rgba(2, 132, 199, 0.15) 0%, transparent 45%),
-                linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+/* Professional Medical Hero Wrapper */
+.rate-hero-clean {
+    background: radial-gradient(circle at 95% 10%, rgba(229, 37, 42, 0.08) 0%, transparent 45%),
+                radial-gradient(circle at 5% 90%, rgba(2, 132, 199, 0.06) 0%, transparent 40%),
+                linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+    border: 1px solid #e2e8f0;
     border-radius: 28px;
-    padding: 50px 36px;
-    color: #ffffff;
+    padding: 44px 36px;
     margin-bottom: 35px;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.04);
     position: relative;
     overflow: hidden;
-    box-shadow: 0 20px 45px -10px rgba(15, 23, 42, 0.25);
-    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.trust-pill-tag {
-    background: rgba(255, 255, 255, 0.12);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+.trust-badge-capsule {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
     border-radius: 50px;
     padding: 6px 14px;
-    font-size: 0.8rem;
-    color: #ffffff;
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: #334155;
     display: inline-flex;
     align-items: center;
-    gap: 6px;
-    font-weight: 600;
+    gap: 7px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.02);
 }
 
-/* Stats Ribbon */
+/* Quick Inquiry Desk Card */
+.inquiry-desk-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-top: 4px solid var(--dm-brand-red);
+    border-radius: 22px;
+    padding: 26px;
+    box-shadow: 0 14px 32px rgba(15, 23, 42, 0.06);
+    position: relative;
+}
+
+.pulse-live-dot {
+    width: 8px;
+    height: 8px;
+    background-color: #10b981;
+    border-radius: 50%;
+    display: inline-block;
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
+    animation: live-pulse 1.8s infinite;
+}
+@keyframes live-pulse {
+    0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7); }
+    70% { transform: scale(1); box-shadow: 0 0 0 8px rgba(16, 185, 129, 0); }
+    100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(16, 185, 129, 0); }
+}
+
+/* Quick Stats Bar */
 .tariff-stat-card {
+    background: #ffffff;
+    border: 1px solid var(--dm-border-color);
+    border-radius: 18px;
+    padding: 16px 18px;
+    box-shadow: 0 3px 10px rgba(15, 23, 42, 0.02);
+    transition: all 0.25s ease;
+}
+.tariff-stat-card:hover {
+    transform: translateY(-3px);
+    border-color: var(--dm-brand-red);
+    box-shadow: 0 10px 20px rgba(229, 37, 42, 0.07);
+}
+
+/* Sticky Search & Category Navigation */
+.tariff-sticky-toolbar {
     background: #ffffff;
     border: 1px solid var(--dm-border-color);
     border-radius: 20px;
     padding: 18px 20px;
-    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.03);
-    transition: all 0.3s ease;
-}
-.tariff-stat-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 12px 24px rgba(229, 37, 42, 0.08);
-    border-color: rgba(229, 37, 42, 0.3);
-}
-
-/* Sticky Search & Filter Toolbar */
-.tariff-sticky-toolbar {
-    background: #ffffff;
-    border: 1px solid var(--dm-border-color);
-    border-radius: 22px;
-    padding: 20px;
-    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.04);
-    margin-bottom: 40px;
+    box-shadow: 0 8px 24px rgba(15, 23, 42, 0.04);
+    margin-bottom: 35px;
 }
 
 .search-input-box {
@@ -199,20 +225,20 @@ $frontend_custom_sections = '
 }
 .search-input-box i {
     position: absolute;
-    left: 20px;
+    left: 18px;
     top: 50%;
     transform: translateY(-50%);
     color: #94a3b8;
-    font-size: 1.1rem;
+    font-size: 1.05rem;
 }
 .search-input-box input {
     width: 100%;
-    padding: 14px 20px 14px 50px;
+    padding: 12px 18px 12px 46px;
     border-radius: 50px;
     border: 1px solid #cbd5e1;
-    font-size: 0.95rem;
+    font-size: 0.92rem;
     font-weight: 500;
-    transition: all 0.25s ease;
+    transition: all 0.2s ease;
     background: #f8fafc;
 }
 .search-input-box input:focus {
@@ -228,15 +254,15 @@ $frontend_custom_sections = '
     background: #ffffff;
     color: #475569;
     border-radius: 50px;
-    padding: 9px 20px;
+    padding: 8px 18px;
     font-weight: 700;
-    font-size: 0.85rem;
-    transition: all 0.25s ease;
+    font-size: 0.82rem;
+    transition: all 0.2s ease;
     cursor: pointer;
     white-space: nowrap;
     display: inline-flex;
     align-items: center;
-    gap: 8px;
+    gap: 6px;
 }
 .tab-filter-btn:hover {
     background: #f1f5f9;
@@ -247,55 +273,54 @@ $frontend_custom_sections = '
     background: var(--dm-brand-red) !important;
     color: #ffffff !important;
     border-color: var(--dm-brand-red) !important;
-    box-shadow: 0 4px 14px rgba(229, 37, 42, 0.3);
+    box-shadow: 0 4px 12px rgba(229, 37, 42, 0.25);
 }
 
-/* Premium Product Cards */
+/* Service Item Cards */
 .rate-item-card {
     background: #ffffff;
     border: 1px solid var(--dm-border-color);
-    border-radius: 20px;
-    padding: 24px;
+    border-radius: 18px;
+    padding: 22px;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.28s ease;
     position: relative;
     overflow: hidden;
 }
 .rate-item-card:hover {
-    transform: translateY(-6px);
+    transform: translateY(-5px);
     border-color: var(--dm-brand-red);
-    box-shadow: 0 16px 36px rgba(15, 23, 42, 0.08);
+    box-shadow: 0 14px 30px rgba(15, 23, 42, 0.08);
 }
 .rate-item-card.is-popular {
-    border-color: rgba(229, 37, 42, 0.4);
-    box-shadow: 0 8px 24px rgba(229, 37, 42, 0.06);
+    border-color: rgba(229, 37, 42, 0.35);
+    background: #ffffff;
 }
 .popular-flag {
     position: absolute;
     top: 0;
     right: 0;
-    background: linear-gradient(135deg, #e5252a 0%, #c8102e 100%);
+    background: var(--dm-brand-red);
     color: #ffffff;
-    font-size: 0.68rem;
+    font-size: 0.65rem;
     font-weight: 800;
     text-transform: uppercase;
-    letter-spacing: 0.6px;
-    padding: 4px 14px;
-    border-bottom-left-radius: 12px;
+    letter-spacing: 0.5px;
+    padding: 3px 12px;
+    border-bottom-left-radius: 10px;
 }
 
 .price-main {
-    font-size: 1.55rem;
+    font-size: 1.45rem;
     font-weight: 900;
     color: var(--dm-brand-red);
     line-height: 1;
-    letter-spacing: -0.5px;
 }
 .price-unit {
-    font-size: 0.78rem;
+    font-size: 0.76rem;
     color: #64748b;
     font-weight: 600;
 }
@@ -303,51 +328,38 @@ $frontend_custom_sections = '
 .service-badge-pill {
     font-size: 0.72rem;
     font-weight: 700;
-    padding: 4px 10px;
-    border-radius: 30px;
-    background: rgba(15, 23, 42, 0.05);
+    padding: 3px 10px;
+    border-radius: 20px;
+    background: #f1f5f9;
     color: #334155;
     display: inline-block;
 }
-
-.view-toggle-btn {
-    border-radius: 10px;
-    padding: 6px 14px;
-    font-size: 0.82rem;
-    font-weight: 700;
-    border: 1px solid #cbd5e1;
-    background: #fff;
-    color: #475569;
-}
-.view-toggle-btn.active {
-    background: #0f172a;
-    color: #fff;
-    border-color: #0f172a;
-}
 </style>
 
-<div class="container py-4">
-    <!-- 1. HERO SECTION -->
-    <div class="rate-hero-wrapper">
+<div class="container py-3">
+    <!-- 1. REDESIGNED PROFESSIONAL HERO SECTION -->
+    <div class="rate-hero-clean">
         <div class="row align-items-center g-4">
-            <div class="col-lg-8 pe-lg-4">
+            <div class="col-lg-7 pe-lg-4">
+                <!-- Trust Pillars Pills -->
                 <div class="d-flex flex-wrap gap-2 mb-3">
-                    <span class="trust-pill-tag">
-                        <i class="fa-solid fa-certificate text-warning"></i> Doctor-Supervised Care
+                    <span class="trust-badge-capsule">
+                        <i class="fa-solid fa-user-doctor text-primary"></i> Doctor-Supervised Care
                     </span>
-                    <span class="trust-pill-tag">
-                        <i class="fa-solid fa-shield-check text-success"></i> 100% Police Verified Staff
+                    <span class="trust-badge-capsule">
+                        <i class="fa-solid fa-shield-halved text-success"></i> 100% Police Verified Staff
                     </span>
-                    <span class="trust-pill-tag">
-                        <i class="fa-solid fa-rotate text-info"></i> Free Replacement Guarantee
+                    <span class="trust-badge-capsule">
+                        <i class="fa-solid fa-rotate text-danger"></i> Free Replacement Guarantee
                     </span>
                 </div>
 
-                <h1 class="display-5 fw-bold mb-3 text-white" style="letter-spacing: -0.5px;">
-                    Home Healthcare <span style="color: #ff6b6e;">Rate Cards & Tariff</span>
+                <h1 class="display-5 fw-bold text-dark mb-3" style="letter-spacing: -0.6px;">
+                    Home Healthcare <span style="color: var(--dm-brand-red);">Rate Cards & Tariff</span>
                 </h1>
-                <p class="text-white-50 lead fs-6 mb-4" style="line-height: 1.75;">
-                    Transparent, competitive, and hospital-standard tariff for 12h/24h Bedside Nursing, Caregiver Attendants, ICU-at-Home Packages, Doctor Visits, Physiotherapy, and Doorstep Clinical Procedures across Delhi NCR.
+                
+                <p class="text-muted lead fs-6 mb-4" style="line-height: 1.75; font-size: 1rem;">
+                    Transparent, doctor-supervised, and standardized tariff for 12-hour & 24-hour Bedside Nursing, Caregiver Attendants, ICU-at-Home Packages, Home Physician Visits, Physiotherapy, and Doorstep Clinical Procedures across Delhi NCR.
                 </p>
 
                 <div class="d-flex flex-wrap gap-3">
@@ -355,71 +367,93 @@ $frontend_custom_sections = '
                         <i class="fa-solid fa-phone"></i> Call Care Desk: +91 93191 49644
                     </a>
                     <a href="https://wa.me/919319149644?text='.urlencode("Hello DM Healthcare, I would like to inquire about your Home Healthcare Services Rate Cards.").'" target="_blank" class="btn btn-success btn-lg rounded-pill px-4 fw-bold shadow-sm d-inline-flex align-items-center gap-2">
-                        <i class="fa-brands fa-whatsapp fs-5"></i> WhatsApp Booking
+                        <i class="fa-brands fa-whatsapp fs-5"></i> Instant WhatsApp Quote
                     </a>
                 </div>
             </div>
 
-            <div class="col-lg-4">
-                <div class="p-4 rounded-4 text-dark shadow-lg bg-white border border-light">
+            <!-- Right Column: Quick Tariff & Deployment Desk -->
+            <div class="col-lg-5">
+                <div class="inquiry-desk-card">
                     <div class="d-flex justify-content-between align-items-center mb-3">
-                        <span class="badge bg-danger bg-opacity-10 text-danger rounded-pill px-3 py-1 fw-bold">Tariff Summary</span>
-                        <span class="text-success small fw-bold"><i class="fa-solid fa-circle-dot"></i> Live Rates</span>
+                        <div class="d-flex align-items-center gap-2">
+                            <span class="pulse-live-dot"></span>
+                            <span class="text-dark small fw-bold text-uppercase" style="letter-spacing: 0.5px;">Live 2026 Tariff</span>
+                        </div>
+                        <span class="badge bg-danger bg-opacity-10 text-danger rounded-pill px-3 py-1 small fw-bold">Instant Dispatch</span>
                     </div>
-                    <h5 class="fw-bold text-dark mb-1">Instant Care Deployment</h5>
+
+                    <h5 class="fw-bold text-dark mb-1">Instant Care Deployment Desk</h5>
                     <p class="text-muted small mb-3">Certified medical staff reachable within 30-60 mins across Faridabad, Noida, Delhi & Gurugram.</p>
-                    
-                    <ul class="list-unstyled small text-muted mb-0">
-                        <li class="mb-2 d-flex align-items-center"><i class="fa-solid fa-circle-check text-success me-2"></i> Zero hidden charges</li>
-                        <li class="mb-2 d-flex align-items-center"><i class="fa-solid fa-circle-check text-success me-2"></i> Free replacement if on leave</li>
-                        <li class="mb-2 d-flex align-items-center"><i class="fa-solid fa-circle-check text-success me-2"></i> Daily & Monthly flexible packages</li>
-                        <li class="d-flex align-items-center"><i class="fa-solid fa-circle-check text-success me-2"></i> GST invoice & insurance assistance</li>
-                    </ul>
+
+                    <div class="p-3 bg-light rounded-3 border mb-3">
+                        <div class="row g-2 small">
+                            <div class="col-6 d-flex align-items-center">
+                                <i class="fa-solid fa-circle-check text-success me-2"></i>
+                                <span class="text-secondary fw-semibold">Zero hidden charges</span>
+                            </div>
+                            <div class="col-6 d-flex align-items-center">
+                                <i class="fa-solid fa-circle-check text-success me-2"></i>
+                                <span class="text-secondary fw-semibold">Free leave backup</span>
+                            </div>
+                            <div class="col-6 d-flex align-items-center">
+                                <i class="fa-solid fa-circle-check text-success me-2"></i>
+                                <span class="text-secondary fw-semibold">Daily/Monthly plans</span>
+                            </div>
+                            <div class="col-6 d-flex align-items-center">
+                                <i class="fa-solid fa-circle-check text-success me-2"></i>
+                                <span class="text-secondary fw-semibold">GST invoice support</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="https://wa.me/919319149644?text='.urlencode("Hello DM Healthcare, I need immediate care staff deployment at my home.").'" target="_blank" class="btn btn-outline-danger w-100 rounded-pill fw-bold py-2 small d-flex align-items-center justify-content-center gap-2">
+                        <i class="fa-brands fa-whatsapp fs-6"></i> Request Immediate Staff Deployment
+                    </a>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- 2. QUICK STATS RIBBON -->
-    <div class="row g-3 mb-5">
+    <!-- 2. QUICK STATS METRICS RIBBON -->
+    <div class="row g-3 mb-4">
         <div class="col-6 col-md-3">
             <div class="tariff-stat-card text-center">
-                <h3 class="fw-bold text-dark mb-0">51+</h3>
-                <span class="small text-muted fw-semibold">Services & Procedures</span>
+                <h4 class="fw-bold text-dark mb-0">51+</h4>
+                <span class="small text-muted fw-semibold" style="font-size: 0.78rem;">Standardized Services</span>
             </div>
         </div>
         <div class="col-6 col-md-3">
             <div class="tariff-stat-card text-center">
-                <h3 class="fw-bold text-success mb-0">10,000+</h3>
-                <span class="small text-muted fw-semibold">Families Served</span>
+                <h4 class="fw-bold text-success mb-0">10,000+</h4>
+                <span class="small text-muted fw-semibold" style="font-size: 0.78rem;">Happy Families in NCR</span>
             </div>
         </div>
         <div class="col-6 col-md-3">
             <div class="tariff-stat-card text-center">
-                <h3 class="fw-bold text-danger mb-0">2–4 Hrs</h3>
-                <span class="small text-muted fw-semibold">Express Deployment</span>
+                <h4 class="fw-bold text-danger mb-0">30–60 Min</h4>
+                <span class="small text-muted fw-semibold" style="font-size: 0.78rem;">Rapid Response Reach</span>
             </div>
         </div>
         <div class="col-6 col-md-3">
             <div class="tariff-stat-card text-center">
-                <h3 class="fw-bold text-primary mb-0">4.9 ★</h3>
-                <span class="small text-muted fw-semibold">Google Trust Rating</span>
+                <h4 class="fw-bold text-primary mb-0">4.9 ★</h4>
+                <span class="small text-muted fw-semibold" style="font-size: 0.78rem;">Doctor-Rated Care</span>
             </div>
         </div>
     </div>
 
-    <!-- 3. INTERACTIVE SEARCH & CATEGORY TOOLBAR -->
+    <!-- 3. SEARCH & CATEGORY FILTER TOOLBAR -->
     <div class="tariff-sticky-toolbar">
         <div class="row align-items-center g-3 mb-3">
             <div class="col-lg-8">
                 <div class="search-input-box">
                     <i class="fa-solid fa-magnifying-glass"></i>
-                    <input type="text" id="liveTariffSearch" placeholder="Search service, procedure or package (e.g. Basic Nursing, Japa, Doctor Visit, X-Ray)..." onkeyup="handleLiveTariffSearch()">
+                    <input type="text" id="liveTariffSearch" placeholder="Search service, procedure or rate (e.g. Basic Nursing, Japa, Doctor Visit, X-Ray, Dressing)..." onkeyup="handleLiveTariffSearch()">
                 </div>
             </div>
             <div class="col-lg-4 text-lg-end">
-                <span class="text-muted small fw-semibold me-2">Showing:</span>
-                <span class="badge bg-danger text-white rounded-pill px-3 py-2 fw-bold" id="totalServicesBadge">51 Services Listed</span>
+                <span class="badge bg-danger bg-opacity-10 text-danger border border-danger border-opacity-25 rounded-pill px-3 py-2 fw-bold" id="totalServicesBadge">51 Services Listed</span>
             </div>
         </div>
 
@@ -448,7 +482,7 @@ foreach($services_catalog as $cat_key => $cat_data) {
             <div class="d-flex justify-content-between align-items-end mb-3 pb-2 border-bottom">
                 <div>
                     <div class="d-flex align-items-center gap-2">
-                        <div class="rounded-circle d-flex align-items-center justify-content-center" style="width: 36px; height: 36px; background: rgba(229, 37, 42, 0.1); color: var(--dm-brand-red);">
+                        <div class="rounded-circle d-flex align-items-center justify-content-center" style="width: 36px; height: 36px; background: rgba(229, 37, 42, 0.08); color: var(--dm-brand-red);">
                             <i class="'.$cat_data['icon'].'"></i>
                         </div>
                         <h3 class="fw-bold text-dark mb-0 fs-4">'.$cat_data['title'].'</h3>
@@ -475,14 +509,14 @@ foreach($services_catalog as $cat_key => $cat_data) {
                                 <span class="service-badge-pill">'.$item['tag'].'</span>
                             </div>
 
-                            <h5 class="fw-bold text-dark mb-2" style="font-size: 1.08rem; line-height: 1.35;">'.$item['name'].'</h5>
+                            <h5 class="fw-bold text-dark mb-2" style="font-size: 1.05rem; line-height: 1.35;">'.$item['name'].'</h5>
                             
                             <div class="mb-3 d-flex align-items-baseline gap-1">
                                 <span class="price-main">'.$item['price'].'</span>
                                 <span class="price-unit">'.$item['unit'].'</span>
                             </div>
 
-                            <p class="text-muted small mb-3" style="font-size: 0.84rem; line-height: 1.55;">
+                            <p class="text-muted small mb-3" style="font-size: 0.82rem; line-height: 1.55;">
                                 '.$item['desc'].'
                             </p>
                         </div>
@@ -508,7 +542,7 @@ $frontend_custom_sections .= '
     </div>
 
     <!-- 5. 4-STEP SERVICE & STAFF VERIFICATION ASSURANCE -->
-    <div class="my-5 p-4 p-md-5 rounded-4 border" style="background: linear-gradient(135deg, #f8fafc 0%, #edf2f7 100%);">
+    <div class="my-5 p-4 p-md-5 rounded-4 border bg-white shadow-sm">
         <div class="text-center mb-4">
             <span class="badge bg-danger bg-opacity-10 text-danger rounded-pill px-3 py-1 fw-bold mb-2">Patient Safety Standard</span>
             <h3 class="fw-bold text-dark">Our 4-Point Staff Verification Guarantee</h3>
@@ -517,7 +551,7 @@ $frontend_custom_sections .= '
 
         <div class="row g-3">
             <div class="col-md-3 col-sm-6">
-                <div class="p-3 bg-white rounded-3 border h-100 text-center shadow-sm">
+                <div class="p-3 bg-light rounded-3 border h-100 text-center">
                     <div class="rounded-circle d-inline-flex align-items-center justify-content-center mb-2" style="width: 44px; height: 44px; background: rgba(229, 37, 42, 0.1); color: var(--dm-brand-red);">
                         <i class="fa-solid fa-id-card fs-5"></i>
                     </div>
@@ -526,7 +560,7 @@ $frontend_custom_sections .= '
                 </div>
             </div>
             <div class="col-md-3 col-sm-6">
-                <div class="p-3 bg-white rounded-3 border h-100 text-center shadow-sm">
+                <div class="p-3 bg-light rounded-3 border h-100 text-center">
                     <div class="rounded-circle d-inline-flex align-items-center justify-content-center mb-2" style="width: 44px; height: 44px; background: rgba(5, 150, 105, 0.1); color: #059669;">
                         <i class="fa-solid fa-graduation-cap fs-5"></i>
                     </div>
@@ -535,7 +569,7 @@ $frontend_custom_sections .= '
                 </div>
             </div>
             <div class="col-md-3 col-sm-6">
-                <div class="p-3 bg-white rounded-3 border h-100 text-center shadow-sm">
+                <div class="p-3 bg-light rounded-3 border h-100 text-center">
                     <div class="rounded-circle d-inline-flex align-items-center justify-content-center mb-2" style="width: 44px; height: 44px; background: rgba(2, 132, 199, 0.1); color: #0284c7;">
                         <i class="fa-solid fa-user-doctor fs-5"></i>
                     </div>
@@ -544,7 +578,7 @@ $frontend_custom_sections .= '
                 </div>
             </div>
             <div class="col-md-3 col-sm-6">
-                <div class="p-3 bg-white rounded-3 border h-100 text-center shadow-sm">
+                <div class="p-3 bg-light rounded-3 border h-100 text-center">
                     <div class="rounded-circle d-inline-flex align-items-center justify-content-center mb-2" style="width: 44px; height: 44px; background: rgba(217, 70, 239, 0.1); color: #d946ef;">
                         <i class="fa-solid fa-arrows-rotate fs-5"></i>
                     </div>
