@@ -412,40 +412,38 @@ ob_start();
                 ]
             ];
 
-            foreach($icu_equipment_items as $item) {
-                echo '
-                <div class="col-lg-4 col-md-6 icu-item" data-category="'.$item['category'].'">
+            foreach($icu_equipment_items as $item): ?>
+                <div class="col-lg-4 col-md-6 icu-item" data-category="<?= htmlspecialchars($item['category']) ?>">
                     <div class="icu-equip-card">
                         <div class="icu-icon-holder">
-                            <i class="fa-solid '.$item['icon'].'"></i>
+                            <i class="fa-solid <?= htmlspecialchars($item['icon']) ?>"></i>
                         </div>
                         <div class="p-4 d-flex flex-column flex-grow-1">
                             <div class="d-flex justify-content-between align-items-center mb-2">
-                                <span class="badge bg-danger bg-opacity-10 text-danger rounded-pill px-3 py-1 small fw-semibold">'.$item['tag'].'</span>
+                                <span class="badge bg-danger bg-opacity-10 text-danger rounded-pill px-3 py-1 small fw-semibold"><?= htmlspecialchars($item['tag']) ?></span>
                                 <span class="text-success small fw-bold"><i class="fa-solid fa-check-circle"></i> Certified</span>
                             </div>
-                            <h5 class="fw-bold text-dark mb-2">'.$item['name'].'</h5>
-                            <p class="text-muted small mb-3 lh-base">'.$item['desc'].'</p>
+                            <h5 class="fw-bold text-dark mb-2"><?= htmlspecialchars($item['name']) ?></h5>
+                            <p class="text-muted small mb-3 lh-base"><?= htmlspecialchars($item['desc']) ?></p>
                             
-                            <ul class="list-unstyled small text-secondary mb-4" style="font-size: 0.8rem;">';
-                            foreach($item['specs'] as $spec) {
-                                echo '<li class="mb-1"><i class="fa-solid fa-circle-check text-success me-2"></i>'.$spec.'</li>';
-                            }
-                echo '      </ul>
+                            <ul class="list-unstyled small text-secondary mb-4" style="font-size: 0.8rem;">
+                                <?php foreach($item['specs'] as $spec): ?>
+                                    <li class="mb-1"><i class="fa-solid fa-circle-check text-success me-2"></i><?= htmlspecialchars($spec) ?></li>
+                                <?php endforeach; ?>
+                            </ul>
 
                             <div class="d-grid gap-2 mt-auto">
-                                <a href="https://wa.me/919319149644?text='.urlencode("Hello DM Healthcare, I want to inquire about ".$item['name'])."\" target=\"_blank\" class=\"btn btn-success btn-sm rounded-pill fw-bold py-2\">
-                                    <i class=\"fa-brands fa-whatsapp me-1\"></i> Inquire on WhatsApp
+                                <a href="https://wa.me/919319149644?text=<?= urlencode("Hello DM Healthcare, I want to inquire about " . $item['name']) ?>" target="_blank" class="btn btn-success btn-sm rounded-pill fw-bold py-2">
+                                    <i class="fa-brands fa-whatsapp me-1"></i> Inquire on WhatsApp
                                 </a>
-                                <a href=\"index.php#appointment\" class=\"btn btn-outline-secondary btn-sm rounded-pill fw-semibold py-1\">
+                                <a href="index.php#appointment" class="btn btn-outline-secondary btn-sm rounded-pill fw-semibold py-1">
                                     Request Quotation / Setup
                                 </a>
                             </div>
                         </div>
                     </div>
-                </div>';
-            }
-            ?>
+                </div>
+            <?php endforeach; ?>
         </div>
     </div>
 </section>
