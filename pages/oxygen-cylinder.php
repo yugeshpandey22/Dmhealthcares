@@ -502,7 +502,7 @@ ob_start();
                 </a>
             </div>
             <div class="col-6 col-md-3">
-                <a href="page.php?title=hospital-beds" class="card border rounded-3 p-3 text-decoration-none shadow-sm h-100 bg-white">
+                <a href="hospital-bed" class="card border rounded-3 p-3 text-decoration-none shadow-sm h-100 bg-white">
                     <i class="fa-solid fa-bed-pulse text-success fs-4 mb-2"></i>
                     <span class="fw-bold text-dark small d-block">ICU Hospital Beds</span>
                     <small class="text-muted" style="font-size: 0.72rem;">Motorized 3-Function</small>

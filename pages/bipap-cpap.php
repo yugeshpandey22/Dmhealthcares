@@ -1010,9 +1010,9 @@ ob_start();
         <div class="row g-3">
             <div class="col-md-6 col-lg-4">
                 <div class="card h-100 border rounded-4 p-3 shadow-sm">
-                    <h6 class="fw-bold text-dark mb-1"><i class="fa-solid fa-bed text-dm-red me-2"></i>Hospital Bed on Rent</h6>
+                    <h6 class="fw-bold text-dark mb-1"><i class="fa-solid fa-bed text-dm-red me-2"></i>Hospital Bed</h6>
                     <p class="small text-muted mb-3">Manual Fowler, semi-electric and full-electric ICU beds for post-surgery or bedridden patients.</p>
-                    <a href="patient-beds-rent" class="btn btn-outline-dm-red btn-sm rounded-pill fw-bold mt-auto">View Hospital Beds</a>
+                    <a href="hospital-bed" class="btn btn-outline-dm-red btn-sm rounded-pill fw-bold mt-auto">View Hospital Beds</a>
                 </div>
             </div>
 
@@ -1247,8 +1247,8 @@ ob_start();
             <div class="col-md-6 col-lg-4">
                 <div class="card h-100 border rounded-4 p-3 bg-white shadow-sm">
                     <span class="badge bg-warning bg-opacity-10 text-dark small align-self-start mb-2">Checklist</span>
-                    <h6 class="fw-bold text-dark mb-1">10 Things to Check Before Renting Medical Equipment</h6>
-                    <p class="small text-muted mb-0">Avoid common mistakes when renting hospital beds, wheelchairs or respiratory equipment at home.</p>
+                    <h6 class="fw-bold text-dark mb-1">10 Things to Check Before Getting Medical Equipment</h6>
+                    <p class="small text-muted mb-0">Avoid common mistakes when getting hospital beds, wheelchairs or respiratory equipment at home.</p>
                 </div>
             </div>
 

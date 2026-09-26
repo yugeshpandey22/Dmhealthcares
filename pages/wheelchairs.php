@@ -587,7 +587,7 @@ ob_start();
         <h5 class="fw-bold text-dark mb-4 text-center">Other Hospital Equipment Available for Rent</h5>
         <div class="row g-3 justify-content-center text-center">
             <div class="col-6 col-md-3">
-                <a href="page.php?title=hospital-beds" class="card border rounded-4 p-3 text-decoration-none shadow-sm h-100 wc-product-card bg-light">
+                <a href="hospital-bed" class="card border rounded-4 p-3 text-decoration-none shadow-sm h-100 wc-product-card bg-light">
                     <i class="fa-solid fa-bed-pulse text-dm-red fs-3 mb-2"></i>
                     <span class="fw-bold text-dark small d-block">ICU & Hospital Beds</span>
                     <small class="text-muted">Manual & Motorized</small>

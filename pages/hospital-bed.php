@@ -58,7 +58,7 @@ $frontend_custom_sections = '
                 </div>
                 
                 <a href="index.php#appointment" class="btn btn-primary rounded-pill px-5 py-3 shadow-sm fw-bold">
-                    <i class="fa-solid fa-bed me-2"></i> Inquire for Rental Services
+                    <i class="fa-solid fa-bed me-2"></i> Inquire for Hospital Bed
                 </a>
             </div>
             <div class="col-lg-6">
@@ -78,7 +78,7 @@ $frontend_custom_sections = '
 <!-- Types of Beds Section (Inventory) -->
 <div class="container py-5 mb-5 border-bottom">
     <div class="text-center mb-5">
-        <h2 class="fw-bold text-dark">Hospital Beds Available on Rent - Our Inventory</h2>
+        <h2 class="fw-bold text-dark">Hospital Beds Available - Our Inventory</h2>
         <div class="mx-auto mt-3 mb-4" style="width: 60px; height: 4px; background-color: #0d6efd; border-radius: 2px;"></div>
         <p class="text-muted mx-auto" style="max-width: 700px;">Browse all hospital bed models with current pricing. Click any item for full specifications, photos and to book delivery.</p>
     </div>
@@ -134,9 +134,9 @@ $frontend_custom_sections .= '
 <!-- All Medical Equipment Section -->
 <div class="container py-5 mb-5 bg-light rounded-4 shadow-sm border">
     <div class="text-center mb-5">
-        <h2 class="fw-bold text-dark">All Medical Equipment on Rent</h2>
+        <h2 class="fw-bold text-dark">All Medical Equipment</h2>
         <div class="mx-auto mt-3 mb-4" style="width: 60px; height: 4px; background-color: #0d6efd; border-radius: 2px;"></div>
-        <p class="text-muted mx-auto" style="max-width: 800px;">DM Healthcare provides home rental for all types of medical and rehabilitation equipment. Browse the full range or call us to discuss which suits your patient\'s condition.</p>
+        <p class="text-muted mx-auto" style="max-width: 800px;">DM Healthcare provides all types of medical and rehabilitation equipment for home care. Browse the full range or call us to discuss which suits your patient\'s condition.</p>
     </div>
     
     <div class="row g-4">
@@ -146,7 +146,7 @@ $frontend_custom_sections .= '
                 <div class="card-body p-4">
                     <div class="d-flex align-items-center mb-3">
                         <i class="fa-solid fa-bed text-primary fs-3 me-3"></i>
-                        <h5 class="fw-bold text-dark mb-0">Hospital Bed on Rent</h5>
+                        <h5 class="fw-bold text-dark mb-0">Hospital Bed</h5>
                     </div>
                     <p class="text-muted small mb-4">Manual Fowler, semi-electric and full-electric beds for post-surgery or bedridden patients</p>
                     <span class="badge bg-primary text-white w-100 py-2">Currently Viewing</span>

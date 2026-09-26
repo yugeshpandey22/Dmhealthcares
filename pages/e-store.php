@@ -492,7 +492,7 @@ ob_start();
                                 <a href="https://wa.me/919319149644?text=I+want+to+order+Motorized+Hospital+Bed" target="_blank" class="btn btn-dm-red btn-sm rounded-pill fw-bold py-2">
                                     <i class="fa-brands fa-whatsapp me-1"></i> Order / Rent Now
                                 </a>
-                                <a href="patient-beds-rent" class="btn btn-outline-secondary btn-sm rounded-pill py-1 small">
+                                <a href="hospital-bed" class="btn btn-outline-secondary btn-sm rounded-pill py-1 small">
                                     View Full Details
                                 </a>
                             </div>
@@ -535,7 +535,7 @@ ob_start();
                                 <a href="https://wa.me/919319149644?text=I+want+to+order+Manual+Fowler+Bed" target="_blank" class="btn btn-dm-red btn-sm rounded-pill fw-bold py-2">
                                     <i class="fa-brands fa-whatsapp me-1"></i> Order / Rent Now
                                 </a>
-                                <a href="patient-beds-rent" class="btn btn-outline-secondary btn-sm rounded-pill py-1 small">
+                                <a href="hospital-bed" class="btn btn-outline-secondary btn-sm rounded-pill py-1 small">
                                     View Full Details
                                 </a>
                             </div>
@@ -750,7 +750,7 @@ ob_start();
                                 <a href="https://wa.me/919319149644?text=I+want+to+order+Air+Mattress+with+Pump" target="_blank" class="btn btn-dm-red btn-sm rounded-pill fw-bold py-2">
                                     <i class="fa-brands fa-whatsapp me-1"></i> Order / Rent Now
                                 </a>
-                                <a href="patient-beds-rent" class="btn btn-outline-secondary btn-sm rounded-pill py-1 small">
+                                <a href="hospital-bed" class="btn btn-outline-secondary btn-sm rounded-pill py-1 small">
                                     View Full Details
                                 </a>
                             </div>
