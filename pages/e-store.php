@@ -317,9 +317,7 @@ ob_start();
                                 </div>
                             </div>
                             <div class="d-grid gap-2">
-                                <a href="https://wa.me/919319149644?text=I+want+to+order+5L+Oxygen+Concentrator" target="_blank" class="btn btn-dm-red btn-sm rounded-pill fw-bold py-2">
-                                    <i class="fa-brands fa-whatsapp me-1"></i> Order / Book Now
-                                </a>
+
                                 <a href="oxygen-concentrator" class="btn btn-outline-secondary btn-sm rounded-pill py-1 small">
                                     View Full Details
                                 </a>
@@ -360,9 +358,6 @@ ob_start();
                                 </div>
                             </div>
                             <div class="d-grid gap-2">
-                                <a href="https://wa.me/919319149644?text=I+want+to+order+10L+Oxygen+Concentrator" target="_blank" class="btn btn-dm-red btn-sm rounded-pill fw-bold py-2">
-                                    <i class="fa-brands fa-whatsapp me-1"></i> Order / Book Now
-                                </a>
                                 <a href="oxygen-concentrator" class="btn btn-outline-secondary btn-sm rounded-pill py-1 small">
                                     View Full Details
                                 </a>
@@ -403,9 +398,6 @@ ob_start();
                                 </div>
                             </div>
                             <div class="d-grid gap-2">
-                                <a href="https://wa.me/919319149644?text=I+want+to+order+ResMed+Auto+CPAP" target="_blank" class="btn btn-dm-red btn-sm rounded-pill fw-bold py-2">
-                                    <i class="fa-brands fa-whatsapp me-1"></i> Order / Book Now
-                                </a>
                                 <a href="bipap-cpap" class="btn btn-outline-secondary btn-sm rounded-pill py-1 small">
                                     View Full Details
                                 </a>
@@ -446,9 +438,6 @@ ob_start();
                                 </div>
                             </div>
                             <div class="d-grid gap-2">
-                                <a href="https://wa.me/919319149644?text=I+want+to+order+ResMed+BiPAP+Machine" target="_blank" class="btn btn-dm-red btn-sm rounded-pill fw-bold py-2">
-                                    <i class="fa-brands fa-whatsapp me-1"></i> Order / Book Now
-                                </a>
                                 <a href="bipap-cpap" class="btn btn-outline-secondary btn-sm rounded-pill py-1 small">
                                     View Full Details
                                 </a>
@@ -489,9 +478,6 @@ ob_start();
                                 </div>
                             </div>
                             <div class="d-grid gap-2">
-                                <a href="https://wa.me/919319149644?text=I+want+to+order+Motorized+Hospital+Bed" target="_blank" class="btn btn-dm-red btn-sm rounded-pill fw-bold py-2">
-                                    <i class="fa-brands fa-whatsapp me-1"></i> Order / Book Now
-                                </a>
                                 <a href="hospital-bed" class="btn btn-outline-secondary btn-sm rounded-pill py-1 small">
                                     View Full Details
                                 </a>
@@ -532,9 +518,6 @@ ob_start();
                                 </div>
                             </div>
                             <div class="d-grid gap-2">
-                                <a href="https://wa.me/919319149644?text=I+want+to+order+Manual+Fowler+Bed" target="_blank" class="btn btn-dm-red btn-sm rounded-pill fw-bold py-2">
-                                    <i class="fa-brands fa-whatsapp me-1"></i> Order / Book Now
-                                </a>
                                 <a href="hospital-bed" class="btn btn-outline-secondary btn-sm rounded-pill py-1 small">
                                     View Full Details
                                 </a>
@@ -575,9 +558,6 @@ ob_start();
                                 </div>
                             </div>
                             <div class="d-grid gap-2">
-                                <a href="https://wa.me/919319149644?text=I+want+to+order+NeoBolt+Electric+Scooter" target="_blank" class="btn btn-dm-red btn-sm rounded-pill fw-bold py-2">
-                                    <i class="fa-brands fa-whatsapp me-1"></i> Order / Book Now
-                                </a>
                                 <a href="neo-bolt-scooter" class="btn btn-outline-secondary btn-sm rounded-pill py-1 small">
                                     View Full Details
                                 </a>
@@ -618,9 +598,6 @@ ob_start();
                                 </div>
                             </div>
                             <div class="d-grid gap-2">
-                                <a href="https://wa.me/919319149644?text=I+want+to+order+Recliner+Commode+Wheelchair" target="_blank" class="btn btn-dm-red btn-sm rounded-pill fw-bold py-2">
-                                    <i class="fa-brands fa-whatsapp me-1"></i> Order / Book Now
-                                </a>
                                 <a href="wheelchairs" class="btn btn-outline-secondary btn-sm rounded-pill py-1 small">
                                     View Full Details
                                 </a>
@@ -661,9 +638,6 @@ ob_start();
                                 </div>
                             </div>
                             <div class="d-grid gap-2">
-                                <a href="https://wa.me/919319149644?text=I+want+to+order+Electric+Motorized+Wheelchair" target="_blank" class="btn btn-dm-red btn-sm rounded-pill fw-bold py-2">
-                                    <i class="fa-brands fa-whatsapp me-1"></i> Order / Book Now
-                                </a>
                                 <a href="wheelchairs" class="btn btn-outline-secondary btn-sm rounded-pill py-1 small">
                                     View Full Details
                                 </a>
@@ -704,9 +678,6 @@ ob_start();
                                 </div>
                             </div>
                             <div class="d-grid gap-2">
-                                <a href="https://wa.me/919319149644?text=I+want+to+order+Multipara+Patient+Monitor" target="_blank" class="btn btn-dm-red btn-sm rounded-pill fw-bold py-2">
-                                    <i class="fa-brands fa-whatsapp me-1"></i> Order / Book Now
-                                </a>
                                 <a href="icu-care---critical-care" class="btn btn-outline-secondary btn-sm rounded-pill py-1 small">
                                     View Full Details
                                 </a>
@@ -747,9 +718,6 @@ ob_start();
                                 </div>
                             </div>
                             <div class="d-grid gap-2">
-                                <a href="https://wa.me/919319149644?text=I+want+to+order+Air+Mattress+with+Pump" target="_blank" class="btn btn-dm-red btn-sm rounded-pill fw-bold py-2">
-                                    <i class="fa-brands fa-whatsapp me-1"></i> Order / Book Now
-                                </a>
                                 <a href="hospital-bed" class="btn btn-outline-secondary btn-sm rounded-pill py-1 small">
                                     View Full Details
                                 </a>
@@ -790,9 +758,6 @@ ob_start();
                                 </div>
                             </div>
                             <div class="d-grid gap-2">
-                                <a href="https://wa.me/919319149644?text=I+need+Oxygen+Cylinder+Urgent+Delivery" target="_blank" class="btn btn-dm-red btn-sm rounded-pill fw-bold py-2">
-                                    <i class="fa-brands fa-whatsapp me-1"></i> Order / Book Now
-                                </a>
                                 <a href="oxygen-cylinder" class="btn btn-outline-secondary btn-sm rounded-pill py-1 small">
                                     View Full Details
                                 </a>
