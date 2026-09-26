@@ -1018,7 +1018,7 @@ ob_start();
 
             <div class="col-md-6 col-lg-4">
                 <div class="card h-100 border rounded-4 p-3 shadow-sm">
-                    <h6 class="fw-bold text-dark mb-1"><i class="fa-solid fa-wheelchair text-primary me-2"></i>Wheelchair on Rent</h6>
+                    <h6 class="fw-bold text-dark mb-1"><i class="fa-solid fa-wheelchair text-primary me-2"></i>Wheelchairs</h6>
                     <p class="small text-muted mb-3">Standard, recliner, commode, electric motorised and stair climber wheelchairs for mobility assistance.</p>
                     <a href="wheelchairs" class="btn btn-outline-dm-red btn-sm rounded-pill fw-bold mt-auto">View Wheelchairs</a>
                 </div>

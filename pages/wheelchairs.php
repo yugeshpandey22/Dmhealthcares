@@ -357,8 +357,8 @@ ob_start();
     <div class="container">
         <div class="text-center max-w-700 mx-auto mb-5">
             <span class="badge bg-secondary bg-opacity-10 text-secondary px-3 py-1 rounded-pill fw-semibold mb-2">Simple 4-Step Process</span>
-            <h2 class="fw-bold text-dark">How to Rent a Wheelchair</h2>
-            <p class="text-muted">Fast, hassle-free doorstep rental process with no complex documentation.</p>
+            <h2 class="fw-bold text-dark">How to Get a Wheelchair</h2>
+            <p class="text-muted">Fast, hassle-free doorstep delivery process with no complex documentation.</p>
         </div>
 
         <div class="row g-4 text-center">
@@ -584,7 +584,7 @@ ob_start();
 <!-- 7. Related Medical Equipment Quick Links -->
 <section class="py-5 bg-white border-top">
     <div class="container">
-        <h5 class="fw-bold text-dark mb-4 text-center">Other Hospital Equipment Available for Rent</h5>
+        <h5 class="fw-bold text-dark mb-4 text-center">Other Medical Equipment Available</h5>
         <div class="row g-3 justify-content-center text-center">
             <div class="col-6 col-md-3">
                 <a href="hospital-bed" class="card border rounded-4 p-3 text-decoration-none shadow-sm h-100 wc-product-card bg-light">

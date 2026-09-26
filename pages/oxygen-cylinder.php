@@ -511,7 +511,7 @@ ob_start();
             <div class="col-6 col-md-3">
                 <a href="page.php?title=wheelchairs" class="card border rounded-3 p-3 text-decoration-none shadow-sm h-100 bg-white">
                     <i class="fa-solid fa-wheelchair text-warning fs-4 mb-2"></i>
-                    <span class="fw-bold text-dark small d-block">Wheelchairs on Rent</span>
+                    <span class="fw-bold text-dark small d-block">Wheelchairs</span>
                     <small class="text-muted" style="font-size: 0.72rem;">Manual & Electric</small>
                 </a>
             </div>

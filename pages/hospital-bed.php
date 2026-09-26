@@ -160,10 +160,10 @@ $frontend_custom_sections .= '
                 <div class="card-body p-4">
                     <div class="d-flex align-items-center mb-3">
                         <i class="fa-solid fa-wheelchair text-secondary fs-3 me-3"></i>
-                        <h5 class="fw-bold text-dark mb-0">Wheelchair on Rent</h5>
+                        <h5 class="fw-bold text-dark mb-0">Wheelchairs</h5>
                     </div>
                     <p class="text-muted small mb-4">Standard, recliner, commode and motorised wheelchairs for mobility-impaired patients</p>
-                    <a href="wheelchair" class="text-primary text-decoration-none fw-bold small">View Details <i class="fa-solid fa-arrow-right ms-1"></i></a>
+                    <a href="wheelchairs" class="text-primary text-decoration-none fw-bold small">View Details <i class="fa-solid fa-arrow-right ms-1"></i></a>
                 </div>
             </div>
         </div>
