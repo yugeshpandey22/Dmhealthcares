@@ -1,12 +1,12 @@
 <?php
 /**
  * DM Healthcare - E-Store (Medical Equipment, ICU Devices & Healthcare Supplies)
- * Complete Medical Marketplace & Online Rental Portal
+ * Complete Medical Marketplace & Healthcare Equipment Portal
  */
 
-$display_title = "DM Healthcare E-Store - Medical Equipment Rental Online";
-$seo_title = "Medical Equipment Rental E-Store in Delhi NCR | DM Healthcare";
-$seo_desc = "Certified medical equipment rental online in Delhi NCR. Hospital beds, oxygen concentrators, BiPAP/CPAP, wheelchairs, ICU monitors, air mattresses & medical disposables with same-day doorstep delivery.";
+$display_title = "DM Healthcare E-Store - Medical Equipment Online Store";
+$seo_title = "Medical Equipment E-Store in Delhi NCR | DM Healthcare";
+$seo_desc = "Certified medical equipment online in Delhi NCR. Hospital beds, oxygen concentrators, BiPAP/CPAP, wheelchairs, ICU monitors, air mattresses & medical disposables with same-day doorstep delivery.";
 $short_desc = "North India's trusted online medical equipment catalog. Doctor-certified hospital beds, oxygen machines, wheelchairs, and ICU devices with same-day delivery.";
 $category_name = "Medical Equipment";
 $full_page_override = true;
@@ -117,7 +117,7 @@ ob_start();
         letter-spacing: 0.5px;
         z-index: 2;
     }
-    .product-tag-rent { background: #e0f2fe; color: #0369a1; }
+    .product-tag-spec { background: #e0f2fe; color: #0369a1; }
     .product-tag-buy { background: #dcfce7; color: #15803d; }
     .product-tag-hot { background: #fee2e2; color: #b91c1c; }
 
@@ -164,7 +164,7 @@ ob_start();
             <span class="trust-badge-pill"><i class="fa-solid fa-certificate text-warning"></i> ISO 9001:2015 Certified E-Store</span>
             <span class="trust-badge-pill"><i class="fa-solid fa-truck-fast text-info"></i> Same-Day Doorstep Delivery</span>
             <span class="trust-badge-pill"><i class="fa-solid fa-shield-halved text-success"></i> 100% Genuine OEM Warranty</span>
-            <span class="trust-badge-pill"><i class="fa-solid fa-handshake text-warning"></i> Flexible Rental Plans</span>
+            <span class="trust-badge-pill"><i class="fa-solid fa-handshake text-warning"></i> Flexible Healthcare Plans</span>
             <span class="trust-badge-pill"><i class="fa-solid fa-money-bill-wave text-success"></i> Cash / UPI on Delivery</span>
         </div>
 
@@ -177,7 +177,7 @@ ob_start();
                     Medical Equipment Rental <span class="text-dm-red">Online</span>
                 </h1>
                 <p class="text-light fs-6 mb-4 opacity-90" style="line-height: 1.7;">
-                    Explore North India's largest verified medical healthcare catalog. Rent <strong>Hospital Beds, Oxygen Concentrators, BiPAP/CPAP Machines, Wheelchairs, ICU Monitors, Air Mattresses, and Medical Accessories</strong> at direct hospital rates with free home installation and titration across Delhi NCR.
+                    Explore North India's largest verified medical healthcare catalog. Get <strong>Hospital Beds, Oxygen Concentrators, BiPAP/CPAP Machines, Wheelchairs, ICU Monitors, Air Mattresses, and Medical Accessories</strong> at direct hospital rates with free home installation and titration across Delhi NCR.
                 </p>
 
                 <div class="d-flex flex-wrap gap-2 mb-4">
@@ -209,7 +209,7 @@ ob_start();
                         <span class="text-success small fw-bold"><i class="fa-solid fa-bolt me-1"></i> Instant Dispatch</span>
                     </div>
 
-                    <h5 class="fw-bold text-dark mb-1">Request Price Quote / Rent Machine</h5>
+                    <h5 class="fw-bold text-dark mb-1">Request Price Quote / Order Equipment</h5>
                     <p class="text-muted small mb-3">Submit your requirement for immediate dispatch confirmation and best seasonal offers.</p>
 
                     <form action="backend/submit_appointment.php" method="POST">
@@ -242,7 +242,7 @@ ob_start();
                             </select>
                         </div>
                         <div class="mb-3">
-                            <textarea name="message" rows="2" class="form-control form-control-sm rounded-2" placeholder="Mention equipment model needed, rental duration or doctor notes..."></textarea>
+                            <textarea name="message" rows="2" class="form-control form-control-sm rounded-2" placeholder="Mention equipment model needed, duration, requirements or doctor notes..."></textarea>
                         </div>
                         <button type="submit" class="btn btn-dm-red w-100 rounded-pill fw-bold py-2 shadow-sm">
                             <i class="fa-solid fa-paper-plane me-1"></i> Get Price & Confirm Delivery
@@ -309,7 +309,7 @@ ob_start();
                         <div>
                             <div class="d-flex justify-content-between align-items-baseline mb-3 pt-2 border-top">
                                 <div>
-                                    <span class="d-block text-muted" style="font-size: 0.72rem;">Monthly Rental:</span>
+                                    <span class="d-block text-muted" style="font-size: 0.72rem;">Price / Package:</span>
                                     <span class="fw-bold text-dm-red fs-6">₹3,500 <small class="text-muted">/mo</small></span>
                                 </div>
                                 <div class="text-end">
@@ -318,7 +318,7 @@ ob_start();
                             </div>
                             <div class="d-grid gap-2">
                                 <a href="https://wa.me/919319149644?text=I+want+to+order+5L+Oxygen+Concentrator" target="_blank" class="btn btn-dm-red btn-sm rounded-pill fw-bold py-2">
-                                    <i class="fa-brands fa-whatsapp me-1"></i> Order / Rent Now
+                                    <i class="fa-brands fa-whatsapp me-1"></i> Order / Book Now
                                 </a>
                                 <a href="oxygen-concentrator" class="btn btn-outline-secondary btn-sm rounded-pill py-1 small">
                                     View Full Details
@@ -332,7 +332,7 @@ ob_start();
             <!-- 2. Oxygen Concentrator 10L -->
             <div class="col-md-6 col-lg-4 product-item" data-category="respiratory" data-title="10 LPM High Flow Oxygen Concentrator">
                 <div class="product-shop-card shadow-sm">
-                    <span class="product-tag product-tag-rent">High Flow</span>
+                    <span class="product-tag product-tag-spec">High Flow</span>
                     <div class="product-img-box">
                         <img src="assets/images/pages/oxygen_concentrator_10l.jpg" alt="10 LPM Oxygen Concentrator" onerror="this.onerror=null; this.src='assets/images/pages/oxygen_concentrator_hero.jpg';">
                     </div>
@@ -352,7 +352,7 @@ ob_start();
                         <div>
                             <div class="d-flex justify-content-between align-items-baseline mb-3 pt-2 border-top">
                                 <div>
-                                    <span class="d-block text-muted" style="font-size: 0.72rem;">Monthly Rental:</span>
+                                    <span class="d-block text-muted" style="font-size: 0.72rem;">Price / Package:</span>
                                     <span class="fw-bold text-dm-red fs-6">₹6,500 <small class="text-muted">/mo</small></span>
                                 </div>
                                 <div class="text-end">
@@ -361,7 +361,7 @@ ob_start();
                             </div>
                             <div class="d-grid gap-2">
                                 <a href="https://wa.me/919319149644?text=I+want+to+order+10L+Oxygen+Concentrator" target="_blank" class="btn btn-dm-red btn-sm rounded-pill fw-bold py-2">
-                                    <i class="fa-brands fa-whatsapp me-1"></i> Order / Rent Now
+                                    <i class="fa-brands fa-whatsapp me-1"></i> Order / Book Now
                                 </a>
                                 <a href="oxygen-concentrator" class="btn btn-outline-secondary btn-sm rounded-pill py-1 small">
                                     View Full Details
@@ -395,7 +395,7 @@ ob_start();
                         <div>
                             <div class="d-flex justify-content-between align-items-baseline mb-3 pt-2 border-top">
                                 <div>
-                                    <span class="d-block text-muted" style="font-size: 0.72rem;">Monthly Rental:</span>
+                                    <span class="d-block text-muted" style="font-size: 0.72rem;">Price / Package:</span>
                                     <span class="fw-bold text-dm-red fs-6">₹3,500 <small class="text-muted">/mo</small></span>
                                 </div>
                                 <div class="text-end">
@@ -404,7 +404,7 @@ ob_start();
                             </div>
                             <div class="d-grid gap-2">
                                 <a href="https://wa.me/919319149644?text=I+want+to+order+ResMed+Auto+CPAP" target="_blank" class="btn btn-dm-red btn-sm rounded-pill fw-bold py-2">
-                                    <i class="fa-brands fa-whatsapp me-1"></i> Order / Rent Now
+                                    <i class="fa-brands fa-whatsapp me-1"></i> Order / Book Now
                                 </a>
                                 <a href="bipap-cpap" class="btn btn-outline-secondary btn-sm rounded-pill py-1 small">
                                     View Full Details
@@ -438,7 +438,7 @@ ob_start();
                         <div>
                             <div class="d-flex justify-content-between align-items-baseline mb-3 pt-2 border-top">
                                 <div>
-                                    <span class="d-block text-muted" style="font-size: 0.72rem;">Monthly Rental:</span>
+                                    <span class="d-block text-muted" style="font-size: 0.72rem;">Price / Package:</span>
                                     <span class="fw-bold text-dm-red fs-6">₹4,500 - ₹7,500 <small class="text-muted">/mo</small></span>
                                 </div>
                                 <div class="text-end">
@@ -447,7 +447,7 @@ ob_start();
                             </div>
                             <div class="d-grid gap-2">
                                 <a href="https://wa.me/919319149644?text=I+want+to+order+ResMed+BiPAP+Machine" target="_blank" class="btn btn-dm-red btn-sm rounded-pill fw-bold py-2">
-                                    <i class="fa-brands fa-whatsapp me-1"></i> Order / Rent Now
+                                    <i class="fa-brands fa-whatsapp me-1"></i> Order / Book Now
                                 </a>
                                 <a href="bipap-cpap" class="btn btn-outline-secondary btn-sm rounded-pill py-1 small">
                                     View Full Details
@@ -461,7 +461,7 @@ ob_start();
             <!-- 5. Motorized ICU Hospital Bed -->
             <div class="col-md-6 col-lg-4 product-item" data-category="beds" data-title="Motorized ICU Hospital Bed Electric 3 Function 5 Function">
                 <div class="product-shop-card shadow-sm">
-                    <span class="product-tag product-tag-rent">ICU Grade</span>
+                    <span class="product-tag product-tag-spec">ICU Grade</span>
                     <div class="product-img-box">
                         <img src="assets/images/pages/hospital_bed_home.png" alt="Motorized ICU Bed" onerror="this.onerror=null; this.src='assets/images/pages/medical_equipment_bed.png';">
                     </div>
@@ -481,7 +481,7 @@ ob_start();
                         <div>
                             <div class="d-flex justify-content-between align-items-baseline mb-3 pt-2 border-top">
                                 <div>
-                                    <span class="d-block text-muted" style="font-size: 0.72rem;">Monthly Rental:</span>
+                                    <span class="d-block text-muted" style="font-size: 0.72rem;">Price / Package:</span>
                                     <span class="fw-bold text-dm-red fs-6">₹4,000 - ₹6,000 <small class="text-muted">/mo</small></span>
                                 </div>
                                 <div class="text-end">
@@ -490,7 +490,7 @@ ob_start();
                             </div>
                             <div class="d-grid gap-2">
                                 <a href="https://wa.me/919319149644?text=I+want+to+order+Motorized+Hospital+Bed" target="_blank" class="btn btn-dm-red btn-sm rounded-pill fw-bold py-2">
-                                    <i class="fa-brands fa-whatsapp me-1"></i> Order / Rent Now
+                                    <i class="fa-brands fa-whatsapp me-1"></i> Order / Book Now
                                 </a>
                                 <a href="hospital-bed" class="btn btn-outline-secondary btn-sm rounded-pill py-1 small">
                                     View Full Details
@@ -524,7 +524,7 @@ ob_start();
                         <div>
                             <div class="d-flex justify-content-between align-items-baseline mb-3 pt-2 border-top">
                                 <div>
-                                    <span class="d-block text-muted" style="font-size: 0.72rem;">Monthly Rental:</span>
+                                    <span class="d-block text-muted" style="font-size: 0.72rem;">Price / Package:</span>
                                     <span class="fw-bold text-dm-red fs-6">₹2,000 <small class="text-muted">/mo</small></span>
                                 </div>
                                 <div class="text-end">
@@ -533,7 +533,7 @@ ob_start();
                             </div>
                             <div class="d-grid gap-2">
                                 <a href="https://wa.me/919319149644?text=I+want+to+order+Manual+Fowler+Bed" target="_blank" class="btn btn-dm-red btn-sm rounded-pill fw-bold py-2">
-                                    <i class="fa-brands fa-whatsapp me-1"></i> Order / Rent Now
+                                    <i class="fa-brands fa-whatsapp me-1"></i> Order / Book Now
                                 </a>
                                 <a href="hospital-bed" class="btn btn-outline-secondary btn-sm rounded-pill py-1 small">
                                     View Full Details
@@ -567,7 +567,7 @@ ob_start();
                         <div>
                             <div class="d-flex justify-content-between align-items-baseline mb-3 pt-2 border-top">
                                 <div>
-                                    <span class="d-block text-muted" style="font-size: 0.72rem;">Monthly Rental:</span>
+                                    <span class="d-block text-muted" style="font-size: 0.72rem;">Price / Package:</span>
                                     <span class="fw-bold text-dm-red fs-6">₹8,000 <small class="text-muted">/mo</small></span>
                                 </div>
                                 <div class="text-end">
@@ -576,7 +576,7 @@ ob_start();
                             </div>
                             <div class="d-grid gap-2">
                                 <a href="https://wa.me/919319149644?text=I+want+to+order+NeoBolt+Electric+Scooter" target="_blank" class="btn btn-dm-red btn-sm rounded-pill fw-bold py-2">
-                                    <i class="fa-brands fa-whatsapp me-1"></i> Order / Rent Now
+                                    <i class="fa-brands fa-whatsapp me-1"></i> Order / Book Now
                                 </a>
                                 <a href="neo-bolt-scooter" class="btn btn-outline-secondary btn-sm rounded-pill py-1 small">
                                     View Full Details
@@ -610,7 +610,7 @@ ob_start();
                         <div>
                             <div class="d-flex justify-content-between align-items-baseline mb-3 pt-2 border-top">
                                 <div>
-                                    <span class="d-block text-muted" style="font-size: 0.72rem;">Monthly Rental:</span>
+                                    <span class="d-block text-muted" style="font-size: 0.72rem;">Price / Package:</span>
                                     <span class="fw-bold text-dm-red fs-6">₹2,000 <small class="text-muted">/mo</small></span>
                                 </div>
                                 <div class="text-end">
@@ -619,7 +619,7 @@ ob_start();
                             </div>
                             <div class="d-grid gap-2">
                                 <a href="https://wa.me/919319149644?text=I+want+to+order+Recliner+Commode+Wheelchair" target="_blank" class="btn btn-dm-red btn-sm rounded-pill fw-bold py-2">
-                                    <i class="fa-brands fa-whatsapp me-1"></i> Order / Rent Now
+                                    <i class="fa-brands fa-whatsapp me-1"></i> Order / Book Now
                                 </a>
                                 <a href="wheelchairs" class="btn btn-outline-secondary btn-sm rounded-pill py-1 small">
                                     View Full Details
@@ -633,7 +633,7 @@ ob_start();
             <!-- 9. Electric Motorized Wheelchair -->
             <div class="col-md-6 col-lg-4 product-item" data-category="mobility" data-title="Electric Motorized Wheelchair Joystick Controlled">
                 <div class="product-shop-card shadow-sm">
-                    <span class="product-tag product-tag-rent">Power Mobility</span>
+                    <span class="product-tag product-tag-spec">Power Mobility</span>
                     <div class="product-img-box">
                         <img src="assets/images/pages/wheelchair_electric_motorized.jpg" alt="Electric Motorized Wheelchair">
                     </div>
@@ -653,7 +653,7 @@ ob_start();
                         <div>
                             <div class="d-flex justify-content-between align-items-baseline mb-3 pt-2 border-top">
                                 <div>
-                                    <span class="d-block text-muted" style="font-size: 0.72rem;">Monthly Rental:</span>
+                                    <span class="d-block text-muted" style="font-size: 0.72rem;">Price / Package:</span>
                                     <span class="fw-bold text-dm-red fs-6">₹4,500 <small class="text-muted">/mo</small></span>
                                 </div>
                                 <div class="text-end">
@@ -662,7 +662,7 @@ ob_start();
                             </div>
                             <div class="d-grid gap-2">
                                 <a href="https://wa.me/919319149644?text=I+want+to+order+Electric+Motorized+Wheelchair" target="_blank" class="btn btn-dm-red btn-sm rounded-pill fw-bold py-2">
-                                    <i class="fa-brands fa-whatsapp me-1"></i> Order / Rent Now
+                                    <i class="fa-brands fa-whatsapp me-1"></i> Order / Book Now
                                 </a>
                                 <a href="wheelchairs" class="btn btn-outline-secondary btn-sm rounded-pill py-1 small">
                                     View Full Details
@@ -676,7 +676,7 @@ ob_start();
             <!-- 10. Multi-Para Patient Monitor -->
             <div class="col-md-6 col-lg-4 product-item" data-category="icu" data-title="Multipara Patient Monitor ECG SpO2 NIBP Pulse 5 Para 7 Para">
                 <div class="product-shop-card shadow-sm">
-                    <span class="product-tag product-tag-rent">ICU Critical</span>
+                    <span class="product-tag product-tag-spec">ICU Critical</span>
                     <div class="product-img-box">
                         <i class="fa-solid fa-heart-pulse text-danger" style="font-size: 70px; opacity: 0.85;"></i>
                     </div>
@@ -696,7 +696,7 @@ ob_start();
                         <div>
                             <div class="d-flex justify-content-between align-items-baseline mb-3 pt-2 border-top">
                                 <div>
-                                    <span class="d-block text-muted" style="font-size: 0.72rem;">Monthly Rental:</span>
+                                    <span class="d-block text-muted" style="font-size: 0.72rem;">Price / Package:</span>
                                     <span class="fw-bold text-dm-red fs-6">₹3,500 <small class="text-muted">/mo</small></span>
                                 </div>
                                 <div class="text-end">
@@ -705,7 +705,7 @@ ob_start();
                             </div>
                             <div class="d-grid gap-2">
                                 <a href="https://wa.me/919319149644?text=I+want+to+order+Multipara+Patient+Monitor" target="_blank" class="btn btn-dm-red btn-sm rounded-pill fw-bold py-2">
-                                    <i class="fa-brands fa-whatsapp me-1"></i> Order / Rent Now
+                                    <i class="fa-brands fa-whatsapp me-1"></i> Order / Book Now
                                 </a>
                                 <a href="icu-care---critical-care" class="btn btn-outline-secondary btn-sm rounded-pill py-1 small">
                                     View Full Details
@@ -739,7 +739,7 @@ ob_start();
                         <div>
                             <div class="d-flex justify-content-between align-items-baseline mb-3 pt-2 border-top">
                                 <div>
-                                    <span class="d-block text-muted" style="font-size: 0.72rem;">Monthly Rental:</span>
+                                    <span class="d-block text-muted" style="font-size: 0.72rem;">Price / Package:</span>
                                     <span class="fw-bold text-dm-red fs-6">₹800 <small class="text-muted">/mo</small></span>
                                 </div>
                                 <div class="text-end">
@@ -748,7 +748,7 @@ ob_start();
                             </div>
                             <div class="d-grid gap-2">
                                 <a href="https://wa.me/919319149644?text=I+want+to+order+Air+Mattress+with+Pump" target="_blank" class="btn btn-dm-red btn-sm rounded-pill fw-bold py-2">
-                                    <i class="fa-brands fa-whatsapp me-1"></i> Order / Rent Now
+                                    <i class="fa-brands fa-whatsapp me-1"></i> Order / Book Now
                                 </a>
                                 <a href="hospital-bed" class="btn btn-outline-secondary btn-sm rounded-pill py-1 small">
                                     View Full Details
@@ -762,7 +762,7 @@ ob_start();
             <!-- 12. Oxygen Cylinder Complete Kit (10L / 47L) -->
             <div class="col-md-6 col-lg-4 product-item" data-category="respiratory" data-title="Medical Oxygen Cylinder Kit with Regulator Flowmeter Trolley 10L 47L">
                 <div class="product-shop-card shadow-sm">
-                    <span class="product-tag product-tag-rent">30-min Swap</span>
+                    <span class="product-tag product-tag-spec">30-min Swap</span>
                     <div class="product-img-box">
                         <i class="fa-solid fa-gas-pump text-danger" style="font-size: 70px; opacity: 0.85;"></i>
                     </div>
@@ -782,7 +782,7 @@ ob_start();
                         <div>
                             <div class="d-flex justify-content-between align-items-baseline mb-3 pt-2 border-top">
                                 <div>
-                                    <span class="d-block text-muted" style="font-size: 0.72rem;">Monthly Rental:</span>
+                                    <span class="d-block text-muted" style="font-size: 0.72rem;">Price / Package:</span>
                                     <span class="fw-bold text-dm-red fs-6">₹2,500 <small class="text-muted">/mo</small></span>
                                 </div>
                                 <div class="text-end">
@@ -791,7 +791,7 @@ ob_start();
                             </div>
                             <div class="d-grid gap-2">
                                 <a href="https://wa.me/919319149644?text=I+need+Oxygen+Cylinder+Urgent+Delivery" target="_blank" class="btn btn-dm-red btn-sm rounded-pill fw-bold py-2">
-                                    <i class="fa-brands fa-whatsapp me-1"></i> Order / Rent Now
+                                    <i class="fa-brands fa-whatsapp me-1"></i> Order / Book Now
                                 </a>
                                 <a href="oxygen-cylinder" class="btn btn-outline-secondary btn-sm rounded-pill py-1 small">
                                     View Full Details

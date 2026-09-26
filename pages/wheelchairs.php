@@ -1,6 +1,6 @@
 <?php
 /**
- * DM Healthcare - Wheelchairs on Rent
+ * DM Healthcare - Wheelchairs & Mobility Equipment
  * Modern, Bootstrap 5-Powered Medical Equipment Portal
  */
 
@@ -198,7 +198,7 @@ ob_start();
             <!-- Right Hero Image -->
             <div class="col-lg-5">
                 <div class="position-relative">
-                    <img src="assets/images/pages/wheelchair_hero_banner.jpg" alt="Wheelchair Rental Service DM Healthcare" class="img-fluid rounded-4 shadow-sm border border-2 border-white w-100" style="max-height: 320px; object-fit: cover;">
+                    <img src="assets/images/pages/wheelchair_hero_banner.jpg" alt="Wheelchair Service DM Healthcare" class="img-fluid rounded-4 shadow-sm border border-2 border-white w-100" style="max-height: 320px; object-fit: cover;">
                     <div class="position-absolute bottom-0 start-0 m-2 p-2 px-3 bg-white bg-opacity-95 rounded-3 shadow-sm border">
                         <div class="d-flex align-items-center gap-2">
                             <i class="fa-solid fa-certificate text-dm-red fs-5"></i>
@@ -377,7 +377,7 @@ ob_start();
                         <span class="fw-bold fs-4">2</span>
                     </div>
                     <h5 class="fw-bold text-dark mb-2">Call or WhatsApp</h5>
-                    <p class="small text-muted mb-0">Connect with our 24/7 care team at +91 88606 00423 to confirm rental duration and address.</p>
+                    <p class="small text-muted mb-0">Connect with our 24/7 care team at +91 88606 00423 to confirm package duration and address.</p>
                 </div>
             </div>
             <div class="col-sm-6 col-lg-3">
@@ -419,7 +419,7 @@ ob_start();
                         </div>
                         <div>
                             <h6 class="fw-bold mb-0 text-dark">Need Immediate Delivery?</h6>
-                            <small class="text-muted">Speak with our rental manager</small>
+                            <small class="text-muted">Speak with our care manager</small>
                         </div>
                     </div>
                     <a href="tel:+919319149644" class="btn btn-dm-red rounded-pill fw-bold py-2 mb-2">
@@ -465,9 +465,9 @@ ob_start();
                             <div class="col-md-6">
                                 <label class="form-label small fw-semibold text-secondary">Service Requirement *</label>
                                 <select name="requirement_type" class="form-select rounded-3 py-2" required>
-                                    <option value="Monthly Rental">Monthly Rental</option>
-                                    <option value="15-Day Short Rental">15-Day Short Rental</option>
-                                    <option value="Long-term Rental">Long-term Rental</option>
+                                    <option value="Monthly Package">Monthly Package</option>
+                                    <option value="15-Day Short Package">15-Day Short Package</option>
+                                    <option value="Long-term Package">Long-term Package</option>
                                 </select>
                             </div>
                             <div class="col-md-6">
@@ -529,7 +529,7 @@ ob_start();
             <div class="accordion-item border-bottom">
                 <h2 class="accordion-header" id="faqTwo">
                     <button class="accordion-button collapsed fw-bold text-dark py-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
-                        Are the rental wheelchairs cleaned and sanitized?
+                        Are the wheelchairs cleaned and sanitized?
                     </button>
                 </h2>
                 <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#wcFaqAccordion">
@@ -542,7 +542,7 @@ ob_start();
             <div class="accordion-item border-bottom">
                 <h2 class="accordion-header" id="faqThree">
                     <button class="accordion-button collapsed fw-bold text-dark py-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
-                        Is there a security deposit required for renting?
+                        Is there a security deposit required?
                     </button>
                 </h2>
                 <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#wcFaqAccordion">
@@ -555,7 +555,7 @@ ob_start();
             <div class="accordion-item border-bottom">
                 <h2 class="accordion-header" id="faqFour">
                     <button class="accordion-button collapsed fw-bold text-dark py-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour">
-                        What if the wheelchair requires service or maintenance during the rental period?
+                        What if the wheelchair requires service or maintenance?
                     </button>
                 </h2>
                 <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#wcFaqAccordion">
@@ -568,12 +568,12 @@ ob_start();
             <div class="accordion-item">
                 <h2 class="accordion-header" id="faqFive">
                     <button class="accordion-button collapsed fw-bold text-dark py-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive">
-                        Can I extend or upgrade my wheelchair rental anytime?
+                        Can I extend or upgrade my wheelchair package anytime?
                     </button>
                 </h2>
                 <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#wcFaqAccordion">
                     <div class="accordion-body text-muted small lh-base">
-                        Yes, absolutely! You can extend your rental duration effortlessly with a quick call or WhatsApp message, or upgrade to an electric or recliner model whenever needed without hassle.
+                        Yes, absolutely! You can extend your package duration effortlessly with a quick call or WhatsApp message, or upgrade to an electric or recliner model whenever needed without hassle.
                     </div>
                 </div>
             </div>

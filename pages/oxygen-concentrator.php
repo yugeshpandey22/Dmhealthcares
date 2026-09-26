@@ -1,6 +1,6 @@
 <?php
 /**
- * DM Healthcare - Oxygen Concentrators on Rent
+ * DM Healthcare - Oxygen Concentrators & Respiratory Services
  * Modern, Bootstrap 5-Powered Medical Equipment Portal
  */
 
@@ -267,12 +267,12 @@ ob_start();
     </div>
 </section>
 
-<!-- 4. Why Rent from DM Healthcare -->
+<!-- 4. Why Choose DM Healthcare -->
 <section class="py-4 py-lg-5 bg-light border-bottom">
     <div class="container">
         <div class="text-center max-w-700 mx-auto mb-4">
             <span class="badge bg-secondary bg-opacity-10 text-secondary px-3 py-1 rounded-pill fw-semibold mb-1 small">Our Assurance</span>
-            <h3 class="fw-bold text-dark mb-1">Why Rent from DM Healthcare?</h3>
+            <h3 class="fw-bold text-dark mb-1">Why Choose DM Healthcare?</h3>
         </div>
 
         <div class="row g-3">
@@ -351,7 +351,7 @@ ob_start();
                     <h5 class="fw-bold text-dark mb-3">Request Oxygen Concentrator</h5>
                     
                     <form action="backend/submit_appointment.php" method="POST">
-                        <input type="hidden" name="service" value="Oxygen Concentrator Rental">
+                        <input type="hidden" name="service" value="Oxygen Concentrator Services">
                         
                         <div class="row g-2">
                             <div class="col-md-6">
@@ -439,7 +439,7 @@ ob_start();
             <div class="accordion-item border-bottom">
                 <h2 class="accordion-header" id="faqOcThree">
                     <button class="accordion-button collapsed fw-bold text-dark py-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOcThree">
-                        How do I know whether to rent a 5 LPM or 10 LPM machine?
+                        How do I know whether to choose a 5 LPM or 10 LPM machine?
                     </button>
                 </h2>
                 <div id="collapseOcThree" class="accordion-collapse collapse" data-bs-parent="#ocFaqAccordion">
@@ -457,7 +457,7 @@ ob_start();
                 </h2>
                 <div id="collapseOcFour" class="accordion-collapse collapse" data-bs-parent="#ocFaqAccordion">
                     <div class="accordion-body text-muted small lh-base">
-                        Yes, 100%. We provide a brand-new sealed adult/paediatric nasal cannula, clean oxygen tubing, and a sterilized humidifier bottle at zero extra charge with every rental dispatch.
+                        Yes, 100%. We provide a brand-new sealed adult/paediatric nasal cannula, clean oxygen tubing, and a sterilized humidifier bottle at zero extra charge with every equipment dispatch.
                     </div>
                 </div>
             </div>

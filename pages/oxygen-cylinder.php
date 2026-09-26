@@ -5,8 +5,8 @@
  */
 
 $display_title = "Medical Oxygen Cylinders & 24/7 Refill";
-$seo_title = "Oxygen Cylinder on Rent & Doorstep Refill in Delhi NCR, Faridabad - DM Healthcare";
-$seo_desc = "24/7 emergency medical oxygen cylinder rental & doorstep refill across Delhi NCR, Faridabad, Noida & Gurugram. 30-45 min delivery with regulator, trolley & mask.";
+$seo_title = "Oxygen Cylinder Services & Doorstep Refill in Delhi NCR, Faridabad - DM Healthcare";
+$seo_desc = "24/7 emergency medical oxygen cylinder services & doorstep refill across Delhi NCR, Faridabad, Noida & Gurugram. 30-45 min delivery with regulator, trolley & mask.";
 $short_desc = "Certified 99% pure IP grade medical oxygen cylinders (B-Type & D-Type Jumbo) with complete accessory kit and 24/7 instant refill swap service.";
 $category_name = "Medical Equipment";
 $full_page_override = true;
@@ -87,7 +87,7 @@ ob_start();
         <div class="row align-items-center g-4">
             <div class="col-lg-7">
                 <h1 class="display-6 fw-bold text-white lh-sm mb-3">
-                    Medical <span class="text-dm-red">Oxygen Cylinders</span> on Rent & Instant Doorstep Refill
+                    Medical <span class="text-dm-red">Oxygen Cylinders</span> & Instant Doorstep Refill
                 </h1>
                 <p class="text-light fs-6 mb-4 opacity-90" style="line-height: 1.7;">
                     Certified <strong>99% pure IP grade</strong> compressed medical oxygen cylinders delivered with complete hospital-standard regulator, precision flowmeter, humidifier bottle, mobile trolley stand, and sterile cannula.
@@ -340,7 +340,7 @@ ob_start();
             <div class="col-lg-5">
                 <span class="badge bg-danger bg-opacity-10 text-danger px-3 py-1 rounded-pill fw-semibold mb-2">30-Mins Response</span>
                 <h3 class="fw-bold text-dark mb-2">Order Oxygen Cylinder or Refill</h3>
-                <p class="text-muted small mb-3">Place your rental or refill request. Our dispatch team will confirm your order and reach your location in under 45 minutes.</p>
+                <p class="text-muted small mb-3">Place your cylinder or refill request. Our dispatch team will confirm your order and reach your location in under 45 minutes.</p>
                 
                 <div class="card bg-white border-0 shadow-sm rounded-3 p-3 mb-3">
                     <div class="d-flex align-items-center gap-3 mb-2">
@@ -367,7 +367,7 @@ ob_start();
                     <h5 class="fw-bold text-dark mb-3">Request Oxygen Cylinder Setup / Refill</h5>
                     
                     <form action="backend/submit_appointment.php" method="POST">
-                        <input type="hidden" name="service" value="Oxygen Cylinder Rental & Refill">
+                        <input type="hidden" name="service" value="Oxygen Cylinder & Refill">
                         
                         <div class="row g-2">
                             <div class="col-md-6">
@@ -381,8 +381,8 @@ ob_start();
                             <div class="col-md-6">
                                 <label class="form-label small fw-semibold text-secondary mb-1">Requirement *</label>
                                 <select name="requirement_type" class="form-select form-select-sm rounded-2" required>
-                                    <option value="B-Type Cylinder Rental Kit (₹1,200/mo)">B-Type (10L) Rental Kit (₹1,200/mo)</option>
-                                    <option value="D-Type Jumbo Rental Kit (₹2,000/mo)">D-Type Jumbo (46.7L) Kit (₹2,000/mo)</option>
+                                    <option value="B-Type Cylinder Kit (₹1,200/mo)">B-Type (10L) Cylinder Kit (₹1,200/mo)</option>
+                                    <option value="D-Type Jumbo Kit (₹2,000/mo)">D-Type Jumbo (46.7L) Kit (₹2,000/mo)</option>
                                     <option value="Doorstep Refill / Swap (B-Type ₹400)">Doorstep Refill (B-Type ₹400)</option>
                                     <option value="Doorstep Refill / Swap (D-Type ₹800)">Doorstep Refill (D-Type ₹800)</option>
                                     <option value="Emergency Standby Concentrator Backup">Emergency Standby Backup Package</option>

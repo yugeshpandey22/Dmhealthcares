@@ -66,7 +66,7 @@ ob_start();
                 <!-- Pricing Highlight Box -->
                 <div class="d-inline-flex flex-wrap align-items-center gap-3 p-2 px-3 bg-light rounded-3 border mb-3">
                     <div>
-                        <small class="text-muted d-block" style="font-size: 0.72rem;">Monthly Rental</small>
+                        <small class="text-muted d-block" style="font-size: 0.72rem;">Starting Price</small>
                         <span class="fs-5 fw-bold text-dm-red">₹4,500</span>
                         <small class="text-muted">/ month</small>
                     </div>
@@ -81,7 +81,7 @@ ob_start();
                     <a href="tel:+919319149644" class="btn btn-dm-red rounded-pill px-3 py-2 fw-bold shadow-sm d-inline-flex align-items-center gap-2 small">
                         <i class="fa-solid fa-phone"></i> Call +91 93191 49644
                     </a>
-                    <a href="https://wa.me/919319149644?text=Hello%20DM%20Healthcare,%20I%20want%20to%20know%20more%20about%20NeoBolt%20Scooter%20Rental%20Services." target="_blank" class="btn btn-outline-success rounded-pill px-3 py-2 fw-bold d-inline-flex align-items-center gap-2 small">
+                    <a href="https://wa.me/919319149644?text=Hello%20DM%20Healthcare,%20I%20want%20to%20know%20more%20about%20NeoBolt%20Scooter%20Services." target="_blank" class="btn btn-outline-success rounded-pill px-3 py-2 fw-bold d-inline-flex align-items-center gap-2 small">
                         <i class="fa-brands fa-whatsapp"></i> WhatsApp Inquiry
                     </a>
                     <a href="#booking-form" class="btn btn-outline-secondary rounded-pill px-3 py-2 fw-bold small">
@@ -310,7 +310,7 @@ ob_start();
             <!-- Right Form -->
             <div class="col-lg-7">
                 <div class="card border-0 shadow-lg rounded-4 p-4 p-md-4 bg-white border">
-                    <h5 class="fw-bold text-dark mb-3">Request NeoBolt Rental or Demo</h5>
+                    <h5 class="fw-bold text-dark mb-3">Request NeoBolt Booking or Demo</h5>
                     
                     <form action="backend/submit_appointment.php" method="POST">
                         <input type="hidden" name="service" value="NeoBolt Motorized Scooter">
@@ -327,9 +327,9 @@ ob_start();
                             <div class="col-md-6">
                                 <label class="form-label small fw-semibold text-secondary mb-1">Requirement Type *</label>
                                 <select name="requirement_type" class="form-select form-select-sm rounded-2" required>
-                                    <option value="Monthly Rental (₹4,500/mo)">Monthly Rental (₹4,500/mo)</option>
+                                    <option value="Monthly Package (₹4,500/mo)">Monthly Package (₹4,500/mo)</option>
                                     <option value="Free Home Trial / Demo">Free Home Trial / Demo</option>
-                                    <option value="Long-term Rental">Long-term Rental</option>
+                                    <option value="Long-term Package">Long-term Package</option>
                                 </select>
                             </div>
                             <div class="col-md-6">
@@ -348,7 +348,7 @@ ob_start();
                             </div>
                             <div class="col-12 mt-2">
                                 <button type="submit" class="btn btn-dm-red w-100 rounded-pill fw-bold py-2 shadow-sm">
-                                    <i class="fa-solid fa-paper-plane me-1"></i> Submit Demo / Rental Request
+                                    <i class="fa-solid fa-paper-plane me-1"></i> Submit Demo / Booking Request
                                 </button>
                                 <small class="text-center d-block text-muted mt-1" style="font-size: 0.72rem;">
                                     <i class="fa-solid fa-lock text-success me-1"></i> No advance payment needed before live trial demonstration.
@@ -418,7 +418,7 @@ ob_start();
                 </h2>
                 <div id="collapseNbFour" class="accordion-collapse collapse" data-bs-parent="#nbFaqAccordion">
                     <div class="accordion-body text-muted small lh-base">
-                        For rental customers, all mechanical repairs, battery replacements, and brake tune-ups are 100% free of cost with same-day doorstep technician visits across Faridabad, Noida, and Delhi NCR.
+                        For our customers, all mechanical repairs, battery replacements, and brake tune-ups are 100% free of cost with same-day doorstep technician visits across Faridabad, Noida, and Delhi NCR.
                     </div>
                 </div>
             </div>
@@ -429,7 +429,7 @@ ob_start();
 <!-- 7. Related Medical Equipment -->
 <section class="py-4 py-lg-5 bg-white border-top">
     <div class="container">
-        <h5 class="fw-bold text-dark mb-3 text-center">Other Mobility Equipment on Rent</h5>
+        <h5 class="fw-bold text-dark mb-3 text-center">Other Mobility Equipment</h5>
         <div class="row g-3 justify-content-center text-center">
             <div class="col-6 col-md-3">
                 <a href="page.php?title=wheelchairs" class="card border rounded-3 p-3 text-decoration-none shadow-sm h-100 bg-light nb-feature-card">

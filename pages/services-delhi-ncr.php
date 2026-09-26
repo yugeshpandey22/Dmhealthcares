@@ -2,7 +2,7 @@
 // Custom Page Overrides for Delhi NCR
 $display_title = "Healthcare Services in Delhi & NCR";
 $seo_title = "24/7 Home Healthcare & Nursing Services Across Delhi & NCR - DM Healthcare";
-$seo_desc = "Get verified 24/7 home healthcare services across Delhi NCR including Faridabad, Noida, Gurugram, Palwal, and Delhi Capital. Certified nurses, elderly attendants, ICU equipment rental, and doctor home visits.";
+$seo_desc = "Get verified 24/7 home healthcare services across Delhi NCR including Faridabad, Noida, Gurugram, Palwal, and Delhi Capital. Certified nurses, elderly attendants, ICU equipment services, and doctor home visits.";
 $short_desc = "24/7 Compassionate, certified & hospital-grade healthcare services delivered right at your doorstep across Delhi NCR with 30-60 min rapid response.";
 $category_name = "Coverage Area & Services";
 $hide_default_welcome = true; // Use our premium custom full-width design
@@ -716,8 +716,8 @@ $frontend_custom_sections = '
                 <div class="service-icon-box" style="background: rgba(245, 158, 11, 0.1); color: #d97706;">
                     <i class="fa-solid fa-wheelchair"></i>
                 </div>
-                <h4 class="fw-bold text-dark mb-2">Medical Equipment on Rent</h4>
-                <p class="text-muted small mb-4 flex-grow-1">High-grade sanitized medical machinery available on flexible rental. Delivered and professionally installed at your home with 24/7 technical assistance.</p>
+                <h4 class="fw-bold text-dark mb-2">Medical Equipment Services</h4>
+                <p class="text-muted small mb-4 flex-grow-1">High-grade sanitized medical machinery available for home healthcare. Delivered and professionally installed at your home with 24/7 technical assistance.</p>
                 <ul class="list-unstyled text-muted small mb-4">
                     <li class="mb-2"><i class="fa-solid fa-circle-check text-warning me-2" style="color: #d97706 !important;"></i> 3 & 5 Function Motorized Hospital Beds</li>
                     <li class="mb-2"><i class="fa-solid fa-circle-check text-warning me-2" style="color: #d97706 !important;"></i> Oxygen Concentrators (5L / 10L) & BiPAP/CPAP</li>
@@ -944,7 +944,7 @@ $frontend_custom_sections = '
                         <small class="text-muted"><i class="fa-solid fa-star text-warning"></i> 5.0 (Sector 62, Noida)</small>
                     </div>
                 </div>
-                <p class="text-muted fst-italic mb-0" style="line-height: 1.7;">"We rented an oxygen concentrator and a 5-function motorized hospital bed for my mother. The delivery van arrived within 45 minutes, installed everything cleanly, and the technician trained us thoroughly. Absolutely reliable service!"</p>
+                <p class="text-muted fst-italic mb-0" style="line-height: 1.7;">"We requested an oxygen concentrator and a 5-function motorized hospital bed for my mother. The delivery van arrived within 45 minutes, installed everything cleanly, and the technician trained us thoroughly. Absolutely reliable service!"</p>
             </div>
         </div>
     </div>
@@ -966,7 +966,7 @@ $frontend_custom_sections = '
             </h2>
             <div id="ncrFaq1" class="accordion-collapse collapse show" data-bs-parent="#delhiNcrFaq">
                 <div class="accordion-body text-muted bg-white" style="line-height: 1.7;">
-                    We maintain dedicated healthcare teams across Faridabad, Noida, Gurugram, Palwal, and Delhi. Medical attendants, certified nurses, and rental equipment are deployed within 30 to 60 minutes across most sectors.
+                    We maintain dedicated healthcare teams across Faridabad, Noida, Gurugram, Palwal, and Delhi. Medical attendants, certified nurses, and medical equipment are deployed within 30 to 60 minutes across most sectors.
                 </div>
             </div>
         </div>
@@ -985,7 +985,7 @@ $frontend_custom_sections = '
         <div class="accordion-item border-0 border-bottom">
             <h2 class="accordion-header">
                 <button class="accordion-button collapsed fw-bold bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#ncrFaq3">
-                    Can I rent medical equipment on short notice anywhere in Delhi NCR?
+                    Can I get medical equipment on short notice anywhere in Delhi NCR?
                 </button>
             </h2>
             <div id="ncrFaq3" class="accordion-collapse collapse" data-bs-parent="#delhiNcrFaq">

@@ -1003,8 +1003,8 @@ ob_start();
     <div class="container">
         <div class="text-center max-w-700 mx-auto mb-4">
             <span class="badge bg-secondary bg-opacity-10 text-secondary px-3 py-1 rounded-pill fw-semibold mb-1 small">Complete Range</span>
-            <h3 class="fw-bold text-dark mb-1">All Medical Equipment on Rent</h3>
-            <p class="text-muted small">DM Healthcare provides home rental for all types of medical and rehabilitation equipment. Browse our full range below.</p>
+            <h3 class="fw-bold text-dark mb-1">All Medical Equipment</h3>
+            <p class="text-muted small">DM Healthcare provides all types of medical and rehabilitation equipment. Browse our full range below.</p>
         </div>
 
         <div class="row g-3">
@@ -1026,7 +1026,7 @@ ob_start();
 
             <div class="col-md-6 col-lg-4">
                 <div class="card h-100 border rounded-4 p-3 shadow-sm">
-                    <h6 class="fw-bold text-dark mb-1"><i class="fa-solid fa-lungs text-success me-2"></i>Oxygen Concentrator on Rent</h6>
+                    <h6 class="fw-bold text-dark mb-1"><i class="fa-solid fa-lungs text-success me-2"></i>Oxygen Concentrator</h6>
                     <p class="small text-muted mb-3">1LPM to 10LPM medical oxygen concentrators (93% purity) for COPD, hypoxia and chronic care.</p>
                     <a href="oxygen-concentrator" class="btn btn-outline-dm-red btn-sm rounded-pill fw-bold mt-auto">View Concentrators</a>
                 </div>
@@ -1034,7 +1034,7 @@ ob_start();
 
             <div class="col-md-6 col-lg-4">
                 <div class="card h-100 border rounded-4 p-3 shadow-sm">
-                    <h6 class="fw-bold text-dark mb-1"><i class="fa-solid fa-gas-pump text-danger me-2"></i>Oxygen Cylinder on Rent</h6>
+                    <h6 class="fw-bold text-dark mb-1"><i class="fa-solid fa-gas-pump text-danger me-2"></i>Oxygen Cylinder</h6>
                     <p class="small text-muted mb-3">B-type (10L / 1,500L gas) and D-type (47L jumbo) cylinders with regulator and 30-min emergency refill.</p>
                     <a href="oxygen-cylinder" class="btn btn-outline-dm-red btn-sm rounded-pill fw-bold mt-auto">View Oxygen Cylinders</a>
                 </div>
@@ -1042,7 +1042,7 @@ ob_start();
 
             <div class="col-md-6 col-lg-4">
                 <div class="card h-100 border rounded-4 p-3 shadow-sm bg-light border-danger">
-                    <h6 class="fw-bold text-dm-red mb-1"><i class="fa-solid fa-mask-ventilator me-2"></i>BiPAP / CPAP on Rent</h6>
+                    <h6 class="fw-bold text-dm-red mb-1"><i class="fa-solid fa-mask-ventilator me-2"></i>BiPAP / CPAP</h6>
                     <p class="small text-muted mb-3">BiPAP, CPAP and home ventilators for sleep apnea, COPD and respiratory failure.</p>
                     <span class="badge bg-danger text-white rounded-pill px-3 py-1 small align-self-start mt-auto">Currently Viewing</span>
                 </div>
@@ -1050,7 +1050,7 @@ ob_start();
 
             <div class="col-md-6 col-lg-4">
                 <div class="card h-100 border rounded-4 p-3 shadow-sm">
-                    <h6 class="fw-bold text-dark mb-1"><i class="fa-solid fa-heart-pulse text-warning me-2"></i>ICU Equipment on Rent</h6>
+                    <h6 class="fw-bold text-dark mb-1"><i class="fa-solid fa-heart-pulse text-warning me-2"></i>ICU Equipment</h6>
                     <p class="small text-muted mb-3">Home ventilators, multi-para patient monitors, syringe pumps, and suction machines for complete home ICU setup.</p>
                     <a href="icu-care---critical-care" class="btn btn-outline-dm-red btn-sm rounded-pill fw-bold mt-auto">View ICU Setup</a>
                 </div>

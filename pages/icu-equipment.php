@@ -394,12 +394,12 @@ $frontend_custom_sections .= '
                     <div class="accordion-item border-0">
                         <h2 class="accordion-header">
                             <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#faq6">
-                                Do you offer financing or rental options for hospitals?
+                                Do you offer financing or flexible packages for hospitals?
                             </button>
                         </h2>
                         <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
                             <div class="accordion-body text-muted">
-                                Yes, we provide flexible equipment rental options, tailored monthly plans, and bulk institutional packages for select high-value equipment.
+                                Yes, we provide flexible equipment package options, tailored monthly plans, and bulk institutional packages for select high-value equipment.
                             </div>
                         </div>
                     </div>
