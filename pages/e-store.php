@@ -835,7 +835,7 @@ ob_start();
                             </div>
                             <div class="d-grid gap-2">
                                 <a href="https://wa.me/919319149644?text=I+want+to+order+Finger+Pulse+Oximeter" target="_blank" class="btn btn-dm-red btn-sm rounded-pill fw-bold py-2">
-                                    <i class="fa-brands fa-whatsapp me-1"></i> Order on WhatsApp
+                                    <i class="fa-brands fa-whatsapp me-1"></i> Buy Pulse Oximeter
                                 </a>
                             </div>
                         </div>
@@ -876,7 +876,7 @@ ob_start();
                             </div>
                             <div class="d-grid gap-2">
                                 <a href="https://wa.me/919319149644?text=I+want+to+order+Portable+Mesh+Nebulizer" target="_blank" class="btn btn-dm-red btn-sm rounded-pill fw-bold py-2">
-                                    <i class="fa-brands fa-whatsapp me-1"></i> Order on WhatsApp
+                                    <i class="fa-brands fa-whatsapp me-1"></i> Buy Mesh Nebulizer
                                 </a>
                             </div>
                         </div>

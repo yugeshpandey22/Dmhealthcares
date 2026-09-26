@@ -528,11 +528,7 @@ body {
                     <div class="p-3 d-flex flex-column flex-grow-1 text-center">
                         <h6 class="fw-bold text-dark mb-1" style="font-size: 0.95rem;">'.$item['name'].'</h6>
                         '.$price_display.'
-                        <p class="text-muted small mb-3 flex-grow-1" style="font-size: 0.78rem; line-height: 1.45;">'.$item['desc'].'</p>
-                        
-                        <a href="https://wa.me/919319149644?text='.urlencode("Hello DM Healthcare, I want to inquire about " . $item['name'] . " (Price: " . $item['price'] . ")").'" target="_blank" class="btn btn-outline-danger rounded-pill w-100 fw-bold btn-sm py-2 mt-auto" style="border-color: var(--primary-color); color: var(--primary-color); transition: all 0.2s;">
-                            <i class="fa-brands fa-whatsapp me-1"></i> Order on WhatsApp
-                        </a>
+                        <p class="text-muted small mb-0 flex-grow-1" style="font-size: 0.78rem; line-height: 1.45;">'.$item['desc'].'</p>
                     </div>
                 </div>
             </div>';
