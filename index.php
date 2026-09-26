@@ -30,12 +30,6 @@
     <!-- 05.2 Include Transparent Rate Cards & Pricing Preview -->
     <?php include 'components/pricing_tariff_preview.php'; ?>
 
-    <!-- 05.5 Include Specialized Medical Programs -->
-    <?php include 'components/specialties_grid.php'; ?>
-
-    <!-- 07 Include Specialized Treatments Section -->
-    <?php include 'components/specialized_treatments.php'; ?>
-
     <!-- 09 Include Medical Equipment Section -->
     <?php include 'components/medical_equipment.php'; ?>
 
@@ -44,9 +38,6 @@
 
     <!-- 11 Include How It Works Section -->
     <?php include 'components/how_it_works.php'; ?>
-
-    <!-- 06 Include Why Choose Us Section -->
-    <?php include 'components/why_choose_us.php'; ?>
 
     <!-- 06.5 Include Delhi NCR Coverage Areas -->
     <?php include 'components/coverage_cities.php'; ?>
