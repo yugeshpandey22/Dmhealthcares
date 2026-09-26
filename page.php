@@ -492,7 +492,7 @@ try {
                                 </h2>
                                 <div id="faqCollapse4" class="accordion-collapse collapse" data-bs-parent="#pageFaqAccordion">
                                     <div class="accordion-body text-muted small lh-base">
-                                        You can call our 24/7 helpline at <strong>+91 88606 00423</strong> or fill out the appointment form on this page. Our care coordinator will contact you in under 10 minutes.
+                                        You can call our 24/7 helpline at <strong>+91 93191 49644</strong> or chat with us on WhatsApp. Our care coordinator will assist you in under 10 minutes.
                                     </div>
                                 </div>
                             </div>
@@ -500,7 +500,7 @@ try {
                     </div>
                 </div>
 
-                <!-- Right Column: Media, Contact Card & Related Internal Links (5 Cols) -->
+                <!-- Right Column: Media, Contact Card, Rate Card Banner & Related Internal Links (5 Cols) -->
                 <div class="col-lg-5 order-1 order-lg-2">
                     <div>
                         <!-- Feature Image -->
@@ -530,6 +530,18 @@ try {
                                 </a>
                             </div>
                             <small class="text-success fw-bold"><i class="fa-solid fa-bolt me-1"></i> 30-60 Mins Response Across Delhi NCR</small>
+                        </div>
+
+                        <!-- Transparent Rate Card CTA Box -->
+                        <div class="p-3 mb-4 rounded-4 border text-center shadow-sm" style="background: linear-gradient(135deg, rgba(229, 37, 42, 0.05) 0%, rgba(229, 37, 42, 0.12) 100%); border-color: rgba(229, 37, 42, 0.25) !important;">
+                            <div class="d-flex align-items-center justify-content-center gap-2 mb-2">
+                                <i class="fa-solid fa-file-invoice-dollar text-danger fs-5"></i>
+                                <h6 class="fw-bold mb-0 text-dark">Transparent Price List</h6>
+                            </div>
+                            <p class="small text-muted mb-2">Check complete 12h/24h per-day rates, monthly packages and procedure charges.</p>
+                            <a href="rate-cards" class="btn btn-danger btn-sm rounded-pill fw-bold px-3 py-2 w-100 shadow-sm" style="background: var(--primary-color); border: none;">
+                                <i class="fa-solid fa-list-check me-1"></i> View Official Rate Cards
+                            </a>
                         </div>
 
                         <!-- Related Services Links (Internal Linking for SEO) -->

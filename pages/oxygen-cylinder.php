@@ -298,7 +298,7 @@ ob_start();
                         <span class="fw-bold fs-5">1</span>
                     </div>
                     <h6 class="fw-bold text-dark mb-1">Call / WhatsApp</h6>
-                    <p class="small text-muted mb-0">Contact our 24/7 helpline at +91 88606 00423 when pressure drops to 20 kg/cm².</p>
+                    <p class="small text-muted mb-0">Contact our 24/7 helpline at +91 93191 49644 when pressure drops to 20 kg/cm².</p>
                 </div>
             </div>
             <div class="col-sm-6 col-lg-3">

@@ -377,7 +377,7 @@ ob_start();
                         <span class="fw-bold fs-4">2</span>
                     </div>
                     <h5 class="fw-bold text-dark mb-2">Call or WhatsApp</h5>
-                    <p class="small text-muted mb-0">Connect with our 24/7 care team at +91 88606 00423 to confirm package duration and address.</p>
+                    <p class="small text-muted mb-0">Connect with our 24/7 care team at +91 93191 49644 to confirm package duration and address.</p>
                 </div>
             </div>
             <div class="col-sm-6 col-lg-3">

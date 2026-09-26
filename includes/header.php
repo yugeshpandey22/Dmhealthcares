@@ -372,7 +372,8 @@ $page_keywords_seo = isset($seo_keywords) && !empty($seo_keywords)
                     require_once 'config/db.php';
 
                     if (!function_exists('format_medical_nav_title')) {
-                        function format_medical_nav_title($title) {
+                        function format_medical_nav_title($title)
+                        {
                             $formatted = preg_replace('/\bncr\b/i', 'NCR', $title);
                             $formatted = preg_replace('/\bicu\b/i', 'ICU', $formatted);
                             $formatted = preg_replace('/\bgda\b/i', 'GDA', $formatted);
@@ -503,9 +504,9 @@ $page_keywords_seo = isset($seo_keywords) && !empty($seo_keywords)
                                                         </li>
                                                         <?php foreach ($col1_items as $nav_item): ?>
                                                             <?php
-                                                             $slug_key = strtolower($nav_item['link']);
-                                                             $icon_cls = $icon_map[$slug_key] ?? 'fa-solid fa-hand-holding-medical';
-                                                             ?>
+                                                            $slug_key = strtolower($nav_item['link']);
+                                                            $icon_cls = $icon_map[$slug_key] ?? 'fa-solid fa-hand-holding-medical';
+                                                            ?>
                                                             <li>
                                                                 <a href="<?= htmlspecialchars($nav_item['link']) ?>">
                                                                     <i class="<?= $icon_cls ?>"></i>
@@ -522,9 +523,9 @@ $page_keywords_seo = isset($seo_keywords) && !empty($seo_keywords)
                                                     <ul class="mega-menu-list">
                                                         <?php foreach ($col2_items as $nav_item): ?>
                                                             <?php
-                                                             $slug_key = strtolower($nav_item['link']);
-                                                             $icon_cls = $icon_map[$slug_key] ?? 'fa-solid fa-user-nurse';
-                                                             ?>
+                                                            $slug_key = strtolower($nav_item['link']);
+                                                            $icon_cls = $icon_map[$slug_key] ?? 'fa-solid fa-user-nurse';
+                                                            ?>
                                                             <li>
                                                                 <a href="<?= htmlspecialchars($nav_item['link']) ?>">
                                                                     <i class="<?= $icon_cls ?>"></i>
@@ -557,14 +558,14 @@ $page_keywords_seo = isset($seo_keywords) && !empty($seo_keywords)
 
                             <?php elseif ($cat_norm === 'home'): ?>
                                 <?php
-                                 // Ensure redundant 'Home Page' is never listed in dropdown
-                                 $home_filtered_items = array_values(array_filter($cat_items, function ($nav_item) {
-                                     $t = strtolower(trim(strip_tags($nav_item['title'] ?? '')));
-                                     $l = strtolower(trim($nav_item['link'] ?? ''));
-                                     return !in_array($t, ['home', 'home page', 'homepage']) && !in_array($l, ['home', 'home-page', 'homepage', 'index.php', 'index']);
-                                 }));
-                                 $has_home_subitems = count($home_filtered_items) > 0;
-                                 ?>
+                                // Ensure redundant 'Home Page' is never listed in dropdown
+                                $home_filtered_items = array_values(array_filter($cat_items, function ($nav_item) {
+                                    $t = strtolower(trim(strip_tags($nav_item['title'] ?? '')));
+                                    $l = strtolower(trim($nav_item['link'] ?? ''));
+                                    return !in_array($t, ['home', 'home page', 'homepage']) && !in_array($l, ['home', 'home-page', 'homepage', 'index.php', 'index']);
+                                }));
+                                $has_home_subitems = count($home_filtered_items) > 0;
+                                ?>
                                 <!-- Home Item -->
                                 <li class="nav-item <?= $has_home_subitems ? 'dropdown' : '' ?>">
                                     <?php if ($has_home_subitems): ?>
@@ -588,9 +589,9 @@ $page_keywords_seo = isset($seo_keywords) && !empty($seo_keywords)
                                 <!-- Standard Dropdown & Blood Checkup -->
                                 <li class="nav-item dropdown">
                                     <?php
-                                     $is_blood_checkup = (stripos($cat['name'], 'blood') !== false);
-                                     $display_name = $is_blood_checkup ? 'Blood Checkup' : format_medical_nav_title($cat['name']);
-                                     ?>
+                                    $is_blood_checkup = (stripos($cat['name'], 'blood') !== false);
+                                    $display_name = $is_blood_checkup ? 'Blood Checkup' : format_medical_nav_title($cat['name']);
+                                    ?>
                                     <?php if ($is_blood_checkup): ?>
                                         <a class="nav-link dropdown-toggle text-white fw-bold text-uppercase px-3 ms-2 shadow-sm nav-blood-checkup-btn" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: #e5252a !important; background: #e5252a !important; color: #ffffff !important; border-radius: 6px; padding: 8px 16px !important; align-self: center; font-size: 14px;">
                                         <?php else: ?>

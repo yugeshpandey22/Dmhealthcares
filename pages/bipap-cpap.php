@@ -710,7 +710,7 @@ ob_start();
                 <div class="col-lg-9">
                     <h6 class="fw-bold text-dark mb-1"><i class="fa-solid fa-lightbulb text-warning me-2"></i>DM Healthcare Clinical Recommendation:</h6>
                     <p class="text-muted small mb-0">
-                        For post-surgery recovery, post-COVID care, and uncertain-duration rehabilitation, <strong>renting is almost always more cost-effective and stress-free</strong>. For permanent or lifelong conditions where need is certain for years, buying makes financial sense. Call us at <strong>(+91) 88606 00423</strong> and our respiratory therapists will help you make the best decision.
+                        For post-surgery recovery, post-COVID care, and uncertain-duration rehabilitation, <strong>renting is almost always more cost-effective and stress-free</strong>. For permanent or lifelong conditions where need is certain for years, buying makes financial sense. Call us at <strong>(+91) 93191 49644</strong> and our respiratory therapists will help you make the best decision.
                     </p>
                 </div>
                 <div class="col-lg-3 text-lg-end">
