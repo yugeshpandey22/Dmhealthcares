@@ -1,11 +1,9 @@
 <style>
     .achievements-wrap-modern {
         background: #ffffff;
-        border-bottom: 1px solid #edf2f7;
         position: relative;
         z-index: 2;
-        margin-top: -30px;
-        margin-bottom: 20px;
+        padding: 15px 0 25px 0;
     }
     .achieve-card-box {
         background: #ffffff;

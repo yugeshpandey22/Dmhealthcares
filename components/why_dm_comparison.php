@@ -142,19 +142,6 @@ $comparison_points = [
                 </table>
             </div>
         </div>
-
-        <!-- Safety Assurance Pill Ribbon -->
-        <div class="mt-4 p-3 rounded-4 bg-light border d-flex flex-wrap align-items-center justify-content-between gap-3 text-center text-md-start">
-            <div class="d-flex align-items-center gap-3">
-                <i class="fa-solid fa-award text-warning fs-2 ms-2"></i>
-                <div>
-                    <h4 class="h6 fw-bold mb-0 text-dark">ISO & Clinical Protocol Compliant Home Care</h4>
-                    <p class="small text-muted mb-0">Trusted by 10,000+ families & recommended by leading hospital doctors in Delhi NCR.</p>
-                </div>
-            </div>
-            <a href="tel:+919999023456" class="btn btn-dark rounded-pill px-4 py-2 fw-bold text-nowrap">
-                <i class="fa-solid fa-phone me-2"></i> Speak with Care Director
-            </a>
-        </div>
     </div>
 </section>
+
