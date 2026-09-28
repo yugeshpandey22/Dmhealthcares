@@ -421,7 +421,7 @@ ob_start();
                 <a href="page.php?title=wheelchairs" class="card border rounded-3 p-3 text-decoration-none shadow-sm h-100 bg-light nb-feature-card">
                     <i class="fa-solid fa-wheelchair text-dm-red fs-4 mb-2"></i>
                     <span class="fw-bold text-dark small d-block">Manual & Electric Wheelchairs</span>
-                    <small class="text-muted" style="font-size: 0.72rem;">From ₹1,200/mo</small>
+                    <small class="text-muted" style="font-size: 0.72rem;">Foldable & Motorized</small>
                 </a>
             </div>
             <div class="col-6 col-md-3">
