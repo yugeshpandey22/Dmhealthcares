@@ -19,18 +19,18 @@ $services_catalog = [
         "color" => "#e5252a",
         "subtitle" => "Certified GNM & B.Sc nurses for hospital-level clinical care, medication and vital monitoring.",
         "items" => [
-            ["name" => "Basic Nursing-12 hrs-B", "price" => "₹1,500", "unit" => "/ day (12 hrs)", "tag" => "12-Hr Shift", "desc" => "Bedside nursing care, oral medication management, hygiene and vital signs charting.", "popular" => false],
-            ["name" => "Basic Nursing-12 hrs-A", "price" => "₹1,800", "unit" => "/ day (12 hrs)", "tag" => "12-Hr Shift", "desc" => "Experienced nurse for catheter care, medication charting, and surgical wound monitoring.", "popular" => false],
-            ["name" => "Basic Nursing-12 hrs-C", "price" => "₹2,000", "unit" => "/ day (12 hrs)", "tag" => "12-Hr Shift", "desc" => "Senior bedside nurse for complex clinical needs, Ryle's tube feeding, and insulin protocol.", "popular" => false],
-            ["name" => "Basic Nursing -24 hrs", "price" => "₹2,200", "unit" => "/ day (24 hrs)", "tag" => "24-Hr Live-in", "desc" => "24-hour residential basic nurse for continuous day & night monitoring and medication.", "popular" => true],
-            ["name" => "Advanced Nursing -24 hrs", "price" => "₹2,500 - ₹2,800", "unit" => "/ day (24 hrs)", "tag" => "24-Hr High Care", "desc" => "High-dependency residential nursing care, IV infusion management & post-surgical care.", "popular" => true],
-            ["name" => "Critical Nursing -24 hrs -B", "price" => "₹3,000 - ₹3,200", "unit" => "/ day (24 hrs)", "tag" => "ICU Critical Care", "desc" => "ICU-experienced B.Sc/GNM nurse for ventilator, BiPAP, tracheostomy suctioning & arterial line.", "popular" => true],
-            ["name" => "Semi Nurse CAT I", "price" => "₹1,350", "unit" => "/ day (12 hrs)", "tag" => "Semi-Nursing", "desc" => "Trained clinical aide for vitals monitoring, nebulization, sponge bath and feeding.", "popular" => false],
-            ["name" => "Semi Nurse CAT -II", "price" => "₹1,550", "unit" => "/ day (12 hrs)", "tag" => "Semi-Nursing", "desc" => "Semi-nursing assistant with advanced bedside skills, transfer aid and catheter bag hygiene.", "popular" => false],
-            ["name" => "Semi Nurse CAT —III", "price" => "₹1,700", "unit" => "/ day (12 hrs)", "tag" => "Semi-Nursing", "desc" => "Senior clinical attendant for tracheostomy stoma cleaning and continuous patient surveillance.", "popular" => false],
-            ["name" => "Advanced 24 hrs Semi Nurse", "price" => "₹2,000", "unit" => "/ day (24 hrs)", "tag" => "24-Hr Semi Nurse", "desc" => "Round-the-clock semi-nursing companion for high-dependency patients.", "popular" => false],
-            ["name" => "Nursing Supervisor Visit", "price" => "₹1,000", "unit" => "/ audit visit", "tag" => "Clinical Audit", "desc" => "Senior nursing officer clinical audit, nursing care plan review and protocol compliance.", "popular" => false],
-            ["name" => "Nursing Supervisor Visit-Delhi", "price" => "₹1,500", "unit" => "/ audit visit", "tag" => "Delhi NCR Audit", "desc" => "Comprehensive supervisory clinical inspection and protocol compliance audit for Delhi.", "popular" => false]
+            ["name" => "Basic Nursing-12 hrs-B", "price" => "₹1,500", "unit" => "/ per day", "tag" => "12-Hr Shift", "desc" => "Bedside nursing care, oral medication management, hygiene and vital signs charting.", "popular" => false],
+            ["name" => "Basic Nursing-12 hrs-A", "price" => "₹1,800", "unit" => "/ per day", "tag" => "12-Hr Shift", "desc" => "Experienced nurse for catheter care, medication charting, and surgical wound monitoring.", "popular" => false],
+            ["name" => "Basic Nursing-12 hrs-C", "price" => "₹2,000", "unit" => "/ per day", "tag" => "12-Hr Shift", "desc" => "Senior bedside nurse for complex clinical needs, Ryle's tube feeding, and insulin protocol.", "popular" => false],
+            ["name" => "Basic Nursing -24 hrs", "price" => "₹2,200", "unit" => "/ per day", "tag" => "24-Hr Live-in", "desc" => "24-hour residential basic nurse for continuous day & night monitoring and medication.", "popular" => true],
+            ["name" => "Advanced Nursing -24 hrs", "price" => "₹2,500 - ₹2,800", "unit" => "/ per day", "tag" => "24-Hr High Care", "desc" => "High-dependency residential nursing care, IV infusion management & post-surgical care.", "popular" => true],
+            ["name" => "Critical Nursing -24 hrs -B", "price" => "₹3,000 - ₹3,200", "unit" => "/ per day", "tag" => "ICU Critical Care", "desc" => "ICU-experienced B.Sc/GNM nurse for ventilator, BiPAP, tracheostomy suctioning & arterial line.", "popular" => true],
+            ["name" => "Semi Nurse CAT I", "price" => "₹1,350", "unit" => "/ per day", "tag" => "Semi-Nursing", "desc" => "Trained clinical aide for vitals monitoring, nebulization, sponge bath and feeding.", "popular" => false],
+            ["name" => "Semi Nurse CAT -II", "price" => "₹1,550", "unit" => "/ per day", "tag" => "Semi-Nursing", "desc" => "Semi-nursing assistant with advanced bedside skills, transfer aid and catheter bag hygiene.", "popular" => false],
+            ["name" => "Semi Nurse CAT —III", "price" => "₹1,700", "unit" => "/ per day", "tag" => "Semi-Nursing", "desc" => "Senior clinical attendant for tracheostomy stoma cleaning and continuous patient surveillance.", "popular" => false],
+            ["name" => "Advanced 24 hrs Semi Nurse", "price" => "₹2,000", "unit" => "/ per day", "tag" => "24-Hr Semi Nurse", "desc" => "Round-the-clock semi-nursing companion for high-dependency patients.", "popular" => false],
+            ["name" => "Nursing Supervisor Visit", "price" => "₹1,000", "unit" => "/ per day", "tag" => "Clinical Audit", "desc" => "Senior nursing officer clinical audit, nursing care plan review and protocol compliance.", "popular" => false],
+            ["name" => "Nursing Supervisor Visit-Delhi", "price" => "₹1,500", "unit" => "/ per day", "tag" => "Delhi NCR Audit", "desc" => "Comprehensive supervisory clinical inspection and protocol compliance audit for Delhi.", "popular" => false]
         ]
     ],
     "icu" => [
@@ -40,11 +40,11 @@ $services_catalog = [
         "color" => "#d946ef",
         "subtitle" => "Hospital ICU replicated at home with ventilators, multipara monitors, and dedicated critical staff.",
         "items" => [
-            ["name" => "Basic ICU package", "price" => "₹8,500", "unit" => "/ day", "tag" => "ICU at Home", "desc" => "Hospital bed, 5-para monitor, suction machine, oxygen setup, and dedicated 24h nurse.", "popular" => false],
-            ["name" => "Support at Home", "price" => "₹9,500", "unit" => "/ day", "tag" => "High Dependency", "desc" => "Complete home critical support bundle with medical equipment and continuous nursing care.", "popular" => false],
-            ["name" => "Critical care Package", "price" => "₹10,500", "unit" => "/ day", "tag" => "Full Critical Setup", "desc" => "Advanced ICU setup with invasive/non-invasive equipment, clinical monitoring & doctor supervision.", "popular" => true],
-            ["name" => "Critical care Package- With NIV", "price" => "₹12,000", "unit" => "/ day", "tag" => "NIV Ventilator", "desc" => "Complete ICU setup including Non-Invasive Ventilator (BiPAP/CPAP) and specialist nurse.", "popular" => true],
-            ["name" => "EOLC Package", "price" => "₹15,000", "unit" => "/ day", "tag" => "Palliative Care", "desc" => "End of Life Care (EOLC) comprehensive palliative package ensuring dignity, pain relief and comfort.", "popular" => false]
+            ["name" => "Basic ICU package", "price" => "₹8,500", "unit" => "/ per day", "tag" => "ICU at Home", "desc" => "Hospital bed, 5-para monitor, suction machine, oxygen setup, and dedicated 24h nurse.", "popular" => false],
+            ["name" => "Support at Home", "price" => "₹9,500", "unit" => "/ per day", "tag" => "High Dependency", "desc" => "Complete home critical support bundle with medical equipment and continuous nursing care.", "popular" => false],
+            ["name" => "Critical care Package", "price" => "₹10,500", "unit" => "/ per day", "tag" => "Full Critical Setup", "desc" => "Advanced ICU setup with invasive/non-invasive equipment, clinical monitoring & doctor supervision.", "popular" => true],
+            ["name" => "Critical care Package- With NIV", "price" => "₹12,000", "unit" => "/ per day", "tag" => "NIV Ventilator", "desc" => "Complete ICU setup including Non-Invasive Ventilator (BiPAP/CPAP) and specialist nurse.", "popular" => true],
+            ["name" => "EOLC Package", "price" => "₹15,000", "unit" => "/ per day", "tag" => "Palliative Care", "desc" => "End of Life Care (EOLC) comprehensive palliative package ensuring dignity, pain relief and comfort.", "popular" => false]
         ]
     ],
     "caregiver" => [
@@ -54,12 +54,12 @@ $services_catalog = [
         "color" => "#059669",
         "subtitle" => "Compassionate patient attendants, newborn Japa maids and child caretakers for day & night care.",
         "items" => [
-            ["name" => "Basic Caregiver -12 hrs", "price" => "₹850", "unit" => "/ day (12 hrs)", "tag" => "12-Hr Attendant", "desc" => "Assistance with personal hygiene, bathing, walking, feeding and timely medication reminders.", "popular" => false],
-            ["name" => "Basic Caregiver -24 hrs", "price" => "₹1,200", "unit" => "/ day (24 hrs)", "tag" => "24-Hr Live-in", "desc" => "24x7 residential attendant for continuous bedside aid, bed turning and family relief.", "popular" => true],
-            ["name" => "Japa-12 hrs", "price" => "₹1,000", "unit" => "/ day (12 hrs)", "tag" => "Mother & Baby", "desc" => "Specialized newborn massage, mother postpartum recovery care, baby bath and feeding support.", "popular" => false],
-            ["name" => "Japa-24 hrs", "price" => "₹1,500", "unit" => "/ day (24 hrs)", "tag" => "24-Hr Japa Maid", "desc" => "Round-the-clock traditional Japa maid for newborn care, midnight soothing and mother nutrition.", "popular" => true],
-            ["name" => "Baby Care Taker -12 hrs", "price" => "₹900", "unit" => "/ day (12 hrs)", "tag" => "Day Nanny", "desc" => "Trained nanny for infant hygiene, playful engagement, diaper changes and feeding.", "popular" => false],
-            ["name" => "Baby Care Taker -24 hrs", "price" => "₹1,200", "unit" => "/ day (24 hrs)", "tag" => "24-Hr Nanny", "desc" => "Full-time residential infant caretaker ensuring safe sleep, sterile bottle washing and baby safety.", "popular" => true]
+            ["name" => "Basic Caregiver -12 hrs", "price" => "₹850", "unit" => "/ per day", "tag" => "12-Hr Attendant", "desc" => "Assistance with personal hygiene, bathing, walking, feeding and timely medication reminders.", "popular" => false],
+            ["name" => "Basic Caregiver -24 hrs", "price" => "₹1,200", "unit" => "/ per day", "tag" => "24-Hr Live-in", "desc" => "24x7 residential attendant for continuous bedside aid, bed turning and family relief.", "popular" => true],
+            ["name" => "Japa-12 hrs", "price" => "₹1,000", "unit" => "/ per day", "tag" => "Mother & Baby", "desc" => "Specialized newborn massage, mother postpartum recovery care, baby bath and feeding support.", "popular" => false],
+            ["name" => "Japa-24 hrs", "price" => "₹1,500", "unit" => "/ per day", "tag" => "24-Hr Japa Maid", "desc" => "Round-the-clock traditional Japa maid for newborn care, midnight soothing and mother nutrition.", "popular" => true],
+            ["name" => "Baby Care Taker -12 hrs", "price" => "₹900", "unit" => "/ per day", "tag" => "Day Nanny", "desc" => "Trained nanny for infant hygiene, playful engagement, diaper changes and feeding.", "popular" => false],
+            ["name" => "Baby Care Taker -24 hrs", "price" => "₹1,200", "unit" => "/ per day", "tag" => "24-Hr Nanny", "desc" => "Full-time residential infant caretaker ensuring safe sleep, sterile bottle washing and baby safety.", "popular" => true]
         ]
     ],
     "doctor" => [
@@ -69,9 +69,9 @@ $services_catalog = [
         "color" => "#0284c7",
         "subtitle" => "Qualified General Physicians and Critical Care Intensivists visiting your home.",
         "items" => [
-            ["name" => "Doctor Visit-GP", "price" => "₹2,500", "unit" => "/ home visit", "tag" => "General Physician", "desc" => "Comprehensive physical checkup, vitals diagnosis, prescription and treatment plan at home.", "popular" => true],
-            ["name" => "Doctor Visit-Critical care", "price" => "₹3,000", "unit" => "/ specialist visit", "tag" => "Critical Care MD", "desc" => "Specialist critical care physician review for ICU-at-home, ventilator and tracheostomy patients.", "popular" => false],
-            ["name" => "ICU doctor Visit", "price" => "₹5,000", "unit" => "/ intensivist visit", "tag" => "Senior Intensivist", "desc" => "Senior ICU intensivist consultation, arterial blood gas review and emergency stabilization.", "popular" => false]
+            ["name" => "Doctor Visit-GP", "price" => "₹2,500", "unit" => "/ per day", "tag" => "General Physician", "desc" => "Comprehensive physical checkup, vitals diagnosis, prescription and treatment plan at home.", "popular" => true],
+            ["name" => "Doctor Visit-Critical care", "price" => "₹3,000", "unit" => "/ per day", "tag" => "Critical Care MD", "desc" => "Specialist critical care physician review for ICU-at-home, ventilator and tracheostomy patients.", "popular" => false],
+            ["name" => "ICU doctor Visit", "price" => "₹5,000", "unit" => "/ per day", "tag" => "Senior Intensivist", "desc" => "Senior ICU intensivist consultation, arterial blood gas review and emergency stabilization.", "popular" => false]
         ]
     ],
     "physio" => [
@@ -81,13 +81,13 @@ $services_catalog = [
         "color" => "#ea580c",
         "subtitle" => "Doorstep orthopedic rehabilitation, stroke hemiplegia gait training, chest physio, dysarthria and dysphagia swallow recovery.",
         "items" => [
-            ["name" => "Physiotherapy-Basic", "price" => "₹700", "unit" => "/ session (45m)", "tag" => "Basic Physio", "desc" => "Joint mobility, muscle activation, passive stretching and basic post-fracture rehab.", "popular" => false],
-            ["name" => "Physiotherapy-Advanced", "price" => "₹800", "unit" => "/ session (60m)", "tag" => "Advanced Rehab", "desc" => "Targeted post-orthopedic, stroke hemiplegia gait training, and muscle re-education.", "popular" => true],
-            ["name" => "Physiotherapy-Critical", "price" => "₹1,000", "unit" => "/ session (60m)", "tag" => "Chest & ICU Physio", "desc" => "Chest physiotherapy, secretion clearance, postural drainage, and ICU mobility therapy.", "popular" => false],
-            ["name" => "Physiotherapy-Critical -Delhi NCR", "price" => "₹1,500", "unit" => "/ session (60m)", "tag" => "NCR Coverage", "desc" => "Specialized critical neuro-rehabilitation and chest clearance session across Delhi NCR.", "popular" => false],
-            ["name" => "Speech and Swallow Therapy", "price" => "₹1,500", "unit" => "/ session (45m)", "tag" => "Dysphagia Rehab", "desc" => "Targeted therapy for swallowing disorders, dysarthria and vocal cord strengthening post-stroke.", "popular" => false],
-            ["name" => "Advanced Speech and Swallow Therapy", "price" => "₹2,000", "unit" => "/ session (60m)", "tag" => "Neuro Swallow Rehab", "desc" => "Neurological swallow coordination, electrical stimulation support and aphasia recovery.", "popular" => false],
-            ["name" => "Speech and Swallow Therapy Delhi NCR", "price" => "₹2,500", "unit" => "/ session (60m)", "tag" => "NCR Specialist Visit", "desc" => "Senior speech pathologist doorstep assessment and comprehensive rehabilitation across extended Delhi NCR.", "popular" => true]
+            ["name" => "Physiotherapy-Basic", "price" => "₹700", "unit" => "/ per day", "tag" => "Basic Physio", "desc" => "Joint mobility, muscle activation, passive stretching and basic post-fracture rehab.", "popular" => false],
+            ["name" => "Physiotherapy-Advanced", "price" => "₹800", "unit" => "/ per day", "tag" => "Advanced Rehab", "desc" => "Targeted post-orthopedic, stroke hemiplegia gait training, and muscle re-education.", "popular" => true],
+            ["name" => "Physiotherapy-Critical", "price" => "₹1,000", "unit" => "/ per day", "tag" => "Chest & ICU Physio", "desc" => "Chest physiotherapy, secretion clearance, postural drainage, and ICU mobility therapy.", "popular" => false],
+            ["name" => "Physiotherapy-Critical -Delhi NCR", "price" => "₹1,500", "unit" => "/ per day", "tag" => "NCR Coverage", "desc" => "Specialized critical neuro-rehabilitation and chest clearance session across Delhi NCR.", "popular" => false],
+            ["name" => "Speech and Swallow Therapy", "price" => "₹1,500", "unit" => "/ per day", "tag" => "Dysphagia Rehab", "desc" => "Targeted therapy for swallowing disorders, dysarthria and vocal cord strengthening post-stroke.", "popular" => false],
+            ["name" => "Advanced Speech and Swallow Therapy", "price" => "₹2,000", "unit" => "/ per day", "tag" => "Neuro Swallow Rehab", "desc" => "Neurological swallow coordination, electrical stimulation support and aphasia recovery.", "popular" => false],
+            ["name" => "Speech and Swallow Therapy Delhi NCR", "price" => "₹2,500", "unit" => "/ per day", "tag" => "NCR Specialist Visit", "desc" => "Senior speech pathologist doorstep assessment and comprehensive rehabilitation across extended Delhi NCR.", "popular" => true]
         ]
     ],
     "dietician" => [
@@ -97,9 +97,9 @@ $services_catalog = [
         "color" => "#10b981",
         "subtitle" => "Custom clinical nutrition for diabetes, hypertension, cardiac health, and tube feeding.",
         "items" => [
-            ["name" => "Tele- Dietician Consult", "price" => "₹1,000", "unit" => "/ phone consult", "tag" => "Online / Phone", "desc" => "Nutritional review, caloric calculation and personalized diet chart via phone/video.", "popular" => false],
-            ["name" => "Dietician Visit", "price" => "₹1,500", "unit" => "/ home visit", "tag" => "Doorstep Visit", "desc" => "Clinical dietician doorstep visit for diabetic, renal, cardiac or enteral tube feeding formulation.", "popular" => true],
-            ["name" => "Dietician Visit -Delhi NCR", "price" => "₹2,500", "unit" => "/ home visit", "tag" => "Delhi NCR Reach", "desc" => "Specialist clinical nutritionist home visit and customized therapeutic menu design.", "popular" => false]
+            ["name" => "Tele- Dietician Consult", "price" => "₹1,000", "unit" => "/ per day", "tag" => "Online / Phone", "desc" => "Nutritional review, caloric calculation and personalized diet chart via phone/video.", "popular" => false],
+            ["name" => "Dietician Visit", "price" => "₹1,500", "unit" => "/ per day", "tag" => "Doorstep Visit", "desc" => "Clinical dietician doorstep visit for diabetic, renal, cardiac or enteral tube feeding formulation.", "popular" => true],
+            ["name" => "Dietician Visit -Delhi NCR", "price" => "₹2,500", "unit" => "/ per day", "tag" => "Delhi NCR Reach", "desc" => "Specialist clinical nutritionist home visit and customized therapeutic menu design.", "popular" => false]
         ]
     ],
     "procedures" => [
@@ -109,16 +109,16 @@ $services_catalog = [
         "color" => "#6366f1",
         "subtitle" => "Sterile single-visit nursing interventions for injections, IV infusions, catheters and wound dressings.",
         "items" => [
-            ["name" => "Short infusion -30 Mins", "price" => "₹500", "unit" => "/ procedure", "tag" => "30 Mins Drip", "desc" => "Rapid IV antibiotic, paracetamol, or electrolyte piggyback infusion.", "popular" => false],
-            ["name" => "Short infusion -45 Mins", "price" => "₹800", "unit" => "/ procedure", "tag" => "45 Mins Drip", "desc" => "Controlled drip infusion, cannula check, and vital signs monitoring.", "popular" => false],
-            ["name" => "Short infusion -60 Mins", "price" => "₹1,000", "unit" => "/ procedure", "tag" => "60 Mins Drip", "desc" => "Complete 1-hour IV infusion under continuous clinical nurse supervision.", "popular" => true],
-            ["name" => "Long Infusion -90 mins", "price" => "₹1,200", "unit" => "/ procedure", "tag" => "90 Mins Infusion", "desc" => "Extended therapeutic infusion with flow rate regulation and safety monitoring.", "popular" => false],
-            ["name" => "Long Infusion -120 mins", "price" => "₹1,500", "unit" => "/ procedure", "tag" => "120 Mins Infusion", "desc" => "2-hour complex IV administration (iron infusions, biologicals, or chemotherapy support).", "popular" => false],
-            ["name" => "IM Visit", "price" => "₹300", "unit" => "/ injection visit", "tag" => "Doorstep Injection", "desc" => "Intramuscular or subcutaneous injection administration by certified nurse.", "popular" => true],
-            ["name" => "vaccination @ Home", "price" => "₹500", "unit" => "/ doorstep dose", "tag" => "Vaccine Administration", "desc" => "Doorstep vaccine administration following cold-chain maintenance protocol.", "popular" => false],
-            ["name" => "Basic Dressing", "price" => "₹500", "unit" => "/ wound change", "tag" => "Minor Wound", "desc" => "Sterile cleaning, antiseptic swab, and light protective bandage.", "popular" => false],
-            ["name" => "Surgical Dressing", "price" => "₹800", "unit" => "/ wound change", "tag" => "Post-Surgical", "desc" => "Aseptic surgical stitch dressing change, drainage check, and sterile packing.", "popular" => true],
-            ["name" => "Advanced Surgical Dressing", "price" => "₹1,200", "unit" => "/ wound change", "tag" => "Ulcer / Bedsores", "desc" => "Grade 2-4 bedsore debridement, diabetic foot ulcer dressing with specialized hydrogel/foam.", "popular" => false]
+            ["name" => "Short infusion -30 Mins", "price" => "₹500", "unit" => "/ per day", "tag" => "30 Mins Drip", "desc" => "Rapid IV antibiotic, paracetamol, or electrolyte piggyback infusion.", "popular" => false],
+            ["name" => "Short infusion -45 Mins", "price" => "₹800", "unit" => "/ per day", "tag" => "45 Mins Drip", "desc" => "Controlled drip infusion, cannula check, and vital signs monitoring.", "popular" => false],
+            ["name" => "Short infusion -60 Mins", "price" => "₹1,000", "unit" => "/ per day", "tag" => "60 Mins Drip", "desc" => "Complete 1-hour IV infusion under continuous clinical nurse supervision.", "popular" => true],
+            ["name" => "Long Infusion -90 mins", "price" => "₹1,200", "unit" => "/ per day", "tag" => "90 Mins Infusion", "desc" => "Extended therapeutic infusion with flow rate regulation and safety monitoring.", "popular" => false],
+            ["name" => "Long Infusion -120 mins", "price" => "₹1,500", "unit" => "/ per day", "tag" => "120 Mins Infusion", "desc" => "2-hour complex IV administration (iron infusions, biologicals, or chemotherapy support).", "popular" => false],
+            ["name" => "IM Visit", "price" => "₹300", "unit" => "/ per day", "tag" => "Doorstep Injection", "desc" => "Intramuscular or subcutaneous injection administration by certified nurse.", "popular" => true],
+            ["name" => "vaccination @ Home", "price" => "₹500", "unit" => "/ per day", "tag" => "Vaccine Administration", "desc" => "Doorstep vaccine administration following cold-chain maintenance protocol.", "popular" => false],
+            ["name" => "Basic Dressing", "price" => "₹500", "unit" => "/ per day", "tag" => "Minor Wound", "desc" => "Sterile cleaning, antiseptic swab, and light protective bandage.", "popular" => false],
+            ["name" => "Surgical Dressing", "price" => "₹800", "unit" => "/ per day", "tag" => "Post-Surgical", "desc" => "Aseptic surgical stitch dressing change, drainage check, and sterile packing.", "popular" => true],
+            ["name" => "Advanced Surgical Dressing", "price" => "₹1,200", "unit" => "/ per day", "tag" => "Ulcer / Bedsores", "desc" => "Grade 2-4 bedsore debridement, diabetic foot ulcer dressing with specialized hydrogel/foam.", "popular" => false]
         ]
     ],
     "diagnostics" => [
@@ -128,8 +128,8 @@ $services_catalog = [
         "color" => "#14b8a6",
         "subtitle" => "Bedside digital imaging, NABL blood tests and doorstep medicine delivery.",
         "items" => [
-            ["name" => "Portable x-Ray @Home", "price" => "₹3,000", "unit" => "/ digital scan", "tag" => "Bedside X-Ray", "desc" => "High-resolution digital digital X-Ray at bedside with instant radiologist reporting.", "popular" => true],
-            ["name" => "Portable x-Ray @Home-Delhi NCR", "price" => "₹5,000", "unit" => "/ digital scan", "tag" => "Delhi NCR Reach", "desc" => "Express portable digital X-Ray service across extended Delhi NCR.", "popular" => false],
+            ["name" => "Portable x-Ray @Home", "price" => "₹3,000", "unit" => "/ per day", "tag" => "Bedside X-Ray", "desc" => "High-resolution digital digital X-Ray at bedside with instant radiologist reporting.", "popular" => true],
+            ["name" => "Portable x-Ray @Home-Delhi NCR", "price" => "₹5,000", "unit" => "/ per day", "tag" => "Delhi NCR Reach", "desc" => "Express portable digital X-Ray service across extended Delhi NCR.", "popular" => false],
             ["name" => "Labs", "price" => "On Actuals", "unit" => "/ test MRP", "tag" => "NABL Certified", "desc" => "Doorstep blood & urine sample collection with certified online reporting.", "popular" => false],
             ["name" => "Pharmacy", "price" => "On Actuals", "unit" => "/ medicine MRP", "tag" => "Genuine Medicines", "desc" => "Doctor-prescribed medicines, IV fluids and consumables delivered to your door.", "popular" => false],
             ["name" => "Pharmacy Discount", "price" => "15% OFF", "unit" => "Special Privilege", "tag" => "Patient Benefit", "desc" => "Flat 15% discount on prescribed medicines for DM Healthcare home care patients.", "popular" => true]
