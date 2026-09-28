@@ -134,8 +134,42 @@ $services_catalog = [
             ["name" => "Pharmacy", "price" => "On Actuals", "unit" => "/ medicine MRP", "tag" => "Genuine Medicines", "desc" => "Doctor-prescribed medicines, IV fluids and consumables delivered to your door.", "popular" => false],
             ["name" => "Pharmacy Discount", "price" => "15% OFF", "unit" => "Special Privilege", "tag" => "Patient Benefit", "desc" => "Flat 15% discount on prescribed medicines for DM Healthcare home care patients.", "popular" => true]
         ]
+    ],
+    "rental" => [
+        "title" => "Medical Equipment on Rent",
+        "tab_label" => "Equipment Rental",
+        "icon" => "fa-solid fa-bed",
+        "color" => "#0284c7",
+        "subtitle" => "Sanitized hospital beds, oxygen concentrators, BiPAP, ventilators and ICU monitors on monthly rental.",
+        "items" => [
+            ["name" => "BED MANUAL WITH MATTRESS", "price" => "₹3,000", "unit" => "/ month", "tag" => "Hospital Bed", "desc" => "Manual Fowler patient bed with hospital mattress and collapsible safety side rails.", "popular" => true],
+            ["name" => "Bed Step-up", "price" => "₹500", "unit" => "/ month", "tag" => "Safety Stool", "desc" => "Sturdy anti-slip step stool for safe and easy patient bed entry and exit.", "popular" => false],
+            ["name" => "Bi-Pap ST", "price" => "₹7,000", "unit" => "/ month", "tag" => "BiPAP Machine", "desc" => "Spontaneous/Timed mode non-invasive ventilator with heated humidifier for respiratory support.", "popular" => true],
+            ["name" => "Cardiac Table", "price" => "₹4,800", "unit" => "/ month", "tag" => "Bed Table", "desc" => "Adjustable overbed hospital cardiac dining and reading table with smooth lock wheels.", "popular" => false],
+            ["name" => "C-PAP", "price" => "₹9,500", "unit" => "/ month", "tag" => "Sleep Apnea", "desc" => "Continuous positive airway pressure machine with smart pressure titration and auto-humidifier.", "popular" => false],
+            ["name" => "DOUBLE JAR SUCTION MACHINE", "price" => "₹3,000", "unit" => "/ month", "tag" => "Suction Care", "desc" => "High-vacuum dual jar medical suction apparatus for tracheostomy and airway secretion clearance.", "popular" => false],
+            ["name" => "DVT Pump", "price" => "₹6,000", "unit" => "/ month", "tag" => "DVT Prevention", "desc" => "Pneumatic sequential compression device with calf sleeves for bedridden patients.", "popular" => false],
+            ["name" => "ELECTRIC-RECLINER", "price" => "₹6,000", "unit" => "/ month", "tag" => "Motorized Recliner", "desc" => "Motorized adjustable bed backrest recliner with remote control for comfortable sitting & eating.", "popular" => false],
+            ["name" => "FIVE FUNCTION BED ELECTRIC", "price" => "₹12,500", "unit" => "/ month", "tag" => "Full Electric ICU", "desc" => "Hospital ICU 5-function electric bed with Trendelenburg tilt, CPR release & remote control.", "popular" => true],
+            ["name" => "FIVE PARA MONITOR", "price" => "₹7,500", "unit" => "/ month", "tag" => "ICU Monitor", "desc" => "Multipara patient monitor continuously tracking ECG, SpO2, NIBP, Respiration & Temperature.", "popular" => false],
+            ["name" => "Freezer", "price" => "₹9,000", "unit" => "/ month", "tag" => "Cold Chain", "desc" => "Deep freezer / biomedical temperature storage for sensitive clinical medicines and cold packs.", "popular" => false],
+            ["name" => "Infusion Pump", "price" => "₹6,000", "unit" => "/ month", "tag" => "IV Infusion", "desc" => "Microprocessor-controlled volumetric syringe and IV infusion drip pump with safety alarms.", "popular" => false],
+            ["name" => "IV Stand", "price" => "₹1,500", "unit" => "/ month", "tag" => "Saline Stand", "desc" => "4-hook height-adjustable hospital surgical stainless steel / powder-coated IV saline drip stand.", "popular" => false],
+            ["name" => "O2 Concentrator 10L", "price" => "₹8,500", "unit" => "/ month", "tag" => "High Flow 10 LPM", "desc" => "Continuous heavy-duty 10 LPM 93% ± 3% pure medical oxygen concentrator with dual flow ports.", "popular" => true],
+            ["name" => "O2 Concentrator 5L", "price" => "₹4,500", "unit" => "/ month", "tag" => "Standard 5 LPM", "desc" => "Compact 5 LPM medical oxygen concentrator with quiet compressor and built-in purity sensor.", "popular" => true],
+            ["name" => "O2 Cylinder 10 ltrs", "price" => "₹1,000", "unit" => "/ month", "tag" => "B-Type Cylinder", "desc" => "Portable 10-liter medical oxygen cylinder kit with click-style pressure regulator and trolley.", "popular" => false],
+            ["name" => "O2 Cylinder 50 ltrs", "price" => "₹2,000", "unit" => "/ month", "tag" => "Jumbo D-Type", "desc" => "Emergency high-capacity 50-liter jumbo medical oxygen cylinder for uninterrupted supply.", "popular" => false],
+            ["name" => "Vios", "price" => "₹35,000", "unit" => "/ month", "tag" => "Home ICU Ventilator", "desc" => "Hospital-grade invasive and non-invasive mechanical ventilator for critical care at home.", "popular" => true],
+            ["name" => "Freight charges Local", "price" => "₹700", "unit" => "/ dispatch", "tag" => "Local Delivery", "desc" => "Same-day doorstep delivery, loading and unloading across Faridabad and local zones.", "popular" => false],
+            ["name" => "Freight DELHI NCR", "price" => "₹3,000", "unit" => "/ dispatch", "tag" => "NCR Coverage", "desc" => "Express medical equipment dispatch across Noida, Gurugram, Delhi & Greater Noida.", "popular" => false],
+            ["name" => "DISINFECTION PROCESS", "price" => "₹2,500", "unit" => "/ protocol", "tag" => "Infection Control", "desc" => "Multi-stage hospital-grade chemical sterilization, autoclave cleaning & hygiene seal.", "popular" => false],
+            ["name" => "Oxygen Cylinder 10 ltrs Refill", "price" => "₹700", "unit" => "/ gas refill", "tag" => "O2 Refill", "desc" => "High-purity 99.5% certified medical oxygen gas refill for 10-liter portable cylinder.", "popular" => false],
+            ["name" => "Oxygen Cylinder 50 ltrs Refill", "price" => "₹1,000", "unit" => "/ gas refill", "tag" => "Jumbo Refill", "desc" => "Emergency doorstep medical oxygen gas refilling for 50-liter jumbo cylinder.", "popular" => false]
+        ]
     ]
 ];
+
+$total_catalog_items = array_sum(array_map(function($c) { return count($c['items']); }, $services_catalog));
 
 $frontend_custom_sections = '
 <style>
@@ -449,8 +483,8 @@ $frontend_custom_sections = '
     <div class="row g-3 mb-4">
         <div class="col-6 col-md-3">
             <div class="tariff-stat-card text-center">
-                <h4 class="fw-bold text-dark mb-0">51+</h4>
-                <span class="small text-muted fw-semibold" style="font-size: 0.78rem;">Standardized Services</span>
+                <h4 class="fw-bold text-dark mb-0">'.$total_catalog_items.'+</h4>
+                <span class="small text-muted fw-semibold" style="font-size: 0.78rem;">Standardized Services & Rentals</span>
             </div>
         </div>
         <div class="col-6 col-md-3">
@@ -479,26 +513,26 @@ $frontend_custom_sections = '
             <div class="col-lg-8">
                 <div class="search-input-box">
                     <i class="fa-solid fa-magnifying-glass"></i>
-                    <input type="text" id="liveTariffSearch" placeholder="Search service, procedure or rate (e.g. Basic Nursing, Japa, Doctor Visit, X-Ray, Dressing)..." onkeyup="handleLiveTariffSearch()">
+                    <input type="text" id="liveTariffSearch" placeholder="Search service, procedure, rental or rate (e.g. Basic Nursing, Hospital Bed, O2 Concentrator, BiPAP, Japa)..." onkeyup="handleLiveTariffSearch()">
                 </div>
             </div>
             <div class="col-lg-4 text-lg-end">
-                <span class="badge bg-danger bg-opacity-10 text-danger border border-danger border-opacity-25 rounded-pill px-3 py-2 fw-bold" id="totalServicesBadge">51 Services Listed</span>
+                <span class="badge bg-danger bg-opacity-10 text-danger border border-danger border-opacity-25 rounded-pill px-3 py-2 fw-bold" id="totalServicesBadge">'.$total_catalog_items.' Services & Rentals Listed</span>
             </div>
         </div>
 
         <div class="tariff-tabs-scroll-wrap pt-2 border-top" id="categoryTabsContainer">
-            <button class="tab-filter-btn active" onclick="switchTariffCategory(\'all\', this)">
+            <button class="tab-filter-btn active" data-cat="all" onclick="switchTariffCategory(\'all\', this)">
                 <i class="fa-solid fa-layer-group"></i>
-                <span>All Services</span>
-                <span class="tab-badge-num">51</span>
+                <span>All Services & Equipment</span>
+                <span class="tab-badge-num">'.$total_catalog_items.'</span>
             </button>';
 
 foreach($services_catalog as $cat_key => $cat_data) {
     $tab_txt = htmlspecialchars($cat_data['tab_label'] ?? $cat_data['title']);
     $cnt = count($cat_data['items']);
     $frontend_custom_sections .= '
-            <button class="tab-filter-btn" onclick="switchTariffCategory(\''.$cat_key.'\', this)">
+            <button class="tab-filter-btn" data-cat="'.$cat_key.'" onclick="switchTariffCategory(\''.$cat_key.'\', this)">
                 <i class="'.$cat_data['icon'].'"></i>
                 <span>'.$tab_txt.'</span>
                 <span class="tab-badge-num">'.$cnt.'</span>
@@ -746,10 +780,22 @@ function handleLiveTariffSearch() {
 
     const badge = document.getElementById("totalServicesBadge");
     if (query) {
-        badge.innerText = visibleCount + " Services Found";
+        badge.innerText = visibleCount + " Items Found";
     } else {
-        badge.innerText = "51 Services Listed";
+        badge.innerText = "'.$total_catalog_items.' Services & Rentals Listed";
     }
 }
+
+// Auto activate tab if URL has hash (e.g., #rental or #nursing)
+document.addEventListener("DOMContentLoaded", function() {
+    const rawHash = window.location.hash.replace("#", "").toLowerCase().trim();
+    if (rawHash) {
+        const btn = document.querySelector(`.tab-filter-btn[data-cat="${rawHash}"]`);
+        if (btn) {
+            btn.click();
+            btn.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "center" });
+        }
+    }
+});
 </script>
 ';

@@ -63,20 +63,6 @@ ob_start();
                     Transform your standard manual wheelchair into a powerful, road-ready motorized electric vehicle in under 10 seconds. Enjoy unmatched independence across city streets, parks, and shopping complexes.
                 </p>
 
-                <!-- Pricing Highlight Box -->
-                <div class="d-inline-flex flex-wrap align-items-center gap-3 p-2 px-3 bg-light rounded-3 border mb-3">
-                    <div>
-                        <small class="text-muted d-block" style="font-size: 0.72rem;">Starting Price</small>
-                        <span class="fs-5 fw-bold text-dm-red">₹4,500</span>
-                        <small class="text-muted">/ month</small>
-                    </div>
-                    <div class="border-start ps-3">
-                        <span class="badge bg-success bg-opacity-10 text-success border border-success rounded-pill px-2 py-1 small">
-                            <i class="fa-solid fa-check me-1"></i> Free Home Demo & Trial
-                        </span>
-                    </div>
-                </div>
-                
                 <div class="d-flex flex-wrap gap-2 mb-3">
                     <a href="tel:+919319149644" class="btn btn-dm-red rounded-pill px-3 py-2 fw-bold shadow-sm d-inline-flex align-items-center gap-2 small">
                         <i class="fa-solid fa-phone"></i> Call +91 93191 49644
