@@ -66,8 +66,8 @@ $frontend_custom_sections = '
                     <img src="assets/images/pages/hospital_bed_home.png" alt="Hospital Bed at Home" class="img-fluid rounded-4 shadow-lg w-100">
                     <!-- Accent Box -->
                     <div class="position-absolute bottom-0 end-0 bg-white p-3 rounded-4 shadow-lg mb-4 me-4 d-none d-md-block" style="border-left: 5px solid #0d6efd;">
-                        <h5 class="fw-bold text-dark mb-0">Starting from</h5>
-                        <h3 class="fw-bold text-primary mb-0">₹2,000 <span class="fs-6 text-muted fw-normal">/month</span></h3>
+                        <h5 class="fw-bold text-dark mb-0">Available for</h5>
+                        <h4 class="fw-bold text-primary mb-0">Rent & Sale</h4>
                     </div>
                 </div>
             </div>
@@ -80,56 +80,48 @@ $frontend_custom_sections = '
     <div class="text-center mb-5">
         <h2 class="fw-bold text-dark">Hospital Beds Available - Our Inventory</h2>
         <div class="mx-auto mt-3 mb-4" style="width: 60px; height: 4px; background-color: #0d6efd; border-radius: 2px;"></div>
-        <p class="text-muted mx-auto" style="max-width: 700px;">Browse all hospital bed models with current transparent pricing, specifications and photos.</p>
+        <p class="text-muted mx-auto" style="max-width: 700px;">Browse all hospital bed models with specifications and photos. Contact us for the best rental & purchase quotes.</p>
     </div>
        <div class="row g-4">
 ';// Inventory Array
 $beds = [
     [
         "name" => "BED MANUAL WITH MATTRESS", 
-        "price" => "₹3,000", 
         "tag" => "Manual with Mattress",
         "image" => "assets/images/equipment/manual_bed.jpg"
     ],
     [
         "name" => "FIVE FUNCTION BED ELECTRIC", 
-        "price" => "₹12,500", 
         "tag" => "Full Electric ICU",
         "image" => "assets/images/pages/hospital_bed_home.png"
     ],
     [
         "name" => "ELECTRIC-RECLINER", 
-        "price" => "₹6,000", 
         "tag" => "Motorized Recliner",
         "image" => "assets/images/pages/medical_equipment_bed.png"
     ],
     [
         "name" => "Bed Step-up", 
-        "price" => "₹500", 
         "tag" => "Safety Stool",
         "image" => "assets/images/equipment/bed_step_up.jpg"
     ],
     [
         "name" => "Cardiac Table", 
-        "price" => "₹4,800", 
         "tag" => "Adjustable Overbed",
         "image" => "assets/images/equipment/cardiac_table.jpg"
     ],
     [
         "name" => "IV Stand", 
-        "price" => "₹1,500", 
         "tag" => "Stainless Steel",
         "image" => "assets/images/equipment/iv_stand.jpg"
     ],
     [
         "name" => "Three Function Motorized Patient Bed", 
-        "price" => "₹6,500", 
         "tag" => "Semi-Electric",
         "image" => "assets/images/pages/hospital_bed_home.png"
     ],
     [
         "name" => "Anti-Bedsore Air Mattress", 
-        "price" => "₹1,800", 
         "tag" => "Pressure Care",
         "image" => "assets/images/pages/hospital_bed_home.png"
     ]
@@ -150,8 +142,10 @@ foreach($beds as $bed) {
                 ' . $tag_html . '
             </div>
             <div class="card-body p-3 text-center d-flex flex-column">
-                <h6 class="fw-bold text-dark mb-2">'.$bed["name"].'</h6>
-                <h5 class="fw-bold text-primary mb-0 mt-auto">'.$bed["price"].'</h5>
+                <h6 class="fw-bold text-dark mb-3">'.$bed["name"].'</h6>
+                <a href="https://wa.me/919319149644?text='.urlencode('Hi DM Healthcare, I would like to inquire about: '.$bed['name']).'" target="_blank" class="btn btn-outline-primary btn-sm rounded-pill mt-auto fw-bold py-1">
+                    <i class="fa-brands fa-whatsapp me-1"></i> Inquire Now
+                </a>
             </div>
         </div>
     </div>';
