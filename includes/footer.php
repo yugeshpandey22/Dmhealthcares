@@ -104,6 +104,7 @@
                             <li><a href="page.php?title=physician-doctor"><i class="fa-solid fa-angle-right me-1"></i> Doctor Home Visit</a></li>
                             <li><a href="page.php?title=palliative-care"><i class="fa-solid fa-angle-right me-1"></i> Palliative & Stroke Care</a></li>
                             <li><a href="page.php?title=live-in-care---24-hours-care"><i class="fa-solid fa-angle-right me-1"></i> 24-Hr Live-In Care</a></li>
+                            <li><a href="rate-cards" style="color: #e5252a; font-weight: 700;"><i class="fa-solid fa-receipt me-1"></i> Official Rate Cards</a></li>
                         </ul>
                     </div>
 
