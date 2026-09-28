@@ -161,22 +161,19 @@ $frontend_custom_sections .= '
             <div class="col-md-4">
                 <div class="p-3 bg-light rounded-3 border h-100">
                     <div class="small text-muted fw-semibold">Local Delivery</div>
-                    <h6 class="fw-bold text-dark mb-1">Freight charges Local</h6>
-                    <span class="fs-5 fw-bold text-primary">₹700</span>
+                    <h6 class="fw-bold text-dark mb-0">Freight charges Local</h6>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="p-3 bg-light rounded-3 border h-100">
                     <div class="small text-muted fw-semibold">NCR Coverage</div>
-                    <h6 class="fw-bold text-dark mb-1">Freight DELHI NCR</h6>
-                    <span class="fs-5 fw-bold text-primary">₹3,000</span>
+                    <h6 class="fw-bold text-dark mb-0">Freight DELHI NCR</h6>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="p-3 bg-light rounded-3 border h-100">
                     <div class="small text-muted fw-semibold">Hospital Protocol</div>
-                    <h6 class="fw-bold text-dark mb-1">DISINFECTION PROCESS</h6>
-                    <span class="fs-5 fw-bold text-primary">₹2,500</span>
+                    <h6 class="fw-bold text-dark mb-0">DISINFECTION PROCESS</h6>
                 </div>
             </div>
         </div>
