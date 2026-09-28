@@ -154,26 +154,50 @@ foreach($beds as $bed) {
 $frontend_custom_sections .= '
     </div>
 
-    <!-- Delivery & Disinfection Tariff -->
-    <div class="mt-5 p-4 bg-white rounded-4 border shadow-sm">
-        <h5 class="fw-bold text-dark mb-3"><i class="fa-solid fa-truck-ramp-box text-primary me-2"></i> Bed Delivery, Installation & Disinfection</h5>
-        <div class="row g-3">
+    <!-- Delivery, Setup & Disinfection Assurance -->
+    <div class="mt-5 p-4 p-md-5 bg-white rounded-4 border shadow-sm">
+        <div class="d-flex flex-wrap justify-content-between align-items-center mb-4">
+            <div>
+                <span class="badge bg-primary bg-opacity-10 text-primary rounded-pill px-3 py-1 fw-bold mb-2">Hassle-Free Care</span>
+                <h4 class="fw-bold text-dark mb-1"><i class="fa-solid fa-truck-ramp-box text-primary me-2"></i> Bed Delivery, Bedside Setup & Sanitization</h4>
+                <p class="text-muted small mb-0">End-to-end doorstep deployment managed by certified medical technicians across Delhi NCR.</p>
+            </div>
+            <div class="mt-3 mt-md-0">
+                <a href="tel:+919319149644" class="btn btn-outline-primary btn-sm rounded-pill fw-bold px-3 py-2">
+                    <i class="fa-solid fa-phone me-1"></i> Speak to Care Desk
+                </a>
+            </div>
+        </div>
+        
+        <div class="row g-4">
             <div class="col-md-4">
-                <div class="p-3 bg-light rounded-3 border h-100">
-                    <div class="small text-muted fw-semibold">Local Delivery</div>
-                    <h6 class="fw-bold text-dark mb-0">Freight charges Local</h6>
+                <div class="p-4 bg-light rounded-4 border h-100">
+                    <div class="rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 48px; height: 48px; background: rgba(13, 110, 253, 0.1); color: #0d6efd;">
+                        <i class="fa-solid fa-truck-fast fs-5"></i>
+                    </div>
+                    <span class="d-block small text-primary fw-bold text-uppercase mb-1" style="font-size: 0.75rem; letter-spacing: 0.5px;">Express Logistics</span>
+                    <h6 class="fw-bold text-dark mb-2 fs-6">Same-Day Doorstep Dispatch</h6>
+                    <p class="text-muted small mb-0" style="line-height: 1.6;">Rapid response delivery within 30–60 mins across Faridabad, Noida, Gurugram, and all Delhi NCR zones.</p>
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="p-3 bg-light rounded-3 border h-100">
-                    <div class="small text-muted fw-semibold">NCR Coverage</div>
-                    <h6 class="fw-bold text-dark mb-0">Freight DELHI NCR</h6>
+                <div class="p-4 bg-light rounded-4 border h-100">
+                    <div class="rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 48px; height: 48px; background: rgba(13, 110, 253, 0.1); color: #0d6efd;">
+                        <i class="fa-solid fa-screwdriver-wrench fs-5"></i>
+                    </div>
+                    <span class="d-block small text-primary fw-bold text-uppercase mb-1" style="font-size: 0.75rem; letter-spacing: 0.5px;">Bedside Setup</span>
+                    <h6 class="fw-bold text-dark mb-2 fs-6">Professional Installation & Demo</h6>
+                    <p class="text-muted small mb-0" style="line-height: 1.6;">Trained technicians safely assemble the bed inside the patient\'s bedroom and train family on remote & manual controls.</p>
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="p-3 bg-light rounded-3 border h-100">
-                    <div class="small text-muted fw-semibold">Hospital Protocol</div>
-                    <h6 class="fw-bold text-dark mb-0">DISINFECTION PROCESS</h6>
+                <div class="p-4 bg-light rounded-4 border h-100">
+                    <div class="rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 48px; height: 48px; background: rgba(25, 135, 84, 0.1); color: #198754;">
+                        <i class="fa-solid fa-shield-virus fs-5"></i>
+                    </div>
+                    <span class="d-block small text-success fw-bold text-uppercase mb-1" style="font-size: 0.75rem; letter-spacing: 0.5px;">Infection Control</span>
+                    <h6 class="fw-bold text-dark mb-2 fs-6">100% Medical Disinfection</h6>
+                    <p class="text-muted small mb-0" style="line-height: 1.6;">Multi-stage hospital-grade chemical sterilization and sealed wrapping prior to dispatch to ensure zero cross-infection.</p>
                 </div>
             </div>
         </div>
