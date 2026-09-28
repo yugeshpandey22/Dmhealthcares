@@ -67,7 +67,7 @@ $frontend_custom_sections = '
                     <!-- Accent Box -->
                     <div class="position-absolute bottom-0 end-0 bg-white p-3 rounded-4 shadow-lg mb-4 me-4 d-none d-md-block" style="border-left: 5px solid #0d6efd;">
                         <h5 class="fw-bold text-dark mb-0">Available for</h5>
-                        <h4 class="fw-bold text-primary mb-0">Rent & Sale</h4>
+                        <h4 class="fw-bold text-primary mb-0">Rent</h4>
                     </div>
                 </div>
             </div>
@@ -80,7 +80,7 @@ $frontend_custom_sections = '
     <div class="text-center mb-5">
         <h2 class="fw-bold text-dark">Hospital Beds Available - Our Inventory</h2>
         <div class="mx-auto mt-3 mb-4" style="width: 60px; height: 4px; background-color: #0d6efd; border-radius: 2px;"></div>
-        <p class="text-muted mx-auto" style="max-width: 700px;">Browse all hospital bed models with specifications and photos. Contact us for the best rental & purchase quotes.</p>
+        <p class="text-muted mx-auto" style="max-width: 700px;">Browse all hospital bed models with specifications and photos. Contact us for the best rental quotes.</p>
     </div>
        <div class="row g-4">
 ';// Inventory Array

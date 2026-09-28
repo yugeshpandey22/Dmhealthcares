@@ -118,7 +118,7 @@
                             <li><a href="page.php?title=wheelchairs"><i class="fa-solid fa-angle-right me-1"></i> Wheelchairs (Electric/Manual)</a></li>
                             <li><a href="page.php?title=neo-bolt-scooter"><i class="fa-solid fa-angle-right me-1"></i> NeoBolt Mobility Scooter</a></li>
                             <li><a href="page.php?title=oxygen-cylinder"><i class="fa-solid fa-angle-right me-1"></i> Oxygen Cylinders & Refills</a></li>
-                            <li><a href="page.php?title=accessories"><i class="fa-solid fa-angle-right me-1"></i> Medical Accessories & Sale</a></li>
+                            <li><a href="page.php?title=accessories"><i class="fa-solid fa-angle-right me-1"></i> Medical Accessories & Supplies</a></li>
                             <li><a href="page.php?title=preventive-healthcare-packages"><i class="fa-solid fa-angle-right me-1"></i> Annual Health Packages</a></li>
                         </ul>
                     </div>
