@@ -131,7 +131,7 @@ body {
                 "name" => "Airmatress", 
                 "price" => "₹2,500", 
                 "desc" => "Medical anti-bedsore alternating pressure bubble air mattress with quiet air compressor pump.", 
-                "image" => "assets/images/equipment/manual_bed.jpg"
+                "image" => "assets/images/equipment/air_mattress.jpg"
             ],
             [
                 "category" => "Patient Care", 
@@ -145,14 +145,14 @@ body {
                 "name" => "BED-PAN", 
                 "price" => "₹200", 
                 "desc" => "Contoured fracture bed-pan designed for comfort, ease of use and easy sanitization.", 
-                "image" => "assets/images/pages/wheelchair_recliner_commode.jpg"
+                "image" => "assets/images/equipment/bedpan.jpg"
             ],
             [
                 "category" => "Respiratory", 
                 "name" => "Bi-Pap Mask", 
                 "price" => "₹2,500", 
                 "desc" => "Ergonomic silicone cushioned full-face / nasal BiPAP mask with adjustable 4-point headgear.", 
-                "image" => "assets/images/equipment/bipap_st.jpg"
+                "image" => "assets/images/equipment/bipap_mask.jpg"
             ],
             [
                 "category" => "Respiratory", 
@@ -166,28 +166,28 @@ body {
                 "name" => "BP Apparatus Automatic", 
                 "price" => "₹2,200", 
                 "desc" => "Digital automatic upper-arm blood pressure monitor with pulse rate indicator & memory storage.", 
-                "image" => "assets/images/equipment/patient_monitor.jpg"
+                "image" => "assets/images/equipment/bp_monitor.jpg"
             ],
             [
                 "category" => "Respiratory", 
                 "name" => "C-PAP MASK", 
                 "price" => "₹2,500", 
                 "desc" => "Leak-free continuous positive airway pressure mask for obstructive sleep apnea therapy.", 
-                "image" => "assets/images/equipment/cpap.jpg"
+                "image" => "assets/images/equipment/bipap_mask.jpg"
             ],
             [
                 "category" => "Mobility & Commode", 
                 "name" => "COMMOD CHAIR WITH WHEELS", 
                 "price" => "₹6,850", 
                 "desc" => "Mobile rolling commode chair with locking castor wheels, soft cushioned seat & removable pail.", 
-                "image" => "assets/images/pages/wheelchair_recliner_commode.jpg"
+                "image" => "assets/images/equipment/commode_chair.jpg"
             ],
             [
                 "category" => "Respiratory", 
                 "name" => "CPAP NOSE MASK", 
                 "price" => "₹7,850", 
                 "desc" => "Premium ultra-light nasal cushion mask engineered for whisper-quiet sleep and minimal facial contact.", 
-                "image" => "assets/images/equipment/cpap.jpg"
+                "image" => "assets/images/equipment/bipap_mask.jpg"
             ],
             [
                 "category" => "DVT Prevention", 
@@ -224,7 +224,7 @@ body {
                 "name" => "Foldable Walker", 
                 "price" => "₹1,650", 
                 "desc" => "Lightweight anodized aluminum folding walking frame with one-button reciprocal folding.", 
-                "image" => "assets/images/pages/wheelchair_manual_standard.jpg"
+                "image" => "assets/images/equipment/walker.jpg"
             ],
             [
                 "category" => "Physiotherapy", 
@@ -238,7 +238,7 @@ body {
                 "name" => "Comod Chair Local", 
                 "price" => "₹2,250", 
                 "desc" => "Sturdy folding bedside commode chair with anti-slip rubber shoes and removable plastic pan.", 
-                "image" => "assets/images/pages/wheelchair_recliner_commode.jpg"
+                "image" => "assets/images/equipment/commode_chair.jpg"
             ],
             [
                 "category" => "Patient Care", 
@@ -252,21 +252,21 @@ body {
                 "name" => "NEBULIZATION MASK", 
                 "price" => "₹150", 
                 "desc" => "Soft medical aerosol nebulizer mask with medicine reservoir cup and flexible star-lumen tube.", 
-                "image" => "assets/images/equipment/cpap.jpg"
+                "image" => "assets/images/equipment/nebulizer.jpg"
             ],
             [
                 "category" => "Respiratory", 
                 "name" => "Nebulizer", 
                 "price" => "₹1,850", 
                 "desc" => "Heavy-duty piston compressor nebulizer for effective asthma, bronchitis & respiratory therapy.", 
-                "image" => "assets/images/equipment/suction_machine.jpg"
+                "image" => "assets/images/equipment/nebulizer.jpg"
             ],
             [
                 "category" => "Respiratory", 
                 "name" => "PORTABLE NEBULIZER", 
                 "price" => "₹4,200", 
                 "desc" => "Silent vibrating mesh handheld portable nebulizer with USB rechargeable battery for travel.", 
-                "image" => "assets/images/equipment/suction_machine.jpg"
+                "image" => "assets/images/equipment/nebulizer.jpg"
             ],
 
             // 21-30
@@ -275,28 +275,28 @@ body {
                 "name" => "PULSE OXIMETER", 
                 "price" => "₹2,200", 
                 "desc" => "Fingertip digital medical pulse oximeter with multi-directional OLED display (SpO2 & Pulse).", 
-                "image" => "assets/images/equipment/patient_monitor.jpg"
+                "image" => "assets/images/equipment/pulse_oximeter.jpg"
             ],
             [
                 "category" => "Hygiene Care", 
                 "name" => "SEAT RAISER 4 INCHES", 
                 "price" => "₹1,750", 
                 "desc" => "Elevated 4-inch commode toilet seat raiser with side locking brackets for post-hip/knee surgery.", 
-                "image" => "assets/images/pages/wheelchair_recliner_commode.jpg"
+                "image" => "assets/images/equipment/commode_chair.jpg"
             ],
             [
                 "category" => "Hygiene Care", 
                 "name" => "SEAT RAISER 6 INCHES", 
                 "price" => "₹1,850", 
                 "desc" => "Elevated 6-inch commode toilet seat raiser with ergonomic front contour and universal fit.", 
-                "image" => "assets/images/pages/wheelchair_recliner_commode.jpg"
+                "image" => "assets/images/equipment/commode_chair.jpg"
             ],
             [
                 "category" => "Patient Care", 
                 "name" => "Steamer", 
                 "price" => "₹480", 
                 "desc" => "Medical facial & respiratory warm steam inhaler vaporizer for cough, cold and nasal relief.", 
-                "image" => "assets/images/equipment/cpap.jpg"
+                "image" => "assets/images/equipment/steamer.jpg"
             ],
             [
                 "category" => "Suction Care", 
@@ -310,7 +310,7 @@ body {
                 "name" => "SUGAR MACHINE", 
                 "price" => "₹1,100", 
                 "desc" => "Digital blood glucose monitoring glucometer kit with test strips and lancing device.", 
-                "image" => "assets/images/equipment/patient_monitor.jpg"
+                "image" => "assets/images/equipment/glucometer.jpg"
             ],
             [
                 "category" => "Physiotherapy", 
@@ -361,7 +361,7 @@ body {
                 "name" => "ELECTRIC RECLINER", 
                 "price" => "₹38,500", 
                 "desc" => "Motorized adjustable bed backrest recliner with remote control for comfortable sitting & eating.", 
-                "image" => "assets/images/equipment/manual_bed.jpg"
+                "image" => "assets/images/pages/medical_equipment_bed.png"
             ],
             [
                 "category" => "Patient Room", 
@@ -389,7 +389,7 @@ body {
                 "name" => "BP Apparatus Manual", 
                 "price" => "₹1,650", 
                 "desc" => "Clinical aneroid manual sphygmomanometer blood pressure dial with adult cuff and stethoscope.", 
-                "image" => "assets/images/equipment/patient_monitor.jpg"
+                "image" => "assets/images/equipment/bp_monitor.jpg"
             ],
             [
                 "category" => "Suction Care", 
@@ -403,14 +403,14 @@ body {
                 "name" => "Tynor & Karma Walker", 
                 "price" => "₹2,250", 
                 "desc" => "Branded lightweight adult reciprocal folding mobility walker with ergonomic foam handgrips.", 
-                "image" => "assets/images/pages/wheelchair_manual_standard.jpg"
+                "image" => "assets/images/equipment/walker.jpg"
             ],
             [
                 "category" => "Ortho Support", 
                 "name" => "TYNOR ARM SLING", 
                 "price" => "₹850", 
                 "desc" => "Breathable 3-layer bonded fabric arm pouch sling for fracture immobilization and shoulder support.", 
-                "image" => "assets/images/pages/physio_rehab.png"
+                "image" => "assets/images/equipment/arm_sling.jpg"
             ],
 
             // 41-47
@@ -419,28 +419,28 @@ body {
                 "name" => "TYNOR COMOD CHAIR", 
                 "price" => "₹3,850", 
                 "desc" => "Genuine Tynor height-adjustable folding commode chair with anti-corrosion chrome finish.", 
-                "image" => "assets/images/pages/wheelchair_recliner_commode.jpg"
+                "image" => "assets/images/equipment/commode_chair.jpg"
             ],
             [
                 "category" => "Mobility Support", 
                 "name" => "TYNOR Walking Stick", 
                 "price" => "₹1,050", 
                 "desc" => "Tynor premium adjustable aluminum walking cane with ergonomic handle and wide rubber tip.", 
-                "image" => "assets/images/pages/wheelchair_manual_standard.jpg"
+                "image" => "assets/images/equipment/walking_stick.jpg"
             ],
             [
                 "category" => "Mobility Support", 
                 "name" => "Walker", 
                 "price" => "₹1,000", 
                 "desc" => "Standard lightweight rehabilitation walking frame for patient stability and balance support.", 
-                "image" => "assets/images/pages/wheelchair_manual_standard.jpg"
+                "image" => "assets/images/equipment/walker.jpg"
             ],
             [
                 "category" => "Mobility Support", 
                 "name" => "WALKING STICK", 
                 "price" => "₹750", 
                 "desc" => "Standard height-adjustable L-handle aluminum walking cane with non-slip safety rubber shoe.", 
-                "image" => "assets/images/pages/wheelchair_manual_standard.jpg"
+                "image" => "assets/images/equipment/walking_stick.jpg"
             ],
             [
                 "category" => "Mobility Support", 
