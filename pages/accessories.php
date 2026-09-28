@@ -292,11 +292,11 @@ body {
                 "image" => "assets/images/pages/wheelchair_recliner_commode.jpg"
             ],
             [
-                "category" => "Patient Room", 
-                "name" => "Stool", 
+                "category" => "Patient Care", 
+                "name" => "Steamer", 
                 "price" => "₹480", 
-                "desc" => "Heavy-duty anti-slip bedside step stool / bathroom shower stool with non-skid rubber feet.", 
-                "image" => "assets/images/equipment/bed_step_up.jpg"
+                "desc" => "Medical facial & respiratory warm steam inhaler vaporizer for cough, cold and nasal relief.", 
+                "image" => "assets/images/equipment/cpap.jpg"
             ],
             [
                 "category" => "Suction Care", 
@@ -315,7 +315,7 @@ body {
             [
                 "category" => "Physiotherapy", 
                 "name" => "Theraband", 
-                "price" => "₹150", 
+                "price" => "₹1,150", 
                 "desc" => "Professional elastic resistance exercise band for muscle strengthening, mobility & rehabilitation.", 
                 "image" => "assets/images/pages/physio_rehab.png"
             ],
@@ -359,7 +359,7 @@ body {
             [
                 "category" => "Patient Room", 
                 "name" => "ELECTRIC RECLINER", 
-                "price" => "₹3,850", 
+                "price" => "₹38,500", 
                 "desc" => "Motorized adjustable bed backrest recliner with remote control for comfortable sitting & eating.", 
                 "image" => "assets/images/equipment/manual_bed.jpg"
             ],
