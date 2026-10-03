@@ -86,6 +86,10 @@ if (!isset($short_desc) || empty($short_desc)) {
 }
 $seo_keywords = $display_title . ', ' . $display_title . ' at home, ' . $display_title . ' in Faridabad, ' . $display_title . ' in Noida, DM Healthcare, DmHealthcares, home healthcare Delhi NCR, 24/7 nursing care';
 
+// Clean Canonical URL for Search Engines
+$is_local_page = (strpos($_SERVER['HTTP_HOST'] ?? '', 'localhost') !== false || strpos($_SERVER['HTTP_HOST'] ?? '', '127.0.0.1') !== false);
+$canonical_url = $is_local_page ? ('http://' . ($_SERVER['HTTP_HOST'] ?? 'localhost') . '/DmHealthcare/' . $slug) : ('https://dmhealthcares.com/' . $slug);
+
 // Related Services for Internal Linking (SEO Booster)
 try {
     $related_stmt = $conn->prepare("SELECT title, link FROM nav_items WHERE link != :link ORDER BY RAND() LIMIT 5");

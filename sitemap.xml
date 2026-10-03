@@ -1,211 +1,239 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <!-- Home Page -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+  <!-- ==================== 1. Home Page ==================== -->
   <url>
     <loc>https://dmhealthcares.com/</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-10-03</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
-  <!-- Location & Regional Pages -->
+  <!-- ==================== 2. Location & Regional Pages ==================== -->
   <url>
     <loc>https://dmhealthcares.com/services-delhi-ncr</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://dmhealthcares.com/delhi-ncr</loc>
+    <lastmod>2026-10-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://dmhealthcares.com/faridabad</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-10-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://dmhealthcares.com/noida</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-10-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
-  <!-- Home Care Services -->
+  <!-- ==================== 3. Home Care & Nursing Services ==================== -->
   <url>
     <loc>https://dmhealthcares.com/elder-care---basic-care</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-10-03</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.85</priority>
   </url>
   <url>
     <loc>https://dmhealthcares.com/patient-care---general-nursing</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-10-03</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.85</priority>
   </url>
   <url>
     <loc>https://dmhealthcares.com/icu-care---critical-care</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-10-03</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.85</priority>
   </url>
   <url>
     <loc>https://dmhealthcares.com/live-in-care---24-hours-care</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-10-03</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.85</priority>
   </url>
   <url>
     <loc>https://dmhealthcares.com/palliative-care</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-10-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://dmhealthcares.com/assisted-living-facility</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-10-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://dmhealthcares.com/staircase-mobility-assistance</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-10-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://dmhealthcares.com/elderly-caretaker</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-10-03</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.85</priority>
   </url>
   <url>
     <loc>https://dmhealthcares.com/patient-attendant</loc>
-    <lastmod>2026-09-07</lastmod>
+    <lastmod>2026-10-03</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.85</priority>
   </url>
   <url>
     <loc>https://dmhealthcares.com/attendant-providing</loc>
-    <lastmod>2026-09-07</lastmod>
+    <lastmod>2026-10-03</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.85</priority>
   </url>
   <url>
     <loc>https://dmhealthcares.com/gda-providing</loc>
-    <lastmod>2026-09-07</lastmod>
+    <lastmod>2026-10-03</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://dmhealthcares.com/support-staff</loc>
-    <lastmod>2026-09-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.85</priority>
   </url>
   <url>
     <loc>https://dmhealthcares.com/general-duty-assistant-gda</loc>
-    <lastmod>2026-09-07</lastmod>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://dmhealthcares.com/support-staff</loc>
+    <lastmod>2026-10-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://dmhealthcares.com/qualified-nurse</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
     <loc>https://dmhealthcares.com/physician-doctor</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-10-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://dmhealthcares.com/physiotherapist</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-10-03</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.85</priority>
   </url>
 
-  <!-- Medical Equipment -->
+  <!-- ==================== 4. Medical Equipment ==================== -->
   <url>
     <loc>https://dmhealthcares.com/hospital-bed</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-10-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://dmhealthcares.com/wheelchairs</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-10-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://dmhealthcares.com/neo-bolt-scooter</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-10-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://dmhealthcares.com/oxygen-concentrator</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-10-03</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.85</priority>
   </url>
   <url>
     <loc>https://dmhealthcares.com/oxygen-cylinder</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-10-03</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.85</priority>
   </url>
   <url>
     <loc>https://dmhealthcares.com/bipap-cpap</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-10-03</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.85</priority>
   </url>
   <url>
     <loc>https://dmhealthcares.com/icu-equipment</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://dmhealthcares.com/accessories</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://dmhealthcares.com/e-store</loc>
+    <lastmod>2026-10-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dmhealthcares.com/accessories</loc>
-    <lastmod>2026-09-02</lastmod>
+    <loc>https://dmhealthcares.com/rate-cards</loc>
+    <lastmod>2026-10-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
-  <!-- Diagnostics -->
+  <!-- ==================== 5. Diagnostics & Lab Tests ==================== -->
   <url>
     <loc>https://dmhealthcares.com/ecg-at-home</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-10-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://dmhealthcares.com/sleep-test-at-home</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-10-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://dmhealthcares.com/preventive-lab-tests</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-10-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://dmhealthcares.com/preventive-healthcare-packages</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-10-03</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.85</priority>
   </url>
   <url>
     <loc>https://dmhealthcares.com/total-test</loc>
-    <lastmod>2026-09-07</lastmod>
+    <lastmod>2026-10-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
-  <!-- Careers & Engagement -->
+  <!-- ==================== 6. Careers & Opportunities ==================== -->
   <url>
     <loc>https://dmhealthcares.com/jobs-career</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-10-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>

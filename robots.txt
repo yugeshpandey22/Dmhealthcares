@@ -5,4 +5,18 @@ Disallow: /backend/
 Disallow: /config/
 Disallow: /sql/
 
+User-agent: Googlebot
+Allow: /
+Disallow: /admin/
+Disallow: /backend/
+Disallow: /config/
+Disallow: /sql/
+
+User-agent: Bingbot
+Allow: /
+Disallow: /admin/
+Disallow: /backend/
+Disallow: /config/
+Disallow: /sql/
+
 Sitemap: https://dmhealthcares.com/sitemap.xml

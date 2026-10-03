@@ -1,5 +1,7 @@
 <?php
 // Main Entry point for DmHealthcare Home Page
+$is_local_page = (strpos($_SERVER['HTTP_HOST'] ?? '', 'localhost') !== false || strpos($_SERVER['HTTP_HOST'] ?? '', '127.0.0.1') !== false);
+$canonical_url = $is_local_page ? ('http://' . ($_SERVER['HTTP_HOST'] ?? 'localhost') . '/DmHealthcare/') : 'https://dmhealthcares.com/';
 ?>
 <!-- Include the Header (contains <head>, navigation) -->
 <?php include 'includes/header.php'; ?>

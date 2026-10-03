@@ -5,6 +5,15 @@ $current_url = $protocol . $host . ($_SERVER['REQUEST_URI'] ?? '');
 $is_local = (strpos($host, 'localhost') !== false || strpos($host, '127.0.0.1') !== false);
 $base_domain_url = $protocol . $host . ($is_local ? '/DmHealthcare' : '');
 
+if (!isset($canonical_url) || empty($canonical_url)) {
+    $clean_path = parse_url($_SERVER['REQUEST_URI'] ?? '/', PHP_URL_PATH);
+    if ($is_local) {
+        $canonical_url = $protocol . $host . $clean_path;
+    } else {
+        $canonical_url = 'https://dmhealthcares.com' . $clean_path;
+    }
+}
+
 $page_title_seo = isset($seo_title) && !empty($seo_title)
     ? htmlspecialchars($seo_title)
     : 'DmHealthcare (DmHealthcares) - Best Home Healthcare, Nursing & Elder Care Services';
@@ -21,6 +30,16 @@ $page_keywords_seo = isset($seo_keywords) && !empty($seo_keywords)
 <html lang="en">
 
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-W75EM41H5Y"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-W75EM41H5Y');
+    </script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google-site-verification" content="KMZGSRjIT760bemoBIWp27Ys4M_zrjIGPZrulcFcsLI" />
@@ -32,7 +51,7 @@ $page_keywords_seo = isset($seo_keywords) && !empty($seo_keywords)
     <meta name="keywords" content="<?= $page_keywords_seo ?>">
     <meta name="author" content="DmHealthcare">
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-    <link rel="canonical" href="<?= htmlspecialchars($current_url) ?>">
+    <link rel="canonical" href="<?= htmlspecialchars($canonical_url) ?>">
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="<?= $base_domain_url ?>/assets/images/logo.png">
@@ -41,14 +60,14 @@ $page_keywords_seo = isset($seo_keywords) && !empty($seo_keywords)
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="DmHealthcare (DmHealthcares)">
-    <meta property="og:url" content="<?= htmlspecialchars($current_url) ?>">
+    <meta property="og:url" content="<?= htmlspecialchars($canonical_url) ?>">
     <meta property="og:title" content="<?= $page_title_seo ?>">
     <meta property="og:description" content="<?= $page_desc_seo ?>">
     <meta property="og:image" content="<?= $base_domain_url ?>/assets/images/logo.png">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:url" content="<?= htmlspecialchars($current_url) ?>">
+    <meta name="twitter:url" content="<?= htmlspecialchars($canonical_url) ?>">
     <meta name="twitter:title" content="<?= $page_title_seo ?>">
     <meta name="twitter:description" content="<?= $page_desc_seo ?>">
     <meta name="twitter:image" content="<?= $base_domain_url ?>/assets/images/logo.png">
