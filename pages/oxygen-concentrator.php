@@ -150,7 +150,7 @@ ob_start();
             <div class="col-md-6 col-lg-4">
                 <div class="card h-100 rounded-3 shadow-sm oc-product-card bg-white overflow-hidden">
                     <div class="position-relative">
-                        <img src="<?= $oc['image'] ? loading="lazy" decoding="async">" onerror="this.onerror=null;this.src='assets/images/pages/oxygen_concentrator_hero.jpg';" alt="<?= htmlspecialchars($oc['title']) ?>" class="card-img-top oc-product-img">
+                        <img src="<?= $oc['image'] ?>" onerror="this.onerror=null;this.src='assets/images/pages/oxygen_concentrator_hero.jpg';" alt="<?= htmlspecialchars($oc['title']) ?>" class="card-img-top oc-product-img" loading="lazy" decoding="async">
                         <span class="position-absolute top-0 start-0 m-2 badge <?= $oc['badge_class'] ?> rounded-pill px-2 py-1 shadow-sm" style="font-size: 0.72rem;">
                             <?= $oc['badge'] ?>
                         </span>

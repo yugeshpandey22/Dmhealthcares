@@ -441,7 +441,7 @@ ob_start();
                 <div class="col-lg-4 col-md-6 icu-item" data-category="<?= htmlspecialchars($item['category']) ?>">
                     <div class="icu-equip-card">
                         <div class="position-relative" style="height: 180px; overflow: hidden; background: #fff; border-top-left-radius: 20px; border-top-right-radius: 20px;">
-                            <img src="<?= htmlspecialchars($item['image']) ? loading="lazy" decoding="async">" onerror="this.onerror=null;this.src='assets/images/pages/hospital_bed_home.png';" alt="<?= htmlspecialchars($item['name']) ?>" style="width: 100%; height: 100%; object-fit: contain; padding: 6px;">
+                            <img src="<?= htmlspecialchars($item['image']) ?>" onerror="this.onerror=null;this.src='assets/images/pages/hospital_bed_home.png';" alt="<?= htmlspecialchars($item['name']) ?>" style="width: 100%; height: 100%; object-fit: contain; padding: 6px;" loading="lazy" decoding="async">
                             <span class="position-absolute top-0 end-0 m-2 badge bg-success bg-opacity-90 text-white rounded-pill px-2 py-1 shadow-sm" style="font-size: 0.7rem;"><i class="fa-solid fa-check me-1"></i>Available for Rent</span>
                         </div>
                         <div class="p-4 d-flex flex-column flex-grow-1">
