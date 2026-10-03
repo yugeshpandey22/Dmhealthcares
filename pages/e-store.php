@@ -161,38 +161,40 @@ ob_start();
 <section class="estore-hero py-4 py-lg-5">
     <div class="container py-lg-3">
         <div class="d-flex flex-wrap gap-2 mb-3 align-items-center">
+            <span class="trust-badge-pill bg-danger text-white"><i class="fa-solid fa-circle-check text-white"></i> AVAILABLE FOR RENT</span>
             <span class="trust-badge-pill"><i class="fa-solid fa-certificate text-warning"></i> ISO 9001:2015 Certified E-Store</span>
             <span class="trust-badge-pill"><i class="fa-solid fa-truck-fast text-info"></i> Same-Day Doorstep Delivery</span>
-            <span class="trust-badge-pill"><i class="fa-solid fa-shield-halved text-success"></i> 100% Genuine OEM Warranty</span>
-            <span class="trust-badge-pill"><i class="fa-solid fa-handshake text-warning"></i> Flexible Healthcare Plans</span>
+            <span class="trust-badge-pill"><i class="fa-solid fa-shield-halved text-success"></i> 100% Sanitized & Tested</span>
+            <span class="trust-badge-pill"><i class="fa-solid fa-handshake text-warning"></i> Flexible Rental Plans</span>
             <span class="trust-badge-pill"><i class="fa-solid fa-money-bill-wave text-success"></i> Cash / UPI on Delivery</span>
         </div>
 
         <div class="row align-items-center g-4">
             <div class="col-lg-7">
                 <span class="badge bg-danger bg-opacity-25 text-danger px-3 py-1 rounded-pill fw-semibold mb-2 border border-danger border-opacity-50 small">
-                    <i class="fa-solid fa-store me-1"></i> Official Medical Marketplace
+                    <i class="fa-solid fa-store me-1"></i> Available for Rent • Medical Equipment Marketplace
                 </span>
                 <h1 class="display-6 fw-bold text-white lh-sm mb-3">
-                    Medical Equipment Rental <span class="text-dm-red">Online</span>
+                    Medical Equipment <span class="text-dm-red">Available for Rent Online</span>
                 </h1>
                 <p class="text-light fs-6 mb-4 opacity-90" style="line-height: 1.7;">
-                    Explore North India's largest verified medical healthcare catalog. Get <strong>Hospital Beds, Oxygen Concentrators, BiPAP/CPAP Machines, Wheelchairs, ICU Monitors, Air Mattresses, and Medical Accessories</strong> at direct hospital rates with free home installation and titration across Delhi NCR.
+                    Explore North India's largest verified medical equipment catalog. Get <strong>Hospital Beds, Oxygen Concentrators, BiPAP/CPAP Machines, Wheelchairs, ICU Monitors, Air Mattresses, and Medical Accessories available on monthly & short-term rent</strong> at direct hospital rates with free home installation and titration across Delhi NCR.
                 </p>
 
                 <div class="d-flex flex-wrap gap-2 mb-4">
                     <a href="#products-grid" class="btn btn-dm-red btn-lg rounded-pill px-4 py-2 fw-bold shadow-sm d-inline-flex align-items-center gap-2 small">
-                        <i class="fa-solid fa-cart-shopping"></i> Explore Products Below
+                        <i class="fa-solid fa-cart-shopping"></i> Explore Rental Products
                     </a>
                     <a href="tel:+919319149644" class="btn btn-outline-light btn-lg rounded-pill px-4 py-2 fw-bold d-inline-flex align-items-center gap-2 small">
-                        <i class="fa-solid fa-phone"></i> Order on Call (+91 93191 49644)
+                        <i class="fa-solid fa-phone"></i> Rent on Call (+91 93191 49644)
                     </a>
                     <a href="https://wa.me/919319149644?text=Hello%20DM%20Healthcare,%20I%20want%20to%20rent%20medical%20equipment%20from%20your%20E-Store." target="_blank" class="btn btn-success btn-lg rounded-pill px-4 py-2 fw-bold d-inline-flex align-items-center gap-2 small">
-                        <i class="fa-brands fa-whatsapp"></i> WhatsApp Order
+                        <i class="fa-brands fa-whatsapp"></i> Rent on WhatsApp
                     </a>
                 </div>
 
                 <div class="d-flex flex-wrap gap-3 pt-3 border-top border-secondary border-opacity-50 small text-light">
+                    <div><i class="fa-solid fa-check text-success me-1"></i> Available for Rent</div>
                     <div><i class="fa-solid fa-check text-success me-1"></i> Sanitized & UV Disinfected</div>
                     <div><i class="fa-solid fa-check text-success me-1"></i> Technician Mask Fitting & Demo</div>
                     <div><i class="fa-solid fa-check text-success me-1"></i> Zero Security Deposit Options</div>
@@ -203,14 +205,14 @@ ob_start();
             <div class="col-lg-5">
                 <div class="card bg-white text-dark rounded-4 p-4 shadow-lg border-0">
                     <div class="d-flex justify-content-between align-items-center mb-2">
-                        <span class="badge bg-danger bg-opacity-10 text-danger rounded-pill px-3 py-1 small fw-bold">
-                            Quick Order Desk
+                        <span class="badge bg-success bg-opacity-10 text-success rounded-pill px-3 py-1 small fw-bold">
+                            <i class="fa-solid fa-check me-1"></i> Available for Rent
                         </span>
                         <span class="text-success small fw-bold"><i class="fa-solid fa-bolt me-1"></i> Instant Dispatch</span>
                     </div>
 
-                    <h5 class="fw-bold text-dark mb-1">Request Price Quote / Order Equipment</h5>
-                    <p class="text-muted small mb-3">Submit your requirement for immediate dispatch confirmation and best seasonal offers.</p>
+                    <h5 class="fw-bold text-dark mb-1">Rent Medical Equipment Online</h5>
+                    <p class="text-muted small mb-3">Submit your requirement for immediate rental confirmation and best seasonal offers.</p>
 
                     <form action="backend/submit_appointment.php" method="POST">
                         <input type="hidden" name="service" value="E-Store Medical Equipment Order">
@@ -222,12 +224,12 @@ ob_start();
                         </div>
                         <div class="mb-2">
                             <select name="model" class="form-select form-select-sm rounded-2" required>
-                                <option value="Oxygen Concentrator (5L / 10L)">Oxygen Concentrator (5L / 10L)</option>
-                                <option value="BiPAP / CPAP Machine & Mask Kit">BiPAP / CPAP Machine & Mask Kit</option>
-                                <option value="Motorized ICU Hospital Bed">Motorized ICU Hospital Bed</option>
-                                <option value="Wheelchair (Manual / Electric / Commode)">Wheelchair (Manual / Electric / Commode)</option>
-                                <option value="NeoBolt Motorized Scooter">NeoBolt Motorized Scooter</option>
-                                <option value="Multipara Patient Monitor">Multipara Patient Monitor</option>
+                                <option value="Oxygen Concentrator (5L / 10L) on Rent">Oxygen Concentrator (5L / 10L) on Rent</option>
+                                <option value="BiPAP / CPAP Machine on Rent">BiPAP / CPAP Machine on Rent</option>
+                                <option value="Motorized ICU Hospital Bed on Rent">Motorized ICU Hospital Bed on Rent</option>
+                                <option value="Wheelchair on Rent (Manual / Electric / Commode)">Wheelchair on Rent (Manual / Electric / Commode)</option>
+                                <option value="NeoBolt Motorized Scooter on Rent">NeoBolt Motorized Scooter on Rent</option>
+                                <option value="Multipara Patient Monitor on Rent">Multipara Patient Monitor on Rent</option>
                                 <option value="Medical Accessories & Consumables">Medical Accessories & Consumables</option>
                             </select>
                         </div>
@@ -242,10 +244,10 @@ ob_start();
                             </select>
                         </div>
                         <div class="mb-3">
-                            <textarea name="message" rows="2" class="form-control form-control-sm rounded-2" placeholder="Mention equipment model needed, duration, requirements or doctor notes..."></textarea>
+                            <textarea name="message" rows="2" class="form-control form-control-sm rounded-2" placeholder="Mention equipment model needed on rent, duration, or doctor notes..."></textarea>
                         </div>
                         <button type="submit" class="btn btn-dm-red w-100 rounded-pill fw-bold py-2 shadow-sm">
-                            <i class="fa-solid fa-paper-plane me-1"></i> Get Price & Confirm Delivery
+                            <i class="fa-solid fa-paper-plane me-1"></i> Request Equipment on Rent
                         </button>
                     </form>
                 </div>
@@ -258,9 +260,9 @@ ob_start();
 <section class="py-5 bg-light" id="products-grid">
     <div class="container">
         <div class="text-center max-w-700 mx-auto mb-4">
-            <span class="badge bg-secondary bg-opacity-10 text-secondary px-3 py-1 rounded-pill fw-semibold mb-1 small">Verified Catalog</span>
-            <h2 class="fw-bold text-dark mb-1">Browse Our Medical Equipment Catalog</h2>
-            <p class="text-muted small">Filter by category or search below. All items available for same-day delivery with cash on delivery.</p>
+            <span class="badge bg-success bg-opacity-10 text-success px-3 py-1 rounded-pill fw-semibold mb-1 small"><i class="fa-solid fa-check me-1"></i> Available for Rent</span>
+            <h2 class="fw-bold text-dark mb-1">Medical Equipment Available for Rent Online</h2>
+            <p class="text-muted small">Filter by category or search below. All medical equipment available for same-day delivery on monthly or short-term rent.</p>
         </div>
 
         <!-- Search Bar -->
@@ -268,7 +270,7 @@ ob_start();
             <div class="col-md-8 col-lg-6">
                 <div class="position-relative">
                     <i class="fa-solid fa-magnifying-glass store-search-icon"></i>
-                    <input type="text" id="storeSearch" class="form-control store-search-input" placeholder="Search by name (e.g. BiPAP, Oxygen, Wheelchair, Bed)..." onkeyup="filterStoreProducts()">
+                    <input type="text" id="storeSearch" class="form-control store-search-input" placeholder="Search equipment on rent (e.g. BiPAP, Oxygen, Wheelchair, Bed)..." onkeyup="filterStoreProducts()">
                 </div>
             </div>
         </div>
@@ -290,8 +292,11 @@ ob_start();
             <div class="col-md-6 col-lg-4 product-item" data-category="respiratory" data-title="5 LPM Oxygen Concentrator Philips Evox">
                 <div class="product-shop-card shadow-sm">
                     <span class="product-tag product-tag-hot">Top Seller</span>
-                    <div class="product-img-box">
+                    <div class="product-img-box position-relative">
                         <img src="assets/images/pages/oxygen_concentrator_5l.jpg" alt="5 LPM Oxygen Concentrator" onerror="this.onerror=null; this.src='assets/images/pages/oxygen_concentrator_hero.jpg';">
+                        <span class="badge bg-success bg-opacity-95 text-white rounded-pill px-2 py-1 position-absolute top-0 end-0 m-2 shadow-sm fw-bold" style="font-size: 0.7rem; z-index: 2;">
+                            <i class="fa-solid fa-check me-1"></i> Available for Rent
+                        </span>
                     </div>
                     <div class="p-4 d-flex flex-column justify-content-between flex-grow-1">
                         <div>
@@ -331,8 +336,11 @@ ob_start();
             <div class="col-md-6 col-lg-4 product-item" data-category="respiratory" data-title="10 LPM High Flow Oxygen Concentrator">
                 <div class="product-shop-card shadow-sm">
                     <span class="product-tag product-tag-spec">High Flow</span>
-                    <div class="product-img-box">
+                    <div class="product-img-box position-relative">
                         <img src="assets/images/pages/oxygen_concentrator_10l.jpg" alt="10 LPM Oxygen Concentrator" onerror="this.onerror=null; this.src='assets/images/pages/oxygen_concentrator_hero.jpg';">
+                        <span class="badge bg-success bg-opacity-95 text-white rounded-pill px-2 py-1 position-absolute top-0 end-0 m-2 shadow-sm fw-bold" style="font-size: 0.7rem; z-index: 2;">
+                            <i class="fa-solid fa-check me-1"></i> Available for Rent
+                        </span>
                     </div>
                     <div class="p-4 d-flex flex-column justify-content-between flex-grow-1">
                         <div>
@@ -371,8 +379,11 @@ ob_start();
             <div class="col-md-6 col-lg-4 product-item" data-category="respiratory" data-title="ResMed AirSense 10 Auto CPAP Machine">
                 <div class="product-shop-card shadow-sm">
                     <span class="product-tag product-tag-buy">Gold Standard</span>
-                    <div class="product-img-box">
+                    <div class="product-img-box position-relative">
                         <i class="fa-solid fa-mask-ventilator text-primary" style="font-size: 70px; opacity: 0.85;"></i>
+                        <span class="badge bg-success bg-opacity-95 text-white rounded-pill px-2 py-1 position-absolute top-0 end-0 m-2 shadow-sm fw-bold" style="font-size: 0.7rem; z-index: 2;">
+                            <i class="fa-solid fa-check me-1"></i> Available for Rent
+                        </span>
                     </div>
                     <div class="p-4 d-flex flex-column justify-content-between flex-grow-1">
                         <div>
@@ -411,8 +422,11 @@ ob_start();
             <div class="col-md-6 col-lg-4 product-item" data-category="respiratory" data-title="ResMed Lumis 150 VPAP ST BiPAP Machine">
                 <div class="product-shop-card shadow-sm">
                     <span class="product-tag product-tag-hot">Prescription</span>
-                    <div class="product-img-box">
+                    <div class="product-img-box position-relative">
                         <i class="fa-solid fa-lungs text-danger" style="font-size: 70px; opacity: 0.85;"></i>
+                        <span class="badge bg-success bg-opacity-95 text-white rounded-pill px-2 py-1 position-absolute top-0 end-0 m-2 shadow-sm fw-bold" style="font-size: 0.7rem; z-index: 2;">
+                            <i class="fa-solid fa-check me-1"></i> Available for Rent
+                        </span>
                     </div>
                     <div class="p-4 d-flex flex-column justify-content-between flex-grow-1">
                         <div>
@@ -451,8 +465,11 @@ ob_start();
             <div class="col-md-6 col-lg-4 product-item" data-category="beds" data-title="Motorized ICU Hospital Bed Electric 3 Function 5 Function">
                 <div class="product-shop-card shadow-sm">
                     <span class="product-tag product-tag-spec">ICU Grade</span>
-                    <div class="product-img-box">
+                    <div class="product-img-box position-relative">
                         <img src="assets/images/pages/hospital_bed_home.png" alt="Motorized ICU Bed" onerror="this.onerror=null; this.src='assets/images/pages/medical_equipment_bed.png';">
+                        <span class="badge bg-success bg-opacity-95 text-white rounded-pill px-2 py-1 position-absolute top-0 end-0 m-2 shadow-sm fw-bold" style="font-size: 0.7rem; z-index: 2;">
+                            <i class="fa-solid fa-check me-1"></i> Available for Rent
+                        </span>
                     </div>
                     <div class="p-4 d-flex flex-column justify-content-between flex-grow-1">
                         <div>
@@ -491,8 +508,11 @@ ob_start();
             <div class="col-md-6 col-lg-4 product-item" data-category="beds" data-title="Manual Fowler Hospital Bed 2 Function">
                 <div class="product-shop-card shadow-sm">
                     <span class="product-tag product-tag-buy">Budget Friendly</span>
-                    <div class="product-img-box">
+                    <div class="product-img-box position-relative">
                         <img src="assets/images/pages/medical_equipment_bed.png" alt="Manual Fowler Bed">
+                        <span class="badge bg-success bg-opacity-95 text-white rounded-pill px-2 py-1 position-absolute top-0 end-0 m-2 shadow-sm fw-bold" style="font-size: 0.7rem; z-index: 2;">
+                            <i class="fa-solid fa-check me-1"></i> Available for Rent
+                        </span>
                     </div>
                     <div class="p-4 d-flex flex-column justify-content-between flex-grow-1">
                         <div>
@@ -531,8 +551,11 @@ ob_start();
             <div class="col-md-6 col-lg-4 product-item" data-category="mobility" data-title="NeoBolt Motorized Wheelchair Attachment Scooter IIT Madras">
                 <div class="product-shop-card shadow-sm">
                     <span class="product-tag product-tag-hot">Innovation</span>
-                    <div class="product-img-box">
+                    <div class="product-img-box position-relative">
                         <img src="assets/images/pages/neobolt_hero_scooter.jpg" alt="NeoBolt Scooter">
+                        <span class="badge bg-success bg-opacity-95 text-white rounded-pill px-2 py-1 position-absolute top-0 end-0 m-2 shadow-sm fw-bold" style="font-size: 0.7rem; z-index: 2;">
+                            <i class="fa-solid fa-check me-1"></i> Available for Rent
+                        </span>
                     </div>
                     <div class="p-4 d-flex flex-column justify-content-between flex-grow-1">
                         <div>
@@ -571,8 +594,11 @@ ob_start();
             <div class="col-md-6 col-lg-4 product-item" data-category="mobility" data-title="Recliner Commode Wheelchair High Back">
                 <div class="product-shop-card shadow-sm">
                     <span class="product-tag product-tag-buy">Comfort</span>
-                    <div class="product-img-box">
+                    <div class="product-img-box position-relative">
                         <img src="assets/images/pages/wheelchair_recliner_commode.jpg" alt="Recliner Commode Wheelchair">
+                        <span class="badge bg-success bg-opacity-95 text-white rounded-pill px-2 py-1 position-absolute top-0 end-0 m-2 shadow-sm fw-bold" style="font-size: 0.7rem; z-index: 2;">
+                            <i class="fa-solid fa-check me-1"></i> Available for Rent
+                        </span>
                     </div>
                     <div class="p-4 d-flex flex-column justify-content-between flex-grow-1">
                         <div>
@@ -611,8 +637,11 @@ ob_start();
             <div class="col-md-6 col-lg-4 product-item" data-category="mobility" data-title="Electric Motorized Wheelchair Joystick Controlled">
                 <div class="product-shop-card shadow-sm">
                     <span class="product-tag product-tag-spec">Power Mobility</span>
-                    <div class="product-img-box">
+                    <div class="product-img-box position-relative">
                         <img src="assets/images/pages/wheelchair_electric_motorized.jpg" alt="Electric Motorized Wheelchair">
+                        <span class="badge bg-success bg-opacity-95 text-white rounded-pill px-2 py-1 position-absolute top-0 end-0 m-2 shadow-sm fw-bold" style="font-size: 0.7rem; z-index: 2;">
+                            <i class="fa-solid fa-check me-1"></i> Available for Rent
+                        </span>
                     </div>
                     <div class="p-4 d-flex flex-column justify-content-between flex-grow-1">
                         <div>
@@ -651,8 +680,11 @@ ob_start();
             <div class="col-md-6 col-lg-4 product-item" data-category="icu" data-title="Multipara Patient Monitor ECG SpO2 NIBP Pulse 5 Para 7 Para">
                 <div class="product-shop-card shadow-sm">
                     <span class="product-tag product-tag-spec">ICU Critical</span>
-                    <div class="product-img-box">
+                    <div class="product-img-box position-relative">
                         <i class="fa-solid fa-heart-pulse text-danger" style="font-size: 70px; opacity: 0.85;"></i>
+                        <span class="badge bg-success bg-opacity-95 text-white rounded-pill px-2 py-1 position-absolute top-0 end-0 m-2 shadow-sm fw-bold" style="font-size: 0.7rem; z-index: 2;">
+                            <i class="fa-solid fa-check me-1"></i> Available for Rent
+                        </span>
                     </div>
                     <div class="p-4 d-flex flex-column justify-content-between flex-grow-1">
                         <div>
@@ -691,8 +723,11 @@ ob_start();
             <div class="col-md-6 col-lg-4 product-item" data-category="beds" data-title="Anti Bedsore Air Mattress with Automatic Alternating Pressure Pump">
                 <div class="product-shop-card shadow-sm">
                     <span class="product-tag product-tag-hot">Essential</span>
-                    <div class="product-img-box">
+                    <div class="product-img-box position-relative">
                         <i class="fa-solid fa-water text-info" style="font-size: 70px; opacity: 0.85;"></i>
+                        <span class="badge bg-success bg-opacity-95 text-white rounded-pill px-2 py-1 position-absolute top-0 end-0 m-2 shadow-sm fw-bold" style="font-size: 0.7rem; z-index: 2;">
+                            <i class="fa-solid fa-check me-1"></i> Available for Rent
+                        </span>
                     </div>
                     <div class="p-4 d-flex flex-column justify-content-between flex-grow-1">
                         <div>
@@ -731,8 +766,11 @@ ob_start();
             <div class="col-md-6 col-lg-4 product-item" data-category="respiratory" data-title="Medical Oxygen Cylinder Kit with Regulator Flowmeter Trolley 10L 47L">
                 <div class="product-shop-card shadow-sm">
                     <span class="product-tag product-tag-spec">30-min Swap</span>
-                    <div class="product-img-box">
+                    <div class="product-img-box position-relative">
                         <i class="fa-solid fa-gas-pump text-danger" style="font-size: 70px; opacity: 0.85;"></i>
+                        <span class="badge bg-success bg-opacity-95 text-white rounded-pill px-2 py-1 position-absolute top-0 end-0 m-2 shadow-sm fw-bold" style="font-size: 0.7rem; z-index: 2;">
+                            <i class="fa-solid fa-check me-1"></i> Available for Rent
+                        </span>
                     </div>
                     <div class="p-4 d-flex flex-column justify-content-between flex-grow-1">
                         <div>
@@ -771,8 +809,11 @@ ob_start();
             <div class="col-md-6 col-lg-4 product-item" data-category="wellness" data-title="Finger Pulse Oximeter SpO2 Pulse Rate Monitor OLED Display">
                 <div class="product-shop-card shadow-sm">
                     <span class="product-tag product-tag-buy">Retail</span>
-                    <div class="product-img-box">
+                    <div class="product-img-box position-relative">
                         <i class="fa-solid fa-heart-pulse text-danger" style="font-size: 70px; opacity: 0.85;"></i>
+                        <span class="badge bg-success bg-opacity-95 text-white rounded-pill px-2 py-1 position-absolute top-0 end-0 m-2 shadow-sm fw-bold" style="font-size: 0.7rem; z-index: 2;">
+                            <i class="fa-solid fa-check me-1"></i> Available for Rent / Buy
+                        </span>
                     </div>
                     <div class="p-4 d-flex flex-column justify-content-between flex-grow-1">
                         <div>
@@ -812,8 +853,11 @@ ob_start();
             <div class="col-md-6 col-lg-4 product-item" data-category="wellness" data-title="Portable Mesh Nebulizer Inhaler Silent Pocket Size">
                 <div class="product-shop-card shadow-sm">
                     <span class="product-tag product-tag-buy">Portable</span>
-                    <div class="product-img-box">
+                    <div class="product-img-box position-relative">
                         <i class="fa-solid fa-spray-can-sparkles text-info" style="font-size: 70px; opacity: 0.85;"></i>
+                        <span class="badge bg-success bg-opacity-95 text-white rounded-pill px-2 py-1 position-absolute top-0 end-0 m-2 shadow-sm fw-bold" style="font-size: 0.7rem; z-index: 2;">
+                            <i class="fa-solid fa-check me-1"></i> Available for Rent / Buy
+                        </span>
                     </div>
                     <div class="p-4 d-flex flex-column justify-content-between flex-grow-1">
                         <div>
@@ -853,8 +897,11 @@ ob_start();
             <div class="col-md-6 col-lg-4 product-item" data-category="accessories" data-title="CPAP BiPAP Masks Nasal Full Face ResMed Philips Tubing Headgear">
                 <div class="product-shop-card shadow-sm">
                     <span class="product-tag product-tag-buy">Original Spares</span>
-                    <div class="product-img-box">
+                    <div class="product-img-box position-relative">
                         <i class="fa-solid fa-head-side-mask text-primary" style="font-size: 70px; opacity: 0.85;"></i>
+                        <span class="badge bg-success bg-opacity-95 text-white rounded-pill px-2 py-1 position-absolute top-0 end-0 m-2 shadow-sm fw-bold" style="font-size: 0.7rem; z-index: 2;">
+                            <i class="fa-solid fa-check me-1"></i> Available for Rent / Buy
+                        </span>
                     </div>
                     <div class="p-4 d-flex flex-column justify-content-between flex-grow-1">
                         <div>

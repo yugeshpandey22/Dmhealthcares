@@ -168,6 +168,7 @@ ob_start();
 <section class="icu-hero-premium py-5">
     <div class="container py-lg-3 position-relative" style="z-index: 2;">
         <div class="d-flex flex-wrap gap-2 mb-3 align-items-center">
+            <span class="trust-badge-pill bg-danger text-white"><i class="fa-solid fa-circle-check text-white"></i> AVAILABLE FOR RENT</span>
             <span class="trust-badge-pill"><i class="fa-solid fa-certificate text-warning"></i> ISO 9001:2015 & CE Certified Devices</span>
             <span class="trust-badge-pill"><i class="fa-solid fa-truck-fast text-info"></i> 30-60 Mins Rapid Dispatch in NCR</span>
             <span class="trust-badge-pill"><i class="fa-solid fa-screwdriver-wrench text-success"></i> Free Biomedical Installation</span>
@@ -177,25 +178,25 @@ ob_start();
         <div class="row align-items-center g-4">
             <div class="col-lg-7">
                 <span class="badge bg-danger bg-opacity-25 text-danger px-3 py-1 rounded-pill fw-semibold mb-2 border border-danger border-opacity-50 small">
-                    <i class="fa-solid fa-heart-pulse me-1"></i> Critical Care Medical Infrastructure
+                    <i class="fa-solid fa-check-circle me-1"></i> Available for Rent • Critical Care Medical Infrastructure
                 </span>
                 <h1 class="display-5 fw-bold text-white lh-sm mb-3">
-                    Advanced <span class="text-dm-red">ICU Equipment</span> & Critical Care Setup
+                    Advanced <span class="text-dm-red">ICU Equipment Available for Rent</span> & Critical Care Setup
                 </h1>
                 <p class="text-light fs-6 mb-4 opacity-90" style="line-height: 1.7;">
-                    Delivering hospital-grade, precision-calibrated ICU machinery for <strong>Home ICU Setups, Hospitals, Nursing Homes, and Emergency Rooms</strong> across Delhi NCR. Fully tested and backed by certified biomedical engineers and 24/7 technical response.
+                    Delivering hospital-grade, precision-calibrated ICU machinery <strong>available for rent</strong> for <strong>Home ICU Setups, Hospitals, Nursing Homes, and Emergency Rooms</strong> across Delhi NCR. Fully tested and backed by certified biomedical engineers and 24/7 technical response.
                 </p>
 
                 <!-- Quick Action CTA Buttons -->
                 <div class="d-flex flex-wrap gap-2 mb-4">
                     <a href="#featured-products" class="btn btn-dm-red btn-lg rounded-pill px-4 py-2 fw-bold shadow-sm d-inline-flex align-items-center gap-2 small">
-                        <i class="fa-solid fa-microchip"></i> Explore Equipment Catalog
+                        <i class="fa-solid fa-microchip"></i> Explore Rental Equipment
                     </a>
                     <a href="tel:+919319149644" class="btn btn-outline-light btn-lg rounded-pill px-4 py-2 fw-bold d-inline-flex align-items-center gap-2 small">
                         <i class="fa-solid fa-phone-volume"></i> Emergency Hotline: +91 93191 49644
                     </a>
-                    <a href="https://wa.me/919319149644?text=Hello%20DM%20Healthcare,%20I%20want%20to%20inquire%20about%20ICU%20Equipment%20and%20Home%20ICU%20Setup." target="_blank" class="btn btn-success btn-lg rounded-pill px-4 py-2 fw-bold d-inline-flex align-items-center gap-2 small">
-                        <i class="fa-brands fa-whatsapp"></i> WhatsApp Inquiry
+                    <a href="https://wa.me/919319149644?text=Hello%20DM%20Healthcare,%20I%20want%20to%20rent%20ICU%20Equipment%20and%20Home%20ICU%20Setup." target="_blank" class="btn btn-success btn-lg rounded-pill px-4 py-2 fw-bold d-inline-flex align-items-center gap-2 small">
+                        <i class="fa-brands fa-whatsapp"></i> Rent on WhatsApp
                     </a>
                 </div>
 
@@ -223,10 +224,10 @@ ob_start();
                         </div>
                     </div>
                     <div class="col-6 col-sm-3 d-flex align-items-center gap-2">
-                        <i class="fa-solid fa-user-doctor text-info fs-5"></i>
+                        <i class="fa-solid fa-circle-check text-info fs-5"></i>
                         <div>
-                            <span class="d-block fw-bold">Biomedical Team</span>
-                            <span class="opacity-75" style="font-size: 0.72rem;">On-Site Calibration</span>
+                            <span class="d-block fw-bold">Available for Rent</span>
+                            <span class="opacity-75" style="font-size: 0.72rem;">Monthly & Daily</span>
                         </div>
                     </div>
                 </div>
@@ -296,10 +297,10 @@ ob_start();
 <section id="featured-products" class="py-5" style="background-color: var(--dm-light-bg);">
     <div class="container py-lg-3">
         <div class="text-center max-w-700 mx-auto mb-4">
-            <span class="badge bg-danger bg-opacity-10 text-danger px-3 py-1 rounded-pill fw-semibold mb-2 small">Full Clinical Range</span>
-            <h2 class="fw-bold text-dark mb-2">Featured ICU Equipment & Machinery</h2>
+            <span class="badge bg-success bg-opacity-10 text-success px-3 py-1 rounded-pill fw-semibold mb-2 small"><i class="fa-solid fa-check me-1"></i> Available for Rent</span>
+            <h2 class="fw-bold text-dark mb-2">ICU Equipment Available for Rent</h2>
             <div class="mx-auto mb-3" style="width: 60px; height: 4px; background-color: var(--dm-red); border-radius: 2px;"></div>
-            <p class="text-muted small">Explore our extensive range of high-precision, certified medical equipment designed for critical care units, step-down wards, and comprehensive home ICU setups.</p>
+            <p class="text-muted small">Explore our extensive range of high-precision, certified medical equipment available for rent and setup in critical care units, step-down wards, and comprehensive home ICU setups.</p>
         </div>
 
         <!-- Category Filter Tabs -->
@@ -441,6 +442,7 @@ ob_start();
                     <div class="icu-equip-card">
                         <div class="position-relative" style="height: 180px; overflow: hidden; background: #fff; border-top-left-radius: 20px; border-top-right-radius: 20px;">
                             <img src="<?= htmlspecialchars($item['image']) ?>" onerror="this.onerror=null;this.src='assets/images/pages/hospital_bed_home.png';" alt="<?= htmlspecialchars($item['name']) ?>" style="width: 100%; height: 100%; object-fit: contain; padding: 6px;">
+                            <span class="position-absolute top-0 end-0 m-2 badge bg-success bg-opacity-90 text-white rounded-pill px-2 py-1 shadow-sm" style="font-size: 0.7rem;"><i class="fa-solid fa-check me-1"></i>Available for Rent</span>
                         </div>
                         <div class="p-4 d-flex flex-column flex-grow-1">
                             <div class="d-flex justify-content-between align-items-center mb-2">
@@ -452,7 +454,7 @@ ob_start();
                             
                             <!-- Price Display -->
                             <div class="d-flex justify-content-between align-items-center mb-3 p-2 bg-light rounded-3 border">
-                                <span class="small text-muted fw-semibold">Service Price:</span>
+                                <span class="small text-muted fw-semibold">Rent Price:</span>
                                 <span class="fs-5 fw-bold text-dm-red"><?= htmlspecialchars($item['price']) ?></span>
                             </div>
 
@@ -463,11 +465,11 @@ ob_start();
                             </ul>
 
                             <div class="d-grid gap-2 mt-auto">
-                                <a href="https://wa.me/919319149644?text=<?= urlencode("Hello DM Healthcare, I want to inquire about " . $item['name'] . " (Price: " . $item['price'] . ")") ?>" target="_blank" class="btn btn-success btn-sm rounded-pill fw-bold py-2">
-                                    <i class="fa-brands fa-whatsapp me-1"></i> Inquire on WhatsApp
+                                <a href="https://wa.me/919319149644?text=<?= urlencode("Hello DM Healthcare, I want to rent " . $item['name'] . " (Rent Price: " . $item['price'] . ")") ?>" target="_blank" class="btn btn-success btn-sm rounded-pill fw-bold py-2">
+                                    <i class="fa-brands fa-whatsapp me-1"></i> Rent on WhatsApp
                                 </a>
                                 <a href="index.php#appointment" class="btn btn-outline-secondary btn-sm rounded-pill fw-semibold py-1">
-                                    Request Quotation / Setup
+                                    Request Rental Setup / Quote
                                 </a>
                             </div>
                         </div>

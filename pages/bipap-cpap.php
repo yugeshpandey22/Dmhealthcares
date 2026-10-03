@@ -245,6 +245,7 @@ ob_start();
     <div class="container py-lg-3">
         <!-- Trust Bar Top -->
         <div class="d-flex flex-wrap gap-2 mb-3 align-items-center">
+            <span class="trust-pill bg-danger text-white"><i class="fa-solid fa-circle-check text-white"></i> AVAILABLE FOR RENT</span>
             <span class="trust-pill"><i class="fa-solid fa-certificate text-warning"></i> ISO CERTIFIED 9001:2015</span>
             <span class="trust-pill"><i class="fa-solid fa-sliders text-info"></i> Prescription Settings Calibrated</span>
             <span class="trust-pill"><i class="fa-solid fa-clock-rotate-left text-success"></i> 24/7 Technical Support</span>
@@ -255,24 +256,24 @@ ob_start();
         <div class="row align-items-center g-4">
             <div class="col-lg-7">
                 <span class="badge bg-danger bg-opacity-25 text-danger px-3 py-1 rounded-pill fw-semibold mb-2 border border-danger border-opacity-50 small">
-                    <i class="fa-solid fa-lungs me-1"></i> Non-Invasive Ventilation & Sleep Apnea Therapy
+                    <i class="fa-solid fa-lungs me-1"></i> Available for Rent • Non-Invasive Ventilation & Sleep Apnea Therapy
                 </span>
                 <h1 class="display-6 fw-bold text-white lh-sm mb-3">
-                    BiPAP, CPAP & Ventilator on Rent <span class="text-dm-red">at Home</span>
+                    BiPAP, CPAP & Ventilator <span class="text-dm-red">Available for Rent at Home</span>
                 </h1>
                 <p class="text-light fs-6 mb-3 opacity-90" style="line-height: 1.7;">
-                    Respiratory equipment on rent — <strong>BiPAP, CPAP, and home ventilators</strong> — supports patients with respiratory failure, COPD, sleep apnea, post-ICU weaning, and ventilator dependency. <strong>DM Healthcare</strong> delivers, sets up, and programs respiratory machines to your doctor's precise prescription right at your home.
+                    Respiratory equipment <strong>available for rent</strong> — <strong>BiPAP, CPAP, and home ventilators</strong> — supports patients with respiratory failure, COPD, sleep apnea, post-ICU weaning, and ventilator dependency. <strong>DM Healthcare</strong> delivers, sets up, and programs respiratory machines to your doctor's precise prescription right at your home.
                 </p>
                 <p class="text-light opacity-75 small mb-4">
-                    <i class="fa-solid fa-location-dot text-dm-red me-1"></i> Available across <strong>Delhi, Faridabad, Noida, Gurugram, Ghaziabad, Chandigarh Tricity, Ludhiana, Jalandhar, Patiala, Amritsar</strong> and 15+ North India cities. Our certified technicians program machine settings per prescription and train your family on safe operation, mask fitting, and daily maintenance.
+                    <i class="fa-solid fa-location-dot text-dm-red me-1"></i> Available on rent across <strong>Delhi, Faridabad, Noida, Gurugram, Ghaziabad, Chandigarh Tricity, Ludhiana, Jalandhar, Patiala, Amritsar</strong> and 15+ North India cities. Our certified technicians program machine settings per prescription and train your family on safe operation, mask fitting, and daily maintenance.
                 </p>
 
                 <div class="d-flex flex-wrap gap-2 mb-4">
                     <a href="tel:+919319149644" class="btn btn-dm-red btn-lg rounded-pill px-4 py-2 fw-bold shadow-sm d-inline-flex align-items-center gap-2 small">
-                        <i class="fa-solid fa-phone-volume"></i> Call for Price & Availability (+91 93191 49644)
+                        <i class="fa-solid fa-phone-volume"></i> Rent BiPAP/CPAP (+91 93191 49644)
                     </a>
                     <a href="https://wa.me/919319149644?text=I+need+BiPAP+CPAP+on+Rent" target="_blank" class="btn btn-success btn-lg rounded-pill px-4 py-2 fw-bold d-inline-flex align-items-center gap-2 small">
-                        <i class="fa-brands fa-whatsapp"></i> WhatsApp Now
+                        <i class="fa-brands fa-whatsapp"></i> Rent on WhatsApp
                     </a>
                 </div>
 
@@ -287,7 +288,7 @@ ob_start();
                     <div class="col-sm-6">
                         <div class="d-flex align-items-center gap-2 small text-light">
                             <i class="fa-solid fa-circle-check text-success"></i>
-                            <span>Humidifier & Mask Included</span>
+                            <span>Humidifier & Mask Included in Rent</span>
                         </div>
                     </div>
                 </div>
@@ -297,13 +298,13 @@ ob_start();
             <div class="col-lg-5">
                 <div class="card bg-white text-dark rounded-4 p-4 shadow-lg border-0">
                     <div class="d-flex justify-content-between align-items-center mb-2">
-                        <span class="badge bg-danger bg-opacity-10 text-danger rounded-pill px-3 py-1 small fw-bold">
-                            Quick Consultation & Dispatch
+                        <span class="badge bg-success bg-opacity-10 text-success rounded-pill px-3 py-1 small fw-bold">
+                            <i class="fa-solid fa-check me-1"></i> Available for Rent
                         </span>
-                        <span class="fw-bold text-dm-red fs-6">From ₹7,000</span>
+                        <span class="fw-bold text-dm-red fs-6">From ₹7,000/mo</span>
                     </div>
 
-                    <h5 class="fw-bold text-dark mb-2">Request Respiratory Machine Setup</h5>
+                    <h5 class="fw-bold text-dark mb-2">Rent Respiratory Machine</h5>
                     <p class="text-muted small mb-3">Share your doctor's prescription for instant model selection and calibrated delivery.</p>
 
                     <form action="backend/submit_appointment.php" method="POST">
@@ -352,8 +353,11 @@ ob_start();
                 <div class="equip-tier-card featured p-4 h-100 d-flex flex-column justify-content-between">
                     <span class="featured-badge"><i class="fa-solid fa-star me-1"></i> Most Prescribed</span>
                     <div>
-                        <div class="product-img-box mb-3">
+                        <div class="product-img-box mb-3 position-relative">
                             <img src="assets/images/equipment/bipap_st.jpg" alt="Bi-Pap ST">
+                            <span class="badge bg-success bg-opacity-95 text-white rounded-pill px-2 py-1 position-absolute top-0 start-0 m-2 shadow-sm fw-bold" style="font-size: 0.72rem; z-index: 2;">
+                                <i class="fa-solid fa-check me-1"></i> Available for Rent
+                            </span>
                         </div>
                         <div class="d-flex justify-content-between align-items-center mb-1">
                             <h4 class="fw-bold text-dark mb-0">Bi-Pap ST</h4>
@@ -385,8 +389,11 @@ ob_start();
             <div class="col-md-4">
                 <div class="equip-tier-card p-4 h-100 d-flex flex-column justify-content-between">
                     <div>
-                        <div class="product-img-box mb-3">
+                        <div class="product-img-box mb-3 position-relative">
                             <img src="assets/images/equipment/cpap.jpg" alt="C-PAP">
+                            <span class="badge bg-success bg-opacity-95 text-white rounded-pill px-2 py-1 position-absolute top-0 start-0 m-2 shadow-sm fw-bold" style="font-size: 0.72rem; z-index: 2;">
+                                <i class="fa-solid fa-check me-1"></i> Available for Rent
+                            </span>
                         </div>
                         <div class="d-flex justify-content-between align-items-center mb-1">
                             <h4 class="fw-bold text-dark mb-0">C-PAP</h4>
@@ -418,8 +425,11 @@ ob_start();
             <div class="col-md-4">
                 <div class="equip-tier-card p-4 h-100 d-flex flex-column justify-content-between">
                     <div>
-                        <div class="product-img-box mb-3">
+                        <div class="product-img-box mb-3 position-relative">
                             <img src="assets/images/equipment/bipap_st.jpg" alt="Home Ventilator (Vios)">
+                            <span class="badge bg-success bg-opacity-95 text-white rounded-pill px-2 py-1 position-absolute top-0 start-0 m-2 shadow-sm fw-bold" style="font-size: 0.72rem; z-index: 2;">
+                                <i class="fa-solid fa-check me-1"></i> Available for Rent
+                            </span>
                         </div>
                         <div class="d-flex justify-content-between align-items-center mb-1">
                             <h4 class="fw-bold text-dark mb-0">Home Ventilator (Vios)</h4>
@@ -842,6 +852,9 @@ ob_start();
                     <div>
                         <div class="product-img-box mb-3 position-relative" style="height: 200px;">
                             <img src="assets/images/equipment/bipap_st.jpg" alt="Bi-Pap ST">
+                            <span class="badge bg-success bg-opacity-95 text-white rounded-pill px-2 py-1 position-absolute top-0 start-0 m-3 shadow-sm fw-bold" style="font-size: 0.72rem; z-index: 2;">
+                                <i class="fa-solid fa-check me-1"></i> Available for Rent
+                            </span>
                             <span class="badge bg-danger rounded-pill px-3 py-1 position-absolute top-0 end-0 m-3 shadow-sm fw-bold small">
                                 <i class="fa-solid fa-fire me-1"></i> Most Popular
                             </span>
@@ -877,6 +890,9 @@ ob_start();
                     <div>
                         <div class="product-img-box mb-3 position-relative" style="height: 200px;">
                             <img src="assets/images/equipment/cpap.jpg" alt="C-PAP">
+                            <span class="badge bg-success bg-opacity-95 text-white rounded-pill px-2 py-1 position-absolute top-0 start-0 m-3 shadow-sm fw-bold" style="font-size: 0.72rem; z-index: 2;">
+                                <i class="fa-solid fa-check me-1"></i> Available for Rent
+                            </span>
                             <span class="badge bg-primary rounded-pill px-3 py-1 position-absolute top-0 end-0 m-3 shadow-sm fw-bold small">
                                 <i class="fa-solid fa-moon me-1"></i> Sleep Apnea
                             </span>
@@ -915,6 +931,9 @@ ob_start();
                     <div>
                         <div class="product-img-box mb-3 position-relative">
                             <img src="assets/images/equipment/bipap_st.jpg" alt="ResMed BiPAP Machine">
+                            <span class="badge bg-success bg-opacity-95 text-white rounded-pill px-2 py-1 position-absolute top-0 start-0 m-2 shadow-sm fw-bold" style="font-size: 0.7rem; z-index: 2;">
+                                <i class="fa-solid fa-check me-1"></i> Available for Rent
+                            </span>
                             <span class="badge bg-danger position-absolute top-0 end-0 m-2 rounded-pill px-2 py-1 small fw-semibold">Popular</span>
                         </div>
                         <h6 class="fw-bold text-dark mb-1">ResMed BiPAP Machine</h6>
@@ -942,6 +961,9 @@ ob_start();
                     <div>
                         <div class="product-img-box mb-3 position-relative">
                             <img src="assets/images/equipment/bipap_st.jpg" alt="BiPAP Nidek">
+                            <span class="badge bg-success bg-opacity-95 text-white rounded-pill px-2 py-1 position-absolute top-0 start-0 m-2 shadow-sm fw-bold" style="font-size: 0.7rem; z-index: 2;">
+                                <i class="fa-solid fa-check me-1"></i> Available for Rent
+                            </span>
                             <span class="badge bg-primary position-absolute top-0 end-0 m-2 rounded-pill px-2 py-1 small fw-semibold">Economical</span>
                         </div>
                         <h6 class="fw-bold text-dark mb-1">BiPAP Nidek</h6>
@@ -969,6 +991,9 @@ ob_start();
                     <div>
                         <div class="product-img-box mb-3 position-relative">
                             <img src="assets/images/equipment/cpap.jpg" alt="Auto CPAP Machine">
+                            <span class="badge bg-success bg-opacity-95 text-white rounded-pill px-2 py-1 position-absolute top-0 start-0 m-2 shadow-sm fw-bold" style="font-size: 0.7rem; z-index: 2;">
+                                <i class="fa-solid fa-check me-1"></i> Available for Rent
+                            </span>
                             <span class="badge bg-success position-absolute top-0 end-0 m-2 rounded-pill px-2 py-1 small fw-semibold">Sleep Apnea</span>
                         </div>
                         <h6 class="fw-bold text-dark mb-1">Auto CPAP Machine</h6>
@@ -996,6 +1021,9 @@ ob_start();
                     <div>
                         <div class="product-img-box mb-3 position-relative">
                             <img src="assets/images/equipment/bipap_st.jpg" alt="Topson BiPAP SoundSleep">
+                            <span class="badge bg-success bg-opacity-95 text-white rounded-pill px-2 py-1 position-absolute top-0 start-0 m-2 shadow-sm fw-bold" style="font-size: 0.7rem; z-index: 2;">
+                                <i class="fa-solid fa-check me-1"></i> Available for Rent
+                            </span>
                             <span class="badge bg-secondary position-absolute top-0 end-0 m-2 rounded-pill px-2 py-1 small fw-semibold">Affordable</span>
                         </div>
                         <h6 class="fw-bold text-dark mb-1">Topson BiPAP SoundSleep</h6>
@@ -1023,6 +1051,9 @@ ob_start();
                     <div>
                         <div class="product-img-box mb-3 position-relative">
                             <img src="assets/images/equipment/bipap_st.jpg" alt="ResMed Lumis 150 VPAP 4G">
+                            <span class="badge bg-success bg-opacity-95 text-white rounded-pill px-2 py-1 position-absolute top-0 start-0 m-2 shadow-sm fw-bold" style="font-size: 0.7rem; z-index: 2;">
+                                <i class="fa-solid fa-check me-1"></i> Available for Rent
+                            </span>
                             <span class="badge bg-danger position-absolute top-0 end-0 m-2 rounded-pill px-2 py-1 small fw-semibold">Advanced ST</span>
                         </div>
                         <h6 class="fw-bold text-dark mb-1">ResMed Lumis 150 VPAP 4G</h6>
@@ -1050,6 +1081,9 @@ ob_start();
                     <div>
                         <div class="product-img-box mb-3 position-relative">
                             <img src="assets/images/equipment/cpap.jpg" alt="ResMed AirSense 10 Auto CPAP">
+                            <span class="badge bg-success bg-opacity-95 text-white rounded-pill px-2 py-1 position-absolute top-0 start-0 m-2 shadow-sm fw-bold" style="font-size: 0.7rem; z-index: 2;">
+                                <i class="fa-solid fa-check me-1"></i> Available for Rent
+                            </span>
                             <span class="badge bg-primary position-absolute top-0 end-0 m-2 rounded-pill px-2 py-1 small fw-semibold">Gold Standard</span>
                         </div>
                         <h6 class="fw-bold text-dark mb-1">ResMed AirSense 10 Auto CPAP</h6>
@@ -1077,6 +1111,9 @@ ob_start();
                     <div>
                         <div class="product-img-box mb-3 position-relative">
                             <img src="assets/images/equipment/bipap_st.jpg" alt="ResMed Floton ST BiPAP">
+                            <span class="badge bg-success bg-opacity-95 text-white rounded-pill px-2 py-1 position-absolute top-0 start-0 m-2 shadow-sm fw-bold" style="font-size: 0.7rem; z-index: 2;">
+                                <i class="fa-solid fa-check me-1"></i> Available for Rent
+                            </span>
                             <span class="badge bg-secondary position-absolute top-0 end-0 m-2 rounded-pill px-2 py-1 small fw-semibold">Backup Rate</span>
                         </div>
                         <h6 class="fw-bold text-dark mb-1">ResMed Floton ST BiPAP</h6>
@@ -1104,6 +1141,9 @@ ob_start();
                     <div>
                         <div class="product-img-box mb-3 position-relative">
                             <img src="assets/images/equipment/bipap_st.jpg" alt="Evox NoahSleep 25ST / 30ST">
+                            <span class="badge bg-success bg-opacity-95 text-white rounded-pill px-2 py-1 position-absolute top-0 start-0 m-2 shadow-sm fw-bold" style="font-size: 0.7rem; z-index: 2;">
+                                <i class="fa-solid fa-check me-1"></i> Available for Rent
+                            </span>
                             <span class="badge bg-danger position-absolute top-0 end-0 m-2 rounded-pill px-2 py-1 small fw-semibold">Heavy Duty</span>
                         </div>
                         <h6 class="fw-bold text-dark mb-1">Evox NoahSleep 25ST / 30ST</h6>
@@ -1131,6 +1171,9 @@ ob_start();
                     <div>
                         <div class="product-img-box mb-3 position-relative">
                             <img src="assets/images/equipment/cpap.jpg" alt="Evox Auto BiPAP & CPAP Series">
+                            <span class="badge bg-success bg-opacity-95 text-white rounded-pill px-2 py-1 position-absolute top-0 start-0 m-2 shadow-sm fw-bold" style="font-size: 0.7rem; z-index: 2;">
+                                <i class="fa-solid fa-check me-1"></i> Available for Rent
+                            </span>
                             <span class="badge bg-success position-absolute top-0 end-0 m-2 rounded-pill px-2 py-1 small fw-semibold">Auto Fleet</span>
                         </div>
                         <h6 class="fw-bold text-dark mb-1">Evox Auto BiPAP & CPAP Series</h6>

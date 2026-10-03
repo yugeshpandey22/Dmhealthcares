@@ -37,10 +37,10 @@ $frontend_custom_sections = '
     <div class="container py-4">
         <div class="row align-items-center">
             <div class="col-lg-6 mb-4 mb-lg-0 pe-lg-5">
-                <span class="badge equip-badge px-3 py-2 rounded-pill mb-3 fw-bold shadow-sm">Hospital-Grade Bed & Care Services</span>
-                <h1 class="fw-bold text-dark mb-4 display-5">Premium Hospital Beds for Home</h1>
-                <p class="text-muted mb-4 lead">Ensure maximum comfort and rapid recovery for your loved ones. We provide high-quality, sanitized hospital beds delivered and installed directly at your home.</p>
-                <p class="text-muted mb-4">Whether you need a basic manual bed for short-term recovery or a fully motorized ICU bed for long-term critical care, we have the perfect solution to meet your medical requirements.</p>
+                <span class="badge bg-danger px-3 py-2 rounded-pill mb-3 fw-bold shadow-sm"><i class="fa-solid fa-check-circle me-1"></i> Available for Rent</span>
+                <h1 class="fw-bold text-dark mb-4 display-5">Premium Hospital Beds Available for Rent at Home</h1>
+                <p class="text-muted mb-4 lead">Ensure maximum comfort and rapid recovery for your loved ones. We provide high-quality, sanitized hospital beds <strong>available for rent</strong> delivered and installed directly at your home.</p>
+                <p class="text-muted mb-4">Whether you need a basic manual bed for short-term recovery or a fully motorized ICU bed for long-term critical care, we have the perfect rental solution to meet your medical requirements.</p>
                 
                 <div class="d-flex flex-wrap gap-3 mb-5">
                     <div class="d-flex align-items-center me-3">
@@ -58,16 +58,17 @@ $frontend_custom_sections = '
                 </div>
                 
                 <a href="index.php#appointment" class="btn btn-primary rounded-pill px-5 py-3 shadow-sm fw-bold">
-                    <i class="fa-solid fa-bed me-2"></i> Inquire for Hospital Bed
+                    <i class="fa-solid fa-bed me-2"></i> Rent a Hospital Bed Now
                 </a>
             </div>
             <div class="col-lg-6">
                 <div class="position-relative">
                     <img src="assets/images/pages/hospital_bed_home.png" alt="Hospital Bed at Home" class="img-fluid rounded-4 shadow-lg w-100">
                     <!-- Accent Box -->
-                    <div class="position-absolute bottom-0 end-0 bg-white p-3 rounded-4 shadow-lg mb-4 me-4 d-none d-md-block" style="border-left: 5px solid #0d6efd;">
+                    <div class="position-absolute bottom-0 end-0 bg-white p-3 rounded-4 shadow-lg mb-4 me-4 d-none d-md-block" style="border-left: 5px solid #e5252a;">
+                        <span class="badge bg-success mb-1">In Stock</span>
                         <h5 class="fw-bold text-dark mb-0">Available for</h5>
-                        <h4 class="fw-bold text-primary mb-0">Rent</h4>
+                        <h4 class="fw-bold text-danger mb-0">Rent</h4>
                     </div>
                 </div>
             </div>
@@ -78,9 +79,10 @@ $frontend_custom_sections = '
 <!-- Types of Beds Section (Inventory) -->
 <div class="container py-5 mb-5 border-bottom">
     <div class="text-center mb-5">
-        <h2 class="fw-bold text-dark">Hospital Beds Available - Our Inventory</h2>
+        <span class="badge bg-success bg-opacity-10 text-success px-3 py-1 rounded-pill fw-bold mb-2"><i class="fa-solid fa-check me-1"></i> Available for Rent</span>
+        <h2 class="fw-bold text-dark">Hospital Beds Available for Rent - Our Inventory</h2>
         <div class="mx-auto mt-3 mb-4" style="width: 60px; height: 4px; background-color: #0d6efd; border-radius: 2px;"></div>
-        <p class="text-muted mx-auto" style="max-width: 700px;">Browse all hospital bed models with specifications and photos. Contact us for the best rental quotes.</p>
+        <p class="text-muted mx-auto" style="max-width: 700px;">Browse all hospital bed models available for monthly & short-term rent with specifications and photos. Contact us for the best rental quotes.</p>
     </div>
        <div class="row g-4">
 ';// Inventory Array
@@ -142,9 +144,12 @@ foreach($beds as $bed) {
                 ' . $tag_html . '
             </div>
             <div class="card-body p-3 text-center d-flex flex-column">
+                <div class="mb-2">
+                    <span class="badge bg-success bg-opacity-10 text-success rounded-pill px-2 py-1 fw-bold" style="font-size: 0.72rem;"><i class="fa-solid fa-check me-1"></i> Available for Rent</span>
+                </div>
                 <h6 class="fw-bold text-dark mb-3">'.$bed["name"].'</h6>
-                <a href="https://wa.me/919319149644?text='.urlencode('Hi DM Healthcare, I would like to inquire about: '.$bed['name']).'" target="_blank" class="btn btn-outline-primary btn-sm rounded-pill mt-auto fw-bold py-1">
-                    <i class="fa-brands fa-whatsapp me-1"></i> Inquire Now
+                <a href="https://wa.me/919319149644?text='.urlencode('Hi DM Healthcare, I would like to rent / inquire about: '.$bed['name']).'" target="_blank" class="btn btn-outline-primary btn-sm rounded-pill mt-auto fw-bold py-1">
+                    <i class="fa-brands fa-whatsapp me-1"></i> Rent on WhatsApp
                 </a>
             </div>
         </div>

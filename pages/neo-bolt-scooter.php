@@ -54,24 +54,24 @@ ob_start();
         <div class="row align-items-center g-4">
             <div class="col-lg-7">
                 <span class="badge bg-danger bg-opacity-10 text-danger px-3 py-1 rounded-pill fw-semibold mb-2 border border-danger border-opacity-25 small">
-                    <i class="fa-solid fa-bolt me-1"></i> Motorized Mobility Innovation
+                    <i class="fa-solid fa-check-circle me-1"></i> Available for Rent across Delhi NCR
                 </span>
                 <h1 class="display-6 fw-bold text-dark lh-sm mb-2">
-                    <span class="text-dm-red">NeoBolt</span> Motorized Scooter Attachment
+                    <span class="text-dm-red">NeoBolt</span> Motorized Scooter <span class="text-dm-red">Available for Rent</span>
                 </h1>
                 <p class="text-muted fs-6 mb-3">
-                    Transform your standard manual wheelchair into a powerful, road-ready motorized electric vehicle in under 10 seconds. Enjoy unmatched independence across city streets, parks, and shopping complexes.
+                    Transform your standard manual wheelchair into a powerful, road-ready motorized electric vehicle in under 10 seconds. <strong>Available for rent</strong> with free doorstep trial demo in Faridabad, Noida, Delhi & Gurugram.
                 </p>
 
                 <div class="d-flex flex-wrap gap-2 mb-3">
                     <a href="tel:+919319149644" class="btn btn-dm-red rounded-pill px-3 py-2 fw-bold shadow-sm d-inline-flex align-items-center gap-2 small">
-                        <i class="fa-solid fa-phone"></i> Call +91 93191 49644
+                        <i class="fa-solid fa-phone"></i> Rent NeoBolt Scooter
                     </a>
-                    <a href="https://wa.me/919319149644?text=Hello%20DM%20Healthcare,%20I%20want%20to%20know%20more%20about%20NeoBolt%20Scooter%20Services." target="_blank" class="btn btn-outline-success rounded-pill px-3 py-2 fw-bold d-inline-flex align-items-center gap-2 small">
+                    <a href="https://wa.me/919319149644?text=Hello%20DM%20Healthcare,%20I%20want%20to%20rent%20the%20NeoBolt%20Scooter." target="_blank" class="btn btn-outline-success rounded-pill px-3 py-2 fw-bold d-inline-flex align-items-center gap-2 small">
                         <i class="fa-brands fa-whatsapp"></i> WhatsApp Inquiry
                     </a>
                     <a href="#booking-form" class="btn btn-outline-secondary rounded-pill px-3 py-2 fw-bold small">
-                        Book Free Demo
+                        Book Demo / Rent
                     </a>
                 </div>
 
@@ -90,8 +90,8 @@ ob_start();
                         <span class="small text-secondary fw-semibold">10-Sec Quick Lock</span>
                     </div>
                     <div class="col-6 col-sm-3 d-flex align-items-center gap-2">
-                        <i class="fa-solid fa-mountain text-warning"></i>
-                        <span class="small text-secondary fw-semibold">Climbs Gradients</span>
+                        <i class="fa-solid fa-circle-check text-success"></i>
+                        <span class="small text-secondary fw-semibold">Available for Rent</span>
                     </div>
                 </div>
             </div>
@@ -102,10 +102,10 @@ ob_start();
                     <img src="assets/images/pages/neobolt_hero_scooter.jpg" alt="NeoBolt Motorized Wheelchair Scooter" class="img-fluid rounded-4 shadow-sm border border-2 border-white w-100" style="max-height: 340px; object-fit: cover;">
                     <div class="position-absolute bottom-0 start-0 m-2 p-2 px-3 bg-white bg-opacity-95 rounded-3 shadow-sm border">
                         <div class="d-flex align-items-center gap-2">
-                            <i class="fa-solid fa-shield-halved text-dm-red fs-5"></i>
+                            <i class="fa-solid fa-certificate text-dm-red fs-5"></i>
                             <div>
-                                <h6 class="mb-0 fw-bold text-dark small">ARAI Safety Certified</h6>
-                                <small class="text-muted" style="font-size: 0.72rem;">Engineered for Indian Terrains</small>
+                                <h6 class="mb-0 fw-bold text-dark small">Available for Rent</h6>
+                                <small class="text-success fw-bold" style="font-size: 0.72rem;">Free Doorstep Trial Demo</small>
                             </div>
                         </div>
                     </div>

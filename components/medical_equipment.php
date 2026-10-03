@@ -40,20 +40,20 @@
             <div class="col-lg-8">
                 <div class="d-inline-flex align-items-center gap-2 px-3 py-1 rounded-pill fw-bold mb-2" style="background: rgba(229, 37, 42, 0.08); border: 1px solid rgba(229, 37, 42, 0.2); color: var(--primary-color); font-size: 0.8rem; letter-spacing: 1px;">
                     <i class="fa-solid fa-truck-ramp-box"></i>
-                    <span>HOME HEALTHCARE & MEDICAL EQUIPMENT SERVICES</span>
+                    <span>HOME HEALTHCARE & MEDICAL EQUIPMENT ON RENT</span>
                 </div>
                 <h2 class="fw-bolder display-6 mb-2" style="color: var(--secondary-color);">
-                    Medical Equipment <span style="color: var(--primary-color);">Healthcare Services</span>
+                    Medical Equipment <span style="color: var(--primary-color);">Available for Rent</span>
                 </h2>
                 <div style="width: 60px; height: 4px; background: var(--primary-color); margin-bottom: 16px; border-radius: 2px;"></div>
                 <p class="text-muted fs-6 mb-0">
-                    High-quality, hospital-grade sanitized medical equipment delivered and professionally installed in 30-90 minutes across Delhi NCR.
+                    High-quality, hospital-grade sanitized medical equipment <strong>available for rent</strong> with professional doorstep delivery and installation in 30-90 minutes across Delhi NCR.
                 </p>
             </div>
             <div class="col-lg-4 text-lg-end mt-4 mt-lg-0">
                 <a href="tel:+919319149644" class="btn btn-primary rounded-pill px-4 py-3 fw-bold shadow-sm d-inline-flex align-items-center gap-2">
                     <i class="fa-solid fa-phone"></i>
-                    <span>Book Equipment Services</span>
+                    <span>Rent Equipment Today</span>
                 </a>
             </div>
         </div>
@@ -65,10 +65,13 @@
                     <div class="equipment-icon-holder">
                         <i class="fa-solid fa-bed"></i>
                     </div>
+                    <div class="d-flex justify-content-center gap-1 mb-2">
+                        <span class="badge bg-success bg-opacity-10 text-success rounded-pill px-2 py-1 fw-bold" style="font-size: 0.72rem;"><i class="fa-solid fa-check me-1"></i>Available for Rent</span>
+                    </div>
                     <span class="badge bg-danger bg-opacity-10 text-danger rounded-pill mb-2 align-self-center px-3" style="font-size: 0.72rem;">ICU & Semi-Fowler</span>
                     <h5 class="fw-bold text-dark mb-2" style="font-size: 1.15rem;">Hospital ICU Beds</h5>
-                    <p class="text-muted small mb-3 lh-base">Motorized 3/5 function & manual beds with anti-bedsore air mattresses.</p>
-                    <a href="hospital-bed" class="btn btn-sm btn-outline-primary rounded-pill fw-semibold w-100 mt-auto">View Beds</a>
+                    <p class="text-muted small mb-3 lh-base">Motorized 3/5 function & manual beds on rent with air mattresses.</p>
+                    <a href="hospital-bed" class="btn btn-sm btn-outline-primary rounded-pill fw-semibold w-100 mt-auto">Rent Beds</a>
                 </div>
             </div>
 
@@ -78,10 +81,13 @@
                     <div class="equipment-icon-holder">
                         <i class="fa-solid fa-lungs"></i>
                     </div>
+                    <div class="d-flex justify-content-center gap-1 mb-2">
+                        <span class="badge bg-success bg-opacity-10 text-success rounded-pill px-2 py-1 fw-bold" style="font-size: 0.72rem;"><i class="fa-solid fa-check me-1"></i>Available for Rent</span>
+                    </div>
                     <span class="badge bg-primary bg-opacity-10 text-primary rounded-pill mb-2 align-self-center px-3" style="font-size: 0.72rem;">5L / 10L & ResMed</span>
                     <h5 class="fw-bold text-dark mb-2" style="font-size: 1.15rem;">Oxygen & BiPAP/CPAP</h5>
-                    <p class="text-muted small mb-3 lh-base">High-purity oxygen concentrators, cylinders, BiPAP/CPAP & ventilators.</p>
-                    <a href="oxygen-concentrator" class="btn btn-sm btn-outline-primary rounded-pill fw-semibold w-100 mt-auto">View Machines</a>
+                    <p class="text-muted small mb-3 lh-base">High-purity oxygen concentrators, cylinders & BiPAP/CPAP on rent.</p>
+                    <a href="oxygen-concentrator" class="btn btn-sm btn-outline-primary rounded-pill fw-semibold w-100 mt-auto">Rent Machines</a>
                 </div>
             </div>
 
@@ -91,10 +97,13 @@
                     <div class="equipment-icon-holder">
                         <i class="fa-solid fa-wheelchair"></i>
                     </div>
+                    <div class="d-flex justify-content-center gap-1 mb-2">
+                        <span class="badge bg-success bg-opacity-10 text-success rounded-pill px-2 py-1 fw-bold" style="font-size: 0.72rem;"><i class="fa-solid fa-check me-1"></i>Available for Rent</span>
+                    </div>
                     <span class="badge bg-success bg-opacity-10 text-success rounded-pill mb-2 align-self-center px-3" style="font-size: 0.72rem;">Manual & Motorized</span>
                     <h5 class="fw-bold text-dark mb-2" style="font-size: 1.15rem;">Wheelchairs & Scooters</h5>
-                    <p class="text-muted small mb-3 lh-base">Electric wheelchairs, commode chairs, NeoBolt scooters & walkers.</p>
-                    <a href="wheelchairs" class="btn btn-sm btn-outline-primary rounded-pill fw-semibold w-100 mt-auto">View Wheelchairs</a>
+                    <p class="text-muted small mb-3 lh-base">Electric wheelchairs, commode chairs & NeoBolt scooters on rent.</p>
+                    <a href="wheelchairs" class="btn btn-sm btn-outline-primary rounded-pill fw-semibold w-100 mt-auto">Rent Wheelchairs</a>
                 </div>
             </div>
 
@@ -104,10 +113,13 @@
                     <div class="equipment-icon-holder">
                         <i class="fa-solid fa-heart-circle-bolt"></i>
                     </div>
+                    <div class="d-flex justify-content-center gap-1 mb-2">
+                        <span class="badge bg-success bg-opacity-10 text-success rounded-pill px-2 py-1 fw-bold" style="font-size: 0.72rem;"><i class="fa-solid fa-check me-1"></i>Available for Rent</span>
+                    </div>
                     <span class="badge bg-warning bg-opacity-10 text-dark rounded-pill mb-2 align-self-center px-3" style="font-size: 0.72rem; color: #b45309;">Multipara Vitals</span>
                     <h5 class="fw-bold text-dark mb-2" style="font-size: 1.15rem;">Patient Monitors</h5>
-                    <p class="text-muted small mb-3 lh-base">5-para cardiac monitors, syringe infusion pumps & suction apparatus.</p>
-                    <a href="icu-equipment" class="btn btn-sm btn-outline-primary rounded-pill fw-semibold w-100 mt-auto">View Monitors</a>
+                    <p class="text-muted small mb-3 lh-base">5-para cardiac monitors, syringe pumps & suction apparatus on rent.</p>
+                    <a href="icu-equipment" class="btn btn-sm btn-outline-primary rounded-pill fw-semibold w-100 mt-auto">Rent Monitors</a>
                 </div>
             </div>
         </div>

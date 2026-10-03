@@ -110,7 +110,7 @@
 
                     <!-- Column 3: Medical Equipment (2.5 cols) -->
                     <div class="col-lg-3 col-md-6 col-sm-6">
-                        <h6 class="footer-heading">Medical Equipment</h6>
+                        <h6 class="footer-heading">Medical Equipment on Rent</h6>
                         <ul class="footer-links-list list-unstyled mb-0">
                             <li><a href="page.php?title=oxygen-concentrator"><i class="fa-solid fa-angle-right me-1"></i> Oxygen Concentrator (5L/10L)</a></li>
                             <li><a href="page.php?title=hospital-bed"><i class="fa-solid fa-angle-right me-1"></i> ICU & Motorized Beds</a></li>

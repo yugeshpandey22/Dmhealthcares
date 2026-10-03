@@ -85,16 +85,16 @@ body {
     <div class="container position-relative z-1 py-5">
         <div class="row align-items-center">
             <div class="col-lg-7 mb-5 mb-lg-0 pe-lg-5 text-center text-lg-start">
-                <span class="badge bg-primary px-3 py-2 rounded-pill mb-4 fw-bold shadow-sm">Medical Consumables</span>
-                <h1 class="display-5 fw-bold mb-4 text-dark">High-Quality Medical Accessories & Spares</h1>
-                <p class="lead mb-4 text-muted" style="opacity: 0.9;">We stock genuine spare parts, disposable accessories, and medical consumables to ensure your medical equipment runs efficiently without interruption.</p>
+                <span class="badge bg-danger px-3 py-2 rounded-pill mb-4 fw-bold shadow-sm"><i class="fa-solid fa-check-circle me-1"></i> Medical Spares & Equipment on Rent</span>
+                <h1 class="display-5 fw-bold mb-4 text-dark">Medical Accessories, Spares & Equipment on Rent</h1>
+                <p class="lead mb-4 text-muted" style="opacity: 0.9;">We stock genuine spare parts, disposable accessories, and medical consumables to ensure your medical equipment runs efficiently. <strong>Available for rent</strong> with same-day doorstep dispatch across Delhi NCR.</p>
                 
                 <div class="d-flex flex-wrap justify-content-center justify-content-lg-start gap-3 mt-4">
                     <a href="#inventory" class="btn btn-primary btn-lg fw-bold px-5 rounded-pill shadow-sm">
                         Browse Catalog
                     </a>
                     <a href="tel:+919319149644" class="btn btn-outline-dark btn-lg fw-bold px-5 rounded-pill">
-                        Order in Bulk
+                        Rent Now
                     </a>
                 </div>
             </div>
@@ -105,7 +105,8 @@ body {
                         <div class="mb-4 bg-primary bg-opacity-10 p-5 rounded-circle d-flex align-items-center justify-content-center" style="width: 180px; height: 180px;">
                             <i class="fa-solid fa-box-open text-primary" style="font-size: 80px;"></i>
                         </div>
-                        <span class="text-muted fw-bold text-uppercase tracking-wider">Original Spares</span>
+                        <span class="badge bg-success mb-2 px-3 py-1 rounded-pill"><i class="fa-solid fa-check me-1"></i> Available for Rent</span>
+                        <span class="text-muted fw-bold text-uppercase tracking-wider">Original Spares & Units</span>
                     </div>
                 </div>
             </div>
@@ -117,9 +118,10 @@ body {
 <section id="inventory" class="py-5" style="background-color: var(--light-bg);">
     <div class="container py-4">
         <div class="text-center mb-5">
-            <h2 class="fw-bold text-dark">Our Accessories Catalog</h2>
+            <span class="badge bg-success bg-opacity-10 text-success px-3 py-1 rounded-pill fw-bold mb-2 small"><i class="fa-solid fa-check me-1"></i> Available for Rent</span>
+            <h2 class="fw-bold text-dark">Medical Accessories & Equipment Catalog</h2>
             <div class="mx-auto mt-3 mb-4" style="width: 60px; height: 4px; background-color: var(--primary-color); border-radius: 2px;"></div>
-            <p class="text-muted mx-auto" style="max-width: 600px;">Explore our comprehensive range of original accessories for Respiratory, ICU, and General Home Care equipment.</p>
+            <p class="text-muted mx-auto" style="max-width: 600px;">Explore our comprehensive range of original accessories for Respiratory, ICU, and General Home Care equipment available on rent.</p>
         </div>
 
         <div class="row g-4">';
@@ -517,7 +519,7 @@ body {
         ];
 
         foreach($accessories as $item) {
-            $price_display = isset($item['price']) ? '<div class="fw-bold text-dm-red fs-5 mb-2">'.$item['price'].'</div>' : '';
+            $price_display = isset($item['price']) ? '<div class="fw-bold text-dm-red fs-5 mb-1">'.$item['price'].'</div>' : '';
             $frontend_custom_sections .= '
             <div class="col-xl-3 col-lg-4 col-md-6">
                 <div class="acc-card h-100 d-flex flex-column overflow-hidden shadow-sm" style="border-radius: 16px; border: 1px solid #e2e8f0; background: #fff;">
@@ -526,9 +528,13 @@ body {
                         <span class="position-absolute top-0 end-0 m-2 badge bg-primary bg-opacity-10 text-primary border border-primary border-opacity-25 rounded-pill px-2 py-1 small fw-semibold" style="font-size: 0.72rem;">'.$item['category'].'</span>
                     </div>
                     <div class="p-3 d-flex flex-column flex-grow-1 text-center">
+                        <span class="badge bg-success bg-opacity-10 text-success rounded-pill px-2 py-1 fw-bold align-self-center mb-1" style="font-size: 0.7rem;"><i class="fa-solid fa-check me-1"></i>Available for Rent</span>
                         <h6 class="fw-bold text-dark mb-1" style="font-size: 0.95rem;">'.$item['name'].'</h6>
                         '.$price_display.'
-                        <p class="text-muted small mb-0 flex-grow-1" style="font-size: 0.78rem; line-height: 1.45;">'.$item['desc'].'</p>
+                        <p class="text-muted small mb-2 flex-grow-1" style="font-size: 0.78rem; line-height: 1.45;">'.$item['desc'].'</p>
+                        <a href="https://wa.me/919319149644?text='.urlencode('Hi DM Healthcare, I would like to rent / order: '.$item['name']).'" target="_blank" class="btn btn-outline-success btn-sm rounded-pill fw-bold mt-auto py-1" style="font-size: 0.78rem;">
+                            <i class="fa-brands fa-whatsapp me-1"></i> Rent / Inquire
+                        </a>
                     </div>
                 </div>
             </div>';

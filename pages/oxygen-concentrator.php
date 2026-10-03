@@ -78,20 +78,20 @@ ob_start();
         <div class="row align-items-center g-4">
             <div class="col-lg-7">
                 <span class="badge bg-danger bg-opacity-10 text-danger px-3 py-1 rounded-pill fw-semibold mb-2 border border-danger border-opacity-25 small">
-                    <i class="fa-solid fa-truck-medical me-1"></i> 30-60 Mins Emergency Delivery Across Delhi NCR
+                    <i class="fa-solid fa-check-circle me-1"></i> Available for Rent (30-60 Mins Delivery Across Delhi NCR)
                 </span>
                 <h1 class="display-6 fw-bold text-dark lh-sm mb-2">
-                    Medical-Grade <span class="text-dm-red">Oxygen Concentrators</span> & Respiratory Services
+                    Medical-Grade <span class="text-dm-red">Oxygen Concentrators Available for Rent</span>
                 </h1>
                 <p class="text-muted fs-6 mb-3">
-                    Ensure continuous 93%–96% pure oxygen supply right at your home without the hassle of cylinder refills. Hospital-tested, sanitized machines delivered with complimentary nasal cannula and on-site demonstration in Faridabad, Noida, Delhi & Gurugram.
+                    Ensure continuous 93%–96% pure oxygen supply right at your home without the hassle of cylinder refills. <strong>Available for monthly & short-term rent or purchase</strong> with complimentary nasal cannula and on-site demonstration in Faridabad, Noida, Delhi & Gurugram.
                 </p>
 
                 <div class="d-flex flex-wrap gap-2 mb-3">
                     <a href="tel:+919319149644" class="btn btn-dm-red rounded-pill px-3 py-2 fw-bold shadow-sm d-inline-flex align-items-center gap-2 small">
-                        <i class="fa-solid fa-phone"></i> Call +91 93191 49644
+                        <i class="fa-solid fa-phone"></i> Rent Oxygen Concentrator
                     </a>
-                    <a href="https://wa.me/919319149644?text=Hello%20DM%20Healthcare,%20I%20urgently%20need%20an%20Oxygen%20Concentrator%20for%20home." target="_blank" class="btn btn-outline-success rounded-pill px-3 py-2 fw-bold d-inline-flex align-items-center gap-2 small">
+                    <a href="https://wa.me/919319149644?text=Hello%20DM%20Healthcare,%20I%20urgently%20need%20to%20rent%20an%20Oxygen%20Concentrator%20for%20home." target="_blank" class="btn btn-outline-success rounded-pill px-3 py-2 fw-bold d-inline-flex align-items-center gap-2 small">
                         <i class="fa-brands fa-whatsapp"></i> WhatsApp Booking
                     </a>
                     <a href="#booking-form" class="btn btn-outline-secondary rounded-pill px-3 py-2 fw-bold small">
@@ -110,8 +110,8 @@ ob_start();
                         <span class="small text-secondary fw-semibold">100% Sanitized</span>
                     </div>
                     <div class="col-6 col-sm-4 d-flex align-items-center gap-2">
-                        <i class="fa-solid fa-indian-rupee-sign text-primary"></i>
-                        <span class="small text-secondary fw-semibold">From ₹3,500/Mo</span>
+                        <i class="fa-solid fa-circle-check text-success"></i>
+                        <span class="small text-secondary fw-semibold">Available for Rent</span>
                     </div>
                 </div>
             </div>
@@ -124,8 +124,8 @@ ob_start();
                         <div class="d-flex align-items-center gap-2">
                             <i class="fa-solid fa-lungs text-dm-red fs-5"></i>
                             <div>
-                                <h6 class="mb-0 fw-bold text-dark small">95% ± 3% Purity</h6>
-                                <small class="text-muted" style="font-size: 0.72rem;">Zero Cylinder Refill Needed</small>
+                                <h6 class="mb-0 fw-bold text-dark small">Available for Rent</h6>
+                                <small class="text-success fw-bold" style="font-size: 0.72rem;">Starting ₹4,500 / mo • 95% Purity</small>
                             </div>
                         </div>
                     </div>
@@ -139,9 +139,9 @@ ob_start();
 <section class="py-4 py-lg-5 bg-light" id="catalog">
     <div class="container">
         <div class="text-center max-w-700 mx-auto mb-3">
-            <span class="badge bg-secondary bg-opacity-10 text-secondary px-3 py-1 rounded-pill fw-semibold mb-1 small">Our Machines</span>
-            <h3 class="fw-bold text-dark mb-1">Select Oxygen Concentrator Model</h3>
-            <p class="text-muted small mb-0">Choose the ideal LPM flow rate based on your physician's prescription.</p>
+            <span class="badge bg-success bg-opacity-10 text-success px-3 py-1 rounded-pill fw-semibold mb-1 small"><i class="fa-solid fa-check me-1"></i> Available for Rent</span>
+            <h3 class="fw-bold text-dark mb-1">Oxygen Concentrators Available for Rent</h3>
+            <p class="text-muted small mb-0">Choose the ideal LPM flow rate based on your physician's prescription. Available for monthly and emergency rental.</p>
         </div>
 
         <!-- Products Grid -->
@@ -159,6 +159,10 @@ ob_start();
                         </span>
                     </div>
                     <div class="card-body d-flex flex-column p-3">
+                        <div class="d-flex justify-content-between align-items-center mb-1">
+                            <span class="badge bg-success bg-opacity-10 text-success rounded-pill px-2 py-1 fw-bold" style="font-size: 0.7rem;"><i class="fa-solid fa-check me-1"></i>Available for Rent</span>
+                            <span class="text-dm-red fw-bold" style="font-size: 0.85rem;"><?= $oc['price'] ?> <small class="text-muted" style="font-size: 0.68rem;">/ mo</small></span>
+                        </div>
                         <h6 class="card-title fw-bold text-dark mb-1 text-truncate" title="<?= htmlspecialchars($oc['title']) ?>"><?= htmlspecialchars($oc['title']) ?></h6>
                         <p class="text-muted mb-2 text-truncate" style="font-size: 0.76rem;" title="<?= htmlspecialchars($oc['ideal_for']) ?>">
                             <i class="fa-solid fa-circle-info me-1 text-dm-red"></i><?= htmlspecialchars($oc['ideal_for']) ?>
@@ -176,17 +180,17 @@ ob_start();
 
                         <!-- Price Tag -->
                         <div class="d-flex justify-content-between align-items-center mb-3 p-2 bg-light rounded-3 border">
-                            <span class="small text-muted fw-semibold">Service Price:</span>
-                            <span class="fs-5 fw-bold text-dm-red"><?= $oc['price'] ?></span>
+                            <span class="small text-muted fw-semibold">Rent Price:</span>
+                            <span class="fs-5 fw-bold text-dm-red"><?= $oc['price'] ?> <small class="text-muted fs-6">/ month</small></span>
                         </div>
 
                         <!-- Actions (Side by Side Compact) -->
                         <div class="d-flex gap-2">
-                            <a href="https://wa.me/919319149644?text=<?= urlencode('Hi DM Healthcare, I need ' . $oc['title'] . ' (Price: ' . $oc['price'] . ') urgently. Please share availability and details.') ?>" target="_blank" class="btn btn-outline-success btn-sm rounded-pill fw-bold px-2 py-1 flex-fill d-flex align-items-center justify-content-center gap-1" style="font-size: 0.78rem;">
-                                <i class="fa-brands fa-whatsapp"></i> Chat
+                            <a href="https://wa.me/919319149644?text=<?= urlencode('Hi DM Healthcare, I would like to rent ' . $oc['title'] . ' (Rent Price: ' . $oc['price'] . '/mo) urgently. Please share availability and details.') ?>" target="_blank" class="btn btn-outline-success btn-sm rounded-pill fw-bold px-2 py-1 flex-fill d-flex align-items-center justify-content-center gap-1" style="font-size: 0.78rem;">
+                                <i class="fa-brands fa-whatsapp"></i> Rent on WA
                             </a>
                             <a href="#booking-form" onclick="selectOcModel('<?= addslashes($oc['title']) ?>')" class="btn btn-dm-red btn-sm rounded-pill fw-bold px-2 py-1 flex-fill d-flex align-items-center justify-content-center gap-1" style="font-size: 0.78rem;">
-                                <i class="fa-solid fa-calendar-check"></i> Book Now
+                                <i class="fa-solid fa-calendar-check"></i> Rent Now
                             </a>
                         </div>
                     </div>

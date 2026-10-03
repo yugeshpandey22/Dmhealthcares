@@ -146,16 +146,16 @@
                 </div>
             </div>
 
-            <!-- Category 7: Medical Equipment -->
+            <!-- Category 7: Medical Equipment on Rent -->
             <div class="col">
                 <div class="service-card-modern p-4">
-                    <span class="service-pill-tag bg-secondary bg-opacity-10 text-dark align-self-start">Equipment & Care Support</span>
+                    <span class="service-pill-tag bg-success bg-opacity-10 text-success align-self-start fw-bold"><i class="fa-solid fa-check me-1"></i>Available for Rent</span>
                     <div class="service-icon-box" style="background: rgba(100, 116, 139, 0.1); color: #475569;">
                         <i class="fa-solid fa-wheelchair"></i>
                     </div>
-                    <h4 class="fw-bold text-dark mb-2" style="font-size: 1.22rem;">Medical Equipment Services</h4>
-                    <p class="small text-muted mb-4 lh-base">Hospital motorized beds, BiPAP/CPAP machines, oxygen concentrators, and electric wheelchairs with full home setup and support.</p>
-                    <a href="hospital-bed" class="btn btn-outline-primary rounded-pill px-4 fw-semibold w-100 mt-auto">View Equipment</a>
+                    <h4 class="fw-bold text-dark mb-2" style="font-size: 1.22rem;">Medical Equipment on Rent</h4>
+                    <p class="small text-muted mb-4 lh-base">Hospital motorized beds, BiPAP/CPAP, oxygen concentrators, and wheelchairs available for rent with full home setup and maintenance.</p>
+                    <a href="hospital-bed" class="btn btn-outline-primary rounded-pill px-4 fw-semibold w-100 mt-auto">Rent Equipment</a>
                 </div>
             </div>
 

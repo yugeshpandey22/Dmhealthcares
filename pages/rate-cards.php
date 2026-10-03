@@ -136,11 +136,11 @@ $services_catalog = [
         ]
     ],
     "rental" => [
-        "title" => "Medical Equipment on Rent",
-        "tab_label" => "Equipment Rental",
+        "title" => "Medical Equipment Available for Rent",
+        "tab_label" => "Equipment on Rent",
         "icon" => "fa-solid fa-bed",
         "color" => "#0284c7",
-        "subtitle" => "Sanitized hospital beds, oxygen concentrators, BiPAP, ventilators and ICU monitors on monthly rental.",
+        "subtitle" => "Sanitized hospital beds, oxygen concentrators, BiPAP, ventilators and ICU monitors available for monthly and short-term rent.",
         "items" => [
             ["name" => "BED MANUAL WITH MATTRESS", "price" => "Price: 3,000", "unit" => "", "tag" => "Hospital Bed", "desc" => "Manual Fowler patient bed with hospital mattress and collapsible safety side rails.", "popular" => true],
             ["name" => "Bed Step-up", "price" => "Price: 500", "unit" => "", "tag" => "Safety Stool", "desc" => "Sturdy anti-slip step stool for safe and easy patient bed entry and exit.", "popular" => false],
@@ -570,6 +570,9 @@ foreach($services_catalog as $cat_key => $cat_data) {
         $is_pop = !empty($item['popular']);
         $pop_class = $is_pop ? 'is-popular' : '';
         $pop_flag = $is_pop ? '<span class="popular-flag"><i class="fa-solid fa-star me-1"></i> Most Booked</span>' : '';
+        $is_rental = ($cat_key === 'rental');
+        $btn_label = $is_rental ? 'Rent on WhatsApp' : 'Book on WhatsApp';
+        $rent_badge = $is_rental ? '<span class="badge bg-success bg-opacity-10 text-success rounded-pill px-2 py-1 fw-bold" style="font-size: 0.7rem;"><i class="fa-solid fa-check me-1"></i>Available for Rent</span>' : '';
 
         $frontend_custom_sections .= '
                 <div class="col-xl-4 col-md-6 tariff-card-col" data-search="'.strtolower($item['name'].' '.$item['desc'].' '.$item['price'].' '.$item['tag']).'">
@@ -578,6 +581,7 @@ foreach($services_catalog as $cat_key => $cat_data) {
                         <div>
                             <div class="d-flex justify-content-between align-items-start mb-2">
                                 <span class="service-badge-pill">'.$item['tag'].'</span>
+                                '.$rent_badge.'
                             </div>
 
                             <h5 class="fw-bold text-dark mb-2" style="font-size: 1.05rem; line-height: 1.35;">'.$item['name'].'</h5>
@@ -594,7 +598,7 @@ foreach($services_catalog as $cat_key => $cat_data) {
 
                         <div class="pt-3 border-top d-flex gap-2">
                             <a href="https://wa.me/919319149644?text='.$wa_msg.'" target="_blank" class="btn btn-danger btn-sm rounded-pill fw-bold w-100 py-2 d-inline-flex align-items-center justify-content-center gap-1 shadow-sm" style="background-color: var(--dm-brand-red); border-color: var(--dm-brand-red);">
-                                <i class="fa-brands fa-whatsapp fs-6"></i> Book on WhatsApp
+                                <i class="fa-brands fa-whatsapp fs-6"></i> '.$btn_label.'
                             </a>
                             <a href="tel:+919319149644" class="btn btn-outline-dark btn-sm rounded-pill px-3" title="Call to inquire">
                                 <i class="fa-solid fa-phone"></i>

@@ -81,25 +81,25 @@ ob_start();
         <!-- Live Emergency Dispatch Banner -->
         <div class="d-inline-flex align-items-center gap-2 px-3 py-1 rounded-pill badge-emergency small fw-bold mb-3">
             <span class="spinner-grow spinner-grow-sm text-danger" role="status"></span>
-            <span>24/7 Rapid Emergency Dispatch • 30-45 Mins Reach Across Delhi NCR</span>
+            <span>24/7 Rapid Emergency Dispatch • Available for Rent & Refill Across Delhi NCR</span>
         </div>
 
         <div class="row align-items-center g-4">
             <div class="col-lg-7">
                 <h1 class="display-6 fw-bold text-white lh-sm mb-3">
-                    Medical <span class="text-dm-red">Oxygen Cylinders</span> & Instant Doorstep Refill
+                    Medical <span class="text-dm-red">Oxygen Cylinders Available for Rent</span> & Instant Doorstep Refill
                 </h1>
                 <p class="text-light fs-6 mb-4 opacity-90" style="line-height: 1.7;">
-                    Certified <strong>99% pure IP grade</strong> compressed medical oxygen cylinders delivered with complete hospital-standard regulator, precision flowmeter, humidifier bottle, mobile trolley stand, and sterile cannula.
+                    Certified <strong>99% pure IP grade</strong> compressed medical oxygen cylinders <strong>available for rent & doorstep refill</strong> delivered with complete hospital-standard regulator, precision flowmeter, humidifier bottle, mobile trolley stand, and sterile cannula.
                 </p>
 
                 <!-- Quick Action Buttons -->
                 <div class="d-flex flex-wrap gap-2 mb-4">
                     <a href="tel:+919319149644" class="btn btn-dm-red btn-lg rounded-pill px-4 py-2 fw-bold shadow-sm d-inline-flex align-items-center gap-2 small">
-                        <i class="fa-solid fa-phone-volume"></i> Call +91 93191 49644
+                        <i class="fa-solid fa-phone-volume"></i> Rent Oxygen Cylinder
                     </a>
-                    <a href="https://wa.me/919319149644?text=Hi%20DM%20Healthcare,%20I%20urgently%20need%20an%20Oxygen%20Cylinder%20or%20Refill." target="_blank" class="btn btn-outline-success btn-lg rounded-pill px-4 py-2 fw-bold d-inline-flex align-items-center gap-2 small bg-white text-success border-white">
-                        <i class="fa-brands fa-whatsapp"></i> WhatsApp Refill / Booking
+                    <a href="https://wa.me/919319149644?text=Hi%20DM%20Healthcare,%20I%20urgently%20need%20to%20rent%20an%20Oxygen%20Cylinder%20or%20get%20Refill." target="_blank" class="btn btn-outline-success btn-lg rounded-pill px-4 py-2 fw-bold d-inline-flex align-items-center gap-2 small bg-white text-success border-white">
+                        <i class="fa-brands fa-whatsapp"></i> WhatsApp Rent / Refill
                     </a>
                     <a href="https://wa.me/919319149644?text=Hi%20DM%20Healthcare,%20I%20urgently%20need%20an%20Oxygen%20Cylinder%20or%20Refill." target="_blank" class="btn btn-outline-light btn-lg rounded-pill px-4 py-2 fw-bold small">
                         Request Refill
@@ -123,10 +123,10 @@ ob_start();
                         </div>
                     </div>
                     <div class="col-4 d-flex align-items-center gap-2">
-                        <i class="fa-solid fa-repeat text-info fs-5"></i>
+                        <i class="fa-solid fa-circle-check text-info fs-5"></i>
                         <div>
-                            <span class="d-block text-white fw-bold small">Doorstep Swap</span>
-                            <small class="text-light opacity-75" style="font-size: 0.7rem;">Zero Waiting Time</small>
+                            <span class="d-block text-white fw-bold small">Available for Rent</span>
+                            <small class="text-light opacity-75" style="font-size: 0.7rem;">Starting ₹1,000</small>
                         </div>
                     </div>
                 </div>
@@ -137,29 +137,34 @@ ob_start();
                 <div class="card bg-white text-dark rounded-4 p-4 shadow-lg border-0 position-relative overflow-hidden">
                     <div class="d-flex justify-content-between align-items-start mb-3">
                         <div>
-                            <span class="badge bg-danger bg-opacity-10 text-danger rounded-pill px-3 py-1 small fw-bold mb-1">
-                                Ready for Dispatch
+                            <span class="badge bg-success bg-opacity-10 text-success rounded-pill px-3 py-1 small fw-bold mb-1">
+                                <i class="fa-solid fa-check me-1"></i> Available for Rent
                             </span>
-                            <h5 class="fw-bold mb-0 text-dark">Complete O2 Cylinder Kit</h5>
+                            <h5 class="fw-bold mb-0 text-dark">Complete O2 Cylinder Kit on Rent</h5>
                         </div>
                         <span class="fs-4 fw-bold text-dm-red">₹1,000<small class="fs-6 text-muted">/starting</small></span>
                     </div>
 
-                    <img src="assets/images/pages/oxygen_concentrator_hero.jpg" alt="Medical Oxygen Cylinder Delivery Kit" class="img-fluid rounded-3 mb-3 border w-100" style="height: 180px; object-fit: cover;">
+                    <div class="position-relative mb-3">
+                        <img src="assets/images/pages/oxygen_concentrator_hero.jpg" alt="Medical Oxygen Cylinder Delivery Kit" class="img-fluid rounded-3 border w-100" style="height: 180px; object-fit: cover;">
+                        <span class="badge bg-success bg-opacity-95 text-white rounded-pill px-2 py-1 position-absolute top-0 start-0 m-2 shadow-sm fw-bold" style="font-size: 0.72rem; z-index: 2;">
+                            <i class="fa-solid fa-check me-1"></i> Available for Rent
+                        </span>
+                    </div>
 
                     <div class="bg-light p-2 px-3 rounded-3 mb-3 border small text-muted">
                         <div class="d-flex justify-content-between py-1 border-bottom">
-                            <span><i class="fa-solid fa-check text-success me-1"></i> O2 Cylinder 10 ltrs</span>
+                            <span><i class="fa-solid fa-check text-success me-1"></i> O2 Cylinder 10 ltrs (Rent)</span>
                             <strong class="text-dark">₹1,000 (Refill ₹700)</strong>
                         </div>
                         <div class="d-flex justify-content-between py-1">
-                            <span><i class="fa-solid fa-check text-success me-1"></i> O2 Cylinder 50 ltrs</span>
+                            <span><i class="fa-solid fa-check text-success me-1"></i> O2 Cylinder 50 ltrs (Rent)</span>
                             <strong class="text-dark">₹2,000 (Refill ₹1,000)</strong>
                         </div>
                     </div>
 
                     <a href="tel:+919319149644" class="btn btn-dm-red w-100 rounded-pill fw-bold py-2 shadow-sm">
-                        <i class="fa-solid fa-truck-fast me-1"></i> Order Instant Emergency Delivery
+                        <i class="fa-solid fa-truck-fast me-1"></i> Rent O2 Cylinder Kit Now
                     </a>
                 </div>
             </div>
@@ -346,7 +351,12 @@ ob_start();
             <div class="col-md-6 col-lg-5">
                 <div class="card h-100 border rounded-4 shadow-sm p-4 text-center bg-light">
                     <span class="badge bg-secondary bg-opacity-10 text-dark px-3 py-1 rounded-pill fw-bold mx-auto mb-2 small">Portable Bedside Unit</span>
-                    <img src="assets/images/equipment/oxygen_cylinder.jpg" class="img-fluid rounded-3 mb-3 border w-100" style="height: 180px; object-fit: contain; background: #fff;" alt="O2 Cylinder 10 ltrs">
+                    <div class="position-relative mb-3">
+                        <img src="assets/images/equipment/oxygen_cylinder.jpg" class="img-fluid rounded-3 border w-100" style="height: 180px; object-fit: contain; background: #fff;" alt="O2 Cylinder 10 ltrs">
+                        <span class="badge bg-success bg-opacity-95 text-white rounded-pill px-2 py-1 position-absolute top-0 start-0 m-2 shadow-sm fw-bold" style="font-size: 0.72rem; z-index: 2;">
+                            <i class="fa-solid fa-check me-1"></i> Available for Rent
+                        </span>
+                    </div>
                     <h4 class="fw-bold text-dark mb-1">O2 Cylinder 10 ltrs</h4>
                     <p class="text-muted small mb-3">Capacity: ~1,400 Litres • 11-12 hrs continuous supply at 2 LPM</p>
                     
@@ -377,7 +387,12 @@ ob_start();
             <div class="col-md-6 col-lg-5">
                 <div class="card h-100 border border-danger border-2 rounded-4 shadow-sm p-4 text-center bg-white position-relative">
                     <span class="badge bg-dm-red text-white px-3 py-1 rounded-pill fw-bold position-absolute top-0 start-50 translate-middle small shadow-sm">High Capacity Recommended</span>
-                    <img src="assets/images/equipment/jumbo_cylinder.jpg" class="img-fluid rounded-3 mb-3 border w-100 mt-2" style="height: 180px; object-fit: contain; background: #fff;" alt="O2 Cylinder 50 ltrs">
+                    <div class="position-relative mb-3 mt-2">
+                        <img src="assets/images/equipment/jumbo_cylinder.jpg" class="img-fluid rounded-3 border w-100" style="height: 180px; object-fit: contain; background: #fff;" alt="O2 Cylinder 50 ltrs">
+                        <span class="badge bg-success bg-opacity-95 text-white rounded-pill px-2 py-1 position-absolute top-0 start-0 m-2 shadow-sm fw-bold" style="font-size: 0.72rem; z-index: 2;">
+                            <i class="fa-solid fa-check me-1"></i> Available for Rent
+                        </span>
+                    </div>
                     <h4 class="fw-bold text-dark mb-1 mt-1">O2 Cylinder 50 ltrs</h4>
                     <p class="text-muted small mb-3">D-Type Jumbo Capacity: ~7,000 Litres • 52-56 hrs supply at 2 LPM</p>
                     
