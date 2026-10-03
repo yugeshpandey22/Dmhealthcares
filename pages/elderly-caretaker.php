@@ -40,7 +40,7 @@ $frontend_custom_sections = '
                 </a>
             </div>
             <div class="col-lg-6 ps-lg-5 order-1 order-lg-2 mb-4 mb-lg-0">
-                <img src="assets/images/pages/elderly_companionship.png" alt="Elderly Caretaker" class="img-fluid rounded-4 shadow-lg w-100 border border-4" style="border-color: #6f42c1 !important;">
+                <img src="assets/images/pages/elderly_companionship.png" alt="Elderly Caretaker" class="img-fluid rounded-4 shadow-lg w-100 border border-4" style="border-color: #6f42c1 !important;" loading="lazy" decoding="async">
             </div>
         </div>
     </div>
@@ -122,7 +122,7 @@ $frontend_custom_sections = '
     <div class="container pt-4">
         <div class="row align-items-center">
             <div class="col-lg-5 mb-4 mb-lg-0">
-                <img src="assets/images/pages/elderly_bedroom.png" alt="Trained Caretakers" class="img-fluid rounded-4 shadow-sm w-100">
+                <img src="assets/images/pages/elderly_bedroom.png" alt="Trained Caretakers" class="img-fluid rounded-4 shadow-sm w-100" loading="lazy" decoding="async">
             </div>
             <div class="col-lg-7 ps-lg-5">
                 <h2 class="fw-bold text-dark mb-4">Why DM Healthcare Caretakers?</h2>
@@ -166,7 +166,7 @@ $frontend_custom_sections = '
     <div class="container pt-4">
         <div class="row align-items-center flex-row-reverse mb-5">
             <div class="col-lg-5 mb-4 mb-lg-0">
-                <img src="assets/images/pages/caregiver_helping.png" alt="Caregiver helping senior walk" class="img-fluid rounded-4 shadow-sm w-100 border border-4" style="border-color: #6f42c1 !important;">
+                <img src="assets/images/pages/caregiver_helping.png" alt="Caregiver helping senior walk" class="img-fluid rounded-4 shadow-sm w-100 border border-4" style="border-color: #6f42c1 !important;" loading="lazy" decoding="async">
             </div>
             <div class="col-lg-7 pe-lg-5">
                 <h2 class="fw-bold text-dark mb-4">Who Needs An Elderly Caretaker at Home?</h2>

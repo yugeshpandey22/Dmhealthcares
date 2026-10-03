@@ -65,7 +65,7 @@ $frontend_custom_sections = '
                 </a>
             </div>
             <div class="col-lg-6 order-1 order-lg-2 mb-4 mb-lg-0 position-relative">
-                <img src="assets/images/pages/physiotherapist_home.png" alt="Physiotherapy at Home" class="img-fluid rounded-4 shadow-lg w-100 position-relative z-1">
+                <img src="assets/images/pages/physiotherapist_home.png" alt="Physiotherapy at Home" class="img-fluid rounded-4 shadow-lg w-100 position-relative z-1" loading="lazy" decoding="async">
                 <!-- Image decorative border -->
                 <div class="position-absolute w-100 h-100 bg-physio-orange rounded-4" style="top: 20px; left: 20px; z-index: 0; opacity: 0.2;"></div>
             </div>
@@ -145,7 +145,7 @@ $frontend_custom_sections = '
         <div class="row align-items-center">
             <div class="col-lg-5 mb-4 mb-lg-0">
                 <div class="position-relative">
-                    <img src="assets/images/pages/physio_rehab.png" alt="Physio Rehab Massage" class="img-fluid rounded-4 shadow-lg w-100">
+                    <img src="assets/images/pages/physio_rehab.png" alt="Physio Rehab Massage" class="img-fluid rounded-4 shadow-lg w-100" loading="lazy" decoding="async">
                     <div class="position-absolute bottom-0 start-0 translate-middle-x mb-4 ms-4 bg-white p-3 rounded-3 shadow-lg d-none d-md-block">
                         <div class="d-flex align-items-center">
                             <i class="fa-solid fa-star text-warning fs-4 me-2"></i>

@@ -24,7 +24,7 @@ $frontend_custom_sections = '
         <!-- What is Palliative Care Section -->
         <div class="row align-items-center mb-5">
             <div class="col-lg-6 mb-4 mb-lg-0">
-                <img src="' . (isset($display_image) ? $display_image : '') . '" alt="Compassionate Palliative Care" class="img-fluid rounded-4 shadow-lg w-100 border border-4 border-white">
+                <img src="' . (isset($display_image) ? $display_image : '') . '" alt="Compassionate Palliative Care" class="img-fluid rounded-4 shadow-lg w-100 border border-4 border-white" loading="lazy" decoding="async">
             </div>
             <div class="col-lg-6 ps-lg-5">
                 <span class="badge bg-primary bg-opacity-10 text-primary px-3 py-2 rounded-pill mb-3 fw-bold shadow-sm">Compassion & Dignity</span>

@@ -30,14 +30,25 @@ $page_keywords_seo = isset($seo_keywords) && !empty($seo_keywords)
 <html lang="en">
 
 <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-W75EM41H5Y"></script>
+    <!-- Google tag (gtag.js) - Optimized Non-blocking Loading -->
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'G-W75EM41H5Y');
+        function initGtag() {
+            if (window._gtagLoaded) return;
+            window._gtagLoaded = true;
+            var s = document.createElement('script');
+            s.src = 'https://www.googletagmanager.com/gtag/js?id=G-W75EM41H5Y';
+            s.async = true;
+            document.head.appendChild(s);
+            gtag('js', new Date());
+            gtag('config', 'G-W75EM41H5Y');
+        }
+        if ('requestIdleCallback' in window) {
+            requestIdleCallback(initGtag, { timeout: 3000 });
+        } else {
+            window.addEventListener('load', function() { setTimeout(initGtag, 1500); });
+        }
     </script>
 
     <meta charset="UTF-8">
@@ -122,14 +133,20 @@ $page_keywords_seo = isset($seo_keywords) && !empty($seo_keywords)
         }
     </script>
 
-    <!-- Google Fonts -->
+    <!-- Google Fonts & FontAwesome Optimized -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-    <!-- FontAwesome 6.6.0 -->
-    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <!-- Bootstrap CSS for Carousel -->
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap"></noscript>
+
+    <!-- FontAwesome 6.6.0 Asynchronous / Preload -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"></noscript>
+
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
@@ -333,7 +350,7 @@ $page_keywords_seo = isset($seo_keywords) && !empty($seo_keywords)
                 <?php $home_link = (strpos($_SERVER['HTTP_HOST'] ?? '', 'localhost') !== false || strpos($_SERVER['HTTP_HOST'] ?? '', '127.0.0.1') !== false) ? '/DmHealthcare/' : '/'; ?>
                 <a class="navbar-brand logo p-0 d-flex align-items-center" href="<?= $home_link ?>" style="margin-top: -10px; margin-bottom: -10px; text-decoration: none;">
                     <!-- Logo Icon -->
-                    <img src="assets/images/logo.png" alt="DmHealthcare Logo Icon" style="height: 85px; width: auto; object-fit: contain;">
+                    <img src="assets/images/logo.png" alt="DmHealthcare Logo Icon" width="85" height="85" style="height: 85px; width: auto; object-fit: contain;" fetchpriority="high" decoding="async">
 
                     <!-- Logo Typography -->
                     <div class="d-flex flex-column justify-content-center" style="line-height: 1.1; margin-left: -25px; position: relative; z-index: 1;">

@@ -63,7 +63,7 @@ $frontend_custom_sections = '
             </div>
             <div class="col-lg-6">
                 <div class="position-relative">
-                    <img src="assets/images/pages/hospital_bed_home.png" alt="Hospital Bed at Home" class="img-fluid rounded-4 shadow-lg w-100">
+                    <img src="assets/images/pages/hospital_bed_home.png" alt="Hospital Bed at Home" class="img-fluid rounded-4 shadow-lg w-100" loading="lazy" decoding="async">
                     <!-- Accent Box -->
                     <div class="position-absolute bottom-0 end-0 bg-white p-3 rounded-4 shadow-lg mb-4 me-4 d-none d-md-block" style="border-left: 5px solid #e5252a;">
                         <span class="badge bg-success mb-1">In Stock</span>
@@ -140,7 +140,7 @@ foreach($beds as $bed) {
     $frontend_custom_sections .= '<div class="col-lg-3 col-md-4 col-sm-6">
         <div class="card equip-card h-100 bg-white border shadow-sm">
             <div class="position-relative">
-                <img src="'.$bed["image"].'" onerror="this.onerror=null;this.src=\'assets/images/pages/hospital_bed_home.png\';" class="card-img-top border-bottom" alt="'.$bed["name"].'" style="height: 180px; object-fit: contain; background: #fff; padding: 6px;">
+                <img src="'.$bed["image"].'" onerror="this.onerror=null;this.src=\'assets/images/pages/hospital_bed_home.png\';" class="card-img-top border-bottom" alt="'.$bed["name"].'" style="height: 180px; object-fit: contain; background: #fff; padding: 6px;" loading="lazy" decoding="async">
                 ' . $tag_html . '
             </div>
             <div class="card-body p-3 text-center d-flex flex-column">
@@ -311,7 +311,7 @@ $frontend_custom_sections .= '
     <div class="container py-4">
         <div class="row align-items-center flex-row-reverse">
             <div class="col-lg-5 mb-4 mb-lg-0">
-                <img src="assets/images/pages/medical_equipment_bed.png" alt="Hospital Bed Remote" class="img-fluid rounded-4 shadow-sm w-100 border border-4 border-light">
+                <img src="assets/images/pages/medical_equipment_bed.png" alt="Hospital Bed Remote" class="img-fluid rounded-4 shadow-sm w-100 border border-4 border-light" loading="lazy" decoding="async">
             </div>
             <div class="col-lg-7 pe-lg-5">
                 <h2 class="fw-bold text-dark mb-4">Why is a Hospital Bed Necessary at Home?</h2>

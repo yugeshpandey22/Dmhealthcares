@@ -260,7 +260,7 @@ body {
             
             <div class="col-lg-6">
                 <div class="bg-white rounded-4 shadow-sm p-2">
-                    <img src="assets/images/downloaded_img_2.jpg" class="img-fluid rounded-3 w-100" alt="ECG Technician at Home" style="object-fit: cover; height: 500px;">
+                    <img src="assets/images/downloaded_img_2.jpg" class="img-fluid rounded-3 w-100" alt="ECG Technician at Home" style="object-fit: cover; height: 500px;" loading="lazy" decoding="async">
                 </div>
             </div>
         </div>

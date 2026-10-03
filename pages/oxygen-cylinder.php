@@ -146,7 +146,7 @@ ob_start();
                     </div>
 
                     <div class="position-relative mb-3">
-                        <img src="assets/images/pages/oxygen_concentrator_hero.jpg" alt="Medical Oxygen Cylinder Delivery Kit" class="img-fluid rounded-3 border w-100" style="height: 180px; object-fit: cover;">
+                        <img src="assets/images/pages/oxygen_concentrator_hero.jpg" alt="Medical Oxygen Cylinder Delivery Kit" class="img-fluid rounded-3 border w-100" style="height: 180px; object-fit: cover;" loading="lazy" decoding="async">
                         <span class="badge bg-success bg-opacity-95 text-white rounded-pill px-2 py-1 position-absolute top-0 start-0 m-2 shadow-sm fw-bold" style="font-size: 0.72rem; z-index: 2;">
                             <i class="fa-solid fa-check me-1"></i> Available for Rent
                         </span>
@@ -352,7 +352,7 @@ ob_start();
                 <div class="card h-100 border rounded-4 shadow-sm p-4 text-center bg-light">
                     <span class="badge bg-secondary bg-opacity-10 text-dark px-3 py-1 rounded-pill fw-bold mx-auto mb-2 small">Portable Bedside Unit</span>
                     <div class="position-relative mb-3">
-                        <img src="assets/images/equipment/oxygen_cylinder.jpg" class="img-fluid rounded-3 border w-100" style="height: 180px; object-fit: contain; background: #fff;" alt="O2 Cylinder 10 ltrs">
+                        <img src="assets/images/equipment/oxygen_cylinder.jpg" class="img-fluid rounded-3 border w-100" style="height: 180px; object-fit: contain; background: #fff;" alt="O2 Cylinder 10 ltrs" loading="lazy" decoding="async">
                         <span class="badge bg-success bg-opacity-95 text-white rounded-pill px-2 py-1 position-absolute top-0 start-0 m-2 shadow-sm fw-bold" style="font-size: 0.72rem; z-index: 2;">
                             <i class="fa-solid fa-check me-1"></i> Available for Rent
                         </span>
@@ -388,7 +388,7 @@ ob_start();
                 <div class="card h-100 border border-danger border-2 rounded-4 shadow-sm p-4 text-center bg-white position-relative">
                     <span class="badge bg-dm-red text-white px-3 py-1 rounded-pill fw-bold position-absolute top-0 start-50 translate-middle small shadow-sm">High Capacity Recommended</span>
                     <div class="position-relative mb-3 mt-2">
-                        <img src="assets/images/equipment/jumbo_cylinder.jpg" class="img-fluid rounded-3 border w-100" style="height: 180px; object-fit: contain; background: #fff;" alt="O2 Cylinder 50 ltrs">
+                        <img src="assets/images/equipment/jumbo_cylinder.jpg" class="img-fluid rounded-3 border w-100" style="height: 180px; object-fit: contain; background: #fff;" alt="O2 Cylinder 50 ltrs" loading="lazy" decoding="async">
                         <span class="badge bg-success bg-opacity-95 text-white rounded-pill px-2 py-1 position-absolute top-0 start-0 m-2 shadow-sm fw-bold" style="font-size: 0.72rem; z-index: 2;">
                             <i class="fa-solid fa-check me-1"></i> Available for Rent
                         </span>

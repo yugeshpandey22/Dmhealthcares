@@ -1,6 +1,10 @@
 <?php
-// DO NOT set $full_page_override = true;
-$hide_default_welcome = true;
+$full_page_override = true;
+
+// Resolve hero feature image dynamically (from uploaded page_image / main_37_... or fallback)
+$hero_feature_img = ($custom_image && file_exists($custom_image)) 
+    ? $custom_image 
+    : ((isset($display_image) && file_exists($display_image)) ? $display_image : 'assets/images/pages/medical_equipment_bed.png');
 
 $frontend_custom_sections = '
 
@@ -20,7 +24,7 @@ body {
 .acc-hero {
     background: linear-gradient(135deg, #ffffff 0%, #fff5f5 100%);
     border-bottom: 1px solid var(--border-color);
-    padding: 80px 0;
+    padding: 60px 0 70px;
     position: relative;
     overflow: hidden;
 }
@@ -82,31 +86,32 @@ body {
 
 <!-- 1. Hero Section -->
 <section class="acc-hero">
-    <div class="container position-relative z-1 py-5">
-        <div class="row align-items-center">
-            <div class="col-lg-7 mb-5 mb-lg-0 pe-lg-5 text-center text-lg-start">
-                <span class="badge bg-danger px-3 py-2 rounded-pill mb-4 fw-bold shadow-sm"><i class="fa-solid fa-check-circle me-1"></i> Medical Spares & Equipment on Rent</span>
-                <h1 class="display-5 fw-bold mb-4 text-dark">Medical Accessories, Spares & Equipment on Rent</h1>
-                <p class="lead mb-4 text-muted" style="opacity: 0.9;">We stock genuine spare parts, disposable accessories, and medical consumables to ensure your medical equipment runs efficiently. <strong>Available for rent</strong> with same-day doorstep dispatch across Delhi NCR.</p>
+    <div class="container position-relative z-1 py-4">
+        <div class="row align-items-center g-4">
+            <div class="col-lg-7 text-center text-lg-start pe-lg-4">
+                <span class="badge bg-danger px-3 py-2 rounded-pill mb-3 fw-bold shadow-sm"><i class="fa-solid fa-check-circle me-1"></i> Medical Spares & Equipment on Rent</span>
+                <h1 class="display-5 fw-bold mb-3 text-dark">Medical Accessories, Spares & Equipment on Rent</h1>
+                <p class="lead mb-4 text-muted" style="opacity: 0.9; font-size: 1.05rem;">We stock genuine spare parts, disposable accessories, and medical consumables to ensure your medical equipment runs efficiently. <strong>Available for rent</strong> with same-day doorstep dispatch across Delhi NCR.</p>
                 
                 <div class="d-flex flex-wrap justify-content-center justify-content-lg-start gap-3 mt-4">
-                    <a href="#inventory" class="btn btn-primary btn-lg fw-bold px-5 rounded-pill shadow-sm">
-                        Browse Catalog
+                    <a href="#inventory" class="btn btn-primary btn-lg fw-bold px-4 px-md-5 rounded-pill shadow-sm" style="background: var(--primary-color); border: none;">
+                        <i class="fa-solid fa-boxes-stacked me-1"></i> Browse Catalog
                     </a>
-                    <a href="tel:+919319149644" class="btn btn-outline-dark btn-lg fw-bold px-5 rounded-pill">
-                        Rent Now
+                    <a href="tel:+919319149644" class="btn btn-outline-dark btn-lg fw-bold px-4 px-md-5 rounded-pill">
+                        <i class="fa-solid fa-phone me-1"></i> Rent Now
                     </a>
                 </div>
             </div>
             
-            <div class="col-lg-5 text-center d-none d-lg-block">
-                <div class="position-relative">
-                    <div class="rounded-4 shadow-lg w-100 d-flex flex-column align-items-center justify-content-center bg-white border border-4 border-light" style="height: 400px;">
-                        <div class="mb-4 bg-primary bg-opacity-10 p-5 rounded-circle d-flex align-items-center justify-content-center" style="width: 180px; height: 180px;">
-                            <i class="fa-solid fa-box-open text-primary" style="font-size: 80px;"></i>
+            <div class="col-lg-5 text-center">
+                <div class="position-relative mx-auto" style="max-width: 440px;">
+                    <div class="rounded-4 shadow-lg overflow-hidden bg-white border border-3 border-white p-2">
+                        <img src="' . htmlspecialchars($hero_feature_img) . '" alt="' . htmlspecialchars($display_title ?? 'Medical Accessories & Equipment') . '" class="img-fluid rounded-3 w-100" style="aspect-ratio: 1/1; max-height: 420px; object-fit: cover;" width="1000" height="1000" loading="eager" decoding="async" onerror="this.onerror=null; this.src=\'assets/images/pages/medical_equipment_bed.png\';">
+                        <div class="mt-2 text-center pb-1">
+                            <span class="badge bg-success bg-opacity-10 text-success border border-success border-opacity-25 px-3 py-1 rounded-pill fw-bold" style="font-size: 0.78rem;">
+                                <i class="fa-solid fa-check me-1"></i> Original Spares & Equipment on Rent
+                            </span>
                         </div>
-                        <span class="badge bg-success mb-2 px-3 py-1 rounded-pill"><i class="fa-solid fa-check me-1"></i> Available for Rent</span>
-                        <span class="text-muted fw-bold text-uppercase tracking-wider">Original Spares & Units</span>
                     </div>
                 </div>
             </div>
@@ -524,7 +529,7 @@ body {
             <div class="col-xl-3 col-lg-4 col-md-6">
                 <div class="acc-card h-100 d-flex flex-column overflow-hidden shadow-sm" style="border-radius: 16px; border: 1px solid #e2e8f0; background: #fff;">
                     <div class="position-relative" style="height: 175px; overflow: hidden; background: #fff; border-bottom: 1px solid #f1f5f9; padding: 10px;">
-                        <img src="'.$item['image'].'" onerror="this.onerror=null;this.src=\'assets/images/pages/hospital_bed_home.png\';" alt="'.$item['name'].'" style="width: 100%; height: 100%; object-fit: contain;">
+                        <img src="'.$item['image'].'" onerror="this.onerror=null;this.src=\'assets/images/pages/hospital_bed_home.png\';" alt="'.$item['name'].'" width="200" height="175" loading="lazy" decoding="async" style="width: 100%; height: 100%; object-fit: contain;">
                         <span class="position-absolute top-0 end-0 m-2 badge bg-primary bg-opacity-10 text-primary border border-primary border-opacity-25 rounded-pill px-2 py-1 small fw-semibold" style="font-size: 0.72rem;">'.$item['category'].'</span>
                     </div>
                     <div class="p-3 d-flex flex-column flex-grow-1 text-center">
@@ -623,8 +628,38 @@ $frontend_custom_sections .= '
             </div>
         </div>
     </div>
-</section>
+</section>';
 
+if (!empty($gallery_images) && is_array($gallery_images)) {
+    $gallery_cards = '';
+    foreach($gallery_images as $gimg) {
+        if (file_exists($gimg)) {
+            $gallery_cards .= '
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="rounded-3 overflow-hidden border shadow-sm h-100 bg-white p-2">
+                    <img src="' . htmlspecialchars($gimg) . '" alt="Medical Accessory Gallery" class="w-100 h-100 rounded-2" style="aspect-ratio: 1/1; object-fit: cover;" loading="lazy" decoding="async">
+                </div>
+            </div>';
+        }
+    }
+    if (!empty($gallery_cards)) {
+        $frontend_custom_sections .= '
+        <section class="py-5 bg-white border-top">
+            <div class="container">
+                <div class="text-center mb-4">
+                    <span class="badge bg-danger bg-opacity-10 text-danger px-3 py-1 rounded-pill fw-bold mb-2 small"><i class="fa-solid fa-camera me-1"></i> Live Product Gallery</span>
+                    <h3 class="fw-bold text-dark">Accessories & Equipment Gallery</h3>
+                    <div class="mx-auto mt-2 mb-3" style="width: 50px; height: 3px; background-color: var(--primary-color); border-radius: 2px;"></div>
+                </div>
+                <div class="row g-3 justify-content-center">
+                    ' . $gallery_cards . '
+                </div>
+            </div>
+        </section>';
+    }
+}
+
+$frontend_custom_sections .= '
 <!-- 4. Contact CTA Card -->
 <div class="my-5 p-4 p-md-5 rounded-4 text-center text-white position-relative overflow-hidden shadow-lg" style="background: radial-gradient(circle at 15% 20%, rgba(229, 37, 42, 0.22) 0%, transparent 45%), radial-gradient(circle at 85% 80%, rgba(2, 132, 199, 0.22) 0%, transparent 45%), linear-gradient(135deg, #0f172a 0%, #1e293b 100%); border: 1px solid rgba(255, 255, 255, 0.12); box-shadow: 0 20px 40px -15px rgba(15, 23, 42, 0.3) !important;">
     <span class="badge bg-danger bg-opacity-25 text-danger px-3 py-1 rounded-pill fw-semibold mb-3 border border-danger border-opacity-50 small">

@@ -40,7 +40,7 @@ $frontend_custom_sections = '
                 </a>
             </div>
             <div class="col-lg-6 ps-lg-5 order-1 order-lg-2 mb-4 mb-lg-0">
-                <img src="' . (isset($display_image) ? $display_image : '') . '" alt="Staircase Mobility Assistance" class="img-fluid rounded-4 shadow-lg w-100 border border-4" style="border-color: #fd7e14 !important;">
+                <img src="' . (isset($display_image) ? $display_image : '') . '" alt="Staircase Mobility Assistance" class="img-fluid rounded-4 shadow-lg w-100 border border-4" style="border-color: #fd7e14 !important;" loading="lazy" decoding="async">
             </div>
         </div>
     </div>

@@ -99,7 +99,7 @@ ob_start();
             <!-- Right Hero Image -->
             <div class="col-lg-5">
                 <div class="position-relative">
-                    <img src="assets/images/pages/neobolt_hero_scooter.jpg" alt="NeoBolt Motorized Wheelchair Scooter" class="img-fluid rounded-4 shadow-sm border border-2 border-white w-100" style="max-height: 340px; object-fit: cover;">
+                    <img src="assets/images/pages/neobolt_hero_scooter.jpg" alt="NeoBolt Motorized Wheelchair Scooter" class="img-fluid rounded-4 shadow-sm border border-2 border-white w-100" style="max-height: 340px; object-fit: cover;" loading="lazy" decoding="async">
                     <div class="position-absolute bottom-0 start-0 m-2 p-2 px-3 bg-white bg-opacity-95 rounded-3 shadow-sm border">
                         <div class="d-flex align-items-center gap-2">
                             <i class="fa-solid fa-certificate text-dm-red fs-5"></i>
@@ -127,7 +127,7 @@ ob_start();
         <div class="row g-3 pt-2">
             <div class="col-6 col-md-3">
                 <div class="card h-100 border-0 shadow-sm rounded-3 overflow-hidden bg-white p-2">
-                    <img src="assets/images/pages/neobolt_hero_scooter.jpg" alt="NeoBolt Outdoor Ride" class="img-fluid nb-gallery-img w-100">
+                    <img src="assets/images/pages/neobolt_hero_scooter.jpg" alt="NeoBolt Outdoor Ride" class="img-fluid nb-gallery-img w-100" loading="lazy" decoding="async">
                     <div class="card-body p-2 text-center">
                         <span class="fw-bold text-dark small d-block">Outdoor Ride</span>
                         <small class="text-muted" style="font-size: 0.72rem;">Effortless garden & street commute</small>
@@ -136,7 +136,7 @@ ob_start();
             </div>
             <div class="col-6 col-md-3">
                 <div class="card h-100 border-0 shadow-sm rounded-3 overflow-hidden bg-white p-2">
-                    <img src="assets/images/pages/neobolt_easy_attachment.jpg" alt="NeoBolt 10-Sec Quick Lock" class="img-fluid nb-gallery-img w-100">
+                    <img src="assets/images/pages/neobolt_easy_attachment.jpg" alt="NeoBolt 10-Sec Quick Lock" class="img-fluid nb-gallery-img w-100" loading="lazy" decoding="async">
                     <div class="card-body p-2 text-center">
                         <span class="fw-bold text-dark small d-block">Quick-Clamp Lock</span>
                         <small class="text-muted" style="font-size: 0.72rem;">10-second single latch attach</small>
@@ -145,7 +145,7 @@ ob_start();
             </div>
             <div class="col-6 col-md-3">
                 <div class="card h-100 border-0 shadow-sm rounded-3 overflow-hidden bg-white p-2">
-                    <img src="assets/images/pages/neobolt_product_closeup.jpg" alt="NeoBolt Motor & Disc Brakes" class="img-fluid nb-gallery-img w-100">
+                    <img src="assets/images/pages/neobolt_product_closeup.jpg" alt="NeoBolt Motor & Disc Brakes" class="img-fluid nb-gallery-img w-100" loading="lazy" decoding="async">
                     <div class="card-body p-2 text-center">
                         <span class="fw-bold text-dark small d-block">Motor & Disc Brakes</span>
                         <small class="text-muted" style="font-size: 0.72rem;">High-torque hub drive & safety</small>
@@ -154,7 +154,7 @@ ob_start();
             </div>
             <div class="col-6 col-md-3">
                 <div class="card h-100 border-0 shadow-sm rounded-3 overflow-hidden bg-white p-2">
-                    <img src="assets/images/pages/neobolt_outdoor_mobility.jpg" alt="NeoBolt Urban Freedom" class="img-fluid nb-gallery-img w-100">
+                    <img src="assets/images/pages/neobolt_outdoor_mobility.jpg" alt="NeoBolt Urban Freedom" class="img-fluid nb-gallery-img w-100" loading="lazy" decoding="async">
                     <div class="card-body p-2 text-center">
                         <span class="fw-bold text-dark small d-block">Urban Independence</span>
                         <small class="text-muted" style="font-size: 0.72rem;">Complete everyday freedom</small>

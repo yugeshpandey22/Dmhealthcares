@@ -74,7 +74,7 @@ $frontend_custom_sections = '
     <!-- Why Choose Us Section -->
     <div class="row align-items-center mb-5 mt-4">
         <div class="col-lg-6 mb-4 mb-lg-0">
-            <img src="' . (isset($display_image) ? $display_image : '') . '" alt="Nurse caring for patient" class="img-fluid rounded-4 shadow-lg w-100">
+            <img src="' . (isset($display_image) ? $display_image : '') . '" alt="Nurse caring for patient" class="img-fluid rounded-4 shadow-lg w-100" loading="lazy" decoding="async">
         </div>
         <div class="col-lg-6 ps-lg-5">
             <h2 class="fw-bold text-dark mb-4">Why Trust Our Nurses?</h2>

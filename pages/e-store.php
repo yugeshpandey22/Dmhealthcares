@@ -293,7 +293,7 @@ ob_start();
                 <div class="product-shop-card shadow-sm">
                     <span class="product-tag product-tag-hot">Top Seller</span>
                     <div class="product-img-box position-relative">
-                        <img src="assets/images/pages/oxygen_concentrator_5l.jpg" alt="5 LPM Oxygen Concentrator" onerror="this.onerror=null; this.src='assets/images/pages/oxygen_concentrator_hero.jpg';">
+                        <img src="assets/images/pages/oxygen_concentrator_5l.jpg" alt="5 LPM Oxygen Concentrator" onerror="this.onerror=null; this.src='assets/images/pages/oxygen_concentrator_hero.jpg';" loading="lazy" decoding="async">
                         <span class="badge bg-success bg-opacity-95 text-white rounded-pill px-2 py-1 position-absolute top-0 end-0 m-2 shadow-sm fw-bold" style="font-size: 0.7rem; z-index: 2;">
                             <i class="fa-solid fa-check me-1"></i> Available for Rent
                         </span>
@@ -337,7 +337,7 @@ ob_start();
                 <div class="product-shop-card shadow-sm">
                     <span class="product-tag product-tag-spec">High Flow</span>
                     <div class="product-img-box position-relative">
-                        <img src="assets/images/pages/oxygen_concentrator_10l.jpg" alt="10 LPM Oxygen Concentrator" onerror="this.onerror=null; this.src='assets/images/pages/oxygen_concentrator_hero.jpg';">
+                        <img src="assets/images/pages/oxygen_concentrator_10l.jpg" alt="10 LPM Oxygen Concentrator" onerror="this.onerror=null; this.src='assets/images/pages/oxygen_concentrator_hero.jpg';" loading="lazy" decoding="async">
                         <span class="badge bg-success bg-opacity-95 text-white rounded-pill px-2 py-1 position-absolute top-0 end-0 m-2 shadow-sm fw-bold" style="font-size: 0.7rem; z-index: 2;">
                             <i class="fa-solid fa-check me-1"></i> Available for Rent
                         </span>
@@ -466,7 +466,7 @@ ob_start();
                 <div class="product-shop-card shadow-sm">
                     <span class="product-tag product-tag-spec">ICU Grade</span>
                     <div class="product-img-box position-relative">
-                        <img src="assets/images/pages/hospital_bed_home.png" alt="Motorized ICU Bed" onerror="this.onerror=null; this.src='assets/images/pages/medical_equipment_bed.png';">
+                        <img src="assets/images/pages/hospital_bed_home.png" alt="Motorized ICU Bed" onerror="this.onerror=null; this.src='assets/images/pages/medical_equipment_bed.png';" loading="lazy" decoding="async">
                         <span class="badge bg-success bg-opacity-95 text-white rounded-pill px-2 py-1 position-absolute top-0 end-0 m-2 shadow-sm fw-bold" style="font-size: 0.7rem; z-index: 2;">
                             <i class="fa-solid fa-check me-1"></i> Available for Rent
                         </span>
@@ -509,7 +509,7 @@ ob_start();
                 <div class="product-shop-card shadow-sm">
                     <span class="product-tag product-tag-buy">Budget Friendly</span>
                     <div class="product-img-box position-relative">
-                        <img src="assets/images/pages/medical_equipment_bed.png" alt="Manual Fowler Bed">
+                        <img src="assets/images/pages/medical_equipment_bed.png" alt="Manual Fowler Bed" loading="lazy" decoding="async">
                         <span class="badge bg-success bg-opacity-95 text-white rounded-pill px-2 py-1 position-absolute top-0 end-0 m-2 shadow-sm fw-bold" style="font-size: 0.7rem; z-index: 2;">
                             <i class="fa-solid fa-check me-1"></i> Available for Rent
                         </span>
@@ -552,7 +552,7 @@ ob_start();
                 <div class="product-shop-card shadow-sm">
                     <span class="product-tag product-tag-hot">Innovation</span>
                     <div class="product-img-box position-relative">
-                        <img src="assets/images/pages/neobolt_hero_scooter.jpg" alt="NeoBolt Scooter">
+                        <img src="assets/images/pages/neobolt_hero_scooter.jpg" alt="NeoBolt Scooter" loading="lazy" decoding="async">
                         <span class="badge bg-success bg-opacity-95 text-white rounded-pill px-2 py-1 position-absolute top-0 end-0 m-2 shadow-sm fw-bold" style="font-size: 0.7rem; z-index: 2;">
                             <i class="fa-solid fa-check me-1"></i> Available for Rent
                         </span>
@@ -595,7 +595,7 @@ ob_start();
                 <div class="product-shop-card shadow-sm">
                     <span class="product-tag product-tag-buy">Comfort</span>
                     <div class="product-img-box position-relative">
-                        <img src="assets/images/pages/wheelchair_recliner_commode.jpg" alt="Recliner Commode Wheelchair">
+                        <img src="assets/images/pages/wheelchair_recliner_commode.jpg" alt="Recliner Commode Wheelchair" loading="lazy" decoding="async">
                         <span class="badge bg-success bg-opacity-95 text-white rounded-pill px-2 py-1 position-absolute top-0 end-0 m-2 shadow-sm fw-bold" style="font-size: 0.7rem; z-index: 2;">
                             <i class="fa-solid fa-check me-1"></i> Available for Rent
                         </span>
@@ -638,7 +638,7 @@ ob_start();
                 <div class="product-shop-card shadow-sm">
                     <span class="product-tag product-tag-spec">Power Mobility</span>
                     <div class="product-img-box position-relative">
-                        <img src="assets/images/pages/wheelchair_electric_motorized.jpg" alt="Electric Motorized Wheelchair">
+                        <img src="assets/images/pages/wheelchair_electric_motorized.jpg" alt="Electric Motorized Wheelchair" loading="lazy" decoding="async">
                         <span class="badge bg-success bg-opacity-95 text-white rounded-pill px-2 py-1 position-absolute top-0 end-0 m-2 shadow-sm fw-bold" style="font-size: 0.7rem; z-index: 2;">
                             <i class="fa-solid fa-check me-1"></i> Available for Rent
                         </span>

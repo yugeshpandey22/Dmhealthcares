@@ -234,7 +234,7 @@ ob_start();
             <!-- Hero Image Banner -->
             <div class="col-lg-5 text-center">
                 <div class="position-relative d-inline-block">
-                    <img src="assets/images/about.jpg" alt="Medical Support Staff DM Healthcare" class="img-fluid rounded-4 shadow-lg" style="max-height: 380px; object-fit: cover; border: 4px solid #ffffff;">
+                    <img src="assets/images/about.jpg" alt="Medical Support Staff DM Healthcare" class="img-fluid rounded-4 shadow-lg" style="max-height: 380px; object-fit: cover; border: 4px solid #ffffff;" loading="lazy" decoding="async">
                     <div class="position-absolute bottom-0 start-0 m-3 p-3 bg-white rounded-3 shadow-sm text-start border d-none d-sm-block" style="max-width: 220px;">
                         <span class="badge bg-danger rounded-pill mb-1" style="font-size: 0.7rem;">24/7 Availability</span>
                         <div class="fw-bold text-dark small">12h Day / Night & 24h Live-in Staffing</div>

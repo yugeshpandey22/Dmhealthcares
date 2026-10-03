@@ -510,13 +510,22 @@ $gallery = $item['gallery_images'] ? json_decode($item['gallery_images'], true) 
                         <!-- Main Content Side Image -->
                         <div class="col-md-6 ps-md-4">
                             <label class="form-label fw-bold text-dark d-block">Side Feature Image</label>
-                            <?php if(!empty($item['page_image'])): ?>
-                                <div class="mb-3 rounded-3 overflow-hidden border">
-                                    <img src="../<?= htmlspecialchars($item['page_image']) ?>" class="w-100" style="max-height: 160px; object-fit: cover;" alt="Feature Preview">
+                            <?php 
+                                $preview_side = !empty($item['page_image']) ? $item['page_image'] : null;
+                                if (empty($preview_side) || !file_exists('../' . $preview_side)) {
+                                    $auto_sides = glob('../assets/images/pages/main_' . $id . '_*.*');
+                                    if (!empty($auto_sides)) {
+                                        $preview_side = str_replace('../', '', end($auto_sides));
+                                    }
+                                }
+                            ?>
+                            <?php if(!empty($preview_side) && file_exists('../' . $preview_side)): ?>
+                                <div class="mb-3 rounded-3 overflow-hidden border p-2 bg-light text-center" style="max-width: 200px;">
+                                    <img src="../<?= htmlspecialchars($preview_side) ?>?v=<?= time() ?>" class="w-100 rounded-2" style="aspect-ratio: 1/1; max-height: 180px; object-fit: cover;" alt="Feature Preview">
                                 </div>
                             <?php endif; ?>
                             <input type="file" name="page_image" class="form-control" accept="image/*">
-                            <small class="text-muted d-block mt-1">Recommended size: 800x600px</small>
+                            <small class="text-muted d-block mt-1">Recommended size: <strong>1000 &times; 1000 px</strong> (Square 1:1 Aspect Ratio)</small>
                         </div>
 
                         <!-- Multi Gallery Images -->

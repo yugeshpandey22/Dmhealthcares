@@ -106,7 +106,7 @@ $frontend_custom_sections = '
                 </div>
             </div>
             <div class="col-lg-5 ps-lg-4 text-center">
-                <img src="' . (isset($display_image) ? htmlspecialchars($display_image) : 'assets/images/about.jpg') . '" alt="24 Hours Live-In Healthcare Caregiver" class="img-fluid rounded-4 shadow border border-4 border-white" style="max-height: 380px; width: 100%; object-fit: cover;">
+                <img src="' . (isset($display_image) ? htmlspecialchars($display_image) : 'assets/images/about.jpg') . '" alt="24 Hours Live-In Healthcare Caregiver" class="img-fluid rounded-4 shadow border border-4 border-white" style="max-height: 380px; width: 100%; object-fit: cover;" loading="lazy" decoding="async">
             </div>
         </div>
     </div>

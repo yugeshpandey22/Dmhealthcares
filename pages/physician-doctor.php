@@ -59,7 +59,7 @@ $frontend_custom_sections = '
                 </div>
             </div>
             <div class="col-lg-4 text-center mt-4 mt-lg-0">
-                <img src="assets/images/pages/physician_visit.png" alt="Doctor Consultation" class="img-fluid rounded-4 shadow-sm" style="max-height: 240px; object-fit: cover;" onerror="this.onerror=null; this.src=\'assets/images/about.jpg\';">
+                <img src="assets/images/pages/physician_visit.png" alt="Doctor Consultation" class="img-fluid rounded-4 shadow-sm" style="max-height: 240px; object-fit: cover;" onerror="this.onerror=null; this.src=\'assets/images/about.jpg\';" loading="lazy" decoding="async">
             </div>
         </div>
     </div>
@@ -105,7 +105,7 @@ $frontend_custom_sections = '
     <!-- Section 1 -->
     <div class="row align-items-center mb-5 pb-5">
         <div class="col-lg-6 mb-4 mb-lg-0">
-            <img src="assets/images/pages/doctor_checkup.png" alt="Doctor Checkup" class="img-fluid zig-zag-image w-100">
+            <img src="assets/images/pages/doctor_checkup.png" alt="Doctor Checkup" class="img-fluid zig-zag-image w-100" loading="lazy" decoding="async">
         </div>
         <div class="col-lg-5 offset-lg-1">
             <div class="d-flex align-items-center mb-3">
@@ -127,7 +127,7 @@ $frontend_custom_sections = '
     <!-- Section 2 (Reverse) -->
     <div class="row align-items-center flex-row-reverse mb-5 pb-3">
         <div class="col-lg-6 mb-4 mb-lg-0">
-            <img src="assets/images/pages/doctor_prescription.png" alt="Doctor Prescription" class="img-fluid zig-zag-image-reverse w-100">
+            <img src="assets/images/pages/doctor_prescription.png" alt="Doctor Prescription" class="img-fluid zig-zag-image-reverse w-100" loading="lazy" decoding="async">
         </div>
         <div class="col-lg-5 me-lg-auto">
             <div class="d-flex align-items-center mb-3">

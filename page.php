@@ -31,10 +31,18 @@ $short_desc = $page_data ? $page_data['short_description'] : null;
 $specs = $page_data ? $page_data['specifications'] : null;
 $custom_image = $page_data && $page_data['page_image'] ? $page_data['page_image'] : null;
 $banner_image = $page_data && $page_data['banner_image'] ? $page_data['banner_image'] : null;
-if (($page_data && !empty($page_data['id'])) && (empty($banner_image) || !file_exists($banner_image))) {
-    $auto_banners = glob('assets/images/pages/banner_' . (int)$page_data['id'] . '_*.*');
-    if (!empty($auto_banners)) {
-        $banner_image = end($auto_banners);
+if (($page_data && !empty($page_data['id']))) {
+    if (empty($banner_image) || !file_exists($banner_image)) {
+        $auto_banners = glob('assets/images/pages/banner_' . (int)$page_data['id'] . '_*.*');
+        if (!empty($auto_banners)) {
+            $banner_image = end($auto_banners);
+        }
+    }
+    if (empty($custom_image) || !file_exists($custom_image)) {
+        $auto_mains = glob('assets/images/pages/main_' . (int)$page_data['id'] . '_*.*');
+        if (!empty($auto_mains)) {
+            $custom_image = end($auto_mains);
+        }
     }
 }
 $gallery_images = $page_data && $page_data['gallery_images'] ? json_decode($page_data['gallery_images'], true) : [];
@@ -319,7 +327,7 @@ try {
 
 <!-- Main Content Area -->
 <main style="overflow-x: hidden; width: 100%;">
-    <?php if(isset($full_page_override) && $full_page_override): ?>
+    <?php if((isset($full_page_override) && $full_page_override) || (!empty($frontend_custom_sections))): ?>
         <div class="content-section p-0">
             <?= isset($custom_content) ? $custom_content : '' ?>
             <?= isset($frontend_custom_sections) ? $frontend_custom_sections : '' ?>
@@ -444,6 +452,24 @@ try {
                         </div>
                     <?php endif; ?>
 
+                    <!-- Dynamic Photo Gallery if Uploaded in Admin -->
+                    <?php if(!empty($gallery_images) && is_array($gallery_images)): ?>
+                        <div class="bg-white p-4 rounded-4 shadow-sm border mb-5">
+                            <h4 class="fw-bold mb-3 text-dark"><i class="fa-solid fa-images me-2 text-danger" style="color: var(--primary-color) !important;"></i> Photo Gallery</h4>
+                            <div class="row g-3">
+                                <?php foreach($gallery_images as $gimg): ?>
+                                    <?php if(file_exists($gimg)): ?>
+                                        <div class="col-sm-6 col-md-4">
+                                            <div class="rounded-3 overflow-hidden border shadow-sm" style="height: 200px;">
+                                                <img src="<?= htmlspecialchars($gimg) ?>" alt="<?= htmlspecialchars($display_title) ?>" class="w-100 h-100" style="object-fit: cover;" loading="lazy" decoding="async">
+                                            </div>
+                                        </div>
+                                    <?php endif; ?>
+                                <?php endforeach; ?>
+                            </div>
+                        </div>
+                    <?php endif; ?>
+
                     <!-- Built-in FAQs for SEO Ranking -->
                     <div class="bg-white p-4 p-lg-5 rounded-4 shadow-sm border">
                         <h4 class="fw-bold mb-4 text-dark"><i class="fa-solid fa-circle-question me-2 text-danger" style="color: var(--primary-color) !important;"></i> Frequently Asked Questions</h4>
@@ -509,7 +535,7 @@ try {
                     <div>
                         <!-- Feature Image -->
                         <div class="mb-4">
-                            <img src="<?= htmlspecialchars($display_image) ?>" alt="<?= htmlspecialchars($display_title) ?>" class="img-fluid rounded-4 shadow w-100 border border-3 border-white" style="height: 280px; object-fit: cover;" onerror="this.onerror=null; this.src='assets/images/about.jpg';">
+                            <img src="<?= htmlspecialchars($display_image) ?>" alt="<?= htmlspecialchars($display_title) ?>" width="500" height="280" loading="lazy" decoding="async" class="img-fluid rounded-4 shadow w-100 border border-3 border-white" style="height: 280px; object-fit: cover;" onerror="this.onerror=null; this.src='assets/images/about.jpg';">
                         </div>
 
                         <!-- Sticky Contact & Booking Card -->

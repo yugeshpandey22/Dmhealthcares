@@ -354,7 +354,7 @@ ob_start();
                     <span class="featured-badge"><i class="fa-solid fa-star me-1"></i> Most Prescribed</span>
                     <div>
                         <div class="product-img-box mb-3 position-relative">
-                            <img src="assets/images/equipment/bipap_st.jpg" alt="Bi-Pap ST">
+                            <img src="assets/images/equipment/bipap_st.jpg" alt="Bi-Pap ST" loading="lazy" decoding="async">
                             <span class="badge bg-success bg-opacity-95 text-white rounded-pill px-2 py-1 position-absolute top-0 start-0 m-2 shadow-sm fw-bold" style="font-size: 0.72rem; z-index: 2;">
                                 <i class="fa-solid fa-check me-1"></i> Available for Rent
                             </span>
@@ -390,7 +390,7 @@ ob_start();
                 <div class="equip-tier-card p-4 h-100 d-flex flex-column justify-content-between">
                     <div>
                         <div class="product-img-box mb-3 position-relative">
-                            <img src="assets/images/equipment/cpap.jpg" alt="C-PAP">
+                            <img src="assets/images/equipment/cpap.jpg" alt="C-PAP" loading="lazy" decoding="async">
                             <span class="badge bg-success bg-opacity-95 text-white rounded-pill px-2 py-1 position-absolute top-0 start-0 m-2 shadow-sm fw-bold" style="font-size: 0.72rem; z-index: 2;">
                                 <i class="fa-solid fa-check me-1"></i> Available for Rent
                             </span>
@@ -426,7 +426,7 @@ ob_start();
                 <div class="equip-tier-card p-4 h-100 d-flex flex-column justify-content-between">
                     <div>
                         <div class="product-img-box mb-3 position-relative">
-                            <img src="assets/images/equipment/bipap_st.jpg" alt="Home Ventilator (Vios)">
+                            <img src="assets/images/equipment/bipap_st.jpg" alt="Home Ventilator (Vios)" loading="lazy" decoding="async">
                             <span class="badge bg-success bg-opacity-95 text-white rounded-pill px-2 py-1 position-absolute top-0 start-0 m-2 shadow-sm fw-bold" style="font-size: 0.72rem; z-index: 2;">
                                 <i class="fa-solid fa-check me-1"></i> Available for Rent
                             </span>
@@ -851,7 +851,7 @@ ob_start();
                 <div class="inventory-featured-card p-4 h-100 d-flex flex-column justify-content-between border-2 border-danger shadow-sm">
                     <div>
                         <div class="product-img-box mb-3 position-relative" style="height: 200px;">
-                            <img src="assets/images/equipment/bipap_st.jpg" alt="Bi-Pap ST">
+                            <img src="assets/images/equipment/bipap_st.jpg" alt="Bi-Pap ST" loading="lazy" decoding="async">
                             <span class="badge bg-success bg-opacity-95 text-white rounded-pill px-2 py-1 position-absolute top-0 start-0 m-3 shadow-sm fw-bold" style="font-size: 0.72rem; z-index: 2;">
                                 <i class="fa-solid fa-check me-1"></i> Available for Rent
                             </span>
@@ -889,7 +889,7 @@ ob_start();
                 <div class="inventory-featured-card p-4 h-100 d-flex flex-column justify-content-between border-2 border-primary shadow-sm">
                     <div>
                         <div class="product-img-box mb-3 position-relative" style="height: 200px;">
-                            <img src="assets/images/equipment/cpap.jpg" alt="C-PAP">
+                            <img src="assets/images/equipment/cpap.jpg" alt="C-PAP" loading="lazy" decoding="async">
                             <span class="badge bg-success bg-opacity-95 text-white rounded-pill px-2 py-1 position-absolute top-0 start-0 m-3 shadow-sm fw-bold" style="font-size: 0.72rem; z-index: 2;">
                                 <i class="fa-solid fa-check me-1"></i> Available for Rent
                             </span>
@@ -930,7 +930,7 @@ ob_start();
                 <div class="inventory-card p-3 shadow-sm">
                     <div>
                         <div class="product-img-box mb-3 position-relative">
-                            <img src="assets/images/equipment/bipap_st.jpg" alt="ResMed BiPAP Machine">
+                            <img src="assets/images/equipment/bipap_st.jpg" alt="ResMed BiPAP Machine" loading="lazy" decoding="async">
                             <span class="badge bg-success bg-opacity-95 text-white rounded-pill px-2 py-1 position-absolute top-0 start-0 m-2 shadow-sm fw-bold" style="font-size: 0.7rem; z-index: 2;">
                                 <i class="fa-solid fa-check me-1"></i> Available for Rent
                             </span>
@@ -960,7 +960,7 @@ ob_start();
                 <div class="inventory-card p-3 shadow-sm">
                     <div>
                         <div class="product-img-box mb-3 position-relative">
-                            <img src="assets/images/equipment/bipap_st.jpg" alt="BiPAP Nidek">
+                            <img src="assets/images/equipment/bipap_st.jpg" alt="BiPAP Nidek" loading="lazy" decoding="async">
                             <span class="badge bg-success bg-opacity-95 text-white rounded-pill px-2 py-1 position-absolute top-0 start-0 m-2 shadow-sm fw-bold" style="font-size: 0.7rem; z-index: 2;">
                                 <i class="fa-solid fa-check me-1"></i> Available for Rent
                             </span>
@@ -990,7 +990,7 @@ ob_start();
                 <div class="inventory-card p-3 shadow-sm">
                     <div>
                         <div class="product-img-box mb-3 position-relative">
-                            <img src="assets/images/equipment/cpap.jpg" alt="Auto CPAP Machine">
+                            <img src="assets/images/equipment/cpap.jpg" alt="Auto CPAP Machine" loading="lazy" decoding="async">
                             <span class="badge bg-success bg-opacity-95 text-white rounded-pill px-2 py-1 position-absolute top-0 start-0 m-2 shadow-sm fw-bold" style="font-size: 0.7rem; z-index: 2;">
                                 <i class="fa-solid fa-check me-1"></i> Available for Rent
                             </span>
@@ -1020,7 +1020,7 @@ ob_start();
                 <div class="inventory-card p-3 shadow-sm">
                     <div>
                         <div class="product-img-box mb-3 position-relative">
-                            <img src="assets/images/equipment/bipap_st.jpg" alt="Topson BiPAP SoundSleep">
+                            <img src="assets/images/equipment/bipap_st.jpg" alt="Topson BiPAP SoundSleep" loading="lazy" decoding="async">
                             <span class="badge bg-success bg-opacity-95 text-white rounded-pill px-2 py-1 position-absolute top-0 start-0 m-2 shadow-sm fw-bold" style="font-size: 0.7rem; z-index: 2;">
                                 <i class="fa-solid fa-check me-1"></i> Available for Rent
                             </span>
@@ -1050,7 +1050,7 @@ ob_start();
                 <div class="inventory-card p-3 shadow-sm">
                     <div>
                         <div class="product-img-box mb-3 position-relative">
-                            <img src="assets/images/equipment/bipap_st.jpg" alt="ResMed Lumis 150 VPAP 4G">
+                            <img src="assets/images/equipment/bipap_st.jpg" alt="ResMed Lumis 150 VPAP 4G" loading="lazy" decoding="async">
                             <span class="badge bg-success bg-opacity-95 text-white rounded-pill px-2 py-1 position-absolute top-0 start-0 m-2 shadow-sm fw-bold" style="font-size: 0.7rem; z-index: 2;">
                                 <i class="fa-solid fa-check me-1"></i> Available for Rent
                             </span>
@@ -1080,7 +1080,7 @@ ob_start();
                 <div class="inventory-card p-3 shadow-sm">
                     <div>
                         <div class="product-img-box mb-3 position-relative">
-                            <img src="assets/images/equipment/cpap.jpg" alt="ResMed AirSense 10 Auto CPAP">
+                            <img src="assets/images/equipment/cpap.jpg" alt="ResMed AirSense 10 Auto CPAP" loading="lazy" decoding="async">
                             <span class="badge bg-success bg-opacity-95 text-white rounded-pill px-2 py-1 position-absolute top-0 start-0 m-2 shadow-sm fw-bold" style="font-size: 0.7rem; z-index: 2;">
                                 <i class="fa-solid fa-check me-1"></i> Available for Rent
                             </span>
@@ -1110,7 +1110,7 @@ ob_start();
                 <div class="inventory-card p-3 shadow-sm">
                     <div>
                         <div class="product-img-box mb-3 position-relative">
-                            <img src="assets/images/equipment/bipap_st.jpg" alt="ResMed Floton ST BiPAP">
+                            <img src="assets/images/equipment/bipap_st.jpg" alt="ResMed Floton ST BiPAP" loading="lazy" decoding="async">
                             <span class="badge bg-success bg-opacity-95 text-white rounded-pill px-2 py-1 position-absolute top-0 start-0 m-2 shadow-sm fw-bold" style="font-size: 0.7rem; z-index: 2;">
                                 <i class="fa-solid fa-check me-1"></i> Available for Rent
                             </span>
@@ -1140,7 +1140,7 @@ ob_start();
                 <div class="inventory-card p-3 shadow-sm">
                     <div>
                         <div class="product-img-box mb-3 position-relative">
-                            <img src="assets/images/equipment/bipap_st.jpg" alt="Evox NoahSleep 25ST / 30ST">
+                            <img src="assets/images/equipment/bipap_st.jpg" alt="Evox NoahSleep 25ST / 30ST" loading="lazy" decoding="async">
                             <span class="badge bg-success bg-opacity-95 text-white rounded-pill px-2 py-1 position-absolute top-0 start-0 m-2 shadow-sm fw-bold" style="font-size: 0.7rem; z-index: 2;">
                                 <i class="fa-solid fa-check me-1"></i> Available for Rent
                             </span>
@@ -1170,7 +1170,7 @@ ob_start();
                 <div class="inventory-card p-3 shadow-sm">
                     <div>
                         <div class="product-img-box mb-3 position-relative">
-                            <img src="assets/images/equipment/cpap.jpg" alt="Evox Auto BiPAP & CPAP Series">
+                            <img src="assets/images/equipment/cpap.jpg" alt="Evox Auto BiPAP & CPAP Series" loading="lazy" decoding="async">
                             <span class="badge bg-success bg-opacity-95 text-white rounded-pill px-2 py-1 position-absolute top-0 start-0 m-2 shadow-sm fw-bold" style="font-size: 0.7rem; z-index: 2;">
                                 <i class="fa-solid fa-check me-1"></i> Available for Rent
                             </span>

@@ -198,7 +198,7 @@ ob_start();
             <!-- Right Hero Image -->
             <div class="col-lg-5">
                 <div class="position-relative">
-                    <img src="assets/images/pages/wheelchair_hero_banner.jpg" alt="Wheelchair Service DM Healthcare" class="img-fluid rounded-4 shadow-sm border border-2 border-white w-100" style="max-height: 320px; object-fit: cover;">
+                    <img src="assets/images/pages/wheelchair_hero_banner.jpg" alt="Wheelchair Service DM Healthcare" class="img-fluid rounded-4 shadow-sm border border-2 border-white w-100" style="max-height: 320px; object-fit: cover;" loading="lazy" decoding="async">
                     <div class="position-absolute bottom-0 start-0 m-2 p-2 px-3 bg-white bg-opacity-95 rounded-3 shadow-sm border">
                         <div class="d-flex align-items-center gap-2">
                             <i class="fa-solid fa-certificate text-dm-red fs-5"></i>
@@ -238,7 +238,7 @@ ob_start();
             <div class="col-sm-6 col-lg-4 col-xl-3 wc-item" data-category="<?= $wc['category'] ?>">
                 <div class="card h-100 rounded-3 shadow-sm wc-product-card bg-white overflow-hidden">
                     <div class="position-relative">
-                        <img src="<?= $wc['image'] ?>" alt="<?= htmlspecialchars($wc['title']) ?>" class="card-img-top wc-product-img">
+                        <img src="<?= $wc['image'] ? loading="lazy" decoding="async">" alt="<?= htmlspecialchars($wc['title']) ?>" class="card-img-top wc-product-img">
                         <span class="position-absolute top-0 start-0 m-2 badge <?= $wc['badge_class'] ?> rounded-pill px-2 py-1 shadow-sm" style="font-size: 0.72rem;">
                             <?= $wc['badge'] ?>
                         </span>

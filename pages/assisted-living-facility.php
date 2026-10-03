@@ -49,7 +49,7 @@ $frontend_custom_sections = '
                 </div>
             </div>
             <div class="col-lg-6 ps-lg-5 order-1 order-lg-2 mb-4 mb-lg-0">
-                <img src="' . (isset($display_image) ? $display_image : '') . '" alt="Hospital Grade Assisted Living" class="img-fluid rounded-4 shadow-lg w-100 border border-4" style="border-color: #20c997 !important;">
+                <img src="' . (isset($display_image) ? $display_image : '') . '" alt="Hospital Grade Assisted Living" class="img-fluid rounded-4 shadow-lg w-100 border border-4" style="border-color: #20c997 !important;" loading="lazy" decoding="async">
             </div>
         </div>
     </div>
