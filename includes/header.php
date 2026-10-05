@@ -572,27 +572,10 @@ $page_keywords_seo = isset($seo_keywords) && !empty($seo_keywords)
                                                     </ul>
                                                 </div>
 
-                                                <!-- Column 3: Rate Card CTA Banner -->
+                                                <!-- Column 3: Image -->
                                                 <div class="col-lg-4 col-md-4 col-12 d-none d-md-block">
-                                                    <div class="rounded-3 overflow-hidden shadow-sm h-100 position-relative d-flex flex-column justify-content-between border" style="background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); color: #fff; min-height: 290px;">
-                                                        <div class="position-relative" style="height: 115px; overflow: hidden; background: #0f172a;">
-                                                            <img src="assets/images/pages/medical_attendant.png" alt="Home Healthcare Rate Card" style="width: 100%; height: 100%; object-fit: cover; object-position: center 20%;" loading="lazy">
-                                                            <div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(15, 23, 42, 0.25) 0%, rgba(15, 23, 42, 0.95) 100%);"></div>
-                                                            <div class="position-absolute top-0 start-0 m-2">
-                                                                <span class="badge bg-danger px-2 py-1 rounded-pill" style="background: #e5252a !important; font-size: 0.7rem;"><i class="fa-solid fa-file-invoice-dollar me-1"></i> Official 2026 Tariff</span>
-                                                            </div>
-                                                        </div>
-                                                        <div class="p-3 pt-2 d-flex flex-column flex-grow-1 justify-content-between">
-                                                            <div>
-                                                                <h6 class="fw-bold text-white mb-2" style="font-size: 1.05rem;">Home Healthcare & Nursing Rate Card</h6>
-                                                                <p class="small text-white-50 mb-3" style="font-size: 0.82rem; line-height: 1.5;">Check transparent per-day & shift charges for 12h/24h Nursing, Caregivers, Doctor Visits, Physio, ICU Packages & Clinical Procedures.</p>
-                                                            </div>
-                                                            <div class="pt-2 border-top border-secondary border-opacity-50">
-                                                                <a href="rate-cards" class="btn btn-danger btn-sm rounded-pill fw-bold w-100 py-2 shadow-sm d-inline-flex align-items-center justify-content-center gap-1" style="background-color: #e5252a; border: none;">
-                                                                    <i class="fa-solid fa-list-check me-1"></i> View Full Service Rate Card
-                                                                </a>
-                                                            </div>
-                                                        </div>
+                                                    <div class="rounded-3 overflow-hidden shadow-sm h-100">
+                                                        <img src="assets/images/caregiver-helping.jpg" class="img-fluid w-100 h-100" alt="Caregiver helping patient" style="object-fit: cover; min-height: 280px;">
                                                     </div>
                                                 </div>
                                             </div>
