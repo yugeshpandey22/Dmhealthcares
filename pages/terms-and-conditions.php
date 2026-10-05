@@ -242,15 +242,16 @@ ob_start();
                         <i class="fa-solid fa-truck-medical"></i>
                     </div>
                     <div>
-                        <h4 class="fw-bold text-dark mb-0">3. Medical Equipment Rental Policy</h4>
-                        <small class="text-muted">Oxygen machines, hospital beds, BiPAP/CPAP & wheelchairs</small>
+                        <h4 class="fw-bold text-dark mb-0">3. Medical Equipment Rental & Duration Terms</h4>
+                        <small class="text-muted">BiPAP/CPAP, Oxygen Concentrators, ICU Beds, Ventilators & Wheelchairs</small>
                     </div>
                 </div>
                 <ul class="list-unstyled legal-list mb-3">
-                    <li><strong>Inspection Upon Handover:</strong> All rented medical devices (Oxygen Concentrators, Motorized ICU Beds, Ventilators, Suction Machines, Wheelchairs) are delivered 100% sanitized, tested, and calibrated. The customer must inspect the equipment during delivery and sign the delivery receipt.</li>
-                    <li><strong>Prescription Requirement:</strong> Prescription-grade respiratory devices (BiPAP, CPAP, Oxygen Cylinders, Home Ventilators) are provided in strict accordance with the registered medical practitioner's prescription.</li>
-                    <li><strong>Refundable Security Deposit:</strong> Certain high-value machinery may require a refundable security deposit, which is refunded back via bank transfer upon successful inspection and return of the equipment in good working condition.</li>
-                    <li><strong>Rental Term & Renewal:</strong> Rental packages are generally calculated on a 15-day or monthly cycle. If you wish to extend the rental tenure, notice must be given at least <strong>3 days prior</strong> to the expiry of the current cycle.</li>
+                    <li><strong>Rental Tenure Slabs & Minimum Period:</strong> Medical equipment is available under flexible rental cycles (Weekly / 7 Days, Fortnightly / 15 Days, and Monthly / 30 Days). Longer rental tenures benefit from discounted monthly tariff rates.</li>
+                    <li><strong>Prescription Requirement:</strong> Prescription-grade respiratory devices (BiPAP, CPAP, Oxygen Cylinders, Home ICU Ventilators) are calibrated and dispatched in strict accordance with the treating doctor's prescription.</li>
+                    <li><strong>Sanitization & Handover Inspection:</strong> All rented devices are delivered 100% sanitized, performance-tested, and calibrated. Our biomedical engineer or technician conducts a full operational demo at your premises upon delivery.</li>
+                    <li><strong>Hygiene & Consumables:</strong> For infection prevention, patient-contact accessories (such as CPAP/BiPAP masks, nasal cannulas, oxygen tubing, and suction catheters) are supplied brand new in sealed packs.</li>
+                    <li><strong>Rental Extension Notice:</strong> To continue equipment rental beyond the current billing period, customers must inform DM Healthcare at least <strong>3 days prior</strong> to the cycle expiry date.</li>
                 </ul>
             </div>
 
@@ -279,14 +280,17 @@ ob_start();
                         <i class="fa-solid fa-file-invoice-dollar"></i>
                     </div>
                     <div>
-                        <h4 class="fw-bold text-dark mb-0">5. Billing, Tariffs & Payment Terms</h4>
-                        <small class="text-muted">Advance payments, modes of payment & tax compliance</small>
+                        <h4 class="fw-bold text-dark mb-0">5. Pricing Policy, Tariffs & Security Deposits</h4>
+                        <small class="text-muted">Price asterisk (*) terms, billing cycles, security deposits & payments</small>
                     </div>
                 </div>
                 <ul class="list-unstyled legal-list mb-3">
-                    <li><strong>Advance Payment Schedule:</strong> In-home care services and equipment rentals are billed in advance (weekly, bi-weekly, or monthly depending on the agreed agreement).</li>
-                    <li><strong>Approved Payment Modes:</strong> All payments must be made directly to the official DM Healthcare business account via UPI, Net Banking, Debit/Credit Card, or official company receipts. Do not pay cash directly to field staff without an official receipt.</li>
-                    <li><strong>Delayed Payment Terms:</strong> DM Healthcare reserves the right to suspend staff deployment or recall rented equipment if outstanding invoices remain unpaid past the due date.</li>
+                    <li><strong>Starting Price Asterisk (*) Policy:</strong> All prices displayed on our website (marked with an asterisk <code>*</code>, e.g., <em>₹4,500*</em>) represent base/starting tariffs for standard models and standard rental periods. Final customized quotations may vary slightly based on the exact machine brand/specifications (e.g., 5-Litre vs 10-Litre concentrators, AVAPS vs standard BiPAP), duration slab, and delivery location across Delhi NCR.</li>
+                    <li><strong>Advance Payment Schedule:</strong> In-home nursing duties and equipment rentals operate on a 100% prepaid advance billing model (weekly, bi-weekly, or monthly).</li>
+                    <li><strong>Refundable Security Deposit:</strong> High-value medical equipment (ICU Ventilators, BiPAP/CPAP, Motorized Beds, Electric Wheelchairs) may require a refundable security deposit at the time of delivery.</li>
+                    <li><strong>Deposit Refund Timeline:</strong> Upon equipment pickup and satisfactory biomedical inspection, 100% of the security deposit is processed and refunded directly to your bank account / UPI within <strong>24 to 48 working hours</strong>.</li>
+                    <li><strong>Staff Shift Timings:</strong> In-home care is deployed as 12-Hour Day Shifts (8:00 AM – 8:00 PM), 12-Hour Night Shifts (8:00 PM – 8:00 AM), or 24-Hour Continuous Live-In Care. Shift extensions or overtime requests will be charged pro-rata.</li>
+                    <li><strong>Approved Payment Modes:</strong> All payments must be made directly to the official DM Healthcare business account via UPI, Net Banking, Debit/Credit Card, or official company invoice. Never make unverified cash handovers to field staff without an official receipt.</li>
                 </ul>
             </div>
 
@@ -297,14 +301,14 @@ ob_start();
                         <i class="fa-solid fa-arrow-rotate-left"></i>
                     </div>
                     <div>
-                        <h4 class="fw-bold text-dark mb-0">6. Cancellation, Returns & Refund Policy</h4>
-                        <small class="text-muted">Transparent cancellation terms and refund processing</small>
+                        <h4 class="fw-bold text-dark mb-0">6. Cancellation, Early Return & Refunds</h4>
+                        <small class="text-muted">Transparent early handover and refund processing</small>
                     </div>
                 </div>
                 <ul class="list-unstyled legal-list mb-3">
-                    <li><strong>Pre-Dispatch Cancellation:</strong> If a booking is cancelled prior to equipment dispatch or staff departure, 100% of the advance amount will be refunded.</li>
-                    <li><strong>Early Termination of Home Care:</strong> If the patient is admitted to a hospital or service is concluded earlier than the booked tenure, billing will be calculated for the actual days served, and the balance unused amount will be adjusted or refunded within 5–7 business days.</li>
-                    <li><strong>Delivery & Sanitization Charges:</strong> Initial delivery, installation, and consumable accessory charges (such as nasal cannula, masks, tubing) are non-refundable once delivered and unsealed.</li>
+                    <li><strong>Pre-Dispatch Cancellation:</strong> If a booking is cancelled prior to equipment dispatch or staff departure, 100% of the advance amount will be refunded immediately.</li>
+                    <li><strong>Early Return & Billing Adjustment:</strong> If the patient is admitted to a hospital or no longer requires the equipment/staff earlier than the booked tenure, billing is calculated according to the completed slab (minimum tenure applies), and the remaining balance is refunded to the customer within 3–5 business days.</li>
+                    <li><strong>Consumable Accessories:</strong> Unsealed hygiene accessories (masks, cannulas, tubing) and logistics transit fees are non-refundable once handed over.</li>
                 </ul>
             </div>
 
