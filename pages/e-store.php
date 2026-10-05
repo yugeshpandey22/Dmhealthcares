@@ -172,7 +172,7 @@ ob_start();
         <div class="row align-items-center g-4">
             <div class="col-lg-7">
                 <span class="badge bg-danger bg-opacity-25 text-danger px-3 py-1 rounded-pill fw-semibold mb-2 border border-danger border-opacity-50 small">
-                    <i class="fa-solid fa-store me-1"></i> Available for Rent • Medical Equipment Marketplace
+                    <i class="fa-solid fa-check-circle me-1"></i> Available for Rent
                 </span>
                 <h1 class="display-6 fw-bold text-white lh-sm mb-3">
                     Medical Equipment <span class="text-dm-red">Available for Rent Online</span>
