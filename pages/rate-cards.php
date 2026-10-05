@@ -587,7 +587,7 @@ foreach($services_catalog as $cat_key => $cat_data) {
                             <h5 class="fw-bold text-dark mb-2" style="font-size: 1.05rem; line-height: 1.35;">'.$item['name'].'</h5>
                             
                             <div class="mb-3 d-flex align-items-baseline gap-1">
-                                <span class="price-main">'.$item['price'].'</span>
+                                <span class="price-main">'.rtrim($item['price'], '*').'*</span>
                                 '.(!empty(trim($item['unit'])) ? '<span class="price-unit">'.$item['unit'].'</span>' : '').'
                             </div>
 

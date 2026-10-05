@@ -373,9 +373,9 @@ ob_start();
                         </ul>
                     </div>
                     <div>
-                        <div class="d-flex justify-content-between align-items-center mb-3 pt-3 border-top">
-                            <span class="small text-muted fw-semibold">Quality Verified:</span>
-                            <span class="fw-bold text-dark"><i class="fa-solid fa-star text-warning me-1"></i> Top Rated</span>
+                        <div class="d-flex justify-content-between align-items-baseline mb-3 pt-3 border-top">
+                            <span class="small text-muted fw-semibold">Rental Price:</span>
+                            <span class="fw-bold text-dm-red fs-4">₹7,000* <small class="text-muted fw-normal fs-6">/month</small></span>
                         </div>
                         <a href="#inventory" class="btn btn-dm-red rounded-pill fw-bold w-100 py-2 shadow-sm">
                             <i class="fa-solid fa-list-check me-1"></i> Check Models & Fleet
@@ -409,9 +409,9 @@ ob_start();
                         </ul>
                     </div>
                     <div>
-                        <div class="d-flex justify-content-between align-items-center mb-3 pt-3 border-top">
-                            <span class="small text-muted fw-semibold">Quality Verified:</span>
-                            <span class="fw-bold text-dark"><i class="fa-solid fa-star text-warning me-1"></i> Top Rated</span>
+                        <div class="d-flex justify-content-between align-items-baseline mb-3 pt-3 border-top">
+                            <span class="small text-muted fw-semibold">Rental Price:</span>
+                            <span class="fw-bold text-dm-red fs-4">₹9,500* <small class="text-muted fw-normal fs-6">/month</small></span>
                         </div>
                         <a href="#inventory" class="btn btn-dm-red rounded-pill fw-bold w-100 py-2 shadow-sm">
                             <i class="fa-solid fa-list-check me-1"></i> Check Models & Fleet
@@ -445,9 +445,9 @@ ob_start();
                         </ul>
                     </div>
                     <div>
-                        <div class="d-flex justify-content-between align-items-center mb-3 pt-3 border-top">
-                            <span class="small text-muted fw-semibold">Quality Verified:</span>
-                            <span class="fw-bold text-dark"><i class="fa-solid fa-star text-warning me-1"></i> Top Rated</span>
+                        <div class="d-flex justify-content-between align-items-baseline mb-3 pt-3 border-top">
+                            <span class="small text-muted fw-semibold">Rental Price:</span>
+                            <span class="fw-bold text-dm-red fs-4">₹35,000* <small class="text-muted fw-normal fs-6">/month</small></span>
                         </div>
                         <a href="#inventory" class="btn btn-dm-red rounded-pill fw-bold w-100 py-2 shadow-sm">
                             <i class="fa-solid fa-list-check me-1"></i> Check Models & Fleet
@@ -873,7 +873,8 @@ ob_start();
                     </div>
                     <div class="pt-3 border-top d-flex flex-wrap justify-content-between align-items-center gap-2">
                         <div>
-                            <span class="badge bg-warning bg-opacity-10 text-dark fw-bold px-3 py-2 rounded-pill"><i class="fa-solid fa-star text-warning me-1"></i> Top Rated Device</span>
+                            <span class="d-block text-muted small fw-semibold">Standard Service Rental:</span>
+                            <span class="fw-bold text-dm-red fs-4">₹7,000* <small class="text-muted fw-normal fs-6">/month</small></span>
                         </div>
                         <a href="https://wa.me/919319149644?text=I+want+to+inquire+about+Bi-Pap+ST" target="_blank" class="btn btn-dm-red rounded-pill btn-sm px-4 py-2 fw-bold shadow-sm d-inline-flex align-items-center gap-2">
                             <i class="fa-brands fa-whatsapp fs-6"></i> Inquire on WhatsApp
@@ -910,7 +911,8 @@ ob_start();
                     </div>
                     <div class="pt-3 border-top d-flex flex-wrap justify-content-between align-items-center gap-2">
                         <div>
-                            <span class="badge bg-warning bg-opacity-10 text-dark fw-bold px-3 py-2 rounded-pill"><i class="fa-solid fa-star text-warning me-1"></i> Top Rated Device</span>
+                            <span class="d-block text-muted small fw-semibold">Standard Service Rental:</span>
+                            <span class="fw-bold text-dm-red fs-4">₹9,500* <small class="text-muted fw-normal fs-6">/month</small></span>
                         </div>
                         <a href="https://wa.me/919319149644?text=I+want+to+inquire+about+C-PAP" target="_blank" class="btn btn-outline-success rounded-pill btn-sm px-4 py-2 fw-bold shadow-sm d-inline-flex align-items-center gap-2">
                             <i class="fa-brands fa-whatsapp fs-6"></i> Inquire on WhatsApp
@@ -942,7 +944,8 @@ ob_start();
                     </div>
                     <div class="pt-3 border-top d-flex justify-content-between align-items-center">
                         <div>
-                            <span class="badge bg-warning bg-opacity-10 text-dark fw-bold px-2 py-1 rounded-pill" style="font-size: 0.75rem;"><i class="fa-solid fa-star text-warning me-1"></i> Top Rated</span>
+                            <span class="d-block text-muted" style="font-size: 0.72rem;">Monthly Rent:</span>
+                            <span class="fw-bold text-dm-red fs-5">₹4,500* <small class="text-muted fw-normal fs-6">/mo</small></span>
                         </div>
                         <a href="https://wa.me/919319149644?text=I+want+to+book+ResMed+BiPAP+on+Rent" target="_blank" class="btn btn-dm-red rounded-pill btn-sm px-3 fw-bold d-inline-flex align-items-center gap-1 shadow-sm">
                             <i class="fa-brands fa-whatsapp"></i> Inquire Now
@@ -971,7 +974,8 @@ ob_start();
                     </div>
                     <div class="pt-3 border-top d-flex justify-content-between align-items-center">
                         <div>
-                            <span class="badge bg-warning bg-opacity-10 text-dark fw-bold px-2 py-1 rounded-pill" style="font-size: 0.75rem;"><i class="fa-solid fa-star text-warning me-1"></i> Top Rated</span>
+                            <span class="d-block text-muted" style="font-size: 0.72rem;">Monthly Rent:</span>
+                            <span class="fw-bold text-dm-red fs-5">₹4,000* <small class="text-muted fw-normal fs-6">/mo</small></span>
                         </div>
                         <a href="https://wa.me/919319149644?text=I+want+to+book+BiPAP+Nidek+on+Rent" target="_blank" class="btn btn-dm-red rounded-pill btn-sm px-3 fw-bold d-inline-flex align-items-center gap-1 shadow-sm">
                             <i class="fa-brands fa-whatsapp"></i> Inquire Now
@@ -1000,7 +1004,8 @@ ob_start();
                     </div>
                     <div class="pt-3 border-top d-flex justify-content-between align-items-center">
                         <div>
-                            <span class="badge bg-warning bg-opacity-10 text-dark fw-bold px-2 py-1 rounded-pill" style="font-size: 0.75rem;"><i class="fa-solid fa-star text-warning me-1"></i> Top Rated</span>
+                            <span class="d-block text-muted" style="font-size: 0.72rem;">Monthly Rent:</span>
+                            <span class="fw-bold text-dm-red fs-5">₹2,500 - ₹3,500* <small class="text-muted fw-normal fs-6">/mo</small></span>
                         </div>
                         <a href="https://wa.me/919319149644?text=I+want+to+book+Auto+CPAP+Machine+on+Rent" target="_blank" class="btn btn-dm-red rounded-pill btn-sm px-3 fw-bold d-inline-flex align-items-center gap-1 shadow-sm">
                             <i class="fa-brands fa-whatsapp"></i> Inquire Now
@@ -1029,7 +1034,8 @@ ob_start();
                     </div>
                     <div class="pt-3 border-top d-flex justify-content-between align-items-center">
                         <div>
-                            <span class="badge bg-warning bg-opacity-10 text-dark fw-bold px-2 py-1 rounded-pill" style="font-size: 0.75rem;"><i class="fa-solid fa-star text-warning me-1"></i> Top Rated</span>
+                            <span class="d-block text-muted" style="font-size: 0.72rem;">Monthly Rent:</span>
+                            <span class="fw-bold text-dm-red fs-5">₹3,500* <small class="text-muted fw-normal fs-6">/mo</small></span>
                         </div>
                         <a href="https://wa.me/919319149644?text=I+want+to+book+Topson+BiPAP+on+Rent" target="_blank" class="btn btn-dm-red rounded-pill btn-sm px-3 fw-bold d-inline-flex align-items-center gap-1 shadow-sm">
                             <i class="fa-brands fa-whatsapp"></i> Inquire Now
@@ -1058,7 +1064,8 @@ ob_start();
                     </div>
                     <div class="pt-3 border-top d-flex justify-content-between align-items-center">
                         <div>
-                            <span class="badge bg-warning bg-opacity-10 text-dark fw-bold px-2 py-1 rounded-pill" style="font-size: 0.75rem;"><i class="fa-solid fa-star text-warning me-1"></i> Top Rated</span>
+                            <span class="d-block text-muted" style="font-size: 0.72rem;">Monthly Rent:</span>
+                            <span class="fw-bold text-dm-red fs-5">₹7,500* <small class="text-muted fw-normal fs-6">/mo</small></span>
                         </div>
                         <a href="https://wa.me/919319149644?text=I+want+to+book+ResMed+Lumis+150+VPAP+on+Rent" target="_blank" class="btn btn-dm-red rounded-pill btn-sm px-3 fw-bold d-inline-flex align-items-center gap-1 shadow-sm">
                             <i class="fa-brands fa-whatsapp"></i> Inquire Now
@@ -1087,7 +1094,8 @@ ob_start();
                     </div>
                     <div class="pt-3 border-top d-flex justify-content-between align-items-center">
                         <div>
-                            <span class="badge bg-warning bg-opacity-10 text-dark fw-bold px-2 py-1 rounded-pill" style="font-size: 0.75rem;"><i class="fa-solid fa-star text-warning me-1"></i> Top Rated</span>
+                            <span class="d-block text-muted" style="font-size: 0.72rem;">Monthly Rent:</span>
+                            <span class="fw-bold text-dm-red fs-5">₹5,000* <small class="text-muted fw-normal fs-6">/mo</small></span>
                         </div>
                         <a href="https://wa.me/919319149644?text=I+want+to+book+ResMed+AirSense+10+on+Rent" target="_blank" class="btn btn-dm-red rounded-pill btn-sm px-3 fw-bold d-inline-flex align-items-center gap-1 shadow-sm">
                             <i class="fa-brands fa-whatsapp"></i> Inquire Now
@@ -1116,7 +1124,8 @@ ob_start();
                     </div>
                     <div class="pt-3 border-top d-flex justify-content-between align-items-center">
                         <div>
-                            <span class="badge bg-warning bg-opacity-10 text-dark fw-bold px-2 py-1 rounded-pill" style="font-size: 0.75rem;"><i class="fa-solid fa-star text-warning me-1"></i> Top Rated</span>
+                            <span class="d-block text-muted" style="font-size: 0.72rem;">Monthly Rent:</span>
+                            <span class="fw-bold text-dm-red fs-5">₹5,000* <small class="text-muted fw-normal fs-6">/mo</small></span>
                         </div>
                         <a href="https://wa.me/919319149644?text=I+want+to+book+ResMed+Floton+ST+on+Rent" target="_blank" class="btn btn-dm-red rounded-pill btn-sm px-3 fw-bold d-inline-flex align-items-center gap-1 shadow-sm">
                             <i class="fa-brands fa-whatsapp"></i> Inquire Now
@@ -1145,7 +1154,8 @@ ob_start();
                     </div>
                     <div class="pt-3 border-top d-flex justify-content-between align-items-center">
                         <div>
-                            <span class="badge bg-warning bg-opacity-10 text-dark fw-bold px-2 py-1 rounded-pill" style="font-size: 0.75rem;"><i class="fa-solid fa-star text-warning me-1"></i> Top Rated</span>
+                            <span class="d-block text-muted" style="font-size: 0.72rem;">Monthly Rent:</span>
+                            <span class="fw-bold text-dm-red fs-5">₹5,500* <small class="text-muted fw-normal fs-6">/mo</small></span>
                         </div>
                         <a href="https://wa.me/919319149644?text=I+want+to+inquire+about+Evox+NoahSleep+BiPAP+Rental" target="_blank" class="btn btn-dm-red rounded-pill btn-sm px-3 fw-bold d-inline-flex align-items-center gap-1 shadow-sm">
                             <i class="fa-brands fa-whatsapp"></i> Inquire Now
@@ -1174,7 +1184,8 @@ ob_start();
                     </div>
                     <div class="pt-3 border-top d-flex justify-content-between align-items-center">
                         <div>
-                            <span class="badge bg-warning bg-opacity-10 text-dark fw-bold px-2 py-1 rounded-pill" style="font-size: 0.75rem;"><i class="fa-solid fa-star text-warning me-1"></i> Top Rated</span>
+                            <span class="d-block text-muted" style="font-size: 0.72rem;">Monthly Rent:</span>
+                            <span class="fw-bold text-dm-red fs-5">₹3,500 - ₹4,500* <small class="text-muted fw-normal fs-6">/mo</small></span>
                         </div>
                         <a href="https://wa.me/919319149644?text=I+want+to+inquire+about+Evox+CPAP+BiPAP+series+Rental" target="_blank" class="btn btn-dm-red rounded-pill btn-sm px-3 fw-bold d-inline-flex align-items-center gap-1 shadow-sm">
                             <i class="fa-brands fa-whatsapp"></i> Inquire Now
