@@ -16,21 +16,27 @@
     box-shadow: 0 20px 40px rgba(229, 37, 42, 0.12);
     border-color: rgba(229, 37, 42, 0.35);
 }
-.equipment-icon-holder {
-    height: 130px;
-    background: radial-gradient(circle at center, rgba(229, 37, 42, 0.08) 0%, rgba(248, 250, 252, 0.8) 100%);
+.equipment-img-holder {
+    height: 140px;
+    background: radial-gradient(circle at center, rgba(229, 37, 42, 0.04) 0%, #ffffff 100%);
+    border: 1px solid #f1f5f9;
     border-radius: 18px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 3rem;
-    color: var(--primary-color);
-    transition: all 0.3s ease;
+    padding: 12px;
     margin-bottom: 16px;
+    overflow: hidden;
+    transition: all 0.3s ease;
 }
-.equipment-card-modern:hover .equipment-icon-holder {
-    transform: scale(1.04);
-    background: rgba(229, 37, 42, 0.12);
+.equipment-img-holder img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+    transition: transform 0.35s ease;
+}
+.equipment-card-modern:hover .equipment-img-holder img {
+    transform: scale(1.08);
 }
 </style>
 
@@ -62,8 +68,8 @@
             <!-- Equipment 1 -->
             <div class="col-6 col-lg-3">
                 <div class="equipment-card-modern p-4 text-center">
-                    <div class="equipment-icon-holder">
-                        <i class="fa-solid fa-bed"></i>
+                    <div class="equipment-img-holder">
+                        <img src="assets/images/equipment/manual_bed.jpg" alt="Hospital ICU Beds on Rent" loading="lazy">
                     </div>
                     <div class="d-flex justify-content-center gap-1 mb-2">
                         <span class="badge bg-success bg-opacity-10 text-success rounded-pill px-2 py-1 fw-bold" style="font-size: 0.72rem;"><i class="fa-solid fa-check me-1"></i>Available for Rent</span>
@@ -78,8 +84,8 @@
             <!-- Equipment 2 -->
             <div class="col-6 col-lg-3">
                 <div class="equipment-card-modern p-4 text-center">
-                    <div class="equipment-icon-holder">
-                        <i class="fa-solid fa-lungs"></i>
+                    <div class="equipment-img-holder">
+                        <img src="assets/images/equipment/bipap_st.jpg" alt="Oxygen and BiPAP CPAP on Rent" loading="lazy">
                     </div>
                     <div class="d-flex justify-content-center gap-1 mb-2">
                         <span class="badge bg-success bg-opacity-10 text-success rounded-pill px-2 py-1 fw-bold" style="font-size: 0.72rem;"><i class="fa-solid fa-check me-1"></i>Available for Rent</span>
@@ -94,8 +100,8 @@
             <!-- Equipment 3 -->
             <div class="col-6 col-lg-3">
                 <div class="equipment-card-modern p-4 text-center">
-                    <div class="equipment-icon-holder">
-                        <i class="fa-solid fa-wheelchair"></i>
+                    <div class="equipment-img-holder">
+                        <img src="assets/images/equipment/commode_chair.jpg" alt="Wheelchairs and Scooters on Rent" loading="lazy">
                     </div>
                     <div class="d-flex justify-content-center gap-1 mb-2">
                         <span class="badge bg-success bg-opacity-10 text-success rounded-pill px-2 py-1 fw-bold" style="font-size: 0.72rem;"><i class="fa-solid fa-check me-1"></i>Available for Rent</span>
@@ -110,8 +116,8 @@
             <!-- Equipment 4 -->
             <div class="col-6 col-lg-3">
                 <div class="equipment-card-modern p-4 text-center">
-                    <div class="equipment-icon-holder">
-                        <i class="fa-solid fa-heart-circle-bolt"></i>
+                    <div class="equipment-img-holder">
+                        <img src="assets/images/equipment/patient_monitor.jpg" alt="Patient Monitors on Rent" loading="lazy">
                     </div>
                     <div class="d-flex justify-content-center gap-1 mb-2">
                         <span class="badge bg-success bg-opacity-10 text-success rounded-pill px-2 py-1 fw-bold" style="font-size: 0.72rem;"><i class="fa-solid fa-check me-1"></i>Available for Rent</span>
