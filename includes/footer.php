@@ -87,9 +87,9 @@
                         <div class="d-flex align-items-center gap-2 footer-social-wrap">
                             <a href="https://wa.me/919319149644" target="_blank" class="footer-social-btn" aria-label="WhatsApp" title="Chat on WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
                             <a href="tel:+919319149644" class="footer-social-btn" aria-label="Phone" title="Call Us"><i class="fa-solid fa-phone"></i></a>
-                            <a href="#" class="footer-social-btn" aria-label="Facebook" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-                            <a href="#" class="footer-social-btn" aria-label="Instagram" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
-                            <a href="#" class="footer-social-btn" aria-label="LinkedIn" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="https://www.facebook.com/profile.php?id=61595322682054" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Facebook" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="https://www.instagram.com/dmhealthcareofficial/" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Instagram" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://wa.me/919319149644" target="_blank" class="footer-social-btn" aria-label="WhatsApp" title="DM Healthcare Support"><i class="fa-brands fa-whatsapp"></i></a>
                         </div>
                     </div>
 
