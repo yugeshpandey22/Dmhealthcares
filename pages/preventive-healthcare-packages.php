@@ -211,9 +211,9 @@ $frontend_custom_sections = '
                     <div class="mb-3">
                         <label class="form-label text-muted small fw-bold mb-1">Select Package Tier</label>
                         <select name="message" class="form-select bg-light border-0 py-2 px-3 rounded-3">
-                            <option value="Interested in Comprehensive Family Care Plan (₹15,856/yr)">Comprehensive Family Plan (₹15,856/yr)</option>
-                            <option value="Interested in Senior Citizen VIP Care Plan (₹24,999/yr)">Senior Citizen VIP Care Plan (₹24,999/yr)</option>
-                            <option value="Interested in Essential Individual Plan (₹6,999/yr)">Essential Individual Plan (₹6,999/yr)</option>
+                            <option value="Interested in Comprehensive Family Care Plan">Comprehensive Family Plan</option>
+                            <option value="Interested in Senior Citizen VIP Care Plan">Senior Citizen VIP Care Plan</option>
+                            <option value="Interested in Essential Individual Plan">Essential Individual Plan</option>
                         </select>
                     </div>
                     <button type="submit" class="btn btn-danger w-100 py-3 rounded-pill fw-bold shadow-sm" style="background: var(--primary-color); border-color: var(--primary-color);">

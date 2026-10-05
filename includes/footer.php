@@ -211,12 +211,19 @@
         <div class="footer-bottom-bar py-3 border-top border-secondary border-opacity-25">
             <div class="container">
                 <div class="row align-items-center g-2 text-center text-md-start">
-                    <div class="col-md-6">
+                    <div class="col-lg-5 col-md-4">
                         <p class="mb-0 text-secondary small">
                             Copyright © <?= date("Y") ?> <a href="index.php" class="text-decoration-none"><strong style="color: #d80000; letter-spacing: 0.5px;">DM</strong> <strong class="text-white">HEALTH</strong><strong style="color: #d80000;">CARE</strong></a>. All Rights Reserved.
                         </p>
                     </div>
-                    <div class="col-md-6 text-md-end">
+                    <div class="col-lg-3 col-md-4 text-center">
+                        <p class="mb-0 small">
+                            <a href="terms-and-conditions" class="text-secondary text-decoration-none hover-dm-red"><i class="fa-solid fa-file-contract me-1"></i>Terms & Conditions</a>
+                            <span class="mx-2 text-secondary opacity-50">•</span>
+                            <a href="privacy-policy" class="text-secondary text-decoration-none hover-dm-red"><i class="fa-solid fa-user-shield me-1"></i>Privacy Policy</a>
+                        </p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 text-md-end">
                         <p class="mb-0 text-secondary small">
                             Designed & Developed by <a href="https://www.mineib.com" target="_blank" rel="noopener noreferrer" class="text-white fw-bold text-decoration-none hover-brand-red" style="transition: all 0.25s ease;"><span style="color: #d80000;"><i class="fa-solid fa-code me-1"></i></span>Mineib Creative Technology</a>
                         </p>
@@ -403,6 +410,10 @@
     }
     .footer-bottom-bar {
         background: var(--dm-brand-dark-bottom);
+    }
+    .hover-dm-red:hover {
+        color: #d80000 !important;
+        text-decoration: underline !important;
     }
     </style>
 

@@ -1,4 +1,5 @@
 <?php
+
 /**
  * DM Healthcare - Oxygen Concentrators & Respiratory Services
  * Modern, Bootstrap 5-Powered Medical Equipment Portal
@@ -45,27 +46,57 @@ ob_start();
         --dm-red-dark: #c8102e;
         --dm-navy: #0f172a;
     }
-    .text-dm-red { color: var(--dm-red) !important; }
-    .bg-dm-red { background-color: var(--dm-red) !important; color: #fff !important; }
-    .btn-dm-red { background-color: var(--dm-red); border-color: var(--dm-red); color: #fff; }
-    .btn-dm-red:hover { background-color: var(--dm-red-dark); border-color: var(--dm-red-dark); color: #fff; }
-    .btn-outline-dm-red { border-color: var(--dm-red); color: var(--dm-red); }
-    .btn-outline-dm-red:hover, .btn-outline-dm-red.active { background-color: var(--dm-red); border-color: var(--dm-red); color: #fff; }
+
+    .text-dm-red {
+        color: var(--dm-red) !important;
+    }
+
+    .bg-dm-red {
+        background-color: var(--dm-red) !important;
+        color: #fff !important;
+    }
+
+    .btn-dm-red {
+        background-color: var(--dm-red);
+        border-color: var(--dm-red);
+        color: #fff;
+    }
+
+    .btn-dm-red:hover {
+        background-color: var(--dm-red-dark);
+        border-color: var(--dm-red-dark);
+        color: #fff;
+    }
+
+    .btn-outline-dm-red {
+        border-color: var(--dm-red);
+        color: var(--dm-red);
+    }
+
+    .btn-outline-dm-red:hover,
+    .btn-outline-dm-red.active {
+        background-color: var(--dm-red);
+        border-color: var(--dm-red);
+        color: #fff;
+    }
 
     .oc-product-card {
         transition: transform 0.25s ease, box-shadow 0.25s ease;
         border: 1px solid #e2e8f0;
     }
+
     .oc-product-card:hover {
         transform: translateY(-4px);
         box-shadow: 0 12px 24px rgba(15, 23, 42, 0.08) !important;
         border-color: #cbd5e1;
     }
+
     .oc-product-img {
         height: 165px;
         object-fit: cover;
         background-color: #f1f5f9;
     }
+
     .oc-feature-list li {
         font-size: 0.78rem;
         line-height: 1.35;
@@ -78,7 +109,7 @@ ob_start();
         <div class="row align-items-center g-4">
             <div class="col-lg-7">
                 <span class="badge bg-danger bg-opacity-10 text-danger px-3 py-1 rounded-pill fw-semibold mb-2 border border-danger border-opacity-25 small">
-                    <i class="fa-solid fa-check-circle me-1"></i> Available for Rent (30-60 Mins Delivery Across Delhi NCR)
+                    <i class="fa-solid fa-check-circle me-1"></i> Available for Rent
                 </span>
                 <h1 class="display-6 fw-bold text-dark lh-sm mb-2">
                     Medical-Grade <span class="text-dm-red">Oxygen Concentrators Available for Rent</span>
@@ -125,7 +156,6 @@ ob_start();
                             <i class="fa-solid fa-lungs text-dm-red fs-5"></i>
                             <div>
                                 <h6 class="mb-0 fw-bold text-dark small">Available for Rent</h6>
-                                <small class="text-success fw-bold" style="font-size: 0.72rem;">Starting ₹4,500 / mo • 95% Purity</small>
                             </div>
                         </div>
                     </div>
@@ -146,56 +176,56 @@ ob_start();
 
         <!-- Products Grid -->
         <div class="row g-3 pt-2 justify-content-center" id="concentrator-grid">
-            <?php foreach($oxygen_models as $oc): ?>
-            <div class="col-md-6 col-lg-4">
-                <div class="card h-100 rounded-3 shadow-sm oc-product-card bg-white overflow-hidden">
-                    <div class="position-relative">
-                        <img src="<?= $oc['image'] ?>" onerror="this.onerror=null;this.src='assets/images/pages/oxygen_concentrator_hero.jpg';" alt="<?= htmlspecialchars($oc['title']) ?>" class="card-img-top oc-product-img" loading="lazy" decoding="async">
-                        <span class="position-absolute top-0 start-0 m-2 badge <?= $oc['badge_class'] ?> rounded-pill px-2 py-1 shadow-sm" style="font-size: 0.72rem;">
-                            <?= $oc['badge'] ?>
-                        </span>
-                        <span class="position-absolute top-0 end-0 m-2 badge bg-dark bg-opacity-75 rounded-pill px-2 py-1 small">
-                            <?= $oc['capacity'] ?>
-                        </span>
-                    </div>
-                    <div class="card-body d-flex flex-column p-3">
-                        <div class="d-flex justify-content-between align-items-center mb-1">
-                            <span class="badge bg-success bg-opacity-10 text-success rounded-pill px-2 py-1 fw-bold" style="font-size: 0.7rem;"><i class="fa-solid fa-check me-1"></i>Available for Rent</span>
-                            <span class="text-dm-red fw-bold" style="font-size: 0.85rem;"><?= $oc['price'] ?> <small class="text-muted" style="font-size: 0.68rem;">/ mo</small></span>
+            <?php foreach ($oxygen_models as $oc): ?>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 rounded-3 shadow-sm oc-product-card bg-white overflow-hidden">
+                        <div class="position-relative">
+                            <img src="<?= $oc['image'] ?>" onerror="this.onerror=null;this.src='assets/images/pages/oxygen_concentrator_hero.jpg';" alt="<?= htmlspecialchars($oc['title']) ?>" class="card-img-top oc-product-img" loading="lazy" decoding="async">
+                            <span class="position-absolute top-0 start-0 m-2 badge <?= $oc['badge_class'] ?> rounded-pill px-2 py-1 shadow-sm" style="font-size: 0.72rem;">
+                                <?= $oc['badge'] ?>
+                            </span>
+                            <span class="position-absolute top-0 end-0 m-2 badge bg-dark bg-opacity-75 rounded-pill px-2 py-1 small">
+                                <?= $oc['capacity'] ?>
+                            </span>
                         </div>
-                        <h6 class="card-title fw-bold text-dark mb-1 text-truncate" title="<?= htmlspecialchars($oc['title']) ?>"><?= htmlspecialchars($oc['title']) ?></h6>
-                        <p class="text-muted mb-2 text-truncate" style="font-size: 0.76rem;" title="<?= htmlspecialchars($oc['ideal_for']) ?>">
-                            <i class="fa-solid fa-circle-info me-1 text-dm-red"></i><?= htmlspecialchars($oc['ideal_for']) ?>
-                        </p>
-                        
-                        <!-- Features (Compact 3 Items) -->
-                        <ul class="list-unstyled oc-feature-list mb-2 flex-grow-1">
-                            <?php foreach(array_slice($oc['features'], 0, 3) as $f): ?>
-                            <li class="d-flex align-items-center gap-1 mb-1 text-secondary">
-                                <i class="fa-solid fa-check text-success small"></i>
-                                <span class="text-truncate"><?= htmlspecialchars($f) ?></span>
-                            </li>
-                            <?php endforeach; ?>
-                        </ul>
+                        <div class="card-body d-flex flex-column p-3">
+                            <div class="d-flex justify-content-between align-items-center mb-1">
+                                <span class="badge bg-success bg-opacity-10 text-success rounded-pill px-2 py-1 fw-bold" style="font-size: 0.7rem;"><i class="fa-solid fa-check me-1"></i>Available for Rent</span>
+                                <span class="text-dm-red fw-bold" style="font-size: 0.85rem;"><?= $oc['price'] ?> <small class="text-muted" style="font-size: 0.68rem;">/ mo</small></span>
+                            </div>
+                            <h6 class="card-title fw-bold text-dark mb-1 text-truncate" title="<?= htmlspecialchars($oc['title']) ?>"><?= htmlspecialchars($oc['title']) ?></h6>
+                            <p class="text-muted mb-2 text-truncate" style="font-size: 0.76rem;" title="<?= htmlspecialchars($oc['ideal_for']) ?>">
+                                <i class="fa-solid fa-circle-info me-1 text-dm-red"></i><?= htmlspecialchars($oc['ideal_for']) ?>
+                            </p>
 
-                        <!-- Price Tag -->
-                        <div class="d-flex justify-content-between align-items-center mb-3 p-2 bg-light rounded-3 border">
-                            <span class="small text-muted fw-semibold">Rent Price:</span>
-                            <span class="fs-5 fw-bold text-dm-red"><?= $oc['price'] ?> <small class="text-muted fs-6">/ month</small></span>
-                        </div>
+                            <!-- Features (Compact 3 Items) -->
+                            <ul class="list-unstyled oc-feature-list mb-2 flex-grow-1">
+                                <?php foreach (array_slice($oc['features'], 0, 3) as $f): ?>
+                                    <li class="d-flex align-items-center gap-1 mb-1 text-secondary">
+                                        <i class="fa-solid fa-check text-success small"></i>
+                                        <span class="text-truncate"><?= htmlspecialchars($f) ?></span>
+                                    </li>
+                                <?php endforeach; ?>
+                            </ul>
 
-                        <!-- Actions (Side by Side Compact) -->
-                        <div class="d-flex gap-2">
-                            <a href="https://wa.me/919319149644?text=<?= urlencode('Hi DM Healthcare, I would like to rent ' . $oc['title'] . ' (Rent Price: ' . $oc['price'] . '/mo) urgently. Please share availability and details.') ?>" target="_blank" class="btn btn-outline-success btn-sm rounded-pill fw-bold px-2 py-1 flex-fill d-flex align-items-center justify-content-center gap-1" style="font-size: 0.78rem;">
-                                <i class="fa-brands fa-whatsapp"></i> Rent on WA
-                            </a>
-                            <a href="#booking-form" onclick="selectOcModel('<?= addslashes($oc['title']) ?>')" class="btn btn-dm-red btn-sm rounded-pill fw-bold px-2 py-1 flex-fill d-flex align-items-center justify-content-center gap-1" style="font-size: 0.78rem;">
-                                <i class="fa-solid fa-calendar-check"></i> Rent Now
-                            </a>
+                            <!-- Price Tag -->
+                            <div class="d-flex justify-content-between align-items-center mb-3 p-2 bg-light rounded-3 border">
+                                <span class="small text-muted fw-semibold">Rent Price:</span>
+                                <span class="fs-5 fw-bold text-dm-red"><?= $oc['price'] ?> <small class="text-muted fs-6">/ month</small></span>
+                            </div>
+
+                            <!-- Actions (Side by Side Compact) -->
+                            <div class="d-flex gap-2">
+                                <a href="https://wa.me/919319149644?text=<?= urlencode('Hi DM Healthcare, I would like to rent ' . $oc['title'] . ' (Rent Price: ' . $oc['price'] . '/mo) urgently. Please share availability and details.') ?>" target="_blank" class="btn btn-outline-success btn-sm rounded-pill fw-bold px-2 py-1 flex-fill d-flex align-items-center justify-content-center gap-1" style="font-size: 0.78rem;">
+                                    <i class="fa-brands fa-whatsapp"></i> Rent on WA
+                                </a>
+                                <a href="#booking-form" onclick="selectOcModel('<?= addslashes($oc['title']) ?>')" class="btn btn-dm-red btn-sm rounded-pill fw-bold px-2 py-1 flex-fill d-flex align-items-center justify-content-center gap-1" style="font-size: 0.78rem;">
+                                    <i class="fa-solid fa-calendar-check"></i> Rent Now
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
             <?php endforeach; ?>
         </div>
 
@@ -275,8 +305,10 @@ ob_start();
                     </tr>
                     <tr>
                         <td class="py-2 px-3 fw-bold text-dark">Operating Noise</td>
-                        <td class="py-2 px-3">< 45 dB (Whisper quiet)</td>
-                        <td class="py-2 px-3">< 52 dB (Low hum)</td>
+                        <td class="py-2 px-3">
+                            < 45 dB (Whisper quiet)</td>
+                        <td class="py-2 px-3">
+                            < 52 dB (Low hum)</td>
                         <td class="py-2 px-3 text-success">Silent (No motor)</td>
                     </tr>
                     <tr>
@@ -349,7 +381,7 @@ ob_start();
                 <span class="badge bg-danger bg-opacity-10 text-danger px-3 py-1 rounded-pill fw-semibold mb-2">Instant Setup</span>
                 <h3 class="fw-bold text-dark mb-2">Book Oxygen Machine Delivery</h3>
                 <p class="text-muted small mb-3">Get hospital-grade oxygen setup in under 60 minutes. Our care coordinator will call immediately to confirm your address and required LPM flow.</p>
-                
+
                 <div class="card bg-light border-0 rounded-3 p-3 mb-3">
                     <div class="d-flex align-items-center gap-3 mb-2">
                         <div class="rounded-circle bg-dm-red text-white d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;">
@@ -373,10 +405,10 @@ ob_start();
             <div class="col-lg-7">
                 <div class="card border-0 shadow-lg rounded-4 p-4 p-md-4 bg-white border">
                     <h5 class="fw-bold text-dark mb-3">Request Oxygen Concentrator</h5>
-                    
+
                     <form action="backend/submit_appointment.php" method="POST">
                         <input type="hidden" name="service" value="Oxygen Concentrator Services">
-                        
+
                         <div class="row g-2">
                             <div class="col-md-6">
                                 <label class="form-label small fw-semibold text-secondary mb-1">Patient Name *</label>
@@ -389,8 +421,8 @@ ob_start();
                             <div class="col-md-6">
                                 <label class="form-label small fw-semibold text-secondary mb-1">Select Oxygen Model *</label>
                                 <select name="model" id="ocModelSelect" class="form-select form-select-sm rounded-2" required>
-                                    <option value="O2 Concentrator 5L (₹4,500)">O2 Concentrator 5L (₹4,500)</option>
-                                    <option value="O2 Concentrator 10L (₹8,500)">O2 Concentrator 10L (₹8,500)</option>
+                                    <option value="O2 Concentrator 5L">O2 Concentrator 5L</option>
+                                    <option value="O2 Concentrator 10L">O2 Concentrator 10L</option>
                                     <option value="Oxygen Cylinder Backup Kit">Oxygen Cylinder Backup Kit</option>
                                 </select>
                             </div>
@@ -526,16 +558,16 @@ ob_start();
 </section>
 
 <script>
-function selectOcModel(modelName) {
-    const select = document.getElementById("ocModelSelect");
-    if (!select) return;
-    for (let i = 0; i < select.options.length; i++) {
-        if (select.options[i].value.indexOf(modelName) !== -1 || select.options[i].text.indexOf(modelName) !== -1) {
-            select.selectedIndex = i;
-            break;
+    function selectOcModel(modelName) {
+        const select = document.getElementById("ocModelSelect");
+        if (!select) return;
+        for (let i = 0; i < select.options.length; i++) {
+            if (select.options[i].value.indexOf(modelName) !== -1 || select.options[i].text.indexOf(modelName) !== -1) {
+                select.selectedIndex = i;
+                break;
+            }
         }
     }
-}
 </script>
 <?php
 $frontend_custom_sections = ob_get_clean();

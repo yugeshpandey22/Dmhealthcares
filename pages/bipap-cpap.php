@@ -301,7 +301,6 @@ ob_start();
                         <span class="badge bg-success bg-opacity-10 text-success rounded-pill px-3 py-1 small fw-bold">
                             <i class="fa-solid fa-check me-1"></i> Available for Rent
                         </span>
-                        <span class="fw-bold text-dm-red fs-6">From ₹7,000/mo</span>
                     </div>
 
                     <h5 class="fw-bold text-dark mb-2">Rent Respiratory Machine</h5>
@@ -317,9 +316,9 @@ ob_start();
                         </div>
                         <div class="mb-2">
                             <select name="model" class="form-select form-select-sm rounded-2" required>
-                                <option value="Bi-Pap ST - ₹7,000">Bi-Pap ST - ₹7,000</option>
-                                <option value="C-PAP - ₹9,500">C-PAP - ₹9,500</option>
-                                <option value="Home Ventilator (Vios) - ₹35,000">Home Ventilator (Vios) - ₹35,000</option>
+                                <option value="Bi-Pap ST">Bi-Pap ST</option>
+                                <option value="C-PAP">C-PAP</option>
+                                <option value="Home Ventilator (Vios)">Home Ventilator (Vios)</option>
                             </select>
                         </div>
                         <div class="mb-2">

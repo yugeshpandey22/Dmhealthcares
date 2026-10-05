@@ -81,7 +81,7 @@ ob_start();
         <!-- Live Emergency Dispatch Banner -->
         <div class="d-inline-flex align-items-center gap-2 px-3 py-1 rounded-pill badge-emergency small fw-bold mb-3">
             <span class="spinner-grow spinner-grow-sm text-danger" role="status"></span>
-            <span>24/7 Rapid Emergency Dispatch • Available for Rent & Refill Across Delhi NCR</span>
+            <span>24/7 Rapid Emergency Dispatch • Available for Rent</span>
         </div>
 
         <div class="row align-items-center g-4">
@@ -126,7 +126,6 @@ ob_start();
                         <i class="fa-solid fa-circle-check text-info fs-5"></i>
                         <div>
                             <span class="d-block text-white fw-bold small">Available for Rent</span>
-                            <small class="text-light opacity-75" style="font-size: 0.7rem;">Starting ₹1,000</small>
                         </div>
                     </div>
                 </div>
@@ -142,7 +141,6 @@ ob_start();
                             </span>
                             <h5 class="fw-bold mb-0 text-dark">Complete O2 Cylinder Kit on Rent</h5>
                         </div>
-                        <span class="fs-4 fw-bold text-dm-red">₹1,000<small class="fs-6 text-muted">/starting</small></span>
                     </div>
 
                     <div class="position-relative mb-3">
@@ -155,11 +153,11 @@ ob_start();
                     <div class="bg-light p-2 px-3 rounded-3 mb-3 border small text-muted">
                         <div class="d-flex justify-content-between py-1 border-bottom">
                             <span><i class="fa-solid fa-check text-success me-1"></i> O2 Cylinder 10 ltrs (Rent)</span>
-                            <strong class="text-dark">₹1,000 (Refill ₹700)</strong>
+                            <strong class="text-success"><i class="fa-solid fa-check me-1"></i>Available</strong>
                         </div>
                         <div class="d-flex justify-content-between py-1">
                             <span><i class="fa-solid fa-check text-success me-1"></i> O2 Cylinder 50 ltrs (Rent)</span>
-                            <strong class="text-dark">₹2,000 (Refill ₹1,000)</strong>
+                            <strong class="text-success"><i class="fa-solid fa-check me-1"></i>Available</strong>
                         </div>
                     </div>
 

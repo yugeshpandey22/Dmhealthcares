@@ -157,7 +157,7 @@ ob_start();
         <div class="row align-items-center g-4">
             <div class="col-lg-7">
                 <span class="badge bg-danger bg-opacity-10 text-danger px-3 py-1 rounded-pill fw-semibold mb-2 border border-danger border-opacity-25 small">
-                    <i class="fa-solid fa-check-circle me-1"></i> Available for Rent across Delhi NCR
+                    <i class="fa-solid fa-check-circle me-1"></i> Available for Rent
                 </span>
                 <h1 class="display-6 fw-bold text-dark lh-sm mb-2">
                     Hospital-Grade <span class="text-dm-red">Wheelchairs Available for Rent</span>
@@ -204,7 +204,6 @@ ob_start();
                             <i class="fa-solid fa-certificate text-dm-red fs-5"></i>
                             <div>
                                 <h6 class="mb-0 fw-bold text-dark small">Available for Rent</h6>
-                                <small class="text-success fw-bold" style="font-size: 0.72rem;">Starting ₹1,200 / mo</small>
                             </div>
                         </div>
                     </div>

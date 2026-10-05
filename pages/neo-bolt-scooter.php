@@ -1,4 +1,5 @@
 <?php
+
 /**
  * DM Healthcare - NeoBolt Motorized Mobility Scooter Attachment
  * Modern, Bootstrap 5-Powered Medical Mobility Portal
@@ -19,12 +20,39 @@ ob_start();
         --dm-red-dark: #c8102e;
         --dm-navy: #0f172a;
     }
-    .text-dm-red { color: var(--dm-red) !important; }
-    .bg-dm-red { background-color: var(--dm-red) !important; color: #fff !important; }
-    .btn-dm-red { background-color: var(--dm-red); border-color: var(--dm-red); color: #fff; }
-    .btn-dm-red:hover { background-color: var(--dm-red-dark); border-color: var(--dm-red-dark); color: #fff; }
-    .btn-outline-dm-red { border-color: var(--dm-red); color: var(--dm-red); }
-    .btn-outline-dm-red:hover, .btn-outline-dm-red.active { background-color: var(--dm-red); border-color: var(--dm-red); color: #fff; }
+
+    .text-dm-red {
+        color: var(--dm-red) !important;
+    }
+
+    .bg-dm-red {
+        background-color: var(--dm-red) !important;
+        color: #fff !important;
+    }
+
+    .btn-dm-red {
+        background-color: var(--dm-red);
+        border-color: var(--dm-red);
+        color: #fff;
+    }
+
+    .btn-dm-red:hover {
+        background-color: var(--dm-red-dark);
+        border-color: var(--dm-red-dark);
+        color: #fff;
+    }
+
+    .btn-outline-dm-red {
+        border-color: var(--dm-red);
+        color: var(--dm-red);
+    }
+
+    .btn-outline-dm-red:hover,
+    .btn-outline-dm-red.active {
+        background-color: var(--dm-red);
+        border-color: var(--dm-red);
+        color: #fff;
+    }
 
     .nb-gallery-img {
         height: 180px;
@@ -33,14 +61,17 @@ ob_start();
         transition: transform 0.25s ease, box-shadow 0.25s ease;
         cursor: pointer;
     }
+
     .nb-gallery-img:hover {
         transform: translateY(-4px);
         box-shadow: 0 10px 20px rgba(15, 23, 42, 0.12);
     }
+
     .nb-feature-card {
         transition: transform 0.25s ease, box-shadow 0.25s ease;
         border: 1px solid #e2e8f0;
     }
+
     .nb-feature-card:hover {
         transform: translateY(-4px);
         box-shadow: 0 12px 24px rgba(15, 23, 42, 0.08) !important;
@@ -54,7 +85,7 @@ ob_start();
         <div class="row align-items-center g-4">
             <div class="col-lg-7">
                 <span class="badge bg-danger bg-opacity-10 text-danger px-3 py-1 rounded-pill fw-semibold mb-2 border border-danger border-opacity-25 small">
-                    <i class="fa-solid fa-check-circle me-1"></i> Available for Rent across Delhi NCR
+                    <i class="fa-solid fa-check-circle me-1"></i> Available for Rent
                 </span>
                 <h1 class="display-6 fw-bold text-dark lh-sm mb-2">
                     <span class="text-dm-red">NeoBolt</span> Motorized Scooter <span class="text-dm-red">Available for Rent</span>
@@ -105,7 +136,6 @@ ob_start();
                             <i class="fa-solid fa-certificate text-dm-red fs-5"></i>
                             <div>
                                 <h6 class="mb-0 fw-bold text-dark small">Available for Rent</h6>
-                                <small class="text-success fw-bold" style="font-size: 0.72rem;">Free Doorstep Trial Demo</small>
                             </div>
                         </div>
                     </div>
@@ -273,7 +303,7 @@ ob_start();
                 <span class="badge bg-danger bg-opacity-10 text-danger px-3 py-1 rounded-pill fw-semibold mb-2">Doorstep Service</span>
                 <h3 class="fw-bold text-dark mb-2">Book a Free Home Demo</h3>
                 <p class="text-muted small mb-3">Our technician will visit your home with a NeoBolt unit, attach it to your existing wheelchair, and provide a full hands-on driving trial.</p>
-                
+
                 <div class="card bg-light border-0 rounded-3 p-3 mb-3">
                     <div class="d-flex align-items-center gap-3 mb-2">
                         <div class="rounded-circle bg-dm-red text-white d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;">
@@ -297,10 +327,10 @@ ob_start();
             <div class="col-lg-7">
                 <div class="card border-0 shadow-lg rounded-4 p-4 p-md-4 bg-white border">
                     <h5 class="fw-bold text-dark mb-3">Request NeoBolt Booking or Demo</h5>
-                    
+
                     <form action="backend/submit_appointment.php" method="POST">
                         <input type="hidden" name="service" value="NeoBolt Motorized Scooter">
-                        
+
                         <div class="row g-2">
                             <div class="col-md-6">
                                 <label class="form-label small fw-semibold text-secondary mb-1">Full Name *</label>
@@ -313,7 +343,7 @@ ob_start();
                             <div class="col-md-6">
                                 <label class="form-label small fw-semibold text-secondary mb-1">Requirement Type *</label>
                                 <select name="requirement_type" class="form-select form-select-sm rounded-2" required>
-                                    <option value="Monthly Package (₹4,500/mo)">Monthly Package (₹4,500/mo)</option>
+                                    <option value="Monthly Package">Monthly Package</option>
                                     <option value="Free Home Trial / Demo">Free Home Trial / Demo</option>
                                     <option value="Long-term Package">Long-term Package</option>
                                 </select>
